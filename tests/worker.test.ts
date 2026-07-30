@@ -355,7 +355,8 @@ describe("Steam search Worker", () => {
     );
 
     expect(response.status).toBe(200);
-    expect(await response.text()).toBe("/admin.html");
+    expect(await response.text()).toBe("/admin-page.txt");
+    expect(response.headers.get("content-type")).toContain("text/html");
     expect(fetch).toHaveBeenCalledOnce();
   });
 

@@ -3691,7 +3691,7 @@ export async function writeReport(snapshot: EventSnapshot): Promise<string> {
     writeFile(paths.pagesFallback, report, "utf8"),
     writeFile(paths.report, report, "utf8"),
     writeFile(paths.publicIndex, report, "utf8"),
-    writeFile(paths.adminIndex, renderAdminPage(), "utf8"),
+    writeFile(paths.adminAsset, renderAdminPage(), "utf8"),
     writeFile(paths.calendarIcs, createCalendarIcs(snapshot), "utf8"),
     writeFile(paths.noJekyll, "", "utf8"),
   ]);

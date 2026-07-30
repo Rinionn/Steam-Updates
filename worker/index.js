@@ -1118,8 +1118,17 @@ export default {
     }
     if (url.pathname === "/admin" || url.pathname === "/admin/") {
       const adminUrl = new URL(request.url);
-      adminUrl.pathname = "/admin.html";
-      return env.ASSETS.fetch(new Request(adminUrl, request));
+      adminUrl.pathname = "/admin-page.txt";
+      const asset = await env.ASSETS.fetch(new Request(adminUrl, request));
+      const headers = new Headers(asset.headers);
+      headers.set("content-type", "text/html; charset=utf-8");
+      headers.set("cache-control", "no-store");
+      headers.set("x-content-type-options", "nosniff");
+      return new Response(asset.body, {
+        status: asset.status,
+        statusText: asset.statusText,
+        headers,
+      });
     }
     return env.ASSETS.fetch(request);
   },
