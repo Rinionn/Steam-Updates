@@ -9,6 +9,7 @@
     "test": "vitest run",
     "sync": "npm run build --silent && node dist/src/cli.js sync",
     "report": "npm run build --silent && node dist/src/cli.js report",
+    "worker:test": "vitest run tests/worker.test.ts",
     "email": "npm run build --silent && node dist/src/cli.js email",
     "daily": "npm run build --silent && node dist/src/cli.js daily"
   },

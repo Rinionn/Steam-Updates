@@ -6,6 +6,8 @@ on:
       - main
     paths-ignore:
       - data/events.json
+      - data/changelog.json
+      - index.html
   workflow_dispatch:
   schedule:
     # 09:00 Europe/Istanbul (UTC+3)
@@ -13,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
   pages: write
   id-token: write
 
@@ -37,12 +40,50 @@ jobs:
         run: npm ci --ignore-scripts
 
       - name: Steam takvimini guncelle
+        id: steam-sync
+        continue-on-error: true
         run: npm run sync
+
+      - name: Steam sync hatasi icin issue ac
+        if: steps.steam-sync.outcome == 'failure'
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const title = "Steam etkinlik senkronizasyonu başarısız";
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100,
+            });
+            const duplicate = issues.some(
+              (issue) => !issue.pull_request && issue.title === title,
+            );
+            if (!duplicate) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body: [
+                  "Steamworks takvim senkronizasyonu başarısız oldu.",
+                  "",
+                  `Workflow: ${context.workflow}`,
+                  `Çalışma: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+                  `Commit: ${context.sha}`,
+                  "",
+                  "Son başarılı GitHub Pages sürümü yayında kalmaya devam ediyor.",
+                ].join("\n"),
+              });
+            }
+
+      - name: Steam sync hatasini build'e yansit
+        if: steps.steam-sync.outcome == 'failure'
+        run: exit 1
 
       - name: Steam anlik goruntusunu kaydet
         shell: bash
         run: |
-          git add data/events.json
+          git add data/events.json data/changelog.json index.html
           if git diff --cached --quiet; then
             echo "Steam anlik goruntusunde degisiklik yok."
             exit 0
@@ -52,6 +93,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore(data): steam takvimi guncellendi"
           git push origin HEAD:main
+
+      - name: Cloudflare Worker ve paneli yayinla
+        if: vars.CLOUDFLARE_ENABLED == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
       - name: GitHub Pages'i hazirla
         uses: actions/configure-pages@v5

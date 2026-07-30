@@ -1,4 +1,5 @@
 import type { SteamDeadline } from "./types.js";
+import { stableId } from "./utils.js";
 
 export interface DeadlineCopy {
   category: "Başvuru" | "Demo & Mağaza" | "Tanıtım" | "Yayın";
@@ -96,4 +97,17 @@ export function deadlineCopy(deadline: SteamDeadline): DeadlineCopy {
     description:
       "Festival hazırlıklarının bu tarihten önce tamamlandığını kontrol edin.",
   };
+}
+
+export function stableDeadlineId(
+  eventId: string,
+  deadline: SteamDeadline,
+  categoryOccurrence: number,
+): string {
+  return stableId(
+    eventId,
+    "deadline",
+    deadlineCopy(deadline).category,
+    String(categoryOccurrence),
+  );
 }

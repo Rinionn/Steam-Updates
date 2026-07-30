@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { buildEventTasks } from "../src/event-tasks.js";
+import { parseEventDeadlines } from "../src/steamworks.js";
 import type { SteamEvent } from "../src/types.js";
 
 const baseEvent: SteamEvent = {
@@ -13,6 +14,7 @@ const baseEvent: SteamEvent = {
     "https://partner.steamgames.com/optin/sale/cyberpunk_2026",
   detailsUrl:
     "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/cyberpunk_2026",
+  matchTags: ["Cyberpunk", "Sci-fi"],
   deadlines: [],
 };
 
@@ -39,5 +41,27 @@ describe("event tasks", () => {
       level: "Gerekli",
       title: "Sezon indirimi teklifini gir",
     });
+  });
+
+  it("son tarih değiştiğinde deadline ve görev kimliğini korur", () => {
+    const sourceUrl =
+      "https://partner.steamgames.com/doc/marketing/upcoming_events/test";
+    const firstDeadlines = parseEventDeadlines(
+      `<div class="documentation_bbcode"><ul><li>September 1 @ 10:00am PDT - Registration deadline.</li></ul></div>`,
+      baseEvent,
+      sourceUrl,
+    );
+    const shiftedDeadlines = parseEventDeadlines(
+      `<div class="documentation_bbcode"><ul><li>September 2 @ 11:00am PDT - Updated registration deadline from Valve.</li></ul></div>`,
+      baseEvent,
+      sourceUrl,
+    );
+
+    expect(firstDeadlines[0].id).toBe(shiftedDeadlines[0].id);
+    expect(
+      buildEventTasks({ ...baseEvent, deadlines: firstDeadlines })[0].id,
+    ).toBe(
+      buildEventTasks({ ...baseEvent, deadlines: shiftedDeadlines })[0].id,
+    );
   });
 });

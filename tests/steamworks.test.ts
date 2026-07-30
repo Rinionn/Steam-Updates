@@ -2,9 +2,12 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
+  DETAIL_REQUEST_DELAY_MS,
+  enrichWithDeadlines,
   parseEventDeadlines,
   parseSteamCalendar,
 } from "../src/steamworks.js";
+import type { SteamEvent } from "../src/types.js";
 
 const fixtureDir = path.resolve("tests", "fixtures");
 const sourceUrl =
@@ -28,6 +31,9 @@ describe("Steamworks parser", () => {
       "https://partner.steamgames.com/optin/sale/cyberpunk_2026",
     );
     expect(cyberpunk?.detailsUrl).toContain("/themed_sales/cyberpunk_2026");
+    expect(cyberpunk?.description).toBe("Games in cyberpunk settings.");
+    expect(cyberpunk?.descriptionTr).toContain("siberpunk");
+    expect(cyberpunk?.startAt).toBe("2026-08-03T17:00:00Z");
 
     const bridge = events.find((event) => event.name === "Year Bridge Fest");
     expect(bridge?.endAt).toBe("2027-01-04T18:00:00Z");
@@ -71,5 +77,80 @@ describe("Steamworks parser", () => {
         sourceUrl,
       ),
     ).toThrow(/okunamadı/);
+  });
+
+  it("değişmeyen ve son 7 günde çekilmiş detayları önbellekten kullanır", async () => {
+    const event: SteamEvent = {
+      id: "cached-event",
+      name: "Cached Event",
+      kind: "themed_fest",
+      startAt: "2026-08-03T17:00:00Z",
+      endAt: "2026-08-10T17:00:00Z",
+      sourceUrl,
+      detailsUrl: "https://example.com/cached",
+      matchTags: [],
+      deadlines: [],
+    };
+    const cached: SteamEvent = {
+      ...event,
+      lastSeenAt: "2026-07-29T09:00:00Z",
+      deadlines: [
+        {
+          id: "cached-deadline",
+          kind: "registration",
+          label: "Registration deadline",
+          dueAt: "2026-08-01T06:59:00Z",
+          sourceUrl: event.detailsUrl!,
+        },
+      ],
+    };
+    let requests = 0;
+    const result = await enrichWithDeadlines(
+      [event],
+      async () => {
+        requests++;
+        return '<div class="documentation_bbcode"></div>';
+      },
+      [cached],
+      {
+        now: new Date("2026-07-30T09:00:00Z"),
+        requestDelayMs: 0,
+      },
+    );
+
+    expect(requests).toBe(0);
+    expect(result[0].deadlines).toEqual(cached.deadlines);
+    expect(result[0].lastSeenAt).toBe(cached.lastSeenAt);
+  });
+
+  it("tarihi değişen etkinliğin detayını önbelleğe rağmen yeniler", async () => {
+    const previous: SteamEvent = {
+      id: "changed-event",
+      name: "Changed Event",
+      kind: "themed_fest",
+      startAt: "2026-08-03T17:00:00Z",
+      endAt: "2026-08-10T17:00:00Z",
+      sourceUrl,
+      detailsUrl: "https://example.com/changed",
+      matchTags: [],
+      deadlines: [],
+      lastSeenAt: "2026-07-29T09:00:00Z",
+    };
+    let requests = 0;
+    await enrichWithDeadlines(
+      [{ ...previous, startAt: "2026-08-04T17:00:00Z", lastSeenAt: undefined }],
+      async () => {
+        requests++;
+        return '<div class="documentation_bbcode"></div>';
+      },
+      [previous],
+      {
+        now: new Date("2026-07-30T09:00:00Z"),
+        requestDelayMs: 0,
+      },
+    );
+
+    expect(requests).toBe(1);
+    expect(DETAIL_REQUEST_DELAY_MS).toBe(500);
   });
 });

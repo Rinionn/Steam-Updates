@@ -1,5 +1,8 @@
 import * as cheerio from "cheerio";
 import { DateTime } from "luxon";
+import { deadlineCopy, stableDeadlineId } from "./deadline-copy.js";
+import { descriptionTrForEvent } from "./descriptions-tr.js";
+import { matchTagsForEvent } from "./match-tags.js";
 import type {
   DeadlineKind,
   SteamDeadline,
@@ -16,6 +19,7 @@ import {
 
 const MONTH_PATTERN =
   "(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)";
+export const DETAIL_REQUEST_DELAY_MS = 500;
 
 interface DateRange {
   start: DateTime;
@@ -79,7 +83,7 @@ function calendarEvent(
     "registrationUrl" | "detailsUrl" | "description"
   > = {},
 ): SteamEvent {
-  return {
+  const event: SteamEvent = {
     id: stableId(name, kind, String(range.start.year)),
     name,
     kind,
@@ -89,8 +93,13 @@ function calendarEvent(
     registrationUrl: extra.registrationUrl,
     detailsUrl: extra.detailsUrl,
     description: extra.description,
+    descriptionTr: undefined,
+    matchTags: [],
     deadlines: [],
   };
+  event.descriptionTr = descriptionTrForEvent(event.id);
+  event.matchTags = matchTagsForEvent(event);
+  return event;
 }
 
 export function parseSteamCalendar(html: string, sourceUrl: string): SteamEvent[] {
@@ -180,7 +189,12 @@ export function parseSteamCalendar(html: string, sourceUrl: string): SteamEvent[
           .find('a[href*="/doc/marketing/upcoming_events/"]')
           .first()
           .attr("href");
-        const notes = cells.length >= 4 ? compact($(cells[3]).text()) : "";
+        const notes =
+          cells.length >= 4
+            ? compact($(cells[3]).text())
+                .replace(/(?:\s*More info\.?\s*)+$/i, "")
+                .trim()
+            : "";
 
         events.push(
           calendarEvent(name, "themed_fest", range, sourceUrl, {
@@ -227,7 +241,7 @@ export function parseEventDeadlines(
   if (!root.length || /sorry, an error occurred/i.test(rootText)) return [];
 
   const eventYear = DateTime.fromISO(event.startAt).setZone("utc").year;
-  const deadlines: SteamDeadline[] = [];
+  const candidates: Array<Omit<SteamDeadline, "id">> = [];
 
   root.find("li").each((_, item) => {
     const text = compact($(item).text());
@@ -246,8 +260,7 @@ export function parseEventDeadlines(
     const due = steamDate(year, month, day, clock.hour, clock.minute);
     const kind = classifyDeadline(text);
 
-    deadlines.push({
-      id: stableId(event.id, kind, iso(due), text),
+    candidates.push({
       kind,
       label: text,
       dueAt: iso(due),
@@ -255,46 +268,104 @@ export function parseEventDeadlines(
     });
   });
 
-  const unique = new Map<string, SteamDeadline>();
-  for (const deadline of deadlines) unique.set(deadline.id, deadline);
-  return [...unique.values()].sort((a, b) => a.dueAt.localeCompare(b.dueAt));
+  const unique = new Map<string, Omit<SteamDeadline, "id">>();
+  for (const deadline of candidates) {
+    unique.set(
+      `${deadline.kind}|${deadline.dueAt}|${deadline.label}`,
+      deadline,
+    );
+  }
+
+  const categoryOccurrences = new Map<string, number>();
+  const deadlines = [...unique.values()].map((candidate) => {
+    const deadline: SteamDeadline = { ...candidate, id: "" };
+    const category = deadlineCopy(deadline).category;
+    const occurrence = (categoryOccurrences.get(category) || 0) + 1;
+    categoryOccurrences.set(category, occurrence);
+    return {
+      ...deadline,
+      id: stableDeadlineId(event.id, deadline, occurrence),
+    };
+  });
+
+  return deadlines.sort((a, b) => a.dueAt.localeCompare(b.dueAt));
 }
 
 export async function enrichWithDeadlines(
   events: SteamEvent[],
   loadHtml: (url: string) => Promise<string>,
+  previousEvents: SteamEvent[] = [],
+  options: {
+    now?: Date;
+    requestDelayMs?: number;
+    cacheDays?: number;
+  } = {},
 ): Promise<SteamEvent[]> {
   const enriched = [...events];
+  const now = options.now || new Date();
+  const requestDelayMs = options.requestDelayMs ?? DETAIL_REQUEST_DELAY_MS;
+  const cacheMs = (options.cacheDays ?? 7) * 24 * 60 * 60 * 1000;
+  const previousById = new Map(
+    previousEvents.map((event) => [event.id, event]),
+  );
+  const previousByDetailsUrl = new Map(
+    previousEvents
+      .filter((event) => event.detailsUrl)
+      .map((event) => [event.detailsUrl as string, event]),
+  );
   const candidates = enriched
     .map((event, index) => ({ event, index }))
     .filter(({ event }) => event.detailsUrl);
-  const concurrency = 4;
-  let cursor = 0;
+  let requestCount = 0;
 
-  async function worker(): Promise<void> {
-    while (cursor < candidates.length) {
-      const current = candidates[cursor++];
-      const detailsUrl = current.event.detailsUrl;
-      if (!detailsUrl) continue;
+  for (const current of candidates) {
+    const detailsUrl = current.event.detailsUrl;
+    if (!detailsUrl) continue;
+    const previous =
+      previousById.get(current.event.id) ||
+      previousByDetailsUrl.get(detailsUrl);
+    const lastFetchedAt = previous?.lastSeenAt
+      ? Date.parse(previous.lastSeenAt)
+      : Number.NaN;
+    const datesUnchanged =
+      previous?.startAt === current.event.startAt &&
+      previous?.endAt === current.event.endAt;
+    const cacheIsFresh =
+      datesUnchanged &&
+      Number.isFinite(lastFetchedAt) &&
+      now.getTime() - lastFetchedAt < cacheMs;
 
-      try {
-        const html = await loadHtml(detailsUrl);
+    if (previous && cacheIsFresh) {
+      enriched[current.index] = {
+        ...current.event,
+        deadlines: previous.deadlines,
+        lastSeenAt: previous.lastSeenAt,
+      };
+      continue;
+    }
+
+    if (requestCount > 0 && requestDelayMs > 0) {
+      await new Promise((resolve) => setTimeout(resolve, requestDelayMs));
+    }
+    requestCount++;
+    try {
+      const html = await loadHtml(detailsUrl);
+      enriched[current.index] = {
+        ...current.event,
+        deadlines: parseEventDeadlines(html, current.event, detailsUrl),
+        lastSeenAt: now.toISOString(),
+      };
+    } catch {
+      // Preserve the last known details when one detail page is unavailable.
+      if (previous) {
         enriched[current.index] = {
           ...current.event,
-          deadlines: parseEventDeadlines(html, current.event, detailsUrl),
+          deadlines: previous.deadlines,
+          lastSeenAt: previous.lastSeenAt,
         };
-      } catch {
-        // Tek bir detay sayfası bozulduğunda ana takvimi kaybetme.
       }
     }
   }
-
-  await Promise.all(
-    Array.from(
-      { length: Math.min(concurrency, candidates.length || 1) },
-      () => worker(),
-    ),
-  );
 
   return enriched;
 }

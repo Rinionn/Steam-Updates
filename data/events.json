@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T14:25:33.883Z",
+  "generatedAt": "2026-07-30T15:33:06.320Z",
   "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
   "events": [
     {
@@ -11,9 +11,13 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/social_deduction_2026",
       "description": "Event has ended.",
+      "descriptionTr": "Etkinlik sona erdi.",
+      "matchTags": [
+        "Social Deduction"
+      ],
       "deadlines": [],
       "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:33:06.320Z"
     },
     {
       "id": "train-fest-a5c61577c",
@@ -24,9 +28,13 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/trains_2026",
       "description": "Event has ended.",
+      "descriptionTr": "Etkinlik sona erdi.",
+      "matchTags": [
+        "Trains"
+      ],
       "deadlines": [],
       "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:33:06.320Z"
     },
     {
       "id": "cyberpunk-fest-51562f576",
@@ -37,10 +45,15 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/cyberpunk_2026",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/cyberpunk_2026",
-      "description": "Games in cyberpunk settings: neon, advanced tech, and other sci-fi elements. More info.",
+      "description": "Games in cyberpunk settings: neon, advanced tech, and other sci-fi elements.",
+      "descriptionTr": "Neon, ileri teknoloji ve diğer bilim kurgu öğeleri içeren siberpunk dünyalardaki oyunlar.",
+      "matchTags": [
+        "Cyberpunk",
+        "Sci-fi"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "pins-pegs-fest-2624f7168",
@@ -51,10 +64,15 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/pins_pegs_2026",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/pins_pegs_2026",
-      "description": "Games involving pins (pinball, bowling) and pegs (pachinko, bagatelle). More info.",
+      "description": "Games involving pins (pinball, bowling) and pegs (pachinko, bagatelle).",
+      "descriptionTr": "Pinball ve bowling gibi lobutları ya da pachinko ve bagatelle gibi çivileri merkeze alan oyunlar.",
+      "matchTags": [
+        "Pinball",
+        "Bowling"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "pve-survival-crafting-fest-8bb6de2ec",
@@ -65,10 +83,16 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/pve_survival_crafting_2026",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/pve_survival_crafting_2026",
-      "description": "Games that include survival, crafting, and a primary gameplay loop centered on PvE. More info.",
+      "description": "Games that include survival, crafting, and a primary gameplay loop centered on PvE.",
+      "descriptionTr": "Hayatta kalma, üretim ve PvE odaklı ana oynanış döngüsü içeren oyunlar.",
+      "matchTags": [
+        "Survival",
+        "Crafting",
+        "Open World Survival Craft"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "programming-fest-d92cade24",
@@ -79,10 +103,15 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/programming_2026",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/programming_2026",
-      "description": "Games that are about programming or programming challenges like logic puzzles. More info.",
+      "description": "Games that are about programming or programming challenges like logic puzzles.",
+      "descriptionTr": "Programlama veya mantık bulmacaları gibi programlama görevlerini konu alan oyunlar.",
+      "matchTags": [
+        "Programming",
+        "Logic"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "party-based-rpg-fest-55771f151",
@@ -93,18 +122,15 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/party_rpg_2026",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/party_based_rpg_2026",
-      "description": "Games that include multiple playable characters in one party in an RPG format.More info.",
-      "deadlines": [
-        {
-          "id": "party-based-rpg-fest-55771f151-6552759d6",
-          "kind": "milestone",
-          "label": "September 14 @ 10:00am PDT - The event starts. This is the deadline for entering a discount, and opting out if you no longer want to participate.",
-          "dueAt": "2026-09-14T17:00:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/party_based_rpg_2026"
-        }
+      "description": "Games that include multiple playable characters in one party in an RPG format.",
+      "descriptionTr": "RPG yapısı içinde aynı ekipte birden fazla oynanabilir karakter sunan oyunlar.",
+      "matchTags": [
+        "Party-Based RPG",
+        "RPG"
       ],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "deadlines": [],
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "autumn-sale-f825a9dd8",
@@ -113,9 +139,10 @@
       "startAt": "2026-10-01T17:00:00Z",
       "endAt": "2026-10-08T17:00:00Z",
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
+      "matchTags": [],
       "deadlines": [],
       "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:33:06.320Z"
     },
     {
       "id": "cooking-fest-424f50fb9",
@@ -126,10 +153,14 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/cooking_2026",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/cooking_2026",
-      "description": "Games about cooking, feeding people, and everything in between. More info.",
+      "description": "Games about cooking, feeding people, and everything in between.",
+      "descriptionTr": "Yemek pişirme, insanları doyurma ve bunların arasındaki her şeyi konu alan oyunlar.",
+      "matchTags": [
+        "Cooking"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "next-fest-october-2026-3062e7ac9",
@@ -140,59 +171,60 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/nextfest_october_2026",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
+      "matchTags": [],
       "deadlines": [
         {
-          "id": "next-fest-october-2026-3062e7ac9-c70393d5c",
           "kind": "registration",
           "label": "August 31 - Registration Deadline (11:59pm PDT)This is also when we recommend you have your marketing materials up-to-date to ensure you can be considered for potential inclusion in official Steam Next Fest marketing materials (main event trailer, genre trailers, etc).",
           "dueAt": "2026-09-01T06:59:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october"
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
+          "id": "next-fest-october-2026-3062e7ac9-dea67ebfc"
         },
         {
-          "id": "next-fest-october-2026-3062e7ac9-331a6d007",
           "kind": "marketing",
           "label": "September 7 - Steam pulls trailers for the official Next Fest trailer. (If you've been notified of official trailer inclusion consideration, please ensure the most up to date trailer is available on your base game store page.)",
           "dueAt": "2026-09-07T17:00:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october"
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
+          "id": "next-fest-october-2026-3062e7ac9-97846b59c"
         },
         {
-          "id": "next-fest-october-2026-3062e7ac9-62af4de03",
           "kind": "review",
           "label": "September 21 - If you'd like your demo to be live at the start of the Press Preview, this is the date by which you should have submitted your demo build and store page for review. Note that the store page review is needed even if the demo doesn't have a separate store page.",
           "dueAt": "2026-09-22T06:59:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october"
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
+          "id": "next-fest-october-2026-3062e7ac9-28286be6b"
         },
         {
-          "id": "next-fest-october-2026-3062e7ac9-91106d354",
           "kind": "review",
           "label": "October 5 - All required items must be submitted for review by this date in order for your game to be prepared for Steam Next Fest (if you haven’t completed them already for the Press Preview)",
           "dueAt": "2026-10-06T06:59:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october"
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
+          "id": "next-fest-october-2026-3062e7ac9-71b75f82e"
         },
         {
-          "id": "next-fest-october-2026-3062e7ac9-59154473a",
           "kind": "review",
           "label": "October 8 - Press preview starts at 10am PDT. All demos that have opted in to be available for press preview will be included.",
           "dueAt": "2026-10-08T17:00:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october"
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
+          "id": "next-fest-october-2026-3062e7ac9-de43adb98"
         },
         {
-          "id": "next-fest-october-2026-3062e7ac9-c7174d81a",
           "kind": "marketing",
           "label": "October 8 - This is the deadline to opt OUT of trailer permissions if you have previously opted in, to ensure your trailer will NOT be included in official marketing materials.",
           "dueAt": "2026-10-09T06:59:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october"
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
+          "id": "next-fest-october-2026-3062e7ac9-44bd3cce6"
         },
         {
-          "id": "next-fest-october-2026-3062e7ac9-ba9d4abef",
           "kind": "milestone",
           "label": "October 19 - Steam Next Fest: October 2026 begins at 10am PDT; set your demo live (or opt out if your plans have changed) before 10am PDT.",
           "dueAt": "2026-10-19T17:00:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october"
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
+          "id": "next-fest-october-2026-3062e7ac9-ab20d5c9d"
         }
       ],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "steam-scream-v-4b0a8f227",
@@ -203,10 +235,14 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/horror_2026",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/steam_halloween_2026",
-      "description": "Games that fall into the horror category, and explicitly Halloween-centric games. More info.",
+      "description": "Games that fall into the horror category, and explicitly Halloween-centric games.",
+      "descriptionTr": "Korku kategorisine giren ve özellikle Cadılar Bayramı temasını kullanan oyunlar.",
+      "matchTags": [
+        "Horror"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "auto-battler-rpg-fest-92a2e84b8",
@@ -217,10 +253,15 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/auto_battler_2026",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/auto_battler_rpg_2026",
-      "description": "Games where the battles play themselves out – but you have to upgrade your units to win. More info.",
+      "description": "Games where the battles play themselves out – but you have to upgrade your units to win.",
+      "descriptionTr": "Savaşların otomatik ilerlediği, kazanmak için birimleri geliştirmeniz gereken oyunlar.",
+      "matchTags": [
+        "Auto Battler",
+        "RPG"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "winter-sale-942a0c36e",
@@ -229,9 +270,10 @@
       "startAt": "2026-12-17T18:00:00Z",
       "endAt": "2027-01-04T18:00:00Z",
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
+      "matchTags": [],
       "deadlines": [],
       "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:33:06.320Z"
     },
     {
       "id": "desktop-companion-fest-5bc08adee",
@@ -242,10 +284,14 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/desktop_companion_2027",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/desktop_companion_2027",
-      "description": "Games that sit on your desktop and keep you company while you do other things. More info.",
+      "description": "Games that sit on your desktop and keep you company while you do other things.",
+      "descriptionTr": "Başka işler yaparken masaüstünüzde duran ve size eşlik eden oyunlar.",
+      "matchTags": [
+        "Desktop Companion"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "shop-keeper-fest-0d64f4666",
@@ -256,10 +302,15 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/shop_keep_2027",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/shop_keep_2027",
-      "description": "Games about managing a store. More info.",
+      "description": "Games about managing a store.",
+      "descriptionTr": "Bir mağazayı yönetmeyi konu alan oyunlar.",
+      "matchTags": [
+        "Shop Keeper",
+        "Management"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "sheep-fest-6ec302116",
@@ -270,10 +321,14 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/sheep_2027",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/sheep_2027",
-      "description": "Games about sheep, goats, or other animals in the Caprinae subfamily (so yes, tahrs and ibexes are welcome too). More info.",
+      "description": "Games about sheep, goats, or other animals in the Caprinae subfamily (so yes, tahrs and ibexes are welcome too).",
+      "descriptionTr": "Koyunları, keçileri veya Caprinae alt familyasındaki diğer hayvanları konu alan oyunlar.",
+      "matchTags": [
+        "Animals"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "couch-co-op-fest-8b489c8ca",
@@ -284,10 +339,15 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/couch_coop_2027",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/couch_coop_2027",
-      "description": "Games you can play together on the same device (games must support local co-op). More info.",
+      "description": "Games you can play together on the same device (games must support local co-op).",
+      "descriptionTr": "Aynı cihazda birlikte oynanabilen ve yerel eşli oyun desteği sunan oyunlar.",
+      "matchTags": [
+        "Local Co-Op",
+        "Shared/Split Screen"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "next-fest-february-2027-eb86e4da6",
@@ -296,9 +356,10 @@
       "startAt": "2027-02-22T18:00:00Z",
       "endAt": "2027-03-01T18:00:00Z",
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
+      "matchTags": [],
       "deadlines": [],
       "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:33:06.320Z"
     },
     {
       "id": "rhythm-fest-b3b4ca682",
@@ -309,10 +370,15 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/rhythm_2027",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/rhythm_2027",
-      "description": "Games that are about rewarding players who can hit notes / arrows / bullets / etc. in time to the beat. More info.",
+      "description": "Games that are about rewarding players who can hit notes / arrows / bullets / etc. in time to the beat.",
+      "descriptionTr": "Nota, ok, mermi veya benzeri öğeleri ritme uygun yakalamayı ödüllendiren oyunlar.",
+      "matchTags": [
+        "Rhythm",
+        "Music"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "spring-sale-23917885f",
@@ -321,9 +387,10 @@
       "startAt": "2027-03-18T17:00:00Z",
       "endAt": "2027-03-25T17:00:00Z",
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
+      "matchTags": [],
       "deadlines": [],
       "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:33:06.320Z"
     },
     {
       "id": "dinos-vs-robots-fest-e4c058c85",
@@ -334,10 +401,15 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/dinos_robots_2027",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/dinos_robots_2027",
-      "description": "Games featuring dinosaurs, robots, or both. Or robot dinosaurs! More info.",
+      "description": "Games featuring dinosaurs, robots, or both. Or robot dinosaurs!",
+      "descriptionTr": "Dinozorları, robotları veya ikisini birden içeren oyunlar; robot dinozorlar da dahil.",
+      "matchTags": [
+        "Dinosaurs",
+        "Robots"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "racing-fest-9bb5cb332",
@@ -348,10 +420,14 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/racing_2027",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/racing_2027",
-      "description": "Games about going fast. Like, really, really fast. Faster than other people, faster than the computer, faster than the you of yesterday. More info.",
+      "description": "Games about going fast. Like, really, really fast. Faster than other people, faster than the computer, faster than the you of yesterday.",
+      "descriptionTr": "Rakiplerden, bilgisayardan veya dünkü performansınızdan daha hızlı olmayı konu alan oyunlar.",
+      "matchTags": [
+        "Racing"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "witch-fest-34647039a",
@@ -362,10 +438,14 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/witch_2027",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/witch_2027",
-      "description": "Games that are witchy! More info.",
+      "description": "Games that are witchy!",
+      "descriptionTr": "Cadılar ve cadılık temasını merkeze alan oyunlar.",
+      "matchTags": [
+        "Magic"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "fighting-fest-997e98a30",
@@ -376,10 +456,14 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/fighting_2027",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/fighting_2027",
-      "description": "Games that are Fighting Games—not just games about fighting, but specifically like the ones that the FGC play. More info.",
+      "description": "Games that are Fighting Games—not just games about fighting, but specifically like the ones that the FGC play.",
+      "descriptionTr": "Yalnızca dövüş içeren değil, doğrudan dövüş oyunu topluluğunun oynadığı türdeki oyunlar.",
+      "matchTags": [
+        "Fighting"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "real-time-strategy-fest-96b41f8e6",
@@ -390,10 +474,15 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/rts_2027",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/rts_2027",
-      "description": "Games that are played in real-time and involve high levels of strategic play, including build / research planning, anticipating enemy movements, and resource management. More info.",
+      "description": "Games that are played in real-time and involve high levels of strategic play, including build / research planning, anticipating enemy movements, and resource management.",
+      "descriptionTr": "İnşa ve araştırma planlama, düşman hareketlerini öngörme ve kaynak yönetimi gibi yoğun stratejik kararları gerçek zamanlı sunan oyunlar.",
+      "matchTags": [
+        "Real-Time Strategy",
+        "Strategy"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "mountaineering-fest-e94606dd4",
@@ -404,10 +493,14 @@
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/mountaineering_2027",
       "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/mountaineering_2027",
-      "description": "Games about climbing mountains. More info.",
+      "description": "Games about climbing mountains.",
+      "descriptionTr": "Dağlara tırmanmayı konu alan oyunlar.",
+      "matchTags": [
+        "Climbing"
+      ],
       "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:24:02.828Z",
+      "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
       "id": "next-fest-june-2027-6598e9fe6",
@@ -417,9 +510,10 @@
       "endAt": "2027-06-21T17:00:00Z",
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/nextfest_june_2027",
+      "matchTags": [],
       "deadlines": [],
       "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:33:06.320Z"
     },
     {
       "id": "summer-sale-c5f18f5ae",
@@ -428,9 +522,10 @@
       "startAt": "2027-06-24T17:00:00Z",
       "endAt": "2027-07-08T17:00:00Z",
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
+      "matchTags": [],
       "deadlines": [],
       "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-30T14:25:33.883Z"
+      "lastSeenAt": "2026-07-30T15:33:06.320Z"
     }
   ]
 }

@@ -22,10 +22,12 @@ export const paths = {
   root: rootDir,
   dataDir: path.join(rootDir, "data"),
   snapshot: path.join(rootDir, "data", "events.json"),
+  changelog: path.join(rootDir, "data", "changelog.json"),
   outDir: path.join(rootDir, "out"),
   pagesFallback: path.join(rootDir, "index.html"),
   report: path.join(rootDir, "out", "steam-etkinlikleri.html"),
   publicIndex: path.join(rootDir, "out", "index.html"),
+  calendarIcs: path.join(rootDir, "out", "steam-etkinlikleri.ics"),
   noJekyll: path.join(rootDir, "out", ".nojekyll"),
   emailPreview: path.join(rootDir, "out", "son-email.html"),
   emailTextPreview: path.join(rootDir, "out", "son-email.txt"),
@@ -36,12 +38,17 @@ export const config: AppConfig = {
   timezone: process.env.TIMEZONE || "Europe/Istanbul",
   reminderDays: numberList(process.env.REMINDER_DAYS, [30, 14, 7, 3, 1, 0]),
   lookaheadDays: Number(process.env.REPORT_LOOKAHEAD_DAYS || 550),
+  emailLookaheadDays: Number(process.env.EMAIL_LOOKAHEAD_DAYS || 90),
   emailDaily: booleanValue(process.env.EMAIL_DAILY, true),
   calendarUrl:
     process.env.STEAM_CALENDAR_URL ||
     "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
+  dashboardUrl:
+    process.env.PUBLIC_DASHBOARD_URL ||
+    "https://rinionn.github.io/Steam-Updates/",
   email: {
     to: process.env.EMAIL_TO,
+    bcc: process.env.EMAIL_BCC,
     from: process.env.EMAIL_FROM,
     resendApiKey: process.env.RESEND_API_KEY,
     smtpHost: process.env.SMTP_HOST,

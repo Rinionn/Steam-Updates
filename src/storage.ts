@@ -1,20 +1,94 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { createHash } from "node:crypto";
 import path from "node:path";
-import type { EventSnapshot, SteamEvent, SyncResult } from "./types.js";
-
-function comparable(event: SteamEvent): Omit<
+import type {
+  ChangeRecord,
+  EventSnapshot,
+  SteamDeadline,
   SteamEvent,
-  "firstSeenAt" | "lastSeenAt"
-> {
-  const { firstSeenAt: _first, lastSeenAt: _last, ...rest } = event;
-  return rest;
+  SyncResult,
+} from "./types.js";
+
+function deadlineKey(deadline: SteamDeadline): string {
+  return `${deadline.kind}:${deadline.label.trim().toLocaleLowerCase("tr")}`;
 }
 
-function fingerprint(event: SteamEvent): string {
-  return createHash("sha256")
-    .update(JSON.stringify(comparable(event)))
-    .digest("hex");
+function sameEventIdentity(previous: SteamEvent, current: SteamEvent): boolean {
+  if (previous.kind !== current.kind) return false;
+  if (
+    current.registrationUrl &&
+    previous.registrationUrl === current.registrationUrl
+  ) {
+    return true;
+  }
+  if (current.detailsUrl && previous.detailsUrl === current.detailsUrl) {
+    return true;
+  }
+  return (
+    previous.startAt === current.startAt &&
+    previous.endAt === current.endAt &&
+    previous.sourceUrl === current.sourceUrl
+  );
+}
+
+function diffEvent(
+  previous: SteamEvent,
+  current: SteamEvent,
+  eventId: string,
+  detectedAt: string,
+): ChangeRecord[] {
+  const changes: ChangeRecord[] = [];
+  const base = {
+    detectedAt,
+    eventId,
+    eventName: current.name,
+  };
+
+  if (previous.name !== current.name) {
+    changes.push({
+      ...base,
+      kind: "renamed",
+      field: "name",
+      before: previous.name,
+      after: current.name,
+    });
+  }
+
+  for (const field of ["startAt", "endAt"] as const) {
+    if (previous[field] !== current[field]) {
+      changes.push({
+        ...base,
+        kind: "date_shifted",
+        field,
+        before: previous[field],
+        after: current[field],
+      });
+    }
+  }
+
+  const previousDeadlines = new Map(
+    previous.deadlines.map((deadline) => [deadlineKey(deadline), deadline]),
+  );
+  const currentDeadlines = new Map(
+    current.deadlines.map((deadline) => [deadlineKey(deadline), deadline]),
+  );
+  const deadlineKeys = new Set([
+    ...previousDeadlines.keys(),
+    ...currentDeadlines.keys(),
+  ]);
+  for (const key of deadlineKeys) {
+    const before = previousDeadlines.get(key);
+    const after = currentDeadlines.get(key);
+    if (before?.dueAt === after?.dueAt) continue;
+    changes.push({
+      ...base,
+      kind: "deadline_changed",
+      field: `deadlines.${after?.id || before?.id || key}.dueAt`,
+      before: before?.dueAt,
+      after: after?.dueAt,
+    });
+  }
+
+  return changes;
 }
 
 export async function readSnapshot(
@@ -47,25 +121,57 @@ export function mergeSnapshot(
   const previousById = new Map(
     (previous?.events || []).map((event) => [event.id, event]),
   );
-  const currentIds = new Set(currentEvents.map((event) => event.id));
+  const matchedPreviousIds = new Set<string>();
   const added: SteamEvent[] = [];
   const changed: SteamEvent[] = [];
+  const changes: ChangeRecord[] = [];
 
   const merged = currentEvents.map((event) => {
-    const old = previousById.get(event.id);
+    const directMatch = previousById.get(event.id);
+    const old =
+      directMatch ||
+      (previous?.events || []).find(
+        (candidate) =>
+          !matchedPreviousIds.has(candidate.id) &&
+          sameEventIdentity(candidate, event),
+      );
+    const eventId = old?.id || event.id;
     const value: SteamEvent = {
       ...event,
+      id: eventId,
       firstSeenAt: old?.firstSeenAt || nowIso,
-      lastSeenAt: nowIso,
+      lastSeenAt: event.lastSeenAt || nowIso,
     };
 
-    if (!old) added.push(value);
-    else if (fingerprint(old) !== fingerprint(value)) changed.push(value);
+    if (!old) {
+      added.push(value);
+      changes.push({
+        detectedAt: nowIso,
+        eventId,
+        eventName: value.name,
+        kind: "added",
+      });
+    } else {
+      matchedPreviousIds.add(old.id);
+      const eventChanges = diffEvent(old, value, eventId, nowIso);
+      if (eventChanges.length > 0) changed.push(value);
+      changes.push(...eventChanges);
+    }
     return value;
   });
 
   const removed = (previous?.events || []).filter(
-    (event) => !currentIds.has(event.id),
+    (event) => !matchedPreviousIds.has(event.id),
+  );
+  changes.push(
+    ...removed.map(
+      (event): ChangeRecord => ({
+        detectedAt: nowIso,
+        eventId: event.id,
+        eventName: event.name,
+        kind: "removed",
+      }),
+    ),
   );
 
   return {
@@ -77,6 +183,7 @@ export function mergeSnapshot(
     added,
     changed,
     removed,
+    changes,
   };
 }
 

@@ -8,10 +8,16 @@ indirimlerini listeleyen, bilinen başvuru/inceleme tarihlerini İstanbul saatin
 
 **https://rinionn.github.io/Steam-Updates/**
 
+Kurumsal giriş ve Steam oyun adı araması için hazırlanan korumalı hedef adres
+`https://steamradar.gaminginturkey.com`'dur. Cloudflare Access kurulumu
+tamamlanana kadar GitHub Pages adresi mevcut yayın olarak kalır. Kurulum
+adımları `docs/cloudflare-access.md` dosyasındadır.
+
 GitHub Actions, Steam takvimini her gün Türkiye saatiyle yaklaşık 09:00’da
 yeniler ve `out/index.html` çıktısını GitHub Pages’e yayınlar. `main` dalına
 gönderilen her değişiklikte de site yeniden oluşturulur. Depo kökündeki
-`index.html`, branch tabanlı Pages ayarı için aynı dashboard’un yedek çıktısıdır.
+`index.html`, branch tabanlı Pages ayarı için aynı dashboard’un yedek çıktısıdır
+ve günlük veri commitine otomatik olarak dahil edilir.
 
 ## Neler yapar?
 
@@ -19,11 +25,15 @@ gönderilen her değişiklikte de site yeniden oluşturulur. Depo kökündeki
 - Temalı festivalleri, Next Fest tarihlerini ve sezon indirimlerini birleştirir.
 - Etkinlik detaylarında yayınlanan kayıt, demo inceleme ve pazarlama tarihlerini
   çıkarır.
+- Detay sayfalarını en fazla yedi günde bir ve istekler arasında bekleyerek
+  kontrol eder; etkinlik tarihleri değişirse önbelleği beklemeden yeniler.
 - `out/steam-etkinlikleri.html` ve GitHub Pages için `out/index.html` içinde
   aranabilir Türkçe liste üretir.
 - Resend API veya standart SMTP üzerinden günlük e-posta gönderebilir.
 - Aynı yerel günde ikinci kez e-posta göndermez.
 - Steam hesabında kayıt, opt-in veya başka bir değişiklik yapmaz.
+- Oyun adı yazılırken korumalı Worker üzerinden Steam Store sonuçlarını arar ve
+  seçimde oyun adıyla App ID'yi otomatik doldurur.
 
 ## Kurulum
 
@@ -42,6 +52,7 @@ npm run daily
 
 ```dotenv
 EMAIL_TO=alici@ornek.com
+EMAIL_BCC=kisisel-kopya@ornek.com
 EMAIL_FROM="Steam Etkinlik Radarı <bot@alanadiniz.com>"
 ```
 
@@ -64,6 +75,11 @@ saatiyle yaklaşık 09:30’da çalışır. Depoda **Settings → Secrets and va
 - Ad: `GMAIL_APP_PASSWORD`
 - Değer: `batuhan.ozmen@gaminginturkey.com` hesabı için üretilen 16 karakterlik
   Google uygulama şifresi (boşluksuz)
+
+Workflow, ana özeti `business.dev@gaminginturkey.com` grubuna gönderirken
+`batuhan.ozmen@gaminginturkey.com` adresine görünmeyen bir BCC kopyası da
+teslim eder. Bu, Google Groups’un göndericinin kendi grup postasını Inbox’a
+geri vermediği durumlarda doğrudan Inbox kopyası sağlar.
 
 Normal Google hesap şifresini kullanmayın ve uygulama şifresini Git’e
 eklemeyin. Kurulumdan sonra **Actions → Steam Event Radar - Daily Email → Run

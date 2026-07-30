@@ -1,4 +1,7 @@
-import { deadlineCopy } from "./deadline-copy.js";
+import {
+  deadlineCopy,
+  stableDeadlineId,
+} from "./deadline-copy.js";
 import type { SteamEvent } from "./types.js";
 import { stableId } from "./utils.js";
 
@@ -11,6 +14,7 @@ export interface EventTask {
   description: string;
   href: string;
   dueAt?: string;
+  legacyIds: string[];
 }
 
 const DISCOUNT_DASHBOARD =
@@ -21,30 +25,70 @@ const THEMED_FEST_GUIDE =
 function task(
   event: SteamEvent,
   key: string,
-  value: Omit<EventTask, "id">,
+  value: Omit<EventTask, "id" | "legacyIds">,
+  legacyKeys: string[] = [],
 ): EventTask {
+  const id = stableId(event.id, "task", key);
   return {
-    id: stableId(event.id, "task", key),
+    id,
+    legacyIds: [
+      ...new Set(
+        legacyKeys
+          .map((legacyKey) => stableId(event.id, "task", legacyKey))
+          .filter((legacyId) => legacyId !== id),
+      ),
+    ],
     ...value,
   };
 }
 
 export function buildEventTasks(event: SteamEvent): EventTask[] {
+  const categoryTotals = new Map<string, number>();
+  for (const deadline of event.deadlines) {
+    const category = deadlineCopy(deadline).category;
+    categoryTotals.set(category, (categoryTotals.get(category) || 0) + 1);
+  }
+  const categoryOccurrences = new Map<string, number>();
   const tasks: EventTask[] = event.deadlines.map((deadline) => {
     const copy = deadlineCopy(deadline);
-    return task(event, deadline.id, {
-      level:
-        copy.category === "Başvuru" || copy.category === "Demo & Mağaza"
-          ? "Gerekli"
-          : "Önerilen",
-      title: copy.title,
-      description: copy.description,
-      href:
-        copy.category === "Başvuru" && event.registrationUrl
-          ? event.registrationUrl
-          : deadline.sourceUrl,
-      dueAt: deadline.dueAt,
-    });
+    const occurrence =
+      (categoryOccurrences.get(copy.category) || 0) + 1;
+    categoryOccurrences.set(copy.category, occurrence);
+    const fallbackSemanticDeadlineId = stableDeadlineId(
+      event.id,
+      deadline,
+      occurrence,
+    );
+    const semanticDeadlineId =
+      Array.from(
+        { length: categoryTotals.get(copy.category) || 1 },
+        (_, index) => stableDeadlineId(event.id, deadline, index + 1),
+      ).find((candidate) => candidate === deadline.id) ||
+      fallbackSemanticDeadlineId;
+    const legacyDeadlineId = stableId(
+      event.id,
+      deadline.kind,
+      deadline.dueAt,
+      deadline.label,
+    );
+    return task(
+      event,
+      semanticDeadlineId,
+      {
+        level:
+          copy.category === "Başvuru" || copy.category === "Demo & Mağaza"
+            ? "Gerekli"
+            : "Önerilen",
+        title: copy.title,
+        description: copy.description,
+        href:
+          copy.category === "Başvuru" && event.registrationUrl
+            ? event.registrationUrl
+            : deadline.sourceUrl,
+        dueAt: deadline.dueAt,
+      },
+      [deadline.id, legacyDeadlineId],
+    );
   });
 
   const hasRegistrationDeadline = event.deadlines.some(

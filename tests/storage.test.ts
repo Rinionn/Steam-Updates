@@ -16,6 +16,7 @@ const event: SteamEvent = {
   startAt: "2026-08-03T17:00:00Z",
   endAt: "2026-08-10T17:00:00Z",
   sourceUrl: "https://partner.steamgames.com/doc/marketing/upcoming_events",
+  matchTags: [],
   deadlines: [],
 };
 
@@ -37,6 +38,7 @@ describe("snapshot merge", () => {
     expect(first.added).toHaveLength(1);
     expect(second.added).toHaveLength(0);
     expect(second.changed).toHaveLength(0);
+    expect(second.changes).toHaveLength(0);
     expect(second.snapshot.events[0].firstSeenAt).toBe(
       first.snapshot.events[0].firstSeenAt,
     );
@@ -56,6 +58,112 @@ describe("snapshot merge", () => {
       new Date("2026-07-31T06:00:00Z"),
     );
     expect(result.changed).toHaveLength(1);
+    expect(result.changes).toEqual([
+      expect.objectContaining({
+        eventId: event.id,
+        kind: "date_shifted",
+        field: "startAt",
+        before: event.startAt,
+        after: "2026-08-04T17:00:00Z",
+      }),
+    ]);
+  });
+
+  it("tracks deadline due date changes", () => {
+    const previousEvent: SteamEvent = {
+      ...event,
+      deadlines: [
+        {
+          id: "deadline-old",
+          kind: "registration",
+          label: "Registration deadline",
+          dueAt: "2026-07-20T07:00:00Z",
+          sourceUrl: event.sourceUrl,
+        },
+      ],
+    };
+    const currentEvent: SteamEvent = {
+      ...event,
+      deadlines: [
+        {
+          id: "deadline-new",
+          kind: "registration",
+          label: "Registration deadline",
+          dueAt: "2026-07-22T07:00:00Z",
+          sourceUrl: event.sourceUrl,
+        },
+      ],
+    };
+    const previous = mergeSnapshot(
+      undefined,
+      [previousEvent],
+      event.sourceUrl,
+      new Date("2026-07-01T06:00:00Z"),
+    ).snapshot;
+    const result = mergeSnapshot(
+      previous,
+      [currentEvent],
+      event.sourceUrl,
+      new Date("2026-07-02T06:00:00Z"),
+    );
+
+    expect(result.changed).toHaveLength(1);
+    expect(result.changes).toEqual([
+      expect.objectContaining({
+        eventId: event.id,
+        kind: "deadline_changed",
+        before: "2026-07-20T07:00:00Z",
+        after: "2026-07-22T07:00:00Z",
+      }),
+    ]);
+  });
+
+  it("tracks removed events", () => {
+    const previous = mergeSnapshot(
+      undefined,
+      [event],
+      event.sourceUrl,
+      new Date("2026-07-01T06:00:00Z"),
+    ).snapshot;
+    const result = mergeSnapshot(
+      previous,
+      [],
+      event.sourceUrl,
+      new Date("2026-07-02T06:00:00Z"),
+    );
+
+    expect(result.removed).toHaveLength(1);
+    expect(result.changes).toEqual([
+      expect.objectContaining({
+        eventId: event.id,
+        eventName: event.name,
+        kind: "removed",
+      }),
+    ]);
+  });
+
+  it("tracks renamed events", () => {
+    const previous = mergeSnapshot(
+      undefined,
+      [event],
+      event.sourceUrl,
+      new Date("2026-07-01T06:00:00Z"),
+    ).snapshot;
+    const result = mergeSnapshot(
+      previous,
+      [{ ...event, name: "Renamed Fest" }],
+      event.sourceUrl,
+      new Date("2026-07-02T06:00:00Z"),
+    );
+
+    expect(result.changes).toEqual([
+      expect.objectContaining({
+        eventId: event.id,
+        kind: "renamed",
+        before: event.name,
+        after: "Renamed Fest",
+      }),
+    ]);
   });
 
   it("persists merge history across disk round trips", async () => {
