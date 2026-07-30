@@ -4,6 +4,7 @@ const CACHE_SECONDS = 30 * 60;
 const DETAIL_CACHE_SECONDS = 6 * 60 * 60;
 const MAX_RESULTS = 8;
 const MAX_TAGS = 20;
+const MAX_NEXT_FEST_RECORDS = 5;
 
 function decodeHtml(value) {
   return value
@@ -62,7 +63,42 @@ export function parseSteamTags(html) {
   return tags;
 }
 
-function steamAppModel(appId, details, storeHtml) {
+export function parseNextFestHistory(appId, payload) {
+  const items = Array.isArray(payload?.appnews?.newsitems)
+    ? payload.appnews.newsitems
+    : [];
+  return items
+    .filter((item) => {
+      const searchable = `${item?.title || ""} ${textFromHtml(
+        String(item?.contents || ""),
+      )}`;
+      return /\b(?:steam\s+)?next\s+fest\b/i.test(searchable);
+    })
+    .slice(0, MAX_NEXT_FEST_RECORDS)
+    .map((item) => {
+      const published = Number(item?.date);
+      let url = String(item?.url || "");
+      try {
+        const parsed = new URL(url);
+        if (parsed.protocol !== "https:") url = "";
+      } catch {
+        url = "";
+      }
+      return {
+        title: textFromHtml(String(item?.title || "Steam Next Fest")),
+        publishedAt: Number.isFinite(published)
+          ? new Date(published * 1000).toISOString()
+          : "",
+        url:
+          url ||
+          `https://store.steampowered.com/news/app/${appId}/view/${String(
+            item?.gid || "",
+          )}`,
+      };
+    });
+}
+
+function steamAppModel(appId, details, storeHtml, newsPayload) {
   const data = details?.[appId]?.success ? details[appId].data : null;
   const categories = Array.isArray(data?.categories)
     ? data.categories.map((item) => String(item?.description || ""))
@@ -102,6 +138,9 @@ function steamAppModel(appId, details, storeHtml) {
     releaseStatus,
     localMultiplayer: data ? localMultiplayer : null,
     storeUrl: `https://store.steampowered.com/app/${appId}/`,
+    capsuleImageUrl:
+      `https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/${appId}/library_600x900.jpg`,
+    nextFestHistory: parseNextFestHistory(appId, newsPayload),
   };
 }
 
@@ -252,8 +291,14 @@ export async function getSteamApp(request, env) {
   const storeUrl = new URL(`https://store.steampowered.com/app/${appId}/`);
   storeUrl.searchParams.set("cc", "TR");
   storeUrl.searchParams.set("l", "english");
+  const newsUrl = new URL(
+    "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/",
+  );
+  newsUrl.searchParams.set("appid", appId);
+  newsUrl.searchParams.set("count", "100");
+  newsUrl.searchParams.set("maxlength", "1200");
 
-  const [detailsResult, storeResult] = await Promise.allSettled([
+  const [detailsResult, storeResult, newsResult] = await Promise.allSettled([
     fetch(detailsUrl, {
       headers: {
         accept: "application/json",
@@ -267,6 +312,12 @@ export async function getSteamApp(request, env) {
         "user-agent": "Steam-Event-Radar/1.0",
       },
     }),
+    fetch(newsUrl, {
+      headers: {
+        accept: "application/json",
+        "user-agent": "Steam-Event-Radar/1.0",
+      },
+    }),
   ]);
 
   let details = null;
@@ -277,12 +328,16 @@ export async function getSteamApp(request, env) {
     storeResult.status === "fulfilled" && storeResult.value.ok
       ? await storeResult.value.text()
       : "";
+  let newsPayload = null;
+  if (newsResult.status === "fulfilled" && newsResult.value.ok) {
+    newsPayload = await newsResult.value.json();
+  }
   if (!details && !storeHtml) {
     return json({ error: "steam_unavailable" }, 502, cors);
   }
 
   const response = json(
-    steamAppModel(appId, details, storeHtml),
+    steamAppModel(appId, details, storeHtml, newsPayload),
     200,
     {
       ...cors,

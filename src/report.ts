@@ -43,6 +43,17 @@ function localDate(isoDate: string, withTime = false): string {
   return date.toFormat(withTime ? "d LLLL yyyy, HH:mm" : "d LLL yyyy");
 }
 
+function localDateEn(isoDate: string, withTime = false): string {
+  return DateTime.fromISO(isoDate, { zone: "utc" })
+    .setZone(config.timezone)
+    .setLocale("en")
+    .toFormat(withTime ? "d LLLL yyyy, HH:mm" : "d LLL yyyy");
+}
+
+function localizedText(tr: string, en: string): string {
+  return `<span data-copy-tr="${escapeHtml(tr)}" data-copy-en="${escapeHtml(en)}">${escapeHtml(tr)}</span>`;
+}
+
 function urgencyText(daysLeft: number): string {
   if (daysLeft < 0) return "Süre geçti";
   if (daysLeft === 0) return "Bugün";
@@ -91,13 +102,13 @@ function deadlineTimelineItem(item: DeadlineView): string {
   return `
     <div class="timeline-item ${daysLeft <= 3 ? "critical" : ""}">
       <div class="timeline-date">
-        <strong>${escapeHtml(localDate(deadline.dueAt, true))}</strong>
-        <span class="countdown">${escapeHtml(urgencyText(daysLeft))}</span>
+        <strong>${localizedText(localDate(deadline.dueAt, true), localDateEn(deadline.dueAt, true))}</strong>
+        <span class="countdown" data-days-left="${daysLeft}">${escapeHtml(urgencyText(daysLeft))}</span>
       </div>
       <div class="timeline-body">
-        <span class="pill">${escapeHtml(copy.category)}</span>
-        <h4>${escapeHtml(copy.title)}</h4>
-        <p>${escapeHtml(copy.description)}</p>
+        <span class="pill">${localizedText(copy.category, copy.categoryEn)}</span>
+        <h4>${localizedText(copy.title, copy.titleEn)}</h4>
+        <p>${localizedText(copy.description, copy.descriptionEn)}</p>
       </div>
       <a
         class="timeline-source"
@@ -105,7 +116,9 @@ function deadlineTimelineItem(item: DeadlineView): string {
         target="_blank"
         rel="noreferrer"
         aria-label="${escapeHtml(`${event.name} için kaynak sayfasını aç (yeni sekme)`)}"
-      >Kaynak <span aria-hidden="true">↗</span></a>
+        data-copy-aria-tr="${escapeHtml(`${event.name} için kaynak sayfasını aç (yeni sekme)`)}"
+        data-copy-aria-en="${escapeHtml(`Open the source page for ${event.name} (new tab)`)}"
+      ><span data-i18n="source">Kaynak</span> <span aria-hidden="true">↗</span></a>
     </div>`;
 }
 
@@ -120,7 +133,10 @@ function deadlineTimelineGroup(
           <span class="event-kind ${event.kind}">${escapeHtml(kindLabels[event.kind])}</span>
           <h3>${escapeHtml(event.name)}</h3>
         </div>
-        <span>${escapeHtml(localDate(event.startAt))} – ${escapeHtml(localDate(event.endAt))}</span>
+        <span>${localizedText(
+          `${localDate(event.startAt)} – ${localDate(event.endAt)}`,
+          `${localDateEn(event.startAt)} – ${localDateEn(event.endAt)}`,
+        )}</span>
       </div>
       <div class="timeline">${items.map(deadlineTimelineItem).join("")}</div>
     </article>`;
@@ -192,8 +208,8 @@ function eventRow(
       data-has-tasks="${tasks.length > 0}"
     >
       <div class="event-date">
-        <strong>${escapeHtml(localDate(event.startAt))}</strong>
-        <span>${escapeHtml(localDate(event.endAt))}</span>
+        <strong>${localizedText(localDate(event.startAt), localDateEn(event.startAt))}</strong>
+        <span>${localizedText(localDate(event.endAt), localDateEn(event.endAt))}</span>
       </div>
       <div class="event-main">
         <div class="event-heading">
@@ -216,8 +232,12 @@ function eventRow(
                 .slice(0, 3)
                 .map(
                   (deadline) =>
-                    `<span>⏱ ${escapeHtml(localDate(deadline.dueAt))} · ${escapeHtml(
+                    `<span>⏱ ${localizedText(
+                      localDate(deadline.dueAt),
+                      localDateEn(deadline.dueAt),
+                    )} · ${localizedText(
                       deadlineCopy(deadline).category,
+                      deadlineCopy(deadline).categoryEn,
                     )}</span>`,
                 )
                 .join("")}</div>`
@@ -233,6 +253,8 @@ function eventRow(
           target="_blank"
           rel="noreferrer"
           aria-label="${escapeHtml(`${event.name} için ${event.registrationUrl ? "kayıt sayfasını" : "detayları"} aç (yeni sekme)`)}"
+          data-copy-aria-tr="${escapeHtml(`${event.name} için ${event.registrationUrl ? "kayıt sayfasını" : "detayları"} aç (yeni sekme)`)}"
+          data-copy-aria-en="${escapeHtml(`Open ${event.registrationUrl ? "the registration page" : "details"} for ${event.name} (new tab)`)}"
         >
           <span data-i18n="${event.registrationUrl ? "registrationPage" : "details"}">${event.registrationUrl ? "Kayıt sayfası" : "Detaylar"}</span> <span aria-hidden="true">↗</span>
         </a>
@@ -241,6 +263,8 @@ function eventRow(
           type="button"
           data-ics="${escapeHtml(calendarPayload)}"
           aria-label="${escapeHtml(`${event.name} etkinliğini ICS olarak indir`)}"
+          data-copy-aria-tr="${escapeHtml(`${event.name} etkinliğini ICS olarak indir`)}"
+          data-copy-aria-en="${escapeHtml(`Download ${event.name} as an ICS event`)}"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
       ${
@@ -253,8 +277,14 @@ function eventRow(
 
 function eventTaskItem(task: EventTask, aliases: string[]): string {
   const due = task.dueAt
-    ? `<time>${escapeHtml(localDate(task.dueAt, true))}</time>`
+    ? `<time>${localizedText(localDate(task.dueAt, true), localDateEn(task.dueAt, true))}</time>`
     : "";
+  const levelEn =
+    task.level === "Gerekli"
+      ? "Required"
+      : task.level === "İsteğe bağlı"
+        ? "Optional"
+        : "Recommended";
   return `
     <div class="task-item">
       <input
@@ -265,18 +295,20 @@ function eventTaskItem(task: EventTask, aliases: string[]): string {
       >
       <label for="${escapeHtml(task.id)}">
         <span class="task-title">
-          <strong>${escapeHtml(task.title)}</strong>
-          <span class="task-level ${task.level === "Gerekli" ? "required" : ""}">${escapeHtml(task.level)}</span>
+          <strong>${localizedText(task.title, task.titleEn)}</strong>
+          <span class="task-level ${task.level === "Gerekli" ? "required" : ""}">${localizedText(task.level, levelEn)}</span>
           ${due}
         </span>
-        <span class="task-description">${escapeHtml(task.description)}</span>
+        <span class="task-description">${localizedText(task.description, task.descriptionEn)}</span>
       </label>
       <a
         href="${escapeHtml(task.href)}"
         target="_blank"
         rel="noreferrer"
         aria-label="${escapeHtml(`${task.title} görev bağlantısını aç (yeni sekme)`)}"
-      >Aç <span aria-hidden="true">↗</span></a>
+        data-copy-aria-tr="${escapeHtml(`${task.title} görev bağlantısını aç (yeni sekme)`)}"
+        data-copy-aria-en="${escapeHtml(`Open the ${task.titleEn} task link (new tab)`)}"
+      ><span data-i18n="open">Aç</span> <span aria-hidden="true">↗</span></a>
     </div>`;
 }
 
@@ -289,8 +321,8 @@ function eventTaskDetails(
   return `
     <details class="event-tasks" data-event-tasks="${escapeHtml(event.id)}"${openTasks ? " open" : ""}>
       <summary>
-        <span>Görevler</span>
-        <span class="task-progress" data-task-progress aria-live="polite">0/${tasks.length} tamamlandı</span>
+        <span data-i18n="tasks">Görevler</span>
+        <span class="task-progress" data-task-progress aria-live="polite" data-task-total="${tasks.length}">0/${tasks.length} tamamlandı</span>
       </summary>
       <div class="task-list">${tasks
         .map((task) =>
@@ -500,7 +532,7 @@ export function renderReport(
     .timeline-chip.game-match { box-shadow:inset 0 0 0 2px var(--color-accent-pink); }
     .timeline-game-match { margin-top:5px; color:inherit; font-size:9px; font-weight:900; text-transform:none; }
     .timeline-chip.tasks-complete { opacity:.52; filter:saturate(.45); }
-    .timeline-chip.tasks-complete::after { content:"✓ Tamamlandı"; display:block; margin-top:4px; font-size:9px; font-weight:800; }
+    .timeline-chip.tasks-complete::after { content:attr(data-complete-label); display:block; margin-top:4px; font-size:9px; font-weight:800; }
     .timeline-chip span,.timeline-chip strong { display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .timeline-chip span { font-size:9px; font-weight:800; letter-spacing:.03em; text-transform:uppercase; }
     .timeline-chip strong { margin-top:3px; font-size:11px; }
@@ -532,14 +564,24 @@ export function renderReport(
     .game-form-actions button:first-child { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-weight:800; }
     .game-help,.game-match-summary { margin:10px 0 0; color:var(--color-muted); font-size:12px; line-height:1.5; }
     .game-list { display:grid; gap:9px; margin-top:16px; }
-    .game-profile { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:10px; padding:12px; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel-subtle); }
+    .game-profile { display:grid; grid-template-columns:72px minmax(0,1fr); gap:12px; padding:12px; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel-subtle); }
+    .game-capsule { width:72px; aspect-ratio:2 / 3; object-fit:cover; border:1px solid var(--color-line); border-radius:9px; background:var(--color-soft); }
+    .game-capsule-fallback { display:grid; place-items:center; width:72px; aspect-ratio:2 / 3; padding:7px; border:1px solid var(--color-line); border-radius:9px; color:var(--color-muted); background:var(--color-soft); font-size:9px; font-weight:800; text-align:center; overflow-wrap:anywhere; }
+    .game-profile-body { min-width:0; }
     .game-profile strong,.game-profile small { display:block; overflow-wrap:anywhere; }
     .game-profile small { margin-top:4px; color:var(--color-muted); line-height:1.45; }
-    .game-profile-actions { display:flex; align-items:flex-start; flex-wrap:wrap; gap:6px; }
+    .game-profile-actions { display:flex; align-items:flex-start; flex-wrap:wrap; gap:6px; margin-top:9px; }
     .game-profile-actions button { min-height:36px; padding:7px 10px; font-size:11px; }
     .game-profile-actions [data-game-delete] { color:var(--color-danger); }
-    .game-match-result { display:flex; flex-wrap:wrap; gap:7px; margin-top:10px; }
+    .game-match-result { display:grid; grid-template-columns:repeat(auto-fill,minmax(96px,1fr)); gap:8px; margin-top:12px; }
     .game-match-result[hidden],.game-match-warning[hidden] { display:none; }
+    .game-match-card { display:grid; grid-template-columns:40px minmax(0,1fr); gap:7px; align-items:center; min-width:0; padding:7px; border:1px solid var(--color-line); border-radius:10px; color:var(--color-soft-text); background:var(--color-soft); }
+    .game-match-card .game-capsule,.game-match-card .game-capsule-fallback { width:40px; border-radius:6px; }
+    .game-match-card strong,.game-match-card small { display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; }
+    .game-match-card strong { font-size:10px; white-space:nowrap; }
+    .game-match-card small { margin-top:3px; color:var(--color-muted); font-size:9px; line-height:1.3; }
+    .next-fest-history { margin-top:8px; padding:8px; border-left:3px solid var(--color-amber); border-radius:7px; color:var(--color-muted); background:var(--color-soft); font-size:10px; line-height:1.4; }
+    .next-fest-history a { color:var(--color-link); font-weight:800; }
     .game-match-badge { max-width:100%; padding:6px 9px; overflow-wrap:anywhere; border:1px solid var(--color-line); border-radius:999px; color:var(--color-link); background:var(--color-soft); font-size:11px; font-weight:800; }
     .game-match-warning { margin-top:10px; padding:9px 10px; overflow-wrap:anywhere; border:1px solid var(--color-danger); border-radius:10px; color:var(--color-danger); background:var(--color-soft); font-size:12px; line-height:1.45; }
     .deadline-groups { display:grid; gap:14px; }
@@ -664,6 +706,8 @@ export function renderReport(
       .filters,.status-filters { width:auto; }
       .games-only-filter { width:auto; }
       .game-form { grid-template-columns:repeat(3,minmax(0,1fr)); }
+      .game-profile { grid-template-columns:84px minmax(0,1fr); }
+      .game-profile .game-capsule,.game-profile .game-capsule-fallback { width:84px; }
       .task-state-toolbar { align-items:center; flex-direction:row; justify-content:space-between; }
       .task-state-status { text-align:right; }
       .event-row { grid-template-columns:145px minmax(0,1fr) auto; gap:20px; padding:20px; }
@@ -811,7 +855,10 @@ export function renderReport(
     <section class="section">
       <div class="section-title">
         <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
-        <p><span data-i18n="lastUpdated">Son güncelleme:</span> ${escapeHtml(model.generated.setLocale("tr").toFormat("d LLLL yyyy, HH:mm"))}</p>
+        <p><span data-i18n="lastUpdated">Son güncelleme:</span> ${localizedText(
+          model.generated.setLocale("tr").toFormat("d LLLL yyyy, HH:mm"),
+          model.generated.setLocale("en").toFormat("d LLLL yyyy, HH:mm"),
+        )}</p>
       </div>
       <div class="toolbar">
         <label class="sr-only" for="search" data-i18n="searchEvents">Etkinlik ara</label>
@@ -1093,6 +1140,9 @@ export function renderReport(
       },
       details: { tr: "Detaylar", en: "Details" },
       addToCalendar: { tr: "Takvime ekle", en: "Add to calendar" },
+      source: { tr: "Kaynak", en: "Source" },
+      open: { tr: "Aç", en: "Open" },
+      tasks: { tr: "Görevler", en: "Tasks" },
       openRegistration: {
         tr: "Başvurusu hâlâ açık olanlar",
         en: "Registration still open",
@@ -1160,6 +1210,54 @@ export function renderReport(
             ? element.dataset.monthEn
             : element.dataset.monthTr;
       });
+      document.querySelectorAll("[data-copy-tr]").forEach((element) => {
+        element.textContent =
+          descriptionLanguage === "en"
+            ? element.dataset.copyEn
+            : element.dataset.copyTr;
+      });
+      document.querySelectorAll("[data-copy-aria-tr]").forEach((element) => {
+        element.setAttribute(
+          "aria-label",
+          descriptionLanguage === "en"
+            ? element.dataset.copyAriaEn
+            : element.dataset.copyAriaTr,
+        );
+      });
+      document.querySelectorAll("[data-days-left]").forEach((element) => {
+        const daysLeft = Number(element.dataset.daysLeft);
+        element.textContent =
+          descriptionLanguage === "en"
+            ? daysLeft < 0
+              ? "Passed"
+              : daysLeft === 0
+                ? "Today"
+                : daysLeft === 1
+                  ? "Tomorrow"
+                  : daysLeft + " days left"
+            : daysLeft < 0
+              ? "Süre geçti"
+              : daysLeft === 0
+                ? "Bugün"
+                : daysLeft === 1
+                  ? "Yarın"
+                  : daysLeft + " gün kaldı";
+      });
+      document.querySelectorAll("[data-task-progress]").forEach((progress) => {
+        const group = progress.closest("[data-event-tasks]");
+        const total = Number(progress.dataset.taskTotal || 0);
+        const done = group
+          ? group.querySelectorAll("[data-task-id]:checked").length
+          : 0;
+        progress.textContent =
+          done +
+          "/" +
+          total +
+          localized(" tamamlandı", " completed");
+      });
+      document.querySelectorAll(".timeline-chip.tasks-complete").forEach((chip) => {
+        chip.dataset.completeLabel = localized("✓ Tamamlandı", "✓ Completed");
+      });
       languageButtons.forEach((button) => {
         setToggleState(
           button,
@@ -1193,7 +1291,10 @@ export function renderReport(
         document.execCommand("copy");
         calendarUrlInput.setSelectionRange(0, 0);
       }
-      calendarCopyStatus.textContent = "Bağlantı kopyalandı.";
+      calendarCopyStatus.textContent = localized(
+        "Bağlantı kopyalandı.",
+        "Link copied.",
+      );
     });
 
     document.querySelectorAll("[data-ics]").forEach((button) => {
@@ -1235,6 +1336,7 @@ export function renderReport(
     let steamSearchController;
     let steamDetailController;
     let steamOptions = [];
+    let selectedSteamDetails = null;
 
     function safeSteamImage(value) {
       try {
@@ -1302,6 +1404,12 @@ export function renderReport(
         if (typeof details.localMultiplayer === "boolean") {
           gameLocalInput.value = details.localMultiplayer ? "yes" : "no";
         }
+        selectedSteamDetails = {
+          capsuleImageUrl: safeSteamImage(details.capsuleImageUrl),
+          nextFestHistory: normalizeNextFestHistory(
+            details.nextFestHistory,
+          ),
+        };
         steamSearchStatus.textContent =
           option.name +
           localized(
@@ -1426,6 +1534,7 @@ export function renderReport(
         }
         delete gameNameInput.dataset.selectedSteamName;
         delete gameNameInput.dataset.selectedSteamAppId;
+        selectedSteamDetails = null;
       }
       window.clearTimeout(steamSearchTimer);
       steamSearchController?.abort();
@@ -1529,6 +1638,46 @@ export function renderReport(
         });
     }
 
+    function normalizeNextFestHistory(value) {
+      if (!Array.isArray(value)) return [];
+      return value
+        .filter((item) => item && typeof item === "object")
+        .map((item) => {
+          let url = "";
+          try {
+            const parsed = new URL(String(item.url || ""));
+            if (
+              parsed.protocol === "https:" &&
+              (parsed.hostname.endsWith(".steampowered.com") ||
+                parsed.hostname.endsWith(".steamcommunity.com"))
+            ) {
+              url = parsed.toString();
+            }
+          } catch {}
+          return {
+            title: String(item.title || "Steam Next Fest")
+              .trim()
+              .slice(0, 180),
+            publishedAt: /^\\d{4}-\\d{2}-\\d{2}T/.test(
+              String(item.publishedAt || ""),
+            )
+              ? String(item.publishedAt)
+              : "",
+            url,
+          };
+        })
+        .filter((item) => item.title && item.url)
+        .slice(0, 5);
+    }
+
+    function defaultCapsuleUrl(appId) {
+      return appId
+        ? "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" +
+            encodeURIComponent(appId) +
+            "/library_600x900.jpg"
+        : "";
+    }
+
     function normalizeGames(value) {
       if (!Array.isArray(value)) return [];
       return value
@@ -1552,6 +1701,19 @@ export function renderReport(
             ? game.releaseStatus
             : "unreleased",
           localMultiplayer: game.localMultiplayer === true,
+          capsuleImageUrl:
+            safeSteamImage(game.capsuleImageUrl) ||
+            defaultCapsuleUrl(
+              String(game.appId || "").replace(/\\D/g, "").slice(0, 12),
+            ),
+          nextFestHistory: normalizeNextFestHistory(
+            game.nextFestHistory,
+          ),
+          steamDetailsCheckedAt: /^\\d{4}-\\d{2}-\\d{2}T/.test(
+            String(game.steamDetailsCheckedAt || ""),
+          )
+            ? String(game.steamDetailsCheckedAt)
+            : "",
         }))
         .filter((game) => game.name);
     }
@@ -1601,6 +1763,64 @@ export function renderReport(
       return parts.join(" · ");
     }
 
+    function createGameCapsule(game) {
+      const imageUrl =
+        safeSteamImage(game.capsuleImageUrl) ||
+        defaultCapsuleUrl(game.appId);
+      if (!imageUrl) {
+        const fallback = document.createElement("span");
+        fallback.className = "game-capsule-fallback";
+        fallback.textContent = game.name;
+        return fallback;
+      }
+      const image = document.createElement("img");
+      image.className = "game-capsule";
+      image.src = imageUrl;
+      image.alt = game.name + localized(" dikey kapsülü", " vertical capsule");
+      image.loading = "lazy";
+      image.addEventListener(
+        "error",
+        () => {
+          const fallback = document.createElement("span");
+          fallback.className = "game-capsule-fallback";
+          fallback.textContent = game.name;
+          image.replaceWith(fallback);
+        },
+        { once: true },
+      );
+      return image;
+    }
+
+    function nextFestHistoryBlock(game) {
+      if (!game.nextFestHistory.length) return null;
+      const box = document.createElement("div");
+      box.className = "next-fest-history";
+      const lead = document.createElement("strong");
+      lead.textContent = localized(
+        "Steam duyurularında geçmiş Next Fest kaydı bulundu.",
+        "A previous Next Fest record was found in Steam announcements.",
+      );
+      const link = document.createElement("a");
+      const record = game.nextFestHistory[0];
+      link.href = record.url;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      const date = record.publishedAt
+        ? new Intl.DateTimeFormat(
+            descriptionLanguage === "en" ? "en-GB" : "tr-TR",
+            { dateStyle: "medium" },
+          ).format(new Date(record.publishedAt))
+        : "";
+      link.textContent = (date ? date + " · " : "") + record.title;
+      const note = document.createElement("span");
+      note.textContent = localized(
+        " Bu kayıt gelecekteki Next Fest uygunluğunu garanti etmez.",
+        " This record does not guarantee eligibility for a future Next Fest.",
+      );
+      box.append(lead, document.createElement("br"), link, note);
+      return box;
+    }
+
     function renderGames() {
       gamesList.replaceChildren();
       games.forEach((game) => {
@@ -1608,6 +1828,7 @@ export function renderReport(
         item.className = "game-profile";
 
         const body = document.createElement("div");
+        body.className = "game-profile-body";
         const name = document.createElement("strong");
         name.textContent = game.name;
         const meta = document.createElement("small");
@@ -1617,6 +1838,8 @@ export function renderReport(
           ? localized("Etiketler: ", "Tags: ") + game.tags.join(", ")
           : localized("Etiket girilmedi", "No tags entered");
         body.append(name, meta, tags);
+        const history = nextFestHistoryBlock(game);
+        if (history) body.append(history);
 
         const actions = document.createElement("div");
         actions.className = "game-profile-actions";
@@ -1637,7 +1860,8 @@ export function renderReport(
           game.name + localized(" oyununu sil", " delete game"),
         );
         actions.append(edit, remove);
-        item.append(body, actions);
+        body.append(actions);
+        item.append(createGameCapsule(game), body);
         gamesList.append(item);
       });
     }
@@ -1647,6 +1871,7 @@ export function renderReport(
       gameIdInput.value = "";
       delete gameNameInput.dataset.selectedSteamName;
       delete gameNameInput.dataset.selectedSteamAppId;
+      selectedSteamDetails = null;
       closeSteamResults();
       steamSearchStatus.textContent = translate("typeTwoChars");
       gameCancel.hidden = true;
@@ -1681,22 +1906,30 @@ export function renderReport(
     }
 
     function appendMatchBadge(container, match) {
-      const badge = document.createElement("span");
-      badge.className = "game-match-badge";
-      badge.textContent = match.nextFest
-        ? "★ " +
-          match.game.name +
-          localized(" · Next Fest adayı", " · Next Fest candidate")
-        : "★ " +
-          match.game.name +
-          " · " +
-          match.score +
-          localized(" etiket", match.score === 1 ? " tag" : " tags");
+      const badge = document.createElement("div");
+      badge.className = "game-match-card";
+      const copy = document.createElement("span");
+      const name = document.createElement("strong");
+      name.textContent = "★ " + match.game.name;
+      const detail = document.createElement("small");
+      detail.textContent = match.nextFest
+        ? localized("Next Fest adayı", "Next Fest candidate")
+        : match.score +
+          localized(" etiket eşleşmesi", match.score === 1 ? " tag match" : " tag matches");
+      copy.append(name, detail);
+      badge.append(createGameCapsule(match.game), copy);
       badge.setAttribute(
         "aria-label",
         match.nextFest
-          ? match.game.name + " Next Fest çıkış kuralını karşılıyor"
-          : match.game.name + ", " + match.score + " birebir etiket eşleşmesi",
+          ? match.game.name +
+            localized(
+              " Next Fest çıkış kuralını karşılıyor",
+              " meets the Next Fest release-status rule",
+            )
+          : match.game.name +
+            ", " +
+            match.score +
+            localized(" birebir etiket eşleşmesi", " exact tag matches"),
       );
       container.append(badge);
     }
@@ -1789,9 +2022,61 @@ export function renderReport(
       apply();
     }
 
+    async function refreshSavedGameDetails() {
+      if (location.protocol === "file:") return;
+      const refreshCutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
+      const pending = games.filter(
+        (game) =>
+          game.appId &&
+          (!game.steamDetailsCheckedAt ||
+            Date.parse(game.steamDetailsCheckedAt) < refreshCutoff),
+      );
+      let changed = false;
+      for (const game of pending) {
+        try {
+          const response = await fetch(
+            "/api/steam-app?appid=" + encodeURIComponent(game.appId),
+            { headers: { accept: "application/json" } },
+          );
+          if (!response.ok) continue;
+          const details = await response.json();
+          if (Array.isArray(details.tags) && details.tags.length > 0) {
+            game.tags = normalizeTags(details.tags);
+          }
+          if (["none", "live"].includes(details.demoStatus)) {
+            game.demoStatus = details.demoStatus;
+          }
+          if (
+            ["unreleased", "early_access", "released"].includes(
+              details.releaseStatus,
+            )
+          ) {
+            game.releaseStatus = details.releaseStatus;
+          }
+          if (typeof details.localMultiplayer === "boolean") {
+            game.localMultiplayer = details.localMultiplayer;
+          }
+          game.capsuleImageUrl =
+            safeSteamImage(details.capsuleImageUrl) ||
+            game.capsuleImageUrl ||
+            defaultCapsuleUrl(game.appId);
+          game.nextFestHistory = normalizeNextFestHistory(
+            details.nextFestHistory,
+          );
+          game.steamDetailsCheckedAt = new Date().toISOString();
+          changed = true;
+        } catch {}
+      }
+      if (!changed) return;
+      writeGames();
+      renderGames();
+      updateGameMatches();
+    }
+
     let games = readGames();
     renderGames();
     updateGameMatches();
+    refreshSavedGameDetails();
 
     gameForm?.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -1805,6 +2090,17 @@ export function renderReport(
         demoStatus: gameDemoInput.value,
         releaseStatus: gameReleaseInput.value,
         localMultiplayer: gameLocalInput.value === "yes",
+        capsuleImageUrl:
+          selectedSteamDetails?.capsuleImageUrl ||
+          defaultCapsuleUrl(gameAppIdInput.value.replace(/\\D/g, "").slice(0, 12)),
+        nextFestHistory:
+          selectedSteamDetails?.nextFestHistory ||
+          games.find((item) => item.id === gameIdInput.value)?.nextFestHistory ||
+          [],
+        steamDetailsCheckedAt: selectedSteamDetails
+          ? new Date().toISOString()
+          : games.find((item) => item.id === gameIdInput.value)
+              ?.steamDetailsCheckedAt || "",
       };
       const index = games.findIndex((item) => item.id === game.id);
       if (index >= 0) games[index] = game;
@@ -1831,6 +2127,10 @@ export function renderReport(
         gameDemoInput.value = game.demoStatus;
         gameReleaseInput.value = game.releaseStatus;
         gameLocalInput.value = game.localMultiplayer ? "yes" : "no";
+        selectedSteamDetails = {
+          capsuleImageUrl: game.capsuleImageUrl,
+          nextFestHistory: game.nextFestHistory,
+        };
         gameCancel.hidden = false;
         gameForm.querySelector("[data-game-submit]").textContent =
           localized("Değişiklikleri kaydet", "Save changes");
@@ -2017,7 +2317,13 @@ export function renderReport(
       const boxes = [...group.querySelectorAll("[data-task-id]")];
       const done = boxes.filter((box) => box.checked).length;
       const progress = group.querySelector("[data-task-progress]");
-      if (progress) progress.textContent = done + "/" + boxes.length + " tamamlandı";
+      if (progress) {
+        progress.textContent =
+          done +
+          "/" +
+          boxes.length +
+          localized(" tamamlandı", " completed");
+      }
       const allComplete = boxes.length > 0 && done === boxes.length;
       const eventRow = group.closest(".event-row");
       eventRow?.classList.toggle("tasks-complete", allComplete);
@@ -2025,7 +2331,13 @@ export function renderReport(
         document.querySelectorAll(".timeline-chip").forEach((chip) => {
           if (chip.getAttribute("href") !== "#" + eventRow.id) return;
           chip.classList.toggle("tasks-complete", allComplete);
-          chip.dataset.taskAriaSuffix = allComplete ? " (tamamlandı)" : "";
+          chip.dataset.completeLabel = localized(
+            "✓ Tamamlandı",
+            "✓ Completed",
+          );
+          chip.dataset.taskAriaSuffix = allComplete
+            ? localized(" (tamamlandı)", " (completed)")
+            : "";
           refreshTimelineChipAria(chip);
         });
       }

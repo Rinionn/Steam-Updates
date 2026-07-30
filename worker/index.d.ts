@@ -13,6 +13,12 @@ export interface SteamAppDetails {
   releaseStatus: "unreleased" | "early_access" | "released" | null;
   localMultiplayer: boolean | null;
   storeUrl: string;
+  capsuleImageUrl: string;
+  nextFestHistory: Array<{
+    title: string;
+    publishedAt: string;
+    url: string;
+  }>;
 }
 
 export interface WorkerEnvironment {
@@ -27,6 +33,10 @@ export interface WorkerEnvironment {
 
 export function parseSteamSuggestions(html: string): SteamSuggestion[];
 export function parseSteamTags(html: string): string[];
+export function parseNextFestHistory(
+  appId: string,
+  payload: unknown,
+): SteamAppDetails["nextFestHistory"];
 
 export function searchSteam(
   request: Request,

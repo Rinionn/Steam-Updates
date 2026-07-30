@@ -2,6 +2,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   default as worker,
   getSteamApp,
+  parseNextFestHistory,
   parseSteamSuggestions,
   parseSteamTags,
   searchSteam,
@@ -34,6 +35,27 @@ const appDetails = {
   },
 };
 
+const appNews = {
+  appnews: {
+    newsitems: [
+      {
+        gid: "123",
+        title: "We are joining Steam Next Fest!",
+        contents: "Play our demo during the festival.",
+        date: 1717200000,
+        url: "https://store.steampowered.com/news/app/1091500/view/123",
+      },
+      {
+        gid: "456",
+        title: "Regular update",
+        contents: "Patch notes",
+        date: 1717100000,
+        url: "https://store.steampowered.com/news/app/1091500/view/456",
+      },
+    ],
+  },
+};
+
 afterEach(() => {
   vi.unstubAllGlobals();
 });
@@ -62,6 +84,15 @@ describe("Steam search Worker", () => {
     expect(parseSteamTags(storeHtml)).toEqual(["Cyberpunk", "RPG"]);
   });
 
+  it("Next Fest geçmişini yalnız kaynaklı Steam duyurularından çıkarır", () => {
+    expect(parseNextFestHistory("1091500", appNews)).toEqual([
+      expect.objectContaining({
+        title: "We are joining Steam Next Fest!",
+        url: "https://store.steampowered.com/news/app/1091500/view/123",
+      }),
+    ]);
+  });
+
   it("seçilen oyunun doğrulanabilir Steam alanlarını döndürür", async () => {
     vi.stubGlobal(
       "fetch",
@@ -70,7 +101,10 @@ describe("Steam search Worker", () => {
         .mockResolvedValueOnce(
           new Response(JSON.stringify(appDetails), { status: 200 }),
         )
-        .mockResolvedValueOnce(new Response(storeHtml, { status: 200 })),
+        .mockResolvedValueOnce(new Response(storeHtml, { status: 200 }))
+        .mockResolvedValueOnce(
+          new Response(JSON.stringify(appNews), { status: 200 }),
+        ),
     );
     const response = await getSteamApp(
       new Request(
@@ -92,6 +126,13 @@ describe("Steam search Worker", () => {
       demoStatus: "live",
       releaseStatus: "released",
       localMultiplayer: true,
+      capsuleImageUrl:
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900.jpg",
+      nextFestHistory: [
+        expect.objectContaining({
+          title: "We are joining Steam Next Fest!",
+        }),
+      ],
     });
   });
 
