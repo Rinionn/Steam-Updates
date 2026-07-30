@@ -4,13 +4,15 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - data/events.json
   workflow_dispatch:
   schedule:
     # 09:00 Europe/Istanbul (UTC+3)
     - cron: "0 6 * * *"
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -36,6 +38,20 @@ jobs:
 
       - name: Steam takvimini guncelle
         run: npm run sync
+
+      - name: Steam anlik goruntusunu kaydet
+        shell: bash
+        run: |
+          git add data/events.json
+          if git diff --cached --quiet; then
+            echo "Steam anlik goruntusunde degisiklik yok."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(data): steam takvimi guncellendi"
+          git push origin HEAD:main
 
       - name: GitHub Pages'i hazirla
         uses: actions/configure-pages@v5

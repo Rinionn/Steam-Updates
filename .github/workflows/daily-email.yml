@@ -1,11 +1,6 @@
 name: Steam Event Radar - Daily Email
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/daily-email.yml"
   workflow_dispatch:
   schedule:
     # 09:30 Europe/Istanbul (UTC+3)
@@ -54,5 +49,5 @@ jobs:
             exit 1
           fi
 
-      - name: Steam'i guncelle ve gunluk ozeti gonder
-        run: npm run daily
+      - name: Gunluk ozeti gonder
+        run: npm run email
