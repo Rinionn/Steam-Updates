@@ -112,22 +112,8 @@
       border: 0;
     }
     .shell { width: min(calc(100% - 20px), 1180px); margin: 0 auto; padding: 20px 0 56px; }
-    .menu-toggle {
-      position:fixed; z-index:40; top:12px; left:12px; width:44px; height:44px;
-      padding:0; color:var(--color-on-accent); border:1px solid var(--color-hero-line);
-      border-radius:13px; background:var(--color-hero-start); box-shadow:0 8px 28px var(--color-shadow);
-      font-size:22px; line-height:1;
-    }
-    .site-menu {
-      position:fixed; z-index:39; inset:0 auto 0 0; width:min(86vw,310px); padding:74px 16px 24px;
-      color:var(--color-on-accent); background:var(--color-hero-start); box-shadow:16px 0 50px var(--color-shadow);
-    }
-    .site-menu[hidden] { display:none; }
-    .site-menu strong { display:block; margin:0 8px 14px; color:var(--color-hero-muted); font-size:11px; letter-spacing:.1em; text-transform:uppercase; }
-    .site-menu a { display:block; padding:12px 14px; border-radius:11px; color:var(--color-hero-copy); font-size:14px; font-weight:800; text-decoration:none; }
-    .site-menu a:hover,.site-menu a:focus-visible { color:var(--color-on-accent); background:var(--color-hero-card); }
-    .view-tabs { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin:22px 0 0; padding:5px; border:1px solid var(--color-line); border-radius:15px; background:var(--color-panel); }
-    .view-tabs button { min-width:0; min-height:44px; color:var(--color-control-text); border-color:var(--color-transparent); background:var(--color-transparent); font-weight:900; }
+    .view-tabs { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(170px,1fr); gap:6px; margin:22px 0 0; padding:5px; overflow-x:auto; border:1px solid var(--color-line); border-radius:15px; background:var(--color-panel); scrollbar-width:thin; }
+    .view-tabs button { min-width:0; min-height:44px; padding:9px 12px; color:var(--color-control-text); border-color:var(--color-transparent); background:var(--color-transparent); font-size:11px; font-weight:900; white-space:nowrap; }
     .view-tabs button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
     .dashboard-panel[hidden] { display:none; }
     .hero {
@@ -143,6 +129,9 @@
       box-shadow: 0 24px 80px var(--color-shadow), 0 0 56px var(--color-shadow-glow);
     }
     .language-switch { display:flex; width:max-content; max-width:100%; gap:5px; margin:0 0 14px auto; padding:4px; border:1px solid var(--color-hero-line); border-radius:999px; background:var(--color-hero-card); }
+    .hero-tools { display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:14px; }
+    .hero-tools .language-switch { margin:0; }
+    .admin-open { min-height:42px; color:var(--color-on-accent); border-color:var(--color-hero-line); background:var(--color-hero-card); font-size:10px; font-weight:900; }
     .language-switch button { min-width:42px; min-height:34px; padding:6px 9px; color:var(--color-hero-copy); border-color:var(--color-transparent); background:var(--color-transparent); font-size:10px; font-weight:900; }
     .language-switch button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
     .eyebrow { color: var(--color-accent-pink); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; }
@@ -191,8 +180,9 @@
     .application-actions button { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-size:11px; font-weight:800; }
     .application-actions span { color:var(--color-muted); font-size:11px; }
     .games-panel { padding:14px; border:1px solid var(--color-line); border-radius:20px; background:var(--color-panel); }
-    .game-form { display:block; max-width:520px; margin:0 auto 16px; }
+    .game-form { display:block; max-width:620px; margin:0 auto 18px; }
     .game-field { display:grid; gap:6px; min-width:0; color:var(--color-muted); font-size:12px; font-weight:700; }
+    .game-field[hidden],.game-form-actions[hidden] { display:none !important; }
     .game-field input,.game-field select { min-width:0; width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--color-line); border-radius:11px; color:var(--color-ink); background:var(--color-control); }
     .steam-game-search { position:relative; min-width:0; }
     .steam-game-results { position:absolute; top:calc(100% + 6px); left:0; right:0; z-index:20; max-height:310px; overflow-y:auto; padding:6px; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel); box-shadow:0 16px 42px var(--color-shadow); }
@@ -200,31 +190,42 @@
     .steam-game-option { display:grid; grid-template-columns:56px minmax(0,1fr); align-items:center; width:100%; min-height:58px; gap:10px; padding:7px; border:0; border-radius:9px; text-align:left; }
     .steam-game-option:hover,.steam-game-option:focus-visible { background:var(--color-soft); }
     .steam-game-option img { width:56px; height:32px; border-radius:6px; object-fit:cover; background:var(--color-soft); }
-    .steam-game-option strong,.steam-game-option small { display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .steam-game-option strong { display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .steam-game-option strong { color:var(--color-ink); font-size:12px; }
-    .steam-game-option small { margin-top:3px; color:var(--color-muted); font-size:10px; }
     .steam-search-status { min-height:1.4em; margin-top:5px; color:var(--color-muted); font-size:10px; font-weight:500; }
     .game-field-wide { grid-column:1 / -1; }
     .game-form-actions { display:flex; align-items:center; flex-wrap:wrap; gap:8px; grid-column:1 / -1; }
     .game-form-actions button:first-child { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-weight:800; }
     .game-help,.game-match-summary { margin:10px 0 0; color:var(--color-muted); font-size:12px; line-height:1.5; }
-    .game-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:16px; }
-    .game-profile { min-width:0; overflow:hidden; border:1px solid var(--color-accent-pink); border-radius:16px; background:var(--color-panel-subtle); }
-    .game-profile > summary { position:relative; display:block; min-height:210px; cursor:pointer; list-style:none; }
-    .game-profile > summary::-webkit-details-marker { display:none; }
-    .game-profile > summary .game-capsule,.game-profile > summary .game-capsule-fallback { width:100%; height:210px; border:0; border-radius:0; object-fit:cover; }
+    .game-list { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(190px,78%); gap:12px; margin-top:16px; padding:2px 2px 12px; overflow-x:auto; overscroll-behavior-inline:contain; scroll-snap-type:inline mandatory; scrollbar-color:var(--color-accent-pink) var(--color-soft); }
+    .game-profile { position:relative; min-width:0; aspect-ratio:2 / 3; overflow:hidden; scroll-snap-align:start; border:1px solid var(--color-accent-pink); border-radius:16px; background:var(--color-panel-subtle); box-shadow:0 8px 24px var(--color-shadow); }
+    .game-profile-button { position:absolute; inset:0; display:block; width:100%; height:100%; min-height:0; padding:0; overflow:hidden; border:0; border-radius:0; color:inherit; background:var(--color-soft); text-align:left; }
+    .game-profile-button:hover,.game-profile-button:focus-visible { transform:none; box-shadow:inset 0 0 0 3px var(--color-accent-pink); }
+    .game-profile-button .game-capsule,.game-profile-button .game-capsule-fallback { width:100%; height:100%; border:0; border-radius:0; object-fit:cover; }
     .game-card-overlay { position:absolute; inset:auto 0 0; padding:38px 10px 11px; color:var(--color-on-accent); background:linear-gradient(var(--color-transparent),var(--color-hero-end)); }
     .game-card-overlay strong { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; }
-    .game-card-overlay small { display:block; margin-top:3px; color:var(--color-hero-copy); font-size:9px; }
+    .game-card-overlay small { display:none; }
     .game-capsule { width:72px; aspect-ratio:2 / 3; object-fit:cover; border:1px solid var(--color-line); border-radius:9px; background:var(--color-soft); }
     .game-capsule-fallback { display:grid; place-items:center; width:72px; aspect-ratio:2 / 3; padding:7px; border:1px solid var(--color-line); border-radius:9px; color:var(--color-muted); background:var(--color-soft); font-size:9px; font-weight:800; text-align:center; overflow-wrap:anywhere; }
-    .game-profile-body { min-width:0; padding:12px; border-top:1px solid var(--color-line); }
     .game-profile strong,.game-profile small { display:block; overflow-wrap:anywhere; }
-    .game-profile small { margin-top:4px; color:var(--color-muted); line-height:1.45; }
+    .game-dialog { width:min(92vw,760px); max-height:min(88vh,820px); padding:0; overflow:hidden; border:1px solid var(--color-line); border-radius:20px; color:var(--color-ink); background:var(--color-panel); box-shadow:0 28px 90px var(--color-shadow); }
+    .game-dialog::backdrop { background:rgba(5,2,10,.76); backdrop-filter:blur(5px); }
+    .game-dialog-shell { display:grid; grid-template-columns:120px minmax(0,1fr); gap:18px; max-height:88vh; padding:18px; overflow:auto; }
+    .game-dialog-cover .game-capsule,.game-dialog-cover .game-capsule-fallback { width:120px; border-radius:12px; }
+    .game-dialog-content { min-width:0; }
+    .game-dialog-head { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
+    .game-dialog h3 { margin:2px 0 8px; overflow-wrap:anywhere; font-size:24px; }
+    .game-dialog-close { flex:0 0 auto; width:40px; min-height:40px; padding:0; border-radius:999px; font-size:20px; }
+    .game-dialog-meta,.game-dialog-tags { margin:0 0 12px; color:var(--color-muted); font-size:12px; line-height:1.55; overflow-wrap:anywhere; }
+    .game-dialog-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+    .game-dialog-actions a { display:inline-flex; align-items:center; min-height:40px; padding:9px 13px; border-radius:10px; color:var(--color-on-accent); background:var(--gradient-brand); font-size:11px; font-weight:800; text-decoration:none; }
     .game-profile-actions { display:flex; align-items:flex-start; flex-wrap:wrap; gap:6px; margin-top:9px; }
     .game-profile-actions button { min-height:36px; padding:7px 10px; font-size:11px; }
     .game-profile-actions [data-game-delete] { color:var(--color-danger); }
     .game-stats { margin-top:20px; padding-top:18px; border-top:1px solid var(--color-line); }
+    .comparison-search { position:relative; max-width:620px; margin:0 auto 18px; }
+    .comparison-search label { display:grid; gap:6px; color:var(--color-muted); font-size:12px; font-weight:800; }
+    .comparison-search input { width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--color-line); border-radius:11px; color:var(--color-ink); background:var(--color-control); }
     .game-stats h3 { margin:0 0 4px; font-size:17px; }
     .game-stats > p { margin:0 0 12px; color:var(--color-muted); font-size:11px; line-height:1.5; }
     .stats-grid { display:grid; grid-template-columns:1fr; gap:9px; }
@@ -347,6 +348,13 @@
     .change-type { justify-self:start; padding:4px 7px; border-radius:999px; color:var(--color-soft-text); background:var(--color-soft); font-size:10px; font-weight:800; }
     .change-values { min-width:0; overflow-wrap:anywhere; color:var(--color-muted); font-size:12px; line-height:1.4; }
     .news-block + .news-block { margin-top:32px; }
+    .news-toolbar { display:flex; align-items:flex-end; flex-wrap:wrap; gap:12px; margin-bottom:18px; }
+    .news-tabs { display:flex; flex:1 1 360px; gap:6px; padding:5px; overflow-x:auto; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel); }
+    .news-tabs button { flex:1 0 140px; min-height:40px; border-color:var(--color-transparent); background:var(--color-transparent); font-size:11px; font-weight:900; }
+    .news-tabs button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
+    .news-category-label { display:grid; flex:0 1 220px; gap:5px; color:var(--color-muted); font-size:10px; font-weight:800; }
+    .news-category-label select { min-height:42px; padding:8px 10px; border:1px solid var(--color-line); border-radius:10px; color:var(--color-ink); background:var(--color-control); }
+    .news-block[hidden] { display:none; }
     .news-block > h3 { margin:0 0 12px; font-size:18px; }
     .news-disclaimer { margin:-4px 0 14px; color:var(--color-muted); font-size:12px; line-height:1.5; }
     .news-grid { display:grid; grid-template-columns:1fr; gap:12px; }
@@ -359,11 +367,22 @@
     .news-card h3 { margin:7px 0 8px; overflow-wrap:anywhere; font-size:14px; line-height:1.3; }
     .news-card p { display:-webkit-box; margin:0 0 9px; overflow:hidden; color:var(--color-muted); font-size:11px; line-height:1.45; -webkit-box-orient:vertical; -webkit-line-clamp:3; }
     .news-card a { color:var(--color-link); font-size:11px; font-weight:800; text-decoration:none; }
+    .admin-grid { display:grid; grid-template-columns:1fr; gap:14px; }
+    .admin-card { padding:16px; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
+    .admin-card h3 { margin:0 0 12px; font-size:17px; }
+    .admin-form { display:flex; gap:8px; flex-wrap:wrap; }
+    .admin-form input { flex:1 1 220px; min-height:42px; padding:9px 11px; border:1px solid var(--color-line); border-radius:10px; color:var(--color-ink); background:var(--color-control); }
+    .admin-list { display:grid; gap:7px; margin-top:12px; }
+    .admin-list-row { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:9px 10px; border-radius:10px; background:var(--color-soft); font-size:11px; overflow-wrap:anywhere; }
+    .admin-metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+    .admin-metric { padding:12px; border-radius:11px; background:var(--color-soft); }
+    .admin-metric strong,.admin-metric span { display:block; }
+    .admin-metric strong { font-size:22px; }
+    .admin-metric span { margin-top:4px; color:var(--color-muted); font-size:9px; }
     .empty { padding:24px; color:var(--color-muted); text-align:center; border:1px dashed var(--color-line); border-radius:16px; }
     footer { margin-top:28px; color:var(--color-footer); font-size:12px; text-align:center; }
     @media (min-width: 761px) {
       .shell { width:min(calc(100% - 32px), 1180px); padding:48px 0 72px; }
-      .menu-toggle { top:20px; left:20px; }
       .hero { padding:34px; }
       h1 { font-size:clamp(36px, 7vw, 70px); }
       .hero p { font-size:17px; }
@@ -383,10 +402,8 @@
       .filters,.status-filters { width:auto; }
       .games-only-filter { width:auto; }
       .games-panel { padding:20px; }
-      .game-list { grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+      .game-list { grid-auto-columns:calc((100% - 42px) / 4); gap:14px; }
       .application-form { grid-template-columns:repeat(3,minmax(0,1fr)); }
-      .game-profile > summary { min-height:300px; }
-      .game-profile > summary .game-capsule,.game-profile > summary .game-capsule-fallback { height:300px; }
       .task-state-toolbar { align-items:center; flex-direction:row; justify-content:space-between; }
       .task-state-status { text-align:right; }
       .event-row { grid-template-columns:145px minmax(0,1fr) auto; gap:20px; padding:20px; }
@@ -402,29 +419,28 @@
       .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .platform-news { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .stats-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .admin-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior:auto; }
       .event-row.timeline-highlight { animation:none; box-shadow:inset 4px 0 var(--color-accent-pink); }
     }
+    @media (max-width: 480px) {
+      .game-dialog-shell { grid-template-columns:86px minmax(0,1fr); gap:12px; padding:13px; }
+      .game-dialog-cover .game-capsule,.game-dialog-cover .game-capsule-fallback { width:86px; }
+      .game-dialog h3 { font-size:19px; }
+    }
   </style>
 </head>
 <body>
-  <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Menüyü aç" data-i18n-aria-label="openMenu">☰</button>
-  <nav class="site-menu" id="site-menu" data-site-menu aria-label="Sayfa navigasyonu" data-i18n-aria-label="navigationLabel" hidden>
-    <strong data-i18n="navigation">Navigasyon</strong>
-    <a href="#top" data-menu-view="radar" data-i18n="overview">Genel bakış</a>
-    <a href="#games" data-menu-view="radar" data-i18n="myGames">Oyunlarım</a>
-    <a href="#changes" data-menu-view="radar" data-i18n="changesShort">Değişiklikler</a>
-    <a href="#deadlines" data-menu-view="radar" data-i18n="upcomingDeadlines">Yaklaşan son tarihler</a>
-    <a href="#calendar" data-menu-view="radar" data-i18n="eventCalendar">Etkinlik takvimi</a>
-    <a href="#steam-news" data-menu-view="news" data-i18n="steamNews">Steam Haberleri</a>
-  </nav>
   <main class="shell">
     <section class="hero" id="top">
-      <div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel">
-        <button class="active" type="button" data-language="tr" aria-pressed="true">TR</button>
-        <button type="button" data-language="en" aria-pressed="false">EN</button>
+      <div class="hero-tools">
+        <button class="admin-open" type="button" data-admin-open hidden>Yönetim</button>
+        <div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel">
+          <button class="active" type="button" data-language="tr" aria-pressed="true">TR</button>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
       </div>
       <span class="eyebrow" data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span>
       <h1 data-i18n-html="title">Steam Etkinlik<br>Radarı</h1>
@@ -908,11 +924,14 @@
     </section>
 
     <div class="view-tabs" role="tablist" aria-label="İçerik görünümü" data-i18n-aria-label="contentView">
-      <button class="active" type="button" role="tab" aria-selected="true" data-view-tab="radar" data-i18n="radarTab">Etkinlik Radarı</button>
-      <button type="button" role="tab" aria-selected="false" data-view-tab="news" data-i18n="steamNews">Steam Haberleri</button>
+      <button class="active" type="button" role="tab" aria-selected="true" data-view-tab="events">Etkinlikler</button>
+      <button type="button" role="tab" aria-selected="false" data-view-tab="games">Oyunlarım</button>
+      <button type="button" role="tab" aria-selected="false" data-view-tab="steamworks">Steam Haberleri</button>
+      <button type="button" role="tab" aria-selected="false" data-view-tab="releases">Yeni Çıkan / Çıkacak Oyunlar</button>
+      <button type="button" role="tab" aria-selected="false" data-view-tab="stats">Oyun İstatistikleri</button>
     </div>
 
-    <section class="section dashboard-panel" id="games" data-dashboard-panel="radar" aria-labelledby="games-heading">
+    <section class="section dashboard-panel" id="games" data-dashboard-panel="games" aria-labelledby="games-heading" hidden>
       <div class="section-title">
         <h2 id="games-heading" data-i18n="myGames">Oyunlarım</h2>
         <p data-i18n="gamesIntro">Etiketleri birebir karşılaştırarak uygun olabilecek temalı festivalleri gösterir.</p>
@@ -946,55 +965,58 @@
               <div class="steam-search-status" data-steam-search-status role="status" aria-live="polite" data-i18n="typeTwoChars">En az 2 karakter yazın.</div>
             </div>
           </div>
-          <label class="game-field" hidden>
-            Steam App ID <span data-i18n="optional">(opsiyonel)</span>
-            <input type="text" data-game-app-id inputmode="numeric" pattern="[0-9]*" maxlength="12" autocomplete="off">
-          </label>
-          <label class="game-field game-field-wide" hidden>
-            <span data-i18n="steamTags">Steam etiketleri</span>
-            <input type="text" data-game-tags placeholder="Örn. Cyberpunk, Sci-fi, RPG" data-i18n-placeholder="tagsPlaceholder" autocomplete="off">
-          </label>
-          <label class="game-field" hidden>
-            <span data-i18n="demoStatus">Demo durumu</span>
-            <select data-game-demo-status>
-              <option value="none" data-i18n="none">Yok</option>
-              <option value="preparing" data-i18n="preparing">Hazırlanıyor</option>
-              <option value="live" data-i18n="live">Yayında</option>
-            </select>
-          </label>
-          <label class="game-field" hidden>
-            <span data-i18n="releaseStatus">Çıkış durumu</span>
-            <select data-game-release-status>
-              <option value="unreleased" data-i18n="unreleased">Yayınlanmadı</option>
-              <option value="early_access" data-i18n="earlyAccess">Erken erişim</option>
-              <option value="released" data-i18n="live">Yayında</option>
-            </select>
-          </label>
-          <label class="game-field" hidden>
-            <span data-i18n="localMultiplayer">Yerel çok oyunculu</span>
-            <select data-game-local-multiplayer>
-              <option value="no" data-i18n="no">Hayır</option>
-              <option value="yes" data-i18n="yes">Evet</option>
-            </select>
-          </label>
-          <div class="game-form-actions" hidden>
-            <button type="submit" data-game-submit data-i18n="saveGame">Oyunu kaydet</button>
-            <button type="button" data-game-cancel hidden data-i18n="cancel">Vazgeç</button>
-          </div>
+          <input type="hidden" data-game-app-id>
+          <input type="hidden" data-game-tags>
+          <input type="hidden" data-game-demo-status value="none">
+          <input type="hidden" data-game-release-status value="unreleased">
+          <input type="hidden" data-game-local-multiplayer value="no">
         </form>
         <div class="game-list" data-games-list></div>
-        <p class="game-match-summary" data-game-match-summary role="status" aria-live="polite" data-i18n="addGamePrompt">Eşleşme için oyun ekleyin.</p>
-        <div class="game-stats">
-          <h3 data-i18n="gameComparison">Oyun istatistikleri</h3>
-          <p data-i18n="statsIntro">Steam’in herkese açık anlık verileriyle ücretsiz karşılaştırma. Satış ve wishlist tahmini yapılmaz.</p>
-          <div class="stats-grid" data-game-stats>
-            <div class="empty" data-i18n="statsAddGame">İstatistik görmek için Steam’den oyun ekleyin.</div>
+        <dialog class="game-dialog" data-game-dialog aria-labelledby="game-dialog-title">
+          <div class="game-dialog-shell">
+            <div class="game-dialog-cover" data-game-dialog-cover></div>
+            <div class="game-dialog-content">
+              <div class="game-dialog-head">
+                <h3 id="game-dialog-title" data-game-dialog-title></h3>
+                <button class="game-dialog-close" type="button" data-game-dialog-close aria-label="Pencereyi kapat">×</button>
+              </div>
+              <p class="game-dialog-meta" data-game-dialog-meta></p>
+              <p class="game-dialog-tags" data-game-dialog-tags></p>
+              <div data-game-dialog-history></div>
+              <div class="game-dialog-actions">
+                <a href="#" target="_blank" rel="noreferrer" data-game-steam-link>Steam sayfasını aç ↗</a>
+                <button type="button" data-game-dialog-focus></button>
+                <button type="button" data-game-dialog-delete></button>
+              </div>
+            </div>
           </div>
+        </dialog>
+        <p class="game-match-summary" data-game-match-summary role="status" aria-live="polite" data-i18n="addGamePrompt">Eşleşme için oyun ekleyin.</p>
+      </div>
+    </section>
+    <section class="section dashboard-panel" id="game-statistics" data-dashboard-panel="stats" aria-labelledby="game-statistics-heading" hidden>
+      <div class="section-title">
+        <div>
+          <h2 id="game-statistics-heading">Oyun İstatistikleri</h2>
+          <p data-i18n="statsIntro">Steam’in herkese açık anlık verileriyle ücretsiz karşılaştırma. Satış ve wishlist tahmini yapılmaz.</p>
+        </div>
+      </div>
+      <div class="games-panel">
+        <div class="comparison-search">
+          <label>
+            Steam’de karşılaştırılacak oyun ara
+            <input type="search" data-comparison-search autocomplete="off" placeholder="Oyun adı yazın…">
+          </label>
+          <div class="steam-game-results" data-comparison-results role="listbox" hidden></div>
+          <div class="steam-search-status" data-comparison-status role="status" aria-live="polite">En az 2 karakter yazın.</div>
+        </div>
+        <div class="stats-grid" data-game-stats>
+          <div class="empty" data-i18n="statsAddGame">İstatistik görmek için Steam’den oyun ekleyin.</div>
         </div>
       </div>
     </section>
 
-    <section class="section dashboard-panel" id="changes" data-dashboard-panel="radar">
+    <section class="section dashboard-panel" id="changes" data-dashboard-panel="events">
       <details class="change-log">
         <summary>
           <span data-i18n="changesTitle">Son 90 günde ne değişti</span>
@@ -1010,7 +1032,7 @@
       </details>
     </section>
 
-    <section class="section dashboard-panel" id="deadlines" data-dashboard-panel="radar">
+    <section class="section dashboard-panel" id="deadlines" data-dashboard-panel="events">
       <div class="section-title">
         <h2 data-i18n="upcomingDeadlines">Yaklaşan son tarihler</h2>
         <p data-i18n="deadlinesIntro">Etkinlik bazında yapılacaklar · İstanbul saatine göre</p>
@@ -1168,10 +1190,10 @@
     </article></div>
     </section>
 
-    <section class="section dashboard-panel" id="calendar" data-dashboard-panel="radar">
+    <section class="section dashboard-panel" id="calendar" data-dashboard-panel="events">
       <div class="section-title">
         <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
-        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="31 Temmuz 2026, 00:00" data-copy-en="31 July 2026, 00:00">31 Temmuz 2026, 00:00</span></p>
+        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="31 Temmuz 2026, 00:36" data-copy-en="31 July 2026, 00:36">31 Temmuz 2026, 00:36</span></p>
       </div>
       <div class="toolbar">
         <label class="sr-only" for="search" data-i18n="searchEvents">Etkinlik ara</label>
@@ -1248,7 +1270,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;cyberpunk-fest-51562f576.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:cyberpunk-fest-51562f576\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20260803T170000Z\r\nDTEND:20260810T170000Z\r\nSUMMARY:Cyberpunk Fest\r\nDESCRIPTION:Games in cyberpunk settings: neon\\, advanced tech\\, and other s\r\n ci-fi elements.\r\nURL:https://partner.steamgames.com/optin/sale/cyberpunk_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;cyberpunk-fest-51562f576.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:cyberpunk-fest-51562f576\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20260803T170000Z\r\nDTEND:20260810T170000Z\r\nSUMMARY:Cyberpunk Fest\r\nDESCRIPTION:Games in cyberpunk settings: neon\\, advanced tech\\, and other s\r\n ci-fi elements.\r\nURL:https://partner.steamgames.com/optin/sale/cyberpunk_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Cyberpunk Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Cyberpunk Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Cyberpunk Fest as an ICS event"
@@ -1415,7 +1437,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;pins-pegs-fest-2624f7168.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:pins-pegs-fest-2624f7168\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20260817T170000Z\r\nDTEND:20260820T170000Z\r\nSUMMARY:Pins &amp; Pegs Fest\r\nDESCRIPTION:Games involving pins (pinball\\, bowling) and pegs (pachinko\\, b\r\n agatelle).\r\nURL:https://partner.steamgames.com/optin/sale/pins_pegs_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;pins-pegs-fest-2624f7168.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:pins-pegs-fest-2624f7168\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20260817T170000Z\r\nDTEND:20260820T170000Z\r\nSUMMARY:Pins &amp; Pegs Fest\r\nDESCRIPTION:Games involving pins (pinball\\, bowling) and pegs (pachinko\\, b\r\n agatelle).\r\nURL:https://partner.steamgames.com/optin/sale/pins_pegs_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Pins &amp; Pegs Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Pins &amp; Pegs Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Pins &amp; Pegs Fest as an ICS event"
@@ -1582,7 +1604,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;pve-survival-crafting-fest-8bb6de2ec.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:pve-survival-crafting-fest-8bb6de2ec\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20260831T170000Z\r\nDTEND:20260907T170000Z\r\nSUMMARY:PvE Survival Crafting Fest\r\nDESCRIPTION:Games that include survival\\, crafting\\, and a primary gameplay\r\n  loop centered on PvE.\r\nURL:https://partner.steamgames.com/optin/sale/pve_survival_crafting_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;pve-survival-crafting-fest-8bb6de2ec.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:pve-survival-crafting-fest-8bb6de2ec\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20260831T170000Z\r\nDTEND:20260907T170000Z\r\nSUMMARY:PvE Survival Crafting Fest\r\nDESCRIPTION:Games that include survival\\, crafting\\, and a primary gameplay\r\n  loop centered on PvE.\r\nURL:https://partner.steamgames.com/optin/sale/pve_survival_crafting_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="PvE Survival Crafting Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="PvE Survival Crafting Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download PvE Survival Crafting Fest as an ICS event"
@@ -1749,7 +1771,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;programming-fest-d92cade24.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:programming-fest-d92cade24\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20260910T170000Z\r\nDTEND:20260914T170000Z\r\nSUMMARY:Programming Fest\r\nDESCRIPTION:Games that are about programming or programming challenges like\r\n  logic puzzles.\r\nURL:https://partner.steamgames.com/optin/sale/programming_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;programming-fest-d92cade24.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:programming-fest-d92cade24\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20260910T170000Z\r\nDTEND:20260914T170000Z\r\nSUMMARY:Programming Fest\r\nDESCRIPTION:Games that are about programming or programming challenges like\r\n  logic puzzles.\r\nURL:https://partner.steamgames.com/optin/sale/programming_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Programming Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Programming Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Programming Fest as an ICS event"
@@ -1916,7 +1938,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;party-based-rpg-fest-55771f151.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:party-based-rpg-fest-55771f151\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20260914T170000Z\r\nDTEND:20260921T170000Z\r\nSUMMARY:Party-Based RPG Fest\r\nDESCRIPTION:Games that include multiple playable characters in one party in\r\n  an RPG format.\r\nURL:https://partner.steamgames.com/optin/sale/party_rpg_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;party-based-rpg-fest-55771f151.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:party-based-rpg-fest-55771f151\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20260914T170000Z\r\nDTEND:20260921T170000Z\r\nSUMMARY:Party-Based RPG Fest\r\nDESCRIPTION:Games that include multiple playable characters in one party in\r\n  an RPG format.\r\nURL:https://partner.steamgames.com/optin/sale/party_rpg_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Party-Based RPG Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Party-Based RPG Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Party-Based RPG Fest as an ICS event"
@@ -2078,7 +2100,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;autumn-sale-f825a9dd8.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:autumn-sale-f825a9dd8\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20261001T170000Z\r\nDTEND:20261008T170000Z\r\nSUMMARY:Autumn Sale\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events?l=english\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;autumn-sale-f825a9dd8.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:autumn-sale-f825a9dd8\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20261001T170000Z\r\nDTEND:20261008T170000Z\r\nSUMMARY:Autumn Sale\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events?l=english\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Autumn Sale etkinliğini ICS olarak indir"
           data-copy-aria-tr="Autumn Sale etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Autumn Sale as an ICS event"
@@ -2221,7 +2243,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;cooking-fest-424f50fb9.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:cooking-fest-424f50fb9\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20261012T170000Z\r\nDTEND:20261019T170000Z\r\nSUMMARY:Cooking Fest\r\nDESCRIPTION:Games about cooking\\, feeding people\\, and everything in betwee\r\n n.\r\nURL:https://partner.steamgames.com/optin/sale/cooking_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;cooking-fest-424f50fb9.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:cooking-fest-424f50fb9\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20261012T170000Z\r\nDTEND:20261019T170000Z\r\nSUMMARY:Cooking Fest\r\nDESCRIPTION:Games about cooking\\, feeding people\\, and everything in betwee\r\n n.\r\nURL:https://partner.steamgames.com/optin/sale/cooking_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Cooking Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Cooking Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Cooking Fest as an ICS event"
@@ -2383,7 +2405,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;next-fest-october-2026-3062e7ac9.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20261019T170000Z\r\nDTEND:20261026T170000Z\r\nSUMMARY:Next Fest: October 2026\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/optin/sale/nextfest_october_2026\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-dea67ebfc\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20260901T065900Z\r\nDTEND:20260901T071400Z\r\nSUMMARY:Next Fest: October 2026: Festivale kayıt için son gün\r\nDESCRIPTION:Steamworks kayıt sayfasından uygun oyununuzun katılımını \r\n onaylayın.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-97846b59c\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20260907T170000Z\r\nDTEND:20260907T171500Z\r\nSUMMARY:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nDESCRIPTION:Mağaza sayfanızdaki en güncel fragmanın hazır olduğundan \r\n emin olun.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-28286be6b\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20260922T065900Z\r\nDTEND:20260922T071400Z\r\nSUMMARY:Next Fest: October 2026: Basın önizlemesi için incelemeye gönde\r\n r\r\nDESCRIPTION:Demo yapısını ve mağaza sayfasını Valve incelemesine gön\r\n derin.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-71b75f82e\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20261006T065900Z\r\nDTEND:20261006T071400Z\r\nSUMMARY:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmiş o\r\n lmalı\r\nDESCRIPTION:Demo\\, mağaza sayfası ve zorunlu materyaller festival hazırl\r\n ığı için incelemede olmalı.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-de43adb98\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20261008T170000Z\r\nDTEND:20261008T171500Z\r\nSUMMARY:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nDESCRIPTION:Bu tarihten önce hazır ve yayında olan demolar basın önizl\r\n emesinde yer alabilir.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-44bd3cce6\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20261009T065900Z\r\nDTEND:20261009T071400Z\r\nSUMMARY:Next Fest: October 2026: Fragman kullanımından çıkış için so\r\n n gün\r\nDESCRIPTION:Resmî tanıtımda yer almak istemiyorsanız fragman iznini bu \r\n tarihe kadar kapatın.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-ab20d5c9d\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20261019T170000Z\r\nDTEND:20261019T171500Z\r\nSUMMARY:Next Fest: October 2026: Demo yayında olmalı\r\nDESCRIPTION:Festival başlamadan önce demoyu yayınlayın veya plan deği\r\n ştiyse katılımdan çıkın.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;next-fest-october-2026-3062e7ac9.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20261019T170000Z\r\nDTEND:20261026T170000Z\r\nSUMMARY:Next Fest: October 2026\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/optin/sale/nextfest_october_2026\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-dea67ebfc\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20260901T065900Z\r\nDTEND:20260901T071400Z\r\nSUMMARY:Next Fest: October 2026: Festivale kayıt için son gün\r\nDESCRIPTION:Steamworks kayıt sayfasından uygun oyununuzun katılımını \r\n onaylayın.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Festivale kayıt için son gün\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-97846b59c\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20260907T170000Z\r\nDTEND:20260907T171500Z\r\nSUMMARY:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nDESCRIPTION:Mağaza sayfanızdaki en güncel fragmanın hazır olduğundan \r\n emin olun.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Resmî fragman için içerik alınacak\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-28286be6b\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20260922T065900Z\r\nDTEND:20260922T071400Z\r\nSUMMARY:Next Fest: October 2026: Basın önizlemesi için incelemeye gönde\r\n r\r\nDESCRIPTION:Demo yapısını ve mağaza sayfasını Valve incelemesine gön\r\n derin.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi için incelemeye g\r\n önder\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-71b75f82e\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20261006T065900Z\r\nDTEND:20261006T071400Z\r\nSUMMARY:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmiş o\r\n lmalı\r\nDESCRIPTION:Demo\\, mağaza sayfası ve zorunlu materyaller festival hazırl\r\n ığı için incelemede olmalı.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Tüm içerikler incelemeye gönderilmi\r\n ş olmalı\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-de43adb98\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20261008T170000Z\r\nDTEND:20261008T171500Z\r\nSUMMARY:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nDESCRIPTION:Bu tarihten önce hazır ve yayında olan demolar basın önizl\r\n emesinde yer alabilir.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Basın önizlemesi başlıyor\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-44bd3cce6\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20261009T065900Z\r\nDTEND:20261009T071400Z\r\nSUMMARY:Next Fest: October 2026: Fragman kullanımından çıkış için so\r\n n gün\r\nDESCRIPTION:Resmî tanıtımda yer almak istemiyorsanız fragman iznini bu \r\n tarihe kadar kapatın.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Fragman kullanımından çıkış içi\r\n n son gün\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:next-fest-october-2026-3062e7ac9-ab20d5c9d\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20261019T170000Z\r\nDTEND:20261019T171500Z\r\nSUMMARY:Next Fest: October 2026: Demo yayında olmalı\r\nDESCRIPTION:Festival başlamadan önce demoyu yayınlayın veya plan deği\r\n ştiyse katılımdan çıkın.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2\r\n 026october\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:-P30D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:-P14D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:-P7D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:-P3D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:-P1D\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Next Fest: October 2026: Demo yayında olmalı\r\nTRIGGER:PT0S\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Next Fest: October 2026 etkinliğini ICS olarak indir"
           data-copy-aria-tr="Next Fest: October 2026 etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Next Fest: October 2026 as an ICS event"
@@ -2646,7 +2668,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;steam-scream-v-4b0a8f227.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:steam-scream-v-4b0a8f227\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20261026T170000Z\r\nDTEND:20261102T180000Z\r\nSUMMARY:Steam Scream V\r\nDESCRIPTION:Games that fall into the horror category\\, and explicitly Hallo\r\n ween-centric games.\r\nURL:https://partner.steamgames.com/optin/sale/horror_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;steam-scream-v-4b0a8f227.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:steam-scream-v-4b0a8f227\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20261026T170000Z\r\nDTEND:20261102T180000Z\r\nSUMMARY:Steam Scream V\r\nDESCRIPTION:Games that fall into the horror category\\, and explicitly Hallo\r\n ween-centric games.\r\nURL:https://partner.steamgames.com/optin/sale/horror_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Steam Scream V etkinliğini ICS olarak indir"
           data-copy-aria-tr="Steam Scream V etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Steam Scream V as an ICS event"
@@ -2813,7 +2835,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;auto-battler-rpg-fest-92a2e84b8.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:auto-battler-rpg-fest-92a2e84b8\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20261116T180000Z\r\nDTEND:20261123T180000Z\r\nSUMMARY:Auto-Battler RPG Fest\r\nDESCRIPTION:Games where the battles play themselves out – but you have to\r\n  upgrade your units to win.\r\nURL:https://partner.steamgames.com/optin/sale/auto_battler_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;auto-battler-rpg-fest-92a2e84b8.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:auto-battler-rpg-fest-92a2e84b8\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20261116T180000Z\r\nDTEND:20261123T180000Z\r\nSUMMARY:Auto-Battler RPG Fest\r\nDESCRIPTION:Games where the battles play themselves out – but you have to\r\n  upgrade your units to win.\r\nURL:https://partner.steamgames.com/optin/sale/auto_battler_2026\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Auto-Battler RPG Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Auto-Battler RPG Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Auto-Battler RPG Fest as an ICS event"
@@ -2975,7 +2997,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;winter-sale-942a0c36e.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:winter-sale-942a0c36e\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20261217T180000Z\r\nDTEND:20270104T180000Z\r\nSUMMARY:Winter Sale\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events?l=english\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;winter-sale-942a0c36e.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:winter-sale-942a0c36e\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20261217T180000Z\r\nDTEND:20270104T180000Z\r\nSUMMARY:Winter Sale\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events?l=english\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Winter Sale etkinliğini ICS olarak indir"
           data-copy-aria-tr="Winter Sale etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Winter Sale as an ICS event"
@@ -3118,7 +3140,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;desktop-companion-fest-5bc08adee.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:desktop-companion-fest-5bc08adee\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270114T180000Z\r\nDTEND:20270118T180000Z\r\nSUMMARY:Desktop Companion Fest\r\nDESCRIPTION:Games that sit on your desktop and keep you company while you d\r\n o other things.\r\nURL:https://partner.steamgames.com/optin/sale/desktop_companion_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;desktop-companion-fest-5bc08adee.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:desktop-companion-fest-5bc08adee\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270114T180000Z\r\nDTEND:20270118T180000Z\r\nSUMMARY:Desktop Companion Fest\r\nDESCRIPTION:Games that sit on your desktop and keep you company while you d\r\n o other things.\r\nURL:https://partner.steamgames.com/optin/sale/desktop_companion_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Desktop Companion Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Desktop Companion Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Desktop Companion Fest as an ICS event"
@@ -3285,7 +3307,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;shop-keeper-fest-0d64f4666.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:shop-keeper-fest-0d64f4666\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270125T180000Z\r\nDTEND:20270201T180000Z\r\nSUMMARY:Shop Keeper Fest\r\nDESCRIPTION:Games about managing a store.\r\nURL:https://partner.steamgames.com/optin/sale/shop_keep_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;shop-keeper-fest-0d64f4666.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:shop-keeper-fest-0d64f4666\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270125T180000Z\r\nDTEND:20270201T180000Z\r\nSUMMARY:Shop Keeper Fest\r\nDESCRIPTION:Games about managing a store.\r\nURL:https://partner.steamgames.com/optin/sale/shop_keep_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Shop Keeper Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Shop Keeper Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Shop Keeper Fest as an ICS event"
@@ -3452,7 +3474,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;sheep-fest-6ec302116.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:sheep-fest-6ec302116\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270204T180000Z\r\nDTEND:20270208T180000Z\r\nSUMMARY:Sheep Fest\r\nDESCRIPTION:Games about sheep\\, goats\\, or other animals in the Caprinae su\r\n bfamily (so yes\\, tahrs and ibexes are welcome too).\r\nURL:https://partner.steamgames.com/optin/sale/sheep_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;sheep-fest-6ec302116.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:sheep-fest-6ec302116\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270204T180000Z\r\nDTEND:20270208T180000Z\r\nSUMMARY:Sheep Fest\r\nDESCRIPTION:Games about sheep\\, goats\\, or other animals in the Caprinae su\r\n bfamily (so yes\\, tahrs and ibexes are welcome too).\r\nURL:https://partner.steamgames.com/optin/sale/sheep_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Sheep Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Sheep Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Sheep Fest as an ICS event"
@@ -3619,7 +3641,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;couch-co-op-fest-8b489c8ca.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:couch-co-op-fest-8b489c8ca\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270208T180000Z\r\nDTEND:20270215T180000Z\r\nSUMMARY:Couch Co-Op Fest\r\nDESCRIPTION:Games you can play together on the same device (games must supp\r\n ort local co-op).\r\nURL:https://partner.steamgames.com/optin/sale/couch_coop_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;couch-co-op-fest-8b489c8ca.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:couch-co-op-fest-8b489c8ca\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270208T180000Z\r\nDTEND:20270215T180000Z\r\nSUMMARY:Couch Co-Op Fest\r\nDESCRIPTION:Games you can play together on the same device (games must supp\r\n ort local co-op).\r\nURL:https://partner.steamgames.com/optin/sale/couch_coop_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Couch Co-Op Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Couch Co-Op Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Couch Co-Op Fest as an ICS event"
@@ -3781,7 +3803,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;next-fest-february-2027-eb86e4da6.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:next-fest-february-2027-eb86e4da6\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270222T180000Z\r\nDTEND:20270301T180000Z\r\nSUMMARY:Next Fest: February 2027\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events?l=english\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;next-fest-february-2027-eb86e4da6.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:next-fest-february-2027-eb86e4da6\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270222T180000Z\r\nDTEND:20270301T180000Z\r\nSUMMARY:Next Fest: February 2027\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events?l=english\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Next Fest: February 2027 etkinliğini ICS olarak indir"
           data-copy-aria-tr="Next Fest: February 2027 etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Next Fest: February 2027 as an ICS event"
@@ -3869,7 +3891,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;rhythm-fest-b3b4ca682.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:rhythm-fest-b3b4ca682\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270308T180000Z\r\nDTEND:20270315T170000Z\r\nSUMMARY:Rhythm Fest\r\nDESCRIPTION:Games that are about rewarding players who can hit notes / arro\r\n ws / bullets / etc. in time to the beat.\r\nURL:https://partner.steamgames.com/optin/sale/rhythm_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;rhythm-fest-b3b4ca682.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:rhythm-fest-b3b4ca682\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270308T180000Z\r\nDTEND:20270315T170000Z\r\nSUMMARY:Rhythm Fest\r\nDESCRIPTION:Games that are about rewarding players who can hit notes / arro\r\n ws / bullets / etc. in time to the beat.\r\nURL:https://partner.steamgames.com/optin/sale/rhythm_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Rhythm Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Rhythm Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Rhythm Fest as an ICS event"
@@ -4031,7 +4053,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;spring-sale-23917885f.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:spring-sale-23917885f\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270318T170000Z\r\nDTEND:20270325T170000Z\r\nSUMMARY:Spring Sale\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events?l=english\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;spring-sale-23917885f.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:spring-sale-23917885f\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270318T170000Z\r\nDTEND:20270325T170000Z\r\nSUMMARY:Spring Sale\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events?l=english\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Spring Sale etkinliğini ICS olarak indir"
           data-copy-aria-tr="Spring Sale etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Spring Sale as an ICS event"
@@ -4174,7 +4196,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;dinos-vs-robots-fest-e4c058c85.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:dinos-vs-robots-fest-e4c058c85\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270329T170000Z\r\nDTEND:20270405T170000Z\r\nSUMMARY:Dinos vs. Robots Fest\r\nDESCRIPTION:Games featuring dinosaurs\\, robots\\, or both. Or robot dinosaur\r\n s!\r\nURL:https://partner.steamgames.com/optin/sale/dinos_robots_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;dinos-vs-robots-fest-e4c058c85.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:dinos-vs-robots-fest-e4c058c85\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270329T170000Z\r\nDTEND:20270405T170000Z\r\nSUMMARY:Dinos vs. Robots Fest\r\nDESCRIPTION:Games featuring dinosaurs\\, robots\\, or both. Or robot dinosaur\r\n s!\r\nURL:https://partner.steamgames.com/optin/sale/dinos_robots_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Dinos vs. Robots Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Dinos vs. Robots Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Dinos vs. Robots Fest as an ICS event"
@@ -4341,7 +4363,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;racing-fest-9bb5cb332.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:racing-fest-9bb5cb332\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270412T170000Z\r\nDTEND:20270419T170000Z\r\nSUMMARY:Racing Fest\r\nDESCRIPTION:Games about going fast. Like\\, really\\, really fast. Faster tha\r\n n other people\\, faster than the computer\\, faster than the you of yesterd\r\n ay.\r\nURL:https://partner.steamgames.com/optin/sale/racing_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;racing-fest-9bb5cb332.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:racing-fest-9bb5cb332\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270412T170000Z\r\nDTEND:20270419T170000Z\r\nSUMMARY:Racing Fest\r\nDESCRIPTION:Games about going fast. Like\\, really\\, really fast. Faster tha\r\n n other people\\, faster than the computer\\, faster than the you of yesterd\r\n ay.\r\nURL:https://partner.steamgames.com/optin/sale/racing_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Racing Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Racing Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Racing Fest as an ICS event"
@@ -4508,7 +4530,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;witch-fest-34647039a.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:witch-fest-34647039a\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270422T170000Z\r\nDTEND:20270426T170000Z\r\nSUMMARY:Witch Fest\r\nDESCRIPTION:Games that are witchy!\r\nURL:https://partner.steamgames.com/optin/sale/witch_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;witch-fest-34647039a.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:witch-fest-34647039a\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270422T170000Z\r\nDTEND:20270426T170000Z\r\nSUMMARY:Witch Fest\r\nDESCRIPTION:Games that are witchy!\r\nURL:https://partner.steamgames.com/optin/sale/witch_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Witch Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Witch Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Witch Fest as an ICS event"
@@ -4675,7 +4697,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;fighting-fest-997e98a30.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:fighting-fest-997e98a30\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270426T170000Z\r\nDTEND:20270503T170000Z\r\nSUMMARY:Fighting Fest\r\nDESCRIPTION:Games that are Fighting Games—not just games about fighting\\,\r\n  but specifically like the ones that the FGC play.\r\nURL:https://partner.steamgames.com/optin/sale/fighting_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;fighting-fest-997e98a30.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:fighting-fest-997e98a30\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270426T170000Z\r\nDTEND:20270503T170000Z\r\nSUMMARY:Fighting Fest\r\nDESCRIPTION:Games that are Fighting Games—not just games about fighting\\,\r\n  but specifically like the ones that the FGC play.\r\nURL:https://partner.steamgames.com/optin/sale/fighting_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Fighting Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Fighting Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Fighting Fest as an ICS event"
@@ -4842,7 +4864,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;real-time-strategy-fest-96b41f8e6.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:real-time-strategy-fest-96b41f8e6\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270510T170000Z\r\nDTEND:20270517T170000Z\r\nSUMMARY:Real-Time Strategy Fest\r\nDESCRIPTION:Games that are played in real-time and involve high levels of s\r\n trategic play\\, including build / research planning\\, anticipating enemy m\r\n ovements\\, and resource management.\r\nURL:https://partner.steamgames.com/optin/sale/rts_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;real-time-strategy-fest-96b41f8e6.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:real-time-strategy-fest-96b41f8e6\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270510T170000Z\r\nDTEND:20270517T170000Z\r\nSUMMARY:Real-Time Strategy Fest\r\nDESCRIPTION:Games that are played in real-time and involve high levels of s\r\n trategic play\\, including build / research planning\\, anticipating enemy m\r\n ovements\\, and resource management.\r\nURL:https://partner.steamgames.com/optin/sale/rts_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Real-Time Strategy Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Real-Time Strategy Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Real-Time Strategy Fest as an ICS event"
@@ -5009,7 +5031,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;mountaineering-fest-e94606dd4.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:mountaineering-fest-e94606dd4\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270531T170000Z\r\nDTEND:20270603T170000Z\r\nSUMMARY:Mountaineering Fest\r\nDESCRIPTION:Games about climbing mountains.\r\nURL:https://partner.steamgames.com/optin/sale/mountaineering_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;mountaineering-fest-e94606dd4.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:mountaineering-fest-e94606dd4\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270531T170000Z\r\nDTEND:20270603T170000Z\r\nSUMMARY:Mountaineering Fest\r\nDESCRIPTION:Games about climbing mountains.\r\nURL:https://partner.steamgames.com/optin/sale/mountaineering_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Mountaineering Fest etkinliğini ICS olarak indir"
           data-copy-aria-tr="Mountaineering Fest etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Mountaineering Fest as an ICS event"
@@ -5171,7 +5193,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;next-fest-june-2027-6598e9fe6.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:next-fest-june-2027-6598e9fe6\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270614T170000Z\r\nDTEND:20270621T170000Z\r\nSUMMARY:Next Fest: June 2027\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/optin/sale/nextfest_june_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;next-fest-june-2027-6598e9fe6.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:next-fest-june-2027-6598e9fe6\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270614T170000Z\r\nDTEND:20270621T170000Z\r\nSUMMARY:Next Fest: June 2027\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/optin/sale/nextfest_june_2027\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Next Fest: June 2027 etkinliğini ICS olarak indir"
           data-copy-aria-tr="Next Fest: June 2027 etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Next Fest: June 2027 as an ICS event"
@@ -5309,7 +5331,7 @@
         <button
           class="event-ics"
           type="button"
-          data-ics="{&quot;filename&quot;:&quot;summer-sale-c5f18f5ae.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:summer-sale-c5f18f5ae\r\nDTSTAMP:20260730T210042Z\r\nDTSTART:20270624T170000Z\r\nDTEND:20270708T170000Z\r\nSUMMARY:Summer Sale\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events?l=english\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
+          data-ics="{&quot;filename&quot;:&quot;summer-sale-c5f18f5ae.ics&quot;,&quot;content&quot;:&quot;BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Gaming in Turkey//Steam Etkinlik Radari//TR\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:summer-sale-c5f18f5ae\r\nDTSTAMP:20260730T213653Z\r\nDTSTART:20270624T170000Z\r\nDTEND:20270708T170000Z\r\nSUMMARY:Summer Sale\r\nDESCRIPTION:Steam etkinliği ve operasyon takvimi.\r\nURL:https://partner.steamgames.com/doc/marketing/upcoming_events?l=english\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n&quot;}"
           aria-label="Summer Sale etkinliğini ICS olarak indir"
           data-copy-aria-tr="Summer Sale etkinliğini ICS olarak indir"
           data-copy-aria-en="Download Summer Sale as an ICS event"
@@ -5412,228 +5434,362 @@
     </section>
 
 
-    <section class="section dashboard-panel" id="steam-news" data-dashboard-panel="news" aria-labelledby="steam-news-heading" hidden>
+    <section class="section dashboard-panel" id="game-releases" data-dashboard-panel="releases" aria-labelledby="game-releases-heading" hidden>
       <div class="section-title">
         <div>
-          <h2 id="steam-news-heading" data-i18n="steamNews">Steam Haberleri</h2>
-          <p data-i18n="newsIntro">Yeni çıkanlar, yaklaşan oyunlar ve Valve’ın resmî Steamworks duyuruları.</p>
+          <h2 id="game-releases-heading"><span data-copy-tr="Yeni Çıkan / Çıkacak Oyunlar" data-copy-en="New &amp; Upcoming Games">Yeni Çıkan / Çıkacak Oyunlar</span></h2>
+          <p><span data-copy-tr="Son 30 günün çıkışları ve önümüzdeki 30 günün takvimi." data-copy-en="Releases from the last 30 days and the next 30 days.">Son 30 günün çıkışları ve önümüzdeki 30 günün takvimi.</span></p>
         </div>
-        <p><span data-copy-tr="Son güncelleme:" data-copy-en="Last updated:">Son güncelleme:</span> <span data-copy-tr="31 Temmuz 2026, 00:00" data-copy-en="31 July 2026, 00:00">31 Temmuz 2026, 00:00</span></p>
+        <p><span data-copy-tr="Son güncelleme:" data-copy-en="Last updated:">Son güncelleme:</span> <span data-copy-tr="31 Temmuz 2026, 00:36" data-copy-en="31 July 2026, 00:36">31 Temmuz 2026, 00:36</span></p>
       </div>
 
-            <div class="news-block">
-              <h3><span data-copy-tr="Yeni çıkan ve çıkacak oyunlar" data-copy-en="New and upcoming games">Yeni çıkan ve çıkacak oyunlar</span></h3>
+            <div class="news-toolbar">
+              <div class="news-tabs" role="tablist" aria-label="<span data-copy-tr="Haber türü" data-copy-en="News type">Haber türü</span>">
+                <button class="active" type="button" role="tab" aria-selected="true" data-news-tab="new_release"><span data-copy-tr="Yeni Çıkanlar" data-copy-en="New Releases">Yeni Çıkanlar</span></button>
+                <button type="button" role="tab" aria-selected="false" data-news-tab="coming_soon"><span data-copy-tr="30 Gün İçinde" data-copy-en="Within 30 Days">30 Gün İçinde</span></button>
+              </div>
+              <label class="news-category-label">
+                <span><span data-copy-tr="Kategori" data-copy-en="Category">Kategori</span></span>
+                <select data-news-category>
+                  <option value=""><span data-copy-tr="Tüm kategoriler" data-copy-en="All categories">Tüm kategoriler</span></option>
+                  <option value="Aksiyon">Aksiyon</option><option value="Bağımsız">Bağımsız</option><option value="Çok Oyunculu">Çok Oyunculu</option><option value="Gündelik">Gündelik</option><option value="Macera">Macera</option><option value="RPG">RPG</option><option value="Simülasyon">Simülasyon</option><option value="Strateji">Strateji</option><option value="Tek Oyunculu">Tek Oyunculu</option><option value="Yarış">Yarış</option>
+                </select>
+              </label>
+            </div>
+            <div class="news-block" data-news-panel="new_release">
+              <h3><span data-copy-tr="Son 30 günde yeni çıkanlar" data-copy-en="Released in the last 30 days">Son 30 günde yeni çıkanlar</span></h3>
               <div class="news-grid">
-    <article class="news-card" data-news-kind="new_release">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Aksiyon&quot;]">
       <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4607350/5855bd89405f8c7879f462b1337daf4a87c3caff/capsule_231x87.jpg?t=1785444593" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
           <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
-          <time>Jul 30, 2026</time>
+          <time>30 Jul, 2026</time>
         </div>
         <h3>Sunfall &#039;80</h3>
 
         <a href="https://store.steampowered.com/app/4607350/Sunfall_80/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="new_release">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Macera&quot;,&quot;Gündelik&quot;,&quot;Simülasyon&quot;]">
       <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3496340/03b328720277cc53bdc2fec344deeec7bec23dd1/capsule_231x87.jpg?t=1785443468" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
           <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
-          <time>Jul 30, 2026</time>
+          <time>30 Jul, 2026</time>
         </div>
         <h3>Welcome to the Sharehouse! ~ domestic life with three cute girls~</h3>
 
         <a href="https://store.steampowered.com/app/3496340/Welcome_to_the_Sharehouse__domestic_life_with_three_cute_girls/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="new_release">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Strateji&quot;]">
       <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4362510/929db4713cfc0607dca18367697bbdd683332b23/capsule_231x87.jpg?t=1785441414" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
           <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
-          <time>Jul 30, 2026</time>
+          <time>30 Jul, 2026</time>
         </div>
         <h3>Random Dragons</h3>
 
         <a href="https://store.steampowered.com/app/4362510/Random_Dragons/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="new_release">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Strateji&quot;]">
       <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4812060/750c0de94edb07a7f2407b74a219c987f7842946/capsule_231x87.jpg?t=1785439969" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
           <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
-          <time>Jul 30, 2026</time>
+          <time>30 Jul, 2026</time>
         </div>
         <h3>Terminal Warfare</h3>
 
         <a href="https://store.steampowered.com/app/4812060/Terminal_Warfare/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="new_release">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;RPG&quot;]">
       <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4104700/b191650910f2b4c7bd5f2960b79e0cdb9be0caa2/capsule_231x87.jpg?t=1785441815" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
           <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
-          <time>Jul 30, 2026</time>
+          <time>30 Jul, 2026</time>
         </div>
         <h3>Boli</h3>
 
         <a href="https://store.steampowered.com/app/4104700/Boli/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="new_release">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Aksiyon&quot;,&quot;Gündelik&quot;]">
       <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4812150/dfae5567a479d64bd1a57f5004287ae77539c1ad/capsule_231x87.jpg?t=1785439401" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
           <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
-          <time>Jul 30, 2026</time>
+          <time>30 Jul, 2026</time>
         </div>
         <h3>Survival Code</h3>
 
         <a href="https://store.steampowered.com/app/4812150/Survival_Code/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="new_release">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Gündelik&quot;]">
       <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4747440/c0beb83d688c093c808449300a387b069be1d5d8/capsule_231x87.jpg?t=1785438091" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
           <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
-          <time>Jul 30, 2026</time>
+          <time>30 Jul, 2026</time>
         </div>
         <h3>What&#039;s Heaven For?</h3>
 
         <a href="https://store.steampowered.com/app/4747440/Whats_Heaven_For/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="new_release">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Macera&quot;,&quot;Gündelik&quot;]">
       <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4029590/d845ff19f5faaa4a5a28b1812b307b1ebfe94ca2/capsule_231x87.jpg?t=1785438033" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
           <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
-          <time>Jul 30, 2026</time>
+          <time>30 Jul, 2026</time>
         </div>
         <h3>Between Love &amp; Uprising: A Cheaters Dating Simulator</h3>
 
         <a href="https://store.steampowered.com/app/4029590/Between_Love__Uprising_A_Cheaters_Dating_Simulator/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="coming_soon">
-      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3205020/f13c1667ee94b9d260b42dc7c328d4fe74f560dc/capsule_231x87.jpg?t=1785354436" alt="" loading="lazy" referrerpolicy="no-referrer">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Simülasyon&quot;,&quot;Yarış&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3751820/b855887818549653d7dab67c2ebb8cfcd3b3f3aa/capsule_231x87.jpg?t=1785436543" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
-          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
-          <time>Jul 30, 2026</time>
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
         </div>
-        <h3>Coven: All Powerful</h3>
+        <h3>RutMaker</h3>
 
-        <a href="https://store.steampowered.com/app/3205020/Coven_All_Powerful/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+        <a href="https://store.steampowered.com/app/3751820/RutMaker/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="coming_soon">
-      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4358460/b8c1fa18a830c797ce5d98a9b6e4f7b4529db035/capsule_231x87.jpg?t=1785417363" alt="" loading="lazy" referrerpolicy="no-referrer">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Aksiyon&quot;,&quot;Macera&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4851650/ada8aab24b70e9dc834b350e85a6de20cfd7360d/capsule_231x87.jpg?t=1785434928" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
-          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
-          <time>Jul 30, 2026</time>
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
         </div>
-        <h3>Card Homestead</h3>
+        <h3>DamnedSchool</h3>
 
-        <a href="https://store.steampowered.com/app/4358460/Card_Homestead/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+        <a href="https://store.steampowered.com/app/4851650/DamnedSchool/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="coming_soon">
-      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4790300/290a96c8c98a001398805d3c7897cbc1f783e594/capsule_231x87.jpg?t=1785335676" alt="" loading="lazy" referrerpolicy="no-referrer">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Gündelik&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4840890/b30830e0cd88459695b0d7cf240e819699304926/capsule_231x87.jpg?t=1785433642" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
-          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
-          <time>Jul 30, 2026</time>
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
         </div>
-        <h3>Morphing Blocks</h3>
+        <h3>落境：未知记忆</h3>
 
-        <a href="https://store.steampowered.com/app/4790300/Morphing_Blocks/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+        <a href="https://store.steampowered.com/app/4840890/_/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="coming_soon">
-      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4330780/4b395d7bc4d52c083b2857c42f1c58a66a4ac087/capsule_231x87.jpg?t=1784250547" alt="" loading="lazy" referrerpolicy="no-referrer">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Strateji&quot;,&quot;Simülasyon&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4420440/ca1a6c6070d68ff1543196965b454bcda39359a4/capsule_231x87.jpg?t=1785433010" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
-          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
-          <time>Jul 30, 2026</time>
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
         </div>
-        <h3>On The Way Home : Strange Incidents</h3>
+        <h3>Legacy of Sail</h3>
 
-        <a href="https://store.steampowered.com/app/4330780/On_The_Way_Home__Strange_Incidents/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+        <a href="https://store.steampowered.com/app/4420440/Legacy_of_Sail/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="coming_soon">
-      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4979560/7c30c3a2eeb654687a0bb612112774e4baeee058/capsule_231x87.jpg?t=1785197979" alt="" loading="lazy" referrerpolicy="no-referrer">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Simülasyon&quot;,&quot;Macera&quot;,&quot;Gündelik&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4638300/a1e3eb2256b48e5d0b9221cecc0f4a805d1f5cca/capsule_231x87.jpg?t=1785432016" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
-          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
-          <time>Jul 30, 2026</time>
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
         </div>
-        <h3>To Deal With Pain</h3>
+        <h3>PlanetMars3D: Spirit Mission</h3>
 
-        <a href="https://store.steampowered.com/app/4979560/To_Deal_With_Pain/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+        <a href="https://store.steampowered.com/app/4638300/PlanetMars3D_Spirit_Mission/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="coming_soon">
-      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2530250/1eb6514f860b4a6d264331c86fdd1743d03ad5db/capsule_231x87.jpg?t=1785230974" alt="" loading="lazy" referrerpolicy="no-referrer">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3816290/d9eb747e414ac89972f9ed0cf7d16bc854d35a7e/capsule_231x87.jpg?t=1785431640" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
-          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
-          <time>Jul 30, 2026</time>
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
         </div>
-        <h3>PARKSIDE: DECAYED SOUL MANIPULATION</h3>
+        <h3>Typomagical</h3>
 
-        <a href="https://store.steampowered.com/app/2530250/PARKSIDE_DECAYED_SOUL_MANIPULATION/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+        <a href="https://store.steampowered.com/app/3816290/Typomagical/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="coming_soon">
-      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4514210/96e3bc62b09630aef9e334f715aac5d6d8bbeadf/capsule_231x87.jpg?t=1783141180" alt="" loading="lazy" referrerpolicy="no-referrer">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Strateji&quot;,&quot;Aksiyon&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3522360/b2e235f498f1d22c030286e95c415b3a9575016e/capsule_231x87.jpg?t=1785436535" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
-          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
-          <time>Jul 30, 2026</time>
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
         </div>
-        <h3>Rose Guns Days -Season 2-</h3>
+        <h3>WARSHIFT 2</h3>
 
-        <a href="https://store.steampowered.com/app/4514210/Rose_Guns_Days_Season_2/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+        <a href="https://store.steampowered.com/app/3522360/WARSHIFT_2/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="coming_soon">
-      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880470/065e2a431495ad93f8190e56b067edbc24f93a3f/capsule_231x87.jpg?t=1783738000" alt="" loading="lazy" referrerpolicy="no-referrer">
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Gündelik&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4653950/0d53a918c1453cbf95ab3c967a5946ba043cb6ab/capsule_231x87.jpg?t=1785431523" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
-          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
-          <time>Jul 30, 2026</time>
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
         </div>
-        <h3>Water Spirit Escape</h3>
+        <h3>Zentris</h3>
 
-        <a href="https://store.steampowered.com/app/4880470/Water_Spirit_Escape/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+        <a href="https://store.steampowered.com/app/4653950/Zentris/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Bağımsız&quot;,&quot;RPG&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4139980/0d2b8a4d57c76a09de273de10e8c79ed5942ac5f/capsule_231x87.jpg?t=1785431372" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Magical Hellhound Lust</h3>
+
+        <a href="https://store.steampowered.com/app/4139980/Magical_Hellhound_Lust/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Gündelik&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845480/8dda683a8c08c9eb524a1b62890316a7845167fb/capsule_231x87.jpg?t=1785431052" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Goodnight, Sun</h3>
+
+        <a href="https://store.steampowered.com/app/4845480/Goodnight_Sun/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Strateji&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4456930/bb6d123e0bd1412873c702838e22afae7eb88866/capsule_231x87.jpg?t=1785430985" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Weapon Gambit</h3>
+
+        <a href="https://store.steampowered.com/app/4456930/Weapon_Gambit/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Simülasyon&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4621900/91aea538eb28a32431a46ad755c506f929af67cc/capsule_231x87.jpg?t=1785442485" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Laptop Architect</h3>
+
+        <a href="https://store.steampowered.com/app/4621900/Laptop_Architect/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Strateji&quot;,&quot;Tek Oyunculu&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3282420/b68fd7eabe2b9348a98a7ec3fc17156bdd008a12/capsule_231x87.jpg?t=1785431440" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Zoominoes</h3>
+
+        <a href="https://store.steampowered.com/app/3282420/Zoominoes/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Strateji&quot;,&quot;Aksiyon&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2704450/58d5806b6f87e8b2d52c9328744cd8cd5a0d05e8/capsule_231x87.jpg?t=1785432587" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Stoneguard</h3>
+
+        <a href="https://store.steampowered.com/app/2704450/Stoneguard/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Macera&quot;,&quot;Tek Oyunculu&quot;,&quot;Bağımsız&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4205470/7f9d106542c015803392f6cd07fd325db46eb3ac/capsule_231x87.jpg?t=1785430814" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Nearborn</h3>
+
+        <a href="https://store.steampowered.com/app/4205470/Nearborn/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release" data-news-categories="[&quot;Macera&quot;,&quot;Aksiyon&quot;,&quot;Çok Oyunculu&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2657560/fe899a7ed5dc69d8458ebb50629f65aa4d474a1d/capsule_231x87.jpg?t=1785430810" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Sponge Break</h3>
+
+        <a href="https://store.steampowered.com/app/2657560/Sponge_Break/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article></div>
+              <div class="empty" data-news-empty hidden><span data-copy-tr="Bu kategoride oyun bulunamadı." data-copy-en="No games found in this category.">Bu kategoride oyun bulunamadı.</span></div>
             </div>
-            <div class="news-block">
-              <h3><span data-copy-tr="Steamworks ve platform değişiklikleri" data-copy-en="Steamworks and platform changes">Steamworks ve platform değişiklikleri</span></h3>
-              <p class="news-disclaimer"><span data-copy-tr="Yalnızca Valve’ın resmî duyuruları gösterilir; doğrulanmamış algoritma söylentileri eklenmez." data-copy-en="Only official Valve announcements are shown; unverified algorithm rumors are excluded.">Yalnızca Valve’ın resmî duyuruları gösterilir; doğrulanmamış algoritma söylentileri eklenmez.</span></p>
-              <div class="news-grid platform-news">
-    <article class="news-card" data-news-kind="platform">
-      <span class="news-icon" aria-hidden="true">⚙</span>
+            <div class="news-block" data-news-panel="coming_soon" hidden>
+              <h3><span data-copy-tr="Önümüzdeki 30 gün içinde çıkacaklar" data-copy-en="Coming in the next 30 days">Önümüzdeki 30 gün içinde çıkacaklar</span></h3>
+              <div class="news-grid">
+    <article class="news-card" data-news-kind="coming_soon" data-news-categories="[&quot;Tek Oyunculu&quot;,&quot;Aksiyon&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3359940/b0d57ed385aa91c3ed10760221e7f410d354547d/capsule_231x87.jpg?t=1783458012" alt="" loading="lazy" referrerpolicy="no-referrer">
       <div class="news-card-body">
         <div class="news-meta">
-          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
-          <time><span data-copy-tr="28 Nis 2026" data-copy-en="28 Apr 2026">28 Nis 2026</span></time>
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>31 Jul, 2026</time>
         </div>
-        <h3>Steam Next Fest Developer Q&amp;A Session</h3>
-        <p>Join us August 18, 2026 at 10am Pacific time for a virtual Q&amp;A session about Steam Next FestAre you considering participating with a free demo in this edition or a future edition of Next Fest? Tune in and join members of the Steam team live in a virtual Q&amp;A session where we answe</p>
-        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/717902598999377016" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+        <h3>Camino</h3>
+
+        <a href="https://store.steampowered.com/app/3359940/Camino/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="platform">
+    <article class="news-card" data-news-kind="coming_soon" data-news-categories="[&quot;RPG&quot;,&quot;Simülasyon&quot;,&quot;Strateji&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3928980/440eaac3e2682904aa4d7b6d7f9162306504c9b2/capsule_231x87.jpg?t=1783511326" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>31 Jul, 2026</time>
+        </div>
+        <h3>Wonderland</h3>
+
+        <a href="https://store.steampowered.com/app/3928980/Wonderland/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article></div>
+              <div class="empty" data-news-empty hidden><span data-copy-tr="Bu kategoride oyun bulunamadı." data-copy-en="No games found in this category.">Bu kategoride oyun bulunamadı.</span></div>
+            </div>
+
+    </section>
+    <section class="section dashboard-panel" id="steam-news" data-dashboard-panel="steamworks" aria-labelledby="steam-news-heading" hidden>
+      <div class="section-title">
+        <div>
+          <h2 id="steam-news-heading" data-i18n="steamNews">Steam Haberleri</h2>
+          <p><span data-copy-tr="Valve’ın son 3 ayda yayımladığı resmî Steamworks duyuruları." data-copy-en="Official Steamworks announcements published by Valve in the last 3 months.">Valve’ın son 3 ayda yayımladığı resmî Steamworks duyuruları.</span></p>
+        </div>
+      </div>
+      <p class="news-disclaimer"><span data-copy-tr="Yalnızca Valve’ın resmî duyuruları gösterilir; doğrulanmamış algoritma söylentileri eklenmez." data-copy-en="Only official Valve announcements are shown; unverified algorithm rumors are excluded.">Yalnızca Valve’ın resmî duyuruları gösterilir; doğrulanmamış algoritma söylentileri eklenmez.</span></p>
+      <div class="news-grid platform-news">
+    <article class="news-card" data-news-kind="platform" data-news-categories="[]">
       <span class="news-icon" aria-hidden="true">⚙</span>
       <div class="news-card-body">
         <div class="news-meta">
@@ -5645,7 +5801,7 @@
         <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/678504885369439021" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="platform">
+    <article class="news-card" data-news-kind="platform" data-news-categories="[]">
       <span class="news-icon" aria-hidden="true">⚙</span>
       <div class="news-card-body">
         <div class="news-meta">
@@ -5657,7 +5813,7 @@
         <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/668369251018480125" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="platform">
+    <article class="news-card" data-news-kind="platform" data-news-categories="[]">
       <span class="news-icon" aria-hidden="true">⚙</span>
       <div class="news-card-body">
         <div class="news-meta">
@@ -5669,7 +5825,7 @@
         <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/668369251018474261" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="platform">
+    <article class="news-card" data-news-kind="platform" data-news-categories="[]">
       <span class="news-icon" aria-hidden="true">⚙</span>
       <div class="news-card-body">
         <div class="news-meta">
@@ -5681,7 +5837,7 @@
         <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/716780409378048028" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-    <article class="news-card" data-news-kind="platform">
+    <article class="news-card" data-news-kind="platform" data-news-categories="[]">
       <span class="news-icon" aria-hidden="true">⚙</span>
       <div class="news-card-body">
         <div class="news-meta">
@@ -5692,56 +5848,40 @@
         <p>Today we&#039;ve made some changes to the set of official store tags available on Steam, adding 17 new tags, removing 28, and merging/updating a handful of others. These changes are made with the goal of helping Steam generate appropriate recommendations, and helping players identify </p>
         <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/528746250052307456" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
-    </article>
-    <article class="news-card" data-news-kind="platform">
-      <span class="news-icon" aria-hidden="true">⚙</span>
-      <div class="news-card-body">
-        <div class="news-meta">
-          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
-          <time><span data-copy-tr="23 Nis 2026" data-copy-en="23 Apr 2026">23 Nis 2026</span></time>
-        </div>
-        <h3>New Steam Deck data now available in beta</h3>
-        <p>Today we&#039;ve updated the partner dashboard with more information for Steam Deck Verified games. If your game has received a Steam Deck verification report and is marked as Verified, you will now see two new data sections tied to that report. Average framerate dataThis section prov</p>
-        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/717902598999377022" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-    <article class="news-card" data-news-kind="platform">
-      <span class="news-icon" aria-hidden="true">⚙</span>
-      <div class="news-card-body">
-        <div class="news-meta">
-          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
-          <time><span data-copy-tr="4 Mar 2026" data-copy-en="4 Mar 2026">4 Mar 2026</span></time>
-        </div>
-        <h3>Next Fest Developer Q&amp;A Session</h3>
-        <p>Join us April 21, 2026 at 10am Pacific time for a virtual Q&amp;A session about Next FestAre you considering participating with a free demo in this edition or a future edition of Next Fest? Tune in and join members of the Steam Team live in a virtual Q&amp;A session where we answer devel</p>
-        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/501722749836722566" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-    <article class="news-card" data-news-kind="platform">
-      <span class="news-icon" aria-hidden="true">⚙</span>
-      <div class="news-card-body">
-        <div class="news-meta">
-          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
-          <time><span data-copy-tr="2 Nis 2026" data-copy-en="2 Apr 2026">2 Nis 2026</span></time>
-        </div>
-        <h3>Wishlist Notification Email Updates</h3>
-        <p>We&#039;ve made some changes to our wishlist notification system. These changes are mostly around improving the reliability and speed of the system and should be invisible to users, but they will result in some changes to how wishlist email notification stats are reported. Previously,</p>
-        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/491595354293142217" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-    <article class="news-card" data-news-kind="platform">
-      <span class="news-icon" aria-hidden="true">⚙</span>
-      <div class="news-card-body">
-        <div class="news-meta">
-          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
-          <time><span data-copy-tr="28 Mar 2026" data-copy-en="28 Mar 2026">28 Mar 2026</span></time>
-        </div>
-        <h3>Updates to Pricing Conversion Tools</h3>
-        <p>With today’s Steam update, we’ve made two improvements to Steam’s pricing conversion data to help developers price games in 37 currencies and 4 region groups worldwide:We’ve updated our pricing conversion data to better reflect current market conditions around the world.We’ve als</p>
-        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/501722749836722406" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
-      </div>
     </article></div>
-            </div>
+
+    </section>
+
+    <section class="section dashboard-panel" id="admin" data-dashboard-panel="admin" aria-labelledby="admin-heading" hidden>
+      <div class="section-title">
+        <div>
+          <h2 id="admin-heading">Yönetim Paneli</h2>
+          <p>Erişim, günlük e-posta alıcıları ve son 30 günlük kullanım verileri.</p>
+        </div>
+      </div>
+      <div class="admin-grid">
+        <article class="admin-card">
+          <h3>Panel erişimi</h3>
+          <form class="admin-form" data-admin-user-form>
+            <input type="email" required placeholder="kullanici@ornek.com" data-admin-user-email>
+            <button type="submit">Erişim ver</button>
+          </form>
+          <div class="admin-list" data-admin-users></div>
+        </article>
+        <article class="admin-card">
+          <h3>Günlük e-posta alıcıları</h3>
+          <form class="admin-form" data-admin-recipient-form>
+            <input type="email" required placeholder="alici@ornek.com" data-admin-recipient-email>
+            <button type="submit">Alıcı ekle</button>
+          </form>
+          <div class="admin-list" data-admin-recipients></div>
+        </article>
+        <article class="admin-card">
+          <h3>Son 30 gün</h3>
+          <div class="admin-metrics" data-admin-metrics></div>
+          <div class="admin-list" data-admin-popular></div>
+        </article>
+      </div>
     </section>
 
     <footer data-i18n="footer">Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
@@ -5761,9 +5901,17 @@
     const hashState = new URLSearchParams(location.hash.slice(1));
     const viewTabs = [...document.querySelectorAll("[data-view-tab]")];
     const dashboardPanels = [...document.querySelectorAll("[data-dashboard-panel]")];
-    const menuToggle = document.querySelector("[data-menu-toggle]");
-    const siteMenu = document.querySelector("[data-site-menu]");
-    let activeView = hashState.get("view") === "news" ? "news" : "radar";
+    const allowedViews = new Set([
+      "events",
+      "games",
+      "steamworks",
+      "releases",
+      "stats",
+      "admin",
+    ]);
+    let activeView = allowedViews.has(hashState.get("view"))
+      ? hashState.get("view")
+      : "events";
     const allowedFilters = new Set([
       "all",
       "themed_fest",
@@ -5792,7 +5940,7 @@
       if (incompleteOnly) state.set("incomplete", "1");
       if (timelineOffset > 0) state.set("month", String(timelineOffset));
       if (activeEventId) state.set("event", activeEventId);
-      if (activeView === "news") state.set("view", "news");
+      if (activeView !== "events") state.set("view", activeView);
       const hash = state.toString();
       history.replaceState(
         null,
@@ -5801,13 +5949,8 @@
       );
     }
 
-    function closeMenu() {
-      siteMenu.hidden = true;
-      menuToggle.setAttribute("aria-expanded", "false");
-    }
-
     function setView(view, updateUrl = true) {
-      activeView = view === "news" ? "news" : "radar";
+      activeView = allowedViews.has(view) ? view : "events";
       viewTabs.forEach((button) => {
         const active = button.dataset.viewTab === activeView;
         button.classList.toggle("active", active);
@@ -5819,32 +5962,191 @@
       if (updateUrl) writeUrlState();
     }
 
-    menuToggle?.addEventListener("click", () => {
-      const opening = siteMenu.hidden;
-      siteMenu.hidden = !opening;
-      menuToggle.setAttribute("aria-expanded", String(opening));
-    });
-    siteMenu?.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        setView(link.dataset.menuView || "radar");
-        document.querySelector(link.getAttribute("href"))?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-        closeMenu();
-      });
-    });
     viewTabs.forEach((button) => {
       button.addEventListener("click", () => setView(button.dataset.viewTab));
     });
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && !siteMenu.hidden) {
-        closeMenu();
-        menuToggle.focus();
-      }
-    });
     setView(activeView, false);
+
+    const newsTabs = [...document.querySelectorAll("[data-news-tab]")];
+    const newsPanels = [...document.querySelectorAll("[data-news-panel]")];
+    const newsCategory = document.querySelector("[data-news-category]");
+    let activeNewsTab = "new_release";
+
+    function updateNewsView() {
+      const category = newsCategory?.value || "";
+      newsTabs.forEach((button) => {
+        const active = button.dataset.newsTab === activeNewsTab;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-selected", String(active));
+      });
+      newsPanels.forEach((panel) => {
+        const active = panel.dataset.newsPanel === activeNewsTab;
+        panel.hidden = !active;
+        if (!active) return;
+        let visible = 0;
+        panel.querySelectorAll(".news-card").forEach((card) => {
+          let categories = [];
+          try {
+            categories = JSON.parse(card.dataset.newsCategories || "[]");
+          } catch {}
+          const matches = !category || categories.includes(category);
+          card.hidden = !matches;
+          if (matches) visible++;
+        });
+        const emptyState = panel.querySelector("[data-news-empty]");
+        if (emptyState) emptyState.hidden = visible > 0;
+      });
+    }
+
+    newsTabs.forEach((button) => {
+      button.addEventListener("click", () => {
+        activeNewsTab = button.dataset.newsTab;
+        updateNewsView();
+      });
+    });
+    newsCategory?.addEventListener("change", updateNewsView);
+    updateNewsView();
+
+    function recordAnalytics(eventName, target = "") {
+      if (location.protocol === "file:") return;
+      fetch("/api/analytics", {
+        method: "POST",
+        headers: {
+          accept: "application/json",
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({ eventName, target }),
+        keepalive: true,
+      }).catch(() => {});
+    }
+
+    const adminOpen = document.querySelector("[data-admin-open]");
+    const adminUsers = document.querySelector("[data-admin-users]");
+    const adminRecipients = document.querySelector("[data-admin-recipients]");
+    const adminMetrics = document.querySelector("[data-admin-metrics]");
+    const adminPopular = document.querySelector("[data-admin-popular]");
+
+    function adminRow(item, collection) {
+      const row = document.createElement("div");
+      row.className = "admin-list-row";
+      const email = document.createElement("span");
+      email.textContent = item.email;
+      const remove = document.createElement("button");
+      remove.type = "button";
+      remove.dataset.adminRemove = collection;
+      remove.dataset.adminEmail = item.email;
+      remove.textContent = "Kaldır";
+      row.append(email, remove);
+      return row;
+    }
+
+    async function loadAdmin() {
+      try {
+        const response = await fetch("/api/admin", {
+          headers: { accept: "application/json" },
+        });
+        if (!response.ok) return false;
+        const payload = await response.json();
+        adminOpen.hidden = false;
+        adminUsers.replaceChildren(
+          ...(payload.users || []).map((item) => adminRow(item, "users")),
+        );
+        adminRecipients.replaceChildren(
+          ...(payload.recipients || []).map((item) =>
+            adminRow(item, "recipients"),
+          ),
+        );
+        const metrics = [
+          [payload.analytics?.pageViews || 0, "Sayfa görüntüleme"],
+          [payload.analytics?.visitors || 0, "Tekil kullanıcı"],
+          [payload.analytics?.events || 0, "Toplam etkileşim"],
+        ];
+        adminMetrics.replaceChildren(
+          ...metrics.map(([value, label]) => {
+            const card = document.createElement("div");
+            card.className = "admin-metric";
+            const strong = document.createElement("strong");
+            strong.textContent = formatNumber(value);
+            const caption = document.createElement("span");
+            caption.textContent = label;
+            card.append(strong, caption);
+            return card;
+          }),
+        );
+        adminPopular.replaceChildren(
+          ...(payload.analytics?.popular || []).map((item) => {
+            const row = document.createElement("div");
+            row.className = "admin-list-row";
+            row.textContent =
+              item.eventName + (item.target ? " · " + item.target : "") +
+              " · " + item.count;
+            return row;
+          }),
+        );
+        return true;
+      } catch {
+        return false;
+      }
+    }
+
+    async function updateAdminEmail(collection, email, method) {
+      const suffix =
+        method === "DELETE" ? "?email=" + encodeURIComponent(email) : "";
+      const response = await fetch("/api/admin/" + collection + suffix, {
+        method,
+        headers: {
+          accept: "application/json",
+          "content-type": "application/json",
+        },
+        body: method === "POST" ? JSON.stringify({ email }) : undefined,
+      });
+      if (!response.ok) throw new Error("admin update failed");
+      await loadAdmin();
+    }
+
+    adminOpen?.addEventListener("click", () => {
+      setView("admin");
+      recordAnalytics("view_tab", "admin");
+    });
+    document.querySelector("[data-admin-user-form]")?.addEventListener(
+      "submit",
+      async (event) => {
+        event.preventDefault();
+        const input = document.querySelector("[data-admin-user-email]");
+        await updateAdminEmail("users", input.value.trim(), "POST");
+        input.value = "";
+      },
+    );
+    document.querySelector("[data-admin-recipient-form]")?.addEventListener(
+      "submit",
+      async (event) => {
+        event.preventDefault();
+        const input = document.querySelector("[data-admin-recipient-email]");
+        await updateAdminEmail("recipients", input.value.trim(), "POST");
+        input.value = "";
+      },
+    );
+    document.querySelector("#admin")?.addEventListener("click", async (event) => {
+      const button = event.target.closest("[data-admin-remove]");
+      if (!button) return;
+      if (!window.confirm(button.dataset.adminEmail + " kaldırılsın mı?")) return;
+      await updateAdminEmail(
+        button.dataset.adminRemove,
+        button.dataset.adminEmail,
+        "DELETE",
+      );
+    });
+    loadAdmin();
+    recordAnalytics("page_view", location.pathname);
+    viewTabs.forEach((button) => {
+      button.addEventListener("click", () =>
+        recordAnalytics("view_tab", button.dataset.viewTab),
+      );
+    });
+    document.addEventListener("click", (event) => {
+      const link = event.target.closest("a[target='_blank']");
+      if (link) recordAnalytics("outbound_click", link.href);
+    });
 
     function setToggleState(button, active) {
       button?.classList.toggle("active", active);
@@ -6271,17 +6573,40 @@
     const steamSearchStatus = document.querySelector(
       "[data-steam-search-status]",
     );
+    const gameDialog = document.querySelector("[data-game-dialog]");
+    const gameDialogCover = document.querySelector("[data-game-dialog-cover]");
+    const gameDialogTitle = document.querySelector("[data-game-dialog-title]");
+    const gameDialogMeta = document.querySelector("[data-game-dialog-meta]");
+    const gameDialogTags = document.querySelector("[data-game-dialog-tags]");
+    const gameDialogHistory = document.querySelector("[data-game-dialog-history]");
+    const gameDialogSteamLink = document.querySelector("[data-game-steam-link]");
+    const gameDialogFocus = document.querySelector("[data-game-dialog-focus]");
+    const gameDialogDelete = document.querySelector("[data-game-dialog-delete]");
+    const comparisonSearch = document.querySelector("[data-comparison-search]");
+    const comparisonResults = document.querySelector("[data-comparison-results]");
+    const comparisonStatus = document.querySelector("[data-comparison-status]");
     let steamSearchTimer = 0;
     let steamSearchController;
     let steamDetailController;
     let steamOptions = [];
     let selectedSteamDetails = null;
     const gameStatsByAppId = new Map();
+    const gamalyticByAppId = new Map();
+    const gamalyticUnavailable = new Set();
     const statsStorageKey = "steam-etkinlik-radari-istatistik-v1";
+    let comparisonGames = [];
+    let comparisonTimer = 0;
 
     function formatNumber(value) {
       return new Intl.NumberFormat(
         descriptionLanguage === "en" ? "en-US" : "tr-TR",
+      ).format(Number(value || 0));
+    }
+
+    function formatUsd(value) {
+      return new Intl.NumberFormat(
+        descriptionLanguage === "en" ? "en-US" : "tr-TR",
+        { style: "currency", currency: "USD", maximumFractionDigits: 0 },
       ).format(Number(value || 0));
     }
 
@@ -6307,7 +6632,11 @@
 
     function renderGameStats() {
       gameStats.replaceChildren();
-      const measurableGames = games.filter((game) => /^\d+$/.test(game.appId));
+      const measurableGames = [...new Map(
+        [...games, ...comparisonGames]
+          .filter((game) => /^\d+$/.test(game.appId))
+          .map((game) => [game.appId, game]),
+      ).values()];
       if (measurableGames.length === 0) {
         const emptyState = document.createElement("div");
         emptyState.className = "empty";
@@ -6324,6 +6653,16 @@
         const title = document.createElement("h4");
         title.textContent = game.name;
         body.append(title);
+        if (game.comparisonOnly) {
+          const removeComparison = document.createElement("button");
+          removeComparison.type = "button";
+          removeComparison.dataset.comparisonRemove = game.appId;
+          removeComparison.textContent = localized(
+            "Karşılaştırmadan çıkar",
+            "Remove from comparison",
+          );
+          body.append(removeComparison);
+        }
         if (!stats) {
           const loading = document.createElement("p");
           loading.className = "stats-note";
@@ -6348,6 +6687,42 @@
             values.append(metric);
           });
           body.append(values);
+          const gamalytic = gamalyticByAppId.get(game.appId);
+          if (gamalytic) {
+            const estimateHeading = document.createElement("p");
+            estimateHeading.className = "stats-note";
+            estimateHeading.textContent = localized(
+              "Gamalytic tahminleri",
+              "Gamalytic estimates",
+            );
+            body.append(estimateHeading);
+            const estimates = document.createElement("div");
+            estimates.className = "stats-values";
+            [
+              [formatNumber(gamalytic.wishlists), localized("Wishlist (tahmin)", "Wishlists (estimate)")],
+              [formatNumber(gamalytic.copiesSold), localized("Satış (tahmin)", "Sales (estimate)")],
+              [formatUsd(gamalytic.totalRevenue || gamalytic.revenue), localized("Gelir (tahmin)", "Revenue (estimate)")],
+              [formatNumber(gamalytic.owners), localized("Sahip (tahmin)", "Owners (estimate)")],
+            ].forEach(([value, label]) => {
+              const metric = document.createElement("span");
+              metric.className = "stats-value";
+              const strong = document.createElement("strong");
+              strong.textContent = value;
+              const caption = document.createElement("span");
+              caption.textContent = label;
+              metric.append(strong, caption);
+              estimates.append(metric);
+            });
+            body.append(estimates);
+          } else if (gamalyticUnavailable.has(game.appId)) {
+            const unavailable = document.createElement("p");
+            unavailable.className = "stats-note";
+            unavailable.textContent = localized(
+              "Gamalytic bağlandığında wishlist, satış ve gelir tahminleri burada görünecek.",
+              "Wishlist, sales and revenue estimates will appear here once Gamalytic is connected.",
+            );
+            body.append(unavailable);
+          }
           const note = document.createElement("p");
           note.className = "stats-note";
           note.textContent = localized(
@@ -6364,8 +6739,13 @@
     async function refreshGameStats() {
       renderGameStats();
       if (location.protocol === "file:") return;
+      const statsGames = [...new Map(
+        [...games, ...comparisonGames]
+          .filter((game) => /^\d+$/.test(game.appId))
+          .map((game) => [game.appId, game]),
+      ).values()];
       await Promise.all(
-        games
+        statsGames
           .filter(
             (game) =>
               /^\d+$/.test(game.appId) && !gameStatsByAppId.has(game.appId),
@@ -6383,8 +6763,152 @@
             } catch {}
           }),
       );
+      await Promise.all(
+        statsGames
+          .filter(
+            (game) =>
+              /^\d+$/.test(game.appId) &&
+              !gamalyticByAppId.has(game.appId) &&
+              !gamalyticUnavailable.has(game.appId),
+          )
+          .map(async (game) => {
+            try {
+              const response = await fetch(
+                "/api/gamalytic-game?appid=" + encodeURIComponent(game.appId),
+                { headers: { accept: "application/json" } },
+              );
+              if (!response.ok) {
+                gamalyticUnavailable.add(game.appId);
+                return;
+              }
+              gamalyticByAppId.set(game.appId, await response.json());
+            } catch {
+              gamalyticUnavailable.add(game.appId);
+            }
+          }),
+      );
       renderGameStats();
     }
+
+    async function addComparisonGame(option) {
+      comparisonResults.hidden = true;
+      comparisonSearch.value = "";
+      if (
+        games.some((game) => game.appId === option.appId) ||
+        comparisonGames.some((game) => game.appId === option.appId)
+      ) {
+        comparisonStatus.textContent = localized(
+          "Bu oyun zaten karşılaştırmada.",
+          "This game is already in the comparison.",
+        );
+        return;
+      }
+      comparisonStatus.textContent = localized(
+        "Oyun bilgileri alınıyor…",
+        "Loading game details…",
+      );
+      try {
+        const response = await fetch(
+          "/api/steam-app?appid=" + encodeURIComponent(option.appId) + "&v=5",
+          { headers: { accept: "application/json" } },
+        );
+        if (!response.ok) throw new Error("details failed");
+        const details = await response.json();
+        comparisonGames.push({
+          id: "comparison-" + option.appId,
+          name: details.name || option.name,
+          appId: option.appId,
+          tags: normalizeTags(details.tags),
+          demoStatus: details.demoStatus || "none",
+          releaseStatus: details.releaseStatus || "unreleased",
+          localMultiplayer: details.localMultiplayer === true,
+          capsuleImageUrl: safeSteamImage(details.capsuleImageUrl),
+          nextFestHistory: [],
+          comparisonOnly: true,
+        });
+        comparisonStatus.textContent = localized(
+          "Karşılaştırmaya eklendi.",
+          "Added to comparison.",
+        );
+        await refreshGameStats();
+      } catch {
+        comparisonStatus.textContent = localized(
+          "Oyun bilgileri alınamadı.",
+          "Game details could not be loaded.",
+        );
+      }
+    }
+
+    async function searchComparisonGames(query) {
+      comparisonStatus.textContent = localized(
+        "Steam’de aranıyor…",
+        "Searching Steam…",
+      );
+      try {
+        const response = await fetch(
+          "/api/steam-search?q=" + encodeURIComponent(query),
+          { headers: { accept: "application/json" } },
+        );
+        if (!response.ok) throw new Error("search failed");
+        const payload = await response.json();
+        const options = Array.isArray(payload.results) ? payload.results : [];
+        comparisonResults.replaceChildren();
+        options.slice(0, 8).forEach((option) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "steam-game-option";
+          button.dataset.comparisonOption = String(option.appId);
+          button.dataset.comparisonName = String(option.name || "");
+          const image = document.createElement("img");
+          image.src = safeSteamImage(option.imageUrl);
+          image.alt = "";
+          const name = document.createElement("strong");
+          name.textContent = String(option.name || "");
+          button.append(image, name);
+          comparisonResults.append(button);
+        });
+        comparisonResults.hidden = options.length === 0;
+        comparisonStatus.textContent = options.length
+          ? localized("Bir oyun seçin.", "Select a game.")
+          : localized("Oyun bulunamadı.", "No game found.");
+      } catch {
+        comparisonResults.hidden = true;
+        comparisonStatus.textContent = localized(
+          "Steam araması şu anda kullanılamıyor.",
+          "Steam search is currently unavailable.",
+        );
+      }
+    }
+
+    comparisonSearch?.addEventListener("input", () => {
+      const query = comparisonSearch.value.trim();
+      window.clearTimeout(comparisonTimer);
+      if (query.length < 2) {
+        comparisonResults.hidden = true;
+        comparisonStatus.textContent = translate("typeTwoChars");
+        return;
+      }
+      comparisonTimer = window.setTimeout(
+        () => searchComparisonGames(query),
+        300,
+      );
+    });
+    comparisonResults?.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-comparison-option]");
+      if (!button) return;
+      addComparisonGame({
+        appId: button.dataset.comparisonOption,
+        name: button.dataset.comparisonName,
+      });
+    });
+    gameStats?.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-comparison-remove]");
+      if (!button) return;
+      comparisonGames = comparisonGames.filter(
+        (game) => game.appId !== button.dataset.comparisonRemove,
+      );
+      renderGameStats();
+    });
 
     function safeSteamImage(value) {
       try {
@@ -6421,7 +6945,7 @@
         const response = await fetch(
           "/api/steam-app?appid=" +
             encodeURIComponent(option.appId) +
-            "&v=4",
+            "&v=5",
           {
             signal: steamDetailController.signal,
             headers: { accept: "application/json" },
@@ -6497,9 +7021,7 @@
         const copy = document.createElement("span");
         const name = document.createElement("strong");
         name.textContent = option.name;
-        const appId = document.createElement("small");
-        appId.textContent = "Steam App ID · " + option.appId;
-        copy.append(name, appId);
+        copy.append(name);
         button.append(image, copy);
         steamGameResults.append(button);
       });
@@ -6563,8 +7085,8 @@
         closeSteamResults();
         steamSearchStatus.textContent =
           localized(
-            "Steam araması şu anda kullanılamıyor; manuel giriş yapabilirsiniz.",
-            "Steam search is currently unavailable; you can enter the game manually.",
+            "Steam araması şu anda kullanılamıyor. Lütfen biraz sonra yeniden deneyin.",
+            "Steam search is currently unavailable. Please try again shortly.",
           );
       }
     }
@@ -6784,7 +7306,6 @@
 
     function gameMeta(game) {
       const parts = [];
-      if (game.appId) parts.push("App ID " + game.appId);
       parts.push(demoLabels[descriptionLanguage][game.demoStatus]);
       parts.push(releaseLabels[descriptionLanguage][game.releaseStatus]);
       parts.push(
@@ -6859,61 +7380,54 @@
 
     let focusedGameId = "";
 
+    function closeGameDialog() {
+      if (gameDialog?.open) gameDialog.close();
+    }
+
+    function openGameDialog(game) {
+      gameDialogCover.replaceChildren(createGameCapsule(game));
+      gameDialogTitle.textContent = game.name;
+      gameDialogMeta.textContent = gameMeta(game);
+      gameDialogTags.textContent = game.tags.length
+        ? localized("Etiketler: ", "Tags: ") + game.tags.join(", ")
+        : localized("Steam etiketi bulunamadı.", "No Steam tags found.");
+      gameDialogHistory.replaceChildren();
+      const history = nextFestHistoryBlock(game);
+      if (history) gameDialogHistory.append(history);
+      gameDialogSteamLink.href =
+        "https://store.steampowered.com/app/" + encodeURIComponent(game.appId) + "/";
+      gameDialogFocus.dataset.gameDialogFocus = game.id;
+      gameDialogFocus.textContent =
+        focusedGameId === game.id
+          ? localized("Tüm etkinlikleri göster", "Show all events")
+          : localized("Uygun etkinlikleri göster", "Show matching events");
+      gameDialogDelete.dataset.gameDialogDelete = game.id;
+      gameDialogDelete.textContent = localized("Oyunu kaldır", "Remove game");
+      gameDialog.showModal();
+    }
+
     function renderGames() {
       gamesList.replaceChildren();
       games.forEach((game) => {
-        const item = document.createElement("details");
+        const item = document.createElement("article");
         item.className = "game-profile";
 
-        const summary = document.createElement("summary");
+        const summary = document.createElement("button");
+        summary.type = "button";
+        summary.className = "game-profile-button";
+        summary.dataset.gameOpen = game.id;
+        summary.setAttribute(
+          "aria-label",
+          game.name + localized(" ayrıntılarını aç", " open details"),
+        );
         summary.append(createGameCapsule(game));
         const overlay = document.createElement("span");
         overlay.className = "game-card-overlay";
         const overlayName = document.createElement("strong");
         overlayName.textContent = game.name;
-        const overlayMeta = document.createElement("small");
-        overlayMeta.textContent =
-          "Steam App ID · " + (game.appId || localized("yok", "none"));
-        overlay.append(overlayName, overlayMeta);
+        overlay.append(overlayName);
         summary.append(overlay);
-
-        const body = document.createElement("div");
-        body.className = "game-profile-body";
-        const meta = document.createElement("small");
-        meta.textContent = gameMeta(game);
-        const tags = document.createElement("small");
-        tags.textContent = game.tags.length
-          ? localized("Etiketler: ", "Tags: ") + game.tags.join(", ")
-          : localized("Etiket girilmedi", "No tags entered");
-        body.append(meta, tags);
-        const history = nextFestHistoryBlock(game);
-        if (history) body.append(history);
-
-        const actions = document.createElement("div");
-        actions.className = "game-profile-actions";
-        const remove = document.createElement("button");
-        remove.type = "button";
-        remove.dataset.gameDelete = game.id;
-        remove.textContent = localized("Sil", "Delete");
-        remove.setAttribute(
-          "aria-label",
-          game.name + localized(" oyununu sil", " delete game"),
-        );
-        const focus = document.createElement("button");
-        focus.type = "button";
-        focus.dataset.gameFocus = game.id;
-        focus.classList.toggle("active", focusedGameId === game.id);
-        focus.textContent =
-          focusedGameId === game.id
-            ? localized("Tüm etkinlikler", "All events")
-            : localized("Bu oyunun işleri", "This game's work");
-        focus.setAttribute(
-          "aria-label",
-          game.name + localized(" için operasyon görünümü", " operations view"),
-        );
-        actions.append(focus, remove);
-        body.append(actions);
-        item.append(summary, body);
+        item.append(summary);
         gamesList.append(item);
       });
     }
@@ -6926,9 +7440,7 @@
       selectedSteamDetails = null;
       closeSteamResults();
       steamSearchStatus.textContent = translate("typeTwoChars");
-      gameCancel.hidden = true;
-      gameForm.querySelector("[data-game-submit]").textContent =
-        translate("saveGame");
+      if (gameCancel) gameCancel.hidden = true;
     }
 
     function matchingGamesForRow(row) {
@@ -7101,7 +7613,7 @@
           game.appId &&
           (!game.steamDetailsCheckedAt ||
             Date.parse(game.steamDetailsCheckedAt) < refreshCutoff ||
-            game.steamImageVersion < 4),
+            game.steamImageVersion < 5),
       );
       let changed = false;
       for (const game of pending) {
@@ -7109,7 +7621,7 @@
           const response = await fetch(
             "/api/steam-app?appid=" +
               encodeURIComponent(game.appId) +
-              "&v=4",
+              "&v=5",
             { headers: { accept: "application/json" } },
           );
           if (!response.ok) continue;
@@ -7137,7 +7649,7 @@
             details.nextFestHistory,
           );
           game.steamDetailsCheckedAt = new Date().toISOString();
-          game.steamImageVersion = 4;
+          game.steamImageVersion = 5;
           changed = true;
         } catch {}
       }
@@ -7212,7 +7724,7 @@
           : games.find((item) => item.id === gameIdInput.value)
               ?.steamDetailsCheckedAt || "",
         steamImageVersion: selectedSteamDetails
-          ? 4
+          ? 5
           : games.find((item) => item.id === gameIdInput.value)
               ?.steamImageVersion || 0,
       };
@@ -7228,15 +7740,35 @@
       resetGameForm();
     });
 
+    gameDialog?.addEventListener("click", (event) => {
+      if (event.target === gameDialog) closeGameDialog();
+    });
+    document.querySelector("[data-game-dialog-close]")?.addEventListener(
+      "click",
+      closeGameDialog,
+    );
     gameCancel?.addEventListener("click", resetGameForm);
     gamesList?.addEventListener("click", (event) => {
       const button = event.target.closest("button");
       if (!button) return;
+      const openId = button.dataset.gameOpen;
+      if (openId) {
+        const game = games.find((item) => item.id === openId);
+        if (game) openGameDialog(game);
+        return;
+      }
+    });
+    gameDialog?.addEventListener("click", (event) => {
+      const button = event.target.closest("button");
+      if (!button) return;
       const editId = button.dataset.gameEdit;
-      const deleteId = button.dataset.gameDelete;
-      const focusId = button.dataset.gameFocus;
+      const deleteId =
+        button.dataset.gameDelete || button.dataset.gameDialogDelete;
+      const focusId =
+        button.dataset.gameFocus || button.dataset.gameDialogFocus;
       if (focusId) {
         focusedGameId = focusedGameId === focusId ? "" : focusId;
+        closeGameDialog();
         renderGames();
         refreshGameStats();
         updateGameMatches();
@@ -7260,9 +7792,7 @@
           capsuleImageUrl: game.capsuleImageUrl,
           nextFestHistory: game.nextFestHistory,
         };
-        gameCancel.hidden = false;
-        gameForm.querySelector("[data-game-submit]").textContent =
-          localized("Değişiklikleri kaydet", "Save changes");
+        if (gameCancel) gameCancel.hidden = false;
         gameNameInput.focus();
         gameForm.scrollIntoView({ behavior: "smooth", block: "center" });
       }
@@ -7281,6 +7811,7 @@
           return;
         }
         games = games.filter((item) => item.id !== deleteId);
+        closeGameDialog();
         writeGames();
         removeTeamState("game:" + deleteId);
         renderGames();

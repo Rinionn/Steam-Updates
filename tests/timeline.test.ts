@@ -99,9 +99,9 @@ describe("event timeline", () => {
     expect(html).toContain("Steam araması Cloudflare");
     expect(html).not.toContain("Bugün ne yapmalıyız?");
     expect(html).not.toContain("Operasyon metrikleri");
-    expect(html).toContain("data-menu-toggle");
+    expect(html).not.toContain("data-menu-toggle");
     expect(html).toContain("Steam Haberleri");
-    expect(html).toContain("Oyun istatistikleri");
+    expect(html).toContain("Oyun İstatistikleri");
     expect(html).toContain("Başvuru takibi");
     expect(html).toContain('data-application-status');
     expect(html).toContain("/api/team-state");

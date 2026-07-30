@@ -172,6 +172,24 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           wranglerVersion: "4"
 
+      - name: Gamalytic API anahtarini Worker'a tanimla
+        if: vars.CLOUDFLARE_ENABLED == 'true' && vars.GAMALYTIC_ENABLED == 'true'
+        shell: bash
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          GAMALYTIC_API_KEY: ${{ secrets.GAMALYTIC_API_KEY }}
+        run: printf '%s' "$GAMALYTIC_API_KEY" | npx wrangler@4 secret put GAMALYTIC_API_KEY
+
+      - name: E-posta otomasyon anahtarini Worker'a tanimla
+        if: vars.CLOUDFLARE_ENABLED == 'true' && vars.EMAIL_ADMIN_ENABLED == 'true'
+        shell: bash
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          EMAIL_AUTOMATION_SECRET: ${{ secrets.EMAIL_AUTOMATION_SECRET }}
+        run: printf '%s' "$EMAIL_AUTOMATION_SECRET" | npx wrangler@4 secret put EMAIL_AUTOMATION_SECRET
+
       - name: Otomatik olusturulan D1 baglantisini kaydet
         if: vars.CLOUDFLARE_ENABLED == 'true'
         shell: bash

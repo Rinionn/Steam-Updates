@@ -65,6 +65,7 @@ export interface SteamNewsItem {
   dateLabel?: string;
   imageUrl?: string;
   summary?: string;
+  categories?: string[];
 }
 
 export interface SteamNewsSnapshot {
@@ -98,5 +99,7 @@ export interface AppConfig {
     smtpSecure: boolean;
     smtpUser?: string;
     smtpPass?: string;
+    recipientApiUrl?: string;
+    recipientApiSecret?: string;
   };
 }

@@ -607,11 +607,40 @@ function emailAddresses(value?: string): string[] {
     .filter(Boolean);
 }
 
+async function resolvedBcc(): Promise<string[]> {
+  const fallback = emailAddresses(config.email.bcc);
+  if (
+    !config.email.recipientApiUrl ||
+    !config.email.recipientApiSecret
+  ) {
+    return fallback;
+  }
+  try {
+    const response = await fetch(config.email.recipientApiUrl, {
+      headers: {
+        accept: "application/json",
+        authorization: `Bearer ${config.email.recipientApiSecret}`,
+      },
+    });
+    if (!response.ok) return fallback;
+    const body = (await response.json()) as { recipients?: unknown };
+    const managed = Array.isArray(body.recipients)
+      ? body.recipients
+          .map((value) => String(value).trim())
+          .filter(Boolean)
+      : [];
+    return [...new Set([...fallback, ...managed])];
+  } catch {
+    return fallback;
+  }
+}
+
 async function sendWithResend(
   subject: string,
   html: string,
   text: string,
   localDateKey: string,
+  bcc: string[],
 ): Promise<string> {
   const recipientHash = createHash("sha1")
     .update(config.email.to || "")
@@ -627,10 +656,7 @@ async function sendWithResend(
     body: JSON.stringify({
       from: config.email.from,
       to: emailAddresses(config.email.to),
-      bcc:
-        emailAddresses(config.email.bcc).length > 0
-          ? emailAddresses(config.email.bcc)
-          : undefined,
+      bcc: bcc.length > 0 ? bcc : undefined,
       subject,
       html,
       text,
@@ -648,6 +674,7 @@ async function sendWithSmtp(
   subject: string,
   html: string,
   text: string,
+  bcc: string[],
 ): Promise<string> {
   const transporter = nodemailer.createTransport({
     host: config.email.smtpHost,
@@ -664,7 +691,7 @@ async function sendWithSmtp(
   const result = await transporter.sendMail({
     from: config.email.from,
     to: emailAddresses(config.email.to),
-    bcc: emailAddresses(config.email.bcc),
+    bcc,
     subject,
     html,
     text,
@@ -715,6 +742,7 @@ export async function sendDigest(
 
   let provider: DigestResult["provider"];
   let messageId: string;
+  const bcc = await resolvedBcc();
   if (config.email.resendApiKey) {
     provider = "resend";
     messageId = await sendWithResend(
@@ -722,6 +750,7 @@ export async function sendDigest(
       rendered.html,
       rendered.text,
       localDateKey,
+      bcc,
     );
   } else if (
     config.email.smtpHost &&
@@ -729,7 +758,12 @@ export async function sendDigest(
     config.email.smtpPass
   ) {
     provider = "smtp";
-    messageId = await sendWithSmtp(rendered.subject, rendered.html, rendered.text);
+    messageId = await sendWithSmtp(
+      rendered.subject,
+      rendered.html,
+      rendered.text,
+      bcc,
+    );
   } else if (config.email.smtpHost) {
     return {
       sent: false,

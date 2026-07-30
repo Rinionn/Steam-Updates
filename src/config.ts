@@ -46,7 +46,7 @@ export const config: AppConfig = {
     "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
   dashboardUrl:
     process.env.PUBLIC_DASHBOARD_URL ||
-    "https://rinionn.github.io/Steam-Updates/",
+    "https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/",
   email: {
     to: process.env.EMAIL_TO,
     bcc: process.env.EMAIL_BCC,
@@ -57,5 +57,7 @@ export const config: AppConfig = {
     smtpSecure: booleanValue(process.env.SMTP_SECURE, true),
     smtpUser: process.env.SMTP_USER,
     smtpPass: process.env.SMTP_PASS,
+    recipientApiUrl: process.env.EMAIL_RECIPIENT_API_URL,
+    recipientApiSecret: process.env.EMAIL_AUTOMATION_SECRET,
   },
 };

@@ -29,6 +29,8 @@ jobs:
       SMTP_SECURE: "true"
       SMTP_USER: batuhan.ozmen@gaminginturkey.com
       SMTP_PASS: ${{ secrets.GMAIL_APP_PASSWORD }}
+      EMAIL_RECIPIENT_API_URL: https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/api/automation/email-recipients
+      EMAIL_AUTOMATION_SECRET: ${{ secrets.EMAIL_AUTOMATION_SECRET }}
 
     steps:
       - name: Kaynak kodu al

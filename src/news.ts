@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import * as cheerio from "cheerio";
+import { DateTime } from "luxon";
 import { fetchHtml } from "./fetch.js";
 import { paths } from "./config.js";
 import type {
@@ -12,21 +13,64 @@ import { stableId } from "./utils.js";
 
 const SOURCES = {
   newReleases:
-    "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&ndl=1",
+    "https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998&ndl=1&l=english",
   comingSoon:
-    "https://store.steampowered.com/search/?filter=comingsoon&category1=998&ndl=1",
+    "https://store.steampowered.com/search/?filter=comingsoon&category1=998&ndl=1&l=english",
   steamworks:
     "https://steamcommunity.com/groups/steamworks/rss/",
+};
+
+const STEAM_TAG_CATEGORIES: Record<number, string> = {
+  19: "Aksiyon",
+  21: "Macera",
+  9: "Strateji",
+  122: "RPG",
+  599: "Simülasyon",
+  597: "Gündelik",
+  701: "Spor",
+  699: "Yarış",
+  493: "Bağımsız",
+  4085: "Anime",
+  1667: "Korku",
+  3859: "Çok Oyunculu",
+  4182: "Tek Oyunculu",
+  113: "Oynaması Ücretsiz",
 };
 
 function cleanText(value: string): string {
   return value.replace(/\s+/g, " ").trim();
 }
 
+function categoriesFromRow(value?: string): string[] {
+  try {
+    const ids = JSON.parse(value || "[]") as unknown;
+    if (!Array.isArray(ids)) return [];
+    return [...new Set(ids.map(Number).map((id) => STEAM_TAG_CATEGORIES[id]).filter(Boolean))];
+  } catch {
+    return [];
+  }
+}
+
+function storeDate(value: string, now: DateTime): DateTime | null {
+  const normalized = cleanText(value);
+  const formats = ["d MMM, yyyy", "MMM d, yyyy", "d MMM yyyy", "MMM yyyy"];
+  for (const format of formats) {
+    const parsed = DateTime.fromFormat(normalized, format, {
+      locale: "en",
+      zone: "Europe/Istanbul",
+    });
+    if (parsed.isValid) {
+      return format === "MMM yyyy" ? parsed.endOf("month") : parsed.startOf("day");
+    }
+  }
+  const iso = DateTime.fromISO(normalized, { zone: "Europe/Istanbul" });
+  return iso.isValid ? iso : null;
+}
+
 export function parseStoreSearch(
   html: string,
   kind: Extract<SteamNewsKind, "new_release" | "coming_soon">,
-  limit = 8,
+  limit = 50,
 ): SteamNewsItem[] {
   const $ = cheerio.load(html);
   return $(".search_result_row")
@@ -46,6 +90,7 @@ export function parseStoreSearch(
         imageUrl:
           String(row.find(".search_capsule img").first().attr("src") || "").trim() ||
           undefined,
+        categories: categoriesFromRow(row.attr("data-ds-tagids")),
       };
     })
     .filter((item) => item.title && item.url);
@@ -94,15 +139,28 @@ export async function readSteamNews(
 }
 
 export async function syncSteamNews(): Promise<SteamNewsSnapshot> {
+  const now = DateTime.now().setZone("Europe/Istanbul");
+  const monthAgo = now.minus({ days: 30 }).startOf("day");
+  const monthAhead = now.plus({ days: 30 }).endOf("day");
+  const platformCutoff = now.minus({ months: 3 }).toMillis();
   const results = await Promise.allSettled([
     fetchHtml(SOURCES.newReleases).then((html) =>
-      parseStoreSearch(html, "new_release"),
+      parseStoreSearch(html, "new_release").filter((item) => {
+        const date = storeDate(item.dateLabel || "", now);
+        return Boolean(date && date.toMillis() >= monthAgo.toMillis() && date.toMillis() <= now.endOf("day").toMillis());
+      }).slice(0, 24),
     ),
     fetchHtml(SOURCES.comingSoon).then((html) =>
-      parseStoreSearch(html, "coming_soon"),
+      parseStoreSearch(html, "coming_soon").filter((item) => {
+        const date = storeDate(item.dateLabel || "", now);
+        return Boolean(date && date.toMillis() >= now.startOf("day").toMillis() && date.toMillis() <= monthAhead.toMillis());
+      }).slice(0, 24),
     ),
     fetchHtml(SOURCES.steamworks).then((xml) =>
-      parseSteamworksAnnouncements(xml),
+      parseSteamworksAnnouncements(xml, 30).filter((item) => {
+        const published = Date.parse(item.publishedAt || "");
+        return Number.isFinite(published) && published >= platformCutoff;
+      }),
     ),
   ]);
   const items = results.flatMap((result) =>

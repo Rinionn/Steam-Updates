@@ -2,7 +2,7 @@ const STEAM_SUGGEST_URL =
   "https://store.steampowered.com/search/suggest";
 const CACHE_SECONDS = 30 * 60;
 const DETAIL_CACHE_SECONDS = 6 * 60 * 60;
-const DETAIL_SCHEMA_VERSION = 4;
+const DETAIL_SCHEMA_VERSION = 5;
 const MAX_RESULTS = 8;
 const MAX_TAGS = 20;
 const MAX_NEXT_FEST_RECORDS = 5;
@@ -116,7 +116,7 @@ export function steamLibraryCapsuleUrl(appId, payload) {
       relativePath,
     )
   ) {
-    return "";
+    return `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appId}/library_600x900.jpg`;
   }
   return `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appId}/${relativePath}`;
 }
@@ -196,22 +196,41 @@ function allowedEmail(email, domain) {
   );
 }
 
-function requestIsAuthorized(request, env) {
+function configuredEmails(value) {
+  return String(value || "")
+    .split(",")
+    .map((item) => item.trim().toLocaleLowerCase("en-US"))
+    .filter(Boolean);
+}
+
+function requestIsAdmin(request, env) {
+  const email = accessEmail(request).toLocaleLowerCase("en-US");
+  return configuredEmails(
+    env.ADMIN_EMAILS || "batuhan.ozmen@gaminginturkey.com",
+  ).includes(email);
+}
+
+async function requestIsAuthorized(request, env) {
   const domain = env.ALLOWED_EMAIL_DOMAIN || "gaminginturkey.com";
   const email = accessEmail(request);
   const normalizedEmail = email.toLocaleLowerCase("en-US");
-  const allowedEmails = String(env.ALLOWED_EMAILS || "")
-    .split(",")
-    .map((value) => value.trim().toLocaleLowerCase("en-US"))
-    .filter(Boolean);
+  const allowedEmails = configuredEmails(env.ALLOWED_EMAILS);
   const localBypass =
     env.ALLOW_LOCAL_DEV === "true" &&
     ["localhost", "127.0.0.1"].includes(new URL(request.url).hostname);
-  return (
+  if (
     localBypass ||
     allowedEmail(email, domain) ||
     allowedEmails.includes(normalizedEmail)
-  );
+  ) {
+    return true;
+  }
+  if (!normalizedEmail || !env.DB) return false;
+  const record = await env.DB
+    .prepare("SELECT enabled FROM access_users WHERE email = ?")
+    .bind(normalizedEmail)
+    .first();
+  return Number(record?.enabled || 0) === 1;
 }
 
 function corsHeaders(request, env) {
@@ -230,7 +249,7 @@ export async function searchSteam(request, env) {
   const cors = corsHeaders(request, env);
   if (cors === null) return json({ error: "origin_not_allowed" }, 403);
 
-  if (!requestIsAuthorized(request, env)) {
+  if (!(await requestIsAuthorized(request, env))) {
     return json({ error: "authentication_required" }, 401, cors);
   }
 
@@ -290,7 +309,7 @@ export async function getSteamApp(request, env) {
   const cors = corsHeaders(request, env);
   if (cors === null) return json({ error: "origin_not_allowed" }, 403);
 
-  if (!requestIsAuthorized(request, env)) {
+  if (!(await requestIsAuthorized(request, env))) {
     return json({ error: "authentication_required" }, 401, cors);
   }
 
@@ -397,7 +416,7 @@ export async function getSteamApp(request, env) {
 export async function getSteamStats(request, env) {
   const cors = corsHeaders(request, env);
   if (cors === null) return json({ error: "origin_not_allowed" }, 403);
-  if (!requestIsAuthorized(request, env)) {
+  if (!(await requestIsAuthorized(request, env))) {
     return json({ error: "authentication_required" }, 401, cors);
   }
   const appId = (new URL(request.url).searchParams.get("appid") || "").trim();
@@ -463,6 +482,70 @@ export async function getSteamStats(request, env) {
   );
 }
 
+export async function getGamalyticGame(request, env) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  if (!(await requestIsAuthorized(request, env))) {
+    return json({ error: "authentication_required" }, 401, cors);
+  }
+  if (!env.GAMALYTIC_API_KEY) {
+    return json({ error: "gamalytic_not_configured" }, 503, cors);
+  }
+  const appId = (new URL(request.url).searchParams.get("appid") || "").trim();
+  if (!/^\d{1,12}$/.test(appId)) {
+    return json({ error: "invalid_app_id" }, 400, cors);
+  }
+  const cacheKey = new Request(
+    `${new URL(request.url).origin}/api/gamalytic-game?appid=${appId}`,
+  );
+  const cache = globalThis.caches?.default;
+  const cached = await cache?.match(cacheKey);
+  if (cached) return new Response(cached.body, cached);
+
+  const gamalyticUrl = new URL(`https://api.gamalytic.com/game/${appId}`);
+  gamalyticUrl.searchParams.set(
+    "fields",
+    "steamId,name,copiesSold,owners,revenue,totalRevenue,wishlists,players,followers,avgPlaytime,reviewScore,releaseDate,unreleased,earlyAccess",
+  );
+  const upstream = await fetch(gamalyticUrl, {
+    headers: {
+      accept: "application/json",
+      "api-key": env.GAMALYTIC_API_KEY,
+    },
+  });
+  if (!upstream.ok) {
+    return json(
+      {
+        error: upstream.status === 404 ? "game_not_found" : "gamalytic_unavailable",
+      },
+      upstream.status === 404 ? 404 : 502,
+      cors,
+    );
+  }
+  const source = await upstream.json();
+  const result = {
+    appId,
+    copiesSold: Number(source?.copiesSold || 0),
+    owners: Number(source?.owners || 0),
+    revenue: Number(source?.revenue || 0),
+    totalRevenue: Number(source?.totalRevenue || 0),
+    wishlists: Number(source?.wishlists || 0),
+    players: Number(source?.players || 0),
+    followers: Number(source?.followers || 0),
+    avgPlaytime: Number(source?.avgPlaytime || 0),
+    reviewScore: Number(source?.reviewScore || 0),
+    estimated: true,
+    source: "Gamalytic",
+    capturedAt: new Date().toISOString(),
+  };
+  const response = json(result, 200, {
+    ...cors,
+    "cache-control": `private, max-age=${DETAIL_CACHE_SECONDS}`,
+  });
+  await cache?.put(cacheKey, response.clone());
+  return response;
+}
+
 function optionsResponse(request, env) {
   const cors = corsHeaders(request, env);
   if (cors === null) return new Response(null, { status: 403 });
@@ -501,7 +584,7 @@ function teamStateRecord(row) {
 export async function getTeamState(request, env) {
   const cors = corsHeaders(request, env);
   if (cors === null) return json({ error: "origin_not_allowed" }, 403);
-  if (!requestIsAuthorized(request, env)) {
+  if (!(await requestIsAuthorized(request, env))) {
     return json({ error: "authentication_required" }, 401, cors);
   }
   if (!env.DB) return json({ enabled: false, records: [] }, 200, cors);
@@ -525,7 +608,7 @@ export async function getTeamState(request, env) {
 export async function putTeamState(request, env) {
   const cors = corsHeaders(request, env);
   if (cors === null) return json({ error: "origin_not_allowed" }, 403);
-  if (!requestIsAuthorized(request, env)) {
+  if (!(await requestIsAuthorized(request, env))) {
     return json({ error: "authentication_required" }, 401, cors);
   }
   if (!env.DB) return json({ error: "team_storage_unavailable" }, 503, cors);
@@ -575,7 +658,7 @@ export async function putTeamState(request, env) {
 export async function deleteTeamState(request, env) {
   const cors = corsHeaders(request, env);
   if (cors === null) return json({ error: "origin_not_allowed" }, 403);
-  if (!requestIsAuthorized(request, env)) {
+  if (!(await requestIsAuthorized(request, env))) {
     return json({ error: "authentication_required" }, 401, cors);
   }
   if (!env.DB) return json({ error: "team_storage_unavailable" }, 503, cors);
@@ -588,9 +671,183 @@ export async function deleteTeamState(request, env) {
   return json({ deleted: key }, 200, cors);
 }
 
+function validEmail(value) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) && value.length <= 254;
+}
+
+async function requireAdmin(request, env, cors) {
+  if (!(await requestIsAuthorized(request, env))) {
+    return json({ error: "authentication_required" }, 401, cors);
+  }
+  if (!requestIsAdmin(request, env)) {
+    return json({ error: "admin_required" }, 403, cors);
+  }
+  return null;
+}
+
+export async function adminSnapshot(request, env) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  const denied = await requireAdmin(request, env, cors);
+  if (denied) return denied;
+  if (!env.DB) return json({ error: "admin_storage_unavailable" }, 503, cors);
+  const [users, recipients, totals, popular] = await Promise.all([
+    env.DB.prepare(
+      "SELECT email, role, enabled, created_at AS createdAt FROM access_users ORDER BY email",
+    ).all(),
+    env.DB.prepare(
+      "SELECT email, enabled, created_at AS createdAt FROM email_recipients ORDER BY email",
+    ).all(),
+    env.DB.prepare(
+      `SELECT COUNT(*) AS events,
+              COUNT(DISTINCT CASE WHEN event_name = 'page_view' THEN user_email END) AS visitors,
+              SUM(CASE WHEN event_name = 'page_view' THEN 1 ELSE 0 END) AS pageViews
+       FROM analytics_events
+       WHERE occurred_at >= datetime('now', '-30 days')`,
+    ).first(),
+    env.DB.prepare(
+      `SELECT event_name AS eventName, target, COUNT(*) AS count
+       FROM analytics_events
+       WHERE occurred_at >= datetime('now', '-30 days')
+       GROUP BY event_name, target
+       ORDER BY count DESC
+       LIMIT 20`,
+    ).all(),
+  ]);
+  return json(
+    {
+      users: users.results || [],
+      recipients: recipients.results || [],
+      analytics: {
+        events: Number(totals?.events || 0),
+        visitors: Number(totals?.visitors || 0),
+        pageViews: Number(totals?.pageViews || 0),
+        popular: popular.results || [],
+      },
+    },
+    200,
+    cors,
+  );
+}
+
+export async function updateAdminCollection(request, env, collection) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  const denied = await requireAdmin(request, env, cors);
+  if (denied) return denied;
+  if (!env.DB) return json({ error: "admin_storage_unavailable" }, 503, cors);
+  const email = (
+    request.method === "DELETE"
+      ? new URL(request.url).searchParams.get("email") || ""
+      : String((await request.json())?.email || "")
+  )
+    .trim()
+    .toLocaleLowerCase("en-US");
+  if (!validEmail(email)) return json({ error: "invalid_email" }, 400, cors);
+  const table = collection === "users" ? "access_users" : "email_recipients";
+  if (request.method === "DELETE") {
+    await env.DB.prepare(`DELETE FROM ${table} WHERE email = ?`).bind(email).run();
+    return json({ deleted: email }, 200, cors);
+  }
+  const actor = accessEmail(request).toLocaleLowerCase("en-US");
+  const now = new Date().toISOString();
+  if (collection === "users") {
+    await env.DB.prepare(
+      `INSERT INTO access_users (email, role, enabled, created_by, created_at)
+       VALUES (?, 'member', 1, ?, ?)
+       ON CONFLICT(email) DO UPDATE SET enabled = 1`,
+    )
+      .bind(email, actor, now)
+      .run();
+  } else {
+    await env.DB.prepare(
+      `INSERT INTO email_recipients (email, enabled, created_by, created_at)
+       VALUES (?, 1, ?, ?)
+       ON CONFLICT(email) DO UPDATE SET enabled = 1`,
+    )
+      .bind(email, actor, now)
+      .run();
+  }
+  return json({ email }, 200, cors);
+}
+
+export async function recordAnalytics(request, env) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  if (!(await requestIsAuthorized(request, env))) {
+    return json({ error: "authentication_required" }, 401, cors);
+  }
+  if (!env.DB) return json({ error: "analytics_unavailable" }, 503, cors);
+  const body = await request.json();
+  const eventName = String(body?.eventName || "").trim().slice(0, 60);
+  const target = String(body?.target || "").trim().slice(0, 160);
+  if (!/^[a-z][a-z0-9_]{1,59}$/.test(eventName)) {
+    return json({ error: "invalid_event" }, 400, cors);
+  }
+  await env.DB.prepare(
+    "INSERT INTO analytics_events (occurred_at, user_email, event_name, target) VALUES (?, ?, ?, ?)",
+  )
+    .bind(
+      new Date().toISOString(),
+      accessEmail(request).toLocaleLowerCase("en-US") || "anonymous",
+      eventName,
+      target,
+    )
+    .run();
+  return json({ recorded: true }, 202, cors);
+}
+
+export async function automationRecipients(request, env) {
+  const provided = request.headers.get("authorization") || "";
+  if (
+    !env.EMAIL_AUTOMATION_SECRET ||
+    provided !== `Bearer ${env.EMAIL_AUTOMATION_SECRET}`
+  ) {
+    return json({ error: "authentication_required" }, 401);
+  }
+  if (!env.DB) return json({ error: "recipient_storage_unavailable" }, 503);
+  const records = await env.DB.prepare(
+    "SELECT email FROM email_recipients WHERE enabled = 1 ORDER BY email",
+  ).all();
+  return json({
+    recipients: (records.results || []).map((item) => item.email),
+  });
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname === "/api/admin") {
+      if (request.method === "GET") return adminSnapshot(request, env);
+      return json({ error: "method_not_allowed" }, 405, { allow: "GET" });
+    }
+    if (
+      url.pathname === "/api/admin/users" ||
+      url.pathname === "/api/admin/recipients"
+    ) {
+      if (!["POST", "DELETE"].includes(request.method)) {
+        return json({ error: "method_not_allowed" }, 405, {
+          allow: "POST, DELETE",
+        });
+      }
+      return updateAdminCollection(
+        request,
+        env,
+        url.pathname.endsWith("/users") ? "users" : "recipients",
+      );
+    }
+    if (url.pathname === "/api/analytics") {
+      if (request.method !== "POST") {
+        return json({ error: "method_not_allowed" }, 405, { allow: "POST" });
+      }
+      return recordAnalytics(request, env);
+    }
+    if (url.pathname === "/api/automation/email-recipients") {
+      if (request.method !== "GET") {
+        return json({ error: "method_not_allowed" }, 405, { allow: "GET" });
+      }
+      return automationRecipients(request, env);
+    }
     if (url.pathname === "/api/team-state") {
       if (request.method === "OPTIONS") return optionsResponse(request, env);
       if (request.method === "GET") return getTeamState(request, env);
@@ -603,7 +860,8 @@ export default {
     if (
       url.pathname === "/api/steam-search" ||
       url.pathname === "/api/steam-app" ||
-      url.pathname === "/api/steam-stats"
+      url.pathname === "/api/steam-stats" ||
+      url.pathname === "/api/gamalytic-game"
     ) {
       if (request.method === "OPTIONS") {
         return optionsResponse(request, env);
@@ -615,9 +873,12 @@ export default {
       }
       if (url.pathname === "/api/steam-search") return searchSteam(request, env);
       if (url.pathname === "/api/steam-stats") return getSteamStats(request, env);
+      if (url.pathname === "/api/gamalytic-game") {
+        return getGamalyticGame(request, env);
+      }
       return getSteamApp(request, env);
     }
-    if (!requestIsAuthorized(request, env)) {
+    if (!(await requestIsAuthorized(request, env))) {
       return new Response("Kurumsal giriş gerekli.", {
         status: 401,
         headers: {

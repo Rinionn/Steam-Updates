@@ -405,7 +405,7 @@ function newsCard(item: SteamNewsItem): string {
         )
       : escapeHtml(item.dateLabel || "");
   return `
-    <article class="news-card" data-news-kind="${item.kind}">
+    <article class="news-card" data-news-kind="${item.kind}" data-news-categories="${escapeHtml(JSON.stringify(item.categories || []))}">
       ${
         item.imageUrl
           ? `<img src="${escapeHtml(item.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
@@ -425,14 +425,18 @@ function newsCard(item: SteamNewsItem): string {
 
 function newsSection(news?: SteamNewsSnapshot): string {
   const items = news?.items || [];
-  const gameItems = items.filter((item) => item.kind !== "platform");
+  const newReleases = items.filter((item) => item.kind === "new_release");
+  const comingSoon = items.filter((item) => item.kind === "coming_soon");
   const platformItems = items.filter((item) => item.kind === "platform");
+  const categories = [...new Set(
+    [...newReleases, ...comingSoon].flatMap((item) => item.categories || []),
+  )].sort((left, right) => left.localeCompare(right, "tr"));
   return `
-    <section class="section dashboard-panel" id="steam-news" data-dashboard-panel="news" aria-labelledby="steam-news-heading" hidden>
+    <section class="section dashboard-panel" id="game-releases" data-dashboard-panel="releases" aria-labelledby="game-releases-heading" hidden>
       <div class="section-title">
         <div>
-          <h2 id="steam-news-heading" data-i18n="steamNews">Steam Haberleri</h2>
-          <p data-i18n="newsIntro">Yeni çıkanlar, yaklaşan oyunlar ve Valve’ın resmî Steamworks duyuruları.</p>
+          <h2 id="game-releases-heading">${localizedText("Yeni Çıkan / Çıkacak Oyunlar", "New & Upcoming Games")}</h2>
+          <p>${localizedText("Son 30 günün çıkışları ve önümüzdeki 30 günün takvimi.", "Releases from the last 30 days and the next 30 days.")}</p>
         </div>
         ${
           news
@@ -443,20 +447,46 @@ function newsSection(news?: SteamNewsSnapshot): string {
       ${
         items.length
           ? `
-            <div class="news-block">
-              <h3>${localizedText("Yeni çıkan ve çıkacak oyunlar", "New and upcoming games")}</h3>
-              <div class="news-grid">${gameItems.map(newsCard).join("")}</div>
+            <div class="news-toolbar">
+              <div class="news-tabs" role="tablist" aria-label="${localizedText("Haber türü", "News type")}">
+                <button class="active" type="button" role="tab" aria-selected="true" data-news-tab="new_release">${localizedText("Yeni Çıkanlar", "New Releases")}</button>
+                <button type="button" role="tab" aria-selected="false" data-news-tab="coming_soon">${localizedText("30 Gün İçinde", "Within 30 Days")}</button>
+              </div>
+              <label class="news-category-label">
+                <span>${localizedText("Kategori", "Category")}</span>
+                <select data-news-category>
+                  <option value="">${localizedText("Tüm kategoriler", "All categories")}</option>
+                  ${categories.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("")}
+                </select>
+              </label>
             </div>
-            <div class="news-block">
-              <h3>${localizedText("Steamworks ve platform değişiklikleri", "Steamworks and platform changes")}</h3>
-              <p class="news-disclaimer">${localizedText(
-                "Yalnızca Valve’ın resmî duyuruları gösterilir; doğrulanmamış algoritma söylentileri eklenmez.",
-                "Only official Valve announcements are shown; unverified algorithm rumors are excluded.",
-              )}</p>
-              <div class="news-grid platform-news">${platformItems.map(newsCard).join("")}</div>
-            </div>`
+            <div class="news-block" data-news-panel="new_release">
+              <h3>${localizedText("Son 30 günde yeni çıkanlar", "Released in the last 30 days")}</h3>
+              <div class="news-grid">${newReleases.map(newsCard).join("")}</div>
+              <div class="empty" data-news-empty hidden>${localizedText("Bu kategoride oyun bulunamadı.", "No games found in this category.")}</div>
+            </div>
+            <div class="news-block" data-news-panel="coming_soon" hidden>
+              <h3>${localizedText("Önümüzdeki 30 gün içinde çıkacaklar", "Coming in the next 30 days")}</h3>
+              <div class="news-grid">${comingSoon.map(newsCard).join("")}</div>
+              <div class="empty" data-news-empty hidden>${localizedText("Bu kategoride oyun bulunamadı.", "No games found in this category.")}</div>
+            </div>
+            `
           : `<div class="empty">${localizedText("Haber akışı henüz oluşturulmadı.", "The news feed has not been generated yet.")}</div>`
       }
+    </section>
+    <section class="section dashboard-panel" id="steam-news" data-dashboard-panel="steamworks" aria-labelledby="steam-news-heading" hidden>
+      <div class="section-title">
+        <div>
+          <h2 id="steam-news-heading" data-i18n="steamNews">Steam Haberleri</h2>
+          <p>${localizedText("Valve’ın son 3 ayda yayımladığı resmî Steamworks duyuruları.", "Official Steamworks announcements published by Valve in the last 3 months.")}</p>
+        </div>
+      </div>
+      <p class="news-disclaimer">${localizedText(
+        "Yalnızca Valve’ın resmî duyuruları gösterilir; doğrulanmamış algoritma söylentileri eklenmez.",
+        "Only official Valve announcements are shown; unverified algorithm rumors are excluded.",
+      )}</p>
+      <div class="news-grid platform-news">${platformItems.map(newsCard).join("")}</div>
+      ${platformItems.length ? "" : `<div class="empty">${localizedText("Bu dönemde duyuru bulunamadı.", "No announcements found in this period.")}</div>`}
     </section>`;
 }
 
@@ -609,22 +639,8 @@ export function renderReport(
       border: 0;
     }
     .shell { width: min(calc(100% - 20px), 1180px); margin: 0 auto; padding: 20px 0 56px; }
-    .menu-toggle {
-      position:fixed; z-index:40; top:12px; left:12px; width:44px; height:44px;
-      padding:0; color:var(--color-on-accent); border:1px solid var(--color-hero-line);
-      border-radius:13px; background:var(--color-hero-start); box-shadow:0 8px 28px var(--color-shadow);
-      font-size:22px; line-height:1;
-    }
-    .site-menu {
-      position:fixed; z-index:39; inset:0 auto 0 0; width:min(86vw,310px); padding:74px 16px 24px;
-      color:var(--color-on-accent); background:var(--color-hero-start); box-shadow:16px 0 50px var(--color-shadow);
-    }
-    .site-menu[hidden] { display:none; }
-    .site-menu strong { display:block; margin:0 8px 14px; color:var(--color-hero-muted); font-size:11px; letter-spacing:.1em; text-transform:uppercase; }
-    .site-menu a { display:block; padding:12px 14px; border-radius:11px; color:var(--color-hero-copy); font-size:14px; font-weight:800; text-decoration:none; }
-    .site-menu a:hover,.site-menu a:focus-visible { color:var(--color-on-accent); background:var(--color-hero-card); }
-    .view-tabs { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin:22px 0 0; padding:5px; border:1px solid var(--color-line); border-radius:15px; background:var(--color-panel); }
-    .view-tabs button { min-width:0; min-height:44px; color:var(--color-control-text); border-color:var(--color-transparent); background:var(--color-transparent); font-weight:900; }
+    .view-tabs { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(170px,1fr); gap:6px; margin:22px 0 0; padding:5px; overflow-x:auto; border:1px solid var(--color-line); border-radius:15px; background:var(--color-panel); scrollbar-width:thin; }
+    .view-tabs button { min-width:0; min-height:44px; padding:9px 12px; color:var(--color-control-text); border-color:var(--color-transparent); background:var(--color-transparent); font-size:11px; font-weight:900; white-space:nowrap; }
     .view-tabs button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
     .dashboard-panel[hidden] { display:none; }
     .hero {
@@ -640,6 +656,9 @@ export function renderReport(
       box-shadow: 0 24px 80px var(--color-shadow), 0 0 56px var(--color-shadow-glow);
     }
     .language-switch { display:flex; width:max-content; max-width:100%; gap:5px; margin:0 0 14px auto; padding:4px; border:1px solid var(--color-hero-line); border-radius:999px; background:var(--color-hero-card); }
+    .hero-tools { display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:14px; }
+    .hero-tools .language-switch { margin:0; }
+    .admin-open { min-height:42px; color:var(--color-on-accent); border-color:var(--color-hero-line); background:var(--color-hero-card); font-size:10px; font-weight:900; }
     .language-switch button { min-width:42px; min-height:34px; padding:6px 9px; color:var(--color-hero-copy); border-color:var(--color-transparent); background:var(--color-transparent); font-size:10px; font-weight:900; }
     .language-switch button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
     .eyebrow { color: var(--color-accent-pink); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; }
@@ -688,8 +707,9 @@ export function renderReport(
     .application-actions button { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-size:11px; font-weight:800; }
     .application-actions span { color:var(--color-muted); font-size:11px; }
     .games-panel { padding:14px; border:1px solid var(--color-line); border-radius:20px; background:var(--color-panel); }
-    .game-form { display:block; max-width:520px; margin:0 auto 16px; }
+    .game-form { display:block; max-width:620px; margin:0 auto 18px; }
     .game-field { display:grid; gap:6px; min-width:0; color:var(--color-muted); font-size:12px; font-weight:700; }
+    .game-field[hidden],.game-form-actions[hidden] { display:none !important; }
     .game-field input,.game-field select { min-width:0; width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--color-line); border-radius:11px; color:var(--color-ink); background:var(--color-control); }
     .steam-game-search { position:relative; min-width:0; }
     .steam-game-results { position:absolute; top:calc(100% + 6px); left:0; right:0; z-index:20; max-height:310px; overflow-y:auto; padding:6px; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel); box-shadow:0 16px 42px var(--color-shadow); }
@@ -697,31 +717,42 @@ export function renderReport(
     .steam-game-option { display:grid; grid-template-columns:56px minmax(0,1fr); align-items:center; width:100%; min-height:58px; gap:10px; padding:7px; border:0; border-radius:9px; text-align:left; }
     .steam-game-option:hover,.steam-game-option:focus-visible { background:var(--color-soft); }
     .steam-game-option img { width:56px; height:32px; border-radius:6px; object-fit:cover; background:var(--color-soft); }
-    .steam-game-option strong,.steam-game-option small { display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .steam-game-option strong { display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .steam-game-option strong { color:var(--color-ink); font-size:12px; }
-    .steam-game-option small { margin-top:3px; color:var(--color-muted); font-size:10px; }
     .steam-search-status { min-height:1.4em; margin-top:5px; color:var(--color-muted); font-size:10px; font-weight:500; }
     .game-field-wide { grid-column:1 / -1; }
     .game-form-actions { display:flex; align-items:center; flex-wrap:wrap; gap:8px; grid-column:1 / -1; }
     .game-form-actions button:first-child { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-weight:800; }
     .game-help,.game-match-summary { margin:10px 0 0; color:var(--color-muted); font-size:12px; line-height:1.5; }
-    .game-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:16px; }
-    .game-profile { min-width:0; overflow:hidden; border:1px solid var(--color-accent-pink); border-radius:16px; background:var(--color-panel-subtle); }
-    .game-profile > summary { position:relative; display:block; min-height:210px; cursor:pointer; list-style:none; }
-    .game-profile > summary::-webkit-details-marker { display:none; }
-    .game-profile > summary .game-capsule,.game-profile > summary .game-capsule-fallback { width:100%; height:210px; border:0; border-radius:0; object-fit:cover; }
+    .game-list { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(190px,78%); gap:12px; margin-top:16px; padding:2px 2px 12px; overflow-x:auto; overscroll-behavior-inline:contain; scroll-snap-type:inline mandatory; scrollbar-color:var(--color-accent-pink) var(--color-soft); }
+    .game-profile { position:relative; min-width:0; aspect-ratio:2 / 3; overflow:hidden; scroll-snap-align:start; border:1px solid var(--color-accent-pink); border-radius:16px; background:var(--color-panel-subtle); box-shadow:0 8px 24px var(--color-shadow); }
+    .game-profile-button { position:absolute; inset:0; display:block; width:100%; height:100%; min-height:0; padding:0; overflow:hidden; border:0; border-radius:0; color:inherit; background:var(--color-soft); text-align:left; }
+    .game-profile-button:hover,.game-profile-button:focus-visible { transform:none; box-shadow:inset 0 0 0 3px var(--color-accent-pink); }
+    .game-profile-button .game-capsule,.game-profile-button .game-capsule-fallback { width:100%; height:100%; border:0; border-radius:0; object-fit:cover; }
     .game-card-overlay { position:absolute; inset:auto 0 0; padding:38px 10px 11px; color:var(--color-on-accent); background:linear-gradient(var(--color-transparent),var(--color-hero-end)); }
     .game-card-overlay strong { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; }
-    .game-card-overlay small { display:block; margin-top:3px; color:var(--color-hero-copy); font-size:9px; }
+    .game-card-overlay small { display:none; }
     .game-capsule { width:72px; aspect-ratio:2 / 3; object-fit:cover; border:1px solid var(--color-line); border-radius:9px; background:var(--color-soft); }
     .game-capsule-fallback { display:grid; place-items:center; width:72px; aspect-ratio:2 / 3; padding:7px; border:1px solid var(--color-line); border-radius:9px; color:var(--color-muted); background:var(--color-soft); font-size:9px; font-weight:800; text-align:center; overflow-wrap:anywhere; }
-    .game-profile-body { min-width:0; padding:12px; border-top:1px solid var(--color-line); }
     .game-profile strong,.game-profile small { display:block; overflow-wrap:anywhere; }
-    .game-profile small { margin-top:4px; color:var(--color-muted); line-height:1.45; }
+    .game-dialog { width:min(92vw,760px); max-height:min(88vh,820px); padding:0; overflow:hidden; border:1px solid var(--color-line); border-radius:20px; color:var(--color-ink); background:var(--color-panel); box-shadow:0 28px 90px var(--color-shadow); }
+    .game-dialog::backdrop { background:rgba(5,2,10,.76); backdrop-filter:blur(5px); }
+    .game-dialog-shell { display:grid; grid-template-columns:120px minmax(0,1fr); gap:18px; max-height:88vh; padding:18px; overflow:auto; }
+    .game-dialog-cover .game-capsule,.game-dialog-cover .game-capsule-fallback { width:120px; border-radius:12px; }
+    .game-dialog-content { min-width:0; }
+    .game-dialog-head { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
+    .game-dialog h3 { margin:2px 0 8px; overflow-wrap:anywhere; font-size:24px; }
+    .game-dialog-close { flex:0 0 auto; width:40px; min-height:40px; padding:0; border-radius:999px; font-size:20px; }
+    .game-dialog-meta,.game-dialog-tags { margin:0 0 12px; color:var(--color-muted); font-size:12px; line-height:1.55; overflow-wrap:anywhere; }
+    .game-dialog-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+    .game-dialog-actions a { display:inline-flex; align-items:center; min-height:40px; padding:9px 13px; border-radius:10px; color:var(--color-on-accent); background:var(--gradient-brand); font-size:11px; font-weight:800; text-decoration:none; }
     .game-profile-actions { display:flex; align-items:flex-start; flex-wrap:wrap; gap:6px; margin-top:9px; }
     .game-profile-actions button { min-height:36px; padding:7px 10px; font-size:11px; }
     .game-profile-actions [data-game-delete] { color:var(--color-danger); }
     .game-stats { margin-top:20px; padding-top:18px; border-top:1px solid var(--color-line); }
+    .comparison-search { position:relative; max-width:620px; margin:0 auto 18px; }
+    .comparison-search label { display:grid; gap:6px; color:var(--color-muted); font-size:12px; font-weight:800; }
+    .comparison-search input { width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--color-line); border-radius:11px; color:var(--color-ink); background:var(--color-control); }
     .game-stats h3 { margin:0 0 4px; font-size:17px; }
     .game-stats > p { margin:0 0 12px; color:var(--color-muted); font-size:11px; line-height:1.5; }
     .stats-grid { display:grid; grid-template-columns:1fr; gap:9px; }
@@ -844,6 +875,13 @@ export function renderReport(
     .change-type { justify-self:start; padding:4px 7px; border-radius:999px; color:var(--color-soft-text); background:var(--color-soft); font-size:10px; font-weight:800; }
     .change-values { min-width:0; overflow-wrap:anywhere; color:var(--color-muted); font-size:12px; line-height:1.4; }
     .news-block + .news-block { margin-top:32px; }
+    .news-toolbar { display:flex; align-items:flex-end; flex-wrap:wrap; gap:12px; margin-bottom:18px; }
+    .news-tabs { display:flex; flex:1 1 360px; gap:6px; padding:5px; overflow-x:auto; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel); }
+    .news-tabs button { flex:1 0 140px; min-height:40px; border-color:var(--color-transparent); background:var(--color-transparent); font-size:11px; font-weight:900; }
+    .news-tabs button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
+    .news-category-label { display:grid; flex:0 1 220px; gap:5px; color:var(--color-muted); font-size:10px; font-weight:800; }
+    .news-category-label select { min-height:42px; padding:8px 10px; border:1px solid var(--color-line); border-radius:10px; color:var(--color-ink); background:var(--color-control); }
+    .news-block[hidden] { display:none; }
     .news-block > h3 { margin:0 0 12px; font-size:18px; }
     .news-disclaimer { margin:-4px 0 14px; color:var(--color-muted); font-size:12px; line-height:1.5; }
     .news-grid { display:grid; grid-template-columns:1fr; gap:12px; }
@@ -856,11 +894,22 @@ export function renderReport(
     .news-card h3 { margin:7px 0 8px; overflow-wrap:anywhere; font-size:14px; line-height:1.3; }
     .news-card p { display:-webkit-box; margin:0 0 9px; overflow:hidden; color:var(--color-muted); font-size:11px; line-height:1.45; -webkit-box-orient:vertical; -webkit-line-clamp:3; }
     .news-card a { color:var(--color-link); font-size:11px; font-weight:800; text-decoration:none; }
+    .admin-grid { display:grid; grid-template-columns:1fr; gap:14px; }
+    .admin-card { padding:16px; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
+    .admin-card h3 { margin:0 0 12px; font-size:17px; }
+    .admin-form { display:flex; gap:8px; flex-wrap:wrap; }
+    .admin-form input { flex:1 1 220px; min-height:42px; padding:9px 11px; border:1px solid var(--color-line); border-radius:10px; color:var(--color-ink); background:var(--color-control); }
+    .admin-list { display:grid; gap:7px; margin-top:12px; }
+    .admin-list-row { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:9px 10px; border-radius:10px; background:var(--color-soft); font-size:11px; overflow-wrap:anywhere; }
+    .admin-metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+    .admin-metric { padding:12px; border-radius:11px; background:var(--color-soft); }
+    .admin-metric strong,.admin-metric span { display:block; }
+    .admin-metric strong { font-size:22px; }
+    .admin-metric span { margin-top:4px; color:var(--color-muted); font-size:9px; }
     .empty { padding:24px; color:var(--color-muted); text-align:center; border:1px dashed var(--color-line); border-radius:16px; }
     footer { margin-top:28px; color:var(--color-footer); font-size:12px; text-align:center; }
     @media (min-width: 761px) {
       .shell { width:min(calc(100% - 32px), 1180px); padding:48px 0 72px; }
-      .menu-toggle { top:20px; left:20px; }
       .hero { padding:34px; }
       h1 { font-size:clamp(36px, 7vw, 70px); }
       .hero p { font-size:17px; }
@@ -880,10 +929,8 @@ export function renderReport(
       .filters,.status-filters { width:auto; }
       .games-only-filter { width:auto; }
       .games-panel { padding:20px; }
-      .game-list { grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+      .game-list { grid-auto-columns:calc((100% - 42px) / 4); gap:14px; }
       .application-form { grid-template-columns:repeat(3,minmax(0,1fr)); }
-      .game-profile > summary { min-height:300px; }
-      .game-profile > summary .game-capsule,.game-profile > summary .game-capsule-fallback { height:300px; }
       .task-state-toolbar { align-items:center; flex-direction:row; justify-content:space-between; }
       .task-state-status { text-align:right; }
       .event-row { grid-template-columns:145px minmax(0,1fr) auto; gap:20px; padding:20px; }
@@ -899,29 +946,28 @@ export function renderReport(
       .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .platform-news { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .stats-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .admin-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior:auto; }
       .event-row.timeline-highlight { animation:none; box-shadow:inset 4px 0 var(--color-accent-pink); }
     }
+    @media (max-width: 480px) {
+      .game-dialog-shell { grid-template-columns:86px minmax(0,1fr); gap:12px; padding:13px; }
+      .game-dialog-cover .game-capsule,.game-dialog-cover .game-capsule-fallback { width:86px; }
+      .game-dialog h3 { font-size:19px; }
+    }
   </style>
 </head>
 <body>
-  <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Menüyü aç" data-i18n-aria-label="openMenu">☰</button>
-  <nav class="site-menu" id="site-menu" data-site-menu aria-label="Sayfa navigasyonu" data-i18n-aria-label="navigationLabel" hidden>
-    <strong data-i18n="navigation">Navigasyon</strong>
-    <a href="#top" data-menu-view="radar" data-i18n="overview">Genel bakış</a>
-    <a href="#games" data-menu-view="radar" data-i18n="myGames">Oyunlarım</a>
-    <a href="#changes" data-menu-view="radar" data-i18n="changesShort">Değişiklikler</a>
-    <a href="#deadlines" data-menu-view="radar" data-i18n="upcomingDeadlines">Yaklaşan son tarihler</a>
-    <a href="#calendar" data-menu-view="radar" data-i18n="eventCalendar">Etkinlik takvimi</a>
-    <a href="#steam-news" data-menu-view="news" data-i18n="steamNews">Steam Haberleri</a>
-  </nav>
   <main class="shell">
     <section class="hero" id="top">
-      <div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel">
-        <button class="active" type="button" data-language="tr" aria-pressed="true">TR</button>
-        <button type="button" data-language="en" aria-pressed="false">EN</button>
+      <div class="hero-tools">
+        <button class="admin-open" type="button" data-admin-open hidden>Yönetim</button>
+        <div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel">
+          <button class="active" type="button" data-language="tr" aria-pressed="true">TR</button>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
       </div>
       <span class="eyebrow" data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span>
       <h1 data-i18n-html="title">Steam Etkinlik<br>Radarı</h1>
@@ -930,11 +976,14 @@ export function renderReport(
     </section>
 
     <div class="view-tabs" role="tablist" aria-label="İçerik görünümü" data-i18n-aria-label="contentView">
-      <button class="active" type="button" role="tab" aria-selected="true" data-view-tab="radar" data-i18n="radarTab">Etkinlik Radarı</button>
-      <button type="button" role="tab" aria-selected="false" data-view-tab="news" data-i18n="steamNews">Steam Haberleri</button>
+      <button class="active" type="button" role="tab" aria-selected="true" data-view-tab="events">Etkinlikler</button>
+      <button type="button" role="tab" aria-selected="false" data-view-tab="games">Oyunlarım</button>
+      <button type="button" role="tab" aria-selected="false" data-view-tab="steamworks">Steam Haberleri</button>
+      <button type="button" role="tab" aria-selected="false" data-view-tab="releases">Yeni Çıkan / Çıkacak Oyunlar</button>
+      <button type="button" role="tab" aria-selected="false" data-view-tab="stats">Oyun İstatistikleri</button>
     </div>
 
-    <section class="section dashboard-panel" id="games" data-dashboard-panel="radar" aria-labelledby="games-heading">
+    <section class="section dashboard-panel" id="games" data-dashboard-panel="games" aria-labelledby="games-heading" hidden>
       <div class="section-title">
         <h2 id="games-heading" data-i18n="myGames">Oyunlarım</h2>
         <p data-i18n="gamesIntro">Etiketleri birebir karşılaştırarak uygun olabilecek temalı festivalleri gösterir.</p>
@@ -968,55 +1017,58 @@ export function renderReport(
               <div class="steam-search-status" data-steam-search-status role="status" aria-live="polite" data-i18n="typeTwoChars">En az 2 karakter yazın.</div>
             </div>
           </div>
-          <label class="game-field" hidden>
-            Steam App ID <span data-i18n="optional">(opsiyonel)</span>
-            <input type="text" data-game-app-id inputmode="numeric" pattern="[0-9]*" maxlength="12" autocomplete="off">
-          </label>
-          <label class="game-field game-field-wide" hidden>
-            <span data-i18n="steamTags">Steam etiketleri</span>
-            <input type="text" data-game-tags placeholder="Örn. Cyberpunk, Sci-fi, RPG" data-i18n-placeholder="tagsPlaceholder" autocomplete="off">
-          </label>
-          <label class="game-field" hidden>
-            <span data-i18n="demoStatus">Demo durumu</span>
-            <select data-game-demo-status>
-              <option value="none" data-i18n="none">Yok</option>
-              <option value="preparing" data-i18n="preparing">Hazırlanıyor</option>
-              <option value="live" data-i18n="live">Yayında</option>
-            </select>
-          </label>
-          <label class="game-field" hidden>
-            <span data-i18n="releaseStatus">Çıkış durumu</span>
-            <select data-game-release-status>
-              <option value="unreleased" data-i18n="unreleased">Yayınlanmadı</option>
-              <option value="early_access" data-i18n="earlyAccess">Erken erişim</option>
-              <option value="released" data-i18n="live">Yayında</option>
-            </select>
-          </label>
-          <label class="game-field" hidden>
-            <span data-i18n="localMultiplayer">Yerel çok oyunculu</span>
-            <select data-game-local-multiplayer>
-              <option value="no" data-i18n="no">Hayır</option>
-              <option value="yes" data-i18n="yes">Evet</option>
-            </select>
-          </label>
-          <div class="game-form-actions" hidden>
-            <button type="submit" data-game-submit data-i18n="saveGame">Oyunu kaydet</button>
-            <button type="button" data-game-cancel hidden data-i18n="cancel">Vazgeç</button>
-          </div>
+          <input type="hidden" data-game-app-id>
+          <input type="hidden" data-game-tags>
+          <input type="hidden" data-game-demo-status value="none">
+          <input type="hidden" data-game-release-status value="unreleased">
+          <input type="hidden" data-game-local-multiplayer value="no">
         </form>
         <div class="game-list" data-games-list></div>
-        <p class="game-match-summary" data-game-match-summary role="status" aria-live="polite" data-i18n="addGamePrompt">Eşleşme için oyun ekleyin.</p>
-        <div class="game-stats">
-          <h3 data-i18n="gameComparison">Oyun istatistikleri</h3>
-          <p data-i18n="statsIntro">Steam’in herkese açık anlık verileriyle ücretsiz karşılaştırma. Satış ve wishlist tahmini yapılmaz.</p>
-          <div class="stats-grid" data-game-stats>
-            <div class="empty" data-i18n="statsAddGame">İstatistik görmek için Steam’den oyun ekleyin.</div>
+        <dialog class="game-dialog" data-game-dialog aria-labelledby="game-dialog-title">
+          <div class="game-dialog-shell">
+            <div class="game-dialog-cover" data-game-dialog-cover></div>
+            <div class="game-dialog-content">
+              <div class="game-dialog-head">
+                <h3 id="game-dialog-title" data-game-dialog-title></h3>
+                <button class="game-dialog-close" type="button" data-game-dialog-close aria-label="Pencereyi kapat">×</button>
+              </div>
+              <p class="game-dialog-meta" data-game-dialog-meta></p>
+              <p class="game-dialog-tags" data-game-dialog-tags></p>
+              <div data-game-dialog-history></div>
+              <div class="game-dialog-actions">
+                <a href="#" target="_blank" rel="noreferrer" data-game-steam-link>Steam sayfasını aç ↗</a>
+                <button type="button" data-game-dialog-focus></button>
+                <button type="button" data-game-dialog-delete></button>
+              </div>
+            </div>
           </div>
+        </dialog>
+        <p class="game-match-summary" data-game-match-summary role="status" aria-live="polite" data-i18n="addGamePrompt">Eşleşme için oyun ekleyin.</p>
+      </div>
+    </section>
+    <section class="section dashboard-panel" id="game-statistics" data-dashboard-panel="stats" aria-labelledby="game-statistics-heading" hidden>
+      <div class="section-title">
+        <div>
+          <h2 id="game-statistics-heading">Oyun İstatistikleri</h2>
+          <p data-i18n="statsIntro">Steam’in herkese açık anlık verileriyle ücretsiz karşılaştırma. Satış ve wishlist tahmini yapılmaz.</p>
+        </div>
+      </div>
+      <div class="games-panel">
+        <div class="comparison-search">
+          <label>
+            Steam’de karşılaştırılacak oyun ara
+            <input type="search" data-comparison-search autocomplete="off" placeholder="Oyun adı yazın…">
+          </label>
+          <div class="steam-game-results" data-comparison-results role="listbox" hidden></div>
+          <div class="steam-search-status" data-comparison-status role="status" aria-live="polite">En az 2 karakter yazın.</div>
+        </div>
+        <div class="stats-grid" data-game-stats>
+          <div class="empty" data-i18n="statsAddGame">İstatistik görmek için Steam’den oyun ekleyin.</div>
         </div>
       </div>
     </section>
 
-    <section class="section dashboard-panel" id="changes" data-dashboard-panel="radar">
+    <section class="section dashboard-panel" id="changes" data-dashboard-panel="events">
       <details class="change-log">
         <summary>
           <span data-i18n="changesTitle">Son 90 günde ne değişti</span>
@@ -1030,7 +1082,7 @@ export function renderReport(
       </details>
     </section>
 
-    <section class="section dashboard-panel" id="deadlines" data-dashboard-panel="radar">
+    <section class="section dashboard-panel" id="deadlines" data-dashboard-panel="events">
       <div class="section-title">
         <h2 data-i18n="upcomingDeadlines">Yaklaşan son tarihler</h2>
         <p data-i18n="deadlinesIntro">Etkinlik bazında yapılacaklar · İstanbul saatine göre</p>
@@ -1044,7 +1096,7 @@ export function renderReport(
       }
     </section>
 
-    <section class="section dashboard-panel" id="calendar" data-dashboard-panel="radar">
+    <section class="section dashboard-panel" id="calendar" data-dashboard-panel="events">
       <div class="section-title">
         <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
         <p><span data-i18n="lastUpdated">Son güncelleme:</span> ${localizedText(
@@ -1097,6 +1149,38 @@ export function renderReport(
 
     ${newsSection(news)}
 
+    <section class="section dashboard-panel" id="admin" data-dashboard-panel="admin" aria-labelledby="admin-heading" hidden>
+      <div class="section-title">
+        <div>
+          <h2 id="admin-heading">Yönetim Paneli</h2>
+          <p>Erişim, günlük e-posta alıcıları ve son 30 günlük kullanım verileri.</p>
+        </div>
+      </div>
+      <div class="admin-grid">
+        <article class="admin-card">
+          <h3>Panel erişimi</h3>
+          <form class="admin-form" data-admin-user-form>
+            <input type="email" required placeholder="kullanici@ornek.com" data-admin-user-email>
+            <button type="submit">Erişim ver</button>
+          </form>
+          <div class="admin-list" data-admin-users></div>
+        </article>
+        <article class="admin-card">
+          <h3>Günlük e-posta alıcıları</h3>
+          <form class="admin-form" data-admin-recipient-form>
+            <input type="email" required placeholder="alici@ornek.com" data-admin-recipient-email>
+            <button type="submit">Alıcı ekle</button>
+          </form>
+          <div class="admin-list" data-admin-recipients></div>
+        </article>
+        <article class="admin-card">
+          <h3>Son 30 gün</h3>
+          <div class="admin-metrics" data-admin-metrics></div>
+          <div class="admin-list" data-admin-popular></div>
+        </article>
+      </div>
+    </section>
+
     <footer data-i18n="footer">Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
   </main>
   <script>
@@ -1114,9 +1198,17 @@ export function renderReport(
     const hashState = new URLSearchParams(location.hash.slice(1));
     const viewTabs = [...document.querySelectorAll("[data-view-tab]")];
     const dashboardPanels = [...document.querySelectorAll("[data-dashboard-panel]")];
-    const menuToggle = document.querySelector("[data-menu-toggle]");
-    const siteMenu = document.querySelector("[data-site-menu]");
-    let activeView = hashState.get("view") === "news" ? "news" : "radar";
+    const allowedViews = new Set([
+      "events",
+      "games",
+      "steamworks",
+      "releases",
+      "stats",
+      "admin",
+    ]);
+    let activeView = allowedViews.has(hashState.get("view"))
+      ? hashState.get("view")
+      : "events";
     const allowedFilters = new Set([
       "all",
       "themed_fest",
@@ -1145,7 +1237,7 @@ export function renderReport(
       if (incompleteOnly) state.set("incomplete", "1");
       if (timelineOffset > 0) state.set("month", String(timelineOffset));
       if (activeEventId) state.set("event", activeEventId);
-      if (activeView === "news") state.set("view", "news");
+      if (activeView !== "events") state.set("view", activeView);
       const hash = state.toString();
       history.replaceState(
         null,
@@ -1154,13 +1246,8 @@ export function renderReport(
       );
     }
 
-    function closeMenu() {
-      siteMenu.hidden = true;
-      menuToggle.setAttribute("aria-expanded", "false");
-    }
-
     function setView(view, updateUrl = true) {
-      activeView = view === "news" ? "news" : "radar";
+      activeView = allowedViews.has(view) ? view : "events";
       viewTabs.forEach((button) => {
         const active = button.dataset.viewTab === activeView;
         button.classList.toggle("active", active);
@@ -1172,32 +1259,191 @@ export function renderReport(
       if (updateUrl) writeUrlState();
     }
 
-    menuToggle?.addEventListener("click", () => {
-      const opening = siteMenu.hidden;
-      siteMenu.hidden = !opening;
-      menuToggle.setAttribute("aria-expanded", String(opening));
-    });
-    siteMenu?.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        setView(link.dataset.menuView || "radar");
-        document.querySelector(link.getAttribute("href"))?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-        closeMenu();
-      });
-    });
     viewTabs.forEach((button) => {
       button.addEventListener("click", () => setView(button.dataset.viewTab));
     });
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && !siteMenu.hidden) {
-        closeMenu();
-        menuToggle.focus();
-      }
-    });
     setView(activeView, false);
+
+    const newsTabs = [...document.querySelectorAll("[data-news-tab]")];
+    const newsPanels = [...document.querySelectorAll("[data-news-panel]")];
+    const newsCategory = document.querySelector("[data-news-category]");
+    let activeNewsTab = "new_release";
+
+    function updateNewsView() {
+      const category = newsCategory?.value || "";
+      newsTabs.forEach((button) => {
+        const active = button.dataset.newsTab === activeNewsTab;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-selected", String(active));
+      });
+      newsPanels.forEach((panel) => {
+        const active = panel.dataset.newsPanel === activeNewsTab;
+        panel.hidden = !active;
+        if (!active) return;
+        let visible = 0;
+        panel.querySelectorAll(".news-card").forEach((card) => {
+          let categories = [];
+          try {
+            categories = JSON.parse(card.dataset.newsCategories || "[]");
+          } catch {}
+          const matches = !category || categories.includes(category);
+          card.hidden = !matches;
+          if (matches) visible++;
+        });
+        const emptyState = panel.querySelector("[data-news-empty]");
+        if (emptyState) emptyState.hidden = visible > 0;
+      });
+    }
+
+    newsTabs.forEach((button) => {
+      button.addEventListener("click", () => {
+        activeNewsTab = button.dataset.newsTab;
+        updateNewsView();
+      });
+    });
+    newsCategory?.addEventListener("change", updateNewsView);
+    updateNewsView();
+
+    function recordAnalytics(eventName, target = "") {
+      if (location.protocol === "file:") return;
+      fetch("/api/analytics", {
+        method: "POST",
+        headers: {
+          accept: "application/json",
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({ eventName, target }),
+        keepalive: true,
+      }).catch(() => {});
+    }
+
+    const adminOpen = document.querySelector("[data-admin-open]");
+    const adminUsers = document.querySelector("[data-admin-users]");
+    const adminRecipients = document.querySelector("[data-admin-recipients]");
+    const adminMetrics = document.querySelector("[data-admin-metrics]");
+    const adminPopular = document.querySelector("[data-admin-popular]");
+
+    function adminRow(item, collection) {
+      const row = document.createElement("div");
+      row.className = "admin-list-row";
+      const email = document.createElement("span");
+      email.textContent = item.email;
+      const remove = document.createElement("button");
+      remove.type = "button";
+      remove.dataset.adminRemove = collection;
+      remove.dataset.adminEmail = item.email;
+      remove.textContent = "Kaldır";
+      row.append(email, remove);
+      return row;
+    }
+
+    async function loadAdmin() {
+      try {
+        const response = await fetch("/api/admin", {
+          headers: { accept: "application/json" },
+        });
+        if (!response.ok) return false;
+        const payload = await response.json();
+        adminOpen.hidden = false;
+        adminUsers.replaceChildren(
+          ...(payload.users || []).map((item) => adminRow(item, "users")),
+        );
+        adminRecipients.replaceChildren(
+          ...(payload.recipients || []).map((item) =>
+            adminRow(item, "recipients"),
+          ),
+        );
+        const metrics = [
+          [payload.analytics?.pageViews || 0, "Sayfa görüntüleme"],
+          [payload.analytics?.visitors || 0, "Tekil kullanıcı"],
+          [payload.analytics?.events || 0, "Toplam etkileşim"],
+        ];
+        adminMetrics.replaceChildren(
+          ...metrics.map(([value, label]) => {
+            const card = document.createElement("div");
+            card.className = "admin-metric";
+            const strong = document.createElement("strong");
+            strong.textContent = formatNumber(value);
+            const caption = document.createElement("span");
+            caption.textContent = label;
+            card.append(strong, caption);
+            return card;
+          }),
+        );
+        adminPopular.replaceChildren(
+          ...(payload.analytics?.popular || []).map((item) => {
+            const row = document.createElement("div");
+            row.className = "admin-list-row";
+            row.textContent =
+              item.eventName + (item.target ? " · " + item.target : "") +
+              " · " + item.count;
+            return row;
+          }),
+        );
+        return true;
+      } catch {
+        return false;
+      }
+    }
+
+    async function updateAdminEmail(collection, email, method) {
+      const suffix =
+        method === "DELETE" ? "?email=" + encodeURIComponent(email) : "";
+      const response = await fetch("/api/admin/" + collection + suffix, {
+        method,
+        headers: {
+          accept: "application/json",
+          "content-type": "application/json",
+        },
+        body: method === "POST" ? JSON.stringify({ email }) : undefined,
+      });
+      if (!response.ok) throw new Error("admin update failed");
+      await loadAdmin();
+    }
+
+    adminOpen?.addEventListener("click", () => {
+      setView("admin");
+      recordAnalytics("view_tab", "admin");
+    });
+    document.querySelector("[data-admin-user-form]")?.addEventListener(
+      "submit",
+      async (event) => {
+        event.preventDefault();
+        const input = document.querySelector("[data-admin-user-email]");
+        await updateAdminEmail("users", input.value.trim(), "POST");
+        input.value = "";
+      },
+    );
+    document.querySelector("[data-admin-recipient-form]")?.addEventListener(
+      "submit",
+      async (event) => {
+        event.preventDefault();
+        const input = document.querySelector("[data-admin-recipient-email]");
+        await updateAdminEmail("recipients", input.value.trim(), "POST");
+        input.value = "";
+      },
+    );
+    document.querySelector("#admin")?.addEventListener("click", async (event) => {
+      const button = event.target.closest("[data-admin-remove]");
+      if (!button) return;
+      if (!window.confirm(button.dataset.adminEmail + " kaldırılsın mı?")) return;
+      await updateAdminEmail(
+        button.dataset.adminRemove,
+        button.dataset.adminEmail,
+        "DELETE",
+      );
+    });
+    loadAdmin();
+    recordAnalytics("page_view", location.pathname);
+    viewTabs.forEach((button) => {
+      button.addEventListener("click", () =>
+        recordAnalytics("view_tab", button.dataset.viewTab),
+      );
+    });
+    document.addEventListener("click", (event) => {
+      const link = event.target.closest("a[target='_blank']");
+      if (link) recordAnalytics("outbound_click", link.href);
+    });
 
     function setToggleState(button, active) {
       button?.classList.toggle("active", active);
@@ -1624,17 +1870,40 @@ export function renderReport(
     const steamSearchStatus = document.querySelector(
       "[data-steam-search-status]",
     );
+    const gameDialog = document.querySelector("[data-game-dialog]");
+    const gameDialogCover = document.querySelector("[data-game-dialog-cover]");
+    const gameDialogTitle = document.querySelector("[data-game-dialog-title]");
+    const gameDialogMeta = document.querySelector("[data-game-dialog-meta]");
+    const gameDialogTags = document.querySelector("[data-game-dialog-tags]");
+    const gameDialogHistory = document.querySelector("[data-game-dialog-history]");
+    const gameDialogSteamLink = document.querySelector("[data-game-steam-link]");
+    const gameDialogFocus = document.querySelector("[data-game-dialog-focus]");
+    const gameDialogDelete = document.querySelector("[data-game-dialog-delete]");
+    const comparisonSearch = document.querySelector("[data-comparison-search]");
+    const comparisonResults = document.querySelector("[data-comparison-results]");
+    const comparisonStatus = document.querySelector("[data-comparison-status]");
     let steamSearchTimer = 0;
     let steamSearchController;
     let steamDetailController;
     let steamOptions = [];
     let selectedSteamDetails = null;
     const gameStatsByAppId = new Map();
+    const gamalyticByAppId = new Map();
+    const gamalyticUnavailable = new Set();
     const statsStorageKey = "steam-etkinlik-radari-istatistik-v1";
+    let comparisonGames = [];
+    let comparisonTimer = 0;
 
     function formatNumber(value) {
       return new Intl.NumberFormat(
         descriptionLanguage === "en" ? "en-US" : "tr-TR",
+      ).format(Number(value || 0));
+    }
+
+    function formatUsd(value) {
+      return new Intl.NumberFormat(
+        descriptionLanguage === "en" ? "en-US" : "tr-TR",
+        { style: "currency", currency: "USD", maximumFractionDigits: 0 },
       ).format(Number(value || 0));
     }
 
@@ -1660,7 +1929,11 @@ export function renderReport(
 
     function renderGameStats() {
       gameStats.replaceChildren();
-      const measurableGames = games.filter((game) => /^\\d+$/.test(game.appId));
+      const measurableGames = [...new Map(
+        [...games, ...comparisonGames]
+          .filter((game) => /^\\d+$/.test(game.appId))
+          .map((game) => [game.appId, game]),
+      ).values()];
       if (measurableGames.length === 0) {
         const emptyState = document.createElement("div");
         emptyState.className = "empty";
@@ -1677,6 +1950,16 @@ export function renderReport(
         const title = document.createElement("h4");
         title.textContent = game.name;
         body.append(title);
+        if (game.comparisonOnly) {
+          const removeComparison = document.createElement("button");
+          removeComparison.type = "button";
+          removeComparison.dataset.comparisonRemove = game.appId;
+          removeComparison.textContent = localized(
+            "Karşılaştırmadan çıkar",
+            "Remove from comparison",
+          );
+          body.append(removeComparison);
+        }
         if (!stats) {
           const loading = document.createElement("p");
           loading.className = "stats-note";
@@ -1701,6 +1984,42 @@ export function renderReport(
             values.append(metric);
           });
           body.append(values);
+          const gamalytic = gamalyticByAppId.get(game.appId);
+          if (gamalytic) {
+            const estimateHeading = document.createElement("p");
+            estimateHeading.className = "stats-note";
+            estimateHeading.textContent = localized(
+              "Gamalytic tahminleri",
+              "Gamalytic estimates",
+            );
+            body.append(estimateHeading);
+            const estimates = document.createElement("div");
+            estimates.className = "stats-values";
+            [
+              [formatNumber(gamalytic.wishlists), localized("Wishlist (tahmin)", "Wishlists (estimate)")],
+              [formatNumber(gamalytic.copiesSold), localized("Satış (tahmin)", "Sales (estimate)")],
+              [formatUsd(gamalytic.totalRevenue || gamalytic.revenue), localized("Gelir (tahmin)", "Revenue (estimate)")],
+              [formatNumber(gamalytic.owners), localized("Sahip (tahmin)", "Owners (estimate)")],
+            ].forEach(([value, label]) => {
+              const metric = document.createElement("span");
+              metric.className = "stats-value";
+              const strong = document.createElement("strong");
+              strong.textContent = value;
+              const caption = document.createElement("span");
+              caption.textContent = label;
+              metric.append(strong, caption);
+              estimates.append(metric);
+            });
+            body.append(estimates);
+          } else if (gamalyticUnavailable.has(game.appId)) {
+            const unavailable = document.createElement("p");
+            unavailable.className = "stats-note";
+            unavailable.textContent = localized(
+              "Gamalytic bağlandığında wishlist, satış ve gelir tahminleri burada görünecek.",
+              "Wishlist, sales and revenue estimates will appear here once Gamalytic is connected.",
+            );
+            body.append(unavailable);
+          }
           const note = document.createElement("p");
           note.className = "stats-note";
           note.textContent = localized(
@@ -1717,8 +2036,13 @@ export function renderReport(
     async function refreshGameStats() {
       renderGameStats();
       if (location.protocol === "file:") return;
+      const statsGames = [...new Map(
+        [...games, ...comparisonGames]
+          .filter((game) => /^\\d+$/.test(game.appId))
+          .map((game) => [game.appId, game]),
+      ).values()];
       await Promise.all(
-        games
+        statsGames
           .filter(
             (game) =>
               /^\\d+$/.test(game.appId) && !gameStatsByAppId.has(game.appId),
@@ -1736,8 +2060,152 @@ export function renderReport(
             } catch {}
           }),
       );
+      await Promise.all(
+        statsGames
+          .filter(
+            (game) =>
+              /^\\d+$/.test(game.appId) &&
+              !gamalyticByAppId.has(game.appId) &&
+              !gamalyticUnavailable.has(game.appId),
+          )
+          .map(async (game) => {
+            try {
+              const response = await fetch(
+                "/api/gamalytic-game?appid=" + encodeURIComponent(game.appId),
+                { headers: { accept: "application/json" } },
+              );
+              if (!response.ok) {
+                gamalyticUnavailable.add(game.appId);
+                return;
+              }
+              gamalyticByAppId.set(game.appId, await response.json());
+            } catch {
+              gamalyticUnavailable.add(game.appId);
+            }
+          }),
+      );
       renderGameStats();
     }
+
+    async function addComparisonGame(option) {
+      comparisonResults.hidden = true;
+      comparisonSearch.value = "";
+      if (
+        games.some((game) => game.appId === option.appId) ||
+        comparisonGames.some((game) => game.appId === option.appId)
+      ) {
+        comparisonStatus.textContent = localized(
+          "Bu oyun zaten karşılaştırmada.",
+          "This game is already in the comparison.",
+        );
+        return;
+      }
+      comparisonStatus.textContent = localized(
+        "Oyun bilgileri alınıyor…",
+        "Loading game details…",
+      );
+      try {
+        const response = await fetch(
+          "/api/steam-app?appid=" + encodeURIComponent(option.appId) + "&v=5",
+          { headers: { accept: "application/json" } },
+        );
+        if (!response.ok) throw new Error("details failed");
+        const details = await response.json();
+        comparisonGames.push({
+          id: "comparison-" + option.appId,
+          name: details.name || option.name,
+          appId: option.appId,
+          tags: normalizeTags(details.tags),
+          demoStatus: details.demoStatus || "none",
+          releaseStatus: details.releaseStatus || "unreleased",
+          localMultiplayer: details.localMultiplayer === true,
+          capsuleImageUrl: safeSteamImage(details.capsuleImageUrl),
+          nextFestHistory: [],
+          comparisonOnly: true,
+        });
+        comparisonStatus.textContent = localized(
+          "Karşılaştırmaya eklendi.",
+          "Added to comparison.",
+        );
+        await refreshGameStats();
+      } catch {
+        comparisonStatus.textContent = localized(
+          "Oyun bilgileri alınamadı.",
+          "Game details could not be loaded.",
+        );
+      }
+    }
+
+    async function searchComparisonGames(query) {
+      comparisonStatus.textContent = localized(
+        "Steam’de aranıyor…",
+        "Searching Steam…",
+      );
+      try {
+        const response = await fetch(
+          "/api/steam-search?q=" + encodeURIComponent(query),
+          { headers: { accept: "application/json" } },
+        );
+        if (!response.ok) throw new Error("search failed");
+        const payload = await response.json();
+        const options = Array.isArray(payload.results) ? payload.results : [];
+        comparisonResults.replaceChildren();
+        options.slice(0, 8).forEach((option) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "steam-game-option";
+          button.dataset.comparisonOption = String(option.appId);
+          button.dataset.comparisonName = String(option.name || "");
+          const image = document.createElement("img");
+          image.src = safeSteamImage(option.imageUrl);
+          image.alt = "";
+          const name = document.createElement("strong");
+          name.textContent = String(option.name || "");
+          button.append(image, name);
+          comparisonResults.append(button);
+        });
+        comparisonResults.hidden = options.length === 0;
+        comparisonStatus.textContent = options.length
+          ? localized("Bir oyun seçin.", "Select a game.")
+          : localized("Oyun bulunamadı.", "No game found.");
+      } catch {
+        comparisonResults.hidden = true;
+        comparisonStatus.textContent = localized(
+          "Steam araması şu anda kullanılamıyor.",
+          "Steam search is currently unavailable.",
+        );
+      }
+    }
+
+    comparisonSearch?.addEventListener("input", () => {
+      const query = comparisonSearch.value.trim();
+      window.clearTimeout(comparisonTimer);
+      if (query.length < 2) {
+        comparisonResults.hidden = true;
+        comparisonStatus.textContent = translate("typeTwoChars");
+        return;
+      }
+      comparisonTimer = window.setTimeout(
+        () => searchComparisonGames(query),
+        300,
+      );
+    });
+    comparisonResults?.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-comparison-option]");
+      if (!button) return;
+      addComparisonGame({
+        appId: button.dataset.comparisonOption,
+        name: button.dataset.comparisonName,
+      });
+    });
+    gameStats?.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-comparison-remove]");
+      if (!button) return;
+      comparisonGames = comparisonGames.filter(
+        (game) => game.appId !== button.dataset.comparisonRemove,
+      );
+      renderGameStats();
+    });
 
     function safeSteamImage(value) {
       try {
@@ -1774,7 +2242,7 @@ export function renderReport(
         const response = await fetch(
           "/api/steam-app?appid=" +
             encodeURIComponent(option.appId) +
-            "&v=4",
+            "&v=5",
           {
             signal: steamDetailController.signal,
             headers: { accept: "application/json" },
@@ -1850,9 +2318,7 @@ export function renderReport(
         const copy = document.createElement("span");
         const name = document.createElement("strong");
         name.textContent = option.name;
-        const appId = document.createElement("small");
-        appId.textContent = "Steam App ID · " + option.appId;
-        copy.append(name, appId);
+        copy.append(name);
         button.append(image, copy);
         steamGameResults.append(button);
       });
@@ -1916,8 +2382,8 @@ export function renderReport(
         closeSteamResults();
         steamSearchStatus.textContent =
           localized(
-            "Steam araması şu anda kullanılamıyor; manuel giriş yapabilirsiniz.",
-            "Steam search is currently unavailable; you can enter the game manually.",
+            "Steam araması şu anda kullanılamıyor. Lütfen biraz sonra yeniden deneyin.",
+            "Steam search is currently unavailable. Please try again shortly.",
           );
       }
     }
@@ -2137,7 +2603,6 @@ export function renderReport(
 
     function gameMeta(game) {
       const parts = [];
-      if (game.appId) parts.push("App ID " + game.appId);
       parts.push(demoLabels[descriptionLanguage][game.demoStatus]);
       parts.push(releaseLabels[descriptionLanguage][game.releaseStatus]);
       parts.push(
@@ -2212,61 +2677,54 @@ export function renderReport(
 
     let focusedGameId = "";
 
+    function closeGameDialog() {
+      if (gameDialog?.open) gameDialog.close();
+    }
+
+    function openGameDialog(game) {
+      gameDialogCover.replaceChildren(createGameCapsule(game));
+      gameDialogTitle.textContent = game.name;
+      gameDialogMeta.textContent = gameMeta(game);
+      gameDialogTags.textContent = game.tags.length
+        ? localized("Etiketler: ", "Tags: ") + game.tags.join(", ")
+        : localized("Steam etiketi bulunamadı.", "No Steam tags found.");
+      gameDialogHistory.replaceChildren();
+      const history = nextFestHistoryBlock(game);
+      if (history) gameDialogHistory.append(history);
+      gameDialogSteamLink.href =
+        "https://store.steampowered.com/app/" + encodeURIComponent(game.appId) + "/";
+      gameDialogFocus.dataset.gameDialogFocus = game.id;
+      gameDialogFocus.textContent =
+        focusedGameId === game.id
+          ? localized("Tüm etkinlikleri göster", "Show all events")
+          : localized("Uygun etkinlikleri göster", "Show matching events");
+      gameDialogDelete.dataset.gameDialogDelete = game.id;
+      gameDialogDelete.textContent = localized("Oyunu kaldır", "Remove game");
+      gameDialog.showModal();
+    }
+
     function renderGames() {
       gamesList.replaceChildren();
       games.forEach((game) => {
-        const item = document.createElement("details");
+        const item = document.createElement("article");
         item.className = "game-profile";
 
-        const summary = document.createElement("summary");
+        const summary = document.createElement("button");
+        summary.type = "button";
+        summary.className = "game-profile-button";
+        summary.dataset.gameOpen = game.id;
+        summary.setAttribute(
+          "aria-label",
+          game.name + localized(" ayrıntılarını aç", " open details"),
+        );
         summary.append(createGameCapsule(game));
         const overlay = document.createElement("span");
         overlay.className = "game-card-overlay";
         const overlayName = document.createElement("strong");
         overlayName.textContent = game.name;
-        const overlayMeta = document.createElement("small");
-        overlayMeta.textContent =
-          "Steam App ID · " + (game.appId || localized("yok", "none"));
-        overlay.append(overlayName, overlayMeta);
+        overlay.append(overlayName);
         summary.append(overlay);
-
-        const body = document.createElement("div");
-        body.className = "game-profile-body";
-        const meta = document.createElement("small");
-        meta.textContent = gameMeta(game);
-        const tags = document.createElement("small");
-        tags.textContent = game.tags.length
-          ? localized("Etiketler: ", "Tags: ") + game.tags.join(", ")
-          : localized("Etiket girilmedi", "No tags entered");
-        body.append(meta, tags);
-        const history = nextFestHistoryBlock(game);
-        if (history) body.append(history);
-
-        const actions = document.createElement("div");
-        actions.className = "game-profile-actions";
-        const remove = document.createElement("button");
-        remove.type = "button";
-        remove.dataset.gameDelete = game.id;
-        remove.textContent = localized("Sil", "Delete");
-        remove.setAttribute(
-          "aria-label",
-          game.name + localized(" oyununu sil", " delete game"),
-        );
-        const focus = document.createElement("button");
-        focus.type = "button";
-        focus.dataset.gameFocus = game.id;
-        focus.classList.toggle("active", focusedGameId === game.id);
-        focus.textContent =
-          focusedGameId === game.id
-            ? localized("Tüm etkinlikler", "All events")
-            : localized("Bu oyunun işleri", "This game's work");
-        focus.setAttribute(
-          "aria-label",
-          game.name + localized(" için operasyon görünümü", " operations view"),
-        );
-        actions.append(focus, remove);
-        body.append(actions);
-        item.append(summary, body);
+        item.append(summary);
         gamesList.append(item);
       });
     }
@@ -2279,9 +2737,7 @@ export function renderReport(
       selectedSteamDetails = null;
       closeSteamResults();
       steamSearchStatus.textContent = translate("typeTwoChars");
-      gameCancel.hidden = true;
-      gameForm.querySelector("[data-game-submit]").textContent =
-        translate("saveGame");
+      if (gameCancel) gameCancel.hidden = true;
     }
 
     function matchingGamesForRow(row) {
@@ -2454,7 +2910,7 @@ export function renderReport(
           game.appId &&
           (!game.steamDetailsCheckedAt ||
             Date.parse(game.steamDetailsCheckedAt) < refreshCutoff ||
-            game.steamImageVersion < 4),
+            game.steamImageVersion < 5),
       );
       let changed = false;
       for (const game of pending) {
@@ -2462,7 +2918,7 @@ export function renderReport(
           const response = await fetch(
             "/api/steam-app?appid=" +
               encodeURIComponent(game.appId) +
-              "&v=4",
+              "&v=5",
             { headers: { accept: "application/json" } },
           );
           if (!response.ok) continue;
@@ -2490,7 +2946,7 @@ export function renderReport(
             details.nextFestHistory,
           );
           game.steamDetailsCheckedAt = new Date().toISOString();
-          game.steamImageVersion = 4;
+          game.steamImageVersion = 5;
           changed = true;
         } catch {}
       }
@@ -2565,7 +3021,7 @@ export function renderReport(
           : games.find((item) => item.id === gameIdInput.value)
               ?.steamDetailsCheckedAt || "",
         steamImageVersion: selectedSteamDetails
-          ? 4
+          ? 5
           : games.find((item) => item.id === gameIdInput.value)
               ?.steamImageVersion || 0,
       };
@@ -2581,15 +3037,35 @@ export function renderReport(
       resetGameForm();
     });
 
+    gameDialog?.addEventListener("click", (event) => {
+      if (event.target === gameDialog) closeGameDialog();
+    });
+    document.querySelector("[data-game-dialog-close]")?.addEventListener(
+      "click",
+      closeGameDialog,
+    );
     gameCancel?.addEventListener("click", resetGameForm);
     gamesList?.addEventListener("click", (event) => {
       const button = event.target.closest("button");
       if (!button) return;
+      const openId = button.dataset.gameOpen;
+      if (openId) {
+        const game = games.find((item) => item.id === openId);
+        if (game) openGameDialog(game);
+        return;
+      }
+    });
+    gameDialog?.addEventListener("click", (event) => {
+      const button = event.target.closest("button");
+      if (!button) return;
       const editId = button.dataset.gameEdit;
-      const deleteId = button.dataset.gameDelete;
-      const focusId = button.dataset.gameFocus;
+      const deleteId =
+        button.dataset.gameDelete || button.dataset.gameDialogDelete;
+      const focusId =
+        button.dataset.gameFocus || button.dataset.gameDialogFocus;
       if (focusId) {
         focusedGameId = focusedGameId === focusId ? "" : focusId;
+        closeGameDialog();
         renderGames();
         refreshGameStats();
         updateGameMatches();
@@ -2613,9 +3089,7 @@ export function renderReport(
           capsuleImageUrl: game.capsuleImageUrl,
           nextFestHistory: game.nextFestHistory,
         };
-        gameCancel.hidden = false;
-        gameForm.querySelector("[data-game-submit]").textContent =
-          localized("Değişiklikleri kaydet", "Save changes");
+        if (gameCancel) gameCancel.hidden = false;
         gameNameInput.focus();
         gameForm.scrollIntoView({ behavior: "smooth", block: "center" });
       }
@@ -2634,6 +3108,7 @@ export function renderReport(
           return;
         }
         games = games.filter((item) => item.id !== deleteId);
+        closeGameDialog();
         writeGames();
         removeTeamState("game:" + deleteId);
         renderGames();
