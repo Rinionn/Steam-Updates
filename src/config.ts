@@ -1,0 +1,50 @@
+import "dotenv/config";
+import path from "node:path";
+import type { AppConfig } from "./types.js";
+
+const rootDir = path.resolve(process.cwd());
+
+function numberList(value: string | undefined, fallback: number[]): number[] {
+  if (!value) return fallback;
+  const parsed = value
+    .split(",")
+    .map((item) => Number(item.trim()))
+    .filter((item) => Number.isFinite(item) && item >= 0);
+  return parsed.length > 0 ? [...new Set(parsed)].sort((a, b) => b - a) : fallback;
+}
+
+function booleanValue(value: string | undefined, fallback: boolean): boolean {
+  if (value === undefined) return fallback;
+  return ["1", "true", "yes", "on"].includes(value.trim().toLowerCase());
+}
+
+export const paths = {
+  root: rootDir,
+  dataDir: path.join(rootDir, "data"),
+  snapshot: path.join(rootDir, "data", "events.json"),
+  outDir: path.join(rootDir, "out"),
+  report: path.join(rootDir, "out", "steam-etkinlikleri.html"),
+  emailPreview: path.join(rootDir, "out", "son-email.html"),
+  emailTextPreview: path.join(rootDir, "out", "son-email.txt"),
+  notificationState: path.join(rootDir, "data", "notification-state.json"),
+};
+
+export const config: AppConfig = {
+  timezone: process.env.TIMEZONE || "Europe/Istanbul",
+  reminderDays: numberList(process.env.REMINDER_DAYS, [30, 14, 7, 3, 1, 0]),
+  lookaheadDays: Number(process.env.REPORT_LOOKAHEAD_DAYS || 550),
+  emailDaily: booleanValue(process.env.EMAIL_DAILY, true),
+  calendarUrl:
+    process.env.STEAM_CALENDAR_URL ||
+    "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
+  email: {
+    to: process.env.EMAIL_TO,
+    from: process.env.EMAIL_FROM,
+    resendApiKey: process.env.RESEND_API_KEY,
+    smtpHost: process.env.SMTP_HOST,
+    smtpPort: Number(process.env.SMTP_PORT || 465),
+    smtpSecure: booleanValue(process.env.SMTP_SECURE, true),
+    smtpUser: process.env.SMTP_USER,
+    smtpPass: process.env.SMTP_PASS,
+  },
+};

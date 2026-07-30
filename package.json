@@ -1,0 +1,32 @@
+{
+  "name": "steam-etkinlik-radari",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Steamworks etkinliklerini, festivallerini ve son başvuru tarihlerini günlük izleyen Türkçe bot.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "sync": "npm run build --silent && node dist/src/cli.js sync",
+    "report": "npm run build --silent && node dist/src/cli.js report",
+    "email": "npm run build --silent && node dist/src/cli.js email",
+    "daily": "npm run build --silent && node dist/src/cli.js daily"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "dotenv": "^17.2.1",
+    "luxon": "^3.7.2",
+    "nodemailer": "^7.0.6"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.7.1",
+    "@types/node": "^24.2.1",
+    "@types/nodemailer": "^6.4.17",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
