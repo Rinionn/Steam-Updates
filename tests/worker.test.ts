@@ -145,4 +145,36 @@ describe("Steam search Worker", () => {
     expect(response.status).toBe(401);
     expect(await response.text()).toContain("Kurumsal giriş gerekli");
   });
+
+  it("yalnız açıkça izin verilen Gmail adresini kabul eder", async () => {
+    const assets = {
+      fetch: vi.fn(async () => new Response("panel")),
+    };
+    const allowed = await worker.fetch(
+      new Request("https://steamradar.example.workers.dev/", {
+        headers: {
+          "cf-access-authenticated-user-email": "pinargulerrrr@gmail.com",
+        },
+      }),
+      {
+        ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com",
+        ALLOWED_EMAILS: "pinargulerrrr@gmail.com",
+        ASSETS: assets,
+      },
+    );
+    const denied = await worker.fetch(
+      new Request("https://steamradar.example.workers.dev/", {
+        headers: {
+          "cf-access-authenticated-user-email": "another@gmail.com",
+        },
+      }),
+      {
+        ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com",
+        ALLOWED_EMAILS: "pinargulerrrr@gmail.com",
+        ASSETS: assets,
+      },
+    );
+    expect(allowed.status).toBe(200);
+    expect(denied.status).toBe(401);
+  });
 });

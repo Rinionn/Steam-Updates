@@ -10,6 +10,7 @@
   },
   "vars": {
     "ALLOWED_EMAIL_DOMAIN": "gaminginturkey.com",
+    "ALLOWED_EMAILS": "pinargulerrrr@gmail.com",
     "DASHBOARD_ORIGIN": "https://steamradar.gaminginturkey.com",
     "ALLOW_LOCAL_DEV": "false"
   },

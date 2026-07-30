@@ -17,6 +17,7 @@ export interface SteamAppDetails {
 
 export interface WorkerEnvironment {
   ALLOWED_EMAIL_DOMAIN?: string;
+  ALLOWED_EMAILS?: string;
   DASHBOARD_ORIGIN?: string;
   ALLOW_LOCAL_DEV?: string;
   ASSETS?: {

@@ -132,10 +132,19 @@ function allowedEmail(email, domain) {
 function requestIsAuthorized(request, env) {
   const domain = env.ALLOWED_EMAIL_DOMAIN || "gaminginturkey.com";
   const email = accessEmail(request);
+  const normalizedEmail = email.toLocaleLowerCase("en-US");
+  const allowedEmails = String(env.ALLOWED_EMAILS || "")
+    .split(",")
+    .map((value) => value.trim().toLocaleLowerCase("en-US"))
+    .filter(Boolean);
   const localBypass =
     env.ALLOW_LOCAL_DEV === "true" &&
     ["localhost", "127.0.0.1"].includes(new URL(request.url).hostname);
-  return localBypass || allowedEmail(email, domain);
+  return (
+    localBypass ||
+    allowedEmail(email, domain) ||
+    allowedEmails.includes(normalizedEmail)
+  );
 }
 
 function corsHeaders(request, env) {
