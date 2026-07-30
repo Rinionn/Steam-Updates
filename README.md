@@ -55,6 +55,20 @@ Alternatif olarak SMTP alanlarını doldurabilirsiniz. Gerçek parola yerine
 sağlayıcınızın uygulama parolası veya yalnız gönderim yetkili hesabı tercih
 edilmelidir. `.env` Git tarafından yok sayılır.
 
+### Bilgisayar kapalıyken günlük gönderim
+
+`.github/workflows/daily-email.yml`, GitHub Actions üzerinde her gün Türkiye
+saatiyle yaklaşık 09:30’da çalışır. Depoda **Settings → Secrets and variables
+→ Actions → New repository secret** yolunu açın ve şu gizli değeri ekleyin:
+
+- Ad: `GMAIL_APP_PASSWORD`
+- Değer: `batuhan.ozmen@gaminginturkey.com` hesabı için üretilen 16 karakterlik
+  Google uygulama şifresi (boşluksuz)
+
+Normal Google hesap şifresini kullanmayın ve uygulama şifresini Git’e
+eklemeyin. Kurulumdan sonra **Actions → Steam Event Radar - Daily Email → Run
+workflow** ile bir defalık test gönderimi yapılabilir.
+
 ## Komutlar
 
 - `npm run sync` — Steam’i günceller ve HTML listeyi üretir.

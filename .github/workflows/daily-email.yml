@@ -1,0 +1,53 @@
+name: Steam Event Radar - Daily Email
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 09:30 Europe/Istanbul (UTC+3)
+    - cron: "30 6 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-email
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TIMEZONE: Europe/Istanbul
+      EMAIL_DAILY: "true"
+      EMAIL_TO: business.dev@gaminginturkey.com
+      EMAIL_FROM: "Steam Etkinlik Radarı <batuhan.ozmen@gaminginturkey.com>"
+      SMTP_HOST: smtp.gmail.com
+      SMTP_PORT: "465"
+      SMTP_SECURE: "true"
+      SMTP_USER: batuhan.ozmen@gaminginturkey.com
+      SMTP_PASS: ${{ secrets.GMAIL_APP_PASSWORD }}
+
+    steps:
+      - name: Kaynak kodu al
+        uses: actions/checkout@v6
+
+      - name: Node.js kur
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Bagimliliklari kur
+        run: npm ci --ignore-scripts
+
+      - name: E-posta kimligini kontrol et
+        shell: bash
+        run: |
+          if [ -z "$SMTP_PASS" ]; then
+            echo "::error::GMAIL_APP_PASSWORD repository secret'i ayarlanmamis."
+            exit 1
+          fi
+
+      - name: Steam'i guncelle ve gunluk ozeti gonder
+        run: npm run daily
