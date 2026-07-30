@@ -336,6 +336,29 @@ describe("Steam search Worker", () => {
     expect(await response.text()).toContain("Kurumsal giriş gerekli");
   });
 
+  it("/admin yolunu ayrı yönetim dosyasına yönlendirir", async () => {
+    const fetch = vi.fn(async (request: Request) => {
+      return new Response(new URL(request.url).pathname);
+    });
+    const response = await worker.fetch(
+      new Request("https://steamradar.example.workers.dev/admin", {
+        headers: {
+          "cf-access-authenticated-user-email":
+            "batuhan.ozmen@gaminginturkey.com",
+        },
+      }),
+      {
+        ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com",
+        ADMIN_EMAILS: "batuhan.ozmen@gaminginturkey.com",
+        ASSETS: { fetch },
+      },
+    );
+
+    expect(response.status).toBe(200);
+    expect(await response.text()).toBe("/admin/index.html");
+    expect(fetch).toHaveBeenCalledOnce();
+  });
+
   it("yalnız açıkça izin verilen Gmail adresini kabul eder", async () => {
     const assets = {
       fetch: vi.fn(async () => new Response("panel")),

@@ -56,6 +56,14 @@ secret** yolundan aşağıdaki değerleri ekleyin:
 Bu değerler kaynak koda veya statik HTML’e yazılmaz. Sonraki Pages workflow
 çalışmasında Cloudflare Worker secret olarak aktarılır.
 
+Yönetim panelinde mevcut erişim kuralları ve tekil kullanıcılar birlikte
+gösterilir. Günlük e-posta bölümünden To/BCC alıcıları, otomatik gönderimin
+aktifliği, `Europe/Istanbul` gönderim saati, gönderici görünen adı ve konu
+şablonu düzenlenebilir. Konu şablonu `{{kritik}}`, `{{etkinlik}}` ve `{{tarih}}`
+alanlarını destekler. Yönetim ekranı ana panelden ayrıdır ve Worker alan
+adının `/admin` yolundan açılır (örnek:
+`https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/admin`).
+
 ## Kurulum
 
 ```powershell
@@ -89,8 +97,9 @@ edilmelidir. `.env` Git tarafından yok sayılır.
 
 ### Bilgisayar kapalıyken günlük gönderim
 
-`.github/workflows/daily-email.yml`, GitHub Actions üzerinde her gün Türkiye
-saatiyle yaklaşık 09:30’da çalışır. Depoda **Settings → Secrets and variables
+.github/workflows/daily-email.yml`, GitHub Actions üzerinde yarım saatte bir
+yönetim panelindeki planı kontrol eder ve o günün e-postasını ilk uygun
+çalışmada yalnız bir kez gönderir. Depoda **Settings → Secrets and variables
 → Actions → New repository secret** yolunu açın ve şu gizli değeri ekleyin:
 
 - Ad: `GMAIL_APP_PASSWORD`

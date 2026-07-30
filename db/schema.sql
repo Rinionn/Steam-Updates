@@ -21,6 +21,53 @@ CREATE TABLE IF NOT EXISTS email_recipients (
   created_at TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS email_delivery_recipients (
+  email TEXT PRIMARY KEY,
+  recipient_type TEXT NOT NULL DEFAULT 'bcc',
+  enabled INTEGER NOT NULL DEFAULT 1,
+  created_by TEXT NOT NULL,
+  created_at TEXT NOT NULL
+);
+
+INSERT OR IGNORE INTO email_delivery_recipients
+  (email, recipient_type, enabled, created_by, created_at)
+VALUES
+  ('business.dev@gaminginturkey.com', 'to', 1, 'system', datetime('now')),
+  ('batuhan.ozmen@gaminginturkey.com', 'bcc', 1, 'system', datetime('now')),
+  ('pinargulerrrr@gmail.com', 'bcc', 1, 'system', datetime('now'));
+
+INSERT OR IGNORE INTO email_delivery_recipients
+  (email, recipient_type, enabled, created_by, created_at)
+SELECT email, 'bcc', enabled, created_by, created_at
+FROM email_recipients;
+
+CREATE TABLE IF NOT EXISTS email_delivery_settings (
+  id INTEGER PRIMARY KEY CHECK (id = 1),
+  enabled INTEGER NOT NULL DEFAULT 1,
+  send_time TEXT NOT NULL DEFAULT '09:30',
+  timezone TEXT NOT NULL DEFAULT 'Europe/Istanbul',
+  sender_name TEXT NOT NULL DEFAULT 'Steam Etkinlik Radarı',
+  subject_template TEXT NOT NULL,
+  last_sent_date TEXT,
+  updated_by TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
+
+INSERT OR IGNORE INTO email_delivery_settings
+  (id, enabled, send_time, timezone, sender_name, subject_template, last_sent_date, updated_by, updated_at)
+VALUES
+  (
+    1,
+    1,
+    '09:30',
+    'Europe/Istanbul',
+    'Steam Etkinlik Radarı',
+    'Steam Etkinlik Takibi · {{kritik}} kritik tarih · {{etkinlik}} etkinlik',
+    NULL,
+    'system',
+    datetime('now')
+  );
+
 CREATE TABLE IF NOT EXISTS analytics_events (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   occurred_at TEXT NOT NULL,

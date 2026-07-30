@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { renderDigest } from "../src/email.js";
+import { renderAdminPage } from "../src/admin.js";
 import { renderReport } from "../src/report.js";
 import type { ChangeRecord, EventSnapshot } from "../src/types.js";
 
@@ -35,6 +36,16 @@ describe("change log views", () => {
     expect(html).toContain(".news-card[hidden] { display:none; }");
     expect(html).toContain("gamesOnly = Boolean(focusedGameId);");
     expect(html).toContain('setView("events");');
+    expect(html).not.toContain('data-dashboard-panel="admin"');
+  });
+
+  it("renders management as a dedicated password-protected page", () => {
+    const html = renderAdminPage();
+
+    expect(html).toContain("<title>Yönetim · Steam Etkinlik Radarı</title>");
+    expect(html).toContain('data-login-form');
+    expect(html).toContain('fetch("/api/admin/status"');
+    expect(html).toContain('request("/api/admin")');
   });
 
   it("shows the email block only when the last 24 hours contain changes", () => {
@@ -50,5 +61,16 @@ describe("change log views", () => {
     expect(withChanges.text).toContain("SON 24 SAATTE DEĞİŞENLER");
     expect(withoutChanges.html).not.toContain("SON 24 SAATTE DEĞİŞENLER");
     expect(withoutChanges.text).not.toContain("SON 24 SAATTE DEĞİŞENLER");
+  });
+
+  it("applies managed email subject placeholders", () => {
+    const digest = renderDigest(
+      snapshot,
+      [],
+      "Radar · {{kritik}} kritik · {{etkinlik}} etkinlik · {{tarih}}",
+    );
+
+    expect(digest.subject).toContain("Radar · 0 kritik · 0 etkinlik");
+    expect(digest.subject).not.toContain("{{");
   });
 });

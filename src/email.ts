@@ -198,6 +198,7 @@ function emailChangeRow(record: ChangeRecord): string {
 export function renderDigest(
   snapshot: EventSnapshot,
   changelog: ChangeRecord[] = [],
+  subjectTemplate?: string,
 ): {
   subject: string;
   html: string;
@@ -236,7 +237,16 @@ export function renderDigest(
   ).length;
   const nextDeadline = deadlines[0];
   const subject = safeSubject(
-    `Steam Etkinlik Takibi · ${dueThisWeek} kritik tarih · ${events.length} etkinlik`,
+    (
+      subjectTemplate ||
+      "Steam Etkinlik Takibi · {{kritik}} kritik tarih · {{etkinlik}} etkinlik"
+    )
+      .replaceAll("{{kritik}}", String(dueThisWeek))
+      .replaceAll("{{etkinlik}}", String(events.length))
+      .replaceAll(
+        "{{tarih}}",
+        model.generated.setLocale("tr").toFormat("d LLLL yyyy"),
+      ),
   );
   const preheader = nextDeadline
     ? `${nextDeadline.event.name}: ${deadlineCopy(nextDeadline.deadline).title} için ${countdown(
@@ -607,8 +617,28 @@ function emailAddresses(value?: string): string[] {
     .filter(Boolean);
 }
 
-async function resolvedBcc(): Promise<string[]> {
-  const fallback = emailAddresses(config.email.bcc);
+interface EmailDeliverySettings {
+  to: string[];
+  bcc: string[];
+  enabled: boolean;
+  sendTime: string;
+  timezone: string;
+  senderName?: string;
+  subjectTemplate?: string;
+  lastSentDate?: string;
+  managed: boolean;
+}
+
+async function resolvedEmailDelivery(): Promise<EmailDeliverySettings> {
+  const fallback: EmailDeliverySettings = {
+    to: emailAddresses(config.email.to),
+    bcc: emailAddresses(config.email.bcc),
+    enabled: true,
+    sendTime: config.email.sendTime,
+    timezone: config.timezone,
+    senderName: "Steam Etkinlik Radarı",
+    managed: false,
+  };
   if (
     !config.email.recipientApiUrl ||
     !config.email.recipientApiSecret
@@ -623,27 +653,84 @@ async function resolvedBcc(): Promise<string[]> {
       },
     });
     if (!response.ok) return fallback;
-    const body = (await response.json()) as { recipients?: unknown };
-    const managed = Array.isArray(body.recipients)
-      ? body.recipients
-          .map((value) => String(value).trim())
-          .filter(Boolean)
-      : [];
-    return [...new Set([...fallback, ...managed])];
+    const body = (await response.json()) as {
+      to?: unknown;
+      bcc?: unknown;
+      settings?: {
+        enabled?: unknown;
+        sendTime?: unknown;
+        timezone?: unknown;
+        senderName?: unknown;
+        subjectTemplate?: unknown;
+        lastSentDate?: unknown;
+      };
+    };
+    const normalize = (value: unknown): string[] =>
+      Array.isArray(value)
+        ? [...new Set(
+            value
+              .map((item) => String(item).trim())
+              .filter(Boolean),
+          )]
+        : [];
+    const sendTime = String(body.settings?.sendTime || "");
+    return {
+      to: normalize(body.to).length > 0 ? normalize(body.to) : fallback.to,
+      bcc: normalize(body.bcc),
+      enabled: body.settings?.enabled !== 0 && body.settings?.enabled !== false,
+      sendTime: /^(?:[01]\d|2[0-3]):(?:00|30)$/.test(sendTime)
+        ? sendTime
+        : fallback.sendTime,
+      timezone:
+        body.settings?.timezone === "Europe/Istanbul"
+          ? "Europe/Istanbul"
+          : fallback.timezone,
+      senderName: String(body.settings?.senderName || "").trim() || fallback.senderName,
+      subjectTemplate: String(body.settings?.subjectTemplate || "").trim(),
+      lastSentDate: /^\d{4}-\d{2}-\d{2}$/.test(
+        String(body.settings?.lastSentDate || ""),
+      )
+        ? String(body.settings?.lastSentDate)
+        : undefined,
+      managed: true,
+    };
   } catch {
     return fallback;
   }
 }
 
+async function markManagedDigestSent(localDateKey: string): Promise<void> {
+  if (
+    !config.email.recipientApiUrl ||
+    !config.email.recipientApiSecret
+  ) {
+    return;
+  }
+  const response = await fetch(config.email.recipientApiUrl, {
+    method: "POST",
+    headers: {
+      accept: "application/json",
+      authorization: `Bearer ${config.email.recipientApiSecret}`,
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({ sentDate: localDateKey }),
+  });
+  if (!response.ok) {
+    throw new Error("Merkezi e-posta gönderim durumu kaydedilemedi.");
+  }
+}
+
 async function sendWithResend(
+  from: string,
   subject: string,
   html: string,
   text: string,
   localDateKey: string,
+  to: string[],
   bcc: string[],
 ): Promise<string> {
   const recipientHash = createHash("sha1")
-    .update(config.email.to || "")
+    .update(to.join(","))
     .digest("hex")
     .slice(0, 12);
   const response = await fetch("https://api.resend.com/emails", {
@@ -654,8 +741,8 @@ async function sendWithResend(
       "idempotency-key": `steam-etkinlik-radari-${localDateKey}-${recipientHash}`,
     },
     body: JSON.stringify({
-      from: config.email.from,
-      to: emailAddresses(config.email.to),
+      from,
+      to,
       bcc: bcc.length > 0 ? bcc : undefined,
       subject,
       html,
@@ -671,9 +758,11 @@ async function sendWithResend(
 }
 
 async function sendWithSmtp(
+  from: string,
   subject: string,
   html: string,
   text: string,
+  to: string[],
   bcc: string[],
 ): Promise<string> {
   const transporter = nodemailer.createTransport({
@@ -689,8 +778,8 @@ async function sendWithSmtp(
         : undefined,
   });
   const result = await transporter.sendMail({
-    from: config.email.from,
-    to: emailAddresses(config.email.to),
+    from,
+    to,
     bcc,
     subject,
     html,
@@ -703,9 +792,11 @@ export async function sendDigest(
   snapshot: EventSnapshot,
   options: { force?: boolean; previewOnly?: boolean } = {},
 ): Promise<DigestResult> {
+  const delivery = await resolvedEmailDelivery();
   const rendered = renderDigest(
     snapshot,
     await readChangelog(paths.changelog),
+    delivery.subjectTemplate,
   );
   await writePreviews(rendered.html, rendered.text);
 
@@ -718,11 +809,24 @@ export async function sendDigest(
     };
   }
 
-  const localDateKey = DateTime.now().setZone(config.timezone).toISODate();
+  const localNow = DateTime.now().setZone(delivery.timezone);
+  const localDateKey = localNow.toISODate();
   if (!localDateKey) throw new Error("Yerel tarih üretilemedi.");
 
+  if (!options.force && !delivery.enabled) {
+    return {
+      sent: false,
+      skippedReason: "Günlük e-posta yönetim panelinden duraklatılmış.",
+      htmlPreview: paths.emailPreview,
+      textPreview: paths.emailTextPreview,
+    };
+  }
+
   const state = await readNotificationState(paths.notificationState);
-  if (!options.force && state.lastDigestDate === localDateKey) {
+  const alreadySent = delivery.managed
+    ? delivery.lastSentDate === localDateKey
+    : state.lastDigestDate === localDateKey;
+  if (!options.force && alreadySent) {
     return {
       sent: false,
       skippedReason: "Bugünün özeti daha önce gönderildi.",
@@ -731,10 +835,29 @@ export async function sendDigest(
     };
   }
 
-  if (!config.email.to || !config.email.from) {
+  if (!options.force) {
+    const [scheduledHour, scheduledMinute] = delivery.sendTime
+      .split(":")
+      .map(Number);
+    const scheduledMinutes = scheduledHour * 60 + scheduledMinute;
+    const currentMinutes = localNow.hour * 60 + localNow.minute;
+    const due = delivery.managed
+      ? currentMinutes >= scheduledMinutes
+      : Math.floor(currentMinutes / 30) * 30 === scheduledMinutes;
+    if (!due) {
+      return {
+        sent: false,
+        skippedReason: `Planlanan gönderim saati bekleniyor: ${delivery.sendTime} (${delivery.timezone}).`,
+        htmlPreview: paths.emailPreview,
+        textPreview: paths.emailTextPreview,
+      };
+    }
+  }
+
+  if (delivery.to.length === 0 || !config.email.from) {
     return {
       sent: false,
-      skippedReason: "EMAIL_TO veya EMAIL_FROM ayarlı değil.",
+      skippedReason: "En az bir To alıcısı veya EMAIL_FROM ayarı eksik.",
       htmlPreview: paths.emailPreview,
       textPreview: paths.emailTextPreview,
     };
@@ -742,15 +865,21 @@ export async function sendDigest(
 
   let provider: DigestResult["provider"];
   let messageId: string;
-  const bcc = await resolvedBcc();
+  const senderAddress =
+    config.email.from?.match(/<([^>]+)>/)?.[1] || config.email.from || "";
+  const from = delivery.senderName
+    ? `${delivery.senderName} <${senderAddress}>`
+    : config.email.from || "";
   if (config.email.resendApiKey) {
     provider = "resend";
     messageId = await sendWithResend(
+      from,
       rendered.subject,
       rendered.html,
       rendered.text,
       localDateKey,
-      bcc,
+      delivery.to,
+      delivery.bcc,
     );
   } else if (
     config.email.smtpHost &&
@@ -759,10 +888,12 @@ export async function sendDigest(
   ) {
     provider = "smtp";
     messageId = await sendWithSmtp(
+      from,
       rendered.subject,
       rendered.html,
       rendered.text,
-      bcc,
+      delivery.to,
+      delivery.bcc,
     );
   } else if (config.email.smtpHost) {
     return {
@@ -781,6 +912,7 @@ export async function sendDigest(
   }
 
   await markDigestSent(paths.notificationState, localDateKey);
+  if (delivery.managed) await markManagedDigestSent(localDateKey);
   return {
     sent: true,
     provider,

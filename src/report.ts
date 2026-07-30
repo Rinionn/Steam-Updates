@@ -18,6 +18,7 @@ import type {
 } from "./types.js";
 import { escapeHtml, stableId } from "./utils.js";
 import { createReportModel, type DeadlineView } from "./view-model.js";
+import { renderAdminPage } from "./admin.js";
 
 const kindLabels: Record<SteamEvent["kind"], string> = {
   seasonal_sale: "Sezon İndirimi",
@@ -658,7 +659,6 @@ export function renderReport(
     .language-switch { display:flex; width:max-content; max-width:100%; gap:5px; margin:0 0 14px auto; padding:4px; border:1px solid var(--color-hero-line); border-radius:999px; background:var(--color-hero-card); }
     .hero-tools { display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:14px; }
     .hero-tools .language-switch { margin:0; }
-    .admin-open { min-height:42px; color:var(--color-on-accent); border-color:var(--color-hero-line); background:var(--color-hero-card); font-size:10px; font-weight:900; }
     .language-switch button { min-width:42px; min-height:34px; padding:6px 9px; color:var(--color-hero-copy); border-color:var(--color-transparent); background:var(--color-transparent); font-size:10px; font-weight:900; }
     .language-switch button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
     .eyebrow { color: var(--color-accent-pink); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; }
@@ -914,26 +914,6 @@ export function renderReport(
     .news-card h3 { margin:7px 0 8px; overflow-wrap:anywhere; font-size:14px; line-height:1.3; }
     .news-card p { display:-webkit-box; margin:0 0 9px; overflow:hidden; color:var(--color-muted); font-size:11px; line-height:1.45; -webkit-box-orient:vertical; -webkit-line-clamp:3; }
     .news-card a { color:var(--color-link); font-size:11px; font-weight:800; text-decoration:none; }
-    .admin-grid { display:grid; grid-template-columns:1fr; gap:14px; }
-    .admin-login { max-width:460px; margin:0 auto; padding:18px; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
-    .admin-login h3 { margin:0 0 7px; font-size:18px; }
-    .admin-login p { margin:0 0 13px; color:var(--color-muted); font-size:11px; line-height:1.5; }
-    .admin-login form { display:grid; gap:9px; }
-    .admin-login input { width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--color-line); border-radius:10px; color:var(--color-ink); background:var(--color-control); }
-    .admin-login button { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-weight:800; }
-    .admin-login-status { min-height:1.4em; margin-top:9px; color:var(--color-danger); font-size:10px; }
-    .admin-content[hidden],.admin-login[hidden] { display:none; }
-    .admin-card { padding:16px; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
-    .admin-card h3 { margin:0 0 12px; font-size:17px; }
-    .admin-form { display:flex; gap:8px; flex-wrap:wrap; }
-    .admin-form input { flex:1 1 220px; min-height:42px; padding:9px 11px; border:1px solid var(--color-line); border-radius:10px; color:var(--color-ink); background:var(--color-control); }
-    .admin-list { display:grid; gap:7px; margin-top:12px; }
-    .admin-list-row { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:9px 10px; border-radius:10px; background:var(--color-soft); font-size:11px; overflow-wrap:anywhere; }
-    .admin-metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
-    .admin-metric { padding:12px; border-radius:11px; background:var(--color-soft); }
-    .admin-metric strong,.admin-metric span { display:block; }
-    .admin-metric strong { font-size:22px; }
-    .admin-metric span { margin-top:4px; color:var(--color-muted); font-size:9px; }
     .empty { padding:24px; color:var(--color-muted); text-align:center; border:1px dashed var(--color-line); border-radius:16px; }
     footer { margin-top:28px; color:var(--color-footer); font-size:12px; text-align:center; }
     @media (min-width: 761px) {
@@ -973,7 +953,6 @@ export function renderReport(
       .change-values { text-align:right; }
       .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .platform-news { grid-template-columns:repeat(2,minmax(0,1fr)); }
-      .admin-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior:auto; }
@@ -991,7 +970,6 @@ export function renderReport(
   <main class="shell">
     <section class="hero" id="top">
       <div class="hero-tools">
-        <button class="admin-open" type="button" data-admin-open hidden>Yönetim</button>
         <div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel">
           <button class="active" type="button" data-language="tr" aria-pressed="true">TR</button>
           <button type="button" data-language="en" aria-pressed="false">EN</button>
@@ -1184,49 +1162,6 @@ export function renderReport(
 
     ${newsSection(news)}
 
-    <section class="section dashboard-panel" id="admin" data-dashboard-panel="admin" aria-labelledby="admin-heading" hidden>
-      <div class="section-title">
-        <div>
-          <h2 id="admin-heading">Yönetim Paneli</h2>
-          <p>Erişim, günlük e-posta alıcıları ve son 30 günlük kullanım verileri. Kurumsal girişe ek olarak yönetici şifresi gerekir.</p>
-        </div>
-      </div>
-      <div class="admin-login" data-admin-login>
-        <h3>Yönetici doğrulaması</h3>
-        <p>Bu şifre yalnızca doğrulama isteğinde kullanılır ve tarayıcınızda kalıcı olarak saklanmaz.</p>
-        <form data-admin-login-form>
-          <input type="password" required autocomplete="current-password" placeholder="Yönetici şifresi" data-admin-password>
-          <button type="submit">Yönetim paneline gir</button>
-        </form>
-        <div class="admin-login-status" data-admin-login-status role="status" aria-live="polite"></div>
-      </div>
-      <div class="admin-content" data-admin-content hidden>
-        <div class="admin-grid">
-          <article class="admin-card">
-            <h3>Panel erişimi</h3>
-            <form class="admin-form" data-admin-user-form>
-              <input type="email" required placeholder="kullanici@ornek.com" data-admin-user-email>
-              <button type="submit">Erişim ver</button>
-            </form>
-            <div class="admin-list" data-admin-users></div>
-          </article>
-          <article class="admin-card">
-            <h3>Günlük e-posta alıcıları</h3>
-            <form class="admin-form" data-admin-recipient-form>
-              <input type="email" required placeholder="alici@ornek.com" data-admin-recipient-email>
-              <button type="submit">Alıcı ekle</button>
-            </form>
-            <div class="admin-list" data-admin-recipients></div>
-          </article>
-          <article class="admin-card">
-            <h3>Son 30 gün</h3>
-            <div class="admin-metrics" data-admin-metrics></div>
-            <div class="admin-list" data-admin-popular></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <footer data-i18n="footer">Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
   </main>
   <script>
@@ -1250,7 +1185,6 @@ export function renderReport(
       "steamworks",
       "releases",
       "stats",
-      "admin",
     ]);
     let activeView = allowedViews.has(hashState.get("view"))
       ? hashState.get("view")
@@ -1363,172 +1297,6 @@ export function renderReport(
       }).catch(() => {});
     }
 
-    const adminOpen = document.querySelector("[data-admin-open]");
-    const adminUsers = document.querySelector("[data-admin-users]");
-    const adminRecipients = document.querySelector("[data-admin-recipients]");
-    const adminMetrics = document.querySelector("[data-admin-metrics]");
-    const adminPopular = document.querySelector("[data-admin-popular]");
-    const adminLogin = document.querySelector("[data-admin-login]");
-    const adminContent = document.querySelector("[data-admin-content]");
-    const adminPasswordInput = document.querySelector("[data-admin-password]");
-    const adminLoginStatus = document.querySelector("[data-admin-login-status]");
-    let adminPassword = "";
-
-    function adminRow(item, collection) {
-      const row = document.createElement("div");
-      row.className = "admin-list-row";
-      const email = document.createElement("span");
-      email.textContent = item.email;
-      const remove = document.createElement("button");
-      remove.type = "button";
-      remove.dataset.adminRemove = collection;
-      remove.dataset.adminEmail = item.email;
-      remove.textContent = "Kaldır";
-      row.append(email, remove);
-      return row;
-    }
-
-    async function checkAdminAccess() {
-      try {
-        const response = await fetch("/api/admin/status", {
-          headers: { accept: "application/json" },
-        });
-        if (!response.ok) return false;
-        const payload = await response.json();
-        adminOpen.hidden = payload.admin !== true;
-        if (!payload.passwordConfigured) {
-          adminLoginStatus.textContent =
-            "ADMIN_PANEL_PASSWORD Worker secret henüz tanımlanmamış.";
-        }
-        return payload.admin === true;
-      } catch {
-        return false;
-      }
-    }
-
-    async function loadAdmin() {
-      try {
-        const response = await fetch("/api/admin", {
-          headers: {
-            accept: "application/json",
-            "x-admin-password": adminPassword,
-          },
-        });
-        if (!response.ok) {
-          const payload = await response.json().catch(() => ({}));
-          adminContent.hidden = true;
-          adminLogin.hidden = false;
-          adminLoginStatus.textContent =
-            payload.error === "admin_password_not_configured"
-              ? "Yönetici şifresi henüz Cloudflare Worker secret olarak tanımlanmamış."
-              : "Yönetici şifresi hatalı.";
-          return false;
-        }
-        const payload = await response.json();
-        adminOpen.hidden = false;
-        adminLogin.hidden = true;
-        adminContent.hidden = false;
-        adminLoginStatus.textContent = "";
-        adminUsers.replaceChildren(
-          ...(payload.users || []).map((item) => adminRow(item, "users")),
-        );
-        adminRecipients.replaceChildren(
-          ...(payload.recipients || []).map((item) =>
-            adminRow(item, "recipients"),
-          ),
-        );
-        const metrics = [
-          [payload.analytics?.pageViews || 0, "Sayfa görüntüleme"],
-          [payload.analytics?.visitors || 0, "Tekil kullanıcı"],
-          [payload.analytics?.events || 0, "Toplam etkileşim"],
-        ];
-        adminMetrics.replaceChildren(
-          ...metrics.map(([value, label]) => {
-            const card = document.createElement("div");
-            card.className = "admin-metric";
-            const strong = document.createElement("strong");
-            strong.textContent = formatNumber(value);
-            const caption = document.createElement("span");
-            caption.textContent = label;
-            card.append(strong, caption);
-            return card;
-          }),
-        );
-        adminPopular.replaceChildren(
-          ...(payload.analytics?.popular || []).map((item) => {
-            const row = document.createElement("div");
-            row.className = "admin-list-row";
-            row.textContent =
-              item.eventName + (item.target ? " · " + item.target : "") +
-              " · " + item.count;
-            return row;
-          }),
-        );
-        return true;
-      } catch {
-        return false;
-      }
-    }
-
-    async function updateAdminEmail(collection, email, method) {
-      const suffix =
-        method === "DELETE" ? "?email=" + encodeURIComponent(email) : "";
-      const response = await fetch("/api/admin/" + collection + suffix, {
-        method,
-        headers: {
-          accept: "application/json",
-          "content-type": "application/json",
-          "x-admin-password": adminPassword,
-        },
-        body: method === "POST" ? JSON.stringify({ email }) : undefined,
-      });
-      if (!response.ok) throw new Error("admin update failed");
-      await loadAdmin();
-    }
-
-    adminOpen?.addEventListener("click", () => {
-      setView("admin");
-      recordAnalytics("view_tab", "admin");
-    });
-    document.querySelector("[data-admin-login-form]")?.addEventListener(
-      "submit",
-      async (event) => {
-        event.preventDefault();
-        adminPassword = adminPasswordInput.value;
-        adminLoginStatus.textContent = "Doğrulanıyor…";
-        const success = await loadAdmin();
-        if (success) adminPasswordInput.value = "";
-      },
-    );
-    document.querySelector("[data-admin-user-form]")?.addEventListener(
-      "submit",
-      async (event) => {
-        event.preventDefault();
-        const input = document.querySelector("[data-admin-user-email]");
-        await updateAdminEmail("users", input.value.trim(), "POST");
-        input.value = "";
-      },
-    );
-    document.querySelector("[data-admin-recipient-form]")?.addEventListener(
-      "submit",
-      async (event) => {
-        event.preventDefault();
-        const input = document.querySelector("[data-admin-recipient-email]");
-        await updateAdminEmail("recipients", input.value.trim(), "POST");
-        input.value = "";
-      },
-    );
-    document.querySelector("#admin")?.addEventListener("click", async (event) => {
-      const button = event.target.closest("[data-admin-remove]");
-      if (!button) return;
-      if (!window.confirm(button.dataset.adminEmail + " kaldırılsın mı?")) return;
-      await updateAdminEmail(
-        button.dataset.adminRemove,
-        button.dataset.adminEmail,
-        "DELETE",
-      );
-    });
-    checkAdminAccess();
     recordAnalytics("page_view", location.pathname);
     viewTabs.forEach((button) => {
       button.addEventListener("click", () =>
@@ -3914,6 +3682,7 @@ export function renderReport(
 
 export async function writeReport(snapshot: EventSnapshot): Promise<string> {
   await mkdir(paths.outDir, { recursive: true });
+  await mkdir(paths.adminDir, { recursive: true });
   const report = renderReport(
     snapshot,
     await readChangelog(paths.changelog),
@@ -3923,6 +3692,7 @@ export async function writeReport(snapshot: EventSnapshot): Promise<string> {
     writeFile(paths.pagesFallback, report, "utf8"),
     writeFile(paths.report, report, "utf8"),
     writeFile(paths.publicIndex, report, "utf8"),
+    writeFile(paths.adminIndex, renderAdminPage(), "utf8"),
     writeFile(paths.calendarIcs, createCalendarIcs(snapshot), "utf8"),
     writeFile(paths.noJekyll, "", "utf8"),
   ]);

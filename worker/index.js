@@ -762,13 +762,24 @@ export async function adminSnapshot(request, env) {
   const denied = await requireAdmin(request, env, cors);
   if (denied) return denied;
   if (!env.DB) return json({ error: "admin_storage_unavailable" }, 503, cors);
-  const [users, recipients, totals, popular] = await Promise.all([
+  const [users, recipients, settings, totals, popular] = await Promise.all([
     env.DB.prepare(
       "SELECT email, role, enabled, created_at AS createdAt FROM access_users ORDER BY email",
     ).all(),
     env.DB.prepare(
-      "SELECT email, enabled, created_at AS createdAt FROM email_recipients ORDER BY email",
+      `SELECT email, recipient_type AS recipientType, enabled,
+              created_at AS createdAt
+       FROM email_delivery_recipients
+       ORDER BY recipient_type DESC, email`,
     ).all(),
+    env.DB.prepare(
+      `SELECT enabled, send_time AS sendTime, timezone,
+              sender_name AS senderName,
+              subject_template AS subjectTemplate,
+              last_sent_date AS lastSentDate, updated_at AS updatedAt
+       FROM email_delivery_settings
+       WHERE id = 1`,
+    ).first(),
     env.DB.prepare(
       `SELECT COUNT(*) AS events,
               COUNT(DISTINCT CASE WHEN event_name = 'page_view' THEN user_email END) AS visitors,
@@ -789,6 +800,32 @@ export async function adminSnapshot(request, env) {
     {
       users: users.results || [],
       recipients: recipients.results || [],
+      accessRules: [
+        {
+          type: "domain",
+          value: `@${env.ALLOWED_EMAIL_DOMAIN || "gaminginturkey.com"}`,
+          source: "config",
+        },
+        ...configuredEmails(env.ALLOWED_EMAILS || "pinargulerrrr@gmail.com").map(
+          (email) => ({ type: "email", value: email, source: "config" }),
+        ),
+        ...configuredEmails(
+          env.ADMIN_EMAILS || "batuhan.ozmen@gaminginturkey.com",
+        ).map((email) => ({
+          type: "admin",
+          value: email,
+          source: "config",
+        })),
+      ],
+      emailSettings: settings || {
+        enabled: 1,
+        sendTime: "09:30",
+        timezone: "Europe/Istanbul",
+        senderName: "Steam Etkinlik Radarı",
+        subjectTemplate:
+          "Steam Etkinlik Takibi · {{kritik}} kritik tarih · {{etkinlik}} etkinlik",
+        lastSentDate: null,
+      },
       analytics: {
         events: Number(totals?.events || 0),
         visitors: Number(totals?.visitors || 0),
@@ -807,15 +844,18 @@ export async function updateAdminCollection(request, env, collection) {
   const denied = await requireAdmin(request, env, cors);
   if (denied) return denied;
   if (!env.DB) return json({ error: "admin_storage_unavailable" }, 503, cors);
+  const body =
+    request.method === "DELETE" ? {} : await request.json().catch(() => ({}));
   const email = (
     request.method === "DELETE"
       ? new URL(request.url).searchParams.get("email") || ""
-      : String((await request.json())?.email || "")
+      : String(body?.email || "")
   )
     .trim()
     .toLocaleLowerCase("en-US");
   if (!validEmail(email)) return json({ error: "invalid_email" }, 400, cors);
-  const table = collection === "users" ? "access_users" : "email_recipients";
+  const table =
+    collection === "users" ? "access_users" : "email_delivery_recipients";
   if (request.method === "DELETE") {
     await env.DB.prepare(`DELETE FROM ${table} WHERE email = ?`).bind(email).run();
     return json({ deleted: email }, 200, cors);
@@ -831,15 +871,77 @@ export async function updateAdminCollection(request, env, collection) {
       .bind(email, actor, now)
       .run();
   } else {
+    const recipientType = body?.recipientType === "to" ? "to" : "bcc";
     await env.DB.prepare(
-      `INSERT INTO email_recipients (email, enabled, created_by, created_at)
-       VALUES (?, 1, ?, ?)
-       ON CONFLICT(email) DO UPDATE SET enabled = 1`,
+      `INSERT INTO email_delivery_recipients
+         (email, recipient_type, enabled, created_by, created_at)
+       VALUES (?, ?, 1, ?, ?)
+       ON CONFLICT(email) DO UPDATE SET
+         recipient_type = excluded.recipient_type,
+         enabled = 1`,
     )
-      .bind(email, actor, now)
+      .bind(email, recipientType, actor, now)
       .run();
   }
   return json({ email }, 200, cors);
+}
+
+export async function updateEmailSettings(request, env) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  const denied = await requireAdmin(request, env, cors);
+  if (denied) return denied;
+  if (!env.DB) return json({ error: "admin_storage_unavailable" }, 503, cors);
+  const body = await request.json().catch(() => ({}));
+  const enabled = body?.enabled === false ? 0 : 1;
+  const sendTime = String(body?.sendTime || "").trim();
+  const timezone = String(body?.timezone || "").trim();
+  const senderName = String(body?.senderName || "")
+    .replace(/[\r\n<>]+/g, " ")
+    .trim()
+    .slice(0, 80);
+  const subjectTemplate = String(body?.subjectTemplate || "")
+    .replace(/[\r\n]+/g, " ")
+    .trim()
+    .slice(0, 180);
+  if (!/^(?:[01]\d|2[0-3]):(?:00|30)$/.test(sendTime)) {
+    return json({ error: "invalid_send_time" }, 400, cors);
+  }
+  if (timezone !== "Europe/Istanbul") {
+    return json({ error: "invalid_timezone" }, 400, cors);
+  }
+  if (!senderName || !subjectTemplate) {
+    return json({ error: "invalid_subject" }, 400, cors);
+  }
+  const actor = accessEmail(request).toLocaleLowerCase("en-US");
+  const now = new Date().toISOString();
+  await env.DB.prepare(
+    `INSERT INTO email_delivery_settings
+       (id, enabled, send_time, timezone, sender_name, subject_template, updated_by, updated_at)
+     VALUES (1, ?, ?, ?, ?, ?, ?, ?)
+     ON CONFLICT(id) DO UPDATE SET
+       enabled = excluded.enabled,
+       send_time = excluded.send_time,
+       timezone = excluded.timezone,
+       sender_name = excluded.sender_name,
+       subject_template = excluded.subject_template,
+       updated_by = excluded.updated_by,
+       updated_at = excluded.updated_at`,
+  )
+    .bind(enabled, sendTime, timezone, senderName, subjectTemplate, actor, now)
+    .run();
+  return json(
+    {
+      enabled: Boolean(enabled),
+      sendTime,
+      timezone,
+      senderName,
+      subjectTemplate,
+      updatedAt: now,
+    },
+    200,
+    cors,
+  );
 }
 
 export async function recordAnalytics(request, env) {
@@ -877,11 +979,54 @@ export async function automationRecipients(request, env) {
     return json({ error: "authentication_required" }, 401);
   }
   if (!env.DB) return json({ error: "recipient_storage_unavailable" }, 503);
-  const records = await env.DB.prepare(
-    "SELECT email FROM email_recipients WHERE enabled = 1 ORDER BY email",
-  ).all();
+  if (request.method === "POST") {
+    const body = await request.json().catch(() => ({}));
+    const sentDate = String(body?.sentDate || "").trim();
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(sentDate)) {
+      return json({ error: "invalid_sent_date" }, 400);
+    }
+    await env.DB.prepare(
+      `UPDATE email_delivery_settings
+       SET last_sent_date = ?, updated_at = ?
+       WHERE id = 1`,
+    )
+      .bind(sentDate, new Date().toISOString())
+      .run();
+    return json({ lastSentDate: sentDate }, 200);
+  }
+  const [records, settings] = await Promise.all([
+    env.DB.prepare(
+      `SELECT email, recipient_type AS recipientType
+       FROM email_delivery_recipients
+       WHERE enabled = 1
+       ORDER BY recipient_type DESC, email`,
+    ).all(),
+    env.DB.prepare(
+      `SELECT enabled, send_time AS sendTime, timezone,
+              sender_name AS senderName,
+              subject_template AS subjectTemplate,
+              last_sent_date AS lastSentDate
+       FROM email_delivery_settings
+       WHERE id = 1`,
+    ).first(),
+  ]);
+  const recipients = records.results || [];
   return json({
-    recipients: (records.results || []).map((item) => item.email),
+    to: recipients
+      .filter((item) => item.recipientType === "to")
+      .map((item) => item.email),
+    bcc: recipients
+      .filter((item) => item.recipientType !== "to")
+      .map((item) => item.email),
+    settings: settings || {
+      enabled: 1,
+      sendTime: "09:30",
+      timezone: "Europe/Istanbul",
+      senderName: "Steam Etkinlik Radarı",
+      subjectTemplate:
+        "Steam Etkinlik Takibi · {{kritik}} kritik tarih · {{etkinlik}} etkinlik",
+      lastSentDate: null,
+    },
   });
 }
 
@@ -911,6 +1056,12 @@ export default {
         url.pathname.endsWith("/users") ? "users" : "recipients",
       );
     }
+    if (url.pathname === "/api/admin/email-settings") {
+      if (request.method !== "PUT") {
+        return json({ error: "method_not_allowed" }, 405, { allow: "PUT" });
+      }
+      return updateEmailSettings(request, env);
+    }
     if (url.pathname === "/api/analytics") {
       if (request.method !== "POST") {
         return json({ error: "method_not_allowed" }, 405, { allow: "POST" });
@@ -918,8 +1069,10 @@ export default {
       return recordAnalytics(request, env);
     }
     if (url.pathname === "/api/automation/email-recipients") {
-      if (request.method !== "GET") {
-        return json({ error: "method_not_allowed" }, 405, { allow: "GET" });
+      if (!["GET", "POST"].includes(request.method)) {
+        return json({ error: "method_not_allowed" }, 405, {
+          allow: "GET, POST",
+        });
       }
       return automationRecipients(request, env);
     }
@@ -962,6 +1115,11 @@ export default {
           "x-content-type-options": "nosniff",
         },
       });
+    }
+    if (url.pathname === "/admin" || url.pathname === "/admin/") {
+      const adminUrl = new URL(request.url);
+      adminUrl.pathname = "/admin/index.html";
+      return env.ASSETS.fetch(new Request(adminUrl, request));
     }
     return env.ASSETS.fetch(request);
   },

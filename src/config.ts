@@ -28,6 +28,8 @@ export const paths = {
   pagesFallback: path.join(rootDir, "index.html"),
   report: path.join(rootDir, "out", "steam-etkinlikleri.html"),
   publicIndex: path.join(rootDir, "out", "index.html"),
+  adminDir: path.join(rootDir, "out", "admin"),
+  adminIndex: path.join(rootDir, "out", "admin", "index.html"),
   calendarIcs: path.join(rootDir, "out", "steam-etkinlikleri.ics"),
   noJekyll: path.join(rootDir, "out", ".nojekyll"),
   emailPreview: path.join(rootDir, "out", "son-email.html"),
@@ -59,5 +61,6 @@ export const config: AppConfig = {
     smtpPass: process.env.SMTP_PASS,
     recipientApiUrl: process.env.EMAIL_RECIPIENT_API_URL,
     recipientApiSecret: process.env.EMAIL_AUTOMATION_SECRET,
+    sendTime: process.env.EMAIL_SEND_TIME || "09:30",
   },
 };

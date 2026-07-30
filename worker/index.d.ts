@@ -55,8 +55,10 @@ export interface WorkerEnvironment {
   ALLOW_LOCAL_DEV?: string;
   DB?: {
     prepare(query: string): {
+      first?(): Promise<Record<string, unknown> | null>;
       bind(...values: unknown[]): {
         all(): Promise<{ results?: unknown[] }>;
+        first?(): Promise<Record<string, unknown> | null>;
         run(): Promise<unknown>;
       };
     };
@@ -114,6 +116,10 @@ export function adminStatus(
   env: WorkerEnvironment,
 ): Promise<Response>;
 export function adminSnapshot(
+  request: Request,
+  env: WorkerEnvironment,
+): Promise<Response>;
+export function updateEmailSettings(
   request: Request,
   env: WorkerEnvironment,
 ): Promise<Response>;

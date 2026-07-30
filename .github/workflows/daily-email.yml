@@ -2,9 +2,15 @@ name: Steam Event Radar - Daily Email
 
 on:
   workflow_dispatch:
+    inputs:
+      force_send:
+        description: Planlanan saati ve günlük gönderim kaydını atla
+        required: false
+        type: boolean
+        default: false
   schedule:
-    # 09:30 Europe/Istanbul (UTC+3)
-    - cron: "30 6 * * *"
+    # Panelde seçilen Europe/Istanbul saatini yarım saatte bir kontrol eder.
+    - cron: "0,30 * * * *"
 
 permissions:
   contents: read
@@ -20,6 +26,7 @@ jobs:
     env:
       TIMEZONE: Europe/Istanbul
       EMAIL_DAILY: "true"
+      EMAIL_SEND_TIME: "09:30"
       EMAIL_LOOKAHEAD_DAYS: "90"
       EMAIL_TO: business.dev@gaminginturkey.com
       EMAIL_BCC: batuhan.ozmen@gaminginturkey.com, pinargulerrrr@gmail.com
@@ -54,4 +61,10 @@ jobs:
           fi
 
       - name: Gunluk ozeti gonder
-        run: npm run email
+        shell: bash
+        run: |
+          if [ "${{ inputs.force_send || false }}" = "true" ]; then
+            npm run email -- --force-email
+          else
+            npm run email
+          fi
