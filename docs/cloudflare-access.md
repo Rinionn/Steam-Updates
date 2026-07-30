@@ -1,7 +1,5 @@
 # Cloudflare Access kurulumu
 
-<!-- Cloudflare deployment is triggered by repository updates after the variable is enabled. -->
-
 Hedef adres: `https://steamradar.gaminginturkey.com`
 
 ## 1. Worker ve alan adı
