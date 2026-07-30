@@ -2265,6 +2265,14 @@ export function renderReport(
         renderGames();
         updateGameMatches();
       }
+      if (teamStateEnabled) {
+        const sharedGameIds = new Set(sharedGames.map((game) => game.id));
+        games
+          .filter((game) => !sharedGameIds.has(game.id))
+          .forEach((game) =>
+            upsertTeamState("game:" + game.id, "game", game),
+          );
+      }
       initializeApplicationWorkflows(records);
       renderOperations();
     });
@@ -2515,6 +2523,33 @@ export function renderReport(
           if (key) applications[key] = { ...local, ...record.payload };
         });
       writeApplications();
+      if (teamStateEnabled) {
+        const sharedApplicationKeys = new Set(
+          records
+            .filter((record) => record.type === "application")
+            .map((record) => String(record.key || "").slice("application:".length)),
+        );
+        Object.values(applications).forEach((record) => {
+          const key = applicationKey(record?.eventId || "", record?.gameId || "");
+          if (
+            !record?.eventId ||
+            !record?.gameId ||
+            !record?.status ||
+            sharedApplicationKeys.has(key)
+          ) {
+            return;
+          }
+          upsertTeamState(
+            "application:" + key,
+            "application",
+            {
+              eventId: record.eventId,
+              gameId: record.gameId,
+              status: record.status,
+            },
+          );
+        });
+      }
       applicationWorkflows.forEach((workflow) => {
         const select = workflow.querySelector("[data-application-game]");
         const previous = select.value;
@@ -2859,6 +2894,24 @@ export function renderReport(
           if (record.payload?.completed === false) delete completedTasks[taskId];
         });
       writeTaskMap(taskStorageKey, completedTasks);
+      const sharedTaskIds = new Set(
+        records
+          .filter((record) => record.type === "task")
+          .map((record) => record.key.slice("task:".length)),
+      );
+      taskBoxes
+        .filter(
+          (box) =>
+            completedTasks[box.dataset.taskId] &&
+            !sharedTaskIds.has(box.dataset.taskId),
+        )
+        .forEach((box) =>
+          upsertTeamState(
+            "task:" + box.dataset.taskId,
+            "task",
+            { completed: true },
+          ),
+        );
       syncTaskUi();
       renderOperations();
     });

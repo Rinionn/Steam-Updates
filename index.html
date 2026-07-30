@@ -1133,7 +1133,7 @@
     <section class="section">
       <div class="section-title">
         <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
-        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="30 Temmuz 2026, 23:09" data-copy-en="30 July 2026, 23:09">30 Temmuz 2026, 23:09</span></p>
+        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="30 Temmuz 2026, 23:12" data-copy-en="30 July 2026, 23:12">30 Temmuz 2026, 23:12</span></p>
       </div>
       <div class="toolbar">
         <label class="sr-only" for="search" data-i18n="searchEvents">Etkinlik ara</label>
@@ -6654,6 +6654,14 @@
         renderGames();
         updateGameMatches();
       }
+      if (teamStateEnabled) {
+        const sharedGameIds = new Set(sharedGames.map((game) => game.id));
+        games
+          .filter((game) => !sharedGameIds.has(game.id))
+          .forEach((game) =>
+            upsertTeamState("game:" + game.id, "game", game),
+          );
+      }
       initializeApplicationWorkflows(records);
       renderOperations();
     });
@@ -6904,6 +6912,33 @@
           if (key) applications[key] = { ...local, ...record.payload };
         });
       writeApplications();
+      if (teamStateEnabled) {
+        const sharedApplicationKeys = new Set(
+          records
+            .filter((record) => record.type === "application")
+            .map((record) => String(record.key || "").slice("application:".length)),
+        );
+        Object.values(applications).forEach((record) => {
+          const key = applicationKey(record?.eventId || "", record?.gameId || "");
+          if (
+            !record?.eventId ||
+            !record?.gameId ||
+            !record?.status ||
+            sharedApplicationKeys.has(key)
+          ) {
+            return;
+          }
+          upsertTeamState(
+            "application:" + key,
+            "application",
+            {
+              eventId: record.eventId,
+              gameId: record.gameId,
+              status: record.status,
+            },
+          );
+        });
+      }
       applicationWorkflows.forEach((workflow) => {
         const select = workflow.querySelector("[data-application-game]");
         const previous = select.value;
@@ -7248,6 +7283,24 @@
           if (record.payload?.completed === false) delete completedTasks[taskId];
         });
       writeTaskMap(taskStorageKey, completedTasks);
+      const sharedTaskIds = new Set(
+        records
+          .filter((record) => record.type === "task")
+          .map((record) => record.key.slice("task:".length)),
+      );
+      taskBoxes
+        .filter(
+          (box) =>
+            completedTasks[box.dataset.taskId] &&
+            !sharedTaskIds.has(box.dataset.taskId),
+        )
+        .forEach((box) =>
+          upsertTeamState(
+            "task:" + box.dataset.taskId,
+            "task",
+            { completed: true },
+          ),
+        );
       syncTaskUi();
       renderOperations();
     });
