@@ -6,6 +6,7 @@ import {
   parseSteamSuggestions,
   parseSteamTags,
   searchSteam,
+  steamLibraryCapsuleUrl,
 } from "../worker/index.js";
 
 const steamHtml = `
@@ -58,6 +59,23 @@ const appNews = {
   },
 };
 
+const appInfo = {
+  data: {
+    "1091500": {
+      common: {
+        library_assets_full: {
+          library_capsule: {
+            image2x: {
+              english:
+                "0123456789abcdef0123456789abcdef01234567/library_capsule_2x.jpg",
+            },
+          },
+        },
+      },
+    },
+  },
+};
+
 afterEach(() => {
   vi.unstubAllGlobals();
 });
@@ -95,6 +113,12 @@ describe("Steam search Worker", () => {
     ]);
   });
 
+  it("Steam appinfo içinden gerçek dikey kapsül URL'sini üretir", () => {
+    expect(steamLibraryCapsuleUrl("1091500", appInfo)).toBe(
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0123456789abcdef0123456789abcdef01234567/library_capsule_2x.jpg",
+    );
+  });
+
   it("seçilen oyunun doğrulanabilir Steam alanlarını döndürür", async () => {
     vi.stubGlobal(
       "fetch",
@@ -106,6 +130,9 @@ describe("Steam search Worker", () => {
         .mockResolvedValueOnce(new Response(storeHtml, { status: 200 }))
         .mockResolvedValueOnce(
           new Response(JSON.stringify(appNews), { status: 200 }),
+        )
+        .mockResolvedValueOnce(
+          new Response(JSON.stringify(appInfo), { status: 200 }),
         ),
     );
     const response = await getSteamApp(
@@ -129,7 +156,7 @@ describe("Steam search Worker", () => {
       releaseStatus: "released",
       localMultiplayer: true,
       capsuleImageUrl:
-        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0123456789abcdef0123456789abcdef01234567/library_capsule_2x.jpg",
       nextFestHistory: [
         expect.objectContaining({
           title: "We are joining Steam Next Fest!",

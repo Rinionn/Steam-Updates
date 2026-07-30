@@ -1331,7 +1331,7 @@ export function renderReport(
         const response = await fetch(
           "/api/steam-app?appid=" +
             encodeURIComponent(option.appId) +
-            "&v=3",
+            "&v=4",
           {
             signal: steamDetailController.signal,
             headers: { accept: "application/json" },
@@ -1977,7 +1977,7 @@ export function renderReport(
           game.appId &&
           (!game.steamDetailsCheckedAt ||
             Date.parse(game.steamDetailsCheckedAt) < refreshCutoff ||
-            game.steamImageVersion < 3),
+            game.steamImageVersion < 4),
       );
       let changed = false;
       for (const game of pending) {
@@ -1985,7 +1985,7 @@ export function renderReport(
           const response = await fetch(
             "/api/steam-app?appid=" +
               encodeURIComponent(game.appId) +
-              "&v=3",
+              "&v=4",
             { headers: { accept: "application/json" } },
           );
           if (!response.ok) continue;
@@ -2013,7 +2013,7 @@ export function renderReport(
             details.nextFestHistory,
           );
           game.steamDetailsCheckedAt = new Date().toISOString();
-          game.steamImageVersion = 3;
+          game.steamImageVersion = 4;
           changed = true;
         } catch {}
       }
@@ -2051,7 +2051,7 @@ export function renderReport(
           : games.find((item) => item.id === gameIdInput.value)
               ?.steamDetailsCheckedAt || "",
         steamImageVersion: selectedSteamDetails
-          ? 3
+          ? 4
           : games.find((item) => item.id === gameIdInput.value)
               ?.steamImageVersion || 0,
       };

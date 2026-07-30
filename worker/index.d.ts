@@ -37,6 +37,10 @@ export function parseNextFestHistory(
   appId: string,
   payload: unknown,
 ): SteamAppDetails["nextFestHistory"];
+export function steamLibraryCapsuleUrl(
+  appId: string,
+  payload: unknown,
+): string;
 
 export function searchSteam(
   request: Request,

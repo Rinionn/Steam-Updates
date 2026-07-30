@@ -2,7 +2,7 @@ const STEAM_SUGGEST_URL =
   "https://store.steampowered.com/search/suggest";
 const CACHE_SECONDS = 30 * 60;
 const DETAIL_CACHE_SECONDS = 6 * 60 * 60;
-const DETAIL_SCHEMA_VERSION = 3;
+const DETAIL_SCHEMA_VERSION = 4;
 const MAX_RESULTS = 8;
 const MAX_TAGS = 20;
 const MAX_NEXT_FEST_RECORDS = 5;
@@ -99,7 +99,28 @@ export function parseNextFestHistory(appId, payload) {
     });
 }
 
-function steamAppModel(appId, details, storeHtml, newsPayload) {
+export function steamLibraryCapsuleUrl(appId, payload) {
+  const capsule =
+    payload?.data?.[appId]?.common?.library_assets_full?.library_capsule;
+  const relativePath =
+    capsule?.image2x?.english || capsule?.image?.english || "";
+  if (
+    !/^[a-f0-9]{40}\/library_(?:capsule|600x900)(?:_2x)?\.jpg$/i.test(
+      relativePath,
+    )
+  ) {
+    return "";
+  }
+  return `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appId}/${relativePath}`;
+}
+
+function steamAppModel(
+  appId,
+  details,
+  storeHtml,
+  newsPayload,
+  appInfoPayload,
+) {
   const data = details?.[appId]?.success ? details[appId].data : null;
   const categories = Array.isArray(data?.categories)
     ? data.categories.map((item) => String(item?.description || ""))
@@ -139,7 +160,7 @@ function steamAppModel(appId, details, storeHtml, newsPayload) {
     releaseStatus,
     localMultiplayer: data ? localMultiplayer : null,
     storeUrl: `https://store.steampowered.com/app/${appId}/`,
-    capsuleImageUrl: String(data?.header_image || "").trim(),
+    capsuleImageUrl: steamLibraryCapsuleUrl(appId, appInfoPayload),
     nextFestHistory: parseNextFestHistory(appId, newsPayload),
   };
 }
@@ -297,28 +318,36 @@ export async function getSteamApp(request, env) {
   newsUrl.searchParams.set("appid", appId);
   newsUrl.searchParams.set("count", "100");
   newsUrl.searchParams.set("maxlength", "1200");
+  const appInfoUrl = new URL(`https://api.steamcmd.net/v1/info/${appId}`);
 
-  const [detailsResult, storeResult, newsResult] = await Promise.allSettled([
-    fetch(detailsUrl, {
-      headers: {
-        accept: "application/json",
-        "user-agent": "Steam-Event-Radar/1.0",
-      },
-    }),
-    fetch(storeUrl, {
-      headers: {
-        accept: "text/html",
-        cookie: "birthtime=0; mature_content=1",
-        "user-agent": "Steam-Event-Radar/1.0",
-      },
-    }),
-    fetch(newsUrl, {
-      headers: {
-        accept: "application/json",
-        "user-agent": "Steam-Event-Radar/1.0",
-      },
-    }),
-  ]);
+  const [detailsResult, storeResult, newsResult, appInfoResult] =
+    await Promise.allSettled([
+      fetch(detailsUrl, {
+        headers: {
+          accept: "application/json",
+          "user-agent": "Steam-Event-Radar/1.0",
+        },
+      }),
+      fetch(storeUrl, {
+        headers: {
+          accept: "text/html",
+          cookie: "birthtime=0; mature_content=1",
+          "user-agent": "Steam-Event-Radar/1.0",
+        },
+      }),
+      fetch(newsUrl, {
+        headers: {
+          accept: "application/json",
+          "user-agent": "Steam-Event-Radar/1.0",
+        },
+      }),
+      fetch(appInfoUrl, {
+        headers: {
+          accept: "application/json",
+          "user-agent": "Steam-Event-Radar/1.0",
+        },
+      }),
+    ]);
 
   let details = null;
   if (detailsResult.status === "fulfilled" && detailsResult.value.ok) {
@@ -332,12 +361,22 @@ export async function getSteamApp(request, env) {
   if (newsResult.status === "fulfilled" && newsResult.value.ok) {
     newsPayload = await newsResult.value.json();
   }
+  let appInfoPayload = null;
+  if (appInfoResult.status === "fulfilled" && appInfoResult.value.ok) {
+    appInfoPayload = await appInfoResult.value.json();
+  }
   if (!details && !storeHtml) {
     return json({ error: "steam_unavailable" }, 502, cors);
   }
 
   const response = json(
-    steamAppModel(appId, details, storeHtml, newsPayload),
+    steamAppModel(
+      appId,
+      details,
+      storeHtml,
+      newsPayload,
+      appInfoPayload,
+    ),
     200,
     {
       ...cors,
