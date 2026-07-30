@@ -100,6 +100,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4"
 
       - name: GitHub Pages'i hazirla
         uses: actions/configure-pages@v5
