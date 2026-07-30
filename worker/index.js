@@ -2,6 +2,7 @@ const STEAM_SUGGEST_URL =
   "https://store.steampowered.com/search/suggest";
 const CACHE_SECONDS = 30 * 60;
 const DETAIL_CACHE_SECONDS = 6 * 60 * 60;
+const DETAIL_SCHEMA_VERSION = 3;
 const MAX_RESULTS = 8;
 const MAX_TAGS = 20;
 const MAX_NEXT_FEST_RECORDS = 5;
@@ -271,7 +272,7 @@ export async function getSteamApp(request, env) {
   }
 
   const cacheKey = new Request(
-    `${new URL(request.url).origin}/api/steam-app?appid=${appId}`,
+    `${new URL(request.url).origin}/api/steam-app?appid=${appId}&schema=${DETAIL_SCHEMA_VERSION}`,
   );
   const cache = globalThis.caches?.default;
   const cached = await cache?.match(cacheKey);

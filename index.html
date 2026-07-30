@@ -1081,7 +1081,7 @@
     <section class="section">
       <div class="section-title">
         <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
-        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="30 Temmuz 2026, 22:17" data-copy-en="30 July 2026, 22:17">30 Temmuz 2026, 22:17</span></p>
+        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="30 Temmuz 2026, 22:23" data-copy-en="30 July 2026, 22:23">30 Temmuz 2026, 22:23</span></p>
       </div>
       <div class="toolbar">
         <label class="sr-only" for="search" data-i18n="searchEvents">Etkinlik ara</label>
@@ -4822,7 +4822,9 @@
       steamDetailController = new AbortController();
       try {
         const response = await fetch(
-          "/api/steam-app?appid=" + encodeURIComponent(option.appId),
+          "/api/steam-app?appid=" +
+            encodeURIComponent(option.appId) +
+            "&v=3",
           {
             signal: steamDetailController.signal,
             headers: { accept: "application/json" },
@@ -5468,13 +5470,15 @@
           game.appId &&
           (!game.steamDetailsCheckedAt ||
             Date.parse(game.steamDetailsCheckedAt) < refreshCutoff ||
-            game.steamImageVersion < 2),
+            game.steamImageVersion < 3),
       );
       let changed = false;
       for (const game of pending) {
         try {
           const response = await fetch(
-            "/api/steam-app?appid=" + encodeURIComponent(game.appId),
+            "/api/steam-app?appid=" +
+              encodeURIComponent(game.appId) +
+              "&v=3",
             { headers: { accept: "application/json" } },
           );
           if (!response.ok) continue;
@@ -5502,7 +5506,7 @@
             details.nextFestHistory,
           );
           game.steamDetailsCheckedAt = new Date().toISOString();
-          game.steamImageVersion = 2;
+          game.steamImageVersion = 3;
           changed = true;
         } catch {}
       }
@@ -5540,7 +5544,7 @@
           : games.find((item) => item.id === gameIdInput.value)
               ?.steamDetailsCheckedAt || "",
         steamImageVersion: selectedSteamDetails
-          ? 2
+          ? 3
           : games.find((item) => item.id === gameIdInput.value)
               ?.steamImageVersion || 0,
       };
