@@ -1118,7 +1118,7 @@ export default {
     }
     if (url.pathname === "/admin" || url.pathname === "/admin/") {
       const adminUrl = new URL(request.url);
-      adminUrl.pathname = "/admin/index.html";
+      adminUrl.pathname = "/admin.html";
       return env.ASSETS.fetch(new Request(adminUrl, request));
     }
     return env.ASSETS.fetch(request);

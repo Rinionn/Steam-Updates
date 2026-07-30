@@ -3682,7 +3682,6 @@ export function renderReport(
 
 export async function writeReport(snapshot: EventSnapshot): Promise<string> {
   await mkdir(paths.outDir, { recursive: true });
-  await mkdir(paths.adminDir, { recursive: true });
   const report = renderReport(
     snapshot,
     await readChangelog(paths.changelog),
