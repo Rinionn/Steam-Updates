@@ -24,6 +24,8 @@ export const paths = {
   snapshot: path.join(rootDir, "data", "events.json"),
   outDir: path.join(rootDir, "out"),
   report: path.join(rootDir, "out", "steam-etkinlikleri.html"),
+  publicIndex: path.join(rootDir, "out", "index.html"),
+  noJekyll: path.join(rootDir, "out", ".nojekyll"),
   emailPreview: path.join(rootDir, "out", "son-email.html"),
   emailTextPreview: path.join(rootDir, "out", "son-email.txt"),
   notificationState: path.join(rootDir, "data", "notification-state.json"),

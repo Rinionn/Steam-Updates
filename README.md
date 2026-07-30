@@ -4,13 +4,22 @@ Valve’ın resmî Steamworks takvimini günlük kontrol eden, festivalleri ve s
 indirimlerini listeleyen, bilinen başvuru/inceleme tarihlerini İstanbul saatine
 çeviren ve e-posta özeti gönderebilen yerel bot.
 
+## Çevrim içi dashboard
+
+**https://rinionn.github.io/Steam-Updates/**
+
+GitHub Actions, Steam takvimini her gün Türkiye saatiyle yaklaşık 09:00’da
+yeniler ve `out/index.html` çıktısını GitHub Pages’e yayınlar. `main` dalına
+gönderilen her değişiklikte de site yeniden oluşturulur.
+
 ## Neler yapar?
 
 - Resmî `Upcoming Steam Events` sayfasını okur.
 - Temalı festivalleri, Next Fest tarihlerini ve sezon indirimlerini birleştirir.
 - Etkinlik detaylarında yayınlanan kayıt, demo inceleme ve pazarlama tarihlerini
   çıkarır.
-- `out/steam-etkinlikleri.html` içinde aranabilir Türkçe liste üretir.
+- `out/steam-etkinlikleri.html` ve GitHub Pages için `out/index.html` içinde
+  aranabilir Türkçe liste üretir.
 - Resend API veya standart SMTP üzerinden günlük e-posta gönderebilir.
 - Aynı yerel günde ikinci kez e-posta göndermez.
 - Steam hesabında kayıt, opt-in veya başka bir değişiklik yapmaz.
