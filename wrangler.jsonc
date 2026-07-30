@@ -10,7 +10,9 @@
   },
   "d1_databases": [
     {
-      "binding": "DB"
+      "binding": "DB",
+      "database_name": "steam-etkinlik-radari",
+      "database_id": "783b3157-1429-4889-ad81-fca15d3b3ac9"
     }
   ],
   "vars": {
