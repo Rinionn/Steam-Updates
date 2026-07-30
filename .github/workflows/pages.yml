@@ -102,6 +102,26 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           wranglerVersion: "4"
 
+      - name: D1 ekip veritabani semasini uygula
+        if: vars.CLOUDFLARE_ENABLED == 'true'
+        run: npx wrangler@4 d1 execute DB --remote --file=./db/schema.sql --yes
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Otomatik olusturulan D1 baglantisini kaydet
+        if: vars.CLOUDFLARE_ENABLED == 'true'
+        shell: bash
+        run: |
+          git add wrangler.jsonc
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(cloudflare): D1 baglantisi kaydedildi [skip ci]"
+          git push origin HEAD:main
+
       - name: GitHub Pages'i hazirla
         uses: actions/configure-pages@v5
 

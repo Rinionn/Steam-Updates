@@ -1,12 +1,15 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   default as worker,
+  deleteTeamState,
   getSteamApp,
+  getTeamState,
   parseNextFestHistory,
   parseSteamSuggestions,
   parseSteamTags,
   searchSteam,
   steamLibraryCapsuleUrl,
+  putTeamState,
 } from "../worker/index.js";
 
 const steamHtml = `
@@ -246,5 +249,96 @@ describe("Steam search Worker", () => {
     );
     expect(allowed.status).toBe(200);
     expect(denied.status).toBe(401);
+  });
+
+  it("D1 bağlı değilken ekip durumunu güvenli yerel modda bildirir", async () => {
+    const response = await getTeamState(
+      new Request("https://steamradar.example.workers.dev/api/team-state", {
+        headers: {
+          "cf-access-authenticated-user-email": "editor@gaminginturkey.com",
+        },
+      }),
+      { ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com" },
+    );
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ enabled: false, records: [] });
+  });
+
+  it("ekip durumunu D1 üzerinde kaydeder, listeler ve siler", async () => {
+    const rows = new Map<string, Record<string, string>>();
+    const DB = {
+      prepare(query: string) {
+        return {
+          bind(...values: unknown[]) {
+            return {
+              async all() {
+                return { results: [...rows.values()] };
+              },
+              async run() {
+                if (query.startsWith("INSERT")) {
+                  const [stateKey, stateType, payload, updatedBy, updatedAt] =
+                    values.map(String);
+                  rows.set(stateKey, {
+                    state_key: stateKey,
+                    state_type: stateType,
+                    payload,
+                    updated_by: updatedBy,
+                    updated_at: updatedAt,
+                  });
+                } else if (query.startsWith("DELETE")) {
+                  rows.delete(String(values[0]));
+                }
+                return {};
+              },
+            };
+          },
+        };
+      },
+    };
+    const headers = {
+      "cf-access-authenticated-user-email": "editor@gaminginturkey.com",
+      "content-type": "application/json",
+    };
+    const put = await putTeamState(
+      new Request("https://steamradar.example.workers.dev/api/team-state", {
+        method: "PUT",
+        headers,
+        body: JSON.stringify({
+          key: "task:festival-demo",
+          type: "task",
+          payload: { completed: true },
+        }),
+      }),
+      { ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com", DB },
+    );
+    expect(put.status).toBe(200);
+
+    const list = await getTeamState(
+      new Request("https://steamradar.example.workers.dev/api/team-state", {
+        headers,
+      }),
+      { ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com", DB },
+    );
+    expect(await list.json()).toMatchObject({
+      enabled: true,
+      user: "editor@gaminginturkey.com",
+      records: [
+        {
+          key: "task:festival-demo",
+          type: "task",
+          payload: { completed: true },
+        },
+      ],
+    });
+
+    const remove = await deleteTeamState(
+      new Request(
+        "https://steamradar.example.workers.dev/api/team-state?key=task%3Afestival-demo",
+        { method: "DELETE", headers },
+      ),
+      { ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com", DB },
+    );
+    expect(remove.status).toBe(200);
+    expect(rows.size).toBe(0);
   });
 });

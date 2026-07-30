@@ -280,6 +280,7 @@ function eventRow(
           data-copy-aria-en="${escapeHtml(`Download ${event.name} as an ICS event`)}"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
+      ${applicationWorkflow(event)}
       ${
         tasks.length
           ? eventTaskDetails(event, tasks, changelog, openTasks)
@@ -345,6 +346,45 @@ function eventTaskDetails(
           ),
         )
         .join("")}</div>
+    </details>`;
+}
+
+function applicationWorkflow(event: SteamEvent): string {
+  return `
+    <details class="application-workflow" data-application-workflow data-event-id="${escapeHtml(event.id)}">
+      <summary>
+        <span>${localizedText("Başvuru takibi", "Application tracking")}</span>
+        <span class="application-summary" data-application-summary>${localizedText("Durum girilmedi", "No status")}</span>
+      </summary>
+      <div class="application-form">
+        <label>
+          ${localizedText("Oyun", "Game")}
+          <select data-application-game></select>
+        </label>
+        <label>
+          ${localizedText("Durum", "Status")}
+          <select data-application-status>
+            <option value="not_started">${localizedText("Başlanmadı", "Not started")}</option>
+            <option value="preparing">${localizedText("Hazırlanıyor", "Preparing")}</option>
+            <option value="submitted">${localizedText("Gönderildi", "Submitted")}</option>
+            <option value="accepted">${localizedText("Kabul edildi", "Accepted")}</option>
+            <option value="rejected">${localizedText("Reddedildi", "Rejected")}</option>
+            <option value="not_applicable">${localizedText("Uygun değil", "Not applicable")}</option>
+          </select>
+        </label>
+        <label>
+          ${localizedText("Sorumlu", "Owner")}
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          ${localizedText("Not", "Note")}
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save>${localizedText("Başvuruyu kaydet", "Save application")}</button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
     </details>`;
 }
 
@@ -545,6 +585,32 @@ export function renderReport(
     .section-title { display:flex; align-items:flex-start; flex-direction:column; justify-content:space-between; gap:8px; margin-bottom:15px; }
     .section-title h2 { margin:0; overflow-wrap:anywhere; font-size:26px; letter-spacing:-.025em; }
     .section-title p { margin:0; color:var(--color-muted); font-size:13px; }
+    .operations-grid,.metric-grid { display:grid; grid-template-columns:1fr; gap:10px; }
+    .operation-card,.metric-card,.admin-panel { padding:16px; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
+    .operation-card strong,.metric-card strong { display:block; font-size:22px; }
+    .operation-card span,.metric-card span { display:block; margin-top:5px; color:var(--color-muted); font-size:12px; line-height:1.45; }
+    .operation-card.critical { border-color:var(--color-danger); }
+    .operation-inbox { display:grid; gap:8px; margin-top:12px; }
+    .operation-item { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:10px 0; border-top:1px solid var(--color-line); font-size:12px; }
+    .operation-item:first-child { border-top:0; }
+    .operation-item a { color:var(--color-link); font-weight:800; text-decoration:none; }
+    .application-workflow { grid-column:1; min-width:0; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel-subtle); }
+    .application-workflow summary { display:flex; justify-content:space-between; gap:12px; padding:11px 13px; cursor:pointer; font-size:12px; font-weight:800; list-style:none; }
+    .application-workflow summary::-webkit-details-marker { display:none; }
+    .application-summary { color:var(--color-muted); font-weight:600; }
+    .application-form { display:grid; grid-template-columns:1fr; gap:10px; padding:13px; border-top:1px solid var(--color-line); }
+    .application-form label { display:grid; gap:5px; min-width:0; color:var(--color-muted); font-size:11px; font-weight:700; }
+    .application-form select,.application-form input,.application-form textarea { width:100%; min-width:0; padding:9px 10px; border:1px solid var(--color-line); border-radius:9px; color:var(--color-ink); background:var(--color-control); font:inherit; }
+    .application-note { grid-column:1 / -1; }
+    .application-actions { display:flex; align-items:center; gap:10px; flex-wrap:wrap; grid-column:1 / -1; }
+    .application-actions button { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-size:11px; font-weight:800; }
+    .application-actions span { color:var(--color-muted); font-size:11px; }
+    .admin-panel { display:grid; gap:14px; }
+    .admin-status { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+    .sync-badge { padding:5px 9px; border-radius:999px; color:var(--color-muted); background:var(--color-soft); font-size:11px; font-weight:800; }
+    .sync-badge.online { color:var(--color-link); }
+    .notification-settings { display:grid; grid-template-columns:1fr; gap:8px; }
+    .notification-settings label { display:flex; align-items:center; gap:8px; color:var(--color-muted); font-size:12px; }
     .games-panel { padding:18px 16px; border:1px solid var(--color-line); border-radius:20px; background:var(--color-panel); }
     .game-form { display:grid; grid-template-columns:1fr; gap:12px; }
     .game-field { display:grid; gap:6px; min-width:0; color:var(--color-muted); font-size:12px; font-weight:700; }
@@ -704,6 +770,9 @@ export function renderReport(
       .filters,.status-filters { width:auto; }
       .games-only-filter { width:auto; }
       .game-form { grid-template-columns:repeat(3,minmax(0,1fr)); }
+      .operations-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+      .metric-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+      .application-form { grid-template-columns:repeat(3,minmax(0,1fr)); }
       .game-profile { grid-template-columns:84px minmax(0,1fr); }
       .game-profile .game-capsule,.game-profile .game-capsule-fallback { width:84px; }
       .task-state-toolbar { align-items:center; flex-direction:row; justify-content:space-between; }
@@ -712,6 +781,7 @@ export function renderReport(
       .event-actions { justify-self:auto; flex-direction:column; }
       .event-action,.event-ics { white-space:nowrap; }
       .event-tasks { grid-column:2 / 4; }
+      .application-workflow { grid-column:2 / 4; }
       .task-item { grid-template-columns:auto minmax(0,1fr) auto; }
       .task-item > a { grid-column:auto; justify-self:auto; white-space:nowrap; }
       .change-log > summary { padding:18px 20px; }
@@ -735,6 +805,28 @@ export function renderReport(
       <h1 data-i18n-html="title">Steam Etkinlik<br>Radarı</h1>
       <p data-i18n="heroDescription">Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.</p>
       ${renderTimeline(model, config.timezone)}
+    </section>
+
+    <section class="section" aria-labelledby="operations-heading">
+      <div class="section-title">
+        <h2 id="operations-heading">${localizedText("Bugün ne yapmalıyız?", "What should we do today?")}</h2>
+        <p>${localizedText("Kritik tarihler, açık işler ve ekip başvuruları tek operasyon kuyruğunda.", "Critical dates, open work and team applications in one operational queue.")}</p>
+      </div>
+      <div class="operations-grid">
+        <article class="operation-card critical">
+          <strong data-operation-critical>${model.deadlines.filter((item) => item.daysLeft >= 0 && item.daysLeft <= 7).length}</strong>
+          <span>${localizedText("7 gün içindeki kritik tarih", "critical dates within 7 days")}</span>
+        </article>
+        <article class="operation-card">
+          <strong data-operation-tasks>0</strong>
+          <span>${localizedText("tamamlanmamış görev", "incomplete tasks")}</span>
+        </article>
+        <article class="operation-card">
+          <strong data-operation-applications>0</strong>
+          <span>${localizedText("aktif başvuru", "active applications")}</span>
+        </article>
+      </div>
+      <div class="operation-card operation-inbox" data-operation-inbox></div>
     </section>
 
     <section class="section" aria-labelledby="games-heading">
@@ -890,6 +982,39 @@ export function renderReport(
         )
         .join("")}</div>
       <div class="empty" id="no-results" role="status" aria-live="polite" hidden data-i18n="noResults">Bu filtrelerle eşleşen etkinlik yok.</div>
+    </section>
+
+    <section class="section" aria-labelledby="metrics-heading">
+      <div class="section-title">
+        <h2 id="metrics-heading">${localizedText("Operasyon metrikleri", "Operational metrics")}</h2>
+        <p>${localizedText("Takvimin büyüklüğünü değil, ekibin ilerlemesini gösterir.", "Measures team progress rather than calendar size.")}</p>
+      </div>
+      <div class="metric-grid">
+        <article class="metric-card"><strong data-metric-completion>0%</strong><span>${localizedText("görev tamamlama", "task completion")}</span></article>
+        <article class="metric-card"><strong data-metric-submitted>0</strong><span>${localizedText("gönderilen başvuru", "submitted applications")}</span></article>
+        <article class="metric-card"><strong data-metric-accepted>0</strong><span>${localizedText("kabul edilen başvuru", "accepted applications")}</span></article>
+        <article class="metric-card"><strong data-metric-games>0</strong><span>${localizedText("takip edilen oyun", "tracked games")}</span></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="admin-heading">
+      <div class="section-title">
+        <h2 id="admin-heading">${localizedText("Yönetim", "Administration")}</h2>
+        <p>${localizedText("Ekip verisi, bildirim tercihleri ve senkronizasyon durumu.", "Team data, notification preferences and sync status.")}</p>
+      </div>
+      <div class="admin-panel">
+        <div class="admin-status">
+          <span class="sync-badge" data-team-sync>${localizedText("Yerel çalışma modu", "Local working mode")}</span>
+          <span data-team-user></span>
+          <button type="button" data-team-refresh>${localizedText("Ekip verisini yenile", "Refresh team data")}</button>
+        </div>
+        <div class="notification-settings">
+          <strong>${localizedText("Akıllı panel uyarıları", "Smart dashboard alerts")}</strong>
+          <label><input type="checkbox" data-notification-deadlines checked> ${localizedText("7 gün içindeki son tarihleri öne çıkar", "Highlight deadlines within 7 days")}</label>
+          <label><input type="checkbox" data-notification-changes checked> ${localizedText("Son 24 saatteki Valve değişikliklerini göster", "Show Valve changes from the last 24 hours")}</label>
+          <label><input type="checkbox" data-notification-overdue checked> ${localizedText("Açık görevleri operasyon kuyruğuna ekle", "Add open tasks to the operations queue")}</label>
+        </div>
+      </div>
     </section>
     <footer data-i18n="footer">Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
   </main>
@@ -1271,6 +1396,83 @@ export function renderReport(
         window.setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
       });
     });
+
+    let teamStateEnabled = false;
+    let teamStateRecords = [];
+    let teamUser = "";
+    const teamSyncBadge = document.querySelector("[data-team-sync]");
+    const teamUserLabel = document.querySelector("[data-team-user]");
+
+    async function loadTeamState() {
+      if (location.protocol === "file:") return [];
+      try {
+        const response = await fetch("/api/team-state", {
+          headers: { accept: "application/json" },
+        });
+        if (!response.ok) throw new Error("team state unavailable");
+        const body = await response.json();
+        teamStateEnabled = body.enabled === true;
+        teamStateRecords = Array.isArray(body.records) ? body.records : [];
+        teamUser = String(body.user || "");
+        teamSyncBadge.classList.toggle("online", teamStateEnabled);
+        teamSyncBadge.textContent = teamStateEnabled
+          ? localized("Ekip senkronizasyonu açık", "Team sync enabled")
+          : localized("Yerel çalışma modu", "Local working mode");
+        teamUserLabel.textContent = teamUser;
+        return teamStateRecords;
+      } catch {
+        teamStateEnabled = false;
+        teamSyncBadge.classList.remove("online");
+        teamSyncBadge.textContent = localized(
+          "Yerel çalışma modu",
+          "Local working mode",
+        );
+        return [];
+      }
+    }
+
+    async function upsertTeamState(key, type, payload) {
+      if (!teamStateEnabled) return;
+      try {
+        const response = await fetch("/api/team-state", {
+          method: "PUT",
+          headers: {
+            accept: "application/json",
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({ key, type, payload }),
+        });
+        if (!response.ok) throw new Error("team state write failed");
+        const body = await response.json();
+        const record = body.record;
+        teamStateRecords = teamStateRecords.filter(
+          (item) => item.key !== record.key,
+        );
+        teamStateRecords.push(record);
+      } catch {
+        teamSyncBadge.textContent = localized(
+          "Senkronizasyon bekliyor",
+          "Sync pending",
+        );
+      }
+    }
+
+    async function removeTeamState(key) {
+      if (!teamStateEnabled) return;
+      try {
+        const response = await fetch(
+          "/api/team-state?key=" + encodeURIComponent(key),
+          { method: "DELETE", headers: { accept: "application/json" } },
+        );
+        if (!response.ok) throw new Error("team state delete failed");
+        teamStateRecords = teamStateRecords.filter((item) => item.key !== key);
+      } catch {
+        teamSyncBadge.textContent = localized(
+          "Senkronizasyon bekliyor",
+          "Sync pending",
+        );
+      }
+    }
 
     const gamesStorageKey = "steam-etkinlik-radari-oyunlar-v1";
     const gameForm = document.querySelector("[data-game-form]");
@@ -1768,6 +1970,8 @@ export function renderReport(
       return box;
     }
 
+    let focusedGameId = "";
+
     function renderGames() {
       gamesList.replaceChildren();
       games.forEach((game) => {
@@ -1806,7 +2010,19 @@ export function renderReport(
           "aria-label",
           game.name + localized(" oyununu sil", " delete game"),
         );
-        actions.append(edit, remove);
+        const focus = document.createElement("button");
+        focus.type = "button";
+        focus.dataset.gameFocus = game.id;
+        focus.classList.toggle("active", focusedGameId === game.id);
+        focus.textContent =
+          focusedGameId === game.id
+            ? localized("Tüm etkinlikler", "All events")
+            : localized("Bu oyunun işleri", "This game's work");
+        focus.setAttribute(
+          "aria-label",
+          game.name + localized(" için operasyon görünümü", " operations view"),
+        );
+        actions.append(focus, edit, remove);
         body.append(actions);
         item.append(createGameCapsule(game), body);
         gamesList.append(item);
@@ -1827,8 +2043,11 @@ export function renderReport(
     }
 
     function matchingGamesForRow(row) {
+      const candidateGames = focusedGameId
+        ? games.filter((game) => game.id === focusedGameId)
+        : games;
       if (row.dataset.kind === "next_fest") {
-        return games
+        return candidateGames
           .filter((game) => game.releaseStatus === "unreleased")
           .map((game) => ({ game, score: 0, nextFest: true }));
       }
@@ -1839,7 +2058,7 @@ export function renderReport(
       const eventTagKeys = new Set(
         eventTags.map((tag) => tag.toLocaleLowerCase("en-US")),
       );
-      return games
+      return candidateGames
         .map((game) => ({
           game,
           score: new Set(
@@ -2019,14 +2238,36 @@ export function renderReport(
       }
       if (!changed) return;
       writeGames();
+      games.forEach((game) =>
+        upsertTeamState("game:" + game.id, "game", game),
+      );
       renderGames();
       updateGameMatches();
     }
 
+    let applications = {};
     let games = readGames();
     renderGames();
     updateGameMatches();
     refreshSavedGameDetails();
+    const teamStatePromise = loadTeamState();
+    teamStatePromise.then((records) => {
+      const sharedGames = normalizeGames(
+        records
+          .filter((record) => record.type === "game")
+          .map((record) => record.payload),
+      );
+      if (sharedGames.length > 0) {
+        const merged = new Map(games.map((game) => [game.id, game]));
+        sharedGames.forEach((game) => merged.set(game.id, game));
+        games = [...merged.values()];
+        writeGames();
+        renderGames();
+        updateGameMatches();
+      }
+      initializeApplicationWorkflows(records);
+      renderOperations();
+    });
 
     gameForm?.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -2059,8 +2300,11 @@ export function renderReport(
       if (index >= 0) games[index] = game;
       else games.push(game);
       writeGames();
+      upsertTeamState("game:" + game.id, "game", game);
       renderGames();
       updateGameMatches();
+      initializeApplicationWorkflows(teamStateRecords);
+      renderOperations();
       resetGameForm();
     });
 
@@ -2070,6 +2314,17 @@ export function renderReport(
       if (!button) return;
       const editId = button.dataset.gameEdit;
       const deleteId = button.dataset.gameDelete;
+      const focusId = button.dataset.gameFocus;
+      if (focusId) {
+        focusedGameId = focusedGameId === focusId ? "" : focusId;
+        renderGames();
+        updateGameMatches();
+        document.querySelector("#events")?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+        return;
+      }
       if (editId) {
         const game = games.find((item) => item.id === editId);
         if (!game) return;
@@ -2106,8 +2361,11 @@ export function renderReport(
         }
         games = games.filter((item) => item.id !== deleteId);
         writeGames();
+        removeTeamState("game:" + deleteId);
         renderGames();
         updateGameMatches();
+        initializeApplicationWorkflows(teamStateRecords);
+        renderOperations();
         if (gameIdInput.value === deleteId) resetGameForm();
       }
     });
@@ -2194,6 +2452,155 @@ export function renderReport(
         });
       });
     }
+
+    const applicationStorageKey = "steam-etkinlik-radari-basvurular-v1";
+    const applicationWorkflows = [
+      ...document.querySelectorAll("[data-application-workflow]"),
+    ];
+    const applicationStatusLabels = {
+      not_started: { tr: "Başlanmadı", en: "Not started" },
+      preparing: { tr: "Hazırlanıyor", en: "Preparing" },
+      submitted: { tr: "Gönderildi", en: "Submitted" },
+      accepted: { tr: "Kabul edildi", en: "Accepted" },
+      rejected: { tr: "Reddedildi", en: "Rejected" },
+      not_applicable: { tr: "Uygun değil", en: "Not applicable" },
+    };
+
+    function readApplications() {
+      try {
+        const parsed = JSON.parse(
+          localStorage.getItem(applicationStorageKey) || "{}",
+        );
+        return parsed && typeof parsed === "object" && !Array.isArray(parsed)
+          ? parsed
+          : {};
+      } catch {
+        return {};
+      }
+    }
+
+    function writeApplications() {
+      try {
+        localStorage.setItem(applicationStorageKey, JSON.stringify(applications));
+      } catch {}
+    }
+
+    function applicationKey(eventId, gameId) {
+      return eventId + ":" + gameId;
+    }
+
+    function showApplication(workflow) {
+      const eventId = workflow.dataset.eventId;
+      const gameSelect = workflow.querySelector("[data-application-game]");
+      const record = applications[applicationKey(eventId, gameSelect.value)] || {};
+      workflow.querySelector("[data-application-status]").value =
+        record.status || "not_started";
+      workflow.querySelector("[data-application-owner]").value =
+        record.owner || "";
+      workflow.querySelector("[data-application-note]").value =
+        record.note || "";
+      const label = applicationStatusLabels[record.status || "not_started"];
+      workflow.querySelector("[data-application-summary]").textContent =
+        label?.[descriptionLanguage] ||
+        localized("Durum girilmedi", "No status");
+    }
+
+    function initializeApplicationWorkflows(records = []) {
+      applications = readApplications();
+      records
+        .filter((record) => record.type === "application")
+        .forEach((record) => {
+          const key = String(record.key || "").slice("application:".length);
+          const local = applications[key] || {};
+          if (key) applications[key] = { ...local, ...record.payload };
+        });
+      writeApplications();
+      applicationWorkflows.forEach((workflow) => {
+        const select = workflow.querySelector("[data-application-game]");
+        const previous = select.value;
+        select.replaceChildren();
+        games.forEach((game) => {
+          const option = document.createElement("option");
+          option.value = game.id;
+          option.textContent = game.name;
+          select.append(option);
+        });
+        workflow.hidden = games.length === 0;
+        if (games.some((game) => game.id === previous)) select.value = previous;
+        showApplication(workflow);
+      });
+    }
+
+    applicationWorkflows.forEach((workflow) => {
+      workflow
+        .querySelector("[data-application-game]")
+        ?.addEventListener("change", () => showApplication(workflow));
+      workflow
+        .querySelector("[data-application-save]")
+        ?.addEventListener("click", () => {
+          const eventId = workflow.dataset.eventId;
+          const gameId = workflow.querySelector("[data-application-game]").value;
+          if (!gameId) return;
+          const record = {
+            eventId,
+            gameId,
+            status: workflow.querySelector("[data-application-status]").value,
+            owner: workflow
+              .querySelector("[data-application-owner]")
+              .value.trim()
+              .slice(0, 80),
+            note: workflow
+              .querySelector("[data-application-note]")
+              .value.trim()
+              .slice(0, 800),
+          };
+          applications[applicationKey(eventId, gameId)] = record;
+          writeApplications();
+          upsertTeamState(
+            "application:" + applicationKey(eventId, gameId),
+            "application",
+            { eventId, gameId, status: record.status },
+          );
+          showApplication(workflow);
+          workflow.querySelector("[data-application-message]").textContent =
+            localized("Kaydedildi.", "Saved.");
+          renderOperations();
+        });
+    });
+
+    const notificationStorageKey =
+      "steam-etkinlik-radari-bildirimler-v1";
+    const notificationInputs = [
+      ...document.querySelectorAll(
+        "[data-notification-deadlines], [data-notification-changes], [data-notification-overdue]",
+      ),
+    ];
+    let notificationPreferences = {};
+    try {
+      notificationPreferences = JSON.parse(
+        localStorage.getItem(notificationStorageKey) || "{}",
+      );
+    } catch {}
+    notificationInputs.forEach((input) => {
+      const key = input.dataset.notificationDeadlines !== undefined
+        ? "deadlines"
+        : input.dataset.notificationChanges !== undefined
+          ? "changes"
+          : "overdue";
+      if (typeof notificationPreferences[key] === "boolean") {
+        input.checked = notificationPreferences[key];
+      }
+      input.addEventListener("change", () => {
+        notificationPreferences[key] = input.checked;
+        try {
+          localStorage.setItem(
+            notificationStorageKey,
+            JSON.stringify(notificationPreferences),
+          );
+        } catch {}
+        renderOperations();
+      });
+    });
 
     const taskStorageKey = "steam-etkinlik-radari-gorevler-v1";
     const taskBackupKey = "steam-etkinlik-radari-gorevler-v1-yedek";
@@ -2301,7 +2708,125 @@ export function renderReport(
         box.checked = Boolean(completedTasks[box.dataset.taskId]);
       });
       taskGroups.forEach(updateTaskProgress);
+      renderOperations();
       apply();
+    }
+
+    function renderOperations() {
+      const completedCount = Object.keys(completedTasks || {}).length;
+      const totalTasks = taskBoxes.length;
+      const incompleteCount = Math.max(0, totalTasks - completedCount);
+      const activeApplications = Object.values(applications).filter(
+        (record) =>
+          record && ["preparing", "submitted"].includes(record.status),
+      );
+      document.querySelector("[data-operation-tasks]").textContent =
+        String(incompleteCount);
+      document.querySelector("[data-operation-applications]").textContent =
+        String(activeApplications.length);
+      document.querySelector("[data-metric-completion]").textContent =
+        (totalTasks ? Math.round((completedCount / totalTasks) * 100) : 0) + "%";
+      document.querySelector("[data-metric-submitted]").textContent = String(
+        Object.values(applications).filter(
+          (record) => record?.status === "submitted",
+        ).length,
+      );
+      document.querySelector("[data-metric-accepted]").textContent = String(
+        Object.values(applications).filter(
+          (record) => record?.status === "accepted",
+        ).length,
+      );
+      document.querySelector("[data-metric-games]").textContent =
+        String(games.length);
+
+      const inbox = document.querySelector("[data-operation-inbox]");
+      inbox.replaceChildren();
+      const items = [];
+      if (notificationPreferences.deadlines !== false) {
+        document
+          .querySelectorAll(".timeline-item .countdown[data-days-left]")
+          .forEach((countdown) => {
+            const days = Number(countdown.dataset.daysLeft);
+            if (days < 0 || days > 7 || items.length >= 4) return;
+            const group = countdown.closest(".deadline-group");
+            items.push({
+              title:
+                group?.querySelector(".deadline-group-head h3")?.textContent ||
+                localized("Kritik tarih", "Critical deadline"),
+              href: "#events",
+              meta: countdown.textContent || "",
+            });
+          });
+      }
+      if (notificationPreferences.changes !== false) {
+        document.querySelectorAll(".change-row").forEach((change) => {
+          const detectedAt = Date.parse(
+            change.querySelector("time")?.getAttribute("datetime") || "",
+          );
+          if (
+            !Number.isFinite(detectedAt) ||
+            Date.now() - detectedAt > 24 * 60 * 60 * 1000
+          ) {
+            return;
+          }
+          items.push({
+            title:
+              change.querySelector("strong")?.textContent ||
+              localized("Valve takvim değişikliği", "Valve calendar change"),
+            href: "#events",
+            meta:
+              change.querySelector(".change-type")?.textContent || "",
+          });
+        });
+      }
+      if (notificationPreferences.overdue !== false) {
+        taskBoxes
+          .filter((box) => !box.checked)
+          .slice(0, 5)
+          .forEach((box) => {
+            const row = box.closest(".event-row");
+            items.push({
+              title:
+                box.closest(".task-item")?.querySelector(".task-title strong")
+                  ?.textContent || "",
+              href: "#" + row.id,
+              meta:
+                row.querySelector(".event-heading h3")?.textContent || "",
+            });
+          });
+      }
+      activeApplications.slice(0, 3).forEach((record) => {
+        const game = games.find((item) => item.id === record.gameId);
+        const row = document.getElementById("etkinlik-" + record.eventId);
+        items.push({
+          title:
+            (game?.name || localized("Oyun", "Game")) +
+            localized(" başvurusu", " application"),
+          href: row ? "#" + row.id : "#events",
+          meta:
+            applicationStatusLabels[record.status]?.[descriptionLanguage] || "",
+        });
+      });
+      if (items.length === 0) {
+        const message = document.createElement("span");
+        message.textContent = localized(
+          "Bugün için açık operasyon işi yok.",
+          "No open operational work for today.",
+        );
+        inbox.append(message);
+        return;
+      }
+      items.slice(0, 10).forEach((item) => {
+        const operation = document.createElement("div");
+        operation.className = "operation-item";
+        const link = document.createElement("a");
+        link.href = item.href;
+        link.textContent = item.title;
+        const meta = document.createElement("span");
+        meta.textContent = item.meta;
+        operation.append(link, meta);
+        inbox.append(operation);
+      });
     }
 
     taskGroups.forEach((group) => {
@@ -2311,12 +2836,49 @@ export function renderReport(
           if (box.checked) completedTasks[box.dataset.taskId] = true;
           else delete completedTasks[box.dataset.taskId];
           writeTaskMap(taskStorageKey, completedTasks);
+          upsertTeamState(
+            "task:" + box.dataset.taskId,
+            "task",
+            { completed: box.checked },
+          );
           updateTaskProgress(group);
+          renderOperations();
           apply();
         });
       });
     });
     syncTaskUi();
+    initializeApplicationWorkflows(teamStateRecords);
+    renderOperations();
+    teamStatePromise.then((records) => {
+      records
+        .filter((record) => record.type === "task")
+        .forEach((record) => {
+          const taskId = record.key.slice("task:".length);
+          if (record.payload?.completed === true) completedTasks[taskId] = true;
+          if (record.payload?.completed === false) delete completedTasks[taskId];
+        });
+      writeTaskMap(taskStorageKey, completedTasks);
+      syncTaskUi();
+      renderOperations();
+    });
+
+    document
+      .querySelector("[data-team-refresh]")
+      ?.addEventListener("click", async () => {
+        const records = await loadTeamState();
+        initializeApplicationWorkflows(records);
+        records
+          .filter((record) => record.type === "task")
+          .forEach((record) => {
+            if (record.payload?.completed === true) {
+              completedTasks[record.key.slice("task:".length)] = true;
+            }
+          });
+        writeTaskMap(taskStorageKey, completedTasks);
+        syncTaskUi();
+        renderOperations();
+      });
 
     if (activeEventId) {
       const activeEvent = document.getElementById("etkinlik-" + activeEventId);

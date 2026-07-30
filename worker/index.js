@@ -6,6 +6,13 @@ const DETAIL_SCHEMA_VERSION = 4;
 const MAX_RESULTS = 8;
 const MAX_TAGS = 20;
 const MAX_NEXT_FEST_RECORDS = 5;
+const TEAM_STATE_TYPES = new Set([
+  "game",
+  "task",
+  "application",
+  "preference",
+]);
+const MAX_TEAM_STATE_PAYLOAD_BYTES = 24 * 1024;
 
 function decodeHtml(value) {
   return value
@@ -394,16 +401,136 @@ function optionsResponse(request, env) {
     status: 204,
     headers: {
       ...cors,
-      "access-control-allow-methods": "GET, OPTIONS",
+      "access-control-allow-methods": "GET, PUT, DELETE, OPTIONS",
       "access-control-allow-headers": "content-type",
       "access-control-max-age": "86400",
     },
   });
 }
 
+function validStateKey(value) {
+  return /^[a-z]+:[a-zA-Z0-9._:-]{1,180}$/.test(value);
+}
+
+function teamStateRecord(row) {
+  let payload = {};
+  try {
+    const parsed = JSON.parse(String(row.payload || "{}"));
+    if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+      payload = parsed;
+    }
+  } catch {}
+  return {
+    key: String(row.state_key || ""),
+    type: String(row.state_type || ""),
+    payload,
+    updatedBy: String(row.updated_by || ""),
+    updatedAt: String(row.updated_at || ""),
+  };
+}
+
+export async function getTeamState(request, env) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  if (!requestIsAuthorized(request, env)) {
+    return json({ error: "authentication_required" }, 401, cors);
+  }
+  if (!env.DB) return json({ enabled: false, records: [] }, 200, cors);
+  const result = await env.DB
+    .prepare(
+      "SELECT state_key, state_type, payload, updated_by, updated_at FROM team_state ORDER BY updated_at DESC LIMIT 1000",
+    )
+    .bind()
+    .all();
+  return json(
+    {
+      enabled: true,
+      user: accessEmail(request),
+      records: (result.results || []).map(teamStateRecord),
+    },
+    200,
+    cors,
+  );
+}
+
+export async function putTeamState(request, env) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  if (!requestIsAuthorized(request, env)) {
+    return json({ error: "authentication_required" }, 401, cors);
+  }
+  if (!env.DB) return json({ error: "team_storage_unavailable" }, 503, cors);
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return json({ error: "invalid_json" }, 400, cors);
+  }
+  const key = String(body?.key || "");
+  const type = String(body?.type || "");
+  const payload = body?.payload;
+  if (
+    !validStateKey(key) ||
+    !TEAM_STATE_TYPES.has(type) ||
+    !payload ||
+    typeof payload !== "object" ||
+    Array.isArray(payload)
+  ) {
+    return json({ error: "invalid_state" }, 400, cors);
+  }
+  const serialized = JSON.stringify(payload);
+  if (new TextEncoder().encode(serialized).byteLength > MAX_TEAM_STATE_PAYLOAD_BYTES) {
+    return json({ error: "payload_too_large" }, 413, cors);
+  }
+  const updatedAt = new Date().toISOString();
+  const updatedBy = accessEmail(request).toLocaleLowerCase("en-US");
+  await env.DB
+    .prepare(
+      `INSERT INTO team_state (state_key, state_type, payload, updated_by, updated_at)
+       VALUES (?, ?, ?, ?, ?)
+       ON CONFLICT(state_key) DO UPDATE SET
+         state_type = excluded.state_type,
+         payload = excluded.payload,
+         updated_by = excluded.updated_by,
+         updated_at = excluded.updated_at`,
+    )
+    .bind(key, type, serialized, updatedBy, updatedAt)
+    .run();
+  return json(
+    { record: { key, type, payload, updatedBy, updatedAt } },
+    200,
+    cors,
+  );
+}
+
+export async function deleteTeamState(request, env) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  if (!requestIsAuthorized(request, env)) {
+    return json({ error: "authentication_required" }, 401, cors);
+  }
+  if (!env.DB) return json({ error: "team_storage_unavailable" }, 503, cors);
+  const key = (new URL(request.url).searchParams.get("key") || "").trim();
+  if (!validStateKey(key)) return json({ error: "invalid_state_key" }, 400, cors);
+  await env.DB
+    .prepare("DELETE FROM team_state WHERE state_key = ?")
+    .bind(key)
+    .run();
+  return json({ deleted: key }, 200, cors);
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname === "/api/team-state") {
+      if (request.method === "OPTIONS") return optionsResponse(request, env);
+      if (request.method === "GET") return getTeamState(request, env);
+      if (request.method === "PUT") return putTeamState(request, env);
+      if (request.method === "DELETE") return deleteTeamState(request, env);
+      return json({ error: "method_not_allowed" }, 405, {
+        allow: "GET, PUT, DELETE, OPTIONS",
+      });
+    }
     if (
       url.pathname === "/api/steam-search" ||
       url.pathname === "/api/steam-app"

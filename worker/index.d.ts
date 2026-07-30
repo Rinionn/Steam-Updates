@@ -26,9 +26,25 @@ export interface WorkerEnvironment {
   ALLOWED_EMAILS?: string;
   DASHBOARD_ORIGIN?: string;
   ALLOW_LOCAL_DEV?: string;
+  DB?: {
+    prepare(query: string): {
+      bind(...values: unknown[]): {
+        all(): Promise<{ results?: unknown[] }>;
+        run(): Promise<unknown>;
+      };
+    };
+  };
   ASSETS?: {
     fetch(request: Request): Promise<Response>;
   };
+}
+
+export interface TeamStateRecord {
+  key: string;
+  type: "game" | "task" | "application" | "preference";
+  payload: Record<string, unknown>;
+  updatedBy: string;
+  updatedAt: string;
 }
 
 export function parseSteamSuggestions(html: string): SteamSuggestion[];
@@ -47,6 +63,18 @@ export function searchSteam(
   env: WorkerEnvironment,
 ): Promise<Response>;
 export function getSteamApp(
+  request: Request,
+  env: WorkerEnvironment,
+): Promise<Response>;
+export function getTeamState(
+  request: Request,
+  env: WorkerEnvironment,
+): Promise<Response>;
+export function putTeamState(
+  request: Request,
+  env: WorkerEnvironment,
+): Promise<Response>;
+export function deleteTeamState(
   request: Request,
   env: WorkerEnvironment,
 ): Promise<Response>;

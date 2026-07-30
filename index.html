@@ -161,6 +161,32 @@
     .section-title { display:flex; align-items:flex-start; flex-direction:column; justify-content:space-between; gap:8px; margin-bottom:15px; }
     .section-title h2 { margin:0; overflow-wrap:anywhere; font-size:26px; letter-spacing:-.025em; }
     .section-title p { margin:0; color:var(--color-muted); font-size:13px; }
+    .operations-grid,.metric-grid { display:grid; grid-template-columns:1fr; gap:10px; }
+    .operation-card,.metric-card,.admin-panel { padding:16px; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
+    .operation-card strong,.metric-card strong { display:block; font-size:22px; }
+    .operation-card span,.metric-card span { display:block; margin-top:5px; color:var(--color-muted); font-size:12px; line-height:1.45; }
+    .operation-card.critical { border-color:var(--color-danger); }
+    .operation-inbox { display:grid; gap:8px; margin-top:12px; }
+    .operation-item { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:10px 0; border-top:1px solid var(--color-line); font-size:12px; }
+    .operation-item:first-child { border-top:0; }
+    .operation-item a { color:var(--color-link); font-weight:800; text-decoration:none; }
+    .application-workflow { grid-column:1; min-width:0; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel-subtle); }
+    .application-workflow summary { display:flex; justify-content:space-between; gap:12px; padding:11px 13px; cursor:pointer; font-size:12px; font-weight:800; list-style:none; }
+    .application-workflow summary::-webkit-details-marker { display:none; }
+    .application-summary { color:var(--color-muted); font-weight:600; }
+    .application-form { display:grid; grid-template-columns:1fr; gap:10px; padding:13px; border-top:1px solid var(--color-line); }
+    .application-form label { display:grid; gap:5px; min-width:0; color:var(--color-muted); font-size:11px; font-weight:700; }
+    .application-form select,.application-form input,.application-form textarea { width:100%; min-width:0; padding:9px 10px; border:1px solid var(--color-line); border-radius:9px; color:var(--color-ink); background:var(--color-control); font:inherit; }
+    .application-note { grid-column:1 / -1; }
+    .application-actions { display:flex; align-items:center; gap:10px; flex-wrap:wrap; grid-column:1 / -1; }
+    .application-actions button { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-size:11px; font-weight:800; }
+    .application-actions span { color:var(--color-muted); font-size:11px; }
+    .admin-panel { display:grid; gap:14px; }
+    .admin-status { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+    .sync-badge { padding:5px 9px; border-radius:999px; color:var(--color-muted); background:var(--color-soft); font-size:11px; font-weight:800; }
+    .sync-badge.online { color:var(--color-link); }
+    .notification-settings { display:grid; grid-template-columns:1fr; gap:8px; }
+    .notification-settings label { display:flex; align-items:center; gap:8px; color:var(--color-muted); font-size:12px; }
     .games-panel { padding:18px 16px; border:1px solid var(--color-line); border-radius:20px; background:var(--color-panel); }
     .game-form { display:grid; grid-template-columns:1fr; gap:12px; }
     .game-field { display:grid; gap:6px; min-width:0; color:var(--color-muted); font-size:12px; font-weight:700; }
@@ -320,6 +346,9 @@
       .filters,.status-filters { width:auto; }
       .games-only-filter { width:auto; }
       .game-form { grid-template-columns:repeat(3,minmax(0,1fr)); }
+      .operations-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+      .metric-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+      .application-form { grid-template-columns:repeat(3,minmax(0,1fr)); }
       .game-profile { grid-template-columns:84px minmax(0,1fr); }
       .game-profile .game-capsule,.game-profile .game-capsule-fallback { width:84px; }
       .task-state-toolbar { align-items:center; flex-direction:row; justify-content:space-between; }
@@ -328,6 +357,7 @@
       .event-actions { justify-self:auto; flex-direction:column; }
       .event-action,.event-ics { white-space:nowrap; }
       .event-tasks { grid-column:2 / 4; }
+      .application-workflow { grid-column:2 / 4; }
       .task-item { grid-template-columns:auto minmax(0,1fr) auto; }
       .task-item > a { grid-column:auto; justify-self:auto; white-space:nowrap; }
       .change-log > summary { padding:18px 20px; }
@@ -828,6 +858,28 @@
     </div>
     </section>
 
+    <section class="section" aria-labelledby="operations-heading">
+      <div class="section-title">
+        <h2 id="operations-heading"><span data-copy-tr="Bugün ne yapmalıyız?" data-copy-en="What should we do today?">Bugün ne yapmalıyız?</span></h2>
+        <p><span data-copy-tr="Kritik tarihler, açık işler ve ekip başvuruları tek operasyon kuyruğunda." data-copy-en="Critical dates, open work and team applications in one operational queue.">Kritik tarihler, açık işler ve ekip başvuruları tek operasyon kuyruğunda.</span></p>
+      </div>
+      <div class="operations-grid">
+        <article class="operation-card critical">
+          <strong data-operation-critical>0</strong>
+          <span><span data-copy-tr="7 gün içindeki kritik tarih" data-copy-en="critical dates within 7 days">7 gün içindeki kritik tarih</span></span>
+        </article>
+        <article class="operation-card">
+          <strong data-operation-tasks>0</strong>
+          <span><span data-copy-tr="tamamlanmamış görev" data-copy-en="incomplete tasks">tamamlanmamış görev</span></span>
+        </article>
+        <article class="operation-card">
+          <strong data-operation-applications>0</strong>
+          <span><span data-copy-tr="aktif başvuru" data-copy-en="active applications">aktif başvuru</span></span>
+        </article>
+      </div>
+      <div class="operation-card operation-inbox" data-operation-inbox></div>
+    </section>
+
     <section class="section" aria-labelledby="games-heading">
       <div class="section-title">
         <h2 id="games-heading" data-i18n="myGames">Oyunlarım</h2>
@@ -1081,7 +1133,7 @@
     <section class="section">
       <div class="section-title">
         <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
-        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="30 Temmuz 2026, 22:32" data-copy-en="30 July 2026, 22:32">30 Temmuz 2026, 22:32</span></p>
+        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="30 Temmuz 2026, 22:56" data-copy-en="30 July 2026, 22:56">30 Temmuz 2026, 22:56</span></p>
       </div>
       <div class="toolbar">
         <label class="sr-only" for="search" data-i18n="searchEvents">Etkinlik ara</label>
@@ -1164,6 +1216,42 @@
           data-copy-aria-en="Download Cyberpunk Fest as an ICS event"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
+
+    <details class="application-workflow" data-application-workflow data-event-id="cyberpunk-fest-51562f576">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
 
     <details class="event-tasks" data-event-tasks="cyberpunk-fest-51562f576" open>
       <summary>
@@ -1296,6 +1384,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="pins-pegs-fest-2624f7168">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="pins-pegs-fest-2624f7168">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -1426,6 +1550,42 @@
           data-copy-aria-en="Download PvE Survival Crafting Fest as an ICS event"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
+
+    <details class="application-workflow" data-application-workflow data-event-id="pve-survival-crafting-fest-8bb6de2ec">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
 
     <details class="event-tasks" data-event-tasks="pve-survival-crafting-fest-8bb6de2ec">
       <summary>
@@ -1558,6 +1718,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="programming-fest-d92cade24">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="programming-fest-d92cade24">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -1689,6 +1885,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="party-based-rpg-fest-55771f151">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="party-based-rpg-fest-55771f151">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -1815,6 +2047,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="autumn-sale-f825a9dd8">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="autumn-sale-f825a9dd8">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -1921,6 +2189,42 @@
           data-copy-aria-en="Download Cooking Fest as an ICS event"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
+
+    <details class="application-workflow" data-application-workflow data-event-id="cooking-fest-424f50fb9">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
 
     <details class="event-tasks" data-event-tasks="cooking-fest-424f50fb9">
       <summary>
@@ -2047,6 +2351,42 @@
           data-copy-aria-en="Download Next Fest: October 2026 as an ICS event"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
+
+    <details class="application-workflow" data-application-workflow data-event-id="next-fest-october-2026-3062e7ac9">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
 
     <details class="event-tasks" data-event-tasks="next-fest-october-2026-3062e7ac9">
       <summary>
@@ -2275,6 +2615,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="steam-scream-v-4b0a8f227">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="steam-scream-v-4b0a8f227">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -2406,6 +2782,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="auto-battler-rpg-fest-92a2e84b8">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="auto-battler-rpg-fest-92a2e84b8">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -2532,6 +2944,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="winter-sale-942a0c36e">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="winter-sale-942a0c36e">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -2638,6 +3086,42 @@
           data-copy-aria-en="Download Desktop Companion Fest as an ICS event"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
+
+    <details class="application-workflow" data-application-workflow data-event-id="desktop-companion-fest-5bc08adee">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
 
     <details class="event-tasks" data-event-tasks="desktop-companion-fest-5bc08adee">
       <summary>
@@ -2770,6 +3254,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="shop-keeper-fest-0d64f4666">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="shop-keeper-fest-0d64f4666">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -2900,6 +3420,42 @@
           data-copy-aria-en="Download Sheep Fest as an ICS event"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
+
+    <details class="application-workflow" data-application-workflow data-event-id="sheep-fest-6ec302116">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
 
     <details class="event-tasks" data-event-tasks="sheep-fest-6ec302116">
       <summary>
@@ -3032,6 +3588,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="couch-co-op-fest-8b489c8ca">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="couch-co-op-fest-8b489c8ca">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -3158,6 +3750,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="next-fest-february-2027-eb86e4da6">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     </article>
     <article
       id="etkinlik-rhythm-fest-b3b4ca682"
@@ -3209,6 +3837,42 @@
           data-copy-aria-en="Download Rhythm Fest as an ICS event"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
+
+    <details class="application-workflow" data-application-workflow data-event-id="rhythm-fest-b3b4ca682">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
 
     <details class="event-tasks" data-event-tasks="rhythm-fest-b3b4ca682">
       <summary>
@@ -3336,6 +4000,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="spring-sale-23917885f">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="spring-sale-23917885f">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -3442,6 +4142,42 @@
           data-copy-aria-en="Download Dinos vs. Robots Fest as an ICS event"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
+
+    <details class="application-workflow" data-application-workflow data-event-id="dinos-vs-robots-fest-e4c058c85">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
 
     <details class="event-tasks" data-event-tasks="dinos-vs-robots-fest-e4c058c85">
       <summary>
@@ -3574,6 +4310,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="racing-fest-9bb5cb332">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="racing-fest-9bb5cb332">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -3704,6 +4476,42 @@
           data-copy-aria-en="Download Witch Fest as an ICS event"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
+
+    <details class="application-workflow" data-application-workflow data-event-id="witch-fest-34647039a">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
 
     <details class="event-tasks" data-event-tasks="witch-fest-34647039a">
       <summary>
@@ -3836,6 +4644,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="fighting-fest-997e98a30">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="fighting-fest-997e98a30">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -3966,6 +4810,42 @@
           data-copy-aria-en="Download Real-Time Strategy Fest as an ICS event"
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
+
+    <details class="application-workflow" data-application-workflow data-event-id="real-time-strategy-fest-96b41f8e6">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
 
     <details class="event-tasks" data-event-tasks="real-time-strategy-fest-96b41f8e6">
       <summary>
@@ -4098,6 +4978,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="mountaineering-fest-e94606dd4">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="mountaineering-fest-e94606dd4">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -4224,6 +5140,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="next-fest-june-2027-6598e9fe6">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="next-fest-june-2027-6598e9fe6">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -4326,6 +5278,42 @@
         ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
 
+    <details class="application-workflow" data-application-workflow data-event-id="summer-sale-c5f18f5ae">
+      <summary>
+        <span><span data-copy-tr="Başvuru takibi" data-copy-en="Application tracking">Başvuru takibi</span></span>
+        <span class="application-summary" data-application-summary><span data-copy-tr="Durum girilmedi" data-copy-en="No status">Durum girilmedi</span></span>
+      </summary>
+      <div class="application-form">
+        <label>
+          <span data-copy-tr="Oyun" data-copy-en="Game">Oyun</span>
+          <select data-application-game></select>
+        </label>
+        <label>
+          <span data-copy-tr="Durum" data-copy-en="Status">Durum</span>
+          <select data-application-status>
+            <option value="not_started"><span data-copy-tr="Başlanmadı" data-copy-en="Not started">Başlanmadı</span></option>
+            <option value="preparing"><span data-copy-tr="Hazırlanıyor" data-copy-en="Preparing">Hazırlanıyor</span></option>
+            <option value="submitted"><span data-copy-tr="Gönderildi" data-copy-en="Submitted">Gönderildi</span></option>
+            <option value="accepted"><span data-copy-tr="Kabul edildi" data-copy-en="Accepted">Kabul edildi</span></option>
+            <option value="rejected"><span data-copy-tr="Reddedildi" data-copy-en="Rejected">Reddedildi</span></option>
+            <option value="not_applicable"><span data-copy-tr="Uygun değil" data-copy-en="Not applicable">Uygun değil</span></option>
+          </select>
+        </label>
+        <label>
+          <span data-copy-tr="Sorumlu" data-copy-en="Owner">Sorumlu</span>
+          <input type="text" data-application-owner maxlength="80" placeholder="Batuhan / Yayın Ekibi">
+        </label>
+        <label class="application-note">
+          <span data-copy-tr="Not" data-copy-en="Note">Not</span>
+          <textarea data-application-note maxlength="800" rows="2"></textarea>
+        </label>
+        <div class="application-actions">
+          <button type="button" data-application-save><span data-copy-tr="Başvuruyu kaydet" data-copy-en="Save application">Başvuruyu kaydet</span></button>
+          <span data-application-message role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </details>
+
     <details class="event-tasks" data-event-tasks="summer-sale-c5f18f5ae">
       <summary>
         <span data-i18n="tasks">Görevler</span>
@@ -4383,6 +5371,39 @@
     </details>
     </article></div>
       <div class="empty" id="no-results" role="status" aria-live="polite" hidden data-i18n="noResults">Bu filtrelerle eşleşen etkinlik yok.</div>
+    </section>
+
+    <section class="section" aria-labelledby="metrics-heading">
+      <div class="section-title">
+        <h2 id="metrics-heading"><span data-copy-tr="Operasyon metrikleri" data-copy-en="Operational metrics">Operasyon metrikleri</span></h2>
+        <p><span data-copy-tr="Takvimin büyüklüğünü değil, ekibin ilerlemesini gösterir." data-copy-en="Measures team progress rather than calendar size.">Takvimin büyüklüğünü değil, ekibin ilerlemesini gösterir.</span></p>
+      </div>
+      <div class="metric-grid">
+        <article class="metric-card"><strong data-metric-completion>0%</strong><span><span data-copy-tr="görev tamamlama" data-copy-en="task completion">görev tamamlama</span></span></article>
+        <article class="metric-card"><strong data-metric-submitted>0</strong><span><span data-copy-tr="gönderilen başvuru" data-copy-en="submitted applications">gönderilen başvuru</span></span></article>
+        <article class="metric-card"><strong data-metric-accepted>0</strong><span><span data-copy-tr="kabul edilen başvuru" data-copy-en="accepted applications">kabul edilen başvuru</span></span></article>
+        <article class="metric-card"><strong data-metric-games>0</strong><span><span data-copy-tr="takip edilen oyun" data-copy-en="tracked games">takip edilen oyun</span></span></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="admin-heading">
+      <div class="section-title">
+        <h2 id="admin-heading"><span data-copy-tr="Yönetim" data-copy-en="Administration">Yönetim</span></h2>
+        <p><span data-copy-tr="Ekip verisi, bildirim tercihleri ve senkronizasyon durumu." data-copy-en="Team data, notification preferences and sync status.">Ekip verisi, bildirim tercihleri ve senkronizasyon durumu.</span></p>
+      </div>
+      <div class="admin-panel">
+        <div class="admin-status">
+          <span class="sync-badge" data-team-sync><span data-copy-tr="Yerel çalışma modu" data-copy-en="Local working mode">Yerel çalışma modu</span></span>
+          <span data-team-user></span>
+          <button type="button" data-team-refresh><span data-copy-tr="Ekip verisini yenile" data-copy-en="Refresh team data">Ekip verisini yenile</span></button>
+        </div>
+        <div class="notification-settings">
+          <strong><span data-copy-tr="Akıllı panel uyarıları" data-copy-en="Smart dashboard alerts">Akıllı panel uyarıları</span></strong>
+          <label><input type="checkbox" data-notification-deadlines checked> <span data-copy-tr="7 gün içindeki son tarihleri öne çıkar" data-copy-en="Highlight deadlines within 7 days">7 gün içindeki son tarihleri öne çıkar</span></label>
+          <label><input type="checkbox" data-notification-changes checked> <span data-copy-tr="Son 24 saatteki Valve değişikliklerini göster" data-copy-en="Show Valve changes from the last 24 hours">Son 24 saatteki Valve değişikliklerini göster</span></label>
+          <label><input type="checkbox" data-notification-overdue checked> <span data-copy-tr="Açık görevleri operasyon kuyruğuna ekle" data-copy-en="Add open tasks to the operations queue">Açık görevleri operasyon kuyruğuna ekle</span></label>
+        </div>
+      </div>
     </section>
     <footer data-i18n="footer">Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
   </main>
@@ -4764,6 +5785,83 @@
         window.setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
       });
     });
+
+    let teamStateEnabled = false;
+    let teamStateRecords = [];
+    let teamUser = "";
+    const teamSyncBadge = document.querySelector("[data-team-sync]");
+    const teamUserLabel = document.querySelector("[data-team-user]");
+
+    async function loadTeamState() {
+      if (location.protocol === "file:") return [];
+      try {
+        const response = await fetch("/api/team-state", {
+          headers: { accept: "application/json" },
+        });
+        if (!response.ok) throw new Error("team state unavailable");
+        const body = await response.json();
+        teamStateEnabled = body.enabled === true;
+        teamStateRecords = Array.isArray(body.records) ? body.records : [];
+        teamUser = String(body.user || "");
+        teamSyncBadge.classList.toggle("online", teamStateEnabled);
+        teamSyncBadge.textContent = teamStateEnabled
+          ? localized("Ekip senkronizasyonu açık", "Team sync enabled")
+          : localized("Yerel çalışma modu", "Local working mode");
+        teamUserLabel.textContent = teamUser;
+        return teamStateRecords;
+      } catch {
+        teamStateEnabled = false;
+        teamSyncBadge.classList.remove("online");
+        teamSyncBadge.textContent = localized(
+          "Yerel çalışma modu",
+          "Local working mode",
+        );
+        return [];
+      }
+    }
+
+    async function upsertTeamState(key, type, payload) {
+      if (!teamStateEnabled) return;
+      try {
+        const response = await fetch("/api/team-state", {
+          method: "PUT",
+          headers: {
+            accept: "application/json",
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({ key, type, payload }),
+        });
+        if (!response.ok) throw new Error("team state write failed");
+        const body = await response.json();
+        const record = body.record;
+        teamStateRecords = teamStateRecords.filter(
+          (item) => item.key !== record.key,
+        );
+        teamStateRecords.push(record);
+      } catch {
+        teamSyncBadge.textContent = localized(
+          "Senkronizasyon bekliyor",
+          "Sync pending",
+        );
+      }
+    }
+
+    async function removeTeamState(key) {
+      if (!teamStateEnabled) return;
+      try {
+        const response = await fetch(
+          "/api/team-state?key=" + encodeURIComponent(key),
+          { method: "DELETE", headers: { accept: "application/json" } },
+        );
+        if (!response.ok) throw new Error("team state delete failed");
+        teamStateRecords = teamStateRecords.filter((item) => item.key !== key);
+      } catch {
+        teamSyncBadge.textContent = localized(
+          "Senkronizasyon bekliyor",
+          "Sync pending",
+        );
+      }
+    }
 
     const gamesStorageKey = "steam-etkinlik-radari-oyunlar-v1";
     const gameForm = document.querySelector("[data-game-form]");
@@ -5261,6 +6359,8 @@
       return box;
     }
 
+    let focusedGameId = "";
+
     function renderGames() {
       gamesList.replaceChildren();
       games.forEach((game) => {
@@ -5299,7 +6399,19 @@
           "aria-label",
           game.name + localized(" oyununu sil", " delete game"),
         );
-        actions.append(edit, remove);
+        const focus = document.createElement("button");
+        focus.type = "button";
+        focus.dataset.gameFocus = game.id;
+        focus.classList.toggle("active", focusedGameId === game.id);
+        focus.textContent =
+          focusedGameId === game.id
+            ? localized("Tüm etkinlikler", "All events")
+            : localized("Bu oyunun işleri", "This game's work");
+        focus.setAttribute(
+          "aria-label",
+          game.name + localized(" için operasyon görünümü", " operations view"),
+        );
+        actions.append(focus, edit, remove);
         body.append(actions);
         item.append(createGameCapsule(game), body);
         gamesList.append(item);
@@ -5320,8 +6432,11 @@
     }
 
     function matchingGamesForRow(row) {
+      const candidateGames = focusedGameId
+        ? games.filter((game) => game.id === focusedGameId)
+        : games;
       if (row.dataset.kind === "next_fest") {
-        return games
+        return candidateGames
           .filter((game) => game.releaseStatus === "unreleased")
           .map((game) => ({ game, score: 0, nextFest: true }));
       }
@@ -5332,7 +6447,7 @@
       const eventTagKeys = new Set(
         eventTags.map((tag) => tag.toLocaleLowerCase("en-US")),
       );
-      return games
+      return candidateGames
         .map((game) => ({
           game,
           score: new Set(
@@ -5512,14 +6627,36 @@
       }
       if (!changed) return;
       writeGames();
+      games.forEach((game) =>
+        upsertTeamState("game:" + game.id, "game", game),
+      );
       renderGames();
       updateGameMatches();
     }
 
+    let applications = {};
     let games = readGames();
     renderGames();
     updateGameMatches();
     refreshSavedGameDetails();
+    const teamStatePromise = loadTeamState();
+    teamStatePromise.then((records) => {
+      const sharedGames = normalizeGames(
+        records
+          .filter((record) => record.type === "game")
+          .map((record) => record.payload),
+      );
+      if (sharedGames.length > 0) {
+        const merged = new Map(games.map((game) => [game.id, game]));
+        sharedGames.forEach((game) => merged.set(game.id, game));
+        games = [...merged.values()];
+        writeGames();
+        renderGames();
+        updateGameMatches();
+      }
+      initializeApplicationWorkflows(records);
+      renderOperations();
+    });
 
     gameForm?.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -5552,8 +6689,11 @@
       if (index >= 0) games[index] = game;
       else games.push(game);
       writeGames();
+      upsertTeamState("game:" + game.id, "game", game);
       renderGames();
       updateGameMatches();
+      initializeApplicationWorkflows(teamStateRecords);
+      renderOperations();
       resetGameForm();
     });
 
@@ -5563,6 +6703,17 @@
       if (!button) return;
       const editId = button.dataset.gameEdit;
       const deleteId = button.dataset.gameDelete;
+      const focusId = button.dataset.gameFocus;
+      if (focusId) {
+        focusedGameId = focusedGameId === focusId ? "" : focusId;
+        renderGames();
+        updateGameMatches();
+        document.querySelector("#events")?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+        return;
+      }
       if (editId) {
         const game = games.find((item) => item.id === editId);
         if (!game) return;
@@ -5599,8 +6750,11 @@
         }
         games = games.filter((item) => item.id !== deleteId);
         writeGames();
+        removeTeamState("game:" + deleteId);
         renderGames();
         updateGameMatches();
+        initializeApplicationWorkflows(teamStateRecords);
+        renderOperations();
         if (gameIdInput.value === deleteId) resetGameForm();
       }
     });
@@ -5687,6 +6841,155 @@
         });
       });
     }
+
+    const applicationStorageKey = "steam-etkinlik-radari-basvurular-v1";
+    const applicationWorkflows = [
+      ...document.querySelectorAll("[data-application-workflow]"),
+    ];
+    const applicationStatusLabels = {
+      not_started: { tr: "Başlanmadı", en: "Not started" },
+      preparing: { tr: "Hazırlanıyor", en: "Preparing" },
+      submitted: { tr: "Gönderildi", en: "Submitted" },
+      accepted: { tr: "Kabul edildi", en: "Accepted" },
+      rejected: { tr: "Reddedildi", en: "Rejected" },
+      not_applicable: { tr: "Uygun değil", en: "Not applicable" },
+    };
+
+    function readApplications() {
+      try {
+        const parsed = JSON.parse(
+          localStorage.getItem(applicationStorageKey) || "{}",
+        );
+        return parsed && typeof parsed === "object" && !Array.isArray(parsed)
+          ? parsed
+          : {};
+      } catch {
+        return {};
+      }
+    }
+
+    function writeApplications() {
+      try {
+        localStorage.setItem(applicationStorageKey, JSON.stringify(applications));
+      } catch {}
+    }
+
+    function applicationKey(eventId, gameId) {
+      return eventId + ":" + gameId;
+    }
+
+    function showApplication(workflow) {
+      const eventId = workflow.dataset.eventId;
+      const gameSelect = workflow.querySelector("[data-application-game]");
+      const record = applications[applicationKey(eventId, gameSelect.value)] || {};
+      workflow.querySelector("[data-application-status]").value =
+        record.status || "not_started";
+      workflow.querySelector("[data-application-owner]").value =
+        record.owner || "";
+      workflow.querySelector("[data-application-note]").value =
+        record.note || "";
+      const label = applicationStatusLabels[record.status || "not_started"];
+      workflow.querySelector("[data-application-summary]").textContent =
+        label?.[descriptionLanguage] ||
+        localized("Durum girilmedi", "No status");
+    }
+
+    function initializeApplicationWorkflows(records = []) {
+      applications = readApplications();
+      records
+        .filter((record) => record.type === "application")
+        .forEach((record) => {
+          const key = String(record.key || "").slice("application:".length);
+          const local = applications[key] || {};
+          if (key) applications[key] = { ...local, ...record.payload };
+        });
+      writeApplications();
+      applicationWorkflows.forEach((workflow) => {
+        const select = workflow.querySelector("[data-application-game]");
+        const previous = select.value;
+        select.replaceChildren();
+        games.forEach((game) => {
+          const option = document.createElement("option");
+          option.value = game.id;
+          option.textContent = game.name;
+          select.append(option);
+        });
+        workflow.hidden = games.length === 0;
+        if (games.some((game) => game.id === previous)) select.value = previous;
+        showApplication(workflow);
+      });
+    }
+
+    applicationWorkflows.forEach((workflow) => {
+      workflow
+        .querySelector("[data-application-game]")
+        ?.addEventListener("change", () => showApplication(workflow));
+      workflow
+        .querySelector("[data-application-save]")
+        ?.addEventListener("click", () => {
+          const eventId = workflow.dataset.eventId;
+          const gameId = workflow.querySelector("[data-application-game]").value;
+          if (!gameId) return;
+          const record = {
+            eventId,
+            gameId,
+            status: workflow.querySelector("[data-application-status]").value,
+            owner: workflow
+              .querySelector("[data-application-owner]")
+              .value.trim()
+              .slice(0, 80),
+            note: workflow
+              .querySelector("[data-application-note]")
+              .value.trim()
+              .slice(0, 800),
+          };
+          applications[applicationKey(eventId, gameId)] = record;
+          writeApplications();
+          upsertTeamState(
+            "application:" + applicationKey(eventId, gameId),
+            "application",
+            { eventId, gameId, status: record.status },
+          );
+          showApplication(workflow);
+          workflow.querySelector("[data-application-message]").textContent =
+            localized("Kaydedildi.", "Saved.");
+          renderOperations();
+        });
+    });
+
+    const notificationStorageKey =
+      "steam-etkinlik-radari-bildirimler-v1";
+    const notificationInputs = [
+      ...document.querySelectorAll(
+        "[data-notification-deadlines], [data-notification-changes], [data-notification-overdue]",
+      ),
+    ];
+    let notificationPreferences = {};
+    try {
+      notificationPreferences = JSON.parse(
+        localStorage.getItem(notificationStorageKey) || "{}",
+      );
+    } catch {}
+    notificationInputs.forEach((input) => {
+      const key = input.dataset.notificationDeadlines !== undefined
+        ? "deadlines"
+        : input.dataset.notificationChanges !== undefined
+          ? "changes"
+          : "overdue";
+      if (typeof notificationPreferences[key] === "boolean") {
+        input.checked = notificationPreferences[key];
+      }
+      input.addEventListener("change", () => {
+        notificationPreferences[key] = input.checked;
+        try {
+          localStorage.setItem(
+            notificationStorageKey,
+            JSON.stringify(notificationPreferences),
+          );
+        } catch {}
+        renderOperations();
+      });
+    });
 
     const taskStorageKey = "steam-etkinlik-radari-gorevler-v1";
     const taskBackupKey = "steam-etkinlik-radari-gorevler-v1-yedek";
@@ -5794,7 +7097,125 @@
         box.checked = Boolean(completedTasks[box.dataset.taskId]);
       });
       taskGroups.forEach(updateTaskProgress);
+      renderOperations();
       apply();
+    }
+
+    function renderOperations() {
+      const completedCount = Object.keys(completedTasks || {}).length;
+      const totalTasks = taskBoxes.length;
+      const incompleteCount = Math.max(0, totalTasks - completedCount);
+      const activeApplications = Object.values(applications).filter(
+        (record) =>
+          record && ["preparing", "submitted"].includes(record.status),
+      );
+      document.querySelector("[data-operation-tasks]").textContent =
+        String(incompleteCount);
+      document.querySelector("[data-operation-applications]").textContent =
+        String(activeApplications.length);
+      document.querySelector("[data-metric-completion]").textContent =
+        (totalTasks ? Math.round((completedCount / totalTasks) * 100) : 0) + "%";
+      document.querySelector("[data-metric-submitted]").textContent = String(
+        Object.values(applications).filter(
+          (record) => record?.status === "submitted",
+        ).length,
+      );
+      document.querySelector("[data-metric-accepted]").textContent = String(
+        Object.values(applications).filter(
+          (record) => record?.status === "accepted",
+        ).length,
+      );
+      document.querySelector("[data-metric-games]").textContent =
+        String(games.length);
+
+      const inbox = document.querySelector("[data-operation-inbox]");
+      inbox.replaceChildren();
+      const items = [];
+      if (notificationPreferences.deadlines !== false) {
+        document
+          .querySelectorAll(".timeline-item .countdown[data-days-left]")
+          .forEach((countdown) => {
+            const days = Number(countdown.dataset.daysLeft);
+            if (days < 0 || days > 7 || items.length >= 4) return;
+            const group = countdown.closest(".deadline-group");
+            items.push({
+              title:
+                group?.querySelector(".deadline-group-head h3")?.textContent ||
+                localized("Kritik tarih", "Critical deadline"),
+              href: "#events",
+              meta: countdown.textContent || "",
+            });
+          });
+      }
+      if (notificationPreferences.changes !== false) {
+        document.querySelectorAll(".change-row").forEach((change) => {
+          const detectedAt = Date.parse(
+            change.querySelector("time")?.getAttribute("datetime") || "",
+          );
+          if (
+            !Number.isFinite(detectedAt) ||
+            Date.now() - detectedAt > 24 * 60 * 60 * 1000
+          ) {
+            return;
+          }
+          items.push({
+            title:
+              change.querySelector("strong")?.textContent ||
+              localized("Valve takvim değişikliği", "Valve calendar change"),
+            href: "#events",
+            meta:
+              change.querySelector(".change-type")?.textContent || "",
+          });
+        });
+      }
+      if (notificationPreferences.overdue !== false) {
+        taskBoxes
+          .filter((box) => !box.checked)
+          .slice(0, 5)
+          .forEach((box) => {
+            const row = box.closest(".event-row");
+            items.push({
+              title:
+                box.closest(".task-item")?.querySelector(".task-title strong")
+                  ?.textContent || "",
+              href: "#" + row.id,
+              meta:
+                row.querySelector(".event-heading h3")?.textContent || "",
+            });
+          });
+      }
+      activeApplications.slice(0, 3).forEach((record) => {
+        const game = games.find((item) => item.id === record.gameId);
+        const row = document.getElementById("etkinlik-" + record.eventId);
+        items.push({
+          title:
+            (game?.name || localized("Oyun", "Game")) +
+            localized(" başvurusu", " application"),
+          href: row ? "#" + row.id : "#events",
+          meta:
+            applicationStatusLabels[record.status]?.[descriptionLanguage] || "",
+        });
+      });
+      if (items.length === 0) {
+        const message = document.createElement("span");
+        message.textContent = localized(
+          "Bugün için açık operasyon işi yok.",
+          "No open operational work for today.",
+        );
+        inbox.append(message);
+        return;
+      }
+      items.slice(0, 10).forEach((item) => {
+        const operation = document.createElement("div");
+        operation.className = "operation-item";
+        const link = document.createElement("a");
+        link.href = item.href;
+        link.textContent = item.title;
+        const meta = document.createElement("span");
+        meta.textContent = item.meta;
+        operation.append(link, meta);
+        inbox.append(operation);
+      });
     }
 
     taskGroups.forEach((group) => {
@@ -5804,12 +7225,49 @@
           if (box.checked) completedTasks[box.dataset.taskId] = true;
           else delete completedTasks[box.dataset.taskId];
           writeTaskMap(taskStorageKey, completedTasks);
+          upsertTeamState(
+            "task:" + box.dataset.taskId,
+            "task",
+            { completed: box.checked },
+          );
           updateTaskProgress(group);
+          renderOperations();
           apply();
         });
       });
     });
     syncTaskUi();
+    initializeApplicationWorkflows(teamStateRecords);
+    renderOperations();
+    teamStatePromise.then((records) => {
+      records
+        .filter((record) => record.type === "task")
+        .forEach((record) => {
+          const taskId = record.key.slice("task:".length);
+          if (record.payload?.completed === true) completedTasks[taskId] = true;
+          if (record.payload?.completed === false) delete completedTasks[taskId];
+        });
+      writeTaskMap(taskStorageKey, completedTasks);
+      syncTaskUi();
+      renderOperations();
+    });
+
+    document
+      .querySelector("[data-team-refresh]")
+      ?.addEventListener("click", async () => {
+        const records = await loadTeamState();
+        initializeApplicationWorkflows(records);
+        records
+          .filter((record) => record.type === "task")
+          .forEach((record) => {
+            if (record.payload?.completed === true) {
+              completedTasks[record.key.slice("task:".length)] = true;
+            }
+          });
+        writeTaskMap(taskStorageKey, completedTasks);
+        syncTaskUi();
+        renderOperations();
+      });
 
     if (activeEventId) {
       const activeEvent = document.getElementById("etkinlik-" + activeEventId);
