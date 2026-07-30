@@ -1,0 +1,1850 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steam Etkinlik Radarı</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f5f7fa;
+      --muted: #9ba9b8;
+      --panel: rgba(25, 35, 46, .88);
+      --line: rgba(157, 178, 199, .16);
+      --lime: #b7e445;
+      --cyan: #59c7e8;
+      --amber: #ffbc42;
+      --red: #ff6b6b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 10% 5%, rgba(89,199,232,.16), transparent 32rem),
+        radial-gradient(circle at 90% 20%, rgba(183,228,69,.10), transparent 30rem),
+        #0b1118;
+    }
+    a { color: inherit; }
+    .shell { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 72px; }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: linear-gradient(135deg, rgba(29,45,60,.96), rgba(13,20,28,.92));
+      box-shadow: 0 24px 80px rgba(0,0,0,.26);
+    }
+    .eyebrow { color: var(--lime); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; }
+    h1 { margin: 12px 0 10px; font-size: clamp(36px, 7vw, 70px); line-height: .98; letter-spacing: -.055em; }
+    .hero p { max-width: 690px; color: #b8c4cf; font-size: 17px; line-height: 1.65; margin: 0; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 28px; }
+    .stat { padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: rgba(3,8,13,.28); }
+    .stat strong { display:block; font-size: 30px; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    .section { margin-top: 38px; }
+    .section-title { display:flex; align-items:end; justify-content:space-between; gap:16px; margin-bottom:15px; }
+    .section-title h2 { margin:0; font-size:26px; letter-spacing:-.025em; }
+    .section-title p { margin:0; color:var(--muted); font-size:13px; }
+    .deadline-groups { display:grid; gap:14px; }
+    .deadline-group { overflow:hidden; border:1px solid var(--line); border-radius:20px; background:var(--panel); }
+    .deadline-group-head { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:20px; background:rgba(255,255,255,.025); border-bottom:1px solid var(--line); }
+    .deadline-group-head > div { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+    .deadline-group-head h3 { margin:0; font-size:21px; }
+    .deadline-group-head > span { color:var(--muted); font-size:13px; white-space:nowrap; }
+    .timeline { padding:0 20px; }
+    .timeline-item { display:grid; grid-template-columns:190px minmax(0,1fr) auto; gap:20px; align-items:center; padding:18px 0; border-bottom:1px solid var(--line); }
+    .timeline-item:last-child { border-bottom:0; }
+    .timeline-date strong,.timeline-date span { display:block; }
+    .timeline-date strong { font-size:14px; }
+    .timeline-date .countdown { margin-top:5px; }
+    .timeline-body h4 { margin:8px 0 4px; font-size:16px; }
+    .timeline-body p { margin:0; color:var(--muted); font-size:13px; line-height:1.45; }
+    .timeline-source { color:var(--cyan); text-decoration:none; font-size:12px; white-space:nowrap; }
+    .timeline-item.critical .countdown { color:var(--red); }
+    .event-heading,.toolbar { display:flex; align-items:center; gap:10px; }
+    .pill,.event-kind { border-radius:999px; padding:5px 9px; font-size:11px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; }
+    .pill { color:#18130b; background:var(--amber); }
+    .countdown { color:var(--amber); font-weight:800; }
+    .toolbar { margin-bottom:14px; flex-wrap:wrap; }
+    .search {
+      flex:1 1 260px; min-width:0; padding:12px 14px; border:1px solid var(--line);
+      border-radius:12px; color:var(--ink); background:#111a24; outline:none;
+    }
+    .filters { display:flex; gap:8px; flex-wrap:wrap; }
+    button { border:1px solid var(--line); border-radius:999px; padding:10px 13px; color:#c4cfda; background:#111a24; cursor:pointer; }
+    button.active { color:#10160b; border-color:var(--lime); background:var(--lime); font-weight:800; }
+    .event-list { border:1px solid var(--line); border-radius:20px; overflow:hidden; background:var(--panel); }
+    .event-row { display:grid; grid-template-columns:145px minmax(0,1fr) auto; gap:20px; align-items:center; padding:20px; border-bottom:1px solid var(--line); }
+    .event-row:last-child { border-bottom:0; }
+    .event-row[hidden] { display:none; }
+    .event-date strong,.event-date span { display:block; }
+    .event-date strong { color:var(--ink); font-size:14px; }
+    .event-date span { margin-top:4px; color:var(--muted); font-size:12px; }
+    .event-heading { align-items:baseline; flex-wrap:wrap; }
+    .event-heading h3 { margin:0; font-size:19px; }
+    .event-kind { color:#0a141a; background:var(--cyan); }
+    .event-kind.seasonal_sale { background:var(--lime); }
+    .event-kind.next_fest { background:var(--amber); }
+    .event-main p { margin:8px 0 0; color:var(--muted); font-size:14px; line-height:1.45; }
+    .mini-deadlines { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+    .mini-deadlines span { padding:5px 8px; border-radius:8px; color:#d2d9e0; background:rgba(255,255,255,.055); font-size:11px; }
+    .event-action { padding:10px 12px; border:1px solid var(--line); border-radius:10px; color:var(--cyan); text-decoration:none; font-size:13px; white-space:nowrap; }
+    .event-tasks { grid-column:2 / 4; margin-top:-4px; border:1px solid var(--line); border-radius:13px; background:rgba(4,9,14,.22); }
+    .event-tasks summary { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:11px 13px; color:#d6dee6; font-size:13px; font-weight:800; cursor:pointer; list-style:none; }
+    .event-tasks summary::-webkit-details-marker { display:none; }
+    .event-tasks summary::before { content:"＋"; color:var(--lime); }
+    .event-tasks[open] summary::before { content:"−"; }
+    .event-tasks summary > span:first-of-type { margin-right:auto; }
+    .task-progress { color:var(--muted); font-size:11px; font-weight:600; }
+    .task-list { padding:0 13px 4px; border-top:1px solid var(--line); }
+    .task-item { display:grid; grid-template-columns:auto minmax(0,1fr) auto; gap:11px; align-items:start; padding:13px 0; border-bottom:1px solid var(--line); }
+    .task-item:last-child { border-bottom:0; }
+    .task-item input { width:17px; height:17px; margin:2px 0 0; accent-color:var(--lime); }
+    .task-item label { min-width:0; cursor:pointer; }
+    .task-title { display:flex; align-items:center; gap:7px; flex-wrap:wrap; }
+    .task-title strong { font-size:13px; }
+    .task-title time { color:var(--amber); font-size:11px; font-weight:700; }
+    .task-level { padding:3px 6px; border-radius:999px; color:#aab7c4; background:rgba(255,255,255,.07); font-size:9px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; }
+    .task-level.required { color:#1a1204; background:var(--amber); }
+    .task-description { display:block; margin-top:4px; color:var(--muted); font-size:12px; line-height:1.4; }
+    .task-item > a { padding-top:2px; color:var(--cyan); text-decoration:none; font-size:11px; white-space:nowrap; }
+    .task-item:has(input:checked) label { opacity:.55; }
+    .task-item:has(input:checked) .task-title strong { text-decoration:line-through; }
+    .empty { padding:24px; color:var(--muted); text-align:center; border:1px dashed var(--line); border-radius:16px; }
+    footer { margin-top:28px; color:#758493; font-size:12px; text-align:center; }
+    @media (max-width: 760px) {
+      .shell { width:min(100% - 20px, 1180px); padding-top:20px; }
+      .hero { padding:24px; }
+      .stats { grid-template-columns:1fr; }
+      .deadline-group-head { align-items:flex-start; flex-direction:column; }
+      .timeline-item { grid-template-columns:1fr; gap:10px; }
+      .timeline-source { justify-self:start; }
+      .event-row { grid-template-columns:1fr; gap:12px; }
+      .event-action { justify-self:start; }
+      .event-tasks { grid-column:1; }
+      .section-title { align-items:start; flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <span class="eyebrow">Steamworks günlük takip</span>
+      <h1>Etkinlik<br>Radarı</h1>
+      <p>Steam’in resmî takviminden festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını tek yerde takip et.</p>
+      <div class="stats">
+        <div class="stat"><strong>26</strong><span>yaklaşan etkinlik</span></div>
+        <div class="stat"><strong>0</strong><span>30 gün içindeki son tarih</span></div>
+        <div class="stat"><strong>0</strong><span>bu ay başlayan</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Yaklaşan son tarihler</h2>
+        <p>Etkinlik bazında yapılacaklar · İstanbul saatine göre</p>
+      </div>
+      <div class="deadline-groups">
+    <article class="deadline-group">
+      <div class="deadline-group-head">
+        <div>
+          <span class="event-kind next_fest">Next Fest</span>
+          <h3>Next Fest: October 2026</h3>
+        </div>
+        <span>19 Eki 2026 – 26 Eki 2026</span>
+      </div>
+      <div class="timeline">
+    <div class="timeline-item ">
+      <div class="timeline-date">
+        <strong>1 Eylül 2026, 09:59</strong>
+        <span class="countdown">33 gün kaldı</span>
+      </div>
+      <div class="timeline-body">
+        <span class="pill">Başvuru</span>
+        <h4>Festivale kayıt için son gün</h4>
+        <p>Steamworks kayıt sayfasından uygun oyununuzun katılımını onaylayın.</p>
+      </div>
+      <a class="timeline-source" href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Kaynak ↗</a>
+    </div>
+    <div class="timeline-item ">
+      <div class="timeline-date">
+        <strong>7 Eylül 2026, 20:00</strong>
+        <span class="countdown">39 gün kaldı</span>
+      </div>
+      <div class="timeline-body">
+        <span class="pill">Tanıtım</span>
+        <h4>Resmî fragman için içerik alınacak</h4>
+        <p>Mağaza sayfanızdaki en güncel fragmanın hazır olduğundan emin olun.</p>
+      </div>
+      <a class="timeline-source" href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Kaynak ↗</a>
+    </div>
+    <div class="timeline-item ">
+      <div class="timeline-date">
+        <strong>22 Eylül 2026, 09:59</strong>
+        <span class="countdown">54 gün kaldı</span>
+      </div>
+      <div class="timeline-body">
+        <span class="pill">Demo &amp; Mağaza</span>
+        <h4>Basın önizlemesi için incelemeye gönder</h4>
+        <p>Demo yapısını ve mağaza sayfasını Valve incelemesine gönderin.</p>
+      </div>
+      <a class="timeline-source" href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Kaynak ↗</a>
+    </div>
+    <div class="timeline-item ">
+      <div class="timeline-date">
+        <strong>6 Ekim 2026, 09:59</strong>
+        <span class="countdown">68 gün kaldı</span>
+      </div>
+      <div class="timeline-body">
+        <span class="pill">Demo &amp; Mağaza</span>
+        <h4>Tüm içerikler incelemeye gönderilmiş olmalı</h4>
+        <p>Demo, mağaza sayfası ve zorunlu materyaller festival hazırlığı için incelemede olmalı.</p>
+      </div>
+      <a class="timeline-source" href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Kaynak ↗</a>
+    </div>
+    <div class="timeline-item ">
+      <div class="timeline-date">
+        <strong>8 Ekim 2026, 20:00</strong>
+        <span class="countdown">70 gün kaldı</span>
+      </div>
+      <div class="timeline-body">
+        <span class="pill">Yayın</span>
+        <h4>Basın önizlemesi başlıyor</h4>
+        <p>Bu tarihten önce hazır ve yayında olan demolar basın önizlemesinde yer alabilir.</p>
+      </div>
+      <a class="timeline-source" href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Kaynak ↗</a>
+    </div>
+    <div class="timeline-item ">
+      <div class="timeline-date">
+        <strong>9 Ekim 2026, 09:59</strong>
+        <span class="countdown">71 gün kaldı</span>
+      </div>
+      <div class="timeline-body">
+        <span class="pill">Tanıtım</span>
+        <h4>Fragman kullanımından çıkış için son gün</h4>
+        <p>Resmî tanıtımda yer almak istemiyorsanız fragman iznini bu tarihe kadar kapatın.</p>
+      </div>
+      <a class="timeline-source" href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Kaynak ↗</a>
+    </div>
+    <div class="timeline-item ">
+      <div class="timeline-date">
+        <strong>19 Ekim 2026, 20:00</strong>
+        <span class="countdown">81 gün kaldı</span>
+      </div>
+      <div class="timeline-body">
+        <span class="pill">Yayın</span>
+        <h4>Demo yayında olmalı</h4>
+        <p>Festival başlamadan önce demoyu yayınlayın veya plan değiştiyse katılımdan çıkın.</p>
+      </div>
+      <a class="timeline-source" href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Kaynak ↗</a>
+    </div></div>
+    </article></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Etkinlik takvimi</h2>
+        <p>Son güncelleme: 30 Temmuz 2026, 15:53</p>
+      </div>
+      <div class="toolbar">
+        <input class="search" id="search" type="search" placeholder="Etkinlik ara…" autocomplete="off">
+        <div class="filters" aria-label="Etkinlik filtresi">
+          <button class="active" data-filter="all">Tümü</button>
+          <button data-filter="themed_fest">Festivaller</button>
+          <button data-filter="next_fest">Next Fest</button>
+          <button data-filter="seasonal_sale">İndirimler</button>
+        </div>
+      </div>
+      <div class="event-list" id="events">
+    <article class="event-row" data-kind="themed_fest" data-search="cyberpunk fest temalı festival games in cyberpunk settings: neon, advanced tech, and other sci-fi elements. more info.">
+      <div class="event-date">
+        <strong>3 Ağu 2026</strong>
+        <span>10 Ağu 2026</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Cyberpunk Fest</h3>
+        </div>
+        <p>Games in cyberpunk settings: neon, advanced tech, and other sci-fi elements. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/cyberpunk_2026" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="cyberpunk-fest-51562f576" open>
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="cyberpunk-fest-51562f576-4e2b5a218" data-task-id="cyberpunk-fest-51562f576-4e2b5a218">
+      <label for="cyberpunk-fest-51562f576-4e2b5a218">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/cyberpunk_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="cyberpunk-fest-51562f576-d184f5214" data-task-id="cyberpunk-fest-51562f576-d184f5214">
+      <label for="cyberpunk-fest-51562f576-d184f5214">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>3 Ağustos 2026, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="cyberpunk-fest-51562f576-dbaa3c470" data-task-id="cyberpunk-fest-51562f576-dbaa3c470">
+      <label for="cyberpunk-fest-51562f576-dbaa3c470">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/cyberpunk_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="pins &amp; pegs fest temalı festival games involving pins (pinball, bowling) and pegs (pachinko, bagatelle). more info.">
+      <div class="event-date">
+        <strong>17 Ağu 2026</strong>
+        <span>20 Ağu 2026</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Pins &amp; Pegs Fest</h3>
+        </div>
+        <p>Games involving pins (pinball, bowling) and pegs (pachinko, bagatelle). More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/pins_pegs_2026" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="pins-pegs-fest-2624f7168">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="pins-pegs-fest-2624f7168-77d3210db" data-task-id="pins-pegs-fest-2624f7168-77d3210db">
+      <label for="pins-pegs-fest-2624f7168-77d3210db">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/pins_pegs_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="pins-pegs-fest-2624f7168-125af3b87" data-task-id="pins-pegs-fest-2624f7168-125af3b87">
+      <label for="pins-pegs-fest-2624f7168-125af3b87">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>17 Ağustos 2026, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="pins-pegs-fest-2624f7168-8a9cc30e6" data-task-id="pins-pegs-fest-2624f7168-8a9cc30e6">
+      <label for="pins-pegs-fest-2624f7168-8a9cc30e6">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/pins_pegs_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="pve survival crafting fest temalı festival games that include survival, crafting, and a primary gameplay loop centered on pve. more info.">
+      <div class="event-date">
+        <strong>31 Ağu 2026</strong>
+        <span>7 Eyl 2026</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>PvE Survival Crafting Fest</h3>
+        </div>
+        <p>Games that include survival, crafting, and a primary gameplay loop centered on PvE. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/pve_survival_crafting_2026" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="pve-survival-crafting-fest-8bb6de2ec">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="pve-survival-crafting-fest-8bb6de2ec-26cc1e583" data-task-id="pve-survival-crafting-fest-8bb6de2ec-26cc1e583">
+      <label for="pve-survival-crafting-fest-8bb6de2ec-26cc1e583">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/pve_survival_crafting_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="pve-survival-crafting-fest-8bb6de2ec-7bbed954e" data-task-id="pve-survival-crafting-fest-8bb6de2ec-7bbed954e">
+      <label for="pve-survival-crafting-fest-8bb6de2ec-7bbed954e">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>31 Ağustos 2026, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="pve-survival-crafting-fest-8bb6de2ec-69230145b" data-task-id="pve-survival-crafting-fest-8bb6de2ec-69230145b">
+      <label for="pve-survival-crafting-fest-8bb6de2ec-69230145b">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/pve_survival_crafting_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="programming fest temalı festival games that are about programming or programming challenges like logic puzzles. more info.">
+      <div class="event-date">
+        <strong>10 Eyl 2026</strong>
+        <span>14 Eyl 2026</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Programming Fest</h3>
+        </div>
+        <p>Games that are about programming or programming challenges like logic puzzles. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/programming_2026" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="programming-fest-d92cade24">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="programming-fest-d92cade24-a63db381d" data-task-id="programming-fest-d92cade24-a63db381d">
+      <label for="programming-fest-d92cade24-a63db381d">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/programming_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="programming-fest-d92cade24-a7e028d94" data-task-id="programming-fest-d92cade24-a7e028d94">
+      <label for="programming-fest-d92cade24-a7e028d94">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>10 Eylül 2026, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="programming-fest-d92cade24-6aa8e01db" data-task-id="programming-fest-d92cade24-6aa8e01db">
+      <label for="programming-fest-d92cade24-6aa8e01db">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/programming_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="party-based rpg fest temalı festival games that include multiple playable characters in one party in an rpg format.more info.">
+      <div class="event-date">
+        <strong>14 Eyl 2026</strong>
+        <span>21 Eyl 2026</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Party-Based RPG Fest</h3>
+        </div>
+        <p>Games that include multiple playable characters in one party in an RPG format.More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/party_rpg_2026" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="party-based-rpg-fest-55771f151">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="party-based-rpg-fest-55771f151-28b848326" data-task-id="party-based-rpg-fest-55771f151-28b848326">
+      <label for="party-based-rpg-fest-55771f151-28b848326">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/party_rpg_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="party-based-rpg-fest-55771f151-2592a97e2" data-task-id="party-based-rpg-fest-55771f151-2592a97e2">
+      <label for="party-based-rpg-fest-55771f151-2592a97e2">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>14 Eylül 2026, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="party-based-rpg-fest-55771f151-d5281ba68" data-task-id="party-based-rpg-fest-55771f151-d5281ba68">
+      <label for="party-based-rpg-fest-55771f151-d5281ba68">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/party_based_rpg_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="seasonal_sale" data-search="autumn sale sezon indirimi ">
+      <div class="event-date">
+        <strong>1 Eki 2026</strong>
+        <span>8 Eki 2026</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind seasonal_sale">Sezon İndirimi</span>
+          <h3>Autumn Sale</h3>
+        </div>
+        
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/doc/marketing/upcoming_events?l=english" target="_blank" rel="noreferrer">
+        Detaylar ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="autumn-sale-f825a9dd8">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/2 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="autumn-sale-f825a9dd8-fa1508103" data-task-id="autumn-sale-f825a9dd8-fa1508103">
+      <label for="autumn-sale-f825a9dd8-fa1508103">
+        <span class="task-title">
+          <strong>Sezon indirimi teklifini gir</strong>
+          <span class="task-level required">Gerekli</span>
+          <time>1 Ekim 2026, 20:00</time>
+        </span>
+        <span class="task-description">Katılım için uygun paketlerin indirim oranlarını İndirim Yönetimi’nde girip kaydedin.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="autumn-sale-f825a9dd8-c297047e7" data-task-id="autumn-sale-f825a9dd8-c297047e7">
+      <label for="autumn-sale-f825a9dd8-c297047e7">
+        <span class="task-title">
+          <strong>İndirim uygunluğunu kontrol et</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Yeni çıkış veya fiyat değişikliği kaynaklı bekleme süresi bulunmadığını doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/discounts" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="cooking fest temalı festival games about cooking, feeding people, and everything in between. more info.">
+      <div class="event-date">
+        <strong>12 Eki 2026</strong>
+        <span>19 Eki 2026</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Cooking Fest</h3>
+        </div>
+        <p>Games about cooking, feeding people, and everything in between. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/cooking_2026" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="cooking-fest-424f50fb9">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="cooking-fest-424f50fb9-653c8bade" data-task-id="cooking-fest-424f50fb9-653c8bade">
+      <label for="cooking-fest-424f50fb9-653c8bade">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/cooking_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="cooking-fest-424f50fb9-de8eac422" data-task-id="cooking-fest-424f50fb9-de8eac422">
+      <label for="cooking-fest-424f50fb9-de8eac422">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>12 Ekim 2026, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="cooking-fest-424f50fb9-648bc6057" data-task-id="cooking-fest-424f50fb9-648bc6057">
+      <label for="cooking-fest-424f50fb9-648bc6057">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/cooking_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="next_fest" data-search="next fest: october 2026 next fest ">
+      <div class="event-date">
+        <strong>19 Eki 2026</strong>
+        <span>26 Eki 2026</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind next_fest">Next Fest</span>
+          <h3>Next Fest: October 2026</h3>
+        </div>
+        
+        <div class="mini-deadlines"><span>⏱ 1 Eyl 2026 · Başvuru</span><span>⏱ 7 Eyl 2026 · Tanıtım</span><span>⏱ 22 Eyl 2026 · Demo &amp; Mağaza</span></div>
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/nextfest_october_2026" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="next-fest-october-2026-3062e7ac9">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/7 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="next-fest-october-2026-3062e7ac9-e6e1e1149" data-task-id="next-fest-october-2026-3062e7ac9-e6e1e1149">
+      <label for="next-fest-october-2026-3062e7ac9-e6e1e1149">
+        <span class="task-title">
+          <strong>Festivale kayıt için son gün</strong>
+          <span class="task-level required">Gerekli</span>
+          <time>1 Eylül 2026, 09:59</time>
+        </span>
+        <span class="task-description">Steamworks kayıt sayfasından uygun oyununuzun katılımını onaylayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/nextfest_october_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="next-fest-october-2026-3062e7ac9-53c15814e" data-task-id="next-fest-october-2026-3062e7ac9-53c15814e">
+      <label for="next-fest-october-2026-3062e7ac9-53c15814e">
+        <span class="task-title">
+          <strong>Resmî fragman için içerik alınacak</strong>
+          <span class="task-level ">Önerilen</span>
+          <time>7 Eylül 2026, 20:00</time>
+        </span>
+        <span class="task-description">Mağaza sayfanızdaki en güncel fragmanın hazır olduğundan emin olun.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="next-fest-october-2026-3062e7ac9-617b22cea" data-task-id="next-fest-october-2026-3062e7ac9-617b22cea">
+      <label for="next-fest-october-2026-3062e7ac9-617b22cea">
+        <span class="task-title">
+          <strong>Basın önizlemesi için incelemeye gönder</strong>
+          <span class="task-level required">Gerekli</span>
+          <time>22 Eylül 2026, 09:59</time>
+        </span>
+        <span class="task-description">Demo yapısını ve mağaza sayfasını Valve incelemesine gönderin.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="next-fest-october-2026-3062e7ac9-28e6d3bf4" data-task-id="next-fest-october-2026-3062e7ac9-28e6d3bf4">
+      <label for="next-fest-october-2026-3062e7ac9-28e6d3bf4">
+        <span class="task-title">
+          <strong>Tüm içerikler incelemeye gönderilmiş olmalı</strong>
+          <span class="task-level required">Gerekli</span>
+          <time>6 Ekim 2026, 09:59</time>
+        </span>
+        <span class="task-description">Demo, mağaza sayfası ve zorunlu materyaller festival hazırlığı için incelemede olmalı.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="next-fest-october-2026-3062e7ac9-40ee019c9" data-task-id="next-fest-october-2026-3062e7ac9-40ee019c9">
+      <label for="next-fest-october-2026-3062e7ac9-40ee019c9">
+        <span class="task-title">
+          <strong>Basın önizlemesi başlıyor</strong>
+          <span class="task-level ">Önerilen</span>
+          <time>8 Ekim 2026, 20:00</time>
+        </span>
+        <span class="task-description">Bu tarihten önce hazır ve yayında olan demolar basın önizlemesinde yer alabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="next-fest-october-2026-3062e7ac9-e193c87e2" data-task-id="next-fest-october-2026-3062e7ac9-e193c87e2">
+      <label for="next-fest-october-2026-3062e7ac9-e193c87e2">
+        <span class="task-title">
+          <strong>Fragman kullanımından çıkış için son gün</strong>
+          <span class="task-level ">Önerilen</span>
+          <time>9 Ekim 2026, 09:59</time>
+        </span>
+        <span class="task-description">Resmî tanıtımda yer almak istemiyorsanız fragman iznini bu tarihe kadar kapatın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="next-fest-october-2026-3062e7ac9-7ff359bb9" data-task-id="next-fest-october-2026-3062e7ac9-7ff359bb9">
+      <label for="next-fest-october-2026-3062e7ac9-7ff359bb9">
+        <span class="task-title">
+          <strong>Demo yayında olmalı</strong>
+          <span class="task-level ">Önerilen</span>
+          <time>19 Ekim 2026, 20:00</time>
+        </span>
+        <span class="task-description">Festival başlamadan önce demoyu yayınlayın veya plan değiştiyse katılımdan çıkın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="steam scream v temalı festival games that fall into the horror category, and explicitly halloween-centric games. more info.">
+      <div class="event-date">
+        <strong>26 Eki 2026</strong>
+        <span>2 Kas 2026</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Steam Scream V</h3>
+        </div>
+        <p>Games that fall into the horror category, and explicitly Halloween-centric games. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/horror_2026" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="steam-scream-v-4b0a8f227">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="steam-scream-v-4b0a8f227-9a4cc9d82" data-task-id="steam-scream-v-4b0a8f227-9a4cc9d82">
+      <label for="steam-scream-v-4b0a8f227-9a4cc9d82">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/horror_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="steam-scream-v-4b0a8f227-832f14e18" data-task-id="steam-scream-v-4b0a8f227-832f14e18">
+      <label for="steam-scream-v-4b0a8f227-832f14e18">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>26 Ekim 2026, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="steam-scream-v-4b0a8f227-abf5c8578" data-task-id="steam-scream-v-4b0a8f227-abf5c8578">
+      <label for="steam-scream-v-4b0a8f227-abf5c8578">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/steam_halloween_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="auto-battler rpg fest temalı festival games where the battles play themselves out – but you have to upgrade your units to win. more info.">
+      <div class="event-date">
+        <strong>16 Kas 2026</strong>
+        <span>23 Kas 2026</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Auto-Battler RPG Fest</h3>
+        </div>
+        <p>Games where the battles play themselves out – but you have to upgrade your units to win. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/auto_battler_2026" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="auto-battler-rpg-fest-92a2e84b8">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="auto-battler-rpg-fest-92a2e84b8-6d8bbcdb2" data-task-id="auto-battler-rpg-fest-92a2e84b8-6d8bbcdb2">
+      <label for="auto-battler-rpg-fest-92a2e84b8-6d8bbcdb2">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/auto_battler_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="auto-battler-rpg-fest-92a2e84b8-a2da9124d" data-task-id="auto-battler-rpg-fest-92a2e84b8-a2da9124d">
+      <label for="auto-battler-rpg-fest-92a2e84b8-a2da9124d">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>16 Kasım 2026, 21:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="auto-battler-rpg-fest-92a2e84b8-dc880ba42" data-task-id="auto-battler-rpg-fest-92a2e84b8-dc880ba42">
+      <label for="auto-battler-rpg-fest-92a2e84b8-dc880ba42">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/auto_battler_rpg_2026" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="seasonal_sale" data-search="winter sale sezon indirimi ">
+      <div class="event-date">
+        <strong>17 Ara 2026</strong>
+        <span>4 Oca 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind seasonal_sale">Sezon İndirimi</span>
+          <h3>Winter Sale</h3>
+        </div>
+        
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/doc/marketing/upcoming_events?l=english" target="_blank" rel="noreferrer">
+        Detaylar ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="winter-sale-942a0c36e">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/2 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="winter-sale-942a0c36e-00bbb4fc8" data-task-id="winter-sale-942a0c36e-00bbb4fc8">
+      <label for="winter-sale-942a0c36e-00bbb4fc8">
+        <span class="task-title">
+          <strong>Sezon indirimi teklifini gir</strong>
+          <span class="task-level required">Gerekli</span>
+          <time>17 Aralık 2026, 21:00</time>
+        </span>
+        <span class="task-description">Katılım için uygun paketlerin indirim oranlarını İndirim Yönetimi’nde girip kaydedin.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="winter-sale-942a0c36e-1dabef302" data-task-id="winter-sale-942a0c36e-1dabef302">
+      <label for="winter-sale-942a0c36e-1dabef302">
+        <span class="task-title">
+          <strong>İndirim uygunluğunu kontrol et</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Yeni çıkış veya fiyat değişikliği kaynaklı bekleme süresi bulunmadığını doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/discounts" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="desktop companion fest temalı festival games that sit on your desktop and keep you company while you do other things. more info.">
+      <div class="event-date">
+        <strong>14 Oca 2027</strong>
+        <span>18 Oca 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Desktop Companion Fest</h3>
+        </div>
+        <p>Games that sit on your desktop and keep you company while you do other things. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/desktop_companion_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="desktop-companion-fest-5bc08adee">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="desktop-companion-fest-5bc08adee-64cdd4df5" data-task-id="desktop-companion-fest-5bc08adee-64cdd4df5">
+      <label for="desktop-companion-fest-5bc08adee-64cdd4df5">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/desktop_companion_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="desktop-companion-fest-5bc08adee-d9bb9d39b" data-task-id="desktop-companion-fest-5bc08adee-d9bb9d39b">
+      <label for="desktop-companion-fest-5bc08adee-d9bb9d39b">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>14 Ocak 2027, 21:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="desktop-companion-fest-5bc08adee-fa37c30db" data-task-id="desktop-companion-fest-5bc08adee-fa37c30db">
+      <label for="desktop-companion-fest-5bc08adee-fa37c30db">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/desktop_companion_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="shop keeper fest temalı festival games about managing a store. more info.">
+      <div class="event-date">
+        <strong>25 Oca 2027</strong>
+        <span>1 Şub 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Shop Keeper Fest</h3>
+        </div>
+        <p>Games about managing a store. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/shop_keep_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="shop-keeper-fest-0d64f4666">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="shop-keeper-fest-0d64f4666-6c6f1566c" data-task-id="shop-keeper-fest-0d64f4666-6c6f1566c">
+      <label for="shop-keeper-fest-0d64f4666-6c6f1566c">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/shop_keep_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="shop-keeper-fest-0d64f4666-560179671" data-task-id="shop-keeper-fest-0d64f4666-560179671">
+      <label for="shop-keeper-fest-0d64f4666-560179671">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>25 Ocak 2027, 21:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="shop-keeper-fest-0d64f4666-20dc0468b" data-task-id="shop-keeper-fest-0d64f4666-20dc0468b">
+      <label for="shop-keeper-fest-0d64f4666-20dc0468b">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/shop_keep_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="sheep fest temalı festival games about sheep, goats, or other animals in the caprinae subfamily (so yes, tahrs and ibexes are welcome too). more info.">
+      <div class="event-date">
+        <strong>4 Şub 2027</strong>
+        <span>8 Şub 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Sheep Fest</h3>
+        </div>
+        <p>Games about sheep, goats, or other animals in the Caprinae subfamily (so yes, tahrs and ibexes are welcome too). More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/sheep_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="sheep-fest-6ec302116">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="sheep-fest-6ec302116-6929f9e2a" data-task-id="sheep-fest-6ec302116-6929f9e2a">
+      <label for="sheep-fest-6ec302116-6929f9e2a">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/sheep_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="sheep-fest-6ec302116-19f4ade35" data-task-id="sheep-fest-6ec302116-19f4ade35">
+      <label for="sheep-fest-6ec302116-19f4ade35">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>4 Şubat 2027, 21:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="sheep-fest-6ec302116-76bba711a" data-task-id="sheep-fest-6ec302116-76bba711a">
+      <label for="sheep-fest-6ec302116-76bba711a">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/sheep_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="couch co-op fest temalı festival games you can play together on the same device (games must support local co-op). more info.">
+      <div class="event-date">
+        <strong>8 Şub 2027</strong>
+        <span>15 Şub 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Couch Co-Op Fest</h3>
+        </div>
+        <p>Games you can play together on the same device (games must support local co-op). More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/couch_coop_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="couch-co-op-fest-8b489c8ca">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="couch-co-op-fest-8b489c8ca-bb23eaf17" data-task-id="couch-co-op-fest-8b489c8ca-bb23eaf17">
+      <label for="couch-co-op-fest-8b489c8ca-bb23eaf17">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/couch_coop_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="couch-co-op-fest-8b489c8ca-ebba08843" data-task-id="couch-co-op-fest-8b489c8ca-ebba08843">
+      <label for="couch-co-op-fest-8b489c8ca-ebba08843">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>8 Şubat 2027, 21:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="couch-co-op-fest-8b489c8ca-e76b50e66" data-task-id="couch-co-op-fest-8b489c8ca-e76b50e66">
+      <label for="couch-co-op-fest-8b489c8ca-e76b50e66">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/couch_coop_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="next_fest" data-search="next fest: february 2027 next fest ">
+      <div class="event-date">
+        <strong>22 Şub 2027</strong>
+        <span>1 Mar 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind next_fest">Next Fest</span>
+          <h3>Next Fest: February 2027</h3>
+        </div>
+        
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/doc/marketing/upcoming_events?l=english" target="_blank" rel="noreferrer">
+        Detaylar ↗
+      </a>
+      
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="rhythm fest temalı festival games that are about rewarding players who can hit notes / arrows / bullets / etc. in time to the beat. more info.">
+      <div class="event-date">
+        <strong>8 Mar 2027</strong>
+        <span>15 Mar 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Rhythm Fest</h3>
+        </div>
+        <p>Games that are about rewarding players who can hit notes / arrows / bullets / etc. in time to the beat. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/rhythm_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="rhythm-fest-b3b4ca682">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="rhythm-fest-b3b4ca682-a9c2f1b1e" data-task-id="rhythm-fest-b3b4ca682-a9c2f1b1e">
+      <label for="rhythm-fest-b3b4ca682-a9c2f1b1e">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/rhythm_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="rhythm-fest-b3b4ca682-37c7e2c14" data-task-id="rhythm-fest-b3b4ca682-37c7e2c14">
+      <label for="rhythm-fest-b3b4ca682-37c7e2c14">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>8 Mart 2027, 21:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="rhythm-fest-b3b4ca682-88b77ada3" data-task-id="rhythm-fest-b3b4ca682-88b77ada3">
+      <label for="rhythm-fest-b3b4ca682-88b77ada3">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/rhythm_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="seasonal_sale" data-search="spring sale sezon indirimi ">
+      <div class="event-date">
+        <strong>18 Mar 2027</strong>
+        <span>25 Mar 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind seasonal_sale">Sezon İndirimi</span>
+          <h3>Spring Sale</h3>
+        </div>
+        
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/doc/marketing/upcoming_events?l=english" target="_blank" rel="noreferrer">
+        Detaylar ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="spring-sale-23917885f">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/2 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="spring-sale-23917885f-4df6c304c" data-task-id="spring-sale-23917885f-4df6c304c">
+      <label for="spring-sale-23917885f-4df6c304c">
+        <span class="task-title">
+          <strong>Sezon indirimi teklifini gir</strong>
+          <span class="task-level required">Gerekli</span>
+          <time>18 Mart 2027, 20:00</time>
+        </span>
+        <span class="task-description">Katılım için uygun paketlerin indirim oranlarını İndirim Yönetimi’nde girip kaydedin.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="spring-sale-23917885f-794a1abdc" data-task-id="spring-sale-23917885f-794a1abdc">
+      <label for="spring-sale-23917885f-794a1abdc">
+        <span class="task-title">
+          <strong>İndirim uygunluğunu kontrol et</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Yeni çıkış veya fiyat değişikliği kaynaklı bekleme süresi bulunmadığını doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/discounts" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="dinos vs. robots fest temalı festival games featuring dinosaurs, robots, or both. or robot dinosaurs! more info.">
+      <div class="event-date">
+        <strong>29 Mar 2027</strong>
+        <span>5 Nis 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Dinos vs. Robots Fest</h3>
+        </div>
+        <p>Games featuring dinosaurs, robots, or both. Or robot dinosaurs! More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/dinos_robots_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="dinos-vs-robots-fest-e4c058c85">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="dinos-vs-robots-fest-e4c058c85-fb1273bb5" data-task-id="dinos-vs-robots-fest-e4c058c85-fb1273bb5">
+      <label for="dinos-vs-robots-fest-e4c058c85-fb1273bb5">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/dinos_robots_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="dinos-vs-robots-fest-e4c058c85-ecb5e6746" data-task-id="dinos-vs-robots-fest-e4c058c85-ecb5e6746">
+      <label for="dinos-vs-robots-fest-e4c058c85-ecb5e6746">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>29 Mart 2027, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="dinos-vs-robots-fest-e4c058c85-6e2d38c49" data-task-id="dinos-vs-robots-fest-e4c058c85-6e2d38c49">
+      <label for="dinos-vs-robots-fest-e4c058c85-6e2d38c49">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/dinos_robots_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="racing fest temalı festival games about going fast. like, really, really fast. faster than other people, faster than the computer, faster than the you of yesterday. more info.">
+      <div class="event-date">
+        <strong>12 Nis 2027</strong>
+        <span>19 Nis 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Racing Fest</h3>
+        </div>
+        <p>Games about going fast. Like, really, really fast. Faster than other people, faster than the computer, faster than the you of yesterday. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/racing_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="racing-fest-9bb5cb332">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="racing-fest-9bb5cb332-7e20abf43" data-task-id="racing-fest-9bb5cb332-7e20abf43">
+      <label for="racing-fest-9bb5cb332-7e20abf43">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/racing_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="racing-fest-9bb5cb332-49bdd1103" data-task-id="racing-fest-9bb5cb332-49bdd1103">
+      <label for="racing-fest-9bb5cb332-49bdd1103">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>12 Nisan 2027, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="racing-fest-9bb5cb332-8a003298e" data-task-id="racing-fest-9bb5cb332-8a003298e">
+      <label for="racing-fest-9bb5cb332-8a003298e">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/racing_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="witch fest temalı festival games that are witchy! more info.">
+      <div class="event-date">
+        <strong>22 Nis 2027</strong>
+        <span>26 Nis 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Witch Fest</h3>
+        </div>
+        <p>Games that are witchy! More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/witch_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="witch-fest-34647039a">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="witch-fest-34647039a-23a90a59d" data-task-id="witch-fest-34647039a-23a90a59d">
+      <label for="witch-fest-34647039a-23a90a59d">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/witch_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="witch-fest-34647039a-cd5583499" data-task-id="witch-fest-34647039a-cd5583499">
+      <label for="witch-fest-34647039a-cd5583499">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>22 Nisan 2027, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="witch-fest-34647039a-e3d6e23ec" data-task-id="witch-fest-34647039a-e3d6e23ec">
+      <label for="witch-fest-34647039a-e3d6e23ec">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/witch_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="fighting fest temalı festival games that are fighting games—not just games about fighting, but specifically like the ones that the fgc play. more info.">
+      <div class="event-date">
+        <strong>26 Nis 2027</strong>
+        <span>3 May 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Fighting Fest</h3>
+        </div>
+        <p>Games that are Fighting Games—not just games about fighting, but specifically like the ones that the FGC play. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/fighting_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="fighting-fest-997e98a30">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="fighting-fest-997e98a30-d6dcc8d6c" data-task-id="fighting-fest-997e98a30-d6dcc8d6c">
+      <label for="fighting-fest-997e98a30-d6dcc8d6c">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/fighting_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="fighting-fest-997e98a30-718692ed9" data-task-id="fighting-fest-997e98a30-718692ed9">
+      <label for="fighting-fest-997e98a30-718692ed9">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>26 Nisan 2027, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="fighting-fest-997e98a30-7dd3a9ebb" data-task-id="fighting-fest-997e98a30-7dd3a9ebb">
+      <label for="fighting-fest-997e98a30-7dd3a9ebb">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/fighting_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="real-time strategy fest temalı festival games that are played in real-time and involve high levels of strategic play, including build / research planning, anticipating enemy movements, and resource management. more info.">
+      <div class="event-date">
+        <strong>10 May 2027</strong>
+        <span>17 May 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Real-Time Strategy Fest</h3>
+        </div>
+        <p>Games that are played in real-time and involve high levels of strategic play, including build / research planning, anticipating enemy movements, and resource management. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/rts_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="real-time-strategy-fest-96b41f8e6">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="real-time-strategy-fest-96b41f8e6-18d34ba26" data-task-id="real-time-strategy-fest-96b41f8e6-18d34ba26">
+      <label for="real-time-strategy-fest-96b41f8e6-18d34ba26">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/rts_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="real-time-strategy-fest-96b41f8e6-d2dabae48" data-task-id="real-time-strategy-fest-96b41f8e6-d2dabae48">
+      <label for="real-time-strategy-fest-96b41f8e6-d2dabae48">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>10 Mayıs 2027, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="real-time-strategy-fest-96b41f8e6-f2629e299" data-task-id="real-time-strategy-fest-96b41f8e6-f2629e299">
+      <label for="real-time-strategy-fest-96b41f8e6-f2629e299">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/rts_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="themed_fest" data-search="mountaineering fest temalı festival games about climbing mountains. more info.">
+      <div class="event-date">
+        <strong>31 May 2027</strong>
+        <span>3 Haz 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind themed_fest">Temalı Festival</span>
+          <h3>Mountaineering Fest</h3>
+        </div>
+        <p>Games about climbing mountains. More info.</p>
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/mountaineering_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="mountaineering-fest-e94606dd4">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/3 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="mountaineering-fest-e94606dd4-e7f387256" data-task-id="mountaineering-fest-e94606dd4-e7f387256">
+      <label for="mountaineering-fest-e94606dd4-e7f387256">
+        <span class="task-title">
+          <strong>Uygunluğu ve kayıt durumunu kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Steamworks’te uygun oyunları görüntüleyin ve katılacak oyunun kaydını tamamlayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/mountaineering_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="mountaineering-fest-e94606dd4-9918b020c" data-task-id="mountaineering-fest-e94606dd4-9918b020c">
+      <label for="mountaineering-fest-e94606dd4-9918b020c">
+        <span class="task-title">
+          <strong>İndirim planını kontrol et</strong>
+          <span class="task-level ">İsteğe bağlı</span>
+          <time>31 Mayıs 2027, 20:00</time>
+        </span>
+        <span class="task-description">İndirim zorunlu değildir; ancak indirimli oyunlar festival sayfasında daha görünür olabilir.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="mountaineering-fest-e94606dd4-66a742850" data-task-id="mountaineering-fest-e94606dd4-66a742850">
+      <label for="mountaineering-fest-e94606dd4-66a742850">
+        <span class="task-title">
+          <strong>Mağaza sayfasını ve etiketleri gözden geçir</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Tema uygunluğunu gösteren mağaza etiketlerinin, açıklamanın, demonun ve yayımdaki fragmanın güncel olduğunu doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/mountaineering_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="next_fest" data-search="next fest: june 2027 next fest ">
+      <div class="event-date">
+        <strong>14 Haz 2027</strong>
+        <span>21 Haz 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind next_fest">Next Fest</span>
+          <h3>Next Fest: June 2027</h3>
+        </div>
+        
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/optin/sale/nextfest_june_2027" target="_blank" rel="noreferrer">
+        Kayıt sayfası ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="next-fest-june-2027-6598e9fe6">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/2 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="next-fest-june-2027-6598e9fe6-002d2158b" data-task-id="next-fest-june-2027-6598e9fe6-002d2158b">
+      <label for="next-fest-june-2027-6598e9fe6-002d2158b">
+        <span class="task-title">
+          <strong>Uygunluğu ve Next Fest kaydını kontrol et</strong>
+          <span class="task-level required">Gerekli</span>
+          
+        </span>
+        <span class="task-description">Uygun oyunun katılımını Steamworks kayıt sayfasından onaylayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/optin/sale/nextfest_june_2027" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="next-fest-june-2027-6598e9fe6-4c1a1b1d0" data-task-id="next-fest-june-2027-6598e9fe6-4c1a1b1d0">
+      <label for="next-fest-june-2027-6598e9fe6-4c1a1b1d0">
+        <span class="task-title">
+          <strong>Demo ve mağaza sayfasını hazırla</strong>
+          <span class="task-level required">Gerekli</span>
+          <time>14 Haziran 2027, 20:00</time>
+        </span>
+        <span class="task-description">Festival başlamadan önce oynanabilir demo ve herkese açık mağaza sayfası hazır olmalı.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/upcoming_events?l=english" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article>
+    <article class="event-row" data-kind="seasonal_sale" data-search="summer sale sezon indirimi ">
+      <div class="event-date">
+        <strong>24 Haz 2027</strong>
+        <span>8 Tem 2027</span>
+      </div>
+      <div class="event-main">
+        <div class="event-heading">
+          <span class="event-kind seasonal_sale">Sezon İndirimi</span>
+          <h3>Summer Sale</h3>
+        </div>
+        
+        
+      </div>
+      <a class="event-action" href="https://partner.steamgames.com/doc/marketing/upcoming_events?l=english" target="_blank" rel="noreferrer">
+        Detaylar ↗
+      </a>
+      
+    <details class="event-tasks" data-event-tasks="summer-sale-c5f18f5ae">
+      <summary>
+        <span>Görevler</span>
+        <span class="task-progress" data-task-progress>0/2 tamamlandı</span>
+      </summary>
+      <div class="task-list">
+    <div class="task-item">
+      <input type="checkbox" id="summer-sale-c5f18f5ae-f41288936" data-task-id="summer-sale-c5f18f5ae-f41288936">
+      <label for="summer-sale-c5f18f5ae-f41288936">
+        <span class="task-title">
+          <strong>Sezon indirimi teklifini gir</strong>
+          <span class="task-level required">Gerekli</span>
+          <time>24 Haziran 2027, 20:00</time>
+        </span>
+        <span class="task-description">Katılım için uygun paketlerin indirim oranlarını İndirim Yönetimi’nde girip kaydedin.</span>
+      </label>
+      <a href="https://partner.steamgames.com/promotion/discounts/dashboard/" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div>
+    <div class="task-item">
+      <input type="checkbox" id="summer-sale-c5f18f5ae-47128fee6" data-task-id="summer-sale-c5f18f5ae-47128fee6">
+      <label for="summer-sale-c5f18f5ae-47128fee6">
+        <span class="task-title">
+          <strong>İndirim uygunluğunu kontrol et</strong>
+          <span class="task-level ">Önerilen</span>
+          
+        </span>
+        <span class="task-description">Yeni çıkış veya fiyat değişikliği kaynaklı bekleme süresi bulunmadığını doğrulayın.</span>
+      </label>
+      <a href="https://partner.steamgames.com/doc/marketing/discounts" target="_blank" rel="noreferrer">Aç ↗</a>
+    </div></div>
+    </details>
+    </article></div>
+      <div class="empty" id="no-results" hidden>Bu filtrelerle eşleşen etkinlik yok.</div>
+    </section>
+    <footer>Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır ve Steam hesabınızda işlem yapmaz.</footer>
+  </main>
+  <script>
+    const buttons = [...document.querySelectorAll("[data-filter]")];
+    const rows = [...document.querySelectorAll(".event-row")];
+    const search = document.querySelector("#search");
+    const empty = document.querySelector("#no-results");
+    let filter = "all";
+    function apply() {
+      const query = search.value.trim().toLocaleLowerCase("tr");
+      let visible = 0;
+      rows.forEach((row) => {
+        const matchKind = filter === "all" || row.dataset.kind === filter;
+        const matchQuery = !query || row.dataset.search.includes(query);
+        row.hidden = !(matchKind && matchQuery);
+        if (!row.hidden) visible++;
+      });
+      empty.hidden = visible !== 0;
+    }
+    buttons.forEach((button) => button.addEventListener("click", () => {
+      buttons.forEach((item) => item.classList.remove("active"));
+      button.classList.add("active");
+      filter = button.dataset.filter;
+      apply();
+    }));
+    search.addEventListener("input", apply);
+
+    const taskStorageKey = "steam-etkinlik-radari-gorevler-v1";
+    let completedTasks = {};
+    try {
+      completedTasks = JSON.parse(localStorage.getItem(taskStorageKey) || "{}");
+    } catch {}
+    const taskGroups = [...document.querySelectorAll("[data-event-tasks]")];
+    function updateTaskProgress(group) {
+      const boxes = [...group.querySelectorAll("[data-task-id]")];
+      const done = boxes.filter((box) => box.checked).length;
+      const progress = group.querySelector("[data-task-progress]");
+      if (progress) progress.textContent = done + "/" + boxes.length + " tamamlandı";
+    }
+    taskGroups.forEach((group) => {
+      const boxes = [...group.querySelectorAll("[data-task-id]")];
+      boxes.forEach((box) => {
+        box.checked = Boolean(completedTasks[box.dataset.taskId]);
+        box.addEventListener("change", () => {
+          if (box.checked) completedTasks[box.dataset.taskId] = true;
+          else delete completedTasks[box.dataset.taskId];
+          localStorage.setItem(taskStorageKey, JSON.stringify(completedTasks));
+          updateTaskProgress(group);
+        });
+      });
+      updateTaskProgress(group);
+    });
+  </script>
+</body>
+</html>

@@ -10,7 +10,8 @@ indirimlerini listeleyen, bilinen başvuru/inceleme tarihlerini İstanbul saatin
 
 GitHub Actions, Steam takvimini her gün Türkiye saatiyle yaklaşık 09:00’da
 yeniler ve `out/index.html` çıktısını GitHub Pages’e yayınlar. `main` dalına
-gönderilen her değişiklikte de site yeniden oluşturulur.
+gönderilen her değişiklikte de site yeniden oluşturulur. Depo kökündeki
+`index.html`, branch tabanlı Pages ayarı için aynı dashboard’un yedek çıktısıdır.
 
 ## Neler yapar?
 

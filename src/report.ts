@@ -399,6 +399,7 @@ export async function writeReport(snapshot: EventSnapshot): Promise<string> {
   await mkdir(paths.outDir, { recursive: true });
   const report = renderReport(snapshot);
   await Promise.all([
+    writeFile(paths.pagesFallback, report, "utf8"),
     writeFile(paths.report, report, "utf8"),
     writeFile(paths.publicIndex, report, "utf8"),
     writeFile(paths.noJekyll, "", "utf8"),

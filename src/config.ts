@@ -23,6 +23,7 @@ export const paths = {
   dataDir: path.join(rootDir, "data"),
   snapshot: path.join(rootDir, "data", "events.json"),
   outDir: path.join(rootDir, "out"),
+  pagesFallback: path.join(rootDir, "index.html"),
   report: path.join(rootDir, "out", "steam-etkinlikleri.html"),
   publicIndex: path.join(rootDir, "out", "index.html"),
   noJekyll: path.join(rootDir, "out", ".nojekyll"),
