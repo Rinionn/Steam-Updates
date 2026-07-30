@@ -359,7 +359,6 @@ export function renderReport(
       ? config.dashboardUrl
       : `${config.dashboardUrl}/`,
   ).toString();
-  const webcalCalendarUrl = httpsCalendarUrl.replace(/^https:/, "webcal:");
   const changeCutoff = model.generated.minus({ days: 90 }).toMillis();
   const generatedAt = model.generated.toMillis();
   const recentChanges = changelog
@@ -750,7 +749,7 @@ export function renderReport(
       <h1 data-i18n-html="title">Steam Etkinlik<br>Radarı</h1>
       <p data-i18n="heroDescription">Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.</p>
       <div class="calendar-subscribe">
-        <a href="${escapeHtml(webcalCalendarUrl)}" aria-label="Steam etkinlik takvimine takvim uygulamasıyla abone ol" data-i18n="subscribe" data-i18n-aria-label="subscribeAria">Takvime abone ol</a>
+        <a href="${escapeHtml(httpsCalendarUrl)}" download="steam-etkinlikleri.ics" aria-label="Steam etkinlik takvimini ICS dosyası olarak indir" data-i18n="subscribe" data-i18n-aria-label="subscribeAria">Takvimi indir (.ics)</a>
         <div class="calendar-copy">
           <label class="sr-only" for="calendar-url" data-i18n="calendarUrl">Takvim abonelik bağlantısı</label>
           <input id="calendar-url" type="url" value="${escapeHtml(httpsCalendarUrl)}" readonly>
@@ -1055,10 +1054,13 @@ export function renderReport(
         tr: "Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.",
         en: "Track festivals, seasonal sales, and registration milestones from Steam’s official calendar in one Joygame Select operations view.",
       },
-      subscribe: { tr: "Takvime abone ol", en: "Subscribe to calendar" },
+      subscribe: {
+        tr: "Takvimi indir (.ics)",
+        en: "Download calendar (.ics)",
+      },
       subscribeAria: {
-        tr: "Steam etkinlik takvimine takvim uygulamasıyla abone ol",
-        en: "Subscribe to the Steam event calendar with a calendar app",
+        tr: "Steam etkinlik takvimini ICS dosyası olarak indir",
+        en: "Download the Steam event calendar as an ICS file",
       },
       calendarUrl: {
         tr: "Takvim abonelik bağlantısı",
@@ -1683,14 +1685,6 @@ export function renderReport(
         .slice(0, 5);
     }
 
-    function defaultCapsuleUrl(appId) {
-      return appId
-        ? "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" +
-            encodeURIComponent(appId) +
-            "/library_600x900.jpg"
-        : "";
-    }
-
     function normalizeGames(value) {
       if (!Array.isArray(value)) return [];
       return value
@@ -1714,11 +1708,7 @@ export function renderReport(
             ? game.releaseStatus
             : "unreleased",
           localMultiplayer: game.localMultiplayer === true,
-          capsuleImageUrl:
-            safeSteamImage(game.capsuleImageUrl) ||
-            defaultCapsuleUrl(
-              String(game.appId || "").replace(/\\D/g, "").slice(0, 12),
-            ),
+          capsuleImageUrl: safeSteamImage(game.capsuleImageUrl),
           nextFestHistory: normalizeNextFestHistory(
             game.nextFestHistory,
           ),
@@ -1727,6 +1717,7 @@ export function renderReport(
           )
             ? String(game.steamDetailsCheckedAt)
             : "",
+          steamImageVersion: Number(game.steamImageVersion || 0),
         }))
         .filter((game) => game.name);
     }
@@ -1777,9 +1768,7 @@ export function renderReport(
     }
 
     function createGameCapsule(game) {
-      const imageUrl =
-        safeSteamImage(game.capsuleImageUrl) ||
-        defaultCapsuleUrl(game.appId);
+      const imageUrl = safeSteamImage(game.capsuleImageUrl);
       if (!imageUrl) {
         const fallback = document.createElement("span");
         fallback.className = "game-capsule-fallback";
@@ -2042,7 +2031,8 @@ export function renderReport(
         (game) =>
           game.appId &&
           (!game.steamDetailsCheckedAt ||
-            Date.parse(game.steamDetailsCheckedAt) < refreshCutoff),
+            Date.parse(game.steamDetailsCheckedAt) < refreshCutoff ||
+            game.steamImageVersion < 2),
       );
       let changed = false;
       for (const game of pending) {
@@ -2071,12 +2061,12 @@ export function renderReport(
           }
           game.capsuleImageUrl =
             safeSteamImage(details.capsuleImageUrl) ||
-            game.capsuleImageUrl ||
-            defaultCapsuleUrl(game.appId);
+            game.capsuleImageUrl;
           game.nextFestHistory = normalizeNextFestHistory(
             details.nextFestHistory,
           );
           game.steamDetailsCheckedAt = new Date().toISOString();
+          game.steamImageVersion = 2;
           changed = true;
         } catch {}
       }
@@ -2104,8 +2094,7 @@ export function renderReport(
         releaseStatus: gameReleaseInput.value,
         localMultiplayer: gameLocalInput.value === "yes",
         capsuleImageUrl:
-          selectedSteamDetails?.capsuleImageUrl ||
-          defaultCapsuleUrl(gameAppIdInput.value.replace(/\\D/g, "").slice(0, 12)),
+          selectedSteamDetails?.capsuleImageUrl || "",
         nextFestHistory:
           selectedSteamDetails?.nextFestHistory ||
           games.find((item) => item.id === gameIdInput.value)?.nextFestHistory ||
@@ -2114,6 +2103,10 @@ export function renderReport(
           ? new Date().toISOString()
           : games.find((item) => item.id === gameIdInput.value)
               ?.steamDetailsCheckedAt || "",
+        steamImageVersion: selectedSteamDetails
+          ? 2
+          : games.find((item) => item.id === gameIdInput.value)
+              ?.steamImageVersion || 0,
       };
       const index = games.findIndex((item) => item.id === game.id);
       if (index >= 0) games[index] = game;

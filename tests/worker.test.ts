@@ -31,6 +31,8 @@ const appDetails = {
       release_date: { coming_soon: false },
       genres: [{ description: "RPG" }],
       categories: [{ description: "Shared/Split Screen Co-op" }],
+      header_image:
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg",
     },
   },
 };
@@ -127,7 +129,7 @@ describe("Steam search Worker", () => {
       releaseStatus: "released",
       localMultiplayer: true,
       capsuleImageUrl:
-        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900.jpg",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg",
       nextFestHistory: [
         expect.objectContaining({
           title: "We are joining Steam Next Fest!",

@@ -138,8 +138,7 @@ function steamAppModel(appId, details, storeHtml, newsPayload) {
     releaseStatus,
     localMultiplayer: data ? localMultiplayer : null,
     storeUrl: `https://store.steampowered.com/app/${appId}/`,
-    capsuleImageUrl:
-      `https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/${appId}/library_600x900.jpg`,
+    capsuleImageUrl: String(data?.header_image || "").trim(),
     nextFestHistory: parseNextFestHistory(appId, newsPayload),
   };
 }

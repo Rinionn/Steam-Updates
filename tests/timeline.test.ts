@@ -69,9 +69,9 @@ describe("event timeline", () => {
     expect(html).toContain("data-event-timeline");
     expect(html).toContain('id="etkinlik-test-fest"');
     expect(html).toContain("timeline-highlight");
-    expect(html).toContain("Takvime abone ol");
+    expect(html).toContain("Takvimi indir (.ics)");
     expect(html).toContain(
-      "webcal://rinionn.github.io/Steam-Updates/steam-etkinlikleri.ics",
+      'href="https://rinionn.github.io/Steam-Updates/steam-etkinlikleri.ics" download="steam-etkinlikleri.ics"',
     );
     expect(html).toContain("data-ics=");
     expect(html).toContain("data-task-aliases=");
