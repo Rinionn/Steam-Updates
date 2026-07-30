@@ -353,12 +353,6 @@ export function renderReport(
   changelog: ChangeRecord[] = [],
 ): string {
   const model = createReportModel(snapshot, config);
-  const httpsCalendarUrl = new URL(
-    "steam-etkinlikleri.ics",
-    config.dashboardUrl.endsWith("/")
-      ? config.dashboardUrl
-      : `${config.dashboardUrl}/`,
-  ).toString();
   const changeCutoff = model.generated.minus({ days: 90 }).toMillis();
   const generatedAt = model.generated.toMillis();
   const recentChanges = changelog
@@ -520,12 +514,6 @@ export function renderReport(
     .eyebrow { color: var(--color-accent-pink); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; }
     h1 { margin: 12px 0 10px; overflow-wrap: anywhere; font-family: Montserrat, Inter, sans-serif; font-size: clamp(34px, 12vw, 70px); font-weight: 900; line-height: .98; letter-spacing: -.045em; text-transform: uppercase; }
     .hero p { max-width: 690px; color: var(--color-hero-copy); font-size: 16px; line-height: 1.65; margin: 0; }
-    .calendar-subscribe { display:grid; grid-template-columns:1fr; gap:9px; margin-top:18px; }
-    .calendar-subscribe > a { justify-self:start; min-height:44px; padding:12px 14px; border-radius:11px; color:var(--color-on-accent); background:var(--gradient-brand); font-size:12px; font-weight:800; text-decoration:none; }
-    .calendar-copy { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:7px; min-width:0; }
-    .calendar-copy input { min-width:0; width:100%; padding:10px 11px; border:1px solid var(--color-hero-line); border-radius:10px; color:var(--color-hero-copy); background:var(--color-hero-card); font-size:11px; }
-    .calendar-copy button { min-height:40px; padding:8px 11px; color:var(--color-on-accent); border-color:var(--color-hero-line); background:var(--color-hero-card); font-size:11px; }
-    .calendar-copy-status { min-height:1.4em; color:var(--color-hero-muted); font-size:10px; }
     .event-timeline { margin-top:28px; overflow:hidden; border:1px solid var(--color-hero-line); border-radius:20px; background:var(--color-hero-card); }
     .timeline-status { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; padding:13px 14px; border-bottom:1px solid var(--color-hero-line); color:var(--color-hero-copy); font-size:11px; }
     .timeline-status time { flex:0 1 42%; font-weight:800; }
@@ -700,8 +688,6 @@ export function renderReport(
       .hero { padding:34px; }
       h1 { font-size:clamp(36px, 7vw, 70px); }
       .hero p { font-size:17px; }
-      .calendar-subscribe { grid-template-columns:auto minmax(0,1fr); align-items:start; }
-      .calendar-copy-status { grid-column:2; }
       .timeline-status { align-items:center; padding:13px 16px; font-size:12px; }
       .timeline-grid { grid-template-columns:repeat(6,minmax(0,1fr)); }
       .timeline-month { padding:14px 11px 16px; }
@@ -748,15 +734,6 @@ export function renderReport(
       <span class="eyebrow" data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span>
       <h1 data-i18n-html="title">Steam Etkinlik<br>Radarı</h1>
       <p data-i18n="heroDescription">Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.</p>
-      <div class="calendar-subscribe">
-        <a href="${escapeHtml(httpsCalendarUrl)}" download="steam-etkinlikleri.ics" aria-label="Steam etkinlik takvimini ICS dosyası olarak indir" data-i18n="subscribe" data-i18n-aria-label="subscribeAria">Takvimi indir (.ics)</a>
-        <div class="calendar-copy">
-          <label class="sr-only" for="calendar-url" data-i18n="calendarUrl">Takvim abonelik bağlantısı</label>
-          <input id="calendar-url" type="url" value="${escapeHtml(httpsCalendarUrl)}" readonly>
-          <button type="button" data-copy-calendar-url aria-label="Takvim abonelik bağlantısını kopyala" data-i18n="copy" data-i18n-aria-label="copyAria">Kopyala</button>
-        </div>
-        <span class="calendar-copy-status" data-calendar-copy-status role="status" aria-live="polite"></span>
-      </div>
       ${renderTimeline(model, config.timezone)}
     </section>
 
@@ -1054,23 +1031,6 @@ export function renderReport(
         tr: "Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.",
         en: "Track festivals, seasonal sales, and registration milestones from Steam’s official calendar in one Joygame Select operations view.",
       },
-      subscribe: {
-        tr: "Takvimi indir (.ics)",
-        en: "Download calendar (.ics)",
-      },
-      subscribeAria: {
-        tr: "Steam etkinlik takvimini ICS dosyası olarak indir",
-        en: "Download the Steam event calendar as an ICS file",
-      },
-      calendarUrl: {
-        tr: "Takvim abonelik bağlantısı",
-        en: "Calendar subscription URL",
-      },
-      copy: { tr: "Kopyala", en: "Copy" },
-      copyAria: {
-        tr: "Takvim abonelik bağlantısını kopyala",
-        en: "Copy calendar subscription URL",
-      },
       myGames: { tr: "Oyunlarım", en: "My Games" },
       gamesIntro: {
         tr: "Etiketleri birebir karşılaştırarak uygun olabilecek temalı festivalleri gösterir.",
@@ -1294,23 +1254,6 @@ export function renderReport(
       });
     });
     applyDescriptionLanguage();
-
-    const calendarUrlInput = document.querySelector("#calendar-url");
-    const copyCalendarUrl = document.querySelector("[data-copy-calendar-url]");
-    const calendarCopyStatus = document.querySelector("[data-calendar-copy-status]");
-    copyCalendarUrl?.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(calendarUrlInput.value);
-      } catch {
-        calendarUrlInput.select();
-        document.execCommand("copy");
-        calendarUrlInput.setSelectionRange(0, 0);
-      }
-      calendarCopyStatus.textContent = localized(
-        "Bağlantı kopyalandı.",
-        "Link copied.",
-      );
-    });
 
     document.querySelectorAll("[data-ics]").forEach((button) => {
       button.addEventListener("click", () => {
