@@ -93,6 +93,15 @@ workflow** ile bir defalık test gönderimi yapılabilir.
 - `npm run daily` — senkronizasyon + liste + günlük e-posta.
 - `npm run test` — çevrimdışı ayrıştırıcı testleri.
 
+## Ekip operasyon verisi
+
+Cloudflare Worker, `DB` adlı D1 bağlantısı bulunduğunda oyun profillerini,
+görev durumlarını ve başvuru statülerini ekip üyeleri arasında senkronize
+eder. İlk dağıtım `steam-etkinlik-radari` veritabanını hazırlar ve
+`db/schema.sql` şemasını uygular. D1 kullanılamazsa panel mevcut localStorage
+verilerini koruyarak yerel çalışma moduna geçer. Başvuru sorumlusu ve serbest
+notlar merkezi veritabanına gönderilmez; yalnız kullanıcının cihazında tutulur.
+
 Aynı gün test e-postasını tekrar göndermek için:
 
 ```powershell
