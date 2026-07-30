@@ -1,7 +1,9 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   default as worker,
+  getSteamApp,
   parseSteamSuggestions,
+  parseSteamTags,
   searchSteam,
 } from "../worker/index.js";
 
@@ -13,6 +15,24 @@ const steamHtml = `
   <a class="match" data-ds-appid="2138330" href="https://store.steampowered.com/app/2138330/Phantom_Liberty/">
     <div class="match_name">Cyberpunk 2077: Phantom Liberty</div>
   </a>`;
+
+const storeHtml = `
+  <a class="app_tag" href="/tags/en/Cyberpunk/">Cyberpunk</a>
+  <a class="app_tag" href="/tags/en/RPG/">RPG</a>
+  <a class="app_tag" href="/tags/en/Cyberpunk/">Cyberpunk</a>`;
+
+const appDetails = {
+  "1091500": {
+    success: true,
+    data: {
+      name: "Cyberpunk 2077",
+      demos: [{ appid: 123 }],
+      release_date: { coming_soon: false },
+      genres: [{ description: "RPG" }],
+      categories: [{ description: "Shared/Split Screen Co-op" }],
+    },
+  },
+};
 
 afterEach(() => {
   vi.unstubAllGlobals();
@@ -36,6 +56,43 @@ describe("Steam search Worker", () => {
           "https://store.steampowered.com/app/2138330/Phantom_Liberty/",
       },
     ]);
+  });
+
+  it("Steam mağaza etiketlerini tekrar etmeden ayrıştırır", () => {
+    expect(parseSteamTags(storeHtml)).toEqual(["Cyberpunk", "RPG"]);
+  });
+
+  it("seçilen oyunun doğrulanabilir Steam alanlarını döndürür", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi
+        .fn()
+        .mockResolvedValueOnce(
+          new Response(JSON.stringify(appDetails), { status: 200 }),
+        )
+        .mockResolvedValueOnce(new Response(storeHtml, { status: 200 })),
+    );
+    const response = await getSteamApp(
+      new Request(
+        "https://steamradar.gaminginturkey.com/api/steam-app?appid=1091500",
+        {
+          headers: {
+            "cf-access-authenticated-user-email":
+              "editor@gaminginturkey.com",
+          },
+        },
+      ),
+      { ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com" },
+    );
+    expect(response.status).toBe(200);
+    expect(await response.json()).toMatchObject({
+      appId: "1091500",
+      name: "Cyberpunk 2077",
+      tags: ["Cyberpunk", "RPG"],
+      demoStatus: "live",
+      releaseStatus: "released",
+      localMultiplayer: true,
+    });
   });
 
   it("yalnız gaminginturkey.com Access kullanıcısına arama yaptırır", async () => {

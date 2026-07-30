@@ -48,9 +48,11 @@ describe("event timeline", () => {
     expect(html.match(/data-timeline-month="/g)).toHaveLength(12);
     expect(html).toContain('href="#etkinlik-test-fest"');
     expect(html).toContain("3–10");
-    expect(html).toContain("Başvuru · 1 Ağu");
+    expect(html).toContain('data-i18n="registration">Başvuru</span> · 1 Ağu');
     expect(html).toContain("En yakın kritik tarih:");
-    expect(html).toContain("1 Ağustos 2026 · 2 gün");
+    expect(html).toContain(
+      '1 Ağustos 2026 · 2 <span data-i18n="days">gün</span>',
+    );
     expect(html).toContain("data-timeline-previous");
     expect(html).toContain("data-timeline-next");
   });

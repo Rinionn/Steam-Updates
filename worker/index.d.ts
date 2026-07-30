@@ -5,6 +5,16 @@ export interface SteamSuggestion {
   storeUrl: string;
 }
 
+export interface SteamAppDetails {
+  appId: string;
+  name: string;
+  tags: string[];
+  demoStatus: "none" | "live" | null;
+  releaseStatus: "unreleased" | "early_access" | "released" | null;
+  localMultiplayer: boolean | null;
+  storeUrl: string;
+}
+
 export interface WorkerEnvironment {
   ALLOWED_EMAIL_DOMAIN?: string;
   DASHBOARD_ORIGIN?: string;
@@ -15,8 +25,13 @@ export interface WorkerEnvironment {
 }
 
 export function parseSteamSuggestions(html: string): SteamSuggestion[];
+export function parseSteamTags(html: string): string[];
 
 export function searchSteam(
+  request: Request,
+  env: WorkerEnvironment,
+): Promise<Response>;
+export function getSteamApp(
   request: Request,
   env: WorkerEnvironment,
 ): Promise<Response>;

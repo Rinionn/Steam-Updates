@@ -197,7 +197,7 @@ function eventRow(
       </div>
       <div class="event-main">
         <div class="event-heading">
-          <span class="event-kind ${event.kind}"><span aria-hidden="true">${kindIcons[event.kind]}</span> ${escapeHtml(kindLabels[event.kind])}</span>
+          <span class="event-kind ${event.kind}"><span aria-hidden="true">${kindIcons[event.kind]}</span> <span data-i18n="${event.kind === "themed_fest" ? "themedFestival" : event.kind === "next_fest" ? "nextFest" : "seasonalSale"}">${escapeHtml(kindLabels[event.kind])}</span></span>
           <h3>${escapeHtml(event.name)}</h3>
         </div>
         ${
@@ -234,14 +234,14 @@ function eventRow(
           rel="noreferrer"
           aria-label="${escapeHtml(`${event.name} için ${event.registrationUrl ? "kayıt sayfasını" : "detayları"} aç (yeni sekme)`)}"
         >
-          ${event.registrationUrl ? "Kayıt sayfası" : "Detaylar"} <span aria-hidden="true">↗</span>
+          <span data-i18n="${event.registrationUrl ? "registrationPage" : "details"}">${event.registrationUrl ? "Kayıt sayfası" : "Detaylar"}</span> <span aria-hidden="true">↗</span>
         </a>
         <button
           class="event-ics"
           type="button"
           data-ics="${escapeHtml(calendarPayload)}"
           aria-label="${escapeHtml(`${event.name} etkinliğini ICS olarak indir`)}"
-        >Takvime ekle <span aria-hidden="true">↓</span></button>
+        ><span data-i18n="addToCalendar">Takvime ekle</span> <span aria-hidden="true">↓</span></button>
       </div>
       ${
         tasks.length
@@ -685,19 +685,19 @@ export function renderReport(
 <body>
   <main class="shell">
     <section class="hero">
-      <div class="language-switch" role="group" aria-label="Festival açıklaması dili">
+      <div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel">
         <button class="active" type="button" data-language="tr" aria-pressed="true">TR</button>
         <button type="button" data-language="en" aria-pressed="false">EN</button>
       </div>
-      <span class="eyebrow">Joygame Select · Steamworks Operasyonları</span>
-      <h1>Steam Etkinlik<br>Radarı</h1>
-      <p>Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.</p>
+      <span class="eyebrow" data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span>
+      <h1 data-i18n-html="title">Steam Etkinlik<br>Radarı</h1>
+      <p data-i18n="heroDescription">Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.</p>
       <div class="calendar-subscribe">
-        <a href="${escapeHtml(webcalCalendarUrl)}" aria-label="Steam etkinlik takvimine takvim uygulamasıyla abone ol">Takvime abone ol</a>
+        <a href="${escapeHtml(webcalCalendarUrl)}" aria-label="Steam etkinlik takvimine takvim uygulamasıyla abone ol" data-i18n="subscribe" data-i18n-aria-label="subscribeAria">Takvime abone ol</a>
         <div class="calendar-copy">
-          <label class="sr-only" for="calendar-url">Takvim abonelik bağlantısı</label>
+          <label class="sr-only" for="calendar-url" data-i18n="calendarUrl">Takvim abonelik bağlantısı</label>
           <input id="calendar-url" type="url" value="${escapeHtml(httpsCalendarUrl)}" readonly>
-          <button type="button" data-copy-calendar-url aria-label="Takvim abonelik bağlantısını kopyala">Kopyala</button>
+          <button type="button" data-copy-calendar-url aria-label="Takvim abonelik bağlantısını kopyala" data-i18n="copy" data-i18n-aria-label="copyAria">Kopyala</button>
         </div>
         <span class="calendar-copy-status" data-calendar-copy-status role="status" aria-live="polite"></span>
       </div>
@@ -706,14 +706,14 @@ export function renderReport(
 
     <section class="section" aria-labelledby="games-heading">
       <div class="section-title">
-        <h2 id="games-heading">Oyunlarım</h2>
-        <p>Etiketleri birebir karşılaştırarak uygun olabilecek temalı festivalleri gösterir.</p>
+        <h2 id="games-heading" data-i18n="myGames">Oyunlarım</h2>
+        <p data-i18n="gamesIntro">Etiketleri birebir karşılaştırarak uygun olabilecek temalı festivalleri gösterir.</p>
       </div>
       <div class="games-panel">
         <form class="game-form" data-game-form>
           <input type="hidden" data-game-id>
           <div class="game-field">
-            <label for="game-name">Oyun adı</label>
+            <label for="game-name" data-i18n="gameName">Oyun adı</label>
             <div class="steam-game-search">
               <input
                 id="game-name"
@@ -735,56 +735,56 @@ export function renderReport(
                 aria-label="Steam oyun sonuçları"
                 hidden
               ></div>
-              <div class="steam-search-status" data-steam-search-status role="status" aria-live="polite">En az 2 karakter yazın.</div>
+              <div class="steam-search-status" data-steam-search-status role="status" aria-live="polite" data-i18n="typeTwoChars">En az 2 karakter yazın.</div>
             </div>
           </div>
           <label class="game-field">
-            Steam App ID <span>(opsiyonel)</span>
+            Steam App ID <span data-i18n="optional">(opsiyonel)</span>
             <input type="text" data-game-app-id inputmode="numeric" pattern="[0-9]*" maxlength="12" autocomplete="off">
           </label>
           <label class="game-field game-field-wide">
-            Steam etiketleri
-            <input type="text" data-game-tags placeholder="Örn. Cyberpunk, Sci-fi, RPG" autocomplete="off">
+            <span data-i18n="steamTags">Steam etiketleri</span>
+            <input type="text" data-game-tags placeholder="Örn. Cyberpunk, Sci-fi, RPG" data-i18n-placeholder="tagsPlaceholder" autocomplete="off">
           </label>
           <label class="game-field">
-            Demo durumu
+            <span data-i18n="demoStatus">Demo durumu</span>
             <select data-game-demo-status>
-              <option value="none">Yok</option>
-              <option value="preparing">Hazırlanıyor</option>
-              <option value="live">Yayında</option>
+              <option value="none" data-i18n="none">Yok</option>
+              <option value="preparing" data-i18n="preparing">Hazırlanıyor</option>
+              <option value="live" data-i18n="live">Yayında</option>
             </select>
           </label>
           <label class="game-field">
-            Çıkış durumu
+            <span data-i18n="releaseStatus">Çıkış durumu</span>
             <select data-game-release-status>
-              <option value="unreleased">Yayınlanmadı</option>
-              <option value="early_access">Erken erişim</option>
-              <option value="released">Yayında</option>
+              <option value="unreleased" data-i18n="unreleased">Yayınlanmadı</option>
+              <option value="early_access" data-i18n="earlyAccess">Erken erişim</option>
+              <option value="released" data-i18n="live">Yayında</option>
             </select>
           </label>
           <label class="game-field">
-            Yerel çok oyunculu
+            <span data-i18n="localMultiplayer">Yerel çok oyunculu</span>
             <select data-game-local-multiplayer>
-              <option value="no">Hayır</option>
-              <option value="yes">Evet</option>
+              <option value="no" data-i18n="no">Hayır</option>
+              <option value="yes" data-i18n="yes">Evet</option>
             </select>
           </label>
           <div class="game-form-actions">
-            <button type="submit" data-game-submit>Oyunu kaydet</button>
-            <button type="button" data-game-cancel hidden>Vazgeç</button>
+            <button type="submit" data-game-submit data-i18n="saveGame">Oyunu kaydet</button>
+            <button type="button" data-game-cancel hidden data-i18n="cancel">Vazgeç</button>
           </div>
         </form>
-        <p class="game-help">Etiket adlarını oyunun Steam mağaza sayfasındaki biçimiyle, virgülle ayırarak girin. Benzer kelimeler veya tahminler eşleşme sayılmaz.</p>
+        <p class="game-help" data-i18n="gameHelp">Etiket adlarını oyunun Steam mağaza sayfasındaki biçimiyle, virgülle ayırarak girin. Benzer kelimeler veya tahminler eşleşme sayılmaz.</p>
         <div class="game-list" data-games-list></div>
-        <p class="game-match-summary" data-game-match-summary role="status" aria-live="polite">Eşleşme için oyun ekleyin.</p>
+        <p class="game-match-summary" data-game-match-summary role="status" aria-live="polite" data-i18n="addGamePrompt">Eşleşme için oyun ekleyin.</p>
       </div>
     </section>
 
     <section class="section">
       <details class="change-log">
         <summary>
-          <span>Son 90 günde ne değişti</span>
-          <span class="change-count">${recentChanges.length} kayıt</span>
+          <span data-i18n="changesTitle">Son 90 günde ne değişti</span>
+          <span class="change-count">${recentChanges.length} <span data-i18n="records">kayıt</span></span>
         </summary>
         ${
           recentChanges.length
@@ -796,8 +796,8 @@ export function renderReport(
 
     <section class="section">
       <div class="section-title">
-        <h2>Yaklaşan son tarihler</h2>
-        <p>Etkinlik bazında yapılacaklar · İstanbul saatine göre</p>
+        <h2 data-i18n="upcomingDeadlines">Yaklaşan son tarihler</h2>
+        <p data-i18n="deadlinesIntro">Etkinlik bazında yapılacaklar · İstanbul saatine göre</p>
       </div>
       ${
         featuredDeadlines.length
@@ -810,29 +810,29 @@ export function renderReport(
 
     <section class="section">
       <div class="section-title">
-        <h2>Etkinlik takvimi</h2>
-        <p>Son güncelleme: ${escapeHtml(model.generated.setLocale("tr").toFormat("d LLLL yyyy, HH:mm"))}</p>
+        <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
+        <p><span data-i18n="lastUpdated">Son güncelleme:</span> ${escapeHtml(model.generated.setLocale("tr").toFormat("d LLLL yyyy, HH:mm"))}</p>
       </div>
       <div class="toolbar">
-        <label class="sr-only" for="search">Etkinlik ara</label>
-        <input class="search" id="search" type="search" placeholder="Etkinlik ara…" autocomplete="off">
+        <label class="sr-only" for="search" data-i18n="searchEvents">Etkinlik ara</label>
+        <input class="search" id="search" type="search" placeholder="Etkinlik ara…" data-i18n-placeholder="searchEventsPlaceholder" autocomplete="off">
         <div class="filters" role="group" aria-label="Etkinlik filtresi">
-          <button class="active" type="button" data-filter="all" aria-pressed="true">Tümü</button>
-          <button type="button" data-filter="themed_fest" aria-pressed="false">Festivaller</button>
+          <button class="active" type="button" data-filter="all" aria-pressed="true" data-i18n="all">Tümü</button>
+          <button type="button" data-filter="themed_fest" aria-pressed="false" data-i18n="festivals">Festivaller</button>
           <button type="button" data-filter="next_fest" aria-pressed="false">Next Fest</button>
-          <button type="button" data-filter="seasonal_sale" aria-pressed="false">İndirimler</button>
+          <button type="button" data-filter="seasonal_sale" aria-pressed="false" data-i18n="sales">İndirimler</button>
         </div>
         <div class="status-filters" role="group" aria-label="Durum filtresi">
-          <button type="button" data-registration-filter aria-pressed="false">Başvurusu hâlâ açık olanlar</button>
-          <button type="button" data-incomplete-filter aria-pressed="false">Tamamlanmamış görevi olanlar</button>
-          <button class="games-only-filter" type="button" data-games-filter aria-pressed="false">★ Sadece oyunlarımla eşleşenler</button>
+          <button type="button" data-registration-filter aria-pressed="false" data-i18n="openRegistration">Başvurusu hâlâ açık olanlar</button>
+          <button type="button" data-incomplete-filter aria-pressed="false" data-i18n="incompleteTasks">Tamamlanmamış görevi olanlar</button>
+          <button class="games-only-filter" type="button" data-games-filter aria-pressed="false" data-i18n="matchingGamesOnly">★ Sadece oyunlarımla eşleşenler</button>
         </div>
       </div>
       <div class="task-state-toolbar">
         <div class="task-state-actions" role="group" aria-label="Görev durumunu yönet">
-          <button type="button" data-task-export>Durumu dışa aktar</button>
-          <button type="button" data-task-import>Durumu içe aktar</button>
-          <button type="button" data-task-reset>Tümünü sıfırla</button>
+          <button type="button" data-task-export data-i18n="exportState">Durumu dışa aktar</button>
+          <button type="button" data-task-import data-i18n="importState">Durumu içe aktar</button>
+          <button type="button" data-task-reset data-i18n="resetAll">Tümünü sıfırla</button>
           <input
             type="file"
             accept=".json,application/json"
@@ -853,9 +853,9 @@ export function renderReport(
           ),
         )
         .join("")}</div>
-      <div class="empty" id="no-results" role="status" aria-live="polite" hidden>Bu filtrelerle eşleşen etkinlik yok.</div>
+      <div class="empty" id="no-results" role="status" aria-live="polite" hidden data-i18n="noResults">Bu filtrelerle eşleşen etkinlik yok.</div>
     </section>
-    <footer>Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
+    <footer data-i18n="footer">Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
   </main>
   <script>
     const buttons = [...document.querySelectorAll("[data-filter]")];
@@ -984,13 +984,181 @@ export function renderReport(
         localStorage.getItem(languageStorageKey) === "en" ? "en" : "tr";
     } catch {}
 
+    const uiCopy = {
+      languageLabel: { tr: "Arayüz dili", en: "Interface language" },
+      eyebrow: {
+        tr: "Joygame Select · Steamworks Operasyonları",
+        en: "Joygame Select · Steamworks Operations",
+      },
+      title: { tr: "Steam Etkinlik<br>Radarı", en: "Steam Event<br>Radar" },
+      heroDescription: {
+        tr: "Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.",
+        en: "Track festivals, seasonal sales, and registration milestones from Steam’s official calendar in one Joygame Select operations view.",
+      },
+      subscribe: { tr: "Takvime abone ol", en: "Subscribe to calendar" },
+      subscribeAria: {
+        tr: "Steam etkinlik takvimine takvim uygulamasıyla abone ol",
+        en: "Subscribe to the Steam event calendar with a calendar app",
+      },
+      calendarUrl: {
+        tr: "Takvim abonelik bağlantısı",
+        en: "Calendar subscription URL",
+      },
+      copy: { tr: "Kopyala", en: "Copy" },
+      copyAria: {
+        tr: "Takvim abonelik bağlantısını kopyala",
+        en: "Copy calendar subscription URL",
+      },
+      myGames: { tr: "Oyunlarım", en: "My Games" },
+      gamesIntro: {
+        tr: "Etiketleri birebir karşılaştırarak uygun olabilecek temalı festivalleri gösterir.",
+        en: "Shows potentially relevant themed festivals by matching tags exactly.",
+      },
+      gameName: { tr: "Oyun adı", en: "Game name" },
+      typeTwoChars: {
+        tr: "En az 2 karakter yazın.",
+        en: "Enter at least 2 characters.",
+      },
+      optional: { tr: "(opsiyonel)", en: "(optional)" },
+      steamTags: { tr: "Steam etiketleri", en: "Steam tags" },
+      tagsPlaceholder: {
+        tr: "Örn. Cyberpunk, Sci-fi, RPG",
+        en: "E.g. Cyberpunk, Sci-fi, RPG",
+      },
+      demoStatus: { tr: "Demo durumu", en: "Demo status" },
+      none: { tr: "Yok", en: "None" },
+      preparing: { tr: "Hazırlanıyor", en: "In preparation" },
+      live: { tr: "Yayında", en: "Live" },
+      releaseStatus: { tr: "Çıkış durumu", en: "Release status" },
+      unreleased: { tr: "Yayınlanmadı", en: "Unreleased" },
+      earlyAccess: { tr: "Erken erişim", en: "Early access" },
+      localMultiplayer: {
+        tr: "Yerel çok oyunculu",
+        en: "Local multiplayer",
+      },
+      no: { tr: "Hayır", en: "No" },
+      yes: { tr: "Evet", en: "Yes" },
+      saveGame: { tr: "Oyunu kaydet", en: "Save game" },
+      cancel: { tr: "Vazgeç", en: "Cancel" },
+      gameHelp: {
+        tr: "Etiket adlarını oyunun Steam mağaza sayfasındaki biçimiyle, virgülle ayırarak girin. Benzer kelimeler veya tahminler eşleşme sayılmaz.",
+        en: "Enter tag names exactly as shown on the game’s Steam store page, separated by commas. Similar words and guesses do not count as matches.",
+      },
+      addGamePrompt: {
+        tr: "Eşleşme için oyun ekleyin.",
+        en: "Add a game to find matches.",
+      },
+      changesTitle: {
+        tr: "Son 90 günde ne değişti",
+        en: "What changed in the last 90 days",
+      },
+      records: { tr: "kayıt", en: "records" },
+      registration: { tr: "Başvuru", en: "Registration" },
+      noPlannedEvents: {
+        tr: "Planlanmış etkinlik yok",
+        en: "No events scheduled",
+      },
+      nearestCritical: {
+        tr: "En yakın kritik tarih:",
+        en: "Nearest critical deadline:",
+      },
+      days: { tr: "gün", en: "days" },
+      today: { tr: "Bugün", en: "Today" },
+      previous: { tr: "Önceki", en: "Previous" },
+      next: { tr: "Sonraki", en: "Next" },
+      upcomingDeadlines: {
+        tr: "Yaklaşan son tarihler",
+        en: "Upcoming deadlines",
+      },
+      deadlinesIntro: {
+        tr: "Etkinlik bazında yapılacaklar · İstanbul saatine göre",
+        en: "Tasks by event · Istanbul time",
+      },
+      eventCalendar: { tr: "Etkinlik takvimi", en: "Event calendar" },
+      lastUpdated: { tr: "Son güncelleme:", en: "Last updated:" },
+      searchEvents: { tr: "Etkinlik ara", en: "Search events" },
+      searchEventsPlaceholder: {
+        tr: "Etkinlik ara…",
+        en: "Search events…",
+      },
+      all: { tr: "Tümü", en: "All" },
+      festivals: { tr: "Festivaller", en: "Festivals" },
+      sales: { tr: "İndirimler", en: "Sales" },
+      themedFestival: { tr: "Temalı festival", en: "Themed festival" },
+      nextFest: { tr: "Next Fest", en: "Next Fest" },
+      seasonalSale: { tr: "Sezon indirimi", en: "Seasonal sale" },
+      registrationPage: {
+        tr: "Kayıt sayfası",
+        en: "Registration page",
+      },
+      details: { tr: "Detaylar", en: "Details" },
+      addToCalendar: { tr: "Takvime ekle", en: "Add to calendar" },
+      openRegistration: {
+        tr: "Başvurusu hâlâ açık olanlar",
+        en: "Registration still open",
+      },
+      incompleteTasks: {
+        tr: "Tamamlanmamış görevi olanlar",
+        en: "With incomplete tasks",
+      },
+      matchingGamesOnly: {
+        tr: "★ Sadece oyunlarımla eşleşenler",
+        en: "★ Matches for my games only",
+      },
+      exportState: { tr: "Durumu dışa aktar", en: "Export state" },
+      importState: { tr: "Durumu içe aktar", en: "Import state" },
+      resetAll: { tr: "Tümünü sıfırla", en: "Reset all" },
+      noResults: {
+        tr: "Bu filtrelerle eşleşen etkinlik yok.",
+        en: "No events match these filters.",
+      },
+      footer: {
+        tr: "Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.",
+        en: "Joygame Select · Steam Operations · Source: Valve Steamworks documentation · This report is read-only.",
+      },
+    };
+
+    function translate(key) {
+      return uiCopy[key]?.[descriptionLanguage] || "";
+    }
+
+    function localized(tr, en) {
+      return descriptionLanguage === "en" ? en : tr;
+    }
+
     function applyDescriptionLanguage() {
+      document.documentElement.lang = descriptionLanguage;
       document.querySelectorAll("[data-event-description]").forEach((copy) => {
         copy.textContent =
           descriptionLanguage === "en"
             ? copy.dataset.descriptionEn
             : copy.dataset.descriptionTr;
         copy.lang = descriptionLanguage;
+      });
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        element.textContent = translate(element.dataset.i18n);
+      });
+      document.querySelectorAll("[data-i18n-html]").forEach((element) => {
+        element.innerHTML = translate(element.dataset.i18nHtml);
+      });
+      document
+        .querySelectorAll("[data-i18n-placeholder]")
+        .forEach((element) => {
+          element.placeholder = translate(element.dataset.i18nPlaceholder);
+        });
+      document
+        .querySelectorAll("[data-i18n-aria-label]")
+        .forEach((element) => {
+          element.setAttribute(
+            "aria-label",
+            translate(element.dataset.i18nAriaLabel),
+          );
+        });
+      document.querySelectorAll("[data-month-tr]").forEach((element) => {
+        element.textContent =
+          descriptionLanguage === "en"
+            ? element.dataset.monthEn
+            : element.dataset.monthTr;
       });
       languageButtons.forEach((button) => {
         setToggleState(
@@ -1007,6 +1175,9 @@ export function renderReport(
           localStorage.setItem(languageStorageKey, descriptionLanguage);
         } catch {}
         applyDescriptionLanguage();
+        renderGames();
+        updateGameMatches();
+        window.dispatchEvent(new Event("resize"));
       });
     });
     applyDescriptionLanguage();
@@ -1062,6 +1233,7 @@ export function renderReport(
     );
     let steamSearchTimer = 0;
     let steamSearchController;
+    let steamDetailController;
     let steamOptions = [];
 
     function safeSteamImage(value) {
@@ -1081,15 +1253,72 @@ export function renderReport(
       gameNameInput.setAttribute("aria-expanded", "false");
     }
 
-    function selectSteamGame(option) {
+    async function selectSteamGame(option) {
       gameNameInput.value = option.name;
       gameAppIdInput.value = option.appId;
       gameNameInput.dataset.selectedSteamName = option.name;
       gameNameInput.dataset.selectedSteamAppId = option.appId;
       closeSteamResults();
       steamSearchStatus.textContent =
-        option.name + " seçildi · App ID " + option.appId;
-      gameTagsInput.focus();
+        option.name +
+        localized(
+          " seçildi · Steam bilgileri alınıyor…",
+          " selected · Loading Steam details…",
+        );
+      steamDetailController?.abort();
+      steamDetailController = new AbortController();
+      try {
+        const response = await fetch(
+          "/api/steam-app?appid=" + encodeURIComponent(option.appId),
+          {
+            signal: steamDetailController.signal,
+            headers: { accept: "application/json" },
+          },
+        );
+        if (!response.ok) throw new Error("steam app details failed");
+        const details = await response.json();
+        if (
+          gameNameInput.dataset.selectedSteamAppId !== option.appId ||
+          gameAppIdInput.value !== option.appId
+        ) {
+          return;
+        }
+        if (Array.isArray(details.tags)) {
+          gameTagsInput.value = details.tags
+            .filter((tag) => typeof tag === "string")
+            .slice(0, 20)
+            .join(", ");
+        }
+        if (["none", "live"].includes(details.demoStatus)) {
+          gameDemoInput.value = details.demoStatus;
+        }
+        if (
+          ["unreleased", "early_access", "released"].includes(
+            details.releaseStatus,
+          )
+        ) {
+          gameReleaseInput.value = details.releaseStatus;
+        }
+        if (typeof details.localMultiplayer === "boolean") {
+          gameLocalInput.value = details.localMultiplayer ? "yes" : "no";
+        }
+        steamSearchStatus.textContent =
+          option.name +
+          localized(
+            " seçildi · Steam bilgileri dolduruldu.",
+            " selected · Steam details filled in.",
+          );
+      } catch (error) {
+        if (error?.name === "AbortError") return;
+        steamSearchStatus.textContent =
+          option.name +
+          localized(
+            " seçildi · Ayrıntılar alınamadı; manuel düzenleyebilirsiniz.",
+            " selected · Details unavailable; you can edit them manually.",
+          );
+      } finally {
+        gameTagsInput.focus();
+      }
     }
 
     function renderSteamOptions(options) {
@@ -1128,12 +1357,18 @@ export function renderReport(
       if (location.protocol === "file:") {
         closeSteamResults();
         steamSearchStatus.textContent =
-          "Steam araması Cloudflare üzerindeki çevrimiçi panelde çalışır.";
+          localized(
+            "Steam araması Cloudflare üzerindeki çevrimiçi panelde çalışır.",
+            "Steam search works in the online Cloudflare dashboard.",
+          );
         return;
       }
       steamSearchController?.abort();
       steamSearchController = new AbortController();
-      steamSearchStatus.textContent = "Steam’de aranıyor…";
+      steamSearchStatus.textContent = localized(
+        "Steam’de aranıyor…",
+        "Searching Steam…",
+      );
       try {
         const response = await fetch(
           "/api/steam-search?q=" + encodeURIComponent(query),
@@ -1160,13 +1395,20 @@ export function renderReport(
           : [];
         renderSteamOptions(options);
         steamSearchStatus.textContent = options.length
-          ? options.length + " Steam sonucu bulundu."
-          : "Steam’de eşleşen oyun bulunamadı.";
+          ? options.length +
+            localized(" Steam sonucu bulundu.", " Steam results found.")
+          : localized(
+              "Steam’de eşleşen oyun bulunamadı.",
+              "No matching game found on Steam.",
+            );
       } catch (error) {
         if (error?.name === "AbortError") return;
         closeSteamResults();
         steamSearchStatus.textContent =
-          "Steam araması şu anda kullanılamıyor; manuel giriş yapabilirsiniz.";
+          localized(
+            "Steam araması şu anda kullanılamıyor; manuel giriş yapabilirsiniz.",
+            "Steam search is currently unavailable; you can enter the game manually.",
+          );
       }
     }
 
@@ -1187,9 +1429,10 @@ export function renderReport(
       }
       window.clearTimeout(steamSearchTimer);
       steamSearchController?.abort();
+      steamDetailController?.abort();
       if (query.length < 2) {
         closeSteamResults();
-        steamSearchStatus.textContent = "En az 2 karakter yazın.";
+        steamSearchStatus.textContent = translate("typeTwoChars");
         return;
       }
       steamSearchTimer = window.setTimeout(
@@ -1249,14 +1492,28 @@ export function renderReport(
     });
 
     const demoLabels = {
-      none: "Demo yok",
-      preparing: "Demo hazırlanıyor",
-      live: "Demo yayında",
+      tr: {
+        none: "Demo yok",
+        preparing: "Demo hazırlanıyor",
+        live: "Demo yayında",
+      },
+      en: {
+        none: "No demo",
+        preparing: "Demo in preparation",
+        live: "Demo live",
+      },
     };
     const releaseLabels = {
-      unreleased: "Yayınlanmadı",
-      early_access: "Erken erişim",
-      released: "Yayında",
+      tr: {
+        unreleased: "Yayınlanmadı",
+        early_access: "Erken erişim",
+        released: "Yayında",
+      },
+      en: {
+        unreleased: "Unreleased",
+        early_access: "Early access",
+        released: "Released",
+      },
     };
 
     function normalizeTags(value) {
@@ -1328,12 +1585,18 @@ export function renderReport(
     function gameMeta(game) {
       const parts = [];
       if (game.appId) parts.push("App ID " + game.appId);
-      parts.push(demoLabels[game.demoStatus]);
-      parts.push(releaseLabels[game.releaseStatus]);
+      parts.push(demoLabels[descriptionLanguage][game.demoStatus]);
+      parts.push(releaseLabels[descriptionLanguage][game.releaseStatus]);
       parts.push(
         game.localMultiplayer
-          ? "Yerel çok oyunculu: Evet"
-          : "Yerel çok oyunculu: Hayır",
+          ? localized(
+              "Yerel çok oyunculu: Evet",
+              "Local multiplayer: Yes",
+            )
+          : localized(
+              "Yerel çok oyunculu: Hayır",
+              "Local multiplayer: No",
+            ),
       );
       return parts.join(" · ");
     }
@@ -1351,8 +1614,8 @@ export function renderReport(
         meta.textContent = gameMeta(game);
         const tags = document.createElement("small");
         tags.textContent = game.tags.length
-          ? "Etiketler: " + game.tags.join(", ")
-          : "Etiket girilmedi";
+          ? localized("Etiketler: ", "Tags: ") + game.tags.join(", ")
+          : localized("Etiket girilmedi", "No tags entered");
         body.append(name, meta, tags);
 
         const actions = document.createElement("div");
@@ -1360,13 +1623,19 @@ export function renderReport(
         const edit = document.createElement("button");
         edit.type = "button";
         edit.dataset.gameEdit = game.id;
-        edit.textContent = "Düzenle";
-        edit.setAttribute("aria-label", game.name + " oyununu düzenle");
+        edit.textContent = localized("Düzenle", "Edit");
+        edit.setAttribute(
+          "aria-label",
+          game.name + localized(" oyununu düzenle", " edit game"),
+        );
         const remove = document.createElement("button");
         remove.type = "button";
         remove.dataset.gameDelete = game.id;
-        remove.textContent = "Sil";
-        remove.setAttribute("aria-label", game.name + " oyununu sil");
+        remove.textContent = localized("Sil", "Delete");
+        remove.setAttribute(
+          "aria-label",
+          game.name + localized(" oyununu sil", " delete game"),
+        );
         actions.append(edit, remove);
         item.append(body, actions);
         gamesList.append(item);
@@ -1379,9 +1648,10 @@ export function renderReport(
       delete gameNameInput.dataset.selectedSteamName;
       delete gameNameInput.dataset.selectedSteamAppId;
       closeSteamResults();
-      steamSearchStatus.textContent = "En az 2 karakter yazın.";
+      steamSearchStatus.textContent = translate("typeTwoChars");
       gameCancel.hidden = true;
-      gameForm.querySelector("[data-game-submit]").textContent = "Oyunu kaydet";
+      gameForm.querySelector("[data-game-submit]").textContent =
+        translate("saveGame");
     }
 
     function matchingGamesForRow(row) {
@@ -1414,12 +1684,14 @@ export function renderReport(
       const badge = document.createElement("span");
       badge.className = "game-match-badge";
       badge.textContent = match.nextFest
-        ? "★ " + match.game.name + " · Next Fest adayı"
+        ? "★ " +
+          match.game.name +
+          localized(" · Next Fest adayı", " · Next Fest candidate")
         : "★ " +
           match.game.name +
           " · " +
           match.score +
-          (match.score === 1 ? " etiket" : " etiket");
+          localized(" etiket", match.score === 1 ? " tag" : " tags");
       badge.setAttribute(
         "aria-label",
         match.nextFest
@@ -1461,7 +1733,10 @@ export function renderReport(
               .map(
                 (game) =>
                   game.name +
-                  ": Next Fest için çıkış durumu “Yayınlanmadı” olmalı.",
+                  localized(
+                    ": Next Fest için çıkış durumu “Yayınlanmadı” olmalı.",
+                    ": release status must be “Unreleased” for Next Fest.",
+                  ),
               )
               .join(" ");
           }
@@ -1497,12 +1772,19 @@ export function renderReport(
       });
 
       if (games.length === 0) {
-        gameMatchSummary.textContent = "Eşleşme için oyun ekleyin.";
+        gameMatchSummary.textContent = translate("addGamePrompt");
       } else if (matchedEventCount === 0) {
-        gameMatchSummary.textContent = "Eşleşme bulunamadı.";
+        gameMatchSummary.textContent = localized(
+          "Eşleşme bulunamadı.",
+          "No matches found.",
+        );
       } else {
         gameMatchSummary.textContent =
-          matchedEventCount + " etkinlikte eşleşme bulundu.";
+          matchedEventCount +
+          localized(
+            " etkinlikte eşleşme bulundu.",
+            " matching events found.",
+          );
       }
       apply();
     }
@@ -1551,13 +1833,22 @@ export function renderReport(
         gameLocalInput.value = game.localMultiplayer ? "yes" : "no";
         gameCancel.hidden = false;
         gameForm.querySelector("[data-game-submit]").textContent =
-          "Değişiklikleri kaydet";
+          localized("Değişiklikleri kaydet", "Save changes");
         gameNameInput.focus();
         gameForm.scrollIntoView({ behavior: "smooth", block: "center" });
       }
       if (deleteId) {
         const game = games.find((item) => item.id === deleteId);
-        if (!game || !window.confirm(game.name + " oyun profili silinsin mi?")) {
+        if (
+          !game ||
+          !window.confirm(
+            game.name +
+              localized(
+                " oyun profili silinsin mi?",
+                " game profile should be deleted?",
+              ),
+          )
+        ) {
           return;
         }
         games = games.filter((item) => item.id !== deleteId);

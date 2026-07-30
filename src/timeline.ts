@@ -12,9 +12,9 @@ function shortName(name: string): string {
   return `${name.slice(0, SHORT_NAME_LENGTH - 1).trimEnd()}…`;
 }
 
-function monthLabel(month: DateTime): string {
-  const label = month.setLocale("tr").toFormat("LLLL yyyy");
-  return `${label.charAt(0).toLocaleUpperCase("tr")}${label.slice(1)}`;
+function monthLabel(month: DateTime, locale: "tr" | "en"): string {
+  const label = month.setLocale(locale).toFormat("LLLL yyyy");
+  return `${label.charAt(0).toLocaleUpperCase(locale)}${label.slice(1)}`;
 }
 
 function eventDayRange(event: SteamEvent, timezone: string): string {
@@ -59,7 +59,7 @@ function deadlineChip(
       aria-label="${escapeHtml(`${label}; etkinliğe git`)}"
       title="${escapeHtml(label)}"
     >
-      <span>Başvuru · ${escapeHtml(due.toFormat("d LLL"))}</span>
+      <span><span data-i18n="registration">Başvuru</span> · ${escapeHtml(due.toFormat("d LLL"))}</span>
       <strong>${escapeHtml(shortName(item.event.name))}</strong>
     </a>`;
 }
@@ -103,13 +103,16 @@ export function renderTimeline(
         <section class="timeline-month" data-timeline-month="${index}"${
           index >= 2 ? " hidden" : ""
         }>
-          <h2>${escapeHtml(monthLabel(month))}</h2>
+          <h2
+            data-month-tr="${escapeHtml(monthLabel(month, "tr"))}"
+            data-month-en="${escapeHtml(monthLabel(month, "en"))}"
+          >${escapeHtml(monthLabel(month, "tr"))}</h2>
           <div class="timeline-month-items">
             ${events.map((event) => eventChip(event, timezone)).join("")}
             ${deadlines.map((item) => deadlineChip(item, timezone)).join("")}
             ${
               events.length === 0 && deadlines.length === 0
-                ? `<span class="timeline-month-empty">Planlanmış etkinlik yok</span>`
+                ? `<span class="timeline-month-empty" data-i18n="noPlannedEvents">Planlanmış etkinlik yok</span>`
                 : ""
             }
           </div>
@@ -120,7 +123,7 @@ export function renderTimeline(
   const criticalStatus = firstRegistrationDeadline
     ? `
       <span class="timeline-critical">
-        En yakın kritik tarih:
+        <span data-i18n="nearestCritical">En yakın kritik tarih:</span>
         <strong>${escapeHtml(
           DateTime.fromISO(firstRegistrationDeadline.deadline.dueAt, {
             zone: "utc",
@@ -128,7 +131,7 @@ export function renderTimeline(
             .setZone(timezone)
             .setLocale("tr")
             .toFormat("d LLLL yyyy"),
-        )} · ${firstRegistrationDeadline.daysLeft} gün</strong>
+        )} · ${firstRegistrationDeadline.daysLeft} <span data-i18n="days">gün</span></strong>
       </span>`
     : "";
 
@@ -137,7 +140,7 @@ export function renderTimeline(
       <div class="timeline-status">
         <time datetime="${escapeHtml(
           model.generated.setZone(timezone).toISODate() || "",
-        )}">Bugün · ${escapeHtml(today)}</time>
+        )}"><span data-i18n="today">Bugün</span> · ${escapeHtml(today)}</time>
         ${criticalStatus}
       </div>
       <div class="timeline-grid" id="timeline-months">${monthColumns}</div>
@@ -148,14 +151,14 @@ export function renderTimeline(
           aria-label="Önceki ay grubunu göster"
           aria-controls="timeline-months"
           disabled
-        ><span aria-hidden="true">←</span> Önceki</button>
+        ><span aria-hidden="true">←</span> <span data-i18n="previous">Önceki</span></button>
         <span data-timeline-range aria-live="polite"></span>
         <button
           type="button"
           data-timeline-next
           aria-label="Sonraki ay grubunu göster"
           aria-controls="timeline-months"
-        >Sonraki <span aria-hidden="true">→</span></button>
+        ><span data-i18n="next">Sonraki</span> <span aria-hidden="true">→</span></button>
       </div>
     </div>`;
 }
