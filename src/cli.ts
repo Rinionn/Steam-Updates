@@ -1,5 +1,6 @@
 import { config, paths } from "./config.js";
 import { sendDigest } from "./email.js";
+import { syncSteamNews } from "./news.js";
 import { writeReport } from "./report.js";
 import { readSnapshot } from "./storage.js";
 import { syncSteamEvents } from "./sync.js";
@@ -22,6 +23,7 @@ async function requireSnapshot(): Promise<EventSnapshot> {
 async function run(): Promise<void> {
   const command = (process.argv[2] || "daily") as Command;
   const forceEmail = process.argv.includes("--force-email");
+  const previewOnly = process.argv.includes("--preview-only");
 
   if (!["sync", "report", "email", "daily"].includes(command)) {
     throw new Error(
@@ -35,6 +37,16 @@ async function run(): Promise<void> {
     print(
       `Tamam: ${result.snapshot.events.length} etkinlik · ${result.added.length} yeni · ${result.changed.length} değişen.`,
     );
+    try {
+      const news = await syncSteamNews();
+      print(`Steam haberleri güncellendi: ${news.items.length} kayıt.`);
+    } catch (error) {
+      print(
+        `Steam haberleri güncellenemedi: ${
+          error instanceof Error ? error.message : String(error)
+        }`,
+      );
+    }
     const reportPath = await writeReport(result.snapshot);
     print(`Liste hazır: ${reportPath}`);
 
@@ -43,7 +55,10 @@ async function run(): Promise<void> {
       print("EMAIL_DAILY=false olduğu için e-posta adımı atlandı.");
       return;
     }
-    const digest = await sendDigest(result.snapshot, { force: forceEmail });
+    const digest = await sendDigest(result.snapshot, {
+      force: forceEmail,
+      previewOnly,
+    });
     if (digest.sent) {
       print(`E-posta gönderildi (${digest.provider}, ${digest.messageId}).`);
     } else {
@@ -59,7 +74,10 @@ async function run(): Promise<void> {
     return;
   }
 
-  const digest = await sendDigest(snapshot, { force: forceEmail });
+  const digest = await sendDigest(snapshot, {
+    force: forceEmail,
+    previewOnly,
+  });
   if (digest.sent) {
     print(`E-posta gönderildi (${digest.provider}, ${digest.messageId}).`);
   } else {

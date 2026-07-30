@@ -600,6 +600,13 @@ async function writePreviews(html: string, text: string): Promise<void> {
   ]);
 }
 
+function emailAddresses(value?: string): string[] {
+  return String(value || "")
+    .split(",")
+    .map((address) => address.trim())
+    .filter(Boolean);
+}
+
 async function sendWithResend(
   subject: string,
   html: string,
@@ -619,8 +626,11 @@ async function sendWithResend(
     },
     body: JSON.stringify({
       from: config.email.from,
-      to: [config.email.to],
-      bcc: config.email.bcc ? [config.email.bcc] : undefined,
+      to: emailAddresses(config.email.to),
+      bcc:
+        emailAddresses(config.email.bcc).length > 0
+          ? emailAddresses(config.email.bcc)
+          : undefined,
       subject,
       html,
       text,
@@ -653,8 +663,8 @@ async function sendWithSmtp(
   });
   const result = await transporter.sendMail({
     from: config.email.from,
-    to: config.email.to,
-    bcc: config.email.bcc,
+    to: emailAddresses(config.email.to),
+    bcc: emailAddresses(config.email.bcc),
     subject,
     html,
     text,
@@ -664,13 +674,22 @@ async function sendWithSmtp(
 
 export async function sendDigest(
   snapshot: EventSnapshot,
-  options: { force?: boolean } = {},
+  options: { force?: boolean; previewOnly?: boolean } = {},
 ): Promise<DigestResult> {
   const rendered = renderDigest(
     snapshot,
     await readChangelog(paths.changelog),
   );
   await writePreviews(rendered.html, rendered.text);
+
+  if (options.previewOnly) {
+    return {
+      sent: false,
+      skippedReason: "Önizleme modu; gönderim yapılmadı.",
+      htmlPreview: paths.emailPreview,
+      textPreview: paths.emailTextPreview,
+    };
+  }
 
   const localDateKey = DateTime.now().setZone(config.timezone).toISODate();
   if (!localDateKey) throw new Error("Yerel tarih üretilemedi.");

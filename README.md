@@ -8,9 +8,8 @@ indirimlerini listeleyen, bilinen başvuru/inceleme tarihlerini İstanbul saatin
 
 **https://rinionn.github.io/Steam-Updates/**
 
-Kurumsal giriş ve Steam oyun adı araması için hazırlanan korumalı hedef adres
-`https://steamradar.gaminginturkey.com`'dur. Cloudflare Access kurulumu
-tamamlanana kadar GitHub Pages adresi mevcut yayın olarak kalır. Kurulum
+Kurumsal giriş, Steam oyun araması ve ekip verisi için korumalı yayın adresi
+`https://steam-etkinlik-radari.batuhan-ozmen.workers.dev`'dir. Kurulum
 adımları `docs/cloudflare-access.md` dosyasındadır.
 
 GitHub Actions, Steam takvimini her gün Türkiye saatiyle yaklaşık 09:00’da
@@ -33,7 +32,11 @@ ve günlük veri commitine otomatik olarak dahil edilir.
 - Aynı yerel günde ikinci kez e-posta göndermez.
 - Steam hesabında kayıt, opt-in veya başka bir değişiklik yapmaz.
 - Oyun adı yazılırken korumalı Worker üzerinden Steam Store sonuçlarını arar ve
-  seçimde oyun adıyla App ID'yi otomatik doldurur.
+  seçimde App ID, etiket, demo/çıkış durumu ve kapak görselini otomatik doldurur.
+- Kayıtlı oyunları kapak kartlarında gösterir; herkese açık anlık oyuncu,
+  inceleme oranı, inceleme sayısı ve fiyat verilerini ücretsiz karşılaştırır.
+- Yeni çıkan/yaklaşan oyunları ve resmî Steamworks duyurularını günlük yenilenen
+  ayrı bir haber görünümünde toplar.
 
 ## Kurulum
 
@@ -77,9 +80,10 @@ saatiyle yaklaşık 09:30’da çalışır. Depoda **Settings → Secrets and va
   Google uygulama şifresi (boşluksuz)
 
 Workflow, ana özeti `business.dev@gaminginturkey.com` grubuna gönderirken
-`batuhan.ozmen@gaminginturkey.com` adresine görünmeyen bir BCC kopyası da
-teslim eder. Bu, Google Groups’un göndericinin kendi grup postasını Inbox’a
-geri vermediği durumlarda doğrudan Inbox kopyası sağlar.
+`batuhan.ozmen@gaminginturkey.com` ve `pinargulerrrr@gmail.com` adreslerine
+görünmeyen BCC kopyaları da teslim eder. Bu, Google Groups’un göndericinin
+kendi grup postasını Inbox’a geri vermediği durumlarda doğrudan Inbox kopyası
+sağlar.
 
 Normal Google hesap şifresini kullanmayın ve uygulama şifresini Git’e
 eklemeyin. Kurulumdan sonra **Actions → Steam Event Radar - Daily Email → Run
@@ -90,6 +94,7 @@ workflow** ile bir defalık test gönderimi yapılabilir.
 - `npm run sync` — Steam’i günceller ve HTML listeyi üretir.
 - `npm run report` — kayıtlı veriden HTML listeyi yeniden üretir.
 - `npm run email` — kayıtlı veriden e-posta/önizleme üretir.
+- `npm run email -- --preview-only` — e-postayı göndermeden önizleme üretir.
 - `npm run daily` — senkronizasyon + liste + günlük e-posta.
 - `npm run test` — çevrimdışı ayrıştırıcı testleri.
 

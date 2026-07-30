@@ -21,6 +21,17 @@ export interface SteamAppDetails {
   }>;
 }
 
+export interface SteamPublicStats {
+  appId: string;
+  currentPlayers: number;
+  totalReviews: number;
+  positiveReviews: number;
+  positivePercent: number;
+  reviewScore: string;
+  price: { formatted: string; discountPercent: number } | null;
+  capturedAt: string;
+}
+
 export interface WorkerEnvironment {
   ALLOWED_EMAIL_DOMAIN?: string;
   ALLOWED_EMAILS?: string;
@@ -63,6 +74,10 @@ export function searchSteam(
   env: WorkerEnvironment,
 ): Promise<Response>;
 export function getSteamApp(
+  request: Request,
+  env: WorkerEnvironment,
+): Promise<Response>;
+export function getSteamStats(
   request: Request,
   env: WorkerEnvironment,
 ): Promise<Response>;

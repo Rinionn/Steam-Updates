@@ -394,6 +394,75 @@ export async function getSteamApp(request, env) {
   return response;
 }
 
+export async function getSteamStats(request, env) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  if (!requestIsAuthorized(request, env)) {
+    return json({ error: "authentication_required" }, 401, cors);
+  }
+  const appId = (new URL(request.url).searchParams.get("appid") || "").trim();
+  if (!/^\d{1,12}$/.test(appId)) {
+    return json({ error: "invalid_app_id" }, 400, cors);
+  }
+  const reviewsUrl = new URL(
+    `https://store.steampowered.com/appreviews/${appId}`,
+  );
+  reviewsUrl.searchParams.set("json", "1");
+  reviewsUrl.searchParams.set("language", "all");
+  reviewsUrl.searchParams.set("purchase_type", "all");
+  reviewsUrl.searchParams.set("num_per_page", "0");
+  const playersUrl = new URL(
+    "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/",
+  );
+  playersUrl.searchParams.set("appid", appId);
+  const detailsUrl = new URL("https://store.steampowered.com/api/appdetails");
+  detailsUrl.searchParams.set("appids", appId);
+  detailsUrl.searchParams.set("cc", "TR");
+  detailsUrl.searchParams.set("l", "turkish");
+  const [reviewsResult, playersResult, detailsResult] =
+    await Promise.allSettled([
+      fetch(reviewsUrl, { headers: { accept: "application/json" } }),
+      fetch(playersUrl, { headers: { accept: "application/json" } }),
+      fetch(detailsUrl, { headers: { accept: "application/json" } }),
+    ]);
+  const reviews =
+    reviewsResult.status === "fulfilled" && reviewsResult.value.ok
+      ? await reviewsResult.value.json()
+      : null;
+  const players =
+    playersResult.status === "fulfilled" && playersResult.value.ok
+      ? await playersResult.value.json()
+      : null;
+  const details =
+    detailsResult.status === "fulfilled" && detailsResult.value.ok
+      ? await detailsResult.value.json()
+      : null;
+  const summary = reviews?.query_summary || {};
+  const totalReviews = Number(summary.total_reviews || 0);
+  const positiveReviews = Number(summary.total_positive || 0);
+  const price = details?.[appId]?.data?.price_overview;
+  return json(
+    {
+      appId,
+      currentPlayers: Number(players?.response?.player_count || 0),
+      totalReviews,
+      positiveReviews,
+      positivePercent:
+        totalReviews > 0 ? Math.round((positiveReviews / totalReviews) * 100) : 0,
+      reviewScore: String(summary.review_score_desc || ""),
+      price: price
+        ? {
+            formatted: String(price.final_formatted || ""),
+            discountPercent: Number(price.discount_percent || 0),
+          }
+        : null,
+      capturedAt: new Date().toISOString(),
+    },
+    200,
+    { ...cors, "cache-control": "public, max-age=900" },
+  );
+}
+
 function optionsResponse(request, env) {
   const cors = corsHeaders(request, env);
   if (cors === null) return new Response(null, { status: 403 });
@@ -533,7 +602,8 @@ export default {
     }
     if (
       url.pathname === "/api/steam-search" ||
-      url.pathname === "/api/steam-app"
+      url.pathname === "/api/steam-app" ||
+      url.pathname === "/api/steam-stats"
     ) {
       if (request.method === "OPTIONS") {
         return optionsResponse(request, env);
@@ -543,9 +613,9 @@ export default {
           allow: "GET, OPTIONS",
         });
       }
-      return url.pathname === "/api/steam-search"
-        ? searchSteam(request, env)
-        : getSteamApp(request, env);
+      if (url.pathname === "/api/steam-search") return searchSteam(request, env);
+      if (url.pathname === "/api/steam-stats") return getSteamStats(request, env);
+      return getSteamApp(request, env);
     }
     if (!requestIsAuthorized(request, env)) {
       return new Response("Kurumsal giriş gerekli.", {

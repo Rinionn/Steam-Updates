@@ -22,7 +22,7 @@ jobs:
       EMAIL_DAILY: "true"
       EMAIL_LOOKAHEAD_DAYS: "90"
       EMAIL_TO: business.dev@gaminginturkey.com
-      EMAIL_BCC: batuhan.ozmen@gaminginturkey.com
+      EMAIL_BCC: batuhan.ozmen@gaminginturkey.com, pinargulerrrr@gmail.com
       EMAIL_FROM: "Steam Etkinlik Radarı <batuhan.ozmen@gaminginturkey.com>"
       SMTP_HOST: smtp.gmail.com
       SMTP_PORT: "465"

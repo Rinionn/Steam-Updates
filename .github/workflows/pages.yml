@@ -7,6 +7,7 @@ on:
     paths-ignore:
       - data/events.json
       - data/changelog.json
+      - data/news.json
       - index.html
   workflow_dispatch:
   schedule:
@@ -83,7 +84,7 @@ jobs:
       - name: Steam anlik goruntusunu kaydet
         shell: bash
         run: |
-          git add data/events.json data/changelog.json index.html
+          git add data/events.json data/changelog.json data/news.json index.html
           if git diff --cached --quiet; then
             echo "Steam anlik goruntusunde degisiklik yok."
             exit 0

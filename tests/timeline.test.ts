@@ -97,11 +97,15 @@ describe("event timeline", () => {
     expect(html).toContain("data-steam-game-results");
     expect(html).toContain("/api/steam-search?q=");
     expect(html).toContain("Steam araması Cloudflare");
-    expect(html).toContain("Bugün ne yapmalıyız?");
+    expect(html).not.toContain("Bugün ne yapmalıyız?");
+    expect(html).not.toContain("Operasyon metrikleri");
+    expect(html).toContain("data-menu-toggle");
+    expect(html).toContain("Steam Haberleri");
+    expect(html).toContain("Oyun istatistikleri");
     expect(html).toContain("Başvuru takibi");
     expect(html).toContain('data-application-status');
     expect(html).toContain("/api/team-state");
-    expect(html).toContain("Operasyon metrikleri");
-    expect(html).toContain("Akıllı panel uyarıları");
+    expect(html).not.toContain("Operasyon metrikleri");
+    expect(html).not.toContain("Akıllı panel uyarıları");
   });
 });

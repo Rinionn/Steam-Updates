@@ -3,6 +3,7 @@ import {
   default as worker,
   deleteTeamState,
   getSteamApp,
+  getSteamStats,
   getTeamState,
   parseNextFestHistory,
   parseSteamSuggestions,
@@ -165,6 +166,67 @@ describe("Steam search Worker", () => {
           title: "We are joining Steam Next Fest!",
         }),
       ],
+    });
+  });
+
+  it("ücretsiz karşılaştırma için yalnız herkese açık Steam verilerini döndürür", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi
+        .fn()
+        .mockResolvedValueOnce(
+          new Response(
+            JSON.stringify({
+              query_summary: {
+                total_reviews: 200,
+                total_positive: 150,
+                review_score_desc: "Very Positive",
+              },
+            }),
+            { status: 200 },
+          ),
+        )
+        .mockResolvedValueOnce(
+          new Response(
+            JSON.stringify({ response: { player_count: 42 } }),
+            { status: 200 },
+          ),
+        )
+        .mockResolvedValueOnce(
+          new Response(
+            JSON.stringify({
+              "1091500": {
+                success: true,
+                data: {
+                  price_overview: {
+                    final_formatted: "$29.99",
+                    discount_percent: 10,
+                  },
+                },
+              },
+            }),
+            { status: 200 },
+          ),
+        ),
+    );
+    const response = await getSteamStats(
+      new Request(
+        "https://steamradar.gaminginturkey.com/api/steam-stats?appid=1091500",
+        {
+          headers: {
+            "cf-access-authenticated-user-email":
+              "editor@gaminginturkey.com",
+          },
+        },
+      ),
+      { ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com" },
+    );
+    expect(await response.json()).toMatchObject({
+      currentPlayers: 42,
+      totalReviews: 200,
+      positiveReviews: 150,
+      positivePercent: 75,
+      price: { formatted: "$29.99", discountPercent: 10 },
     });
   });
 

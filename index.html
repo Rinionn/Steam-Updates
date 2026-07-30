@@ -112,6 +112,24 @@
       border: 0;
     }
     .shell { width: min(calc(100% - 20px), 1180px); margin: 0 auto; padding: 20px 0 56px; }
+    .menu-toggle {
+      position:fixed; z-index:40; top:12px; left:12px; width:44px; height:44px;
+      padding:0; color:var(--color-on-accent); border:1px solid var(--color-hero-line);
+      border-radius:13px; background:var(--color-hero-start); box-shadow:0 8px 28px var(--color-shadow);
+      font-size:22px; line-height:1;
+    }
+    .site-menu {
+      position:fixed; z-index:39; inset:0 auto 0 0; width:min(86vw,310px); padding:74px 16px 24px;
+      color:var(--color-on-accent); background:var(--color-hero-start); box-shadow:16px 0 50px var(--color-shadow);
+    }
+    .site-menu[hidden] { display:none; }
+    .site-menu strong { display:block; margin:0 8px 14px; color:var(--color-hero-muted); font-size:11px; letter-spacing:.1em; text-transform:uppercase; }
+    .site-menu a { display:block; padding:12px 14px; border-radius:11px; color:var(--color-hero-copy); font-size:14px; font-weight:800; text-decoration:none; }
+    .site-menu a:hover,.site-menu a:focus-visible { color:var(--color-on-accent); background:var(--color-hero-card); }
+    .view-tabs { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin:22px 0 0; padding:5px; border:1px solid var(--color-line); border-radius:15px; background:var(--color-panel); }
+    .view-tabs button { min-width:0; min-height:44px; color:var(--color-control-text); border-color:var(--color-transparent); background:var(--color-transparent); font-weight:900; }
+    .view-tabs button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
+    .dashboard-panel[hidden] { display:none; }
     .hero {
       position: relative;
       overflow: hidden;
@@ -161,15 +179,6 @@
     .section-title { display:flex; align-items:flex-start; flex-direction:column; justify-content:space-between; gap:8px; margin-bottom:15px; }
     .section-title h2 { margin:0; overflow-wrap:anywhere; font-size:26px; letter-spacing:-.025em; }
     .section-title p { margin:0; color:var(--color-muted); font-size:13px; }
-    .operations-grid,.metric-grid { display:grid; grid-template-columns:1fr; gap:10px; }
-    .operation-card,.metric-card,.admin-panel { padding:16px; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
-    .operation-card strong,.metric-card strong { display:block; font-size:22px; }
-    .operation-card span,.metric-card span { display:block; margin-top:5px; color:var(--color-muted); font-size:12px; line-height:1.45; }
-    .operation-card.critical { border-color:var(--color-danger); }
-    .operation-inbox { display:grid; gap:8px; margin-top:12px; }
-    .operation-item { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:10px 0; border-top:1px solid var(--color-line); font-size:12px; }
-    .operation-item:first-child { border-top:0; }
-    .operation-item a { color:var(--color-link); font-weight:800; text-decoration:none; }
     .application-workflow { grid-column:1; min-width:0; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel-subtle); }
     .application-workflow summary { display:flex; justify-content:space-between; gap:12px; padding:11px 13px; cursor:pointer; font-size:12px; font-weight:800; list-style:none; }
     .application-workflow summary::-webkit-details-marker { display:none; }
@@ -181,14 +190,8 @@
     .application-actions { display:flex; align-items:center; gap:10px; flex-wrap:wrap; grid-column:1 / -1; }
     .application-actions button { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-size:11px; font-weight:800; }
     .application-actions span { color:var(--color-muted); font-size:11px; }
-    .admin-panel { display:grid; gap:14px; }
-    .admin-status { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
-    .sync-badge { padding:5px 9px; border-radius:999px; color:var(--color-muted); background:var(--color-soft); font-size:11px; font-weight:800; }
-    .sync-badge.online { color:var(--color-link); }
-    .notification-settings { display:grid; grid-template-columns:1fr; gap:8px; }
-    .notification-settings label { display:flex; align-items:center; gap:8px; color:var(--color-muted); font-size:12px; }
-    .games-panel { padding:18px 16px; border:1px solid var(--color-line); border-radius:20px; background:var(--color-panel); }
-    .game-form { display:grid; grid-template-columns:1fr; gap:12px; }
+    .games-panel { padding:14px; border:1px solid var(--color-line); border-radius:20px; background:var(--color-panel); }
+    .game-form { display:block; max-width:520px; margin:0 auto 16px; }
     .game-field { display:grid; gap:6px; min-width:0; color:var(--color-muted); font-size:12px; font-weight:700; }
     .game-field input,.game-field select { min-width:0; width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--color-line); border-radius:11px; color:var(--color-ink); background:var(--color-control); }
     .steam-game-search { position:relative; min-width:0; }
@@ -205,16 +208,35 @@
     .game-form-actions { display:flex; align-items:center; flex-wrap:wrap; gap:8px; grid-column:1 / -1; }
     .game-form-actions button:first-child { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-weight:800; }
     .game-help,.game-match-summary { margin:10px 0 0; color:var(--color-muted); font-size:12px; line-height:1.5; }
-    .game-list { display:grid; gap:9px; margin-top:16px; }
-    .game-profile { display:grid; grid-template-columns:72px minmax(0,1fr); gap:12px; padding:12px; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel-subtle); }
+    .game-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:16px; }
+    .game-profile { min-width:0; overflow:hidden; border:1px solid var(--color-accent-pink); border-radius:16px; background:var(--color-panel-subtle); }
+    .game-profile > summary { position:relative; display:block; min-height:210px; cursor:pointer; list-style:none; }
+    .game-profile > summary::-webkit-details-marker { display:none; }
+    .game-profile > summary .game-capsule,.game-profile > summary .game-capsule-fallback { width:100%; height:210px; border:0; border-radius:0; object-fit:cover; }
+    .game-card-overlay { position:absolute; inset:auto 0 0; padding:38px 10px 11px; color:var(--color-on-accent); background:linear-gradient(var(--color-transparent),var(--color-hero-end)); }
+    .game-card-overlay strong { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; }
+    .game-card-overlay small { display:block; margin-top:3px; color:var(--color-hero-copy); font-size:9px; }
     .game-capsule { width:72px; aspect-ratio:2 / 3; object-fit:cover; border:1px solid var(--color-line); border-radius:9px; background:var(--color-soft); }
     .game-capsule-fallback { display:grid; place-items:center; width:72px; aspect-ratio:2 / 3; padding:7px; border:1px solid var(--color-line); border-radius:9px; color:var(--color-muted); background:var(--color-soft); font-size:9px; font-weight:800; text-align:center; overflow-wrap:anywhere; }
-    .game-profile-body { min-width:0; }
+    .game-profile-body { min-width:0; padding:12px; border-top:1px solid var(--color-line); }
     .game-profile strong,.game-profile small { display:block; overflow-wrap:anywhere; }
     .game-profile small { margin-top:4px; color:var(--color-muted); line-height:1.45; }
     .game-profile-actions { display:flex; align-items:flex-start; flex-wrap:wrap; gap:6px; margin-top:9px; }
     .game-profile-actions button { min-height:36px; padding:7px 10px; font-size:11px; }
     .game-profile-actions [data-game-delete] { color:var(--color-danger); }
+    .game-stats { margin-top:20px; padding-top:18px; border-top:1px solid var(--color-line); }
+    .game-stats h3 { margin:0 0 4px; font-size:17px; }
+    .game-stats > p { margin:0 0 12px; color:var(--color-muted); font-size:11px; line-height:1.5; }
+    .stats-grid { display:grid; grid-template-columns:1fr; gap:9px; }
+    .stats-card { display:grid; grid-template-columns:54px minmax(0,1fr); gap:10px; padding:10px; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel-subtle); }
+    .stats-card .game-capsule,.stats-card .game-capsule-fallback { width:54px; }
+    .stats-card h4 { margin:0 0 7px; overflow-wrap:anywhere; font-size:12px; }
+    .stats-values { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; }
+    .stats-value { min-width:0; padding:7px; border-radius:8px; background:var(--color-soft); }
+    .stats-value strong,.stats-value span { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .stats-value strong { font-size:13px; }
+    .stats-value span { margin-top:2px; color:var(--color-muted); font-size:8px; font-weight:800; text-transform:uppercase; }
+    .stats-note { margin-top:9px; color:var(--color-muted); font-size:9px; }
     .game-match-result { display:grid; grid-template-columns:repeat(auto-fill,minmax(96px,1fr)); gap:8px; margin-top:12px; }
     .game-match-result[hidden],.game-match-warning[hidden] { display:none; }
     .game-match-card { display:grid; grid-template-columns:40px minmax(0,1fr); gap:7px; align-items:center; min-width:0; padding:7px; border:1px solid var(--color-line); border-radius:10px; color:var(--color-soft-text); background:var(--color-soft); }
@@ -222,6 +244,7 @@
     .game-match-card strong,.game-match-card small { display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; }
     .game-match-card strong { font-size:10px; white-space:nowrap; }
     .game-match-card small { margin-top:3px; color:var(--color-muted); font-size:9px; line-height:1.3; }
+    .game-match-card.not-eligible { border-color:var(--color-danger); opacity:.72; }
     .next-fest-history { margin-top:8px; padding:8px; border-left:3px solid var(--color-amber); border-radius:7px; color:var(--color-muted); background:var(--color-soft); font-size:10px; line-height:1.4; }
     .next-fest-history a { color:var(--color-link); font-weight:800; }
     .game-match-badge { max-width:100%; padding:6px 9px; overflow-wrap:anywhere; border:1px solid var(--color-line); border-radius:999px; color:var(--color-link); background:var(--color-soft); font-size:11px; font-weight:800; }
@@ -323,10 +346,24 @@
     .change-row strong { min-width:0; overflow-wrap:anywhere; font-size:13px; }
     .change-type { justify-self:start; padding:4px 7px; border-radius:999px; color:var(--color-soft-text); background:var(--color-soft); font-size:10px; font-weight:800; }
     .change-values { min-width:0; overflow-wrap:anywhere; color:var(--color-muted); font-size:12px; line-height:1.4; }
+    .news-block + .news-block { margin-top:32px; }
+    .news-block > h3 { margin:0 0 12px; font-size:18px; }
+    .news-disclaimer { margin:-4px 0 14px; color:var(--color-muted); font-size:12px; line-height:1.5; }
+    .news-grid { display:grid; grid-template-columns:1fr; gap:12px; }
+    .news-card { display:grid; grid-template-columns:96px minmax(0,1fr); min-width:0; overflow:hidden; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
+    .news-card > img { width:96px; height:100%; min-height:118px; object-fit:cover; background:var(--color-soft); }
+    .news-icon { display:grid; min-height:118px; place-items:center; color:var(--color-on-accent); background:var(--gradient-brand); font-size:28px; }
+    .news-card-body { min-width:0; padding:13px; }
+    .news-meta { display:flex; align-items:center; flex-wrap:wrap; gap:6px 10px; color:var(--color-muted); font-size:10px; font-weight:800; }
+    .news-meta > span { color:var(--color-link); }
+    .news-card h3 { margin:7px 0 8px; overflow-wrap:anywhere; font-size:14px; line-height:1.3; }
+    .news-card p { display:-webkit-box; margin:0 0 9px; overflow:hidden; color:var(--color-muted); font-size:11px; line-height:1.45; -webkit-box-orient:vertical; -webkit-line-clamp:3; }
+    .news-card a { color:var(--color-link); font-size:11px; font-weight:800; text-decoration:none; }
     .empty { padding:24px; color:var(--color-muted); text-align:center; border:1px dashed var(--color-line); border-radius:16px; }
     footer { margin-top:28px; color:var(--color-footer); font-size:12px; text-align:center; }
     @media (min-width: 761px) {
       .shell { width:min(calc(100% - 32px), 1180px); padding:48px 0 72px; }
+      .menu-toggle { top:20px; left:20px; }
       .hero { padding:34px; }
       h1 { font-size:clamp(36px, 7vw, 70px); }
       .hero p { font-size:17px; }
@@ -345,12 +382,11 @@
       .search { flex:1 1 260px; width:auto; }
       .filters,.status-filters { width:auto; }
       .games-only-filter { width:auto; }
-      .game-form { grid-template-columns:repeat(3,minmax(0,1fr)); }
-      .operations-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
-      .metric-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+      .games-panel { padding:20px; }
+      .game-list { grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
       .application-form { grid-template-columns:repeat(3,minmax(0,1fr)); }
-      .game-profile { grid-template-columns:84px minmax(0,1fr); }
-      .game-profile .game-capsule,.game-profile .game-capsule-fallback { width:84px; }
+      .game-profile > summary { min-height:300px; }
+      .game-profile > summary .game-capsule,.game-profile > summary .game-capsule-fallback { height:300px; }
       .task-state-toolbar { align-items:center; flex-direction:row; justify-content:space-between; }
       .task-state-status { text-align:right; }
       .event-row { grid-template-columns:145px minmax(0,1fr) auto; gap:20px; padding:20px; }
@@ -363,6 +399,9 @@
       .change-log > summary { padding:18px 20px; }
       .change-row { grid-template-columns:150px minmax(180px,1fr) auto minmax(220px,auto); align-items:center; gap:16px; padding:14px 20px; }
       .change-values { text-align:right; }
+      .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .platform-news { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .stats-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior:auto; }
@@ -371,8 +410,18 @@
   </style>
 </head>
 <body>
+  <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Menüyü aç" data-i18n-aria-label="openMenu">☰</button>
+  <nav class="site-menu" id="site-menu" data-site-menu aria-label="Sayfa navigasyonu" data-i18n-aria-label="navigationLabel" hidden>
+    <strong data-i18n="navigation">Navigasyon</strong>
+    <a href="#top" data-menu-view="radar" data-i18n="overview">Genel bakış</a>
+    <a href="#games" data-menu-view="radar" data-i18n="myGames">Oyunlarım</a>
+    <a href="#changes" data-menu-view="radar" data-i18n="changesShort">Değişiklikler</a>
+    <a href="#deadlines" data-menu-view="radar" data-i18n="upcomingDeadlines">Yaklaşan son tarihler</a>
+    <a href="#calendar" data-menu-view="radar" data-i18n="eventCalendar">Etkinlik takvimi</a>
+    <a href="#steam-news" data-menu-view="news" data-i18n="steamNews">Steam Haberleri</a>
+  </nav>
   <main class="shell">
-    <section class="hero">
+    <section class="hero" id="top">
       <div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel">
         <button class="active" type="button" data-language="tr" aria-pressed="true">TR</button>
         <button type="button" data-language="en" aria-pressed="false">EN</button>
@@ -383,11 +432,11 @@
 
     <div class="event-timeline" data-event-timeline>
       <div class="timeline-status">
-        <time datetime="2026-07-30"><span data-i18n="today">Bugün</span> · <span data-copy-tr="30 Temmuz 2026" data-copy-en="30 July 2026">30 Temmuz 2026</span></time>
+        <time datetime="2026-07-31"><span data-i18n="today">Bugün</span> · <span data-copy-tr="31 Temmuz 2026" data-copy-en="31 July 2026">31 Temmuz 2026</span></time>
 
       <span class="timeline-critical">
         <span data-i18n="nearestCritical">En yakın kritik tarih:</span>
-        <strong><span data-copy-tr="1 Eylül 2026" data-copy-en="1 September 2026">1 Eylül 2026</span> · 33 <span data-i18n="days">gün</span></strong>
+        <strong><span data-copy-tr="1 Eylül 2026" data-copy-en="1 September 2026">1 Eylül 2026</span> · 32 <span data-i18n="days">gün</span></strong>
       </span>
       </div>
       <div class="timeline-grid" id="timeline-months">
@@ -858,29 +907,12 @@
     </div>
     </section>
 
-    <section class="section" aria-labelledby="operations-heading">
-      <div class="section-title">
-        <h2 id="operations-heading"><span data-copy-tr="Bugün ne yapmalıyız?" data-copy-en="What should we do today?">Bugün ne yapmalıyız?</span></h2>
-        <p><span data-copy-tr="Kritik tarihler, açık işler ve ekip başvuruları tek operasyon kuyruğunda." data-copy-en="Critical dates, open work and team applications in one operational queue.">Kritik tarihler, açık işler ve ekip başvuruları tek operasyon kuyruğunda.</span></p>
-      </div>
-      <div class="operations-grid">
-        <article class="operation-card critical">
-          <strong data-operation-critical>0</strong>
-          <span><span data-copy-tr="7 gün içindeki kritik tarih" data-copy-en="critical dates within 7 days">7 gün içindeki kritik tarih</span></span>
-        </article>
-        <article class="operation-card">
-          <strong data-operation-tasks>0</strong>
-          <span><span data-copy-tr="tamamlanmamış görev" data-copy-en="incomplete tasks">tamamlanmamış görev</span></span>
-        </article>
-        <article class="operation-card">
-          <strong data-operation-applications>0</strong>
-          <span><span data-copy-tr="aktif başvuru" data-copy-en="active applications">aktif başvuru</span></span>
-        </article>
-      </div>
-      <div class="operation-card operation-inbox" data-operation-inbox></div>
-    </section>
+    <div class="view-tabs" role="tablist" aria-label="İçerik görünümü" data-i18n-aria-label="contentView">
+      <button class="active" type="button" role="tab" aria-selected="true" data-view-tab="radar" data-i18n="radarTab">Etkinlik Radarı</button>
+      <button type="button" role="tab" aria-selected="false" data-view-tab="news" data-i18n="steamNews">Steam Haberleri</button>
+    </div>
 
-    <section class="section" aria-labelledby="games-heading">
+    <section class="section dashboard-panel" id="games" data-dashboard-panel="radar" aria-labelledby="games-heading">
       <div class="section-title">
         <h2 id="games-heading" data-i18n="myGames">Oyunlarım</h2>
         <p data-i18n="gamesIntro">Etiketleri birebir karşılaştırarak uygun olabilecek temalı festivalleri gösterir.</p>
@@ -889,7 +921,7 @@
         <form class="game-form" data-game-form>
           <input type="hidden" data-game-id>
           <div class="game-field">
-            <label for="game-name" data-i18n="gameName">Oyun adı</label>
+            <label for="game-name" data-i18n="addSteamGame">Steam’den oyun ekle</label>
             <div class="steam-game-search">
               <input
                 id="game-name"
@@ -914,15 +946,15 @@
               <div class="steam-search-status" data-steam-search-status role="status" aria-live="polite" data-i18n="typeTwoChars">En az 2 karakter yazın.</div>
             </div>
           </div>
-          <label class="game-field">
+          <label class="game-field" hidden>
             Steam App ID <span data-i18n="optional">(opsiyonel)</span>
             <input type="text" data-game-app-id inputmode="numeric" pattern="[0-9]*" maxlength="12" autocomplete="off">
           </label>
-          <label class="game-field game-field-wide">
+          <label class="game-field game-field-wide" hidden>
             <span data-i18n="steamTags">Steam etiketleri</span>
             <input type="text" data-game-tags placeholder="Örn. Cyberpunk, Sci-fi, RPG" data-i18n-placeholder="tagsPlaceholder" autocomplete="off">
           </label>
-          <label class="game-field">
+          <label class="game-field" hidden>
             <span data-i18n="demoStatus">Demo durumu</span>
             <select data-game-demo-status>
               <option value="none" data-i18n="none">Yok</option>
@@ -930,7 +962,7 @@
               <option value="live" data-i18n="live">Yayında</option>
             </select>
           </label>
-          <label class="game-field">
+          <label class="game-field" hidden>
             <span data-i18n="releaseStatus">Çıkış durumu</span>
             <select data-game-release-status>
               <option value="unreleased" data-i18n="unreleased">Yayınlanmadı</option>
@@ -938,25 +970,31 @@
               <option value="released" data-i18n="live">Yayında</option>
             </select>
           </label>
-          <label class="game-field">
+          <label class="game-field" hidden>
             <span data-i18n="localMultiplayer">Yerel çok oyunculu</span>
             <select data-game-local-multiplayer>
               <option value="no" data-i18n="no">Hayır</option>
               <option value="yes" data-i18n="yes">Evet</option>
             </select>
           </label>
-          <div class="game-form-actions">
+          <div class="game-form-actions" hidden>
             <button type="submit" data-game-submit data-i18n="saveGame">Oyunu kaydet</button>
             <button type="button" data-game-cancel hidden data-i18n="cancel">Vazgeç</button>
           </div>
         </form>
-        <p class="game-help" data-i18n="gameHelp">Etiket adlarını oyunun Steam mağaza sayfasındaki biçimiyle, virgülle ayırarak girin. Benzer kelimeler veya tahminler eşleşme sayılmaz.</p>
         <div class="game-list" data-games-list></div>
         <p class="game-match-summary" data-game-match-summary role="status" aria-live="polite" data-i18n="addGamePrompt">Eşleşme için oyun ekleyin.</p>
+        <div class="game-stats">
+          <h3 data-i18n="gameComparison">Oyun istatistikleri</h3>
+          <p data-i18n="statsIntro">Steam’in herkese açık anlık verileriyle ücretsiz karşılaştırma. Satış ve wishlist tahmini yapılmaz.</p>
+          <div class="stats-grid" data-game-stats>
+            <div class="empty" data-i18n="statsAddGame">İstatistik görmek için Steam’den oyun ekleyin.</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section dashboard-panel" id="changes" data-dashboard-panel="radar">
       <details class="change-log">
         <summary>
           <span data-i18n="changesTitle">Son 90 günde ne değişti</span>
@@ -972,7 +1010,7 @@
       </details>
     </section>
 
-    <section class="section">
+    <section class="section dashboard-panel" id="deadlines" data-dashboard-panel="radar">
       <div class="section-title">
         <h2 data-i18n="upcomingDeadlines">Yaklaşan son tarihler</h2>
         <p data-i18n="deadlinesIntro">Etkinlik bazında yapılacaklar · İstanbul saatine göre</p>
@@ -990,7 +1028,7 @@
     <div class="timeline-item ">
       <div class="timeline-date">
         <strong><span data-copy-tr="1 Eylül 2026, 09:59" data-copy-en="1 September 2026, 09:59">1 Eylül 2026, 09:59</span></strong>
-        <span class="countdown" data-days-left="33">33 gün kaldı</span>
+        <span class="countdown" data-days-left="32">32 gün kaldı</span>
       </div>
       <div class="timeline-body">
         <span class="pill"><span data-copy-tr="Başvuru" data-copy-en="Registration">Başvuru</span></span>
@@ -1010,7 +1048,7 @@
     <div class="timeline-item ">
       <div class="timeline-date">
         <strong><span data-copy-tr="7 Eylül 2026, 20:00" data-copy-en="7 September 2026, 20:00">7 Eylül 2026, 20:00</span></strong>
-        <span class="countdown" data-days-left="39">39 gün kaldı</span>
+        <span class="countdown" data-days-left="38">38 gün kaldı</span>
       </div>
       <div class="timeline-body">
         <span class="pill"><span data-copy-tr="Tanıtım" data-copy-en="Promotion">Tanıtım</span></span>
@@ -1030,7 +1068,7 @@
     <div class="timeline-item ">
       <div class="timeline-date">
         <strong><span data-copy-tr="22 Eylül 2026, 09:59" data-copy-en="22 September 2026, 09:59">22 Eylül 2026, 09:59</span></strong>
-        <span class="countdown" data-days-left="54">54 gün kaldı</span>
+        <span class="countdown" data-days-left="53">53 gün kaldı</span>
       </div>
       <div class="timeline-body">
         <span class="pill"><span data-copy-tr="Demo &amp; Mağaza" data-copy-en="Demo &amp; Store">Demo &amp; Mağaza</span></span>
@@ -1050,7 +1088,7 @@
     <div class="timeline-item ">
       <div class="timeline-date">
         <strong><span data-copy-tr="6 Ekim 2026, 09:59" data-copy-en="6 October 2026, 09:59">6 Ekim 2026, 09:59</span></strong>
-        <span class="countdown" data-days-left="68">68 gün kaldı</span>
+        <span class="countdown" data-days-left="67">67 gün kaldı</span>
       </div>
       <div class="timeline-body">
         <span class="pill"><span data-copy-tr="Demo &amp; Mağaza" data-copy-en="Demo &amp; Store">Demo &amp; Mağaza</span></span>
@@ -1070,7 +1108,7 @@
     <div class="timeline-item ">
       <div class="timeline-date">
         <strong><span data-copy-tr="8 Ekim 2026, 20:00" data-copy-en="8 October 2026, 20:00">8 Ekim 2026, 20:00</span></strong>
-        <span class="countdown" data-days-left="70">70 gün kaldı</span>
+        <span class="countdown" data-days-left="69">69 gün kaldı</span>
       </div>
       <div class="timeline-body">
         <span class="pill"><span data-copy-tr="Yayın" data-copy-en="Publishing">Yayın</span></span>
@@ -1090,7 +1128,7 @@
     <div class="timeline-item ">
       <div class="timeline-date">
         <strong><span data-copy-tr="9 Ekim 2026, 09:59" data-copy-en="9 October 2026, 09:59">9 Ekim 2026, 09:59</span></strong>
-        <span class="countdown" data-days-left="71">71 gün kaldı</span>
+        <span class="countdown" data-days-left="70">70 gün kaldı</span>
       </div>
       <div class="timeline-body">
         <span class="pill"><span data-copy-tr="Tanıtım" data-copy-en="Promotion">Tanıtım</span></span>
@@ -1110,7 +1148,7 @@
     <div class="timeline-item ">
       <div class="timeline-date">
         <strong><span data-copy-tr="19 Ekim 2026, 20:00" data-copy-en="19 October 2026, 20:00">19 Ekim 2026, 20:00</span></strong>
-        <span class="countdown" data-days-left="81">81 gün kaldı</span>
+        <span class="countdown" data-days-left="80">80 gün kaldı</span>
       </div>
       <div class="timeline-body">
         <span class="pill"><span data-copy-tr="Yayın" data-copy-en="Publishing">Yayın</span></span>
@@ -1130,10 +1168,10 @@
     </article></div>
     </section>
 
-    <section class="section">
+    <section class="section dashboard-panel" id="calendar" data-dashboard-panel="radar">
       <div class="section-title">
         <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
-        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="30 Temmuz 2026, 23:13" data-copy-en="30 July 2026, 23:13">30 Temmuz 2026, 23:13</span></p>
+        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="31 Temmuz 2026, 00:00" data-copy-en="31 July 2026, 00:00">31 Temmuz 2026, 00:00</span></p>
       </div>
       <div class="toolbar">
         <label class="sr-only" for="search" data-i18n="searchEvents">Etkinlik ara</label>
@@ -5373,38 +5411,339 @@
       <div class="empty" id="no-results" role="status" aria-live="polite" hidden data-i18n="noResults">Bu filtrelerle eşleşen etkinlik yok.</div>
     </section>
 
-    <section class="section" aria-labelledby="metrics-heading">
+
+    <section class="section dashboard-panel" id="steam-news" data-dashboard-panel="news" aria-labelledby="steam-news-heading" hidden>
       <div class="section-title">
-        <h2 id="metrics-heading"><span data-copy-tr="Operasyon metrikleri" data-copy-en="Operational metrics">Operasyon metrikleri</span></h2>
-        <p><span data-copy-tr="Takvimin büyüklüğünü değil, ekibin ilerlemesini gösterir." data-copy-en="Measures team progress rather than calendar size.">Takvimin büyüklüğünü değil, ekibin ilerlemesini gösterir.</span></p>
+        <div>
+          <h2 id="steam-news-heading" data-i18n="steamNews">Steam Haberleri</h2>
+          <p data-i18n="newsIntro">Yeni çıkanlar, yaklaşan oyunlar ve Valve’ın resmî Steamworks duyuruları.</p>
+        </div>
+        <p><span data-copy-tr="Son güncelleme:" data-copy-en="Last updated:">Son güncelleme:</span> <span data-copy-tr="30 Temmuz 2026, 23:55" data-copy-en="30 July 2026, 23:55">30 Temmuz 2026, 23:55</span></p>
       </div>
-      <div class="metric-grid">
-        <article class="metric-card"><strong data-metric-completion>0%</strong><span><span data-copy-tr="görev tamamlama" data-copy-en="task completion">görev tamamlama</span></span></article>
-        <article class="metric-card"><strong data-metric-submitted>0</strong><span><span data-copy-tr="gönderilen başvuru" data-copy-en="submitted applications">gönderilen başvuru</span></span></article>
-        <article class="metric-card"><strong data-metric-accepted>0</strong><span><span data-copy-tr="kabul edilen başvuru" data-copy-en="accepted applications">kabul edilen başvuru</span></span></article>
-        <article class="metric-card"><strong data-metric-games>0</strong><span><span data-copy-tr="takip edilen oyun" data-copy-en="tracked games">takip edilen oyun</span></span></article>
+
+            <div class="news-block">
+              <h3><span data-copy-tr="Yeni çıkan ve çıkacak oyunlar" data-copy-en="New and upcoming games">Yeni çıkan ve çıkacak oyunlar</span></h3>
+              <div class="news-grid">
+    <article class="news-card" data-news-kind="new_release">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4607350/5855bd89405f8c7879f462b1337daf4a87c3caff/capsule_231x87.jpg?t=1785444593" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Sunfall &#039;80</h3>
+
+        <a href="https://store.steampowered.com/app/4607350/Sunfall_80/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3496340/03b328720277cc53bdc2fec344deeec7bec23dd1/capsule_231x87.jpg?t=1785443468" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Welcome to the Sharehouse! ~ domestic life with three cute girls~</h3>
+
+        <a href="https://store.steampowered.com/app/3496340/Welcome_to_the_Sharehouse__domestic_life_with_three_cute_girls/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4362510/929db4713cfc0607dca18367697bbdd683332b23/capsule_231x87.jpg?t=1785441414" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Random Dragons</h3>
+
+        <a href="https://store.steampowered.com/app/4362510/Random_Dragons/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4812060/750c0de94edb07a7f2407b74a219c987f7842946/capsule_231x87.jpg?t=1785439969" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Terminal Warfare</h3>
+
+        <a href="https://store.steampowered.com/app/4812060/Terminal_Warfare/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4104700/b191650910f2b4c7bd5f2960b79e0cdb9be0caa2/capsule_231x87.jpg?t=1785441815" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Boli</h3>
+
+        <a href="https://store.steampowered.com/app/4104700/Boli/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4812150/dfae5567a479d64bd1a57f5004287ae77539c1ad/capsule_231x87.jpg?t=1785439401" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Survival Code</h3>
+
+        <a href="https://store.steampowered.com/app/4812150/Survival_Code/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4747440/c0beb83d688c093c808449300a387b069be1d5d8/capsule_231x87.jpg?t=1785438091" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>What&#039;s Heaven For?</h3>
+
+        <a href="https://store.steampowered.com/app/4747440/Whats_Heaven_For/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="new_release">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4029590/d845ff19f5faaa4a5a28b1812b307b1ebfe94ca2/capsule_231x87.jpg?t=1785438033" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yeni çıktı" data-copy-en="New release">Yeni çıktı</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Between Love &amp; Uprising: A Cheaters Dating Simulator</h3>
+
+        <a href="https://store.steampowered.com/app/4029590/Between_Love__Uprising_A_Cheaters_Dating_Simulator/?snr=1_7_7_230_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="coming_soon">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4286470/f77cd978cffc5543abc71305de58b6d83626bdec/capsule_231x87.jpg?t=1784632235" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>The Rebellion</h3>
+
+        <a href="https://store.steampowered.com/app/4286470/The_Rebellion/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="coming_soon">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3205020/f13c1667ee94b9d260b42dc7c328d4fe74f560dc/capsule_231x87.jpg?t=1785354436" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Coven: All Powerful</h3>
+
+        <a href="https://store.steampowered.com/app/3205020/Coven_All_Powerful/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="coming_soon">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4358460/b8c1fa18a830c797ce5d98a9b6e4f7b4529db035/capsule_231x87.jpg?t=1785417363" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Card Homestead</h3>
+
+        <a href="https://store.steampowered.com/app/4358460/Card_Homestead/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="coming_soon">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4790300/290a96c8c98a001398805d3c7897cbc1f783e594/capsule_231x87.jpg?t=1785335676" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Morphing Blocks</h3>
+
+        <a href="https://store.steampowered.com/app/4790300/Morphing_Blocks/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="coming_soon">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4330780/4b395d7bc4d52c083b2857c42f1c58a66a4ac087/capsule_231x87.jpg?t=1784250547" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>On The Way Home : Strange Incidents</h3>
+
+        <a href="https://store.steampowered.com/app/4330780/On_The_Way_Home__Strange_Incidents/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="coming_soon">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2530250/1eb6514f860b4a6d264331c86fdd1743d03ad5db/capsule_231x87.jpg?t=1785230974" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>PARKSIDE: DECAYED SOUL MANIPULATION</h3>
+
+        <a href="https://store.steampowered.com/app/2530250/PARKSIDE_DECAYED_SOUL_MANIPULATION/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="coming_soon">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4979560/7c30c3a2eeb654687a0bb612112774e4baeee058/capsule_231x87.jpg?t=1785197979" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>To Deal With Pain</h3>
+
+        <a href="https://store.steampowered.com/app/4979560/To_Deal_With_Pain/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="coming_soon">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4514210/96e3bc62b09630aef9e334f715aac5d6d8bbeadf/capsule_231x87.jpg?t=1783141180" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>30 Jul, 2026</time>
+        </div>
+        <h3>Rose Guns Days -Season 2-</h3>
+
+        <a href="https://store.steampowered.com/app/4514210/Rose_Guns_Days_Season_2/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article></div>
+            </div>
+            <div class="news-block">
+              <h3><span data-copy-tr="Steamworks ve platform değişiklikleri" data-copy-en="Steamworks and platform changes">Steamworks ve platform değişiklikleri</span></h3>
+              <p class="news-disclaimer"><span data-copy-tr="Yalnızca Valve’ın resmî duyuruları gösterilir; doğrulanmamış algoritma söylentileri eklenmez." data-copy-en="Only official Valve announcements are shown; unverified algorithm rumors are excluded.">Yalnızca Valve’ın resmî duyuruları gösterilir; doğrulanmamış algoritma söylentileri eklenmez.</span></p>
+              <div class="news-grid platform-news">
+    <article class="news-card" data-news-kind="platform">
+      <span class="news-icon" aria-hidden="true">⚙</span>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
+          <time><span data-copy-tr="28 Nis 2026" data-copy-en="28 Apr 2026">28 Nis 2026</span></time>
+        </div>
+        <h3>Steam Next Fest Developer Q&amp;A Session</h3>
+        <p>Join us August 18, 2026 at 10am Pacific time for a virtual Q&amp;A session about Steam Next FestAre you considering participating with a free demo in this edition or a future edition of Next Fest? Tune in and join members of the Steam team live in a virtual Q&amp;A session where we answe</p>
+        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/717902598999377016" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="platform">
+      <span class="news-icon" aria-hidden="true">⚙</span>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
+          <time><span data-copy-tr="24 Tem 2026" data-copy-en="24 Jul 2026">24 Tem 2026</span></time>
+        </div>
+        <h3>Steamworks SDK 1.65 has been released</h3>
+        <p>Steamworks SDK v1.65 has been released, and is available for download from https://partner.steamgames.com. Like any Steamworks SDK release, updating is recommended but not required - older versions will continue to work without issue. Note: This SDK version was re-released July 2</p>
+        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/678504885369439021" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="platform">
+      <span class="news-icon" aria-hidden="true">⚙</span>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
+          <time><span data-copy-tr="15 Tem 2026" data-copy-en="15 Jul 2026">15 Tem 2026</span></time>
+        </div>
+        <h3>NEW: The Steam sales and events scheduled so far for 2027</h3>
+        <p>What better way to celebrate making it (more than) halfway through 2026 than by sharing the schedule of all the awesome Steam events we have planned for the first half of 2027? Each year we work to come up with different ideas for fun themes to build fests around so that all kind</p>
+        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/668369251018480125" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="platform">
+      <span class="news-icon" aria-hidden="true">⚙</span>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
+          <time><span data-copy-tr="13 Tem 2026" data-copy-en="13 Jul 2026">13 Tem 2026</span></time>
+        </div>
+        <h3>Updates to Developer/Publisher/Franchise Homepage Tool</h3>
+        <p>Earlier this year, we added a brand new tool for creating and editing your Developer/ Publisher/ Franchise homepages on Steam. The response from developers has been very positive and we&#039;ve received some useful suggestions for further improvements. Based on the feedback, we’ve now</p>
+        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/668369251018474261" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="platform">
+      <span class="news-icon" aria-hidden="true">⚙</span>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
+          <time><span data-copy-tr="5 Haz 2026" data-copy-en="5 Jun 2026">5 Haz 2026</span></time>
+        </div>
+        <h3>Steam Machine and Steam Frame Standalone Verified</h3>
+        <p>Hello!Today we are expanding the Verified program to include Steam Machine and Steam Frame, both of which are shipping this summer. As with Steam Deck Verified, the goal is to help customers understand the out-of-box experience for a given title on these new devices, and how smoo</p>
+        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/716780409378048028" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="platform">
+      <span class="news-icon" aria-hidden="true">⚙</span>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
+          <time><span data-copy-tr="18 May 2026" data-copy-en="18 May 2026">18 May 2026</span></time>
+        </div>
+        <h3>Update to Store Tags: Additions, Removals, and Edits</h3>
+        <p>Today we&#039;ve made some changes to the set of official store tags available on Steam, adding 17 new tags, removing 28, and merging/updating a handful of others. These changes are made with the goal of helping Steam generate appropriate recommendations, and helping players identify </p>
+        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/528746250052307456" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="platform">
+      <span class="news-icon" aria-hidden="true">⚙</span>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
+          <time><span data-copy-tr="23 Nis 2026" data-copy-en="23 Apr 2026">23 Nis 2026</span></time>
+        </div>
+        <h3>New Steam Deck data now available in beta</h3>
+        <p>Today we&#039;ve updated the partner dashboard with more information for Steam Deck Verified games. If your game has received a Steam Deck verification report and is marked as Verified, you will now see two new data sections tied to that report. Average framerate dataThis section prov</p>
+        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/717902598999377022" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="platform">
+      <span class="news-icon" aria-hidden="true">⚙</span>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
+          <time><span data-copy-tr="4 Mar 2026" data-copy-en="4 Mar 2026">4 Mar 2026</span></time>
+        </div>
+        <h3>Next Fest Developer Q&amp;A Session</h3>
+        <p>Join us April 21, 2026 at 10am Pacific time for a virtual Q&amp;A session about Next FestAre you considering participating with a free demo in this edition or a future edition of Next Fest? Tune in and join members of the Steam Team live in a virtual Q&amp;A session where we answer devel</p>
+        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/501722749836722566" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="platform">
+      <span class="news-icon" aria-hidden="true">⚙</span>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
+          <time><span data-copy-tr="2 Nis 2026" data-copy-en="2 Apr 2026">2 Nis 2026</span></time>
+        </div>
+        <h3>Wishlist Notification Email Updates</h3>
+        <p>We&#039;ve made some changes to our wishlist notification system. These changes are mostly around improving the reliability and speed of the system and should be invisible to users, but they will result in some changes to how wishlist email notification stats are reported. Previously,</p>
+        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/491595354293142217" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="platform">
+      <span class="news-icon" aria-hidden="true">⚙</span>
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Steamworks güncellemesi" data-copy-en="Steamworks update">Steamworks güncellemesi</span></span>
+          <time><span data-copy-tr="28 Mar 2026" data-copy-en="28 Mar 2026">28 Mar 2026</span></time>
+        </div>
+        <h3>Updates to Pricing Conversion Tools</h3>
+        <p>With today’s Steam update, we’ve made two improvements to Steam’s pricing conversion data to help developers price games in 37 currencies and 4 region groups worldwide:We’ve updated our pricing conversion data to better reflect current market conditions around the world.We’ve als</p>
+        <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/501722749836722406" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article></div>
+            </div>
     </section>
 
-    <section class="section" aria-labelledby="admin-heading">
-      <div class="section-title">
-        <h2 id="admin-heading"><span data-copy-tr="Yönetim" data-copy-en="Administration">Yönetim</span></h2>
-        <p><span data-copy-tr="Ekip verisi, bildirim tercihleri ve senkronizasyon durumu." data-copy-en="Team data, notification preferences and sync status.">Ekip verisi, bildirim tercihleri ve senkronizasyon durumu.</span></p>
-      </div>
-      <div class="admin-panel">
-        <div class="admin-status">
-          <span class="sync-badge" data-team-sync><span data-copy-tr="Yerel çalışma modu" data-copy-en="Local working mode">Yerel çalışma modu</span></span>
-          <span data-team-user></span>
-          <button type="button" data-team-refresh><span data-copy-tr="Ekip verisini yenile" data-copy-en="Refresh team data">Ekip verisini yenile</span></button>
-        </div>
-        <div class="notification-settings">
-          <strong><span data-copy-tr="Akıllı panel uyarıları" data-copy-en="Smart dashboard alerts">Akıllı panel uyarıları</span></strong>
-          <label><input type="checkbox" data-notification-deadlines checked> <span data-copy-tr="7 gün içindeki son tarihleri öne çıkar" data-copy-en="Highlight deadlines within 7 days">7 gün içindeki son tarihleri öne çıkar</span></label>
-          <label><input type="checkbox" data-notification-changes checked> <span data-copy-tr="Son 24 saatteki Valve değişikliklerini göster" data-copy-en="Show Valve changes from the last 24 hours">Son 24 saatteki Valve değişikliklerini göster</span></label>
-          <label><input type="checkbox" data-notification-overdue checked> <span data-copy-tr="Açık görevleri operasyon kuyruğuna ekle" data-copy-en="Add open tasks to the operations queue">Açık görevleri operasyon kuyruğuna ekle</span></label>
-        </div>
-      </div>
-    </section>
     <footer data-i18n="footer">Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
   </main>
   <script>
@@ -5420,6 +5759,11 @@
       "[data-incomplete-filter]",
     );
     const hashState = new URLSearchParams(location.hash.slice(1));
+    const viewTabs = [...document.querySelectorAll("[data-view-tab]")];
+    const dashboardPanels = [...document.querySelectorAll("[data-dashboard-panel]")];
+    const menuToggle = document.querySelector("[data-menu-toggle]");
+    const siteMenu = document.querySelector("[data-site-menu]");
+    let activeView = hashState.get("view") === "news" ? "news" : "radar";
     const allowedFilters = new Set([
       "all",
       "themed_fest",
@@ -5448,6 +5792,7 @@
       if (incompleteOnly) state.set("incomplete", "1");
       if (timelineOffset > 0) state.set("month", String(timelineOffset));
       if (activeEventId) state.set("event", activeEventId);
+      if (activeView === "news") state.set("view", "news");
       const hash = state.toString();
       history.replaceState(
         null,
@@ -5455,6 +5800,51 @@
         location.pathname + location.search + (hash ? "#" + hash : ""),
       );
     }
+
+    function closeMenu() {
+      siteMenu.hidden = true;
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
+
+    function setView(view, updateUrl = true) {
+      activeView = view === "news" ? "news" : "radar";
+      viewTabs.forEach((button) => {
+        const active = button.dataset.viewTab === activeView;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-selected", String(active));
+      });
+      dashboardPanels.forEach((panel) => {
+        panel.hidden = panel.dataset.dashboardPanel !== activeView;
+      });
+      if (updateUrl) writeUrlState();
+    }
+
+    menuToggle?.addEventListener("click", () => {
+      const opening = siteMenu.hidden;
+      siteMenu.hidden = !opening;
+      menuToggle.setAttribute("aria-expanded", String(opening));
+    });
+    siteMenu?.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        setView(link.dataset.menuView || "radar");
+        document.querySelector(link.getAttribute("href"))?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+        closeMenu();
+      });
+    });
+    viewTabs.forEach((button) => {
+      button.addEventListener("click", () => setView(button.dataset.viewTab));
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !siteMenu.hidden) {
+        closeMenu();
+        menuToggle.focus();
+      }
+    });
+    setView(activeView, false);
 
     function setToggleState(button, active) {
       button?.classList.toggle("active", active);
@@ -5536,6 +5926,18 @@
 
     const uiCopy = {
       languageLabel: { tr: "Arayüz dili", en: "Interface language" },
+      openMenu: { tr: "Menüyü aç", en: "Open menu" },
+      navigationLabel: { tr: "Sayfa navigasyonu", en: "Page navigation" },
+      navigation: { tr: "Navigasyon", en: "Navigation" },
+      overview: { tr: "Genel bakış", en: "Overview" },
+      changesShort: { tr: "Değişiklikler", en: "Changes" },
+      contentView: { tr: "İçerik görünümü", en: "Content view" },
+      radarTab: { tr: "Etkinlik Radarı", en: "Event Radar" },
+      steamNews: { tr: "Steam Haberleri", en: "Steam News" },
+      newsIntro: {
+        tr: "Yeni çıkanlar, yaklaşan oyunlar ve Valve’ın resmî Steamworks duyuruları.",
+        en: "New releases, upcoming games, and Valve’s official Steamworks announcements.",
+      },
       eyebrow: {
         tr: "Joygame Select · Steamworks Operasyonları",
         en: "Joygame Select · Steamworks Operations",
@@ -5551,6 +5953,16 @@
         en: "Shows potentially relevant themed festivals by matching tags exactly.",
       },
       gameName: { tr: "Oyun adı", en: "Game name" },
+      addSteamGame: { tr: "Steam’den oyun ekle", en: "Add a game from Steam" },
+      gameComparison: { tr: "Oyun istatistikleri", en: "Game statistics" },
+      statsIntro: {
+        tr: "Steam’in herkese açık anlık verileriyle ücretsiz karşılaştırma. Satış ve wishlist tahmini yapılmaz.",
+        en: "A free comparison using Steam’s public live data. Sales and wishlist figures are not estimated.",
+      },
+      statsAddGame: {
+        tr: "İstatistik görmek için Steam’den oyun ekleyin.",
+        en: "Add a game from Steam to view statistics.",
+      },
       typeTwoChars: {
         tr: "En az 2 karakter yazın.",
         en: "Enter at least 2 characters.",
@@ -5763,6 +6175,7 @@
         } catch {}
         applyDescriptionLanguage();
         renderGames();
+        renderGameStats();
         updateGameMatches();
         window.dispatchEvent(new Event("resize"));
       });
@@ -5788,9 +6201,6 @@
 
     let teamStateEnabled = false;
     let teamStateRecords = [];
-    let teamUser = "";
-    const teamSyncBadge = document.querySelector("[data-team-sync]");
-    const teamUserLabel = document.querySelector("[data-team-user]");
 
     async function loadTeamState() {
       if (location.protocol === "file:") return [];
@@ -5802,20 +6212,9 @@
         const body = await response.json();
         teamStateEnabled = body.enabled === true;
         teamStateRecords = Array.isArray(body.records) ? body.records : [];
-        teamUser = String(body.user || "");
-        teamSyncBadge.classList.toggle("online", teamStateEnabled);
-        teamSyncBadge.textContent = teamStateEnabled
-          ? localized("Ekip senkronizasyonu açık", "Team sync enabled")
-          : localized("Yerel çalışma modu", "Local working mode");
-        teamUserLabel.textContent = teamUser;
         return teamStateRecords;
       } catch {
         teamStateEnabled = false;
-        teamSyncBadge.classList.remove("online");
-        teamSyncBadge.textContent = localized(
-          "Yerel çalışma modu",
-          "Local working mode",
-        );
         return [];
       }
     }
@@ -5838,12 +6237,7 @@
           (item) => item.key !== record.key,
         );
         teamStateRecords.push(record);
-      } catch {
-        teamSyncBadge.textContent = localized(
-          "Senkronizasyon bekliyor",
-          "Sync pending",
-        );
-      }
+      } catch {}
     }
 
     async function removeTeamState(key) {
@@ -5855,12 +6249,7 @@
         );
         if (!response.ok) throw new Error("team state delete failed");
         teamStateRecords = teamStateRecords.filter((item) => item.key !== key);
-      } catch {
-        teamSyncBadge.textContent = localized(
-          "Senkronizasyon bekliyor",
-          "Sync pending",
-        );
-      }
+      } catch {}
     }
 
     const gamesStorageKey = "steam-etkinlik-radari-oyunlar-v1";
@@ -5875,6 +6264,7 @@
     const gameCancel = document.querySelector("[data-game-cancel]");
     const gamesList = document.querySelector("[data-games-list]");
     const gameMatchSummary = document.querySelector("[data-game-match-summary]");
+    const gameStats = document.querySelector("[data-game-stats]");
     const steamGameResults = document.querySelector(
       "[data-steam-game-results]",
     );
@@ -5886,6 +6276,115 @@
     let steamDetailController;
     let steamOptions = [];
     let selectedSteamDetails = null;
+    const gameStatsByAppId = new Map();
+    const statsStorageKey = "steam-etkinlik-radari-istatistik-v1";
+
+    function formatNumber(value) {
+      return new Intl.NumberFormat(
+        descriptionLanguage === "en" ? "en-US" : "tr-TR",
+      ).format(Number(value || 0));
+    }
+
+    function rememberStats(stats) {
+      try {
+        const history = JSON.parse(localStorage.getItem(statsStorageKey) || "{}");
+        const dateKey = String(stats.capturedAt || "").slice(0, 10);
+        const appHistory = Array.isArray(history[stats.appId])
+          ? history[stats.appId]
+          : [];
+        history[stats.appId] = [
+          ...appHistory.filter((item) => item.date !== dateKey),
+          {
+            date: dateKey,
+            currentPlayers: stats.currentPlayers,
+            totalReviews: stats.totalReviews,
+            positivePercent: stats.positivePercent,
+          },
+        ].slice(-90);
+        localStorage.setItem(statsStorageKey, JSON.stringify(history));
+      } catch {}
+    }
+
+    function renderGameStats() {
+      gameStats.replaceChildren();
+      const measurableGames = games.filter((game) => /^\d+$/.test(game.appId));
+      if (measurableGames.length === 0) {
+        const emptyState = document.createElement("div");
+        emptyState.className = "empty";
+        emptyState.textContent = translate("statsAddGame");
+        gameStats.append(emptyState);
+        return;
+      }
+      measurableGames.forEach((game) => {
+        const stats = gameStatsByAppId.get(game.appId);
+        const card = document.createElement("article");
+        card.className = "stats-card";
+        card.append(createGameCapsule(game));
+        const body = document.createElement("div");
+        const title = document.createElement("h4");
+        title.textContent = game.name;
+        body.append(title);
+        if (!stats) {
+          const loading = document.createElement("p");
+          loading.className = "stats-note";
+          loading.textContent = localized("Steam verisi alınıyor…", "Loading Steam data…");
+          body.append(loading);
+        } else {
+          const values = document.createElement("div");
+          values.className = "stats-values";
+          [
+            [formatNumber(stats.currentPlayers), localized("Anlık oyuncu", "Players now")],
+            [formatNumber(stats.totalReviews), localized("Toplam inceleme", "Total reviews")],
+            [stats.positivePercent + "%", localized("Olumlu", "Positive")],
+            [stats.price?.formatted || "—", localized("Fiyat", "Price")],
+          ].forEach(([value, label]) => {
+            const metric = document.createElement("span");
+            metric.className = "stats-value";
+            const strong = document.createElement("strong");
+            strong.textContent = value;
+            const caption = document.createElement("span");
+            caption.textContent = label;
+            metric.append(strong, caption);
+            values.append(metric);
+          });
+          body.append(values);
+          const note = document.createElement("p");
+          note.className = "stats-note";
+          note.textContent = localized(
+            "Günlük kayıtlar bu tarayıcıda 90 gün saklanır.",
+            "Daily snapshots are kept in this browser for 90 days.",
+          );
+          body.append(note);
+        }
+        card.append(body);
+        gameStats.append(card);
+      });
+    }
+
+    async function refreshGameStats() {
+      renderGameStats();
+      if (location.protocol === "file:") return;
+      await Promise.all(
+        games
+          .filter(
+            (game) =>
+              /^\d+$/.test(game.appId) && !gameStatsByAppId.has(game.appId),
+          )
+          .map(async (game) => {
+            try {
+              const response = await fetch(
+                "/api/steam-stats?appid=" + encodeURIComponent(game.appId),
+                { headers: { accept: "application/json" } },
+              );
+              if (!response.ok) return;
+              const stats = await response.json();
+              gameStatsByAppId.set(game.appId, stats);
+              rememberStats(stats);
+            } catch {}
+          }),
+      );
+      renderGameStats();
+    }
 
     function safeSteamImage(value) {
       try {
@@ -5964,19 +6463,18 @@
         steamSearchStatus.textContent =
           option.name +
           localized(
-            " seçildi · Steam bilgileri dolduruldu.",
-            " selected · Steam details filled in.",
+            " seçildi · Steam bilgileri alındı ve oyun ekleniyor…",
+            " selected · Steam details loaded; adding game…",
           );
+        gameForm.requestSubmit();
       } catch (error) {
         if (error?.name === "AbortError") return;
         steamSearchStatus.textContent =
           option.name +
           localized(
-            " seçildi · Ayrıntılar alınamadı; manuel düzenleyebilirsiniz.",
-            " selected · Details unavailable; you can edit them manually.",
+            " seçildi · Ayrıntılar alınamadı, lütfen yeniden deneyin.",
+            " selected · Details unavailable; please try again.",
           );
-      } finally {
-        gameTagsInput.focus();
       }
     }
 
@@ -6364,33 +6862,35 @@
     function renderGames() {
       gamesList.replaceChildren();
       games.forEach((game) => {
-        const item = document.createElement("article");
+        const item = document.createElement("details");
         item.className = "game-profile";
+
+        const summary = document.createElement("summary");
+        summary.append(createGameCapsule(game));
+        const overlay = document.createElement("span");
+        overlay.className = "game-card-overlay";
+        const overlayName = document.createElement("strong");
+        overlayName.textContent = game.name;
+        const overlayMeta = document.createElement("small");
+        overlayMeta.textContent =
+          "Steam App ID · " + (game.appId || localized("yok", "none"));
+        overlay.append(overlayName, overlayMeta);
+        summary.append(overlay);
 
         const body = document.createElement("div");
         body.className = "game-profile-body";
-        const name = document.createElement("strong");
-        name.textContent = game.name;
         const meta = document.createElement("small");
         meta.textContent = gameMeta(game);
         const tags = document.createElement("small");
         tags.textContent = game.tags.length
           ? localized("Etiketler: ", "Tags: ") + game.tags.join(", ")
           : localized("Etiket girilmedi", "No tags entered");
-        body.append(name, meta, tags);
+        body.append(meta, tags);
         const history = nextFestHistoryBlock(game);
         if (history) body.append(history);
 
         const actions = document.createElement("div");
         actions.className = "game-profile-actions";
-        const edit = document.createElement("button");
-        edit.type = "button";
-        edit.dataset.gameEdit = game.id;
-        edit.textContent = localized("Düzenle", "Edit");
-        edit.setAttribute(
-          "aria-label",
-          game.name + localized(" oyununu düzenle", " edit game"),
-        );
         const remove = document.createElement("button");
         remove.type = "button";
         remove.dataset.gameDelete = game.id;
@@ -6411,9 +6911,9 @@
           "aria-label",
           game.name + localized(" için operasyon görünümü", " operations view"),
         );
-        actions.append(focus, edit, remove);
+        actions.append(focus, remove);
         body.append(actions);
-        item.append(createGameCapsule(game), body);
+        item.append(summary, body);
         gamesList.append(item);
       });
     }
@@ -6436,9 +6936,12 @@
         ? games.filter((game) => game.id === focusedGameId)
         : games;
       if (row.dataset.kind === "next_fest") {
-        return candidateGames
-          .filter((game) => game.releaseStatus === "unreleased")
-          .map((game) => ({ game, score: 0, nextFest: true }));
+        return candidateGames.map((game) => ({
+          game,
+          score: 0,
+          nextFest: true,
+          eligible: game.releaseStatus === "unreleased",
+        }));
       }
       let eventTags = [];
       try {
@@ -6463,12 +6966,15 @@
     function appendMatchBadge(container, match) {
       const badge = document.createElement("div");
       badge.className = "game-match-card";
+      badge.classList.toggle("not-eligible", match.eligible === false);
       const copy = document.createElement("span");
       const name = document.createElement("strong");
       name.textContent = "★ " + match.game.name;
       const detail = document.createElement("small");
       detail.textContent = match.nextFest
-        ? localized("Next Fest adayı", "Next Fest candidate")
+        ? match.eligible === false
+          ? localized("Next Fest için uygun değil", "Not eligible for Next Fest")
+          : localized("Next Fest adayı", "Next Fest candidate")
         : match.score +
           localized(" etiket eşleşmesi", match.score === 1 ? " tag match" : " tag matches");
       copy.append(name, detail);
@@ -6477,10 +6983,15 @@
         "aria-label",
         match.nextFest
           ? match.game.name +
-            localized(
-              " Next Fest çıkış kuralını karşılıyor",
-              " meets the Next Fest release-status rule",
-            )
+            (match.eligible === false
+              ? localized(
+                  " Next Fest çıkış kuralını karşılamıyor",
+                  " does not meet the Next Fest release-status rule",
+                )
+              : localized(
+                  " Next Fest çıkış kuralını karşılıyor",
+                  " meets the Next Fest release-status rule",
+                ))
           : match.game.name +
             ", " +
             match.score +
@@ -6505,6 +7016,9 @@
       let matchedEventCount = 0;
       rows.forEach((row) => {
         const matches = matchingGamesForRow(row);
+        const eligibleMatches = matches.filter(
+          (match) => match.eligible !== false,
+        );
         const result = row.querySelector("[data-game-match-result]");
         const warning = row.querySelector("[data-game-match-warning]");
         result.replaceChildren();
@@ -6513,9 +7027,9 @@
         result.hidden = matches.length === 0;
 
         if (row.dataset.kind === "next_fest" && games.length > 0) {
-          const ineligible = games.filter(
-            (game) => game.releaseStatus !== "unreleased",
-          );
+          const ineligible = matches
+            .filter((match) => match.eligible === false)
+            .map((match) => match.game);
           if (ineligible.length > 0) {
             warning.textContent = ineligible
               .map(
@@ -6530,8 +7044,8 @@
           }
         }
         warning.hidden = !warning.textContent;
-        row.dataset.gameMatch = String(matches.length > 0);
-        if (matches.length > 0) matchedEventCount++;
+        row.dataset.gameMatch = String(eligibleMatches.length > 0);
+        if (eligibleMatches.length > 0) matchedEventCount++;
 
         document
           .querySelectorAll(
@@ -6539,22 +7053,24 @@
           )
           .forEach((chip) => {
             chip.querySelector("[data-game-chip-match]")?.remove();
-            chip.classList.toggle("game-match", matches.length > 0);
+            chip.classList.toggle("game-match", eligibleMatches.length > 0);
             chip.dataset.gameAriaSuffix =
-              matches.length > 0
+              eligibleMatches.length > 0
                 ? "; " +
-                  matches.map((match) => match.game.name).join(", ") +
+                  eligibleMatches.map((match) => match.game.name).join(", ") +
                   " oyunuyla eşleşiyor"
                 : "";
             refreshTimelineChipAria(chip);
-            if (matches.length === 0) return;
+            if (eligibleMatches.length === 0) return;
             const marker = document.createElement("span");
             marker.className = "timeline-game-match";
             marker.dataset.gameChipMatch = "";
             marker.textContent =
               "★ " +
-              matches[0].game.name +
-              (matches.length > 1 ? " +" + (matches.length - 1) : "");
+              eligibleMatches[0].game.name +
+              (eligibleMatches.length > 1
+                ? " +" + (eligibleMatches.length - 1)
+                : "");
             chip.append(marker);
           });
       });
@@ -6637,6 +7153,7 @@
     let applications = {};
     let games = readGames();
     renderGames();
+    refreshGameStats();
     updateGameMatches();
     refreshSavedGameDetails();
     const teamStatePromise = loadTeamState();
@@ -6652,6 +7169,7 @@
         games = [...merged.values()];
         writeGames();
         renderGames();
+        refreshGameStats();
         updateGameMatches();
       }
       if (teamStateEnabled) {
@@ -6663,17 +7181,22 @@
           );
       }
       initializeApplicationWorkflows(records);
-      renderOperations();
     });
 
     gameForm?.addEventListener("submit", (event) => {
       event.preventDefault();
       const name = gameNameInput.value.trim();
       if (!name) return;
+      const normalizedAppId = gameAppIdInput.value
+        .replace(/\D/g, "")
+        .slice(0, 12);
+      const existingByAppId = games.find(
+        (item) => normalizedAppId && item.appId === normalizedAppId,
+      );
       const game = {
-        id: gameIdInput.value || createGameId(),
+        id: gameIdInput.value || existingByAppId?.id || createGameId(),
         name,
-        appId: gameAppIdInput.value.replace(/\D/g, "").slice(0, 12),
+        appId: normalizedAppId,
         tags: normalizeTags(gameTagsInput.value),
         demoStatus: gameDemoInput.value,
         releaseStatus: gameReleaseInput.value,
@@ -6699,9 +7222,9 @@
       writeGames();
       upsertTeamState("game:" + game.id, "game", game);
       renderGames();
+      refreshGameStats();
       updateGameMatches();
       initializeApplicationWorkflows(teamStateRecords);
-      renderOperations();
       resetGameForm();
     });
 
@@ -6715,6 +7238,7 @@
       if (focusId) {
         focusedGameId = focusedGameId === focusId ? "" : focusId;
         renderGames();
+        refreshGameStats();
         updateGameMatches();
         document.querySelector("#events")?.scrollIntoView({
           behavior: "smooth",
@@ -6760,9 +7284,9 @@
         writeGames();
         removeTeamState("game:" + deleteId);
         renderGames();
+        refreshGameStats();
         updateGameMatches();
         initializeApplicationWorkflows(teamStateRecords);
-        renderOperations();
         if (gameIdInput.value === deleteId) resetGameForm();
       }
     });
@@ -6988,42 +7512,7 @@
           showApplication(workflow);
           workflow.querySelector("[data-application-message]").textContent =
             localized("Kaydedildi.", "Saved.");
-          renderOperations();
         });
-    });
-
-    const notificationStorageKey =
-      "steam-etkinlik-radari-bildirimler-v1";
-    const notificationInputs = [
-      ...document.querySelectorAll(
-        "[data-notification-deadlines], [data-notification-changes], [data-notification-overdue]",
-      ),
-    ];
-    let notificationPreferences = {};
-    try {
-      notificationPreferences = JSON.parse(
-        localStorage.getItem(notificationStorageKey) || "{}",
-      );
-    } catch {}
-    notificationInputs.forEach((input) => {
-      const key = input.dataset.notificationDeadlines !== undefined
-        ? "deadlines"
-        : input.dataset.notificationChanges !== undefined
-          ? "changes"
-          : "overdue";
-      if (typeof notificationPreferences[key] === "boolean") {
-        input.checked = notificationPreferences[key];
-      }
-      input.addEventListener("change", () => {
-        notificationPreferences[key] = input.checked;
-        try {
-          localStorage.setItem(
-            notificationStorageKey,
-            JSON.stringify(notificationPreferences),
-          );
-        } catch {}
-        renderOperations();
-      });
     });
 
     const taskStorageKey = "steam-etkinlik-radari-gorevler-v1";
@@ -7132,125 +7621,7 @@
         box.checked = Boolean(completedTasks[box.dataset.taskId]);
       });
       taskGroups.forEach(updateTaskProgress);
-      renderOperations();
       apply();
-    }
-
-    function renderOperations() {
-      const completedCount = Object.keys(completedTasks || {}).length;
-      const totalTasks = taskBoxes.length;
-      const incompleteCount = Math.max(0, totalTasks - completedCount);
-      const activeApplications = Object.values(applications).filter(
-        (record) =>
-          record && ["preparing", "submitted"].includes(record.status),
-      );
-      document.querySelector("[data-operation-tasks]").textContent =
-        String(incompleteCount);
-      document.querySelector("[data-operation-applications]").textContent =
-        String(activeApplications.length);
-      document.querySelector("[data-metric-completion]").textContent =
-        (totalTasks ? Math.round((completedCount / totalTasks) * 100) : 0) + "%";
-      document.querySelector("[data-metric-submitted]").textContent = String(
-        Object.values(applications).filter(
-          (record) => record?.status === "submitted",
-        ).length,
-      );
-      document.querySelector("[data-metric-accepted]").textContent = String(
-        Object.values(applications).filter(
-          (record) => record?.status === "accepted",
-        ).length,
-      );
-      document.querySelector("[data-metric-games]").textContent =
-        String(games.length);
-
-      const inbox = document.querySelector("[data-operation-inbox]");
-      inbox.replaceChildren();
-      const items = [];
-      if (notificationPreferences.deadlines !== false) {
-        document
-          .querySelectorAll(".timeline-item .countdown[data-days-left]")
-          .forEach((countdown) => {
-            const days = Number(countdown.dataset.daysLeft);
-            if (days < 0 || days > 7 || items.length >= 4) return;
-            const group = countdown.closest(".deadline-group");
-            items.push({
-              title:
-                group?.querySelector(".deadline-group-head h3")?.textContent ||
-                localized("Kritik tarih", "Critical deadline"),
-              href: "#events",
-              meta: countdown.textContent || "",
-            });
-          });
-      }
-      if (notificationPreferences.changes !== false) {
-        document.querySelectorAll(".change-row").forEach((change) => {
-          const detectedAt = Date.parse(
-            change.querySelector("time")?.getAttribute("datetime") || "",
-          );
-          if (
-            !Number.isFinite(detectedAt) ||
-            Date.now() - detectedAt > 24 * 60 * 60 * 1000
-          ) {
-            return;
-          }
-          items.push({
-            title:
-              change.querySelector("strong")?.textContent ||
-              localized("Valve takvim değişikliği", "Valve calendar change"),
-            href: "#events",
-            meta:
-              change.querySelector(".change-type")?.textContent || "",
-          });
-        });
-      }
-      if (notificationPreferences.overdue !== false) {
-        taskBoxes
-          .filter((box) => !box.checked)
-          .slice(0, 5)
-          .forEach((box) => {
-            const row = box.closest(".event-row");
-            items.push({
-              title:
-                box.closest(".task-item")?.querySelector(".task-title strong")
-                  ?.textContent || "",
-              href: "#" + row.id,
-              meta:
-                row.querySelector(".event-heading h3")?.textContent || "",
-            });
-          });
-      }
-      activeApplications.slice(0, 3).forEach((record) => {
-        const game = games.find((item) => item.id === record.gameId);
-        const row = document.getElementById("etkinlik-" + record.eventId);
-        items.push({
-          title:
-            (game?.name || localized("Oyun", "Game")) +
-            localized(" başvurusu", " application"),
-          href: row ? "#" + row.id : "#events",
-          meta:
-            applicationStatusLabels[record.status]?.[descriptionLanguage] || "",
-        });
-      });
-      if (items.length === 0) {
-        const message = document.createElement("span");
-        message.textContent = localized(
-          "Bugün için açık operasyon işi yok.",
-          "No open operational work for today.",
-        );
-        inbox.append(message);
-        return;
-      }
-      items.slice(0, 10).forEach((item) => {
-        const operation = document.createElement("div");
-        operation.className = "operation-item";
-        const link = document.createElement("a");
-        link.href = item.href;
-        link.textContent = item.title;
-        const meta = document.createElement("span");
-        meta.textContent = item.meta;
-        operation.append(link, meta);
-        inbox.append(operation);
-      });
     }
 
     taskGroups.forEach((group) => {
@@ -7266,14 +7637,12 @@
             { completed: box.checked },
           );
           updateTaskProgress(group);
-          renderOperations();
           apply();
         });
       });
     });
     syncTaskUi();
     initializeApplicationWorkflows(teamStateRecords);
-    renderOperations();
     teamStatePromise.then((records) => {
       records
         .filter((record) => record.type === "task")
@@ -7300,27 +7669,9 @@
             "task",
             { completed: true },
           ),
-        );
+      );
       syncTaskUi();
-      renderOperations();
     });
-
-    document
-      .querySelector("[data-team-refresh]")
-      ?.addEventListener("click", async () => {
-        const records = await loadTeamState();
-        initializeApplicationWorkflows(records);
-        records
-          .filter((record) => record.type === "task")
-          .forEach((record) => {
-            if (record.payload?.completed === true) {
-              completedTasks[record.key.slice("task:".length)] = true;
-            }
-          });
-        writeTaskMap(taskStorageKey, completedTasks);
-        syncTaskUi();
-        renderOperations();
-      });
 
     if (activeEventId) {
       const activeEvent = document.getElementById("etkinlik-" + activeEventId);
@@ -7426,6 +7777,7 @@
           games = importedGames;
           writeGames();
           renderGames();
+          refreshGameStats();
           updateGameMatches();
           resetGameForm();
         }

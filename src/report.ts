@@ -6,12 +6,15 @@ import { config, paths } from "./config.js";
 import { deadlineCopy } from "./deadline-copy.js";
 import { buildEventTasks, type EventTask } from "./event-tasks.js";
 import { createCalendarIcs, createEventIcs } from "./ics.js";
+import { readSteamNews } from "./news.js";
 import { renderTimeline } from "./timeline.js";
 import type {
   ChangeKind,
   ChangeRecord,
   EventSnapshot,
   SteamEvent,
+  SteamNewsItem,
+  SteamNewsSnapshot,
 } from "./types.js";
 import { escapeHtml, stableId } from "./utils.js";
 import { createReportModel, type DeadlineView } from "./view-model.js";
@@ -388,9 +391,79 @@ function applicationWorkflow(event: SteamEvent): string {
     </details>`;
 }
 
+function newsCard(item: SteamNewsItem): string {
+  const kindCopy = {
+    new_release: ["Yeni çıktı", "New release"],
+    coming_soon: ["Yakında", "Coming soon"],
+    platform: ["Steamworks güncellemesi", "Steamworks update"],
+  }[item.kind];
+  const date =
+    item.publishedAt && DateTime.fromISO(item.publishedAt).isValid
+      ? localizedText(
+          localDate(item.publishedAt),
+          localDateEn(item.publishedAt),
+        )
+      : escapeHtml(item.dateLabel || "");
+  return `
+    <article class="news-card" data-news-kind="${item.kind}">
+      ${
+        item.imageUrl
+          ? `<img src="${escapeHtml(item.imageUrl)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+          : `<span class="news-icon" aria-hidden="true">${item.kind === "platform" ? "⚙" : "▶"}</span>`
+      }
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span>${localizedText(kindCopy[0], kindCopy[1])}</span>
+          ${date ? `<time>${date}</time>` : ""}
+        </div>
+        <h3>${escapeHtml(item.title)}</h3>
+        ${item.summary ? `<p>${escapeHtml(item.summary)}</p>` : ""}
+        <a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${localizedText("Resmî kaynakta aç", "Open official source")} <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>`;
+}
+
+function newsSection(news?: SteamNewsSnapshot): string {
+  const items = news?.items || [];
+  const gameItems = items.filter((item) => item.kind !== "platform");
+  const platformItems = items.filter((item) => item.kind === "platform");
+  return `
+    <section class="section dashboard-panel" id="steam-news" data-dashboard-panel="news" aria-labelledby="steam-news-heading" hidden>
+      <div class="section-title">
+        <div>
+          <h2 id="steam-news-heading" data-i18n="steamNews">Steam Haberleri</h2>
+          <p data-i18n="newsIntro">Yeni çıkanlar, yaklaşan oyunlar ve Valve’ın resmî Steamworks duyuruları.</p>
+        </div>
+        ${
+          news
+            ? `<p>${localizedText("Son güncelleme:", "Last updated:")} ${localizedText(localDate(news.generatedAt, true), localDateEn(news.generatedAt, true))}</p>`
+            : ""
+        }
+      </div>
+      ${
+        items.length
+          ? `
+            <div class="news-block">
+              <h3>${localizedText("Yeni çıkan ve çıkacak oyunlar", "New and upcoming games")}</h3>
+              <div class="news-grid">${gameItems.map(newsCard).join("")}</div>
+            </div>
+            <div class="news-block">
+              <h3>${localizedText("Steamworks ve platform değişiklikleri", "Steamworks and platform changes")}</h3>
+              <p class="news-disclaimer">${localizedText(
+                "Yalnızca Valve’ın resmî duyuruları gösterilir; doğrulanmamış algoritma söylentileri eklenmez.",
+                "Only official Valve announcements are shown; unverified algorithm rumors are excluded.",
+              )}</p>
+              <div class="news-grid platform-news">${platformItems.map(newsCard).join("")}</div>
+            </div>`
+          : `<div class="empty">${localizedText("Haber akışı henüz oluşturulmadı.", "The news feed has not been generated yet.")}</div>`
+      }
+    </section>`;
+}
+
 export function renderReport(
   snapshot: EventSnapshot,
   changelog: ChangeRecord[] = [],
+  news?: SteamNewsSnapshot,
 ): string {
   const model = createReportModel(snapshot, config);
   const changeCutoff = model.generated.minus({ days: 90 }).toMillis();
@@ -536,6 +609,24 @@ export function renderReport(
       border: 0;
     }
     .shell { width: min(calc(100% - 20px), 1180px); margin: 0 auto; padding: 20px 0 56px; }
+    .menu-toggle {
+      position:fixed; z-index:40; top:12px; left:12px; width:44px; height:44px;
+      padding:0; color:var(--color-on-accent); border:1px solid var(--color-hero-line);
+      border-radius:13px; background:var(--color-hero-start); box-shadow:0 8px 28px var(--color-shadow);
+      font-size:22px; line-height:1;
+    }
+    .site-menu {
+      position:fixed; z-index:39; inset:0 auto 0 0; width:min(86vw,310px); padding:74px 16px 24px;
+      color:var(--color-on-accent); background:var(--color-hero-start); box-shadow:16px 0 50px var(--color-shadow);
+    }
+    .site-menu[hidden] { display:none; }
+    .site-menu strong { display:block; margin:0 8px 14px; color:var(--color-hero-muted); font-size:11px; letter-spacing:.1em; text-transform:uppercase; }
+    .site-menu a { display:block; padding:12px 14px; border-radius:11px; color:var(--color-hero-copy); font-size:14px; font-weight:800; text-decoration:none; }
+    .site-menu a:hover,.site-menu a:focus-visible { color:var(--color-on-accent); background:var(--color-hero-card); }
+    .view-tabs { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin:22px 0 0; padding:5px; border:1px solid var(--color-line); border-radius:15px; background:var(--color-panel); }
+    .view-tabs button { min-width:0; min-height:44px; color:var(--color-control-text); border-color:var(--color-transparent); background:var(--color-transparent); font-weight:900; }
+    .view-tabs button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
+    .dashboard-panel[hidden] { display:none; }
     .hero {
       position: relative;
       overflow: hidden;
@@ -585,15 +676,6 @@ export function renderReport(
     .section-title { display:flex; align-items:flex-start; flex-direction:column; justify-content:space-between; gap:8px; margin-bottom:15px; }
     .section-title h2 { margin:0; overflow-wrap:anywhere; font-size:26px; letter-spacing:-.025em; }
     .section-title p { margin:0; color:var(--color-muted); font-size:13px; }
-    .operations-grid,.metric-grid { display:grid; grid-template-columns:1fr; gap:10px; }
-    .operation-card,.metric-card,.admin-panel { padding:16px; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
-    .operation-card strong,.metric-card strong { display:block; font-size:22px; }
-    .operation-card span,.metric-card span { display:block; margin-top:5px; color:var(--color-muted); font-size:12px; line-height:1.45; }
-    .operation-card.critical { border-color:var(--color-danger); }
-    .operation-inbox { display:grid; gap:8px; margin-top:12px; }
-    .operation-item { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:10px 0; border-top:1px solid var(--color-line); font-size:12px; }
-    .operation-item:first-child { border-top:0; }
-    .operation-item a { color:var(--color-link); font-weight:800; text-decoration:none; }
     .application-workflow { grid-column:1; min-width:0; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel-subtle); }
     .application-workflow summary { display:flex; justify-content:space-between; gap:12px; padding:11px 13px; cursor:pointer; font-size:12px; font-weight:800; list-style:none; }
     .application-workflow summary::-webkit-details-marker { display:none; }
@@ -605,14 +687,8 @@ export function renderReport(
     .application-actions { display:flex; align-items:center; gap:10px; flex-wrap:wrap; grid-column:1 / -1; }
     .application-actions button { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-size:11px; font-weight:800; }
     .application-actions span { color:var(--color-muted); font-size:11px; }
-    .admin-panel { display:grid; gap:14px; }
-    .admin-status { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
-    .sync-badge { padding:5px 9px; border-radius:999px; color:var(--color-muted); background:var(--color-soft); font-size:11px; font-weight:800; }
-    .sync-badge.online { color:var(--color-link); }
-    .notification-settings { display:grid; grid-template-columns:1fr; gap:8px; }
-    .notification-settings label { display:flex; align-items:center; gap:8px; color:var(--color-muted); font-size:12px; }
-    .games-panel { padding:18px 16px; border:1px solid var(--color-line); border-radius:20px; background:var(--color-panel); }
-    .game-form { display:grid; grid-template-columns:1fr; gap:12px; }
+    .games-panel { padding:14px; border:1px solid var(--color-line); border-radius:20px; background:var(--color-panel); }
+    .game-form { display:block; max-width:520px; margin:0 auto 16px; }
     .game-field { display:grid; gap:6px; min-width:0; color:var(--color-muted); font-size:12px; font-weight:700; }
     .game-field input,.game-field select { min-width:0; width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--color-line); border-radius:11px; color:var(--color-ink); background:var(--color-control); }
     .steam-game-search { position:relative; min-width:0; }
@@ -629,16 +705,35 @@ export function renderReport(
     .game-form-actions { display:flex; align-items:center; flex-wrap:wrap; gap:8px; grid-column:1 / -1; }
     .game-form-actions button:first-child { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-weight:800; }
     .game-help,.game-match-summary { margin:10px 0 0; color:var(--color-muted); font-size:12px; line-height:1.5; }
-    .game-list { display:grid; gap:9px; margin-top:16px; }
-    .game-profile { display:grid; grid-template-columns:72px minmax(0,1fr); gap:12px; padding:12px; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel-subtle); }
+    .game-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:16px; }
+    .game-profile { min-width:0; overflow:hidden; border:1px solid var(--color-accent-pink); border-radius:16px; background:var(--color-panel-subtle); }
+    .game-profile > summary { position:relative; display:block; min-height:210px; cursor:pointer; list-style:none; }
+    .game-profile > summary::-webkit-details-marker { display:none; }
+    .game-profile > summary .game-capsule,.game-profile > summary .game-capsule-fallback { width:100%; height:210px; border:0; border-radius:0; object-fit:cover; }
+    .game-card-overlay { position:absolute; inset:auto 0 0; padding:38px 10px 11px; color:var(--color-on-accent); background:linear-gradient(var(--color-transparent),var(--color-hero-end)); }
+    .game-card-overlay strong { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; }
+    .game-card-overlay small { display:block; margin-top:3px; color:var(--color-hero-copy); font-size:9px; }
     .game-capsule { width:72px; aspect-ratio:2 / 3; object-fit:cover; border:1px solid var(--color-line); border-radius:9px; background:var(--color-soft); }
     .game-capsule-fallback { display:grid; place-items:center; width:72px; aspect-ratio:2 / 3; padding:7px; border:1px solid var(--color-line); border-radius:9px; color:var(--color-muted); background:var(--color-soft); font-size:9px; font-weight:800; text-align:center; overflow-wrap:anywhere; }
-    .game-profile-body { min-width:0; }
+    .game-profile-body { min-width:0; padding:12px; border-top:1px solid var(--color-line); }
     .game-profile strong,.game-profile small { display:block; overflow-wrap:anywhere; }
     .game-profile small { margin-top:4px; color:var(--color-muted); line-height:1.45; }
     .game-profile-actions { display:flex; align-items:flex-start; flex-wrap:wrap; gap:6px; margin-top:9px; }
     .game-profile-actions button { min-height:36px; padding:7px 10px; font-size:11px; }
     .game-profile-actions [data-game-delete] { color:var(--color-danger); }
+    .game-stats { margin-top:20px; padding-top:18px; border-top:1px solid var(--color-line); }
+    .game-stats h3 { margin:0 0 4px; font-size:17px; }
+    .game-stats > p { margin:0 0 12px; color:var(--color-muted); font-size:11px; line-height:1.5; }
+    .stats-grid { display:grid; grid-template-columns:1fr; gap:9px; }
+    .stats-card { display:grid; grid-template-columns:54px minmax(0,1fr); gap:10px; padding:10px; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel-subtle); }
+    .stats-card .game-capsule,.stats-card .game-capsule-fallback { width:54px; }
+    .stats-card h4 { margin:0 0 7px; overflow-wrap:anywhere; font-size:12px; }
+    .stats-values { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; }
+    .stats-value { min-width:0; padding:7px; border-radius:8px; background:var(--color-soft); }
+    .stats-value strong,.stats-value span { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .stats-value strong { font-size:13px; }
+    .stats-value span { margin-top:2px; color:var(--color-muted); font-size:8px; font-weight:800; text-transform:uppercase; }
+    .stats-note { margin-top:9px; color:var(--color-muted); font-size:9px; }
     .game-match-result { display:grid; grid-template-columns:repeat(auto-fill,minmax(96px,1fr)); gap:8px; margin-top:12px; }
     .game-match-result[hidden],.game-match-warning[hidden] { display:none; }
     .game-match-card { display:grid; grid-template-columns:40px minmax(0,1fr); gap:7px; align-items:center; min-width:0; padding:7px; border:1px solid var(--color-line); border-radius:10px; color:var(--color-soft-text); background:var(--color-soft); }
@@ -646,6 +741,7 @@ export function renderReport(
     .game-match-card strong,.game-match-card small { display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; }
     .game-match-card strong { font-size:10px; white-space:nowrap; }
     .game-match-card small { margin-top:3px; color:var(--color-muted); font-size:9px; line-height:1.3; }
+    .game-match-card.not-eligible { border-color:var(--color-danger); opacity:.72; }
     .next-fest-history { margin-top:8px; padding:8px; border-left:3px solid var(--color-amber); border-radius:7px; color:var(--color-muted); background:var(--color-soft); font-size:10px; line-height:1.4; }
     .next-fest-history a { color:var(--color-link); font-weight:800; }
     .game-match-badge { max-width:100%; padding:6px 9px; overflow-wrap:anywhere; border:1px solid var(--color-line); border-radius:999px; color:var(--color-link); background:var(--color-soft); font-size:11px; font-weight:800; }
@@ -747,10 +843,24 @@ export function renderReport(
     .change-row strong { min-width:0; overflow-wrap:anywhere; font-size:13px; }
     .change-type { justify-self:start; padding:4px 7px; border-radius:999px; color:var(--color-soft-text); background:var(--color-soft); font-size:10px; font-weight:800; }
     .change-values { min-width:0; overflow-wrap:anywhere; color:var(--color-muted); font-size:12px; line-height:1.4; }
+    .news-block + .news-block { margin-top:32px; }
+    .news-block > h3 { margin:0 0 12px; font-size:18px; }
+    .news-disclaimer { margin:-4px 0 14px; color:var(--color-muted); font-size:12px; line-height:1.5; }
+    .news-grid { display:grid; grid-template-columns:1fr; gap:12px; }
+    .news-card { display:grid; grid-template-columns:96px minmax(0,1fr); min-width:0; overflow:hidden; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
+    .news-card > img { width:96px; height:100%; min-height:118px; object-fit:cover; background:var(--color-soft); }
+    .news-icon { display:grid; min-height:118px; place-items:center; color:var(--color-on-accent); background:var(--gradient-brand); font-size:28px; }
+    .news-card-body { min-width:0; padding:13px; }
+    .news-meta { display:flex; align-items:center; flex-wrap:wrap; gap:6px 10px; color:var(--color-muted); font-size:10px; font-weight:800; }
+    .news-meta > span { color:var(--color-link); }
+    .news-card h3 { margin:7px 0 8px; overflow-wrap:anywhere; font-size:14px; line-height:1.3; }
+    .news-card p { display:-webkit-box; margin:0 0 9px; overflow:hidden; color:var(--color-muted); font-size:11px; line-height:1.45; -webkit-box-orient:vertical; -webkit-line-clamp:3; }
+    .news-card a { color:var(--color-link); font-size:11px; font-weight:800; text-decoration:none; }
     .empty { padding:24px; color:var(--color-muted); text-align:center; border:1px dashed var(--color-line); border-radius:16px; }
     footer { margin-top:28px; color:var(--color-footer); font-size:12px; text-align:center; }
     @media (min-width: 761px) {
       .shell { width:min(calc(100% - 32px), 1180px); padding:48px 0 72px; }
+      .menu-toggle { top:20px; left:20px; }
       .hero { padding:34px; }
       h1 { font-size:clamp(36px, 7vw, 70px); }
       .hero p { font-size:17px; }
@@ -769,12 +879,11 @@ export function renderReport(
       .search { flex:1 1 260px; width:auto; }
       .filters,.status-filters { width:auto; }
       .games-only-filter { width:auto; }
-      .game-form { grid-template-columns:repeat(3,minmax(0,1fr)); }
-      .operations-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
-      .metric-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+      .games-panel { padding:20px; }
+      .game-list { grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
       .application-form { grid-template-columns:repeat(3,minmax(0,1fr)); }
-      .game-profile { grid-template-columns:84px minmax(0,1fr); }
-      .game-profile .game-capsule,.game-profile .game-capsule-fallback { width:84px; }
+      .game-profile > summary { min-height:300px; }
+      .game-profile > summary .game-capsule,.game-profile > summary .game-capsule-fallback { height:300px; }
       .task-state-toolbar { align-items:center; flex-direction:row; justify-content:space-between; }
       .task-state-status { text-align:right; }
       .event-row { grid-template-columns:145px minmax(0,1fr) auto; gap:20px; padding:20px; }
@@ -787,6 +896,9 @@ export function renderReport(
       .change-log > summary { padding:18px 20px; }
       .change-row { grid-template-columns:150px minmax(180px,1fr) auto minmax(220px,auto); align-items:center; gap:16px; padding:14px 20px; }
       .change-values { text-align:right; }
+      .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .platform-news { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .stats-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior:auto; }
@@ -795,8 +907,18 @@ export function renderReport(
   </style>
 </head>
 <body>
+  <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Menüyü aç" data-i18n-aria-label="openMenu">☰</button>
+  <nav class="site-menu" id="site-menu" data-site-menu aria-label="Sayfa navigasyonu" data-i18n-aria-label="navigationLabel" hidden>
+    <strong data-i18n="navigation">Navigasyon</strong>
+    <a href="#top" data-menu-view="radar" data-i18n="overview">Genel bakış</a>
+    <a href="#games" data-menu-view="radar" data-i18n="myGames">Oyunlarım</a>
+    <a href="#changes" data-menu-view="radar" data-i18n="changesShort">Değişiklikler</a>
+    <a href="#deadlines" data-menu-view="radar" data-i18n="upcomingDeadlines">Yaklaşan son tarihler</a>
+    <a href="#calendar" data-menu-view="radar" data-i18n="eventCalendar">Etkinlik takvimi</a>
+    <a href="#steam-news" data-menu-view="news" data-i18n="steamNews">Steam Haberleri</a>
+  </nav>
   <main class="shell">
-    <section class="hero">
+    <section class="hero" id="top">
       <div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel">
         <button class="active" type="button" data-language="tr" aria-pressed="true">TR</button>
         <button type="button" data-language="en" aria-pressed="false">EN</button>
@@ -807,29 +929,12 @@ export function renderReport(
       ${renderTimeline(model, config.timezone)}
     </section>
 
-    <section class="section" aria-labelledby="operations-heading">
-      <div class="section-title">
-        <h2 id="operations-heading">${localizedText("Bugün ne yapmalıyız?", "What should we do today?")}</h2>
-        <p>${localizedText("Kritik tarihler, açık işler ve ekip başvuruları tek operasyon kuyruğunda.", "Critical dates, open work and team applications in one operational queue.")}</p>
-      </div>
-      <div class="operations-grid">
-        <article class="operation-card critical">
-          <strong data-operation-critical>${model.deadlines.filter((item) => item.daysLeft >= 0 && item.daysLeft <= 7).length}</strong>
-          <span>${localizedText("7 gün içindeki kritik tarih", "critical dates within 7 days")}</span>
-        </article>
-        <article class="operation-card">
-          <strong data-operation-tasks>0</strong>
-          <span>${localizedText("tamamlanmamış görev", "incomplete tasks")}</span>
-        </article>
-        <article class="operation-card">
-          <strong data-operation-applications>0</strong>
-          <span>${localizedText("aktif başvuru", "active applications")}</span>
-        </article>
-      </div>
-      <div class="operation-card operation-inbox" data-operation-inbox></div>
-    </section>
+    <div class="view-tabs" role="tablist" aria-label="İçerik görünümü" data-i18n-aria-label="contentView">
+      <button class="active" type="button" role="tab" aria-selected="true" data-view-tab="radar" data-i18n="radarTab">Etkinlik Radarı</button>
+      <button type="button" role="tab" aria-selected="false" data-view-tab="news" data-i18n="steamNews">Steam Haberleri</button>
+    </div>
 
-    <section class="section" aria-labelledby="games-heading">
+    <section class="section dashboard-panel" id="games" data-dashboard-panel="radar" aria-labelledby="games-heading">
       <div class="section-title">
         <h2 id="games-heading" data-i18n="myGames">Oyunlarım</h2>
         <p data-i18n="gamesIntro">Etiketleri birebir karşılaştırarak uygun olabilecek temalı festivalleri gösterir.</p>
@@ -838,7 +943,7 @@ export function renderReport(
         <form class="game-form" data-game-form>
           <input type="hidden" data-game-id>
           <div class="game-field">
-            <label for="game-name" data-i18n="gameName">Oyun adı</label>
+            <label for="game-name" data-i18n="addSteamGame">Steam’den oyun ekle</label>
             <div class="steam-game-search">
               <input
                 id="game-name"
@@ -863,15 +968,15 @@ export function renderReport(
               <div class="steam-search-status" data-steam-search-status role="status" aria-live="polite" data-i18n="typeTwoChars">En az 2 karakter yazın.</div>
             </div>
           </div>
-          <label class="game-field">
+          <label class="game-field" hidden>
             Steam App ID <span data-i18n="optional">(opsiyonel)</span>
             <input type="text" data-game-app-id inputmode="numeric" pattern="[0-9]*" maxlength="12" autocomplete="off">
           </label>
-          <label class="game-field game-field-wide">
+          <label class="game-field game-field-wide" hidden>
             <span data-i18n="steamTags">Steam etiketleri</span>
             <input type="text" data-game-tags placeholder="Örn. Cyberpunk, Sci-fi, RPG" data-i18n-placeholder="tagsPlaceholder" autocomplete="off">
           </label>
-          <label class="game-field">
+          <label class="game-field" hidden>
             <span data-i18n="demoStatus">Demo durumu</span>
             <select data-game-demo-status>
               <option value="none" data-i18n="none">Yok</option>
@@ -879,7 +984,7 @@ export function renderReport(
               <option value="live" data-i18n="live">Yayında</option>
             </select>
           </label>
-          <label class="game-field">
+          <label class="game-field" hidden>
             <span data-i18n="releaseStatus">Çıkış durumu</span>
             <select data-game-release-status>
               <option value="unreleased" data-i18n="unreleased">Yayınlanmadı</option>
@@ -887,25 +992,31 @@ export function renderReport(
               <option value="released" data-i18n="live">Yayında</option>
             </select>
           </label>
-          <label class="game-field">
+          <label class="game-field" hidden>
             <span data-i18n="localMultiplayer">Yerel çok oyunculu</span>
             <select data-game-local-multiplayer>
               <option value="no" data-i18n="no">Hayır</option>
               <option value="yes" data-i18n="yes">Evet</option>
             </select>
           </label>
-          <div class="game-form-actions">
+          <div class="game-form-actions" hidden>
             <button type="submit" data-game-submit data-i18n="saveGame">Oyunu kaydet</button>
             <button type="button" data-game-cancel hidden data-i18n="cancel">Vazgeç</button>
           </div>
         </form>
-        <p class="game-help" data-i18n="gameHelp">Etiket adlarını oyunun Steam mağaza sayfasındaki biçimiyle, virgülle ayırarak girin. Benzer kelimeler veya tahminler eşleşme sayılmaz.</p>
         <div class="game-list" data-games-list></div>
         <p class="game-match-summary" data-game-match-summary role="status" aria-live="polite" data-i18n="addGamePrompt">Eşleşme için oyun ekleyin.</p>
+        <div class="game-stats">
+          <h3 data-i18n="gameComparison">Oyun istatistikleri</h3>
+          <p data-i18n="statsIntro">Steam’in herkese açık anlık verileriyle ücretsiz karşılaştırma. Satış ve wishlist tahmini yapılmaz.</p>
+          <div class="stats-grid" data-game-stats>
+            <div class="empty" data-i18n="statsAddGame">İstatistik görmek için Steam’den oyun ekleyin.</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section dashboard-panel" id="changes" data-dashboard-panel="radar">
       <details class="change-log">
         <summary>
           <span data-i18n="changesTitle">Son 90 günde ne değişti</span>
@@ -919,7 +1030,7 @@ export function renderReport(
       </details>
     </section>
 
-    <section class="section">
+    <section class="section dashboard-panel" id="deadlines" data-dashboard-panel="radar">
       <div class="section-title">
         <h2 data-i18n="upcomingDeadlines">Yaklaşan son tarihler</h2>
         <p data-i18n="deadlinesIntro">Etkinlik bazında yapılacaklar · İstanbul saatine göre</p>
@@ -933,7 +1044,7 @@ export function renderReport(
       }
     </section>
 
-    <section class="section">
+    <section class="section dashboard-panel" id="calendar" data-dashboard-panel="radar">
       <div class="section-title">
         <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
         <p><span data-i18n="lastUpdated">Son güncelleme:</span> ${localizedText(
@@ -984,38 +1095,8 @@ export function renderReport(
       <div class="empty" id="no-results" role="status" aria-live="polite" hidden data-i18n="noResults">Bu filtrelerle eşleşen etkinlik yok.</div>
     </section>
 
-    <section class="section" aria-labelledby="metrics-heading">
-      <div class="section-title">
-        <h2 id="metrics-heading">${localizedText("Operasyon metrikleri", "Operational metrics")}</h2>
-        <p>${localizedText("Takvimin büyüklüğünü değil, ekibin ilerlemesini gösterir.", "Measures team progress rather than calendar size.")}</p>
-      </div>
-      <div class="metric-grid">
-        <article class="metric-card"><strong data-metric-completion>0%</strong><span>${localizedText("görev tamamlama", "task completion")}</span></article>
-        <article class="metric-card"><strong data-metric-submitted>0</strong><span>${localizedText("gönderilen başvuru", "submitted applications")}</span></article>
-        <article class="metric-card"><strong data-metric-accepted>0</strong><span>${localizedText("kabul edilen başvuru", "accepted applications")}</span></article>
-        <article class="metric-card"><strong data-metric-games>0</strong><span>${localizedText("takip edilen oyun", "tracked games")}</span></article>
-      </div>
-    </section>
+    ${newsSection(news)}
 
-    <section class="section" aria-labelledby="admin-heading">
-      <div class="section-title">
-        <h2 id="admin-heading">${localizedText("Yönetim", "Administration")}</h2>
-        <p>${localizedText("Ekip verisi, bildirim tercihleri ve senkronizasyon durumu.", "Team data, notification preferences and sync status.")}</p>
-      </div>
-      <div class="admin-panel">
-        <div class="admin-status">
-          <span class="sync-badge" data-team-sync>${localizedText("Yerel çalışma modu", "Local working mode")}</span>
-          <span data-team-user></span>
-          <button type="button" data-team-refresh>${localizedText("Ekip verisini yenile", "Refresh team data")}</button>
-        </div>
-        <div class="notification-settings">
-          <strong>${localizedText("Akıllı panel uyarıları", "Smart dashboard alerts")}</strong>
-          <label><input type="checkbox" data-notification-deadlines checked> ${localizedText("7 gün içindeki son tarihleri öne çıkar", "Highlight deadlines within 7 days")}</label>
-          <label><input type="checkbox" data-notification-changes checked> ${localizedText("Son 24 saatteki Valve değişikliklerini göster", "Show Valve changes from the last 24 hours")}</label>
-          <label><input type="checkbox" data-notification-overdue checked> ${localizedText("Açık görevleri operasyon kuyruğuna ekle", "Add open tasks to the operations queue")}</label>
-        </div>
-      </div>
-    </section>
     <footer data-i18n="footer">Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
   </main>
   <script>
@@ -1031,6 +1112,11 @@ export function renderReport(
       "[data-incomplete-filter]",
     );
     const hashState = new URLSearchParams(location.hash.slice(1));
+    const viewTabs = [...document.querySelectorAll("[data-view-tab]")];
+    const dashboardPanels = [...document.querySelectorAll("[data-dashboard-panel]")];
+    const menuToggle = document.querySelector("[data-menu-toggle]");
+    const siteMenu = document.querySelector("[data-site-menu]");
+    let activeView = hashState.get("view") === "news" ? "news" : "radar";
     const allowedFilters = new Set([
       "all",
       "themed_fest",
@@ -1059,6 +1145,7 @@ export function renderReport(
       if (incompleteOnly) state.set("incomplete", "1");
       if (timelineOffset > 0) state.set("month", String(timelineOffset));
       if (activeEventId) state.set("event", activeEventId);
+      if (activeView === "news") state.set("view", "news");
       const hash = state.toString();
       history.replaceState(
         null,
@@ -1066,6 +1153,51 @@ export function renderReport(
         location.pathname + location.search + (hash ? "#" + hash : ""),
       );
     }
+
+    function closeMenu() {
+      siteMenu.hidden = true;
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
+
+    function setView(view, updateUrl = true) {
+      activeView = view === "news" ? "news" : "radar";
+      viewTabs.forEach((button) => {
+        const active = button.dataset.viewTab === activeView;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-selected", String(active));
+      });
+      dashboardPanels.forEach((panel) => {
+        panel.hidden = panel.dataset.dashboardPanel !== activeView;
+      });
+      if (updateUrl) writeUrlState();
+    }
+
+    menuToggle?.addEventListener("click", () => {
+      const opening = siteMenu.hidden;
+      siteMenu.hidden = !opening;
+      menuToggle.setAttribute("aria-expanded", String(opening));
+    });
+    siteMenu?.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        setView(link.dataset.menuView || "radar");
+        document.querySelector(link.getAttribute("href"))?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+        closeMenu();
+      });
+    });
+    viewTabs.forEach((button) => {
+      button.addEventListener("click", () => setView(button.dataset.viewTab));
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !siteMenu.hidden) {
+        closeMenu();
+        menuToggle.focus();
+      }
+    });
+    setView(activeView, false);
 
     function setToggleState(button, active) {
       button?.classList.toggle("active", active);
@@ -1147,6 +1279,18 @@ export function renderReport(
 
     const uiCopy = {
       languageLabel: { tr: "Arayüz dili", en: "Interface language" },
+      openMenu: { tr: "Menüyü aç", en: "Open menu" },
+      navigationLabel: { tr: "Sayfa navigasyonu", en: "Page navigation" },
+      navigation: { tr: "Navigasyon", en: "Navigation" },
+      overview: { tr: "Genel bakış", en: "Overview" },
+      changesShort: { tr: "Değişiklikler", en: "Changes" },
+      contentView: { tr: "İçerik görünümü", en: "Content view" },
+      radarTab: { tr: "Etkinlik Radarı", en: "Event Radar" },
+      steamNews: { tr: "Steam Haberleri", en: "Steam News" },
+      newsIntro: {
+        tr: "Yeni çıkanlar, yaklaşan oyunlar ve Valve’ın resmî Steamworks duyuruları.",
+        en: "New releases, upcoming games, and Valve’s official Steamworks announcements.",
+      },
       eyebrow: {
         tr: "Joygame Select · Steamworks Operasyonları",
         en: "Joygame Select · Steamworks Operations",
@@ -1162,6 +1306,16 @@ export function renderReport(
         en: "Shows potentially relevant themed festivals by matching tags exactly.",
       },
       gameName: { tr: "Oyun adı", en: "Game name" },
+      addSteamGame: { tr: "Steam’den oyun ekle", en: "Add a game from Steam" },
+      gameComparison: { tr: "Oyun istatistikleri", en: "Game statistics" },
+      statsIntro: {
+        tr: "Steam’in herkese açık anlık verileriyle ücretsiz karşılaştırma. Satış ve wishlist tahmini yapılmaz.",
+        en: "A free comparison using Steam’s public live data. Sales and wishlist figures are not estimated.",
+      },
+      statsAddGame: {
+        tr: "İstatistik görmek için Steam’den oyun ekleyin.",
+        en: "Add a game from Steam to view statistics.",
+      },
       typeTwoChars: {
         tr: "En az 2 karakter yazın.",
         en: "Enter at least 2 characters.",
@@ -1374,6 +1528,7 @@ export function renderReport(
         } catch {}
         applyDescriptionLanguage();
         renderGames();
+        renderGameStats();
         updateGameMatches();
         window.dispatchEvent(new Event("resize"));
       });
@@ -1399,9 +1554,6 @@ export function renderReport(
 
     let teamStateEnabled = false;
     let teamStateRecords = [];
-    let teamUser = "";
-    const teamSyncBadge = document.querySelector("[data-team-sync]");
-    const teamUserLabel = document.querySelector("[data-team-user]");
 
     async function loadTeamState() {
       if (location.protocol === "file:") return [];
@@ -1413,20 +1565,9 @@ export function renderReport(
         const body = await response.json();
         teamStateEnabled = body.enabled === true;
         teamStateRecords = Array.isArray(body.records) ? body.records : [];
-        teamUser = String(body.user || "");
-        teamSyncBadge.classList.toggle("online", teamStateEnabled);
-        teamSyncBadge.textContent = teamStateEnabled
-          ? localized("Ekip senkronizasyonu açık", "Team sync enabled")
-          : localized("Yerel çalışma modu", "Local working mode");
-        teamUserLabel.textContent = teamUser;
         return teamStateRecords;
       } catch {
         teamStateEnabled = false;
-        teamSyncBadge.classList.remove("online");
-        teamSyncBadge.textContent = localized(
-          "Yerel çalışma modu",
-          "Local working mode",
-        );
         return [];
       }
     }
@@ -1449,12 +1590,7 @@ export function renderReport(
           (item) => item.key !== record.key,
         );
         teamStateRecords.push(record);
-      } catch {
-        teamSyncBadge.textContent = localized(
-          "Senkronizasyon bekliyor",
-          "Sync pending",
-        );
-      }
+      } catch {}
     }
 
     async function removeTeamState(key) {
@@ -1466,12 +1602,7 @@ export function renderReport(
         );
         if (!response.ok) throw new Error("team state delete failed");
         teamStateRecords = teamStateRecords.filter((item) => item.key !== key);
-      } catch {
-        teamSyncBadge.textContent = localized(
-          "Senkronizasyon bekliyor",
-          "Sync pending",
-        );
-      }
+      } catch {}
     }
 
     const gamesStorageKey = "steam-etkinlik-radari-oyunlar-v1";
@@ -1486,6 +1617,7 @@ export function renderReport(
     const gameCancel = document.querySelector("[data-game-cancel]");
     const gamesList = document.querySelector("[data-games-list]");
     const gameMatchSummary = document.querySelector("[data-game-match-summary]");
+    const gameStats = document.querySelector("[data-game-stats]");
     const steamGameResults = document.querySelector(
       "[data-steam-game-results]",
     );
@@ -1497,6 +1629,115 @@ export function renderReport(
     let steamDetailController;
     let steamOptions = [];
     let selectedSteamDetails = null;
+    const gameStatsByAppId = new Map();
+    const statsStorageKey = "steam-etkinlik-radari-istatistik-v1";
+
+    function formatNumber(value) {
+      return new Intl.NumberFormat(
+        descriptionLanguage === "en" ? "en-US" : "tr-TR",
+      ).format(Number(value || 0));
+    }
+
+    function rememberStats(stats) {
+      try {
+        const history = JSON.parse(localStorage.getItem(statsStorageKey) || "{}");
+        const dateKey = String(stats.capturedAt || "").slice(0, 10);
+        const appHistory = Array.isArray(history[stats.appId])
+          ? history[stats.appId]
+          : [];
+        history[stats.appId] = [
+          ...appHistory.filter((item) => item.date !== dateKey),
+          {
+            date: dateKey,
+            currentPlayers: stats.currentPlayers,
+            totalReviews: stats.totalReviews,
+            positivePercent: stats.positivePercent,
+          },
+        ].slice(-90);
+        localStorage.setItem(statsStorageKey, JSON.stringify(history));
+      } catch {}
+    }
+
+    function renderGameStats() {
+      gameStats.replaceChildren();
+      const measurableGames = games.filter((game) => /^\\d+$/.test(game.appId));
+      if (measurableGames.length === 0) {
+        const emptyState = document.createElement("div");
+        emptyState.className = "empty";
+        emptyState.textContent = translate("statsAddGame");
+        gameStats.append(emptyState);
+        return;
+      }
+      measurableGames.forEach((game) => {
+        const stats = gameStatsByAppId.get(game.appId);
+        const card = document.createElement("article");
+        card.className = "stats-card";
+        card.append(createGameCapsule(game));
+        const body = document.createElement("div");
+        const title = document.createElement("h4");
+        title.textContent = game.name;
+        body.append(title);
+        if (!stats) {
+          const loading = document.createElement("p");
+          loading.className = "stats-note";
+          loading.textContent = localized("Steam verisi alınıyor…", "Loading Steam data…");
+          body.append(loading);
+        } else {
+          const values = document.createElement("div");
+          values.className = "stats-values";
+          [
+            [formatNumber(stats.currentPlayers), localized("Anlık oyuncu", "Players now")],
+            [formatNumber(stats.totalReviews), localized("Toplam inceleme", "Total reviews")],
+            [stats.positivePercent + "%", localized("Olumlu", "Positive")],
+            [stats.price?.formatted || "—", localized("Fiyat", "Price")],
+          ].forEach(([value, label]) => {
+            const metric = document.createElement("span");
+            metric.className = "stats-value";
+            const strong = document.createElement("strong");
+            strong.textContent = value;
+            const caption = document.createElement("span");
+            caption.textContent = label;
+            metric.append(strong, caption);
+            values.append(metric);
+          });
+          body.append(values);
+          const note = document.createElement("p");
+          note.className = "stats-note";
+          note.textContent = localized(
+            "Günlük kayıtlar bu tarayıcıda 90 gün saklanır.",
+            "Daily snapshots are kept in this browser for 90 days.",
+          );
+          body.append(note);
+        }
+        card.append(body);
+        gameStats.append(card);
+      });
+    }
+
+    async function refreshGameStats() {
+      renderGameStats();
+      if (location.protocol === "file:") return;
+      await Promise.all(
+        games
+          .filter(
+            (game) =>
+              /^\\d+$/.test(game.appId) && !gameStatsByAppId.has(game.appId),
+          )
+          .map(async (game) => {
+            try {
+              const response = await fetch(
+                "/api/steam-stats?appid=" + encodeURIComponent(game.appId),
+                { headers: { accept: "application/json" } },
+              );
+              if (!response.ok) return;
+              const stats = await response.json();
+              gameStatsByAppId.set(game.appId, stats);
+              rememberStats(stats);
+            } catch {}
+          }),
+      );
+      renderGameStats();
+    }
 
     function safeSteamImage(value) {
       try {
@@ -1575,19 +1816,18 @@ export function renderReport(
         steamSearchStatus.textContent =
           option.name +
           localized(
-            " seçildi · Steam bilgileri dolduruldu.",
-            " selected · Steam details filled in.",
+            " seçildi · Steam bilgileri alındı ve oyun ekleniyor…",
+            " selected · Steam details loaded; adding game…",
           );
+        gameForm.requestSubmit();
       } catch (error) {
         if (error?.name === "AbortError") return;
         steamSearchStatus.textContent =
           option.name +
           localized(
-            " seçildi · Ayrıntılar alınamadı; manuel düzenleyebilirsiniz.",
-            " selected · Details unavailable; you can edit them manually.",
+            " seçildi · Ayrıntılar alınamadı, lütfen yeniden deneyin.",
+            " selected · Details unavailable; please try again.",
           );
-      } finally {
-        gameTagsInput.focus();
       }
     }
 
@@ -1975,33 +2215,35 @@ export function renderReport(
     function renderGames() {
       gamesList.replaceChildren();
       games.forEach((game) => {
-        const item = document.createElement("article");
+        const item = document.createElement("details");
         item.className = "game-profile";
+
+        const summary = document.createElement("summary");
+        summary.append(createGameCapsule(game));
+        const overlay = document.createElement("span");
+        overlay.className = "game-card-overlay";
+        const overlayName = document.createElement("strong");
+        overlayName.textContent = game.name;
+        const overlayMeta = document.createElement("small");
+        overlayMeta.textContent =
+          "Steam App ID · " + (game.appId || localized("yok", "none"));
+        overlay.append(overlayName, overlayMeta);
+        summary.append(overlay);
 
         const body = document.createElement("div");
         body.className = "game-profile-body";
-        const name = document.createElement("strong");
-        name.textContent = game.name;
         const meta = document.createElement("small");
         meta.textContent = gameMeta(game);
         const tags = document.createElement("small");
         tags.textContent = game.tags.length
           ? localized("Etiketler: ", "Tags: ") + game.tags.join(", ")
           : localized("Etiket girilmedi", "No tags entered");
-        body.append(name, meta, tags);
+        body.append(meta, tags);
         const history = nextFestHistoryBlock(game);
         if (history) body.append(history);
 
         const actions = document.createElement("div");
         actions.className = "game-profile-actions";
-        const edit = document.createElement("button");
-        edit.type = "button";
-        edit.dataset.gameEdit = game.id;
-        edit.textContent = localized("Düzenle", "Edit");
-        edit.setAttribute(
-          "aria-label",
-          game.name + localized(" oyununu düzenle", " edit game"),
-        );
         const remove = document.createElement("button");
         remove.type = "button";
         remove.dataset.gameDelete = game.id;
@@ -2022,9 +2264,9 @@ export function renderReport(
           "aria-label",
           game.name + localized(" için operasyon görünümü", " operations view"),
         );
-        actions.append(focus, edit, remove);
+        actions.append(focus, remove);
         body.append(actions);
-        item.append(createGameCapsule(game), body);
+        item.append(summary, body);
         gamesList.append(item);
       });
     }
@@ -2047,9 +2289,12 @@ export function renderReport(
         ? games.filter((game) => game.id === focusedGameId)
         : games;
       if (row.dataset.kind === "next_fest") {
-        return candidateGames
-          .filter((game) => game.releaseStatus === "unreleased")
-          .map((game) => ({ game, score: 0, nextFest: true }));
+        return candidateGames.map((game) => ({
+          game,
+          score: 0,
+          nextFest: true,
+          eligible: game.releaseStatus === "unreleased",
+        }));
       }
       let eventTags = [];
       try {
@@ -2074,12 +2319,15 @@ export function renderReport(
     function appendMatchBadge(container, match) {
       const badge = document.createElement("div");
       badge.className = "game-match-card";
+      badge.classList.toggle("not-eligible", match.eligible === false);
       const copy = document.createElement("span");
       const name = document.createElement("strong");
       name.textContent = "★ " + match.game.name;
       const detail = document.createElement("small");
       detail.textContent = match.nextFest
-        ? localized("Next Fest adayı", "Next Fest candidate")
+        ? match.eligible === false
+          ? localized("Next Fest için uygun değil", "Not eligible for Next Fest")
+          : localized("Next Fest adayı", "Next Fest candidate")
         : match.score +
           localized(" etiket eşleşmesi", match.score === 1 ? " tag match" : " tag matches");
       copy.append(name, detail);
@@ -2088,10 +2336,15 @@ export function renderReport(
         "aria-label",
         match.nextFest
           ? match.game.name +
-            localized(
-              " Next Fest çıkış kuralını karşılıyor",
-              " meets the Next Fest release-status rule",
-            )
+            (match.eligible === false
+              ? localized(
+                  " Next Fest çıkış kuralını karşılamıyor",
+                  " does not meet the Next Fest release-status rule",
+                )
+              : localized(
+                  " Next Fest çıkış kuralını karşılıyor",
+                  " meets the Next Fest release-status rule",
+                ))
           : match.game.name +
             ", " +
             match.score +
@@ -2116,6 +2369,9 @@ export function renderReport(
       let matchedEventCount = 0;
       rows.forEach((row) => {
         const matches = matchingGamesForRow(row);
+        const eligibleMatches = matches.filter(
+          (match) => match.eligible !== false,
+        );
         const result = row.querySelector("[data-game-match-result]");
         const warning = row.querySelector("[data-game-match-warning]");
         result.replaceChildren();
@@ -2124,9 +2380,9 @@ export function renderReport(
         result.hidden = matches.length === 0;
 
         if (row.dataset.kind === "next_fest" && games.length > 0) {
-          const ineligible = games.filter(
-            (game) => game.releaseStatus !== "unreleased",
-          );
+          const ineligible = matches
+            .filter((match) => match.eligible === false)
+            .map((match) => match.game);
           if (ineligible.length > 0) {
             warning.textContent = ineligible
               .map(
@@ -2141,8 +2397,8 @@ export function renderReport(
           }
         }
         warning.hidden = !warning.textContent;
-        row.dataset.gameMatch = String(matches.length > 0);
-        if (matches.length > 0) matchedEventCount++;
+        row.dataset.gameMatch = String(eligibleMatches.length > 0);
+        if (eligibleMatches.length > 0) matchedEventCount++;
 
         document
           .querySelectorAll(
@@ -2150,22 +2406,24 @@ export function renderReport(
           )
           .forEach((chip) => {
             chip.querySelector("[data-game-chip-match]")?.remove();
-            chip.classList.toggle("game-match", matches.length > 0);
+            chip.classList.toggle("game-match", eligibleMatches.length > 0);
             chip.dataset.gameAriaSuffix =
-              matches.length > 0
+              eligibleMatches.length > 0
                 ? "; " +
-                  matches.map((match) => match.game.name).join(", ") +
+                  eligibleMatches.map((match) => match.game.name).join(", ") +
                   " oyunuyla eşleşiyor"
                 : "";
             refreshTimelineChipAria(chip);
-            if (matches.length === 0) return;
+            if (eligibleMatches.length === 0) return;
             const marker = document.createElement("span");
             marker.className = "timeline-game-match";
             marker.dataset.gameChipMatch = "";
             marker.textContent =
               "★ " +
-              matches[0].game.name +
-              (matches.length > 1 ? " +" + (matches.length - 1) : "");
+              eligibleMatches[0].game.name +
+              (eligibleMatches.length > 1
+                ? " +" + (eligibleMatches.length - 1)
+                : "");
             chip.append(marker);
           });
       });
@@ -2248,6 +2506,7 @@ export function renderReport(
     let applications = {};
     let games = readGames();
     renderGames();
+    refreshGameStats();
     updateGameMatches();
     refreshSavedGameDetails();
     const teamStatePromise = loadTeamState();
@@ -2263,6 +2522,7 @@ export function renderReport(
         games = [...merged.values()];
         writeGames();
         renderGames();
+        refreshGameStats();
         updateGameMatches();
       }
       if (teamStateEnabled) {
@@ -2274,17 +2534,22 @@ export function renderReport(
           );
       }
       initializeApplicationWorkflows(records);
-      renderOperations();
     });
 
     gameForm?.addEventListener("submit", (event) => {
       event.preventDefault();
       const name = gameNameInput.value.trim();
       if (!name) return;
+      const normalizedAppId = gameAppIdInput.value
+        .replace(/\\D/g, "")
+        .slice(0, 12);
+      const existingByAppId = games.find(
+        (item) => normalizedAppId && item.appId === normalizedAppId,
+      );
       const game = {
-        id: gameIdInput.value || createGameId(),
+        id: gameIdInput.value || existingByAppId?.id || createGameId(),
         name,
-        appId: gameAppIdInput.value.replace(/\\D/g, "").slice(0, 12),
+        appId: normalizedAppId,
         tags: normalizeTags(gameTagsInput.value),
         demoStatus: gameDemoInput.value,
         releaseStatus: gameReleaseInput.value,
@@ -2310,9 +2575,9 @@ export function renderReport(
       writeGames();
       upsertTeamState("game:" + game.id, "game", game);
       renderGames();
+      refreshGameStats();
       updateGameMatches();
       initializeApplicationWorkflows(teamStateRecords);
-      renderOperations();
       resetGameForm();
     });
 
@@ -2326,6 +2591,7 @@ export function renderReport(
       if (focusId) {
         focusedGameId = focusedGameId === focusId ? "" : focusId;
         renderGames();
+        refreshGameStats();
         updateGameMatches();
         document.querySelector("#events")?.scrollIntoView({
           behavior: "smooth",
@@ -2371,9 +2637,9 @@ export function renderReport(
         writeGames();
         removeTeamState("game:" + deleteId);
         renderGames();
+        refreshGameStats();
         updateGameMatches();
         initializeApplicationWorkflows(teamStateRecords);
-        renderOperations();
         if (gameIdInput.value === deleteId) resetGameForm();
       }
     });
@@ -2599,42 +2865,7 @@ export function renderReport(
           showApplication(workflow);
           workflow.querySelector("[data-application-message]").textContent =
             localized("Kaydedildi.", "Saved.");
-          renderOperations();
         });
-    });
-
-    const notificationStorageKey =
-      "steam-etkinlik-radari-bildirimler-v1";
-    const notificationInputs = [
-      ...document.querySelectorAll(
-        "[data-notification-deadlines], [data-notification-changes], [data-notification-overdue]",
-      ),
-    ];
-    let notificationPreferences = {};
-    try {
-      notificationPreferences = JSON.parse(
-        localStorage.getItem(notificationStorageKey) || "{}",
-      );
-    } catch {}
-    notificationInputs.forEach((input) => {
-      const key = input.dataset.notificationDeadlines !== undefined
-        ? "deadlines"
-        : input.dataset.notificationChanges !== undefined
-          ? "changes"
-          : "overdue";
-      if (typeof notificationPreferences[key] === "boolean") {
-        input.checked = notificationPreferences[key];
-      }
-      input.addEventListener("change", () => {
-        notificationPreferences[key] = input.checked;
-        try {
-          localStorage.setItem(
-            notificationStorageKey,
-            JSON.stringify(notificationPreferences),
-          );
-        } catch {}
-        renderOperations();
-      });
     });
 
     const taskStorageKey = "steam-etkinlik-radari-gorevler-v1";
@@ -2743,125 +2974,7 @@ export function renderReport(
         box.checked = Boolean(completedTasks[box.dataset.taskId]);
       });
       taskGroups.forEach(updateTaskProgress);
-      renderOperations();
       apply();
-    }
-
-    function renderOperations() {
-      const completedCount = Object.keys(completedTasks || {}).length;
-      const totalTasks = taskBoxes.length;
-      const incompleteCount = Math.max(0, totalTasks - completedCount);
-      const activeApplications = Object.values(applications).filter(
-        (record) =>
-          record && ["preparing", "submitted"].includes(record.status),
-      );
-      document.querySelector("[data-operation-tasks]").textContent =
-        String(incompleteCount);
-      document.querySelector("[data-operation-applications]").textContent =
-        String(activeApplications.length);
-      document.querySelector("[data-metric-completion]").textContent =
-        (totalTasks ? Math.round((completedCount / totalTasks) * 100) : 0) + "%";
-      document.querySelector("[data-metric-submitted]").textContent = String(
-        Object.values(applications).filter(
-          (record) => record?.status === "submitted",
-        ).length,
-      );
-      document.querySelector("[data-metric-accepted]").textContent = String(
-        Object.values(applications).filter(
-          (record) => record?.status === "accepted",
-        ).length,
-      );
-      document.querySelector("[data-metric-games]").textContent =
-        String(games.length);
-
-      const inbox = document.querySelector("[data-operation-inbox]");
-      inbox.replaceChildren();
-      const items = [];
-      if (notificationPreferences.deadlines !== false) {
-        document
-          .querySelectorAll(".timeline-item .countdown[data-days-left]")
-          .forEach((countdown) => {
-            const days = Number(countdown.dataset.daysLeft);
-            if (days < 0 || days > 7 || items.length >= 4) return;
-            const group = countdown.closest(".deadline-group");
-            items.push({
-              title:
-                group?.querySelector(".deadline-group-head h3")?.textContent ||
-                localized("Kritik tarih", "Critical deadline"),
-              href: "#events",
-              meta: countdown.textContent || "",
-            });
-          });
-      }
-      if (notificationPreferences.changes !== false) {
-        document.querySelectorAll(".change-row").forEach((change) => {
-          const detectedAt = Date.parse(
-            change.querySelector("time")?.getAttribute("datetime") || "",
-          );
-          if (
-            !Number.isFinite(detectedAt) ||
-            Date.now() - detectedAt > 24 * 60 * 60 * 1000
-          ) {
-            return;
-          }
-          items.push({
-            title:
-              change.querySelector("strong")?.textContent ||
-              localized("Valve takvim değişikliği", "Valve calendar change"),
-            href: "#events",
-            meta:
-              change.querySelector(".change-type")?.textContent || "",
-          });
-        });
-      }
-      if (notificationPreferences.overdue !== false) {
-        taskBoxes
-          .filter((box) => !box.checked)
-          .slice(0, 5)
-          .forEach((box) => {
-            const row = box.closest(".event-row");
-            items.push({
-              title:
-                box.closest(".task-item")?.querySelector(".task-title strong")
-                  ?.textContent || "",
-              href: "#" + row.id,
-              meta:
-                row.querySelector(".event-heading h3")?.textContent || "",
-            });
-          });
-      }
-      activeApplications.slice(0, 3).forEach((record) => {
-        const game = games.find((item) => item.id === record.gameId);
-        const row = document.getElementById("etkinlik-" + record.eventId);
-        items.push({
-          title:
-            (game?.name || localized("Oyun", "Game")) +
-            localized(" başvurusu", " application"),
-          href: row ? "#" + row.id : "#events",
-          meta:
-            applicationStatusLabels[record.status]?.[descriptionLanguage] || "",
-        });
-      });
-      if (items.length === 0) {
-        const message = document.createElement("span");
-        message.textContent = localized(
-          "Bugün için açık operasyon işi yok.",
-          "No open operational work for today.",
-        );
-        inbox.append(message);
-        return;
-      }
-      items.slice(0, 10).forEach((item) => {
-        const operation = document.createElement("div");
-        operation.className = "operation-item";
-        const link = document.createElement("a");
-        link.href = item.href;
-        link.textContent = item.title;
-        const meta = document.createElement("span");
-        meta.textContent = item.meta;
-        operation.append(link, meta);
-        inbox.append(operation);
-      });
     }
 
     taskGroups.forEach((group) => {
@@ -2877,14 +2990,12 @@ export function renderReport(
             { completed: box.checked },
           );
           updateTaskProgress(group);
-          renderOperations();
           apply();
         });
       });
     });
     syncTaskUi();
     initializeApplicationWorkflows(teamStateRecords);
-    renderOperations();
     teamStatePromise.then((records) => {
       records
         .filter((record) => record.type === "task")
@@ -2911,27 +3022,9 @@ export function renderReport(
             "task",
             { completed: true },
           ),
-        );
+      );
       syncTaskUi();
-      renderOperations();
     });
-
-    document
-      .querySelector("[data-team-refresh]")
-      ?.addEventListener("click", async () => {
-        const records = await loadTeamState();
-        initializeApplicationWorkflows(records);
-        records
-          .filter((record) => record.type === "task")
-          .forEach((record) => {
-            if (record.payload?.completed === true) {
-              completedTasks[record.key.slice("task:".length)] = true;
-            }
-          });
-        writeTaskMap(taskStorageKey, completedTasks);
-        syncTaskUi();
-        renderOperations();
-      });
 
     if (activeEventId) {
       const activeEvent = document.getElementById("etkinlik-" + activeEventId);
@@ -3037,6 +3130,7 @@ export function renderReport(
           games = importedGames;
           writeGames();
           renderGames();
+          refreshGameStats();
           updateGameMatches();
           resetGameForm();
         }
@@ -3084,6 +3178,7 @@ export async function writeReport(snapshot: EventSnapshot): Promise<string> {
   const report = renderReport(
     snapshot,
     await readChangelog(paths.changelog),
+    await readSteamNews(paths.news),
   );
   await Promise.all([
     writeFile(paths.pagesFallback, report, "utf8"),

@@ -54,6 +54,24 @@ export interface EventSnapshot {
   events: SteamEvent[];
 }
 
+export type SteamNewsKind = "new_release" | "coming_soon" | "platform";
+
+export interface SteamNewsItem {
+  id: string;
+  title: string;
+  kind: SteamNewsKind;
+  url: string;
+  publishedAt?: string;
+  dateLabel?: string;
+  imageUrl?: string;
+  summary?: string;
+}
+
+export interface SteamNewsSnapshot {
+  generatedAt: string;
+  items: SteamNewsItem[];
+}
+
 export interface SyncResult {
   snapshot: EventSnapshot;
   added: SteamEvent[];
