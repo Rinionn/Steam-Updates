@@ -1,5 +1,7 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import {
+  adminSnapshot,
+  adminStatus,
   default as worker,
   deleteTeamState,
   getSteamApp,
@@ -180,6 +182,7 @@ describe("Steam search Worker", () => {
               query_summary: {
                 total_reviews: 200,
                 total_positive: 150,
+                total_negative: 50,
                 review_score_desc: "Very Positive",
               },
             }),
@@ -199,9 +202,15 @@ describe("Steam search Worker", () => {
                 success: true,
                 data: {
                   price_overview: {
+                    currency: "USD",
+                    initial: 2999,
+                    final: 2699,
+                    initial_formatted: "$29.99",
                     final_formatted: "$29.99",
                     discount_percent: 10,
                   },
+                  genres: [{ description: "RPG" }],
+                  categories: [{ description: "Single-player" }],
                 },
               },
             }),
@@ -225,8 +234,54 @@ describe("Steam search Worker", () => {
       currentPlayers: 42,
       totalReviews: 200,
       positiveReviews: 150,
+      negativeReviews: 50,
       positivePercent: 75,
-      price: { formatted: "$29.99", discountPercent: 10 },
+      negativePercent: 25,
+      price: {
+        currency: "USD",
+        initial: 2999,
+        final: 2699,
+        initialFormatted: "$29.99",
+        finalFormatted: "$29.99",
+        discountPercent: 10,
+      },
+      genres: ["RPG"],
+      categories: ["Single-player"],
+      curatorReviews: null,
+    });
+  });
+
+  it("yönetim panelini e-posta ve ayrı Worker secret şifresiyle korur", async () => {
+    const headers = {
+      "cf-access-authenticated-user-email":
+        "batuhan.ozmen@gaminginturkey.com",
+    };
+    const env = {
+      ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com",
+      ADMIN_EMAILS: "batuhan.ozmen@gaminginturkey.com",
+      ADMIN_PANEL_PASSWORD: "strong-admin-password",
+    };
+    const status = await adminStatus(
+      new Request("https://steamradar.example.workers.dev/api/admin/status", {
+        headers,
+      }),
+      env,
+    );
+    expect(status.status).toBe(200);
+    expect(await status.json()).toEqual({
+      admin: true,
+      passwordConfigured: true,
+    });
+
+    const denied = await adminSnapshot(
+      new Request("https://steamradar.example.workers.dev/api/admin", {
+        headers: { ...headers, "x-admin-password": "wrong" },
+      }),
+      env,
+    );
+    expect(denied.status).toBe(401);
+    expect(await denied.json()).toEqual({
+      error: "admin_password_required",
     });
   });
 

@@ -26,15 +26,31 @@ export interface SteamPublicStats {
   currentPlayers: number;
   totalReviews: number;
   positiveReviews: number;
+  negativeReviews: number;
   positivePercent: number;
+  negativePercent: number;
   reviewScore: string;
-  price: { formatted: string; discountPercent: number } | null;
+  price: {
+    currency: string;
+    initial: number;
+    final: number;
+    initialFormatted: string;
+    finalFormatted: string;
+    discountPercent: number;
+  } | null;
+  genres: string[];
+  categories: string[];
+  curatorReviews: null;
   capturedAt: string;
 }
 
 export interface WorkerEnvironment {
   ALLOWED_EMAIL_DOMAIN?: string;
   ALLOWED_EMAILS?: string;
+  ADMIN_EMAILS?: string;
+  ADMIN_PANEL_PASSWORD?: string;
+  GAMALYTIC_API_KEY?: string;
+  EMAIL_AUTOMATION_SECRET?: string;
   DASHBOARD_ORIGIN?: string;
   ALLOW_LOCAL_DEV?: string;
   DB?: {
@@ -90,6 +106,14 @@ export function putTeamState(
   env: WorkerEnvironment,
 ): Promise<Response>;
 export function deleteTeamState(
+  request: Request,
+  env: WorkerEnvironment,
+): Promise<Response>;
+export function adminStatus(
+  request: Request,
+  env: WorkerEnvironment,
+): Promise<Response>;
+export function adminSnapshot(
   request: Request,
   env: WorkerEnvironment,
 ): Promise<Response>;

@@ -750,12 +750,31 @@ export function renderReport(
     .game-profile-actions button { min-height:36px; padding:7px 10px; font-size:11px; }
     .game-profile-actions [data-game-delete] { color:var(--color-danger); }
     .game-stats { margin-top:20px; padding-top:18px; border-top:1px solid var(--color-line); }
-    .comparison-search { position:relative; max-width:620px; margin:0 auto 18px; }
+    .comparison-setup { display:grid; grid-template-columns:minmax(0,280px) minmax(0,1fr); gap:14px; align-items:start; margin-bottom:18px; }
+    .primary-game-select { display:grid; gap:6px; color:var(--color-muted); font-size:12px; font-weight:800; }
+    .primary-game-select select { width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--color-line); border-radius:11px; color:var(--color-ink); background:var(--color-control); }
+    .comparison-search { position:relative; min-width:0; }
     .comparison-search label { display:grid; gap:6px; color:var(--color-muted); font-size:12px; font-weight:800; }
     .comparison-search input { width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--color-line); border-radius:11px; color:var(--color-ink); background:var(--color-control); }
     .game-stats h3 { margin:0 0 4px; font-size:17px; }
     .game-stats > p { margin:0 0 12px; color:var(--color-muted); font-size:11px; line-height:1.5; }
-    .stats-grid { display:grid; grid-template-columns:1fr; gap:9px; }
+    .comparison-count { margin:6px 0 0; color:var(--color-muted); font-size:10px; }
+    .stats-grid { min-width:0; }
+    .stats-table-wrap { width:100%; overflow-x:auto; border:1px solid var(--color-line); border-radius:15px; background:var(--color-panel); scrollbar-color:var(--color-accent-pink) var(--color-soft); }
+    .stats-table { width:100%; min-width:760px; border-collapse:collapse; table-layout:fixed; }
+    .stats-table th,.stats-table td { min-width:138px; padding:10px; border-right:1px solid var(--color-line); border-bottom:1px solid var(--color-line); vertical-align:top; text-align:left; }
+    .stats-table tr:last-child th,.stats-table tr:last-child td { border-bottom:0; }
+    .stats-table th:last-child,.stats-table td:last-child { border-right:0; }
+    .stats-table tbody th { position:sticky; left:0; z-index:2; width:150px; min-width:150px; color:var(--color-muted); background:var(--color-panel); font-size:10px; text-transform:uppercase; }
+    .stats-game-head { display:grid; grid-template-columns:42px minmax(0,1fr); gap:8px; align-items:center; }
+    .stats-game-head .game-capsule,.stats-game-head .game-capsule-fallback { width:42px; aspect-ratio:2 / 3; border-radius:7px; }
+    .stats-game-head strong,.stats-game-head small { display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; }
+    .stats-game-head strong { font-size:11px; }
+    .stats-game-head small { margin-top:3px; color:var(--color-muted); font-size:8px; text-transform:uppercase; }
+    .stats-game-head button { min-height:30px; margin-top:5px; padding:5px 7px; color:var(--color-danger); font-size:8px; }
+    .stats-main-column { background:var(--color-soft); box-shadow:inset 0 3px 0 var(--color-accent-pink); }
+    .stats-cell-value { display:block; overflow-wrap:anywhere; font-size:12px; font-weight:800; }
+    .stats-cell-note { display:block; margin-top:3px; color:var(--color-muted); font-size:8px; line-height:1.35; }
     .stats-card { display:grid; grid-template-columns:54px minmax(0,1fr); gap:10px; padding:10px; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel-subtle); }
     .stats-card .game-capsule,.stats-card .game-capsule-fallback { width:54px; }
     .stats-card h4 { margin:0 0 7px; overflow-wrap:anywhere; font-size:12px; }
@@ -886,6 +905,7 @@ export function renderReport(
     .news-disclaimer { margin:-4px 0 14px; color:var(--color-muted); font-size:12px; line-height:1.5; }
     .news-grid { display:grid; grid-template-columns:1fr; gap:12px; }
     .news-card { display:grid; grid-template-columns:96px minmax(0,1fr); min-width:0; overflow:hidden; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
+    .news-card[hidden] { display:none; }
     .news-card > img { width:96px; height:100%; min-height:118px; object-fit:cover; background:var(--color-soft); }
     .news-icon { display:grid; min-height:118px; place-items:center; color:var(--color-on-accent); background:var(--gradient-brand); font-size:28px; }
     .news-card-body { min-width:0; padding:13px; }
@@ -895,6 +915,14 @@ export function renderReport(
     .news-card p { display:-webkit-box; margin:0 0 9px; overflow:hidden; color:var(--color-muted); font-size:11px; line-height:1.45; -webkit-box-orient:vertical; -webkit-line-clamp:3; }
     .news-card a { color:var(--color-link); font-size:11px; font-weight:800; text-decoration:none; }
     .admin-grid { display:grid; grid-template-columns:1fr; gap:14px; }
+    .admin-login { max-width:460px; margin:0 auto; padding:18px; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
+    .admin-login h3 { margin:0 0 7px; font-size:18px; }
+    .admin-login p { margin:0 0 13px; color:var(--color-muted); font-size:11px; line-height:1.5; }
+    .admin-login form { display:grid; gap:9px; }
+    .admin-login input { width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--color-line); border-radius:10px; color:var(--color-ink); background:var(--color-control); }
+    .admin-login button { color:var(--color-on-accent); border-color:var(--color-transparent); background:var(--gradient-brand); font-weight:800; }
+    .admin-login-status { min-height:1.4em; margin-top:9px; color:var(--color-danger); font-size:10px; }
+    .admin-content[hidden],.admin-login[hidden] { display:none; }
     .admin-card { padding:16px; border:1px solid var(--color-line); border-radius:16px; background:var(--color-panel); }
     .admin-card h3 { margin:0 0 12px; font-size:17px; }
     .admin-form { display:flex; gap:8px; flex-wrap:wrap; }
@@ -945,7 +973,6 @@ export function renderReport(
       .change-values { text-align:right; }
       .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .platform-news { grid-template-columns:repeat(2,minmax(0,1fr)); }
-      .stats-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .admin-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
     @media (prefers-reduced-motion: reduce) {
@@ -953,6 +980,7 @@ export function renderReport(
       .event-row.timeline-highlight { animation:none; box-shadow:inset 4px 0 var(--color-accent-pink); }
     }
     @media (max-width: 480px) {
+      .comparison-setup { grid-template-columns:1fr; }
       .game-dialog-shell { grid-template-columns:86px minmax(0,1fr); gap:12px; padding:13px; }
       .game-dialog-cover .game-capsule,.game-dialog-cover .game-capsule-fallback { width:86px; }
       .game-dialog h3 { font-size:19px; }
@@ -1050,20 +1078,27 @@ export function renderReport(
       <div class="section-title">
         <div>
           <h2 id="game-statistics-heading">Oyun İstatistikleri</h2>
-          <p data-i18n="statsIntro">Steam’in herkese açık anlık verileriyle ücretsiz karşılaştırma. Satış ve wishlist tahmini yapılmaz.</p>
+          <p data-i18n="statsIntro">Bir ana oyunu en fazla 5 rakiple; Steam verileri ve Gamalytic tahminleri üzerinden karşılaştırın.</p>
         </div>
       </div>
       <div class="games-panel">
-        <div class="comparison-search">
-          <label>
-            Steam’de karşılaştırılacak oyun ara
-            <input type="search" data-comparison-search autocomplete="off" placeholder="Oyun adı yazın…">
+        <div class="comparison-setup">
+          <label class="primary-game-select">
+            <span>Ana oyun</span>
+            <select data-primary-game aria-label="Karşılaştırmanın ana oyunu"></select>
           </label>
-          <div class="steam-game-results" data-comparison-results role="listbox" hidden></div>
-          <div class="steam-search-status" data-comparison-status role="status" aria-live="polite">En az 2 karakter yazın.</div>
+          <div class="comparison-search">
+            <label>
+              Karşılaştırılacak oyun ara
+              <input type="search" data-comparison-search autocomplete="off" placeholder="Steam’de oyun adı yazın…">
+            </label>
+            <div class="steam-game-results" data-comparison-results role="listbox" hidden></div>
+            <div class="steam-search-status" data-comparison-status role="status" aria-live="polite">En fazla 5 rakip oyun ekleyebilirsiniz.</div>
+            <p class="comparison-count" data-comparison-count>0 / 5 rakip oyun</p>
+          </div>
         </div>
         <div class="stats-grid" data-game-stats>
-          <div class="empty" data-i18n="statsAddGame">İstatistik görmek için Steam’den oyun ekleyin.</div>
+          <div class="empty" data-i18n="statsAddGame">Ana oyunu seçmek için önce Oyunlarım bölümünden bir oyun ekleyin.</div>
         </div>
       </div>
     </section>
@@ -1153,31 +1188,42 @@ export function renderReport(
       <div class="section-title">
         <div>
           <h2 id="admin-heading">Yönetim Paneli</h2>
-          <p>Erişim, günlük e-posta alıcıları ve son 30 günlük kullanım verileri.</p>
+          <p>Erişim, günlük e-posta alıcıları ve son 30 günlük kullanım verileri. Kurumsal girişe ek olarak yönetici şifresi gerekir.</p>
         </div>
       </div>
-      <div class="admin-grid">
-        <article class="admin-card">
-          <h3>Panel erişimi</h3>
-          <form class="admin-form" data-admin-user-form>
-            <input type="email" required placeholder="kullanici@ornek.com" data-admin-user-email>
-            <button type="submit">Erişim ver</button>
-          </form>
-          <div class="admin-list" data-admin-users></div>
-        </article>
-        <article class="admin-card">
-          <h3>Günlük e-posta alıcıları</h3>
-          <form class="admin-form" data-admin-recipient-form>
-            <input type="email" required placeholder="alici@ornek.com" data-admin-recipient-email>
-            <button type="submit">Alıcı ekle</button>
-          </form>
-          <div class="admin-list" data-admin-recipients></div>
-        </article>
-        <article class="admin-card">
-          <h3>Son 30 gün</h3>
-          <div class="admin-metrics" data-admin-metrics></div>
-          <div class="admin-list" data-admin-popular></div>
-        </article>
+      <div class="admin-login" data-admin-login>
+        <h3>Yönetici doğrulaması</h3>
+        <p>Bu şifre yalnızca doğrulama isteğinde kullanılır ve tarayıcınızda kalıcı olarak saklanmaz.</p>
+        <form data-admin-login-form>
+          <input type="password" required autocomplete="current-password" placeholder="Yönetici şifresi" data-admin-password>
+          <button type="submit">Yönetim paneline gir</button>
+        </form>
+        <div class="admin-login-status" data-admin-login-status role="status" aria-live="polite"></div>
+      </div>
+      <div class="admin-content" data-admin-content hidden>
+        <div class="admin-grid">
+          <article class="admin-card">
+            <h3>Panel erişimi</h3>
+            <form class="admin-form" data-admin-user-form>
+              <input type="email" required placeholder="kullanici@ornek.com" data-admin-user-email>
+              <button type="submit">Erişim ver</button>
+            </form>
+            <div class="admin-list" data-admin-users></div>
+          </article>
+          <article class="admin-card">
+            <h3>Günlük e-posta alıcıları</h3>
+            <form class="admin-form" data-admin-recipient-form>
+              <input type="email" required placeholder="alici@ornek.com" data-admin-recipient-email>
+              <button type="submit">Alıcı ekle</button>
+            </form>
+            <div class="admin-list" data-admin-recipients></div>
+          </article>
+          <article class="admin-card">
+            <h3>Son 30 gün</h3>
+            <div class="admin-metrics" data-admin-metrics></div>
+            <div class="admin-list" data-admin-popular></div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -1322,6 +1368,11 @@ export function renderReport(
     const adminRecipients = document.querySelector("[data-admin-recipients]");
     const adminMetrics = document.querySelector("[data-admin-metrics]");
     const adminPopular = document.querySelector("[data-admin-popular]");
+    const adminLogin = document.querySelector("[data-admin-login]");
+    const adminContent = document.querySelector("[data-admin-content]");
+    const adminPasswordInput = document.querySelector("[data-admin-password]");
+    const adminLoginStatus = document.querySelector("[data-admin-login-status]");
+    let adminPassword = "";
 
     function adminRow(item, collection) {
       const row = document.createElement("div");
@@ -1337,14 +1388,47 @@ export function renderReport(
       return row;
     }
 
-    async function loadAdmin() {
+    async function checkAdminAccess() {
       try {
-        const response = await fetch("/api/admin", {
+        const response = await fetch("/api/admin/status", {
           headers: { accept: "application/json" },
         });
         if (!response.ok) return false;
         const payload = await response.json();
+        adminOpen.hidden = payload.admin !== true;
+        if (!payload.passwordConfigured) {
+          adminLoginStatus.textContent =
+            "ADMIN_PANEL_PASSWORD Worker secret henüz tanımlanmamış.";
+        }
+        return payload.admin === true;
+      } catch {
+        return false;
+      }
+    }
+
+    async function loadAdmin() {
+      try {
+        const response = await fetch("/api/admin", {
+          headers: {
+            accept: "application/json",
+            "x-admin-password": adminPassword,
+          },
+        });
+        if (!response.ok) {
+          const payload = await response.json().catch(() => ({}));
+          adminContent.hidden = true;
+          adminLogin.hidden = false;
+          adminLoginStatus.textContent =
+            payload.error === "admin_password_not_configured"
+              ? "Yönetici şifresi henüz Cloudflare Worker secret olarak tanımlanmamış."
+              : "Yönetici şifresi hatalı.";
+          return false;
+        }
+        const payload = await response.json();
         adminOpen.hidden = false;
+        adminLogin.hidden = true;
+        adminContent.hidden = false;
+        adminLoginStatus.textContent = "";
         adminUsers.replaceChildren(
           ...(payload.users || []).map((item) => adminRow(item, "users")),
         );
@@ -1394,6 +1478,7 @@ export function renderReport(
         headers: {
           accept: "application/json",
           "content-type": "application/json",
+          "x-admin-password": adminPassword,
         },
         body: method === "POST" ? JSON.stringify({ email }) : undefined,
       });
@@ -1405,6 +1490,16 @@ export function renderReport(
       setView("admin");
       recordAnalytics("view_tab", "admin");
     });
+    document.querySelector("[data-admin-login-form]")?.addEventListener(
+      "submit",
+      async (event) => {
+        event.preventDefault();
+        adminPassword = adminPasswordInput.value;
+        adminLoginStatus.textContent = "Doğrulanıyor…";
+        const success = await loadAdmin();
+        if (success) adminPasswordInput.value = "";
+      },
+    );
     document.querySelector("[data-admin-user-form]")?.addEventListener(
       "submit",
       async (event) => {
@@ -1433,7 +1528,7 @@ export function renderReport(
         "DELETE",
       );
     });
-    loadAdmin();
+    checkAdminAccess();
     recordAnalytics("page_view", location.pathname);
     viewTabs.forEach((button) => {
       button.addEventListener("click", () =>
@@ -1555,12 +1650,12 @@ export function renderReport(
       addSteamGame: { tr: "Steam’den oyun ekle", en: "Add a game from Steam" },
       gameComparison: { tr: "Oyun istatistikleri", en: "Game statistics" },
       statsIntro: {
-        tr: "Steam’in herkese açık anlık verileriyle ücretsiz karşılaştırma. Satış ve wishlist tahmini yapılmaz.",
-        en: "A free comparison using Steam’s public live data. Sales and wishlist figures are not estimated.",
+        tr: "Bir ana oyunu en fazla 5 rakiple; Steam verileri ve Gamalytic tahminleri üzerinden karşılaştırın.",
+        en: "Compare one primary game with up to 5 competitors using Steam data and Gamalytic estimates.",
       },
       statsAddGame: {
-        tr: "İstatistik görmek için Steam’den oyun ekleyin.",
-        en: "Add a game from Steam to view statistics.",
+        tr: "Ana oyunu seçmek için önce Oyunlarım bölümünden bir oyun ekleyin.",
+        en: "Add a game under My Games first to select a primary game.",
       },
       typeTwoChars: {
         tr: "En az 2 karakter yazın.",
@@ -1879,9 +1974,11 @@ export function renderReport(
     const gameDialogSteamLink = document.querySelector("[data-game-steam-link]");
     const gameDialogFocus = document.querySelector("[data-game-dialog-focus]");
     const gameDialogDelete = document.querySelector("[data-game-dialog-delete]");
+    const primaryGameSelect = document.querySelector("[data-primary-game]");
     const comparisonSearch = document.querySelector("[data-comparison-search]");
     const comparisonResults = document.querySelector("[data-comparison-results]");
     const comparisonStatus = document.querySelector("[data-comparison-status]");
+    const comparisonCount = document.querySelector("[data-comparison-count]");
     let steamSearchTimer = 0;
     let steamSearchController;
     let steamDetailController;
@@ -1891,6 +1988,7 @@ export function renderReport(
     const gamalyticByAppId = new Map();
     const gamalyticUnavailable = new Set();
     const statsStorageKey = "steam-etkinlik-radari-istatistik-v1";
+    let primaryGameAppId = "";
     let comparisonGames = [];
     let comparisonTimer = 0;
 
@@ -1927,13 +2025,68 @@ export function renderReport(
       } catch {}
     }
 
+    function renderPrimaryGameOptions() {
+      const available = games.filter((game) => /^\\d+$/.test(game.appId));
+      if (
+        !primaryGameAppId ||
+        !available.some((game) => game.appId === primaryGameAppId)
+      ) {
+        primaryGameAppId = available[0]?.appId || "";
+      }
+      primaryGameSelect.replaceChildren();
+      if (available.length === 0) {
+        const option = document.createElement("option");
+        option.value = "";
+        option.textContent = localized(
+          "Önce Oyunlarım bölümünden oyun ekleyin",
+          "Add a game under My Games first",
+        );
+        primaryGameSelect.append(option);
+        primaryGameSelect.disabled = true;
+      } else {
+        primaryGameSelect.disabled = false;
+        available.forEach((game) => {
+          const option = document.createElement("option");
+          option.value = game.appId;
+          option.textContent = game.name;
+          option.selected = game.appId === primaryGameAppId;
+          primaryGameSelect.append(option);
+        });
+      }
+      comparisonGames = comparisonGames
+        .filter((game) => game.appId !== primaryGameAppId)
+        .slice(0, 5);
+      comparisonCount.textContent =
+        comparisonGames.length +
+        localized(" / 5 rakip oyun", " / 5 competitor games");
+    }
+
+    function selectedStatsGames() {
+      renderPrimaryGameOptions();
+      const primary = games.find(
+        (game) => game.appId === primaryGameAppId,
+      );
+      return primary ? [primary, ...comparisonGames] : [];
+    }
+
+    function statsCell(value, note = "") {
+      const fragment = document.createDocumentFragment();
+      const strong = document.createElement("span");
+      strong.className = "stats-cell-value";
+      strong.textContent = value;
+      fragment.append(strong);
+      if (note) {
+        const small = document.createElement("span");
+        small.className = "stats-cell-note";
+        small.textContent = note;
+        fragment.append(small);
+      }
+      return fragment;
+    }
+
     function renderGameStats() {
       gameStats.replaceChildren();
-      const measurableGames = [...new Map(
-        [...games, ...comparisonGames]
-          .filter((game) => /^\\d+$/.test(game.appId))
-          .map((game) => [game.appId, game]),
-      ).values()];
+      const measurableGames = selectedStatsGames();
       if (measurableGames.length === 0) {
         const emptyState = document.createElement("div");
         emptyState.className = "empty";
@@ -1941,106 +2094,198 @@ export function renderReport(
         gameStats.append(emptyState);
         return;
       }
-      measurableGames.forEach((game) => {
-        const stats = gameStatsByAppId.get(game.appId);
-        const card = document.createElement("article");
-        card.className = "stats-card";
-        card.append(createGameCapsule(game));
-        const body = document.createElement("div");
-        const title = document.createElement("h4");
-        title.textContent = game.name;
-        body.append(title);
-        if (game.comparisonOnly) {
-          const removeComparison = document.createElement("button");
-          removeComparison.type = "button";
-          removeComparison.dataset.comparisonRemove = game.appId;
-          removeComparison.textContent = localized(
-            "Karşılaştırmadan çıkar",
-            "Remove from comparison",
-          );
-          body.append(removeComparison);
+
+      const wrap = document.createElement("div");
+      wrap.className = "stats-table-wrap";
+      wrap.tabIndex = 0;
+      wrap.setAttribute(
+        "aria-label",
+        localized(
+          "Oyun karşılaştırma tablosu; yatay kaydırılabilir",
+          "Game comparison table; horizontally scrollable",
+        ),
+      );
+      const table = document.createElement("table");
+      table.className = "stats-table";
+      const head = document.createElement("thead");
+      const headRow = document.createElement("tr");
+      const metricHead = document.createElement("th");
+      metricHead.scope = "col";
+      metricHead.textContent = localized("Metrik", "Metric");
+      headRow.append(metricHead);
+      measurableGames.forEach((game, index) => {
+        const cell = document.createElement("th");
+        cell.scope = "col";
+        if (index === 0) cell.classList.add("stats-main-column");
+        const header = document.createElement("div");
+        header.className = "stats-game-head";
+        header.append(createGameCapsule(game));
+        const copy = document.createElement("div");
+        const name = document.createElement("strong");
+        name.textContent = game.name;
+        const role = document.createElement("small");
+        role.textContent =
+          index === 0
+            ? localized("Ana oyun", "Primary game")
+            : localized("Rakip " + index, "Competitor " + index);
+        copy.append(name, role);
+        if (index > 0) {
+          const remove = document.createElement("button");
+          remove.type = "button";
+          remove.dataset.comparisonRemove = game.appId;
+          remove.textContent = localized("Çıkar", "Remove");
+          copy.append(remove);
         }
-        if (!stats) {
-          const loading = document.createElement("p");
-          loading.className = "stats-note";
-          loading.textContent = localized("Steam verisi alınıyor…", "Loading Steam data…");
-          body.append(loading);
-        } else {
-          const values = document.createElement("div");
-          values.className = "stats-values";
-          [
-            [formatNumber(stats.currentPlayers), localized("Anlık oyuncu", "Players now")],
-            [formatNumber(stats.totalReviews), localized("Toplam inceleme", "Total reviews")],
-            [stats.positivePercent + "%", localized("Olumlu", "Positive")],
-            [stats.price?.formatted || "—", localized("Fiyat", "Price")],
-          ].forEach(([value, label]) => {
-            const metric = document.createElement("span");
-            metric.className = "stats-value";
-            const strong = document.createElement("strong");
-            strong.textContent = value;
-            const caption = document.createElement("span");
-            caption.textContent = label;
-            metric.append(strong, caption);
-            values.append(metric);
-          });
-          body.append(values);
-          const gamalytic = gamalyticByAppId.get(game.appId);
-          if (gamalytic) {
-            const estimateHeading = document.createElement("p");
-            estimateHeading.className = "stats-note";
-            estimateHeading.textContent = localized(
-              "Gamalytic tahminleri",
-              "Gamalytic estimates",
-            );
-            body.append(estimateHeading);
-            const estimates = document.createElement("div");
-            estimates.className = "stats-values";
-            [
-              [formatNumber(gamalytic.wishlists), localized("Wishlist (tahmin)", "Wishlists (estimate)")],
-              [formatNumber(gamalytic.copiesSold), localized("Satış (tahmin)", "Sales (estimate)")],
-              [formatUsd(gamalytic.totalRevenue || gamalytic.revenue), localized("Gelir (tahmin)", "Revenue (estimate)")],
-              [formatNumber(gamalytic.owners), localized("Sahip (tahmin)", "Owners (estimate)")],
-            ].forEach(([value, label]) => {
-              const metric = document.createElement("span");
-              metric.className = "stats-value";
-              const strong = document.createElement("strong");
-              strong.textContent = value;
-              const caption = document.createElement("span");
-              caption.textContent = label;
-              metric.append(strong, caption);
-              estimates.append(metric);
-            });
-            body.append(estimates);
-          } else if (gamalyticUnavailable.has(game.appId)) {
-            const unavailable = document.createElement("p");
-            unavailable.className = "stats-note";
-            unavailable.textContent = localized(
-              "Gamalytic bağlandığında wishlist, satış ve gelir tahminleri burada görünecek.",
-              "Wishlist, sales and revenue estimates will appear here once Gamalytic is connected.",
-            );
-            body.append(unavailable);
-          }
-          const note = document.createElement("p");
-          note.className = "stats-note";
-          note.textContent = localized(
-            "Günlük kayıtlar bu tarayıcıda 90 gün saklanır.",
-            "Daily snapshots are kept in this browser for 90 days.",
-          );
-          body.append(note);
-        }
-        card.append(body);
-        gameStats.append(card);
+        header.append(copy);
+        cell.append(header);
+        headRow.append(cell);
       });
+      head.append(headRow);
+
+      const body = document.createElement("tbody");
+      const metricRows = [
+        {
+          label: localized("Wishlist", "Wishlists"),
+          value(game) {
+            const data = gamalyticByAppId.get(game.appId);
+            return data
+              ? statsCell(
+                  formatNumber(data.wishlists),
+                  localized("Gamalytic tahmini", "Gamalytic estimate"),
+                )
+              : statsCell("—", localized("Gamalytic bağlantısı gerekli", "Gamalytic connection required"));
+          },
+        },
+        {
+          label: localized("Toplam satış", "Total sales"),
+          value(game) {
+            const data = gamalyticByAppId.get(game.appId);
+            return data
+              ? statsCell(
+                  formatNumber(data.copiesSold),
+                  localized("Gamalytic tahmini", "Gamalytic estimate"),
+                )
+              : statsCell("—", localized("Gamalytic bağlantısı gerekli", "Gamalytic connection required"));
+          },
+        },
+        {
+          label: localized("Toplam gelir", "Total revenue"),
+          value(game) {
+            const data = gamalyticByAppId.get(game.appId);
+            return data
+              ? statsCell(
+                  formatUsd(data.totalRevenue || data.revenue),
+                  localized("Gamalytic tahmini", "Gamalytic estimate"),
+                )
+              : statsCell("—", localized("Gamalytic bağlantısı gerekli", "Gamalytic connection required"));
+          },
+        },
+        {
+          label: localized("Toplam inceleme", "Total reviews"),
+          value(game) {
+            const data = gameStatsByAppId.get(game.appId);
+            return data
+              ? statsCell(formatNumber(data.totalReviews), data.reviewScore || "")
+              : statsCell("…", localized("Steam verisi alınıyor", "Loading Steam data"));
+          },
+        },
+        {
+          label: localized("Olumlu / olumsuz", "Positive / negative"),
+          value(game) {
+            const data = gameStatsByAppId.get(game.appId);
+            return data
+              ? statsCell(
+                  data.positivePercent + "% / " + data.negativePercent + "%",
+                  formatNumber(data.positiveReviews) +
+                    " / " +
+                    formatNumber(data.negativeReviews),
+                )
+              : statsCell("…");
+          },
+        },
+        {
+          label: localized("Normal fiyat", "Regular price"),
+          value(game) {
+            const data = gameStatsByAppId.get(game.appId);
+            return statsCell(
+              data?.price?.initialFormatted ||
+                data?.price?.finalFormatted ||
+                "—",
+            );
+          },
+        },
+        {
+          label: localized("İndirimli fiyat", "Discounted price"),
+          value(game) {
+            const data = gameStatsByAppId.get(game.appId);
+            return data?.price?.discountPercent > 0
+              ? statsCell(
+                  data.price.finalFormatted || "—",
+                  "%" + data.price.discountPercent,
+                )
+              : statsCell("—", localized("İndirim yok", "No discount"));
+          },
+        },
+        {
+          label: localized("Anlık oyuncu", "Players now"),
+          value(game) {
+            const data = gameStatsByAppId.get(game.appId);
+            return data
+              ? statsCell(formatNumber(data.currentPlayers))
+              : statsCell("…");
+          },
+        },
+        {
+          label: localized("Tür / kategori", "Genre / category"),
+          value(game) {
+            const data = gameStatsByAppId.get(game.appId);
+            const labels = [
+              ...(data?.genres || []),
+              ...(data?.categories || []),
+            ].filter((item, index, all) => all.indexOf(item) === index);
+            return statsCell(
+              labels.slice(0, 6).join(", ") ||
+                game.tags.slice(0, 6).join(", ") ||
+                "—",
+            );
+          },
+        },
+        {
+          label: localized("Küratör yorumu", "Curator reviews"),
+          value() {
+            return statsCell(
+              "—",
+              localized(
+                "Steam’in herkese açık API’sinde sunulmuyor",
+                "Not provided by Steam's public API",
+              ),
+            );
+          },
+        },
+      ];
+      metricRows.forEach((metric) => {
+        const row = document.createElement("tr");
+        const label = document.createElement("th");
+        label.scope = "row";
+        label.textContent = metric.label;
+        row.append(label);
+        measurableGames.forEach((game, index) => {
+          const cell = document.createElement("td");
+          if (index === 0) cell.classList.add("stats-main-column");
+          cell.append(metric.value(game));
+          row.append(cell);
+        });
+        body.append(row);
+      });
+      table.append(head, body);
+      wrap.append(table);
+      gameStats.append(wrap);
     }
 
     async function refreshGameStats() {
       renderGameStats();
       if (location.protocol === "file:") return;
-      const statsGames = [...new Map(
-        [...games, ...comparisonGames]
-          .filter((game) => /^\\d+$/.test(game.appId))
-          .map((game) => [game.appId, game]),
-      ).values()];
+      const statsGames = selectedStatsGames();
       await Promise.all(
         statsGames
           .filter(
@@ -2090,8 +2335,15 @@ export function renderReport(
     async function addComparisonGame(option) {
       comparisonResults.hidden = true;
       comparisonSearch.value = "";
+      if (comparisonGames.length >= 5) {
+        comparisonStatus.textContent = localized(
+          "En fazla 5 rakip oyun ekleyebilirsiniz.",
+          "You can add up to 5 competitor games.",
+        );
+        return;
+      }
       if (
-        games.some((game) => game.appId === option.appId) ||
+        option.appId === primaryGameAppId ||
         comparisonGames.some((game) => game.appId === option.appId)
       ) {
         comparisonStatus.textContent = localized(
@@ -2198,13 +2450,20 @@ export function renderReport(
         name: button.dataset.comparisonName,
       });
     });
+    primaryGameSelect?.addEventListener("change", async () => {
+      primaryGameAppId = primaryGameSelect.value;
+      comparisonGames = comparisonGames.filter(
+        (game) => game.appId !== primaryGameAppId,
+      );
+      await refreshGameStats();
+    });
     gameStats?.addEventListener("click", (event) => {
       const button = event.target.closest("[data-comparison-remove]");
       if (!button) return;
       comparisonGames = comparisonGames.filter(
         (game) => game.appId !== button.dataset.comparisonRemove,
       );
-      renderGameStats();
+      refreshGameStats();
     });
 
     function safeSteamImage(value) {
@@ -3065,13 +3324,18 @@ export function renderReport(
         button.dataset.gameFocus || button.dataset.gameDialogFocus;
       if (focusId) {
         focusedGameId = focusedGameId === focusId ? "" : focusId;
+        gamesOnly = Boolean(focusedGameId);
+        setToggleState(gamesFilter, gamesOnly);
         closeGameDialog();
         renderGames();
         refreshGameStats();
         updateGameMatches();
-        document.querySelector("#events")?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
+        setView("events");
+        requestAnimationFrame(() => {
+          document.querySelector("#events")?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
         });
         return;
       }

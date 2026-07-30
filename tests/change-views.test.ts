@@ -29,6 +29,14 @@ describe("change log views", () => {
     expect(html).not.toMatch(/<details class="change-log" open/);
   });
 
+  it("keeps release category filtering and game-to-event navigation functional", () => {
+    const html = renderReport(snapshot, []);
+
+    expect(html).toContain(".news-card[hidden] { display:none; }");
+    expect(html).toContain("gamesOnly = Boolean(focusedGameId);");
+    expect(html).toContain('setView("events");');
+  });
+
   it("shows the email block only when the last 24 hours contain changes", () => {
     const withChanges = renderDigest(snapshot, [recentChange]);
     const withoutChanges = renderDigest(snapshot, [

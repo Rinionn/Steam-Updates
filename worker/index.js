@@ -459,22 +459,48 @@ export async function getSteamStats(request, env) {
   const summary = reviews?.query_summary || {};
   const totalReviews = Number(summary.total_reviews || 0);
   const positiveReviews = Number(summary.total_positive || 0);
-  const price = details?.[appId]?.data?.price_overview;
+  const negativeReviews = Number(
+    summary.total_negative || Math.max(0, totalReviews - positiveReviews),
+  );
+  const appDetails = details?.[appId]?.data || {};
+  const price = appDetails.price_overview;
   return json(
     {
       appId,
       currentPlayers: Number(players?.response?.player_count || 0),
       totalReviews,
       positiveReviews,
+      negativeReviews,
       positivePercent:
         totalReviews > 0 ? Math.round((positiveReviews / totalReviews) * 100) : 0,
+      negativePercent:
+        totalReviews > 0 ? Math.round((negativeReviews / totalReviews) * 100) : 0,
       reviewScore: String(summary.review_score_desc || ""),
       price: price
         ? {
-            formatted: String(price.final_formatted || ""),
+            currency: String(price.currency || ""),
+            initial: Number(price.initial || 0),
+            final: Number(price.final || 0),
+            initialFormatted: String(
+              price.initial_formatted || price.final_formatted || "",
+            ),
+            finalFormatted: String(price.final_formatted || ""),
             discountPercent: Number(price.discount_percent || 0),
           }
         : null,
+      genres: Array.isArray(appDetails.genres)
+        ? appDetails.genres
+            .map((item) => String(item?.description || "").trim())
+            .filter(Boolean)
+            .slice(0, 12)
+        : [],
+      categories: Array.isArray(appDetails.categories)
+        ? appDetails.categories
+            .map((item) => String(item?.description || "").trim())
+            .filter(Boolean)
+            .slice(0, 20)
+        : [],
+      curatorReviews: null,
       capturedAt: new Date().toISOString(),
     },
     200,
@@ -554,7 +580,7 @@ function optionsResponse(request, env) {
     headers: {
       ...cors,
       "access-control-allow-methods": "GET, PUT, DELETE, OPTIONS",
-      "access-control-allow-headers": "content-type",
+      "access-control-allow-headers": "content-type, x-admin-password",
       "access-control-max-age": "86400",
     },
   });
@@ -675,12 +701,57 @@ function validEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) && value.length <= 254;
 }
 
+async function secretsMatch(left, right) {
+  const encoder = new TextEncoder();
+  const [leftDigest, rightDigest] = await Promise.all([
+    crypto.subtle.digest("SHA-256", encoder.encode(String(left || ""))),
+    crypto.subtle.digest("SHA-256", encoder.encode(String(right || ""))),
+  ]);
+  const leftBytes = new Uint8Array(leftDigest);
+  const rightBytes = new Uint8Array(rightDigest);
+  let difference = 0;
+  for (let index = 0; index < leftBytes.length; index++) {
+    difference |= leftBytes[index] ^ rightBytes[index];
+  }
+  return difference === 0;
+}
+
+export async function adminStatus(request, env) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  if (!(await requestIsAuthorized(request, env))) {
+    return json({ error: "authentication_required" }, 401, cors);
+  }
+  if (!requestIsAdmin(request, env)) {
+    return json({ error: "admin_required" }, 403, cors);
+  }
+  return json(
+    {
+      admin: true,
+      passwordConfigured: Boolean(env.ADMIN_PANEL_PASSWORD),
+    },
+    200,
+    cors,
+  );
+}
+
 async function requireAdmin(request, env, cors) {
   if (!(await requestIsAuthorized(request, env))) {
     return json({ error: "authentication_required" }, 401, cors);
   }
   if (!requestIsAdmin(request, env)) {
     return json({ error: "admin_required" }, 403, cors);
+  }
+  if (!env.ADMIN_PANEL_PASSWORD) {
+    return json({ error: "admin_password_not_configured" }, 503, cors);
+  }
+  if (
+    !(await secretsMatch(
+      request.headers.get("x-admin-password") || "",
+      env.ADMIN_PANEL_PASSWORD,
+    ))
+  ) {
+    return json({ error: "admin_password_required" }, 401, cors);
   }
   return null;
 }
@@ -817,6 +888,10 @@ export async function automationRecipients(request, env) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname === "/api/admin/status") {
+      if (request.method === "GET") return adminStatus(request, env);
+      return json({ error: "method_not_allowed" }, 405, { allow: "GET" });
+    }
     if (url.pathname === "/api/admin") {
       if (request.method === "GET") return adminSnapshot(request, env);
       return json({ error: "method_not_allowed" }, 405, { allow: "GET" });

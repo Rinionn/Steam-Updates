@@ -6,11 +6,11 @@ indirimlerini listeleyen, bilinen başvuru/inceleme tarihlerini İstanbul saatin
 
 ## Çevrim içi dashboard
 
-**https://rinionn.github.io/Steam-Updates/**
+**https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/**
 
-Kurumsal giriş, Steam oyun araması ve ekip verisi için korumalı yayın adresi
-`https://steam-etkinlik-radari.batuhan-ozmen.workers.dev`'dir. Kurulum
-adımları `docs/cloudflare-access.md` dosyasındadır.
+Bu adres kurumsal giriş, Steam oyun araması, ekip verisi, yönetim ve analitik
+özelliklerini sunan ana yayındır. GitHub Pages çıktısı yalnız statik yedektir.
+Kurulum adımları `docs/cloudflare-access.md` dosyasındadır.
 
 GitHub Actions, Steam takvimini her gün Türkiye saatiyle yaklaşık 09:00’da
 yeniler ve `out/index.html` çıktısını GitHub Pages’e yayınlar. `main` dalına
@@ -33,10 +33,28 @@ ve günlük veri commitine otomatik olarak dahil edilir.
 - Steam hesabında kayıt, opt-in veya başka bir değişiklik yapmaz.
 - Oyun adı yazılırken korumalı Worker üzerinden Steam Store sonuçlarını arar ve
   seçimde App ID, etiket, demo/çıkış durumu ve kapak görselini otomatik doldurur.
-- Kayıtlı oyunları kapak kartlarında gösterir; herkese açık anlık oyuncu,
-  inceleme oranı, inceleme sayısı ve fiyat verilerini ücretsiz karşılaştırır.
+- Bir ana oyunu en fazla beş rakiple karşılaştırır; Steam’den inceleme, fiyat,
+  oyuncu ve kategori verilerini, Gamalytic bağlandığında da tahmini wishlist,
+  satış ve gelir verilerini gösterir.
 - Yeni çıkan/yaklaşan oyunları ve resmî Steamworks duyurularını günlük yenilenen
   ayrı bir haber görünümünde toplar.
+- Şifre korumalı yönetim panelinden erişim kullanıcılarını, e-posta alıcılarını
+  ve son 30 günlük kullanım analitiğini yönetir.
+
+## Gamalytic ve yönetim secret’ları
+
+GitHub’da **Settings → Secrets and variables → Actions → New repository
+secret** yolundan aşağıdaki değerleri ekleyin:
+
+- `GAMALYTIC_API_KEY`: Gamalytic profilindeki **API keys** bölümünden üretilen
+  anahtar.
+- `ADMIN_PANEL_PASSWORD`: yalnız yönetim panelinde kullanılacak güçlü ve benzersiz
+  parola.
+- `EMAIL_AUTOMATION_SECRET`: yönetim panelindeki e-posta alıcılarını günlük
+  workflow’a güvenli biçimde aktaran rastgele servis anahtarı.
+
+Bu değerler kaynak koda veya statik HTML’e yazılmaz. Sonraki Pages workflow
+çalışmasında Cloudflare Worker secret olarak aktarılır.
 
 ## Kurulum
 
