@@ -1,6 +1,11 @@
 name: Steam Event Radar - Daily Email
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/daily-email.yml"
   workflow_dispatch:
   schedule:
     # 09:30 Europe/Istanbul (UTC+3)
