@@ -35,6 +35,13 @@ const changeKindLabels: Record<ChangeKind, string> = {
   deadline_changed: "Son tarih değişti",
   renamed: "Adı değişti",
 };
+const changeKindLabelsEn: Record<ChangeKind, string> = {
+  added: "Event added",
+  removed: "Event removed",
+  date_shifted: "Date changed",
+  deadline_changed: "Deadline changed",
+  renamed: "Name changed",
+};
 
 function localDate(isoDate: string, withTime = false): string {
   const date = DateTime.fromISO(isoDate, { zone: "utc" })
@@ -83,15 +90,21 @@ function changeRow(record: ChangeRecord): string {
     before && after
       ? `${before} <span aria-hidden="true">→</span> ${after}`
       : after
-        ? `Yeni: ${after}`
+        ? `${localizedText("Yeni:", "New:")} ${after}`
         : before
-          ? `Önceki: ${before}`
+          ? `${localizedText("Önceki:", "Previous:")} ${before}`
           : "";
   return `
     <div class="change-row">
-      <time datetime="${escapeHtml(record.detectedAt)}">${escapeHtml(localDate(record.detectedAt, true))}</time>
+      <time datetime="${escapeHtml(record.detectedAt)}">${localizedText(
+        localDate(record.detectedAt, true),
+        localDateEn(record.detectedAt, true),
+      )}</time>
       <strong>${escapeHtml(record.eventName)}</strong>
-      <span class="change-type">${escapeHtml(changeKindLabels[record.kind])}</span>
+      <span class="change-type">${localizedText(
+        changeKindLabels[record.kind],
+        changeKindLabelsEn[record.kind],
+      )}</span>
       ${values ? `<span class="change-values">${values}</span>` : ""}
     </div>`;
 }
