@@ -158,6 +158,11 @@ export function adminSnapshot(
   request: Request,
   env: WorkerEnvironment,
 ): Promise<Response>;
+export function updateAdminCollection(
+  request: Request,
+  env: WorkerEnvironment,
+  collection: "users" | "recipients",
+): Promise<Response>;
 export function updateEmailSettings(
   request: Request,
   env: WorkerEnvironment,

@@ -552,7 +552,7 @@ export function renderReport(
   <meta name="color-scheme" content="light dark">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
   <title>Steam Etkinlik Radarı</title>
   <style>
     :root {
@@ -649,7 +649,7 @@ export function renderReport(
       min-height: 100vh;
       overflow-x: hidden;
       color: var(--color-ink);
-      font-family: Montserrat, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-family: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
       background:
         radial-gradient(circle at 12% 3%, var(--color-background-glow-purple), var(--color-transparent) 34rem),
         radial-gradient(circle at 88% 18%, var(--color-background-glow-pink), var(--color-transparent) 30rem),
@@ -713,7 +713,7 @@ export function renderReport(
     .language-switch button { min-width:42px; min-height:34px; padding:6px 9px; color:var(--color-hero-copy); border-color:var(--color-transparent); background:var(--color-transparent); font-size:10px; font-weight:900; }
     .language-switch button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
     .eyebrow { color: var(--color-accent-pink); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; }
-    h1 { margin: 12px 0 10px; overflow-wrap: anywhere; font-family: Montserrat, ui-sans-serif, sans-serif; font-size: clamp(34px, 12vw, 70px); font-weight: 900; line-height: .98; letter-spacing: -.045em; text-transform: uppercase; }
+    h1 { margin: 12px 0 10px; overflow-wrap: anywhere; font-family: "Space Grotesk", ui-sans-serif, sans-serif; font-size: clamp(34px, 12vw, 70px); font-weight: 900; line-height: .98; letter-spacing: -.045em; text-transform: uppercase; }
     .hero p { max-width: 690px; color: var(--color-hero-copy); font-size: 16px; line-height: 1.65; margin: 0; }
     .calendar-overview { padding:22px; border-radius:20px; }
     .calendar-overview h1 { margin:7px 0 8px; font-size:clamp(28px,5vw,42px); line-height:1.05; letter-spacing:-.035em; text-transform:none; }
@@ -1107,11 +1107,10 @@ export function renderReport(
         </dialog>
         <p class="game-match-summary" data-game-match-summary role="status" aria-live="polite" data-i18n="addGamePrompt">Eşleşme için oyun ekleyin.</p>
       </div>
-    </section>
-    <section class="section dashboard-panel" id="game-statistics" data-dashboard-panel="stats" aria-labelledby="game-statistics-heading" hidden>
+      <section class="game-stats" id="game-statistics" aria-labelledby="game-statistics-heading">
       <div class="section-title">
         <div>
-          <h2 id="game-statistics-heading">Oyun İstatistikleri</h2>
+          <h3 id="game-statistics-heading" data-i18n="gameComparison">Oyun İstatistikleri</h3>
           <p data-i18n="statsIntro">Bir ana oyunu en fazla 5 rakiple; Steam verileri ve Gamalytic tahminleri üzerinden karşılaştırın.</p>
         </div>
       </div>
@@ -1135,6 +1134,7 @@ export function renderReport(
           <div class="empty" data-i18n="statsAddGame">Ana oyunu seçmek için önce Oyunlarım bölümünden bir oyun ekleyin.</div>
         </div>
       </div>
+      </section>
     </section>
 
     <section class="section dashboard-panel" id="changes" data-dashboard-panel="events">
@@ -1241,10 +1241,12 @@ export function renderReport(
       "games",
       "steamworks",
       "releases",
-      "stats",
     ]);
-    let activeView = allowedViews.has(hashState.get("view"))
-      ? hashState.get("view")
+    const requestedView = hashState.get("view") === "stats"
+      ? "games"
+      : hashState.get("view");
+    let activeView = allowedViews.has(requestedView)
+      ? requestedView
       : "events";
     const allowedFilters = new Set([
       "all",
@@ -1284,7 +1286,8 @@ export function renderReport(
     }
 
     function setView(view, updateUrl = true) {
-      activeView = allowedViews.has(view) ? view : "events";
+      const normalizedView = view === "stats" ? "games" : view;
+      activeView = allowedViews.has(normalizedView) ? normalizedView : "events";
       viewTabs.forEach((button) => {
         const active = button.dataset.viewTab === activeView;
         button.classList.toggle("active", active);

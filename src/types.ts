@@ -101,6 +101,9 @@ export interface AppConfig {
     smtpPass?: string;
     recipientApiUrl?: string;
     recipientApiSecret?: string;
+    d1AccountId?: string;
+    d1ApiToken?: string;
+    d1DatabaseId?: string;
     sendTime: string;
   };
 }

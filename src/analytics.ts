@@ -22,7 +22,7 @@ export function renderAnalyticsPage(): string {
   <meta name="robots" content="noindex,nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
   <title>Steam Pazar Analizi</title>
   <style>
     :root {
@@ -94,7 +94,7 @@ export function renderAnalyticsPage(): string {
     }
     ${renderAppShellStyles()}
     * { box-sizing:border-box; }
-    html { min-width:320px; background:var(--bg); color:var(--text); font-family:Montserrat,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    html { min-width:320px; background:var(--bg); color:var(--text); font-family:"Space Grotesk",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
     body { margin:0; background:radial-gradient(circle at 12% 3%,var(--glow-purple),var(--transparent) 34rem),radial-gradient(circle at 88% 18%,var(--glow-pink),var(--transparent) 30rem),var(--bg); }
     button,input,select { font:inherit; }
     button,a,input,select,summary { -webkit-tap-highlight-color:var(--transparent); }
@@ -349,7 +349,10 @@ export function renderAnalyticsPage(): string {
     const gameDetailMatch=location.pathname.match(/^\\/game\\/(\\d{1,12})\\/?$/);const gameDetailId=gameDetailMatch?gameDetailMatch[1]:"";const views=[...document.querySelectorAll("[data-view]")];const navButtons=[...document.querySelectorAll("[data-route]")];let currentRoute=gameDetailId?"game-detail":location.hash.slice(1);if(!routes[currentRoute])currentRoute="home";let gamesPage=0;let publisherPage=0;let lastGames=[];let tagCount=25;let globalStatsPromise=null;let gameDetailPromise=null;const imageMap=new Map();
     const pageTitle=document.querySelector("[data-page-title]");const pageDescription=document.querySelector("[data-page-description]");
     function setRoute(route,updateHash){currentRoute=routes[route]?route:"home";views.forEach(view=>{view.hidden=view.dataset.view!==currentRoute;});navButtons.forEach(button=>{const active=button.dataset.route===currentRoute;button.classList.toggle("active",active);if(active)button.setAttribute("aria-current","page");else button.removeAttribute("aria-current");});pageTitle.textContent=routes[currentRoute][0];pageDescription.textContent=routes[currentRoute][1];if(updateHash){history.replaceState(null,"",(gameDetailId?"/analytics":location.pathname)+"#"+currentRoute);pageTitle.focus();}loadRoute(currentRoute);}
-    navButtons.forEach(button=>button.addEventListener("click",()=>setRoute(button.dataset.route,true)));window.addEventListener("hashchange",()=>setRoute(location.hash.slice(1),false));
+    function recordAnalytics(eventName,target=""){fetch("/api/analytics",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({eventName,target}),keepalive:true}).catch(()=>{});}
+    recordAnalytics("page_view",location.pathname+(location.hash||""));
+    navButtons.forEach(button=>button.addEventListener("click",()=>{recordAnalytics("view_tab","analytics:"+button.dataset.route);setRoute(button.dataset.route,true);}));window.addEventListener("hashchange",()=>setRoute(location.hash.slice(1),false));
+    document.addEventListener("click",event=>{const link=event.target.closest("a[href]");if(!link)return;const target=new URL(link.href,location.href);recordAnalytics(target.origin===location.origin?"navigation_click":"outbound_click",target.href);});
     const themeToggle=document.querySelector("[data-theme-toggle]");function updateThemeLabel(){themeToggle.setAttribute("aria-label",document.documentElement.dataset.theme==="dark"?"Açık temaya geç":"Koyu temaya geç");}const storedTheme=localStorage.getItem("steam-radar-analytics-theme");if(storedTheme==="dark")document.documentElement.dataset.theme="dark";updateThemeLabel();themeToggle.addEventListener("click",()=>{const next=document.documentElement.dataset.theme==="dark"?"light":"dark";document.documentElement.dataset.theme=next;localStorage.setItem("steam-radar-analytics-theme",next);updateThemeLabel();});
     function numeric(value){if(value===null||value===undefined||value==="")return null;const parsed=Number(value);return Number.isFinite(parsed)?parsed:null;}
     function compact(value){const parsed=numeric(value);if(parsed===null)return"—";const abs=Math.abs(parsed);const format=(number,suffix)=>new Intl.NumberFormat("tr-TR",{maximumFractionDigits:1}).format(number)+suffix;if(abs>=1e9)return format(parsed/1e9,"b");if(abs>=1e6)return format(parsed/1e6,"m");if(abs>=1e3)return format(parsed/1e3,"k");return new Intl.NumberFormat("tr-TR",{maximumFractionDigits:1}).format(parsed);}

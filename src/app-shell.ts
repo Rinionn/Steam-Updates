@@ -23,7 +23,6 @@ const radarNavigation: NavItem[] = [
   { id: "games", icon: "▣", label: "Oyunlarım", i18n: "myGames" },
   { id: "steamworks", icon: "◉", label: "Steam Haberleri", i18n: "steamNews" },
   { id: "releases", icon: "◷", label: "Yeni Çıkan / Çıkacak", i18n: "releasesTab" },
-  { id: "stats", icon: "▥", label: "Oyun İstatistikleri", i18n: "gameComparison" },
 ];
 
 const analyticsNavigation: NavItem[] = [

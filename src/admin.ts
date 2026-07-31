@@ -10,7 +10,7 @@ export function renderAdminPage(): string {
   <meta name="robots" content="noindex,nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
   <title>Yönetim · Steam Etkinlik Radarı</title>
   <style>
     :root {
@@ -30,7 +30,7 @@ export function renderAdminPage(): string {
       --gradient:linear-gradient(110deg,var(--purple),var(--pink));
     }
     * { box-sizing:border-box; }
-    html { background:var(--bg); color:var(--ink); font-family:Montserrat,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    html { background:var(--bg); color:var(--ink); font-family:"Space Grotesk",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
     body { margin:0; min-width:320px; background:
       radial-gradient(circle at 8% -5%,rgba(152,35,215,.18),transparent 34rem),
       radial-gradient(circle at 92% 15%,rgba(243,51,145,.12),transparent 32rem),
@@ -91,6 +91,7 @@ export function renderAdminPage(): string {
     .metric strong,.metric span { display:block; }
     .metric strong { font-size:clamp(20px,5vw,28px); }
     .metric span { margin-top:4px; color:var(--muted); font-size:9px; }
+    .activity-title { margin:18px 0 8px; font-size:14px; }
     .empty { padding:10px; color:var(--muted); font-size:11px; }
     @media (min-width:700px) {
       .shell { padding-top:28px; }
@@ -134,13 +135,14 @@ export function renderAdminPage(): string {
       </div>
       <div class="grid">
         <article class="card">
-          <h2>Panel erişimi</h2>
-          <p class="card-intro">Tanımlı alan adı, yöneticiler ve eklenen özel kullanıcılar.</p>
+          <h2>Uygulama erişimi</h2>
+          <p class="card-intro">Bu liste Cloudflare Access girişini geçen kullanıcıların uygulama yetkisini yönetir. Kurum dışı yeni adreslerin Cloudflare Access politikasında da izinli olması gerekir.</p>
           <div class="list" data-access-rules></div>
           <form class="inline-form" data-user-form>
             <input type="email" required placeholder="kullanici@ornek.com" aria-label="Erişim verilecek e-posta" data-user-email>
             <button class="primary" type="submit">Erişim ver</button>
           </form>
+          <div class="status" data-user-status role="status" aria-live="polite"></div>
           <div class="list" data-users></div>
         </article>
 
@@ -155,6 +157,7 @@ export function renderAdminPage(): string {
             </select>
             <button class="primary" type="submit">Alıcı ekle</button>
           </form>
+          <div class="status" data-recipient-status role="status" aria-live="polite"></div>
           <div class="list" data-recipients></div>
         </article>
 
@@ -186,6 +189,8 @@ export function renderAdminPage(): string {
           <p class="card-intro">Panel görüntülemeleri, tekil kullanıcılar ve kayıtlı etkileşimler.</p>
           <div class="metrics" data-metrics></div>
           <div class="list" data-popular></div>
+          <h3 class="activity-title">Son kullanıcı hareketleri</h3>
+          <div class="list" data-recent></div>
         </article>
       </div>
     </section>
@@ -196,6 +201,8 @@ export function renderAdminPage(): string {
     const passwordInput = document.querySelector("[data-password]");
     const loginStatus = document.querySelector("[data-login-status]");
     const settingsStatus = document.querySelector("[data-settings-status]");
+    const userStatus = document.querySelector("[data-user-status]");
+    const recipientStatus = document.querySelector("[data-recipient-status]");
     let adminPassword = "";
 
     function setStatus(element, message, kind) {
@@ -261,8 +268,9 @@ export function renderAdminPage(): string {
         document.querySelector("[data-users]").replaceChildren(
           ...(payload.users || []).map((item) => row(item, "users")),
         );
+        const recipients = payload.recipients || [];
         document.querySelector("[data-recipients]").replaceChildren(
-          ...(payload.recipients || []).map((item) => row(item, "recipients")),
+          ...recipients.map((item) => row(item, "recipients")),
         );
         document.querySelector("[data-email-enabled]").checked =
           payload.emailSettings?.enabled !== 0 &&
@@ -274,11 +282,19 @@ export function renderAdminPage(): string {
         document.querySelector("[data-email-subject]").value =
           payload.emailSettings?.subjectTemplate ||
           "Steam Etkinlik Takibi · {{kritik}} kritik tarih · {{etkinlik}} etkinlik";
+        const emailEnabled = payload.emailSettings?.enabled !== 0 &&
+          payload.emailSettings?.enabled !== false;
+        const hasPrimaryRecipient = recipients.some(
+          (item) => item.enabled !== 0 && item.recipientType === "to",
+        );
         setStatus(
           settingsStatus,
-          payload.emailSettings?.lastSentDate
-            ? "Son gönderim: " + payload.emailSettings.lastSentDate
-            : "Henüz merkezi gönderim kaydı yok.",
+          emailEnabled && !hasPrimaryRecipient
+            ? "Günlük gönderim aktif fakat ana alıcı (To) yok. Gönderim saatinde iş akışı hata verir."
+            : payload.emailSettings?.lastSentDate
+              ? "D1 ayarları bağlı · Son gönderim: " + payload.emailSettings.lastSentDate
+              : "D1 ayarları bağlı · Henüz merkezi gönderim kaydı yok.",
+          emailEnabled && !hasPrimaryRecipient ? "error" : "",
         );
         const metrics = [
           [payload.analytics?.pageViews || 0, "Sayfa görüntüleme"],
@@ -312,6 +328,30 @@ export function renderAdminPage(): string {
           popular.push(empty);
         }
         document.querySelector("[data-popular]").replaceChildren(...popular);
+        const recent = (payload.analytics?.recent || []).map((item) => {
+          const element = document.createElement("div");
+          element.className = "row";
+          const date = item.occurredAt
+            ? new Intl.DateTimeFormat("tr-TR", {
+                day: "2-digit",
+                month: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+              }).format(new Date(item.occurredAt))
+            : "";
+          element.textContent =
+            (item.userEmail || "anonim") + " · " +
+            item.eventName + (item.target ? " · " + item.target : "") +
+            (date ? " · " + date : "");
+          return element;
+        });
+        if (!recent.length) {
+          const empty = document.createElement("div");
+          empty.className = "empty";
+          empty.textContent = "Henüz kullanıcı hareketi yok.";
+          recent.push(empty);
+        }
+        document.querySelector("[data-recent]").replaceChildren(...recent);
         return true;
       } catch (error) {
         content.hidden = true;
@@ -333,13 +373,14 @@ export function renderAdminPage(): string {
       const suffix = method === "DELETE"
         ? "?email=" + encodeURIComponent(email)
         : "";
-      await request("/api/admin/" + collection + suffix, {
+      const result = await request("/api/admin/" + collection + suffix, {
         method,
         body: method === "POST"
           ? JSON.stringify({ email, recipientType: recipientType || "bcc" })
           : undefined,
       });
       await loadAdmin();
+      return result;
     }
 
     document.querySelector("[data-login-form]").addEventListener("submit", async (event) => {
@@ -362,16 +403,36 @@ export function renderAdminPage(): string {
     document.querySelector("[data-user-form]").addEventListener("submit", async (event) => {
       event.preventDefault();
       const input = document.querySelector("[data-user-email]");
-      await updateCollection("users", input.value.trim(), "POST");
-      input.value = "";
+      setStatus(userStatus, "Kaydediliyor…");
+      try {
+        const result = await updateCollection("users", input.value.trim(), "POST");
+        setStatus(
+          userStatus,
+          result.requiresCloudflareAccess
+            ? "Worker izni kaydedildi. Bu kurum dışı adresi Cloudflare Access politikasına da eklemelisiniz."
+            : result.coveredByStaticRule
+              ? "Adres zaten kurumsal alan adı veya sabit izin kuralı kapsamındaydı; ekip listesine kaydedildi."
+              : "Uygulama izni kaydedildi.",
+          result.requiresCloudflareAccess ? "" : "success",
+        );
+        input.value = "";
+      } catch (error) {
+        setStatus(userStatus, "Erişim kaydedilemedi: " + error.message, "error");
+      }
     });
 
     document.querySelector("[data-recipient-form]").addEventListener("submit", async (event) => {
       event.preventDefault();
       const input = document.querySelector("[data-recipient-email]");
       const type = document.querySelector("[data-recipient-type]").value;
-      await updateCollection("recipients", input.value.trim(), "POST", type);
-      input.value = "";
+      setStatus(recipientStatus, "Kaydediliyor…");
+      try {
+        await updateCollection("recipients", input.value.trim(), "POST", type);
+        input.value = "";
+        setStatus(recipientStatus, "Mail alıcısı kaydedildi.", "success");
+      } catch (error) {
+        setStatus(recipientStatus, "Mail alıcısı kaydedilemedi: " + error.message, "error");
+      }
     });
 
     document.querySelector("[data-email-settings-form]").addEventListener("submit", async (event) => {
@@ -399,7 +460,26 @@ export function renderAdminPage(): string {
       const button = event.target.closest("[data-remove]");
       if (!button) return;
       if (!window.confirm(button.dataset.email + " kaldırılsın mı?")) return;
-      await updateCollection(button.dataset.remove, button.dataset.email, "DELETE");
+      const status = button.dataset.remove === "users"
+        ? userStatus
+        : recipientStatus;
+      setStatus(status, "Kaldırılıyor…");
+      try {
+        const result = await updateCollection(
+          button.dataset.remove,
+          button.dataset.email,
+          "DELETE",
+        );
+        setStatus(
+          status,
+          result.coveredByStaticRule
+            ? "Kayıt silindi; ancak adres sabit alan adı/izin kuralı kapsamında olduğu için erişimi devam eder."
+            : "Kayıt kaldırıldı.",
+          result.coveredByStaticRule ? "" : "success",
+        );
+      } catch (error) {
+        setStatus(status, "Kayıt kaldırılamadı: " + error.message, "error");
+      }
     });
 
     fetch("/api/admin/status", { headers: { accept:"application/json" } })

@@ -18,7 +18,7 @@ describe("market analytics page", () => {
     expect(html).toContain('href="/#view=games"');
     expect(html).toContain('href="/#view=steamworks"');
     expect(html).toContain('href="/#view=releases"');
-    expect(html).toContain('href="/#view=stats"');
+    expect(html).not.toContain('href="/#view=stats"');
     expect(html).toContain("/api/gamalytic/");
     expect(html).toContain("Gamalytic API · tahmini veri");
     expect(html).toContain("/^\\d{4}$/");
@@ -43,7 +43,7 @@ describe("market analytics page", () => {
     expect(html).toContain("Historic data");
     expect(html).toContain("Store Page Insights");
     expect(html).toContain("--gradient-brand");
-    expect(html).toContain("font-family:Montserrat");
+    expect(html).toContain('font-family:"Space Grotesk"');
     expect(html).toContain("data-steam-radar-logo");
     expect(html).toContain('class="app-topbar"');
     expect(html).toContain('class="app-sidebar"');
@@ -65,7 +65,7 @@ describe("market analytics page", () => {
     expect(html).toContain('data-view-tab="games"');
     expect(html).toContain('data-view-tab="steamworks"');
     expect(html).toContain('data-view-tab="releases"');
-    expect(html).toContain('data-view-tab="stats"');
+    expect(html).not.toContain('data-view-tab="stats"');
     expect(html).not.toContain('class="view-tabs"');
   });
 
@@ -83,7 +83,7 @@ describe("market analytics page", () => {
       expect(html).toContain("data-app-sidebar");
       expect(html).toContain("data-steam-radar-logo");
       expect(html).toContain("Steam Radar");
-      expect(html).toContain("Montserrat,");
+      expect(html).toContain('"Space Grotesk"');
     }
   });
 

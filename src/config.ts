@@ -62,6 +62,9 @@ export const config: AppConfig = {
     smtpPass: process.env.SMTP_PASS,
     recipientApiUrl: process.env.EMAIL_RECIPIENT_API_URL,
     recipientApiSecret: process.env.EMAIL_AUTOMATION_SECRET,
+    d1AccountId: process.env.CLOUDFLARE_ACCOUNT_ID,
+    d1ApiToken: process.env.CLOUDFLARE_API_TOKEN,
+    d1DatabaseId: process.env.CLOUDFLARE_D1_DATABASE_ID,
     sendTime: process.env.EMAIL_SEND_TIME || "09:30",
   },
 };

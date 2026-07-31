@@ -369,7 +369,7 @@ export function renderDigest(
                 <tr>
                   <td style="padding-bottom:8px">
                     <span class="surface-accent" style="display:block;color:${EMAIL_COLORS.brandPinkDark};font-size:10px;font-weight:800;letter-spacing:.1em">SON 24 SAATTE DEĞİŞENLER</span>
-                    <h2 class="surface-ink" style="margin:5px 0 0;color:${EMAIL_COLORS.surfaceInk};font-family:Montserrat,Arial,sans-serif;font-size:20px;line-height:1.2">Valve takvimindeki güncellemeler</h2>
+                    <h2 class="surface-ink" style="margin:5px 0 0;color:${EMAIL_COLORS.surfaceInk};font-family:'Space Grotesk',Arial,sans-serif;font-size:20px;line-height:1.2">Valve takvimindeki güncellemeler</h2>
                   </td>
                   <td align="right" valign="bottom" style="padding-bottom:8px">
                     <span class="surface-subtle" style="color:${EMAIL_COLORS.surfaceSubtle};font-size:11px">${recentChanges.length} kayıt</span>
@@ -436,7 +436,7 @@ export function renderDigest(
     [data-ogsc] .priority-accent { color: ${EMAIL_COLORS.darkAccent} !important; }
   </style>
 </head>
-<body class="email-body" bgcolor="${EMAIL_COLORS.canvas}" style="margin:0;padding:0;background:${EMAIL_COLORS.canvas};color:${EMAIL_COLORS.surfaceInk};font-family:Montserrat,Arial,'Helvetica Neue',sans-serif">
+<body class="email-body" bgcolor="${EMAIL_COLORS.canvas}" style="margin:0;padding:0;background:${EMAIL_COLORS.canvas};color:${EMAIL_COLORS.surfaceInk};font-family:'Space Grotesk',Arial,'Helvetica Neue',sans-serif">
   <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:${EMAIL_COLORS.transparent}">${escapeHtml(preheader)}</div>
   <table role="presentation" class="email-canvas" width="100%" cellspacing="0" cellpadding="0" bgcolor="${EMAIL_COLORS.canvas}" style="width:100%;background:${EMAIL_COLORS.canvas}">
     <tr>
@@ -448,7 +448,7 @@ export function renderDigest(
                 <tr>
                   <td class="stack-cell" valign="middle" style="padding:26px 24px">
                     <span style="display:block;color:${EMAIL_COLORS.brandPink};font-size:10px;font-weight:800;letter-spacing:.13em">JOYgame SELECT · STEAMWORKS TAKİBİ</span>
-                    <h1 style="margin:8px 0 5px;color:${EMAIL_COLORS.surface};font-family:Montserrat,Arial,sans-serif;font-size:27px;font-weight:800;line-height:1.08">Steam Etkinlik Takibi</h1>
+                    <h1 style="margin:8px 0 5px;color:${EMAIL_COLORS.surface};font-family:'Space Grotesk',Arial,sans-serif;font-size:27px;font-weight:800;line-height:1.08">Steam Etkinlik Takibi</h1>
                     <p style="margin:0;color:${EMAIL_COLORS.heroMuted};font-size:12px;line-height:1.5">${escapeHtml(
                       model.generated.setLocale("tr").toFormat("d LLLL yyyy, HH:mm"),
                     )} · İstanbul</p>
@@ -498,7 +498,7 @@ export function renderDigest(
                 <tr>
                   <td>
                     <span class="surface-accent" style="display:block;color:${EMAIL_COLORS.brandPurpleDark};font-size:10px;font-weight:800;letter-spacing:.1em">ÖNCELİK SIRASI</span>
-                    <h2 class="surface-ink" style="margin:5px 0 0;color:${EMAIL_COLORS.surfaceInk};font-family:Montserrat,Arial,sans-serif;font-size:20px;line-height:1.2">Önümüzdeki ${config.emailLookaheadDays} günün son tarihleri</h2>
+                    <h2 class="surface-ink" style="margin:5px 0 0;color:${EMAIL_COLORS.surfaceInk};font-family:'Space Grotesk',Arial,sans-serif;font-size:20px;line-height:1.2">Önümüzdeki ${config.emailLookaheadDays} günün son tarihleri</h2>
                   </td>
                   <td align="right" valign="bottom">
                     <span class="surface-subtle" style="color:${EMAIL_COLORS.surfaceSubtle};font-size:11px">${deadlines.length} kayıt</span>
@@ -515,7 +515,7 @@ export function renderDigest(
                 <tr>
                   <td>
                     <span class="surface-accent" style="display:block;color:${EMAIL_COLORS.brandPurpleDark};font-size:10px;font-weight:800;letter-spacing:.1em">TAKVİM</span>
-                    <h2 class="surface-ink" style="margin:5px 0 0;color:${EMAIL_COLORS.surfaceInk};font-family:Montserrat,Arial,sans-serif;font-size:20px;line-height:1.2">${config.emailLookaheadDays} günlük etkinlik takvimi</h2>
+                    <h2 class="surface-ink" style="margin:5px 0 0;color:${EMAIL_COLORS.surfaceInk};font-family:'Space Grotesk',Arial,sans-serif;font-size:20px;line-height:1.2">${config.emailLookaheadDays} günlük etkinlik takvimi</h2>
                   </td>
                   <td align="right" valign="bottom">
                     <span class="surface-subtle" style="color:${EMAIL_COLORS.surfaceSubtle};font-size:11px">${events.length} etkinlik</span>
@@ -629,7 +629,99 @@ interface EmailDeliverySettings {
   managed: boolean;
 }
 
-async function resolvedEmailDelivery(): Promise<EmailDeliverySettings> {
+function normalizeManagedAddresses(value: unknown): string[] {
+  return Array.isArray(value)
+    ? [
+        ...new Set(
+          value
+            .map((item) => String(item).trim())
+            .filter(Boolean),
+        ),
+      ]
+    : [];
+}
+
+function managedDelivery(
+  to: unknown,
+  bcc: unknown,
+  settings: {
+    enabled?: unknown;
+    sendTime?: unknown;
+    timezone?: unknown;
+    senderName?: unknown;
+    subjectTemplate?: unknown;
+    lastSentDate?: unknown;
+  } | undefined,
+  fallback: EmailDeliverySettings,
+): EmailDeliverySettings {
+  const sendTime = String(settings?.sendTime || "");
+  return {
+    to: normalizeManagedAddresses(to),
+    bcc: normalizeManagedAddresses(bcc),
+    enabled: settings?.enabled !== 0 && settings?.enabled !== false,
+    sendTime: /^(?:[01]\d|2[0-3]):(?:00|30)$/.test(sendTime)
+      ? sendTime
+      : fallback.sendTime,
+    timezone:
+      settings?.timezone === "Europe/Istanbul"
+        ? "Europe/Istanbul"
+        : fallback.timezone,
+    senderName:
+      String(settings?.senderName || "").trim() || fallback.senderName,
+    subjectTemplate: String(settings?.subjectTemplate || "").trim(),
+    lastSentDate: /^\d{4}-\d{2}-\d{2}$/.test(
+      String(settings?.lastSentDate || ""),
+    )
+      ? String(settings?.lastSentDate)
+      : undefined,
+    managed: true,
+  };
+}
+
+async function queryEmailD1(
+  sql: string,
+  params: unknown[] = [],
+): Promise<Record<string, unknown>[]> {
+  const { d1AccountId, d1ApiToken, d1DatabaseId } = config.email;
+  if (!d1AccountId || !d1ApiToken || !d1DatabaseId) {
+    throw new Error("Cloudflare D1 e-posta bağlantısı eksik yapılandırılmış.");
+  }
+  const response = await fetch(
+    `https://api.cloudflare.com/client/v4/accounts/${encodeURIComponent(d1AccountId)}/d1/database/${encodeURIComponent(d1DatabaseId)}/query`,
+    {
+      method: "POST",
+      headers: {
+        accept: "application/json",
+        authorization: `Bearer ${d1ApiToken}`,
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ sql, params }),
+    },
+  );
+  const body = (await response.json().catch(() => ({}))) as {
+    success?: boolean;
+    errors?: Array<{ message?: string }>;
+    result?: Array<{
+      success?: boolean;
+      results?: Record<string, unknown>[];
+    }>;
+  };
+  const query = body.result?.[0];
+  if (
+    !response.ok ||
+    body.success !== true ||
+    !query ||
+    query.success !== true
+  ) {
+    const message = body.errors?.map((item) => item.message).filter(Boolean).join("; ");
+    throw new Error(
+      `Cloudflare D1 e-posta ayarları okunamadı${message ? `: ${message}` : "."}`,
+    );
+  }
+  return Array.isArray(query?.results) ? query.results : [];
+}
+
+export async function resolvedEmailDelivery(): Promise<EmailDeliverySettings> {
   const fallback: EmailDeliverySettings = {
     to: emailAddresses(config.email.to),
     bcc: emailAddresses(config.email.bcc),
@@ -639,67 +731,92 @@ async function resolvedEmailDelivery(): Promise<EmailDeliverySettings> {
     senderName: "Steam Etkinlik Radarı",
     managed: false,
   };
-  if (
-    !config.email.recipientApiUrl ||
-    !config.email.recipientApiSecret
-  ) {
+
+  const d1Values = [
+    config.email.d1AccountId,
+    config.email.d1ApiToken,
+    config.email.d1DatabaseId,
+  ];
+  if (d1Values.some(Boolean)) {
+    if (!d1Values.every(Boolean)) {
+      throw new Error("Cloudflare D1 e-posta bağlantısı eksik yapılandırılmış.");
+    }
+    const [recipientRows, settingRows] = await Promise.all([
+      queryEmailD1(
+        `SELECT email, recipient_type AS recipientType
+         FROM email_delivery_recipients
+         WHERE enabled = 1
+         ORDER BY recipient_type DESC, email`,
+      ),
+      queryEmailD1(
+        `SELECT enabled, send_time AS sendTime, timezone,
+                sender_name AS senderName,
+                subject_template AS subjectTemplate,
+                last_sent_date AS lastSentDate
+         FROM email_delivery_settings
+         WHERE id = 1`,
+      ),
+    ]);
+    if (settingRows.length !== 1) {
+      throw new Error(
+        "Cloudflare D1 e-posta gönderim ayarı bulunamadı.",
+      );
+    }
+    return managedDelivery(
+      recipientRows
+        .filter((item) => item.recipientType === "to")
+        .map((item) => item.email),
+      recipientRows
+        .filter((item) => item.recipientType !== "to")
+        .map((item) => item.email),
+      settingRows[0],
+      fallback,
+    );
+  }
+
+  const apiValues = [
+    config.email.recipientApiUrl,
+    config.email.recipientApiSecret,
+  ];
+  if (!apiValues.some(Boolean)) {
     return fallback;
   }
-  try {
-    const response = await fetch(config.email.recipientApiUrl, {
-      headers: {
-        accept: "application/json",
-        authorization: `Bearer ${config.email.recipientApiSecret}`,
-      },
-    });
-    if (!response.ok) return fallback;
-    const body = (await response.json()) as {
-      to?: unknown;
-      bcc?: unknown;
-      settings?: {
-        enabled?: unknown;
-        sendTime?: unknown;
-        timezone?: unknown;
-        senderName?: unknown;
-        subjectTemplate?: unknown;
-        lastSentDate?: unknown;
-      };
-    };
-    const normalize = (value: unknown): string[] =>
-      Array.isArray(value)
-        ? [...new Set(
-            value
-              .map((item) => String(item).trim())
-              .filter(Boolean),
-          )]
-        : [];
-    const sendTime = String(body.settings?.sendTime || "");
-    return {
-      to: normalize(body.to).length > 0 ? normalize(body.to) : fallback.to,
-      bcc: normalize(body.bcc),
-      enabled: body.settings?.enabled !== 0 && body.settings?.enabled !== false,
-      sendTime: /^(?:[01]\d|2[0-3]):(?:00|30)$/.test(sendTime)
-        ? sendTime
-        : fallback.sendTime,
-      timezone:
-        body.settings?.timezone === "Europe/Istanbul"
-          ? "Europe/Istanbul"
-          : fallback.timezone,
-      senderName: String(body.settings?.senderName || "").trim() || fallback.senderName,
-      subjectTemplate: String(body.settings?.subjectTemplate || "").trim(),
-      lastSentDate: /^\d{4}-\d{2}-\d{2}$/.test(
-        String(body.settings?.lastSentDate || ""),
-      )
-        ? String(body.settings?.lastSentDate)
-        : undefined,
-      managed: true,
-    };
-  } catch {
-    return fallback;
+  if (!apiValues.every(Boolean)) {
+    throw new Error("Merkezi e-posta API bağlantısı eksik yapılandırılmış.");
   }
+  const response = await fetch(config.email.recipientApiUrl as string, {
+    headers: {
+      accept: "application/json",
+      authorization: `Bearer ${config.email.recipientApiSecret}`,
+    },
+  });
+  if (!response.ok) {
+    throw new Error(
+      `Yönetim paneli e-posta ayarları alınamadı (HTTP ${response.status}).`,
+    );
+  }
+  const body = (await response.json()) as {
+    to?: unknown;
+    bcc?: unknown;
+    settings?: Parameters<typeof managedDelivery>[2];
+  };
+  return managedDelivery(body.to, body.bcc, body.settings, fallback);
 }
 
 async function markManagedDigestSent(localDateKey: string): Promise<void> {
+  if (
+    config.email.d1AccountId &&
+    config.email.d1ApiToken &&
+    config.email.d1DatabaseId
+  ) {
+    await queryEmailD1(
+      `UPDATE email_delivery_settings
+       SET last_sent_date = ?, updated_at = ?
+       WHERE id = 1`,
+      [localDateKey, new Date().toISOString()],
+    );
+    return;
+  }
   if (
     !config.email.recipientApiUrl ||
     !config.email.recipientApiSecret
@@ -854,13 +971,13 @@ export async function sendDigest(
     }
   }
 
-  if (delivery.to.length === 0 || !config.email.from) {
-    return {
-      sent: false,
-      skippedReason: "En az bir To alıcısı veya EMAIL_FROM ayarı eksik.",
-      htmlPreview: paths.emailPreview,
-      textPreview: paths.emailTextPreview,
-    };
+  if (delivery.to.length === 0) {
+    throw new Error(
+      "Günlük e-posta aktif ancak yönetim panelinde ana alıcı (To) tanımlı değil.",
+    );
+  }
+  if (!config.email.from) {
+    throw new Error("EMAIL_FROM ayarı eksik.");
   }
 
   let provider: DigestResult["provider"];

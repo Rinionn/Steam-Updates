@@ -29,18 +29,6 @@ CREATE TABLE IF NOT EXISTS email_delivery_recipients (
   created_at TEXT NOT NULL
 );
 
-INSERT OR IGNORE INTO email_delivery_recipients
-  (email, recipient_type, enabled, created_by, created_at)
-VALUES
-  ('business.dev@gaminginturkey.com', 'to', 1, 'system', datetime('now')),
-  ('batuhan.ozmen@gaminginturkey.com', 'bcc', 1, 'system', datetime('now')),
-  ('pinargulerrrr@gmail.com', 'bcc', 1, 'system', datetime('now'));
-
-INSERT OR IGNORE INTO email_delivery_recipients
-  (email, recipient_type, enabled, created_by, created_at)
-SELECT email, 'bcc', enabled, created_by, created_at
-FROM email_recipients;
-
 CREATE TABLE IF NOT EXISTS email_delivery_settings (
   id INTEGER PRIMARY KEY CHECK (id = 1),
   enabled INTEGER NOT NULL DEFAULT 1,

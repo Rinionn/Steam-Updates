@@ -17,6 +17,7 @@ import {
   steamLibraryCapsuleUrl,
   steamStoreBrowseImages,
   steamStoreBrowsePortraitImages,
+  updateAdminCollection,
   putTeamState,
 } from "../worker/index.js";
 
@@ -665,6 +666,51 @@ describe("Steam search Worker", () => {
     expect(response.headers.get("content-type")).toContain("text/html");
     expect(response.headers.get("cache-control")).toBe("no-store");
     expect(fetch).toHaveBeenCalledOnce();
+  });
+
+  it("yönetim erişim kaydının statik kural kapsamını doğru bildirir", async () => {
+    const statement = {
+      bind: vi.fn(),
+      run: vi.fn(async () => ({ success: true })),
+    };
+    statement.bind.mockReturnValue(statement);
+    const env = {
+      ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com",
+      ADMIN_EMAILS: "batuhan.ozmen@gaminginturkey.com",
+      ADMIN_PANEL_PASSWORD: "strong-admin-password",
+      DB: { prepare: vi.fn(() => statement) },
+    };
+    const request = (email: string) =>
+      new Request("https://steamradar.example.workers.dev/api/admin/users", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "cf-access-authenticated-user-email":
+            "batuhan.ozmen@gaminginturkey.com",
+          "x-admin-password": "strong-admin-password",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+    const internal = await updateAdminCollection(
+      request("editor@gaminginturkey.com"),
+      env,
+      "users",
+    );
+    await expect(internal.json()).resolves.toMatchObject({
+      coveredByStaticRule: true,
+      requiresCloudflareAccess: false,
+    });
+
+    const external = await updateAdminCollection(
+      request("editor@gmail.com"),
+      env,
+      "users",
+    );
+    await expect(external.json()).resolves.toMatchObject({
+      coveredByStaticRule: false,
+      requiresCloudflareAccess: true,
+    });
   });
 
   it("/game/:appid iç oyun sayfasını aynı korumalı analiz kabuğunda sunar", async () => {

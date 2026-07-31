@@ -105,6 +105,8 @@ describe("event timeline", () => {
     expect(html).not.toContain("data-menu-toggle");
     expect(html).toContain("Steam Haberleri");
     expect(html).toContain("Oyun İstatistikleri");
+    expect(html).not.toContain('data-dashboard-panel="stats"');
+    expect(html).toContain('hashState.get("view") === "stats"');
     expect(html).toContain("Başvuru takibi");
     expect(html).toContain('data-application-status');
     expect(html).toContain("/api/team-state");

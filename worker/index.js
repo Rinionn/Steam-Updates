@@ -1455,7 +1455,7 @@ export async function adminSnapshot(request, env) {
   const denied = await requireAdmin(request, env, cors);
   if (denied) return denied;
   if (!env.DB) return json({ error: "admin_storage_unavailable" }, 503, cors);
-  const [users, recipients, settings, totals, popular] = await Promise.all([
+  const [users, recipients, settings, totals, popular, recent] = await Promise.all([
     env.DB.prepare(
       "SELECT email, role, enabled, created_at AS createdAt FROM access_users ORDER BY email",
     ).all(),
@@ -1487,6 +1487,14 @@ export async function adminSnapshot(request, env) {
        GROUP BY event_name, target
        ORDER BY count DESC
        LIMIT 20`,
+    ).all(),
+    env.DB.prepare(
+      `SELECT occurred_at AS occurredAt, user_email AS userEmail,
+              event_name AS eventName, target
+       FROM analytics_events
+       WHERE occurred_at >= datetime('now', '-30 days')
+       ORDER BY occurred_at DESC
+       LIMIT 40`,
     ).all(),
   ]);
   return json(
@@ -1524,6 +1532,11 @@ export async function adminSnapshot(request, env) {
         visitors: Number(totals?.visitors || 0),
         pageViews: Number(totals?.pageViews || 0),
         popular: popular.results || [],
+        recent: recent.results || [],
+      },
+      integrations: {
+        emailSettings: "d1",
+        accessManagement: "worker_after_cloudflare_access",
       },
     },
     200,
@@ -1551,7 +1564,11 @@ export async function updateAdminCollection(request, env, collection) {
     collection === "users" ? "access_users" : "email_delivery_recipients";
   if (request.method === "DELETE") {
     await env.DB.prepare(`DELETE FROM ${table} WHERE email = ?`).bind(email).run();
-    return json({ deleted: email }, 200, cors);
+    const coveredByStaticRule =
+      collection === "users" &&
+      (allowedEmail(email, env.ALLOWED_EMAIL_DOMAIN || "gaminginturkey.com") ||
+        configuredEmails(env.ALLOWED_EMAILS).includes(email));
+    return json({ deleted: email, coveredByStaticRule }, 200, cors);
   }
   const actor = accessEmail(request).toLocaleLowerCase("en-US");
   const now = new Date().toISOString();
@@ -1576,7 +1593,17 @@ export async function updateAdminCollection(request, env, collection) {
       .bind(email, recipientType, actor, now)
       .run();
   }
-  return json({ email }, 200, cors);
+  const coveredByStaticRule =
+    collection === "users" &&
+    (allowedEmail(email, env.ALLOWED_EMAIL_DOMAIN || "gaminginturkey.com") ||
+      configuredEmails(env.ALLOWED_EMAILS).includes(email));
+  const requiresCloudflareAccess =
+    collection === "users" && !coveredByStaticRule;
+  return json(
+    { email, requiresCloudflareAccess, coveredByStaticRule },
+    200,
+    cors,
+  );
 }
 
 export async function updateEmailSettings(request, env) {
