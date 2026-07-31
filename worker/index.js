@@ -2,7 +2,7 @@ const STEAM_SUGGEST_URL =
   "https://store.steampowered.com/search/suggest";
 const CACHE_SECONDS = 30 * 60;
 const DETAIL_CACHE_SECONDS = 6 * 60 * 60;
-const DETAIL_SCHEMA_VERSION = 6;
+const DETAIL_SCHEMA_VERSION = 7;
 const MAX_RESULTS = 8;
 const MAX_TAGS = 20;
 const MAX_NEXT_FEST_RECORDS = 5;
@@ -26,6 +26,24 @@ function decodeHtml(value) {
 
 function textFromHtml(value) {
   return decodeHtml(value.replace(/<[^>]*>/g, "").trim());
+}
+
+function trustedSteamImage(value) {
+  try {
+    const parsed = new URL(String(value || ""));
+    if (
+      parsed.protocol !== "https:" ||
+      !(
+        parsed.hostname === "steamstatic.com" ||
+        parsed.hostname.endsWith(".steamstatic.com")
+      )
+    ) {
+      return "";
+    }
+    return parsed.toString();
+  } catch {
+    return "";
+  }
 }
 
 export function parseSteamSuggestions(html) {
@@ -159,6 +177,21 @@ function steamAppModel(
   return {
     appId,
     name: String(data?.name || "").trim(),
+    description: textFromHtml(String(data?.short_description || "")),
+    developers: Array.isArray(data?.developers)
+      ? data.developers.map((item) => String(item || "").trim()).filter(Boolean)
+      : [],
+    publishers: Array.isArray(data?.publishers)
+      ? data.publishers.map((item) => String(item || "").trim()).filter(Boolean)
+      : [],
+    genres,
+    features: categories.map((item) => item.trim()).filter(Boolean),
+    languages: textFromHtml(
+      String(data?.supported_languages || "").replace(/<br\s*\/?>/gi, ", "),
+    )
+      .split(",")
+      .map((item) => item.trim())
+      .filter(Boolean),
     tags,
     demoStatus: data
       ? Array.isArray(data.demos) && data.demos.length > 0
@@ -167,7 +200,32 @@ function steamAppModel(
       : null,
     releaseStatus,
     localMultiplayer: data ? localMultiplayer : null,
+    releaseDate: String(data?.release_date?.date || "").trim(),
+    comingSoon: data ? Boolean(data.release_date?.coming_soon) : null,
+    price: data?.price_overview
+      ? {
+          currency: String(data.price_overview.currency || ""),
+          initial: Number(data.price_overview.initial || 0),
+          final: Number(data.price_overview.final || 0),
+          initialFormatted: String(data.price_overview.initial_formatted || ""),
+          finalFormatted: String(data.price_overview.final_formatted || ""),
+          discountPercent: Number(data.price_overview.discount_percent || 0),
+        }
+      : data?.is_free
+        ? {
+            currency: "",
+            initial: 0,
+            final: 0,
+            initialFormatted: "Free",
+            finalFormatted: "Free",
+            discountPercent: 0,
+          }
+        : null,
     storeUrl: `https://store.steampowered.com/app/${appId}/`,
+    steamDbUrl: `https://steamdb.info/app/${appId}/`,
+    headerImageUrl:
+      steamStoreBrowseImages([appId], storeBrowsePayload)[appId] ||
+      trustedSteamImage(data?.header_image),
     capsuleImageUrl:
       steamStoreBrowsePortraitImages([appId], storeBrowsePayload)[appId] ||
       steamLibraryCapsuleUrl(appId, appInfoPayload),
@@ -691,6 +749,204 @@ export async function getSteamStats(request, env) {
   );
 }
 
+const GAMALYTIC_DETAIL_FIELDS = [
+  "steamId",
+  "name",
+  "description",
+  "price",
+  "reviews",
+  "reviewsSteam",
+  "followers",
+  "avgPlaytime",
+  "reviewScore",
+  "tags",
+  "genres",
+  "features",
+  "languages",
+  "developers",
+  "publishers",
+  "copiesSold",
+  "players",
+  "owners",
+  "revenue",
+  "totalRevenue",
+  "estimateDetails",
+  "wishlists",
+  "firstReleaseDate",
+  "earlyAccessExitDate",
+  "releaseDate",
+  "EAReleaseDate",
+  "unreleased",
+  "earlyAccess",
+  "countryData",
+  "itemType",
+  "itemCode",
+  "DLC",
+  "history",
+  "playtimeData",
+  "alsoPlayed",
+  "audienceOverlap",
+].join(",");
+
+function optionalNumber(value) {
+  if (value === null || value === undefined || value === "") return null;
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function optionalText(value, maximum = 5000) {
+  if (value === null || value === undefined) return null;
+  const parsed = String(value).trim();
+  return parsed ? parsed.slice(0, maximum) : null;
+}
+
+function detailTextList(value, maximum = 80) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) =>
+      optionalText(
+        typeof item === "string"
+          ? item
+          : item?.name ?? item?.description ?? item?.label,
+        180,
+      ),
+    )
+    .filter(Boolean)
+    .slice(0, maximum);
+}
+
+function relatedGames(value, maximum = 100) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      const record = item && typeof item === "object" ? item : {};
+      return {
+        steamId: optionalText(
+          typeof item === "string" || typeof item === "number"
+            ? item
+            : record.steamId ?? record.appid ?? record.id,
+          12,
+        ),
+        name: optionalText(record.name, 240),
+        releaseDate: record.releaseDate ?? record.firstReleaseDate ?? null,
+        price: optionalNumber(record.price),
+        genres: detailTextList(record.genres, 12),
+        copiesSold: optionalNumber(record.copiesSold),
+        revenue: optionalNumber(record.revenue ?? record.totalRevenue),
+        overlap: optionalNumber(
+          record.overlap ?? record.percentage ?? record.score,
+        ),
+      };
+    })
+    .filter((item) => /^\d{1,12}$/.test(item.steamId || ""))
+    .slice(0, maximum);
+}
+
+function detailHistory(value) {
+  if (!Array.isArray(value)) return [];
+  return value.slice(-1500).map((item) => ({
+    timeStamp: item?.timeStamp ?? item?.timestamp ?? null,
+    reviews: optionalNumber(item?.reviews),
+    price: optionalNumber(item?.price),
+    score: optionalNumber(item?.score ?? item?.reviewScore),
+    players: optionalNumber(item?.players),
+    avgPlaytime: optionalNumber(item?.avgPlaytime),
+    sales: optionalNumber(item?.sales ?? item?.copiesSold),
+    revenue: optionalNumber(item?.revenue),
+    followers: optionalNumber(item?.followers),
+    wishlists: optionalNumber(item?.wishlists),
+  }));
+}
+
+function detailCountryData(value) {
+  if (Array.isArray(value)) {
+    return value.slice(0, 100).map((item) => ({
+      country: optionalText(item?.country ?? item?.name ?? item?.code, 100),
+      value: optionalNumber(item?.value ?? item?.players ?? item?.share),
+    }));
+  }
+  if (!value || typeof value !== "object") return [];
+  return Object.entries(value)
+    .slice(0, 100)
+    .map(([country, amount]) => ({
+      country: optionalText(country, 100),
+      value: optionalNumber(
+        amount && typeof amount === "object"
+          ? amount.value ?? amount.players ?? amount.share
+          : amount,
+      ),
+    }));
+}
+
+function detailDistribution(value) {
+  if (Array.isArray(value)) {
+    return value.slice(0, 100).map((item, index) => ({
+      label: optionalText(
+        item?.label ?? item?.name ?? item?.range ?? String(index + 1),
+        120,
+      ),
+      value: optionalNumber(item?.value ?? item?.players ?? item?.share),
+    }));
+  }
+  if (!value || typeof value !== "object") return [];
+  return Object.entries(value)
+    .slice(0, 100)
+    .map(([label, amount]) => ({
+      label: optionalText(label, 120),
+      value: optionalNumber(
+        amount && typeof amount === "object"
+          ? amount.value ?? amount.players ?? amount.share
+          : amount,
+      ),
+    }));
+}
+
+function gamalyticDetail(source, appId) {
+  return {
+    appId,
+    steamId: optionalText(source?.steamId ?? appId, 12),
+    name: optionalText(source?.name, 240),
+    description: optionalText(source?.description, 8000),
+    price: optionalNumber(source?.price),
+    reviews: optionalNumber(source?.reviews),
+    reviewsSteam: optionalNumber(source?.reviewsSteam),
+    followers: optionalNumber(source?.followers),
+    avgPlaytime: optionalNumber(source?.avgPlaytime),
+    reviewScore: optionalNumber(source?.reviewScore),
+    tags: detailTextList(source?.tags),
+    genres: detailTextList(source?.genres),
+    features: detailTextList(source?.features),
+    languages: detailTextList(source?.languages),
+    developers: detailTextList(source?.developers, 30),
+    publishers: detailTextList(source?.publishers, 30),
+    copiesSold: optionalNumber(source?.copiesSold),
+    players: optionalNumber(source?.players),
+    owners: optionalNumber(source?.owners),
+    revenue: optionalNumber(source?.revenue),
+    totalRevenue: optionalNumber(source?.totalRevenue),
+    wishlists: optionalNumber(source?.wishlists),
+    firstReleaseDate: source?.firstReleaseDate ?? null,
+    earlyAccessExitDate: source?.earlyAccessExitDate ?? null,
+    releaseDate: source?.releaseDate ?? null,
+    EAReleaseDate: source?.EAReleaseDate ?? null,
+    unreleased:
+      typeof source?.unreleased === "boolean" ? source.unreleased : null,
+    earlyAccess:
+      typeof source?.earlyAccess === "boolean" ? source.earlyAccess : null,
+    itemType: optionalText(source?.itemType, 80),
+    itemCode: optionalText(source?.itemCode, 80),
+    history: detailHistory(source?.history),
+    playtimeData: detailDistribution(source?.playtimeData),
+    countryData: detailCountryData(source?.countryData),
+    dlc: relatedGames(source?.DLC ?? source?.dlc, 100),
+    alsoPlayed: relatedGames(source?.alsoPlayed, 100),
+    audienceOverlap: relatedGames(source?.audienceOverlap, 100),
+    estimated: true,
+    source: "Gamalytic",
+    capturedAt: new Date().toISOString(),
+  };
+}
+
 export async function getGamalyticGame(request, env) {
   const cors = corsHeaders(request, env);
   if (cors === null) return json({ error: "origin_not_allowed" }, 403);
@@ -714,41 +970,41 @@ export async function getGamalyticGame(request, env) {
   }
 
   const gamalyticUrl = new URL(`https://api.gamalytic.com/game/${appId}`);
-  gamalyticUrl.searchParams.set(
-    "fields",
-    "steamId,name,copiesSold,owners,revenue,totalRevenue,wishlists,players,followers,avgPlaytime,reviewScore,releaseDate,unreleased,earlyAccess",
-  );
-  const upstream = await fetch(gamalyticUrl, {
-    headers: {
-      accept: "application/json",
-      "api-key": env.GAMALYTIC_API_KEY,
-    },
-  });
-  if (!upstream.ok) {
-    return json(
-      {
-        error: upstream.status === 404 ? "game_not_found" : "gamalytic_unavailable",
+  gamalyticUrl.searchParams.set("fields", GAMALYTIC_DETAIL_FIELDS);
+  let upstream;
+  try {
+    upstream = await fetch(gamalyticUrl, {
+      headers: {
+        accept: "application/json",
+        "api-key": env.GAMALYTIC_API_KEY,
       },
-      upstream.status === 404 ? 404 : 502,
+    });
+  } catch {
+    return json({ error: "gamalytic_unavailable" }, 502, cors);
+  }
+  if (!upstream.ok) {
+    const error =
+      upstream.status === 404
+        ? "game_not_found"
+        : upstream.status === 401 || upstream.status === 403
+          ? "gamalytic_plan_or_key_denied"
+          : upstream.status === 429
+            ? "gamalytic_rate_limited"
+            : "gamalytic_unavailable";
+    return json(
+      { error },
+      upstream.status === 404
+        ? 404
+        : upstream.status === 401 || upstream.status === 403
+          ? 403
+          : upstream.status === 429
+            ? 429
+            : 502,
       cors,
     );
   }
   const source = await upstream.json();
-  const result = {
-    appId,
-    copiesSold: Number(source?.copiesSold || 0),
-    owners: Number(source?.owners || 0),
-    revenue: Number(source?.revenue || 0),
-    totalRevenue: Number(source?.totalRevenue || 0),
-    wishlists: Number(source?.wishlists || 0),
-    players: Number(source?.players || 0),
-    followers: Number(source?.followers || 0),
-    avgPlaytime: Number(source?.avgPlaytime || 0),
-    reviewScore: Number(source?.reviewScore || 0),
-    estimated: true,
-    source: "Gamalytic",
-    capturedAt: new Date().toISOString(),
-  };
+  const result = gamalyticDetail(source, appId);
   const response = json(result, 200, {
     ...cors,
     "cache-control": `private, max-age=${DETAIL_CACHE_SECONDS}`,
@@ -1582,7 +1838,11 @@ export default {
         headers,
       });
     }
-    if (url.pathname === "/analytics" || url.pathname === "/analytics/") {
+    if (
+      url.pathname === "/analytics" ||
+      url.pathname === "/analytics/" ||
+      /^\/game\/\d{1,12}\/?$/.test(url.pathname)
+    ) {
       const analyticsUrl = new URL(request.url);
       analyticsUrl.pathname = "/analytics-page.txt";
       const asset = await env.ASSETS.fetch(new Request(analyticsUrl, request));

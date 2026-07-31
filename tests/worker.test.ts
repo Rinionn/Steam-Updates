@@ -7,6 +7,7 @@ import {
   getSteamApp,
   getSteamImage,
   getSteamStats,
+  getGamalyticGame,
   getGamalyticAnalytics,
   getTeamState,
   parseNextFestHistory,
@@ -42,6 +43,18 @@ const appDetails = {
       release_date: { coming_soon: false },
       genres: [{ description: "RPG" }],
       categories: [{ description: "Shared/Split Screen Co-op" }],
+      developers: ["CD PROJEKT RED"],
+      publishers: ["CD PROJEKT RED"],
+      short_description: "An open-world action adventure.",
+      supported_languages: "English, Turkish",
+      price_overview: {
+        currency: "TRY",
+        initial: 159900,
+        final: 79950,
+        initial_formatted: "1.599,00 TL",
+        final_formatted: "799,50 TL",
+        discount_percent: 50,
+      },
       header_image:
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg",
     },
@@ -352,6 +365,13 @@ describe("Steam search Worker", () => {
       demoStatus: "live",
       releaseStatus: "released",
       localMultiplayer: true,
+      description: "An open-world action adventure.",
+      developers: ["CD PROJEKT RED"],
+      publishers: ["CD PROJEKT RED"],
+      languages: ["English", "Turkish"],
+      headerImageUrl:
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0123456789abcdef0123456789abcdef01234567/header_2x.jpg?t=1717200000",
+      steamDbUrl: "https://steamdb.info/app/1091500/",
       capsuleImageUrl:
         "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0123456789abcdef0123456789abcdef01234567/library_capsule_2x.jpg?t=1717200000",
       nextFestHistory: [
@@ -360,6 +380,78 @@ describe("Steam search Worker", () => {
         }),
       ],
     });
+  });
+
+  it("Gamalytic oyun detayını güvenli alanlarla ve eksikleri null bırakarak döndürür", async () => {
+    const upstream = vi.fn().mockResolvedValue(
+      new Response(
+        JSON.stringify({
+          steamId: 1623730,
+          name: "Palworld",
+          copiesSold: 12_000_000,
+          tags: ["Open World", "Survival"],
+          developers: ["Pocketpair"],
+          history: [
+            { timeStamp: 1_706_054_400_000, sales: 1_000_000 },
+            { timeStamp: 1_706_140_800_000, sales: 2_000_000 },
+          ],
+          audienceOverlap: [
+            {
+              steamId: 892970,
+              name: "Valheim",
+              overlap: 0.42,
+              copiesSold: 10_000_000,
+            },
+          ],
+        }),
+        { status: 200 },
+      ),
+    );
+    vi.stubGlobal("fetch", upstream);
+
+    const response = await getGamalyticGame(
+      new Request(
+        "https://steamradar.example.workers.dev/api/gamalytic-game?appid=1623730",
+        {
+          headers: {
+            "cf-access-authenticated-user-email":
+              "editor@gaminginturkey.com",
+          },
+        },
+      ),
+      {
+        ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com",
+        GAMALYTIC_API_KEY: "private-api-key",
+      },
+    );
+
+    expect(response.status).toBe(200);
+    expect(await response.json()).toMatchObject({
+      appId: "1623730",
+      name: "Palworld",
+      copiesSold: 12_000_000,
+      revenue: null,
+      tags: ["Open World", "Survival"],
+      history: [
+        expect.objectContaining({ sales: 1_000_000 }),
+        expect.objectContaining({ sales: 2_000_000 }),
+      ],
+      audienceOverlap: [
+        expect.objectContaining({
+          steamId: "892970",
+          name: "Valheim",
+          overlap: 0.42,
+        }),
+      ],
+    });
+    const upstreamRequest = upstream.mock.calls[0]?.[0];
+    const upstreamUrl = new URL(String(upstreamRequest));
+    expect(upstreamUrl.origin).toBe("https://api.gamalytic.com");
+    expect(upstreamUrl.pathname).toBe("/game/1623730");
+    expect(upstreamUrl.searchParams.get("fields")).toContain("history");
+    expect(upstream.mock.calls[0]?.[1]?.headers["api-key"]).toBe(
+      "private-api-key",
+    );
   });
 
   it("ücretsiz karşılaştırma için yalnız herkese açık Steam verilerini döndürür", async () => {
@@ -572,6 +664,29 @@ describe("Steam search Worker", () => {
     expect(await response.text()).toBe("/analytics-page.txt");
     expect(response.headers.get("content-type")).toContain("text/html");
     expect(response.headers.get("cache-control")).toBe("no-store");
+    expect(fetch).toHaveBeenCalledOnce();
+  });
+
+  it("/game/:appid iç oyun sayfasını aynı korumalı analiz kabuğunda sunar", async () => {
+    const fetch = vi.fn(async (request: Request) => {
+      return new Response(new URL(request.url).pathname);
+    });
+    const response = await worker.fetch(
+      new Request("https://steamradar.example.workers.dev/game/1623730", {
+        headers: {
+          "cf-access-authenticated-user-email":
+            "editor@gaminginturkey.com",
+        },
+      }),
+      {
+        ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com",
+        ASSETS: { fetch },
+      },
+    );
+
+    expect(response.status).toBe(200);
+    expect(await response.text()).toBe("/analytics-page.txt");
+    expect(response.headers.get("content-type")).toContain("text/html");
     expect(fetch).toHaveBeenCalledOnce();
   });
 

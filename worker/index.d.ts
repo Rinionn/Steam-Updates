@@ -8,11 +8,29 @@ export interface SteamSuggestion {
 export interface SteamAppDetails {
   appId: string;
   name: string;
+  description: string;
+  developers: string[];
+  publishers: string[];
+  genres: string[];
+  features: string[];
+  languages: string[];
   tags: string[];
   demoStatus: "none" | "live" | null;
   releaseStatus: "unreleased" | "early_access" | "released" | null;
   localMultiplayer: boolean | null;
+  releaseDate: string;
+  comingSoon: boolean | null;
+  price: {
+    currency: string;
+    initial: number;
+    final: number;
+    initialFormatted: string;
+    finalFormatted: string;
+    discountPercent: number;
+  } | null;
   storeUrl: string;
+  steamDbUrl: string;
+  headerImageUrl: string;
   capsuleImageUrl: string;
   nextFestHistory: Array<{
     title: string;
@@ -108,6 +126,10 @@ export function getSteamImage(
   env: WorkerEnvironment,
 ): Promise<Response>;
 export function getSteamStats(
+  request: Request,
+  env: WorkerEnvironment,
+): Promise<Response>;
+export function getGamalyticGame(
   request: Request,
   env: WorkerEnvironment,
 ): Promise<Response>;

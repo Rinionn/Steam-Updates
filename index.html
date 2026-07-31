@@ -111,10 +111,23 @@
       white-space: nowrap;
       border: 0;
     }
+    .global-topbar { position:sticky; top:0; z-index:50; display:grid; grid-template-columns:240px minmax(0,1fr) auto; align-items:center; gap:16px; min-height:64px; padding:8px 22px; color:var(--color-on-accent); background:var(--color-hero-end); box-shadow:0 2px 12px var(--color-shadow); }
+    .global-brand { display:flex; align-items:center; gap:10px; color:var(--color-on-accent); font-size:19px; font-weight:900; text-decoration:none; }
+    .global-brand-mark { display:grid; width:40px; height:40px; place-items:center; border-radius:50%; color:var(--color-on-accent); background:var(--gradient-brand); }
+    .global-topbar-copy { color:var(--color-hero-copy); font-size:12px; font-weight:700; }
+    .global-topbar-actions { display:flex; align-items:center; justify-content:flex-end; gap:8px; }
+    .global-topbar-actions a { display:inline-flex; align-items:center; min-height:38px; padding:7px 12px; border-radius:8px; color:var(--color-on-accent); background:var(--gradient-brand); font-size:11px; font-weight:850; text-decoration:none; }
+    .dashboard-app-shell { display:grid; grid-template-columns:240px minmax(0,1fr); min-height:calc(100vh - 64px); }
+    .global-sidebar { position:sticky; top:64px; align-self:start; height:calc(100vh - 64px); overflow-y:auto; border-right:1px solid var(--color-line); background:var(--color-panel); }
+    .global-sidebar nav { display:grid; padding:8px 0; }
+    .global-sidebar-label { padding:12px 16px 7px; color:var(--color-muted); font-size:10px; font-weight:850; letter-spacing:.09em; text-transform:uppercase; }
+    .global-sidebar button,.global-sidebar a { display:grid; grid-template-columns:38px minmax(0,1fr); align-items:center; width:100%; min-height:48px; padding:8px 16px; color:var(--color-ink); border:0; border-radius:0; background:var(--color-transparent); font-size:13px; font-weight:700; text-align:left; text-decoration:none; cursor:pointer; }
+    .global-sidebar button:hover,.global-sidebar a:hover { background:var(--color-panel-subtle); }
+    .global-sidebar button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
+    .global-sidebar-icon { color:var(--color-muted); font-size:17px; text-align:center; }
+    .global-sidebar button.active .global-sidebar-icon { color:var(--color-on-accent); }
+    .global-sidebar-separator { height:1px; margin:8px 0; background:var(--color-line); }
     .shell { width: min(calc(100% - 20px), 1180px); margin: 0 auto; padding: 20px 0 56px; }
-    .view-tabs { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(170px,1fr); gap:6px; margin:22px 0 0; padding:5px; overflow-x:auto; border:1px solid var(--color-line); border-radius:15px; background:var(--color-panel); scrollbar-width:thin; }
-    .view-tabs button,.view-tabs .view-link { display:flex; align-items:center; justify-content:center; min-width:0; min-height:44px; padding:9px 12px; color:var(--color-control-text); border:1px solid var(--color-transparent); border-radius:10px; background:var(--color-transparent); font-size:11px; font-weight:900; text-decoration:none; white-space:nowrap; }
-    .view-tabs button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
     .dashboard-panel[hidden] { display:none; }
     .hero {
       position: relative;
@@ -426,6 +439,18 @@
       .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .platform-news { grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
+    @media (max-width: 760px) {
+      .global-topbar { position:relative; grid-template-columns:auto minmax(0,1fr) auto; min-height:58px; padding-inline:10px; }
+      .global-brand span:last-child,.global-topbar-copy { display:none; }
+      .global-brand-mark { width:36px; height:36px; }
+      .dashboard-app-shell { display:block; min-height:0; }
+      .global-sidebar { position:sticky; top:0; z-index:40; width:100%; height:auto; overflow-x:auto; overflow-y:hidden; border-right:0; border-bottom:1px solid var(--color-line); }
+      .global-sidebar nav { display:flex; width:max-content; padding:0; }
+      .global-sidebar-label { display:flex; align-items:center; padding:8px 11px; white-space:nowrap; }
+      .global-sidebar button,.global-sidebar a { display:flex; width:auto; min-height:48px; padding:8px 11px; white-space:nowrap; }
+      .global-sidebar-icon { width:24px; }
+      .global-sidebar-separator { width:1px; height:32px; margin:8px 2px; flex:0 0 auto; }
+    }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior:auto; }
       .event-row.timeline-highlight { animation:none; box-shadow:inset 4px 0 var(--color-accent-pink); }
@@ -439,7 +464,31 @@
   </style>
 </head>
 <body>
-  <main class="shell">
+  <header class="global-topbar">
+    <a class="global-brand" href="/"><span class="global-brand-mark" aria-hidden="true">S</span><span>Steam Radar</span></a>
+    <span class="global-topbar-copy" data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span>
+    <div class="global-topbar-actions"><a href="/admin" data-i18n="admin">Yönetim</a></div>
+  </header>
+  <div class="dashboard-app-shell">
+    <aside class="global-sidebar" aria-label="Ana menü" data-i18n-aria-label="mainMenu">
+      <nav>
+        <span class="global-sidebar-label">Steam Radar</span>
+        <button class="active" type="button" aria-current="page" aria-pressed="true" data-view-tab="events"><span class="global-sidebar-icon" aria-hidden="true">◫</span><span data-i18n="radarTab">Etkinlik Radarı</span></button>
+        <button type="button" aria-pressed="false" data-view-tab="games"><span class="global-sidebar-icon" aria-hidden="true">▣</span><span data-i18n="myGames">Oyunlarım</span></button>
+        <button type="button" aria-pressed="false" data-view-tab="steamworks"><span class="global-sidebar-icon" aria-hidden="true">◉</span><span data-i18n="steamNews">Steam Haberleri</span></button>
+        <button type="button" aria-pressed="false" data-view-tab="releases"><span class="global-sidebar-icon" aria-hidden="true">◷</span><span data-i18n="releasesTab">Yeni Çıkan / Çıkacak</span></button>
+        <button type="button" aria-pressed="false" data-view-tab="stats"><span class="global-sidebar-icon" aria-hidden="true">▥</span><span data-i18n="gameComparison">Oyun İstatistikleri</span></button>
+        <span class="global-sidebar-separator" aria-hidden="true"></span>
+        <span class="global-sidebar-label" data-i18n="marketAnalysis">Pazar Analizi</span>
+        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#home"><span class="global-sidebar-icon" aria-hidden="true">⌂</span><span data-i18n="analyticsHome">Ana Sayfa</span></a>
+        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#steam-analytics"><span class="global-sidebar-icon" aria-hidden="true">◔</span><span data-i18n="steamAnalytics">Steam Analitiği</span></a>
+        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#games"><span class="global-sidebar-icon" aria-hidden="true">▣</span><span data-i18n="gamesList">Oyunlar Listesi</span></a>
+        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#publishers"><span class="global-sidebar-icon" aria-hidden="true">▰</span><span data-i18n="publishersList">Yayıncılar Listesi</span></a>
+        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#genres-tags"><span class="global-sidebar-icon" aria-hidden="true">◆</span><span data-i18n="genresTags">Türler ve Etiketler</span></a>
+        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#years"><span class="global-sidebar-icon" aria-hidden="true">▦</span><span data-i18n="years">Yıllar</span></a>
+      </nav>
+    </aside>
+    <main class="shell">
     <section class="hero" id="top">
       <div class="hero-tools">
         <div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel">
@@ -928,14 +977,6 @@
     </div>
     </section>
 
-    <div class="view-tabs" role="tablist" aria-label="İçerik görünümü" data-i18n-aria-label="contentView">
-      <button class="active" type="button" role="tab" aria-selected="true" data-view-tab="events">Etkinlikler</button>
-      <button type="button" role="tab" aria-selected="false" data-view-tab="games">Oyunlarım</button>
-      <button type="button" role="tab" aria-selected="false" data-view-tab="steamworks">Steam Haberleri</button>
-      <button type="button" role="tab" aria-selected="false" data-view-tab="releases">Yeni Çıkan / Çıkacak Oyunlar</button>
-      <a class="view-link" href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics">Pazar Analizi</a>
-    </div>
-
     <section class="section dashboard-panel" id="games" data-dashboard-panel="games" aria-labelledby="games-heading" hidden>
       <div class="section-title">
         <h2 id="games-heading" data-i18n="myGames">Oyunlarım</h2>
@@ -1205,7 +1246,7 @@
     <section class="section dashboard-panel" id="calendar" data-dashboard-panel="events">
       <div class="section-title">
         <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
-        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="31 Temmuz 2026, 18:19" data-copy-en="31 July 2026, 18:19">31 Temmuz 2026, 18:19</span></p>
+        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="31 Temmuz 2026, 18:49" data-copy-en="31 July 2026, 18:49">31 Temmuz 2026, 18:49</span></p>
       </div>
       <div class="toolbar">
         <label class="sr-only" for="search" data-i18n="searchEvents">Etkinlik ara</label>
@@ -6129,7 +6170,8 @@
     </section>
 
     <footer data-i18n="footer">Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
-  </main>
+    </main>
+  </div>
   <script>
     const buttons = [...document.querySelectorAll("[data-filter]")];
     const rows = [...document.querySelectorAll(".event-row")];
@@ -6197,7 +6239,9 @@
       viewTabs.forEach((button) => {
         const active = button.dataset.viewTab === activeView;
         button.classList.toggle("active", active);
-        button.setAttribute("aria-selected", String(active));
+        button.setAttribute("aria-pressed", String(active));
+        if (active) button.setAttribute("aria-current", "page");
+        else button.removeAttribute("aria-current");
       });
       dashboardPanels.forEach((panel) => {
         panel.hidden = panel.dataset.dashboardPanel !== activeView;
@@ -6356,11 +6400,21 @@
       languageLabel: { tr: "Arayüz dili", en: "Interface language" },
       openMenu: { tr: "Menüyü aç", en: "Open menu" },
       navigationLabel: { tr: "Sayfa navigasyonu", en: "Page navigation" },
+      mainMenu: { tr: "Ana menü", en: "Main menu" },
       navigation: { tr: "Navigasyon", en: "Navigation" },
       overview: { tr: "Genel bakış", en: "Overview" },
       changesShort: { tr: "Değişiklikler", en: "Changes" },
       contentView: { tr: "İçerik görünümü", en: "Content view" },
       radarTab: { tr: "Etkinlik Radarı", en: "Event Radar" },
+      releasesTab: { tr: "Yeni Çıkan / Çıkacak", en: "New / Upcoming Games" },
+      marketAnalysis: { tr: "Pazar Analizi", en: "Market Analysis" },
+      analyticsHome: { tr: "Ana Sayfa", en: "Home" },
+      steamAnalytics: { tr: "Steam Analitiği", en: "Steam Analytics" },
+      gamesList: { tr: "Oyunlar Listesi", en: "Games List" },
+      publishersList: { tr: "Yayıncılar Listesi", en: "Publishers List" },
+      genresTags: { tr: "Türler ve Etiketler", en: "Genres and Tags" },
+      years: { tr: "Yıllar", en: "Years" },
+      admin: { tr: "Yönetim", en: "Admin" },
       steamNews: { tr: "Steam Haberleri", en: "Steam News" },
       newsIntro: {
         tr: "Yeni çıkanlar, yaklaşan oyunlar ve Valve’ın resmî Steamworks duyuruları.",

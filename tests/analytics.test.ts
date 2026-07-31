@@ -6,13 +6,19 @@ describe("market analytics page", () => {
   it("renders the six requested sections in an accessible side navigation", () => {
     const html = renderAnalyticsPage();
 
-    expect(html).toContain('aria-label="Pazar analizi menüsü"');
+    expect(html).toContain('aria-label="Ana menü"');
     expect(html).toContain('data-route="home"');
     expect(html).toContain('data-route="steam-analytics"');
     expect(html).toContain('data-route="games"');
     expect(html).toContain('data-route="publishers"');
     expect(html).toContain('data-route="genres-tags"');
     expect(html).toContain('data-route="years"');
+    expect(html).toContain('data-view="game-detail"');
+    expect(html).toContain('href="/#view=events"');
+    expect(html).toContain('href="/#view=games"');
+    expect(html).toContain('href="/#view=steamworks"');
+    expect(html).toContain('href="/#view=releases"');
+    expect(html).toContain('href="/#view=stats"');
     expect(html).toContain("/api/gamalytic/");
     expect(html).toContain("Gamalytic API · tahmini veri");
     expect(html).toContain("/^\\d{4}$/");
@@ -29,6 +35,15 @@ describe("market analytics page", () => {
     expect(html).toContain("Yayıncı Özeti");
     expect(html).toContain("/api/steam-image?appids=");
     expect(html).toContain("payload.images");
+    expect(html).toContain('/^\\/game\\/(\\d{1,12})\\/?$/');
+    expect(html).toContain('"/game/"+id');
+    expect(html).toContain("/api/gamalytic-game?appid=");
+    expect(html).toContain("/api/steam-stats?appid=");
+    expect(html).toContain("Player Insights");
+    expect(html).toContain("Historic data");
+    expect(html).toContain("Store Page Insights");
+    expect(html).toContain("--gradient-brand");
+    expect(html).toContain("font-family:Inter");
   });
 
   it("links the primary dashboard to the dedicated analytics route", () => {
@@ -40,6 +55,13 @@ describe("market analytics page", () => {
 
     expect(html).toContain("/analytics");
     expect(html).toContain("Pazar Analizi");
+    expect(html).toContain('class="global-sidebar"');
+    expect(html).toContain('data-view-tab="events"');
+    expect(html).toContain('data-view-tab="games"');
+    expect(html).toContain('data-view-tab="steamworks"');
+    expect(html).toContain('data-view-tab="releases"');
+    expect(html).toContain('data-view-tab="stats"');
+    expect(html).not.toContain('class="view-tabs"');
   });
 
   it("embeds syntactically valid client-side JavaScript", () => {
