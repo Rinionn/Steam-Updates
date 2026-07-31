@@ -2,7 +2,7 @@ const STEAM_SUGGEST_URL =
   "https://store.steampowered.com/search/suggest";
 const CACHE_SECONDS = 30 * 60;
 const DETAIL_CACHE_SECONDS = 6 * 60 * 60;
-const DETAIL_SCHEMA_VERSION = 5;
+const DETAIL_SCHEMA_VERSION = 6;
 const MAX_RESULTS = 8;
 const MAX_TAGS = 20;
 const MAX_NEXT_FEST_RECORDS = 5;
@@ -127,6 +127,7 @@ function steamAppModel(
   storeHtml,
   newsPayload,
   appInfoPayload,
+  storeBrowsePayload,
 ) {
   const data = details?.[appId]?.success ? details[appId].data : null;
   const categories = Array.isArray(data?.categories)
@@ -167,7 +168,9 @@ function steamAppModel(
     releaseStatus,
     localMultiplayer: data ? localMultiplayer : null,
     storeUrl: `https://store.steampowered.com/app/${appId}/`,
-    capsuleImageUrl: steamLibraryCapsuleUrl(appId, appInfoPayload),
+    capsuleImageUrl:
+      steamStoreBrowsePortraitImages([appId], storeBrowsePayload)[appId] ||
+      steamLibraryCapsuleUrl(appId, appInfoPayload),
     nextFestHistory: parseNextFestHistory(appId, newsPayload),
   };
 }
@@ -345,8 +348,15 @@ export async function getSteamApp(request, env) {
   newsUrl.searchParams.set("count", "100");
   newsUrl.searchParams.set("maxlength", "1200");
   const appInfoUrl = new URL(`https://api.steamcmd.net/v1/info/${appId}`);
+  const storeBrowseUrl = steamStoreBrowseUrl([appId]);
 
-  const [detailsResult, storeResult, newsResult, appInfoResult] =
+  const [
+    detailsResult,
+    storeResult,
+    newsResult,
+    appInfoResult,
+    storeBrowseResult,
+  ] =
     await Promise.allSettled([
       fetch(detailsUrl, {
         headers: {
@@ -373,6 +383,12 @@ export async function getSteamApp(request, env) {
           "user-agent": "Steam-Event-Radar/1.0",
         },
       }),
+      fetch(storeBrowseUrl, {
+        headers: {
+          accept: "application/json",
+          "user-agent": "Steam-Event-Radar/1.0",
+        },
+      }),
     ]);
 
   let details = null;
@@ -391,6 +407,13 @@ export async function getSteamApp(request, env) {
   if (appInfoResult.status === "fulfilled" && appInfoResult.value.ok) {
     appInfoPayload = await appInfoResult.value.json();
   }
+  let storeBrowsePayload = null;
+  if (
+    storeBrowseResult.status === "fulfilled" &&
+    storeBrowseResult.value?.ok
+  ) {
+    storeBrowsePayload = await storeBrowseResult.value.json();
+  }
   if (!details && !storeHtml) {
     return json({ error: "steam_unavailable" }, 502, cors);
   }
@@ -402,6 +425,7 @@ export async function getSteamApp(request, env) {
       storeHtml,
       newsPayload,
       appInfoPayload,
+      storeBrowsePayload,
     ),
     200,
     {
@@ -411,6 +435,165 @@ export async function getSteamApp(request, env) {
   );
   await cache?.put(cacheKey, response.clone());
   return response;
+}
+
+function steamStoreAssetUrl(item, assetKeys) {
+  const assets = item?.assets;
+  const format = String(assets?.asset_url_format || "");
+  const filename = assetKeys
+    .map((key) => assets?.[key])
+    .find((value) => typeof value === "string" && value.trim());
+  if (!format.includes("${FILENAME}") || !filename) return "";
+
+  try {
+    const relative = format.replace("${FILENAME}", filename);
+    const parsed = new URL(
+      relative,
+      "https://shared.akamai.steamstatic.com/store_item_assets/",
+    );
+    if (
+      parsed.protocol !== "https:" ||
+      !(
+        parsed.hostname === "steamstatic.com" ||
+        parsed.hostname.endsWith(".steamstatic.com")
+      )
+    ) {
+      return "";
+    }
+    return parsed.toString();
+  } catch {
+    return "";
+  }
+}
+
+function steamStoreBrowseAssetMap(appIds, payload, assetKeys) {
+  const requested = new Set(appIds.map(String));
+  const images = {};
+  const items = Array.isArray(payload?.response?.store_items)
+    ? payload.response.store_items
+    : [];
+  for (const item of items) {
+    const appId = String(item?.appid ?? item?.id ?? "");
+    if (!requested.has(appId)) continue;
+    const imageUrl = steamStoreAssetUrl(item, assetKeys);
+    if (imageUrl) images[appId] = imageUrl;
+  }
+  return images;
+}
+
+export function steamStoreBrowseImages(appIds, payload) {
+  return steamStoreBrowseAssetMap(appIds, payload, [
+    "header_2x",
+    "header",
+    "main_capsule_2x",
+    "main_capsule",
+  ]);
+}
+
+export function steamStoreBrowsePortraitImages(appIds, payload) {
+  return steamStoreBrowseAssetMap(appIds, payload, [
+    "library_capsule_2x",
+    "library_capsule",
+    "hero_capsule_2x",
+    "hero_capsule",
+  ]);
+}
+
+function steamStoreBrowseUrl(appIds) {
+  const browseUrl = new URL(
+    "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/",
+  );
+  browseUrl.searchParams.set(
+    "input_json",
+    JSON.stringify({
+      ids: appIds.map((appid) => ({ appid: Number(appid) })),
+      context: {
+        language: "english",
+        country_code: "TR",
+        steam_realm: 1,
+      },
+      data_request: { include_assets: true },
+    }),
+  );
+  return browseUrl;
+}
+
+export async function getSteamImage(request, env) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  if (!(await requestIsAuthorized(request, env))) {
+    return json({ error: "authentication_required" }, 401, cors);
+  }
+
+  const requestUrl = new URL(request.url);
+  const rawAppIds =
+    requestUrl.searchParams.get("appids") ||
+    requestUrl.searchParams.get("appid") ||
+    "";
+  const appIds = [
+    ...new Set(
+      rawAppIds
+        .split(",")
+        .map((value) => value.trim())
+        .filter(Boolean),
+    ),
+  ];
+  if (
+    appIds.length === 0 ||
+    appIds.length > 50 ||
+    appIds.some((appId) => !/^\d{1,12}$/.test(appId))
+  ) {
+    return json({ error: "invalid_app_id" }, 400, cors);
+  }
+
+  const cacheId = [...appIds].sort().join(",");
+  const cacheKey = new Request(
+    `${requestUrl.origin}/api/steam-image?appids=${cacheId}`,
+  );
+  const cache = globalThis.caches?.default;
+  const cached = await cache?.match(cacheKey);
+  if (cached) {
+    const response = new Response(cached.body, cached);
+    response.headers.delete("access-control-allow-origin");
+    response.headers.delete("vary");
+    Object.entries(cors).forEach(([key, value]) =>
+      response.headers.set(key, value),
+    );
+    return response;
+  }
+
+  try {
+    const browseUrl = steamStoreBrowseUrl(appIds);
+    const upstream = await fetch(browseUrl, {
+      headers: {
+        accept: "application/json",
+        "user-agent": "Steam-Event-Radar/1.0",
+      },
+    });
+    if (!upstream.ok) {
+      return json({ error: "steam_unavailable" }, 502, cors);
+    }
+    const payload = await upstream.json();
+    const images = steamStoreBrowseImages(appIds, payload);
+    const firstImage = images[appIds[0]] || "";
+    const status = Object.keys(images).length > 0 ? 200 : 404;
+    const response = json(
+      {
+        appId: appIds.length === 1 ? appIds[0] : undefined,
+        headerImageUrl: appIds.length === 1 ? firstImage : undefined,
+        images,
+      },
+      status,
+      {
+        ...cors,
+        "cache-control": `public, max-age=${status === 200 ? 604800 : 1800}`,
+      },
+    );
+    await cache?.put(cacheKey, response.clone());
+    return response;
+  } catch {
+    return json({ error: "steam_unavailable" }, 502, cors);
+  }
 }
 
 export async function getSteamStats(request, env) {
@@ -1342,6 +1525,7 @@ export default {
     if (
       url.pathname === "/api/steam-search" ||
       url.pathname === "/api/steam-app" ||
+      url.pathname === "/api/steam-image" ||
       url.pathname === "/api/steam-stats" ||
       url.pathname === "/api/gamalytic-game"
     ) {
@@ -1354,6 +1538,7 @@ export default {
         });
       }
       if (url.pathname === "/api/steam-search") return searchSteam(request, env);
+      if (url.pathname === "/api/steam-image") return getSteamImage(request, env);
       if (url.pathname === "/api/steam-stats") return getSteamStats(request, env);
       if (url.pathname === "/api/gamalytic-game") {
         return getGamalyticGame(request, env);

@@ -2127,7 +2127,7 @@ export function renderReport(
       );
       try {
         const response = await fetch(
-          "/api/steam-app?appid=" + encodeURIComponent(option.appId) + "&v=5",
+          "/api/steam-app?appid=" + encodeURIComponent(option.appId) + "&v=6",
           { headers: { accept: "application/json" } },
         );
         if (!response.ok) throw new Error("details failed");
@@ -2270,7 +2270,7 @@ export function renderReport(
         const response = await fetch(
           "/api/steam-app?appid=" +
             encodeURIComponent(option.appId) +
-            "&v=5",
+            "&v=6",
           {
             signal: steamDetailController.signal,
             headers: { accept: "application/json" },
@@ -2938,7 +2938,7 @@ export function renderReport(
           game.appId &&
           (!game.steamDetailsCheckedAt ||
             Date.parse(game.steamDetailsCheckedAt) < refreshCutoff ||
-            game.steamImageVersion < 5),
+            game.steamImageVersion < 6),
       );
       let changed = false;
       for (const game of pending) {
@@ -2946,7 +2946,7 @@ export function renderReport(
           const response = await fetch(
             "/api/steam-app?appid=" +
               encodeURIComponent(game.appId) +
-              "&v=5",
+              "&v=6",
             { headers: { accept: "application/json" } },
           );
           if (!response.ok) continue;
@@ -2974,7 +2974,7 @@ export function renderReport(
             details.nextFestHistory,
           );
           game.steamDetailsCheckedAt = new Date().toISOString();
-          game.steamImageVersion = 5;
+          game.steamImageVersion = 6;
           changed = true;
         } catch {}
       }

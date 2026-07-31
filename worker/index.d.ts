@@ -86,12 +86,24 @@ export function steamLibraryCapsuleUrl(
   appId: string,
   payload: unknown,
 ): string;
+export function steamStoreBrowseImages(
+  appIds: string[],
+  payload: unknown,
+): Record<string, string>;
+export function steamStoreBrowsePortraitImages(
+  appIds: string[],
+  payload: unknown,
+): Record<string, string>;
 
 export function searchSteam(
   request: Request,
   env: WorkerEnvironment,
 ): Promise<Response>;
 export function getSteamApp(
+  request: Request,
+  env: WorkerEnvironment,
+): Promise<Response>;
+export function getSteamImage(
   request: Request,
   env: WorkerEnvironment,
 ): Promise<Response>;

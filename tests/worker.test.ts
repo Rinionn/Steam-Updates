@@ -5,6 +5,7 @@ import {
   default as worker,
   deleteTeamState,
   getSteamApp,
+  getSteamImage,
   getSteamStats,
   getGamalyticAnalytics,
   getTeamState,
@@ -13,6 +14,8 @@ import {
   parseSteamTags,
   searchSteam,
   steamLibraryCapsuleUrl,
+  steamStoreBrowseImages,
+  steamStoreBrowsePortraitImages,
   putTeamState,
 } from "../worker/index.js";
 
@@ -83,11 +86,104 @@ const appInfo = {
   },
 };
 
+const storeBrowseAssets = {
+  response: {
+    store_items: [
+      {
+        appid: 1091500,
+        assets: {
+          asset_url_format:
+            "steam/apps/1091500/0123456789abcdef0123456789abcdef01234567/${FILENAME}?t=1717200000",
+          header_2x: "header_2x.jpg",
+          header: "header.jpg",
+          library_capsule_2x: "library_capsule_2x.jpg",
+        },
+      },
+      {
+        appid: 730,
+        assets: {
+          asset_url_format: "steam/apps/730/${FILENAME}",
+          header: "header.jpg",
+        },
+      },
+    ],
+  },
+};
+
 afterEach(() => {
   vi.unstubAllGlobals();
 });
 
 describe("Steam search Worker", () => {
+  it("Steam yatay kapak görselini güncel mağaza kaydından döndürür", async () => {
+    vi.spyOn(globalThis, "fetch").mockResolvedValue(
+      new Response(JSON.stringify(storeBrowseAssets), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      }),
+    );
+    const response = await getSteamImage(
+      new Request(
+        "https://steamradar.example.workers.dev/api/steam-image?appid=1091500",
+        {
+          headers: {
+            "cf-access-authenticated-user-email":
+              "editor@gaminginturkey.com",
+          },
+        },
+      ),
+      { ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com" },
+    );
+
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({
+      appId: "1091500",
+      headerImageUrl:
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0123456789abcdef0123456789abcdef01234567/header_2x.jpg?t=1717200000",
+      images: {
+        "1091500":
+          "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0123456789abcdef0123456789abcdef01234567/header_2x.jpg?t=1717200000",
+      },
+    });
+  });
+
+  it("Steam görsellerini tek istekte toplu çözer", () => {
+    expect(
+      steamStoreBrowseImages(["1091500", "730"], storeBrowseAssets),
+    ).toEqual({
+      "730":
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg",
+      "1091500":
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0123456789abcdef0123456789abcdef01234567/header_2x.jpg?t=1717200000",
+    });
+  });
+
+  it("Oyunlarım kartları için gerçek dikey Steam kapsülünü çözer", () => {
+    expect(
+      steamStoreBrowsePortraitImages(["1091500"], storeBrowseAssets),
+    ).toEqual({
+      "1091500":
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0123456789abcdef0123456789abcdef01234567/library_capsule_2x.jpg?t=1717200000",
+    });
+  });
+
+  it("Steam görsel toplu isteğini 50 oyunla sınırlar", async () => {
+    const response = await getSteamImage(
+      new Request(
+        `https://steamradar.example.workers.dev/api/steam-image?appids=${Array.from({ length: 51 }, (_, index) => index + 1).join(",")}`,
+        {
+          headers: {
+            "cf-access-authenticated-user-email":
+              "editor@gaminginturkey.com",
+          },
+        },
+      ),
+      { ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com" },
+    );
+
+    expect(response.status).toBe(400);
+    expect(await response.json()).toEqual({ error: "invalid_app_id" });
+  });
   it("Gamalytic liste isteğini anahtarı sızdırmadan güvenli proxy eder", async () => {
     const fetchMock = vi.spyOn(globalThis, "fetch").mockResolvedValue(
       new Response(
@@ -231,6 +327,9 @@ describe("Steam search Worker", () => {
         )
         .mockResolvedValueOnce(
           new Response(JSON.stringify(appInfo), { status: 200 }),
+        )
+        .mockResolvedValueOnce(
+          new Response(JSON.stringify(storeBrowseAssets), { status: 200 }),
         ),
     );
     const response = await getSteamApp(
@@ -254,7 +353,7 @@ describe("Steam search Worker", () => {
       releaseStatus: "released",
       localMultiplayer: true,
       capsuleImageUrl:
-        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0123456789abcdef0123456789abcdef01234567/library_capsule_2x.jpg",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0123456789abcdef0123456789abcdef01234567/library_capsule_2x.jpg?t=1717200000",
       nextFestHistory: [
         expect.objectContaining({
           title: "We are joining Steam Next Fest!",

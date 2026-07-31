@@ -16,7 +16,19 @@ describe("market analytics page", () => {
     expect(html).toContain("/api/gamalytic/");
     expect(html).toContain("Gamalytic API · tahmini veri");
     expect(html).toContain("/^\\d{4}$/");
-    expect(html).toContain('aria-current", "page"');
+    expect(html).toContain('aria-current="page"');
+    expect(html).toContain('setAttribute("aria-current","page")');
+    expect(html).toContain('aria-label="Steam oyunlarında ara"');
+    expect(html).toContain('data-filter-form="analytics"');
+    expect(html).toContain('data-filter-form="games"');
+    expect(html).toContain('data-filter-form="groups"');
+    expect(html).toContain('data-filter-form="years"');
+    expect(html).toContain("İş Modeli");
+    expect(html).toContain("Oyun Özellikleri");
+    expect(html).toContain("Çıkış ve Performans");
+    expect(html).toContain("Yayıncı Özeti");
+    expect(html).toContain("/api/steam-image?appids=");
+    expect(html).toContain("payload.images");
   });
 
   it("links the primary dashboard to the dedicated analytics route", () => {
