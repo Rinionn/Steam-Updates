@@ -6,6 +6,7 @@ import {
   deleteTeamState,
   getSteamApp,
   getSteamStats,
+  getGamalyticAnalytics,
   getTeamState,
   parseNextFestHistory,
   parseSteamSuggestions,
@@ -87,6 +88,97 @@ afterEach(() => {
 });
 
 describe("Steam search Worker", () => {
+  it("Gamalytic liste isteğini anahtarı sızdırmadan güvenli proxy eder", async () => {
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockResolvedValue(
+      new Response(
+        JSON.stringify({
+          pages: 1,
+          total: 1,
+          result: [{ steamId: "1091500", name: "Cyberpunk 2077" }],
+        }),
+        { status: 200, headers: { "content-type": "application/json" } },
+      ),
+    );
+    const response = await getGamalyticAnalytics(
+      new Request(
+        "https://steamradar.example.workers.dev/api/gamalytic/games?limit=500&title=cyber&evil=https://example.com",
+        {
+          headers: {
+            "cf-access-authenticated-user-email":
+              "editor@gaminginturkey.com",
+          },
+        },
+      ),
+      {
+        ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com",
+        GAMALYTIC_API_KEY: "private-api-key",
+      },
+      "games",
+    );
+
+    expect(response.status).toBe(200);
+    const [url, init] = fetchMock.mock.calls[0];
+    const upstream = new URL(String(url));
+    expect(upstream.origin).toBe("https://api.gamalytic.com");
+    expect(upstream.pathname).toBe("/steam-games/list");
+    expect(upstream.searchParams.get("limit")).toBe("100");
+    expect(upstream.searchParams.get("title")).toBe("cyber");
+    expect(upstream.searchParams.has("evil")).toBe(false);
+    expect(new Headers(init?.headers).get("api-key")).toBe("private-api-key");
+    expect(JSON.stringify(await response.json())).not.toContain("private-api-key");
+  });
+
+  it("Gamalytic anahtarı yoksa analitik proxy çağrısını reddeder", async () => {
+    const response = await getGamalyticAnalytics(
+      new Request(
+        "https://steamradar.example.workers.dev/api/gamalytic/stats",
+        {
+          headers: {
+            "cf-access-authenticated-user-email":
+              "editor@gaminginturkey.com",
+          },
+        },
+      ),
+      { ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com" },
+      "stats",
+    );
+
+    expect(response.status).toBe(503);
+    expect(await response.json()).toEqual({ error: "gamalytic_not_configured" });
+  });
+
+  it("Gamalytic sayfalama ve sıralama parametrelerini güvenli değerlere çeker", async () => {
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockResolvedValue(
+      new Response(JSON.stringify({ pages: 0, total: 0, result: [] }), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      }),
+    );
+    const response = await getGamalyticAnalytics(
+      new Request(
+        "https://steamradar.example.workers.dev/api/gamalytic/games?limit=abc&page=-5&sort=unknown&sort_mode=sideways",
+        {
+          headers: {
+            "cf-access-authenticated-user-email":
+              "editor@gaminginturkey.com",
+          },
+        },
+      ),
+      {
+        ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com",
+        GAMALYTIC_API_KEY: "private-api-key",
+      },
+      "games",
+    );
+
+    expect(response.status).toBe(200);
+    const [url] = fetchMock.mock.calls[0];
+    const upstream = new URL(String(url));
+    expect(upstream.searchParams.get("limit")).toBe("50");
+    expect(upstream.searchParams.get("page")).toBe("0");
+    expect(upstream.searchParams.get("sort")).toBe("revenue");
+    expect(upstream.searchParams.get("sort_mode")).toBe("desc");
+  });
   it("Steam öneri HTML'ini güvenli sonuçlara dönüştürür", () => {
     expect(parseSteamSuggestions(steamHtml)).toEqual([
       {
@@ -357,6 +449,30 @@ describe("Steam search Worker", () => {
     expect(response.status).toBe(200);
     expect(await response.text()).toBe("/admin-page.txt");
     expect(response.headers.get("content-type")).toContain("text/html");
+    expect(fetch).toHaveBeenCalledOnce();
+  });
+
+  it("/analytics yolunu ayrı pazar analizi dosyasından HTML olarak sunar", async () => {
+    const fetch = vi.fn(async (request: Request) => {
+      return new Response(new URL(request.url).pathname);
+    });
+    const response = await worker.fetch(
+      new Request("https://steamradar.example.workers.dev/analytics", {
+        headers: {
+          "cf-access-authenticated-user-email":
+            "editor@gaminginturkey.com",
+        },
+      }),
+      {
+        ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com",
+        ASSETS: { fetch },
+      },
+    );
+
+    expect(response.status).toBe(200);
+    expect(await response.text()).toBe("/analytics-page.txt");
+    expect(response.headers.get("content-type")).toContain("text/html");
+    expect(response.headers.get("cache-control")).toBe("no-store");
     expect(fetch).toHaveBeenCalledOnce();
   });
 

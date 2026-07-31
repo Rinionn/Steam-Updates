@@ -11,7 +11,7 @@ const snapshot: EventSnapshot = {
 };
 
 const recentChange: ChangeRecord = {
-  detectedAt: "2026-07-30T05:00:00.000Z",
+  detectedAt: new Date(Date.now() - 60 * 60 * 1000).toISOString(),
   eventId: "test-fest",
   eventName: "Test Fest",
   kind: "date_shifted",
@@ -53,7 +53,7 @@ describe("change log views", () => {
     const withoutChanges = renderDigest(snapshot, [
       {
         ...recentChange,
-        detectedAt: "2026-07-28T05:00:00.000Z",
+        detectedAt: new Date(Date.now() - 48 * 60 * 60 * 1000).toISOString(),
       },
     ]);
 

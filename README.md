@@ -36,6 +36,10 @@ ve günlük veri commitine otomatik olarak dahil edilir.
 - Bir ana oyunu en fazla beş rakiple karşılaştırır; Steam’den inceleme, fiyat,
   oyuncu ve kategori verilerini, Gamalytic bağlandığında da tahmini wishlist,
   satış ve gelir verilerini gösterir.
+- `/analytics` altında sol menülü pazar analizi alanı sunar: ana sayfa, Steam
+  analitiği, oyunlar, yayıncılar, türler ve etiketler ile yıllık kırılımlar.
+  Gamalytic API anahtarı yalnız Cloudflare Worker secret olarak tutulur ve
+  tarayıcıya gönderilmez.
 - Yeni çıkan/yaklaşan oyunları ve resmî Steamworks duyurularını günlük yenilenen
   ayrı bir haber görünümünde toplar.
 - Şifre korumalı yönetim panelinden erişim kullanıcılarını, e-posta alıcılarını

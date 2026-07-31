@@ -521,12 +521,14 @@ export async function getGamalyticGame(request, env) {
   if (!/^\d{1,12}$/.test(appId)) {
     return json({ error: "invalid_app_id" }, 400, cors);
   }
-  const cacheKey = new Request(
-    `${new URL(request.url).origin}/api/gamalytic-game?appid=${appId}`,
-  );
-  const cache = globalThis.caches?.default;
-  const cached = await cache?.match(cacheKey);
-  if (cached) return new Response(cached.body, cached);
+  const cacheKey = `game:${appId}`;
+  const cached = readGamalyticMemoryCache(cacheKey);
+  if (cached) {
+    return json(cached, 200, {
+      ...cors,
+      "cache-control": `private, max-age=${DETAIL_CACHE_SECONDS}`,
+    });
+  }
 
   const gamalyticUrl = new URL(`https://api.gamalytic.com/game/${appId}`);
   gamalyticUrl.searchParams.set(
@@ -568,7 +570,259 @@ export async function getGamalyticGame(request, env) {
     ...cors,
     "cache-control": `private, max-age=${DETAIL_CACHE_SECONDS}`,
   });
-  await cache?.put(cacheKey, response.clone());
+  writeGamalyticMemoryCache(cacheKey, result, DETAIL_CACHE_SECONDS);
+  return response;
+}
+
+const GAMALYTIC_MEMORY_CACHE = new Map();
+const GAMALYTIC_MEMORY_CACHE_MAX = 120;
+
+function readGamalyticMemoryCache(key) {
+  const entry = GAMALYTIC_MEMORY_CACHE.get(key);
+  if (!entry) return null;
+  if (entry.expiresAt <= Date.now()) {
+    GAMALYTIC_MEMORY_CACHE.delete(key);
+    return null;
+  }
+  return entry.payload;
+}
+
+function writeGamalyticMemoryCache(key, payload, ttlSeconds) {
+  if (GAMALYTIC_MEMORY_CACHE.size >= GAMALYTIC_MEMORY_CACHE_MAX) {
+    const oldestKey = GAMALYTIC_MEMORY_CACHE.keys().next().value;
+    if (oldestKey !== undefined) GAMALYTIC_MEMORY_CACHE.delete(oldestKey);
+  }
+  GAMALYTIC_MEMORY_CACHE.set(key, {
+    expiresAt: Date.now() + ttlSeconds * 1000,
+    payload,
+  });
+}
+
+const GAMALYTIC_FILTER_PARAMS = new Set([
+  "price_min",
+  "price_max",
+  "genres",
+  "tags",
+  "tags_exclude",
+  "features",
+  "first_release_date_min",
+  "first_release_date_max",
+  "early_access_exit_date_min",
+  "early_access_exit_date_max",
+  "early_access",
+  "revenue_min",
+  "revenue_max",
+  "reviews_min",
+  "reviews_max",
+  "followers_min",
+  "followers_max",
+  "wishlists_min",
+  "wishlists_max",
+  "sold_min",
+  "sold_max",
+  "score_min",
+  "score_max",
+  "avg_playtime_min",
+  "avg_playtime_max",
+  "title",
+  "appids",
+]);
+
+const GAMALYTIC_GAME_FIELDS = [
+  "steamId",
+  "name",
+  "price",
+  "reviews",
+  "followers",
+  "avgPlaytime",
+  "reviewScore",
+  "tags",
+  "genres",
+  "features",
+  "developers",
+  "publishers",
+  "copiesSold",
+  "revenue",
+  "totalRevenue",
+  "wishlists",
+  "firstReleaseDate",
+  "earlyAccessExitDate",
+  "releaseDate",
+  "EAReleaseDate",
+  "unreleased",
+  "earlyAccess",
+].join(",");
+
+const GAMALYTIC_PUBLISHER_FIELDS = [
+  "id",
+  "name",
+  "class",
+  "numberOfGames",
+  "totalRevenue",
+  "averageRevenue",
+  "medianRevenue",
+  "firstGameDate",
+  "lastGameDate",
+  "inHouse",
+  "genres",
+].join(",");
+
+function clampedInteger(value, fallback, maximum) {
+  const parsed = Number.parseInt(String(value ?? ""), 10);
+  if (!Number.isFinite(parsed)) return fallback;
+  return Math.min(maximum, Math.max(1, parsed));
+}
+
+function nonNegativeInteger(value, fallback = 0) {
+  const parsed = Number.parseInt(String(value ?? ""), 10);
+  return Number.isFinite(parsed) && parsed >= 0 ? parsed : fallback;
+}
+
+function gamalyticResource(resource) {
+  if (resource === "games") {
+    return {
+      pathname: "/steam-games/list",
+      params: new Set([
+        ...GAMALYTIC_FILTER_PARAMS,
+        "release_status",
+        "page",
+        "limit",
+        "fields",
+        "sort",
+        "sort_mode",
+      ]),
+    };
+  }
+  if (resource === "stats") {
+    return {
+      pathname: "/steam-games/stats",
+      params: GAMALYTIC_FILTER_PARAMS,
+    };
+  }
+  if (resource === "groups") {
+    return {
+      pathname: "/steam-games/genres/stats",
+      params: new Set([...GAMALYTIC_FILTER_PARAMS, "key", "n_tags"]),
+    };
+  }
+  if (resource === "publishers") {
+    return {
+      pathname: "/publishers/",
+      params: new Set(["page", "limit", "fields"]),
+    };
+  }
+  return null;
+}
+
+export async function getGamalyticAnalytics(request, env, resource) {
+  const cors = corsHeaders(request, env);
+  if (cors === null) return json({ error: "origin_not_allowed" }, 403);
+  if (!(await requestIsAuthorized(request, env))) {
+    return json({ error: "authentication_required" }, 401, cors);
+  }
+  if (!env.GAMALYTIC_API_KEY) {
+    return json({ error: "gamalytic_not_configured" }, 503, cors);
+  }
+  const definition = gamalyticResource(resource);
+  if (!definition) return json({ error: "invalid_resource" }, 404, cors);
+
+  const incoming = new URL(request.url);
+  const upstreamUrl = new URL(`https://api.gamalytic.com${definition.pathname}`);
+  for (const [key, rawValue] of incoming.searchParams) {
+    if (!definition.params.has(key)) continue;
+    const value = rawValue.trim().slice(0, 500);
+    if (value) upstreamUrl.searchParams.set(key, value);
+  }
+  if (resource === "games") {
+    const limit = clampedInteger(
+      upstreamUrl.searchParams.get("limit"),
+      50,
+      100,
+    );
+    upstreamUrl.searchParams.set("limit", String(limit));
+    upstreamUrl.searchParams.set("fields", GAMALYTIC_GAME_FIELDS);
+    upstreamUrl.searchParams.set(
+      "page",
+      String(nonNegativeInteger(upstreamUrl.searchParams.get("page"))),
+    );
+    const sort = upstreamUrl.searchParams.get("sort") || "revenue";
+    if (!["id", "reviews", "followers", "avgPlaytime", "reviewScore", "copiesSold", "revenue", "totalRevenue", "wishlists", "price", "firstReleaseDate"].includes(sort)) {
+      upstreamUrl.searchParams.set("sort", "revenue");
+    }
+    if (!upstreamUrl.searchParams.has("sort")) {
+      upstreamUrl.searchParams.set("sort", sort);
+    }
+    const sortMode = upstreamUrl.searchParams.get("sort_mode") || "desc";
+    upstreamUrl.searchParams.set(
+      "sort_mode",
+      ["asc", "desc"].includes(sortMode) ? sortMode : "desc",
+    );
+  }
+  if (resource === "publishers") {
+    const limit = clampedInteger(
+      upstreamUrl.searchParams.get("limit"),
+      100,
+      100,
+    );
+    upstreamUrl.searchParams.set("limit", String(limit));
+    upstreamUrl.searchParams.set(
+      "page",
+      String(nonNegativeInteger(upstreamUrl.searchParams.get("page"))),
+    );
+    upstreamUrl.searchParams.set("fields", GAMALYTIC_PUBLISHER_FIELDS);
+  }
+  if (resource === "groups") {
+    const key = upstreamUrl.searchParams.get("key") || "genres";
+    if (!["genres", "tags", "releaseDate"].includes(key)) {
+      return json({ error: "invalid_group_key" }, 400, cors);
+    }
+    upstreamUrl.searchParams.set("key", key);
+    if (key !== "tags") upstreamUrl.searchParams.delete("n_tags");
+    else {
+      upstreamUrl.searchParams.set(
+        "n_tags",
+        String(clampedInteger(upstreamUrl.searchParams.get("n_tags"), 20, 100)),
+      );
+    }
+  }
+  upstreamUrl.searchParams.sort();
+
+  const cacheKey = `analytics:${resource}?${upstreamUrl.searchParams}`;
+  const cached = readGamalyticMemoryCache(cacheKey);
+  if (cached) {
+    return json(cached, 200, {
+      ...cors,
+      "cache-control": "private, max-age=900",
+    });
+  }
+
+  const upstream = await fetch(upstreamUrl, {
+    headers: {
+      accept: "application/json",
+      "api-key": env.GAMALYTIC_API_KEY,
+    },
+  });
+  if (!upstream.ok) {
+    return json(
+      {
+        error:
+          upstream.status === 401 || upstream.status === 403
+            ? "gamalytic_plan_or_key_denied"
+            : upstream.status === 429
+              ? "gamalytic_rate_limited"
+              : "gamalytic_unavailable",
+        upstreamStatus: upstream.status,
+      },
+      upstream.status === 429 ? 429 : 502,
+      cors,
+    );
+  }
+  const payload = await upstream.json();
+  const response = json(payload, 200, {
+    ...cors,
+    "cache-control": "private, max-age=900",
+  });
+  writeGamalyticMemoryCache(cacheKey, payload, 900);
   return response;
 }
 
@@ -1106,6 +1360,19 @@ export default {
       }
       return getSteamApp(request, env);
     }
+    if (url.pathname.startsWith("/api/gamalytic/")) {
+      if (request.method === "OPTIONS") return optionsResponse(request, env);
+      if (request.method !== "GET") {
+        return json({ error: "method_not_allowed" }, 405, {
+          allow: "GET, OPTIONS",
+        });
+      }
+      return getGamalyticAnalytics(
+        request,
+        env,
+        url.pathname.slice("/api/gamalytic/".length),
+      );
+    }
     if (!(await requestIsAuthorized(request, env))) {
       return new Response("Kurumsal giriş gerekli.", {
         status: 401,
@@ -1120,6 +1387,20 @@ export default {
       const adminUrl = new URL(request.url);
       adminUrl.pathname = "/admin-page.txt";
       const asset = await env.ASSETS.fetch(new Request(adminUrl, request));
+      const headers = new Headers(asset.headers);
+      headers.set("content-type", "text/html; charset=utf-8");
+      headers.set("cache-control", "no-store");
+      headers.set("x-content-type-options", "nosniff");
+      return new Response(asset.body, {
+        status: asset.status,
+        statusText: asset.statusText,
+        headers,
+      });
+    }
+    if (url.pathname === "/analytics" || url.pathname === "/analytics/") {
+      const analyticsUrl = new URL(request.url);
+      analyticsUrl.pathname = "/analytics-page.txt";
+      const asset = await env.ASSETS.fetch(new Request(analyticsUrl, request));
       const headers = new Headers(asset.headers);
       headers.set("content-type", "text/html; charset=utf-8");
       headers.set("cache-control", "no-store");

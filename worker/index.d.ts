@@ -99,6 +99,11 @@ export function getSteamStats(
   request: Request,
   env: WorkerEnvironment,
 ): Promise<Response>;
+export function getGamalyticAnalytics(
+  request: Request,
+  env: WorkerEnvironment,
+  resource: "games" | "stats" | "groups" | "publishers",
+): Promise<Response>;
 export function getTeamState(
   request: Request,
   env: WorkerEnvironment,

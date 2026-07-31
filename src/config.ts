@@ -29,6 +29,8 @@ export const paths = {
   report: path.join(rootDir, "out", "steam-etkinlikleri.html"),
   publicIndex: path.join(rootDir, "out", "index.html"),
   adminAsset: path.join(rootDir, "out", "admin-page.txt"),
+  analyticsAsset: path.join(rootDir, "out", "analytics-page.txt"),
+  analyticsPreview: path.join(rootDir, "out", "analytics.html"),
   calendarIcs: path.join(rootDir, "out", "steam-etkinlikleri.ics"),
   noJekyll: path.join(rootDir, "out", ".nojekyll"),
   emailPreview: path.join(rootDir, "out", "son-email.html"),

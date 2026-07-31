@@ -19,6 +19,7 @@ import type {
 import { escapeHtml, stableId } from "./utils.js";
 import { createReportModel, type DeadlineView } from "./view-model.js";
 import { renderAdminPage } from "./admin.js";
+import { renderAnalyticsPage } from "./analytics.js";
 
 const kindLabels: Record<SteamEvent["kind"], string> = {
   seasonal_sale: "Sezon İndirimi",
@@ -641,7 +642,7 @@ export function renderReport(
     }
     .shell { width: min(calc(100% - 20px), 1180px); margin: 0 auto; padding: 20px 0 56px; }
     .view-tabs { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(170px,1fr); gap:6px; margin:22px 0 0; padding:5px; overflow-x:auto; border:1px solid var(--color-line); border-radius:15px; background:var(--color-panel); scrollbar-width:thin; }
-    .view-tabs button { min-width:0; min-height:44px; padding:9px 12px; color:var(--color-control-text); border-color:var(--color-transparent); background:var(--color-transparent); font-size:11px; font-weight:900; white-space:nowrap; }
+    .view-tabs button,.view-tabs .view-link { display:flex; align-items:center; justify-content:center; min-width:0; min-height:44px; padding:9px 12px; color:var(--color-control-text); border:1px solid var(--color-transparent); border-radius:10px; background:var(--color-transparent); font-size:11px; font-weight:900; text-decoration:none; white-space:nowrap; }
     .view-tabs button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
     .dashboard-panel[hidden] { display:none; }
     .hero {
@@ -986,7 +987,7 @@ export function renderReport(
       <button type="button" role="tab" aria-selected="false" data-view-tab="games">Oyunlarım</button>
       <button type="button" role="tab" aria-selected="false" data-view-tab="steamworks">Steam Haberleri</button>
       <button type="button" role="tab" aria-selected="false" data-view-tab="releases">Yeni Çıkan / Çıkacak Oyunlar</button>
-      <button type="button" role="tab" aria-selected="false" data-view-tab="stats">Oyun İstatistikleri</button>
+      <a class="view-link" href="${new URL("analytics", config.dashboardUrl).toString()}">Pazar Analizi</a>
     </div>
 
     <section class="section dashboard-panel" id="games" data-dashboard-panel="games" aria-labelledby="games-heading" hidden>
@@ -3692,6 +3693,8 @@ export async function writeReport(snapshot: EventSnapshot): Promise<string> {
     writeFile(paths.report, report, "utf8"),
     writeFile(paths.publicIndex, report, "utf8"),
     writeFile(paths.adminAsset, renderAdminPage(), "utf8"),
+    writeFile(paths.analyticsAsset, renderAnalyticsPage(), "utf8"),
+    writeFile(paths.analyticsPreview, renderAnalyticsPage(), "utf8"),
     writeFile(paths.calendarIcs, createCalendarIcs(snapshot), "utf8"),
     writeFile(paths.noJekyll, "", "utf8"),
   ]);
