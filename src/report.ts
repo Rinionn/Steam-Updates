@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { DateTime } from "luxon";
 import {
@@ -3767,6 +3767,7 @@ export function renderReport(
 
 export async function writeReport(snapshot: EventSnapshot): Promise<string> {
   await mkdir(paths.outDir, { recursive: true });
+  await mkdir(path.dirname(paths.brandLogo), { recursive: true });
   const report = renderReport(
     snapshot,
     await readChangelog(paths.changelog),
@@ -3779,6 +3780,7 @@ export async function writeReport(snapshot: EventSnapshot): Promise<string> {
     writeFile(paths.adminAsset, renderAdminPage(), "utf8"),
     writeFile(paths.analyticsAsset, renderAnalyticsPage(), "utf8"),
     writeFile(paths.analyticsPreview, renderAnalyticsPage(), "utf8"),
+    copyFile(paths.brandLogoSource, paths.brandLogo),
     writeFile(paths.calendarIcs, createCalendarIcs(snapshot), "utf8"),
     writeFile(paths.noJekyll, "", "utf8"),
   ]);

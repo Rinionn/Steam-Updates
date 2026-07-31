@@ -45,6 +45,7 @@ describe("market analytics page", () => {
     expect(html).toContain("--gradient-brand");
     expect(html).toContain('font-family:"Space Grotesk"');
     expect(html).toContain("data-steam-radar-logo");
+    expect(html).toContain("steam-radar-logo.png");
     expect(html).toContain('class="app-topbar"');
     expect(html).toContain('class="app-sidebar"');
   });
@@ -61,6 +62,7 @@ describe("market analytics page", () => {
     expect(html).toContain('class="app-sidebar"');
     expect(html).toContain('class="app-topbar"');
     expect(html).toContain("data-steam-radar-logo");
+    expect(html).toContain("steam-radar-logo.png");
     expect(html).toContain('data-view-tab="events"');
     expect(html).toContain('data-view-tab="games"');
     expect(html).toContain('data-view-tab="steamworks"');
@@ -82,6 +84,7 @@ describe("market analytics page", () => {
       expect(html).toContain("data-app-shell");
       expect(html).toContain("data-app-sidebar");
       expect(html).toContain("data-steam-radar-logo");
+      expect(html).toContain("steam-radar-logo.png");
       expect(html).toContain("Steam Radar");
       expect(html).toContain('"Space Grotesk"');
     }

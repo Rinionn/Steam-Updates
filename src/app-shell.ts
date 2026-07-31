@@ -34,25 +34,14 @@ const analyticsNavigation: NavItem[] = [
   { id: "years", icon: "▦", label: "Yıllar", i18n: "years" },
 ];
 
-export function renderSteamRadarLogo(idPrefix = "steam-radar"): string {
-  const gradientId = `${idPrefix}-gradient`;
-  return `<svg class="app-brand-logo" data-steam-radar-logo viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-    <defs><linearGradient id="${gradientId}" x1="5" y1="7" x2="43" y2="43"><stop class="app-logo-stop-start"/><stop class="app-logo-stop-end" offset="1"/></linearGradient></defs>
-    <rect class="app-logo-tile" x="5" y="7" width="38" height="36" rx="10" fill="url(#${gradientId})"/>
-    <g class="app-logo-line" fill="none" stroke-width="2.6" stroke-linecap="round">
-      <path d="M14 5v8M34 5v8M7 17.5h34"/>
-      <path d="M19 24a6 6 0 0 1 6 6M19 19a11 11 0 0 1 11 11M19 30l12-8"/>
-    </g>
-    <circle class="app-logo-origin" cx="19" cy="30" r="2.4"/>
-    <circle class="app-logo-target" cx="31" cy="22" r="2.2"/>
-  </svg>`;
+export function renderSteamRadarLogo(instance = "steam-radar"): string {
+  return `<img class="app-brand-logo" data-steam-radar-logo data-logo-instance="${instance}" src="https://rinionn.github.io/Steam-Updates/assets/steam-radar-logo.png" width="1086" height="362" alt="" loading="eager" decoding="async">`;
 }
 
 export function renderAppHeader(options: HeaderOptions): string {
   return `<header class="app-topbar" data-app-header data-app-surface="${options.surface}">
     <a class="app-brand" href="/" aria-label="Steam Radar ana sayfası">
       ${renderSteamRadarLogo(`${options.surface}-header`)}
-      <span class="app-brand-copy"><strong>Steam Radar</strong><small>Joygame Select</small></span>
     </a>
     <div class="app-topbar-center">${options.centerHtml || ""}</div>
     <div class="app-topbar-actions">${options.actionsHtml || ""}</div>
@@ -103,16 +92,8 @@ export function renderAppSidebar(options: SidebarOptions): string {
 export function renderAppShellStyles(): string {
   return `
     .app-topbar { position:sticky; top:0; z-index:50; display:grid; grid-template-columns:240px minmax(220px,1fr) auto; align-items:center; gap:16px; min-height:64px; padding:8px 22px; color:var(--app-header-text); background:var(--app-header-bg); box-shadow:0 2px 12px var(--app-shadow); }
-    .app-brand { display:flex; min-width:0; align-items:center; gap:10px; color:var(--app-header-text); text-decoration:none; }
-    .app-brand-logo { display:block; width:42px; height:42px; flex:0 0 auto; }
-    .app-logo-stop-start { stop-color:var(--app-brand-start); }
-    .app-logo-stop-end { stop-color:var(--app-brand-end); }
-    .app-logo-line { stroke:var(--app-logo-ink); }
-    .app-logo-origin { fill:var(--app-logo-ink); }
-    .app-logo-target { fill:var(--app-brand-target); }
-    .app-brand-copy { display:grid; min-width:0; line-height:1; }
-    .app-brand-copy strong { overflow:hidden; font-size:17px; font-weight:900; letter-spacing:-.025em; text-overflow:ellipsis; white-space:nowrap; }
-    .app-brand-copy small { margin-top:4px; color:var(--app-header-muted); font-size:9px; font-weight:800; letter-spacing:.09em; text-transform:uppercase; }
+    .app-brand { display:flex; min-width:0; align-items:center; color:var(--app-header-text); text-decoration:none; }
+    .app-brand-logo { display:block; width:198px; max-width:100%; height:44px; flex:0 1 auto; border-radius:9px; object-fit:cover; object-position:center; }
     .app-topbar-center { min-width:0; overflow:hidden; color:var(--app-header-muted); font-size:12px; font-weight:700; text-overflow:ellipsis; white-space:nowrap; }
     .app-topbar-actions { display:flex; min-width:0; align-items:center; justify-content:flex-end; gap:8px; }
     .app-topbar-actions > a,.app-topbar-actions > button { display:inline-flex; min-height:38px; align-items:center; justify-content:center; padding:7px 12px; border:0; border-radius:8px; color:var(--app-header-text); background:var(--app-gradient); text-decoration:none; font-size:11px; font-weight:850; cursor:pointer; }
@@ -130,15 +111,13 @@ export function renderAppShellStyles(): string {
     .app-sidebar-separator { height:1px; margin:8px 0; background:var(--app-line); }
     @media (max-width:920px) {
       .app-topbar { grid-template-columns:auto minmax(180px,1fr) auto; padding-inline:12px; }
-      .app-brand-copy strong { font-size:15px; }
       .app-topbar[data-app-surface="analytics"] .app-topbar-actions a { display:none; }
       .app-layout { grid-template-columns:190px minmax(0,1fr); }
       .app-sidebar button,.app-sidebar a { padding-inline:10px; }
     }
     @media (max-width:760px) {
       .app-topbar { position:relative; grid-template-columns:auto minmax(0,1fr) auto; min-height:58px; gap:8px; padding-inline:10px; }
-      .app-brand-logo { width:36px; height:36px; }
-      .app-brand-copy { display:none; }
+      .app-brand-logo { width:138px; height:36px; }
       .app-topbar[data-app-surface="radar"] .app-topbar-center { display:none; }
       .app-layout { display:block; min-height:0; }
       .app-sidebar { position:sticky; top:0; z-index:40; width:100%; height:auto; overflow-x:auto; overflow-y:hidden; border-right:0; border-bottom:1px solid var(--app-line); }

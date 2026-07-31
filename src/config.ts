@@ -31,6 +31,8 @@ export const paths = {
   adminAsset: path.join(rootDir, "out", "admin-page.txt"),
   analyticsAsset: path.join(rootDir, "out", "analytics-page.txt"),
   analyticsPreview: path.join(rootDir, "out", "analytics.html"),
+  brandLogoSource: path.join(rootDir, "assets", "steam-radar-logo.png"),
+  brandLogo: path.join(rootDir, "out", "assets", "steam-radar-logo.png"),
   calendarIcs: path.join(rootDir, "out", "steam-etkinlikleri.ics"),
   noJekyll: path.join(rootDir, "out", ".nojekyll"),
   emailPreview: path.join(rootDir, "out", "son-email.html"),

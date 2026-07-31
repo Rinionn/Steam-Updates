@@ -43,9 +43,20 @@ describe("change log views", () => {
     const html = renderAdminPage();
 
     expect(html).toContain("<title>Yönetim · Steam Etkinlik Radarı</title>");
+    expect(html).toContain('class="login-stage"');
+    expect(html).toContain('class="login-logo"');
+    expect(html).toContain("steam-radar-logo.png");
+    expect(html).toContain("Cloudflare Access korumalı");
     expect(html).toContain('data-login-form');
+    expect(html).toContain('data-password');
     expect(html).toContain('fetch("/api/admin/status"');
     expect(html).toContain('request("/api/admin")');
+
+    const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
+    expect(scripts.length).toBeGreaterThan(0);
+    scripts.forEach((script) => {
+      expect(() => new Function(script[1])).not.toThrow();
+    });
   });
 
   it("shows the email block only when the last 24 hours contain changes", () => {

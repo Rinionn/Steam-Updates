@@ -45,27 +45,30 @@ export function renderAdminPage(): string {
     [hidden] { display:none !important; }
     .shell { width:min(1180px,calc(100% - 28px)); margin:0 auto; padding:20px 0 54px; }
     .topbar { display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:24px; }
-    .brand { display:flex; align-items:center; gap:11px; color:var(--ink); text-decoration:none; }
-    .brand-mark { display:block; width:42px; height:42px; flex:0 0 auto; }
-    .brand-mark .app-brand-logo { display:block; width:42px; height:42px; }
-    .brand-mark .app-logo-stop-start { stop-color:var(--purple); }
-    .brand-mark .app-logo-stop-end { stop-color:var(--pink); }
-    .brand-mark .app-logo-line { stroke:var(--ink); }
-    .brand-mark .app-logo-origin { fill:var(--ink); }
-    .brand-mark .app-logo-target { fill:var(--amber); }
-    .brand-copy strong,.brand-copy span { display:block; }
-    .brand-copy strong { font-size:15px; }
-    .brand-copy span { margin-top:2px; color:var(--muted); font-size:10px; }
+    .brand { display:flex; width:min(200px,58vw); align-items:center; color:var(--ink); text-decoration:none; }
+    .brand .app-brand-logo { display:block; width:100%; height:44px; border-radius:9px; object-fit:cover; object-position:center; }
     .back { min-height:40px; padding:10px 14px; border:1px solid var(--line); border-radius:999px; color:var(--ink); text-decoration:none; font-size:12px; font-weight:800; background:var(--panel); }
     .hero { margin-bottom:20px; padding:26px; border:1px solid var(--line); border-radius:22px; background:linear-gradient(130deg,rgba(152,35,215,.18),rgba(243,51,145,.08)); box-shadow:var(--shadow); }
     .eyebrow { margin:0 0 8px; color:var(--pink); font-size:11px; font-weight:900; letter-spacing:.12em; text-transform:uppercase; }
     h1 { margin:0; font-size:clamp(28px,6vw,48px); letter-spacing:-.04em; }
     .hero p { max-width:720px; margin:10px 0 0; color:var(--muted); line-height:1.6; }
-    .login { max-width:480px; margin:56px auto; padding:22px; border:1px solid var(--line); border-radius:18px; background:var(--panel); box-shadow:var(--shadow); }
-    .login h2,.card h2 { margin:0 0 8px; font-size:19px; }
-    .login p,.card-intro { margin:0 0 15px; color:var(--muted); font-size:12px; line-height:1.55; }
+    .login-stage { display:grid; min-height:min(650px,calc(100vh - 130px)); overflow:hidden; border:1px solid var(--line); border-radius:28px; background:var(--panel); box-shadow:var(--shadow); }
+    .login-brand-panel { position:relative; display:flex; min-width:0; flex-direction:column; justify-content:center; padding:clamp(28px,6vw,68px); overflow:hidden; background:radial-gradient(circle at 20% 12%,rgba(152,35,215,.34),transparent 26rem),radial-gradient(circle at 78% 74%,rgba(243,51,145,.2),transparent 24rem),var(--bg); }
+    .login-brand-panel::after { position:absolute; right:-80px; bottom:-120px; width:330px; height:330px; border:1px solid rgba(243,51,145,.22); border-radius:50%; box-shadow:0 0 0 38px rgba(152,35,215,.06),0 0 0 78px rgba(243,51,145,.04); content:""; pointer-events:none; }
+    .login-logo { position:relative; z-index:1; display:block; width:min(430px,100%); margin-bottom:36px; }
+    .login-logo .app-brand-logo { display:block; width:100%; height:auto; aspect-ratio:3 / 1; border-radius:15px; object-fit:cover; object-position:center; box-shadow:0 18px 45px rgba(0,0,0,.28); }
+    .login-brand-panel h1 { position:relative; z-index:1; max-width:660px; font-size:clamp(36px,6vw,72px); line-height:.94; }
+    .login-brand-panel > p:not(.eyebrow) { position:relative; z-index:1; max-width:600px; margin:18px 0 0; color:var(--muted); font-size:14px; line-height:1.65; }
+    .login-points { position:relative; z-index:1; display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
+    .login-points span { padding:8px 11px; border:1px solid var(--line); border-radius:999px; color:var(--ink); background:rgba(19,9,30,.72); font-size:10px; font-weight:750; }
+    .login-card { align-self:center; margin:28px; padding:clamp(24px,4vw,38px); border:1px solid var(--line); border-radius:22px; background:linear-gradient(150deg,var(--soft),var(--panel)); box-shadow:0 20px 60px rgba(0,0,0,.3); }
+    .login-card h2,.card h2 { margin:0 0 8px; font-size:21px; }
+    .login-card p,.card-intro { margin:0 0 18px; color:var(--muted); font-size:12px; line-height:1.55; }
+    .security-badge { display:inline-flex; align-items:center; gap:7px; margin-bottom:16px; padding:7px 10px; border:1px solid rgba(111,227,175,.25); border-radius:999px; color:var(--success); background:rgba(111,227,175,.08); font-size:10px; font-weight:800; }
+    .security-badge::before { width:7px; height:7px; border-radius:50%; background:currentColor; box-shadow:0 0 12px currentColor; content:""; }
+    .login-label { display:grid; gap:7px; color:var(--muted); font-size:11px; font-weight:800; }
     form { margin:0; }
-    .login form,.settings-form { display:grid; gap:10px; }
+    .login-card form,.settings-form { display:grid; gap:12px; }
     input,select { width:100%; min-height:44px; padding:10px 12px; border:1px solid var(--line); border-radius:11px; color:var(--ink); background:var(--control); }
     button { min-height:42px; padding:9px 14px; border:1px solid var(--line); border-radius:11px; color:var(--ink); background:var(--soft); cursor:pointer; font-weight:800; }
     button.primary { border-color:transparent; background:var(--gradient); }
@@ -95,10 +98,24 @@ export function renderAdminPage(): string {
     .empty { padding:10px; color:var(--muted); font-size:11px; }
     @media (min-width:700px) {
       .shell { padding-top:28px; }
+      .login-stage { grid-template-columns:minmax(0,1.35fr) minmax(330px,.65fr); }
       .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .inline-form { grid-template-columns:minmax(0,1fr) auto; }
       .recipient-form { grid-template-columns:minmax(0,1fr) 150px auto; }
       .wide { grid-column:1 / -1; }
+    }
+    @media (max-width:699px) {
+      .shell { width:min(100% - 20px,1180px); padding-top:10px; }
+      .topbar { margin-bottom:10px; }
+      .brand { width:min(154px,52vw); }
+      .brand .app-brand-logo { height:36px; }
+      .back { min-height:36px; padding:8px 11px; }
+      .login-stage { min-height:0; }
+      .login-brand-panel { padding:28px 22px 24px; }
+      .login-logo { width:min(300px,100%); margin-bottom:22px; }
+      .login-brand-panel h1 { font-size:clamp(34px,12vw,52px); }
+      .login-brand-panel > p:not(.eyebrow) { font-size:12px; }
+      .login-card { margin:12px; padding:22px; }
     }
   </style>
 </head>
@@ -106,29 +123,41 @@ export function renderAdminPage(): string {
   <main class="shell">
     <header class="topbar">
       <a class="brand" href="/" aria-label="Steam Etkinlik Radarı ana sayfasına dön">
-        <span class="brand-mark">${renderSteamRadarLogo("admin-header")}</span>
-        <span class="brand-copy"><strong>Steam Etkinlik Radarı</strong><span>Joygame Select</span></span>
+        ${renderSteamRadarLogo("admin-header")}
       </a>
       <a class="back" href="/">← Panele dön</a>
     </header>
 
-    <section class="hero">
-      <p class="eyebrow">Özel yönetim alanı</p>
-      <h1>Yönetim Paneli</h1>
-      <p>Panel erişimlerini, günlük e-posta operasyonunu ve son 30 günlük kullanım verilerini tek ekrandan yönetin.</p>
-    </section>
-
-    <section class="login" data-login>
-      <h2>Yönetici doğrulaması</h2>
-      <p>Cloudflare Access oturumuna ek olarak yönetici şifrenizi girin. Şifre tarayıcıda kalıcı olarak saklanmaz.</p>
-      <form data-login-form>
-        <input type="password" required autocomplete="current-password" placeholder="Yönetici şifresi" aria-label="Yönetici şifresi" data-password>
-        <button class="primary" type="submit">Yönetim paneline gir</button>
-      </form>
-      <div class="status" data-login-status role="status" aria-live="polite"></div>
+    <section class="login-stage" data-login>
+      <div class="login-brand-panel">
+        <span class="login-logo">${renderSteamRadarLogo("admin-login")}</span>
+        <p class="eyebrow">Steam operasyon merkezi</p>
+        <h1>Takvim, oyun ve ekip yönetimi tek merkezde.</h1>
+        <p>Festival fırsatlarını, oyun karşılaştırmalarını ve günlük ekip bildirimlerini güvenli yönetim alanından kontrol edin.</p>
+        <div class="login-points" aria-label="Yönetim özellikleri">
+          <span>Etkinlik takibi</span><span>Oyun analitiği</span><span>Günlük mail</span>
+        </div>
+      </div>
+      <div class="login-card">
+        <span class="security-badge">Cloudflare Access korumalı</span>
+        <h2>Yönetici girişi</h2>
+        <p>Kurumsal oturumunuza ek olarak yönetici şifrenizi girin. Şifre tarayıcıda kalıcı olarak saklanmaz.</p>
+        <form data-login-form>
+          <label class="login-label" for="admin-password">Yönetici şifresi
+            <input id="admin-password" type="password" required autocomplete="current-password" placeholder="Şifrenizi girin" data-password>
+          </label>
+          <button class="primary" type="submit">Güvenli giriş yap</button>
+        </form>
+        <div class="status" data-login-status role="status" aria-live="polite"></div>
+      </div>
     </section>
 
     <section data-content hidden>
+      <section class="hero">
+        <p class="eyebrow">Özel yönetim alanı</p>
+        <h1>Yönetim Paneli</h1>
+        <p>Panel erişimlerini, günlük e-posta operasyonunu ve son 30 günlük kullanım verilerini tek ekrandan yönetin.</p>
+      </section>
       <div class="toolbar">
         <p data-session-status>Yönetici oturumu açık.</p>
         <button type="button" data-lock>Paneli kilitle</button>
