@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-07-31T22:35:31.465Z",
+  "generatedAt": "2026-07-31T23:42:02.445Z",
   "items": [
+    {
+      "id": "steam-news-5b9270f81",
+      "title": "Moshcave",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1838600/Moshcave/?snr=1_7_7_230_150_1",
+      "dateLabel": "31 Jul, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1838600/03533ef5c1901471f64fc3b6c7f2fdb553622b61/capsule_231x87.jpg?t=1785540697",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-54aadf8bf",
+      "title": "Schooled",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4902420/Schooled/?snr=1_7_7_230_150_1",
+      "dateLabel": "31 Jul, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4902420/a1a84230c7cac52160c808c9eb9fe24897a33af8/capsule_231x87.jpg?t=1785540216",
+      "categories": []
+    },
+    {
+      "id": "steam-news-69a91ffb8",
+      "title": "The Unfamiliars",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4505680/The_Unfamiliars/?snr=1_7_7_230_150_1",
+      "dateLabel": "31 Jul, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4505680/240a90b5c53dbe329de84f38705490c9ec7771dd/capsule_231x87.jpg?t=1785538638",
+      "categories": [
+        "Simülasyon",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-68f23220d",
+      "title": "Brikkle",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4919580/Brikkle/?snr=1_7_7_230_150_1",
+      "dateLabel": "31 Jul, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4919580/e890b754e45516a6b93e83ed46241d91d66e9856/capsule_231x87.jpg?t=1785538120",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-31c244589",
       "title": "Dinofurie | The Dinosaur's Battle Royale",
@@ -231,54 +275,6 @@
       ]
     },
     {
-      "id": "steam-news-e37c66f2e",
-      "title": "Tunnel Rot",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4708230/Tunnel_Rot/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4708230/46c97dbe54b6c203a1517015283f01af8ea75e77/capsule_231x87.jpg?t=1785520061",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-b972b9385",
-      "title": "Defrag Incremental",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4286660/Defrag_Incremental/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4286660/d2ae7e79a3e2b4a18aaf67b868f5ff0356cc2ad3/capsule_231x87.jpg?t=1785519443",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-97766036c",
-      "title": "Appalachian Onslaught",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4404480/Appalachian_Onslaught/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4404480/2b60948595cc700da03ee9e1e1423dc6a4a44c97/capsule_231x87.jpg?t=1785518526",
-      "categories": [
-        "Strateji",
-        "Korku",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-4a60b2643",
-      "title": "Meatballs",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4879070/Meatballs/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4879070/5c3f478b2c0ba919cb01a5c7233348541253cfdb/capsule_231x87.jpg?t=1785518199",
-      "categories": [
-        "Aksiyon",
-        "RPG",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-3877c54c9",
       "title": "天亮之后",
       "kind": "coming_soon",
@@ -385,17 +381,6 @@
       ]
     },
     {
-      "id": "steam-news-aa543bd12",
-      "title": "Dopamine Eggs",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4967270/Dopamine_Eggs/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967270/b2552363cba2244d172a2d84beab44998b0de558/capsule_231x87.jpg?t=1784849422",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-973e09b5e",
       "title": "Columbus",
       "kind": "coming_soon",
@@ -414,6 +399,17 @@
       "categories": [
         "Strateji",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-aa543bd12",
+      "title": "Dopamine Eggs",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4967270/Dopamine_Eggs/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967270/b2552363cba2244d172a2d84beab44998b0de558/capsule_231x87.jpg?t=1784849422",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -473,18 +469,6 @@
       ]
     },
     {
-      "id": "steam-news-94992a437",
-      "title": "GeoPinQuest",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4974830/GeoPinQuest/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974830/e7325864d25d2cb4503d3c4155cf3fd6d4c967ac/capsule_231x87.jpg?t=1784938211",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-690124593",
       "title": "Dungeons & Donuts",
       "kind": "coming_soon",
@@ -494,6 +478,18 @@
       "categories": [
         "Bağımsız",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-94992a437",
+      "title": "GeoPinQuest",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4974830/GeoPinQuest/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974830/e7325864d25d2cb4503d3c4155cf3fd6d4c967ac/capsule_231x87.jpg?t=1784938211",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -535,26 +531,25 @@
       ]
     },
     {
-      "id": "steam-news-c2ff8423c",
-      "title": "MoonCraft",
+      "id": "steam-news-8f86e19f8",
+      "title": "SARA",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4954590/MoonCraft/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4954590/810663e58a140d2a7f5570353a2d727ad4a8e26b/capsule_231x87.jpg?t=1784746045",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
       "categories": [
-        "Strateji",
-        "Gündelik"
+        "Macera",
+        "Korku"
       ]
     },
     {
-      "id": "steam-news-60e3c93e9",
-      "title": "Robin Hood: Sherwood Valley",
+      "id": "steam-news-f1d599a0d",
+      "title": "Meridian",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
       "categories": [
-        "Macera",
         "RPG"
       ]
     },
@@ -564,7 +559,7 @@
       "kind": "platform",
       "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/678504885369439021",
       "publishedAt": "2026-07-24T01:22:45.000Z",
-      "summary": "Steamworks SDK v1.65 has been released, and is available for download from https://partner.steamgames.com. Like any Steamworks SDK release, updating is recommended but not required - older versions will continue to work without issue. Note: This SDK version was re-released July 2"
+      "summary": "Steamworks SDK v1.65 has been released, and is available for download from https://partner.steamgames.com. Like any Steamworks SDK release, updating is recommended but not required - older versions will continue to work without issue. Notes:This SDK version was re-released July 2"
     },
     {
       "id": "steam-news-66543f230",
