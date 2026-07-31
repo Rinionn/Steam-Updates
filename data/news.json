@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-07-31T16:14:56.771Z",
+  "generatedAt": "2026-07-31T16:44:11.811Z",
   "items": [
+    {
+      "id": "steam-news-60d2a5e88",
+      "title": "Flocked and Loaded",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4405090/Flocked_and_Loaded/?snr=1_7_7_230_150_1",
+      "dateLabel": "Jul 31, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4405090/4b4947b0f700540ae6a5cde1d9411b98cf4d24e6/capsule_231x87.jpg?t=1785515503",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-1202633e0",
+      "title": "Point Rush",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4897680/Point_Rush/?snr=1_7_7_230_150_1",
+      "dateLabel": "Jul 31, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4897680/7efdf3667221ca22e878987bd9724283605606a5/capsule_231x87.jpg?t=1785515063",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-32684ac39",
+      "title": "Orbit Blade",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1715930/Orbit_Blade/?snr=1_7_7_230_150_1",
+      "dateLabel": "Jul 31, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1715930/b58426b5dc4b7ebe1860cf8c8e6f4220a530df87/capsule_231x87.jpg?t=1785514971",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-de352a22a",
       "title": "GET OUT! – A Very Bad Dreams Story",
@@ -20,7 +55,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4333900/FROGGLE/?snr=1_7_7_230_150_1",
       "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4333900/13e7c19491366e40f0de67c407a9ca37e2cb8bea/capsule_231x87.jpg?t=1785513820",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4333900/13e7c19491366e40f0de67c407a9ca37e2cb8bea/capsule_231x87.jpg?t=1785515459",
       "categories": [
         "Gündelik",
         "Strateji"
@@ -239,52 +274,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-c56b9e16e",
-      "title": "Welcome to Victorville",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4755610/Welcome_to_Victorville/?snr=1_7_7_230_150_1",
-      "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4755610/1475054e19b09126f69518d814d81ec6c94c1893/capsule_231x87.jpg?t=1785509486",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-909e4a205",
-      "title": "Don’t Pull Me!",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4423110/Dont_Pull_Me/?snr=1_7_7_230_150_1",
-      "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4423110/3c78963c25f19d4342d0804f2e7f22b1d5cc3197/capsule_231x87.jpg?t=1785509323",
-      "categories": [
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-e40fb0643",
-      "title": "Chronicles Of Lumethis",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4962700/Chronicles_Of_Lumethis/?snr=1_7_7_230_150_1",
-      "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4962700/a67eff57ca79006ece537634f35518ad482d46aa/capsule_231x87.jpg?t=1785508221",
-      "categories": [
-        "Macera",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-8881139cd",
-      "title": "Flocked and Loaded",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4405090/Flocked_and_Loaded/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4405090/4b4947b0f700540ae6a5cde1d9411b98cf4d24e6/capsule_231x87.jpg?t=1785513739",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-c0d8aadc0",
       "title": "CypherWars",
       "kind": "coming_soon",
@@ -297,50 +286,27 @@
       ]
     },
     {
-      "id": "steam-news-f09eb24f4",
-      "title": "FLIP",
+      "id": "steam-news-c1fa1d1f4",
+      "title": "Tunnel Rot",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4871370/FLIP/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4708230/Tunnel_Rot/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4871370/ea162b9e592c7009473c86452a3af4ec1f592b39/capsule_231x87.jpg?t=1784816632",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4708230/46c97dbe54b6c203a1517015283f01af8ea75e77/capsule_231x87.jpg?t=1782981003",
       "categories": [
-        "Gündelik"
+        "Korku"
       ]
     },
     {
-      "id": "steam-news-df213c5a6",
-      "title": "Pago Forest 2: Frozen Memories",
+      "id": "steam-news-c19cfb501",
+      "title": "Into the End (of the World)",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4918800/Pago_Forest_2_Frozen_Memories/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4449420/Into_the_End_of_the_World/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4918800/f42e146ba8ea223ed90befbcd469ee4db10a26d8/capsule_231x87.jpg?t=1784091439",
-      "categories": [
-        "Macera",
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-d72dd949b",
-      "title": "Fairtravel Battle CCG",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/917820/Fairtravel_Battle_CCG/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/917820/44262057eadf066255443fc94bca63f5b5ba6423/capsule_231x87.jpg?t=1784818504",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4449420/3d27dee318ba43c8e6a14be30e6f1c784bdfc732/capsule_231x87.jpg?t=1785332300",
       "categories": [
         "Bağımsız",
-        "Tek Oyunculu",
-        "Çok Oyunculu"
+        "Simülasyon"
       ]
-    },
-    {
-      "id": "steam-news-28b74f8f4",
-      "title": "Ocean Survivors",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3225320/Ocean_Survivors/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3225320/772e5845b22ba8c9ada5e32af21cf21797c34555/capsule_231x87.jpg?t=1785017934",
-      "categories": []
     },
     {
       "id": "steam-news-0f7ee6264",
@@ -367,26 +333,16 @@
       ]
     },
     {
-      "id": "steam-news-18971d43b",
-      "title": "Micro Rush",
+      "id": "steam-news-d72dd949b",
+      "title": "Fairtravel Battle CCG",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4014700/Micro_Rush/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/917820/Fairtravel_Battle_CCG/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4014700/d434969eb7b155dc634c51a2accd649ee284486c/capsule_231x87.jpg?t=1785442337",
-      "categories": [
-        "Yarış"
-      ]
-    },
-    {
-      "id": "steam-news-c19cfb501",
-      "title": "Into the End (of the World)",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4449420/Into_the_End_of_the_World/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4449420/3d27dee318ba43c8e6a14be30e6f1c784bdfc732/capsule_231x87.jpg?t=1785332300",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/917820/44262057eadf066255443fc94bca63f5b5ba6423/capsule_231x87.jpg?t=1784818504",
       "categories": [
         "Bağımsız",
-        "Simülasyon"
+        "Tek Oyunculu",
+        "Çok Oyunculu"
       ]
     },
     {
@@ -402,6 +358,59 @@
       ]
     },
     {
+      "id": "steam-news-f09eb24f4",
+      "title": "FLIP",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4871370/FLIP/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "Jul 31, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4871370/ea162b9e592c7009473c86452a3af4ec1f592b39/capsule_231x87.jpg?t=1784816632",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-18971d43b",
+      "title": "Micro Rush",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4014700/Micro_Rush/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "Jul 31, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4014700/d434969eb7b155dc634c51a2accd649ee284486c/capsule_231x87.jpg?t=1785442337",
+      "categories": [
+        "Yarış"
+      ]
+    },
+    {
+      "id": "steam-news-df213c5a6",
+      "title": "Pago Forest 2: Frozen Memories",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4918800/Pago_Forest_2_Frozen_Memories/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "Jul 31, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4918800/f42e146ba8ea223ed90befbcd469ee4db10a26d8/capsule_231x87.jpg?t=1784091439",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-28b74f8f4",
+      "title": "Ocean Survivors",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3225320/Ocean_Survivors/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "Jul 31, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3225320/772e5845b22ba8c9ada5e32af21cf21797c34555/capsule_231x87.jpg?t=1785017934",
+      "categories": []
+    },
+    {
+      "id": "steam-news-9aa7304c6",
+      "title": "SOULMINE",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4765780/SOULMINE/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "Jul 31, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4765780/53a671412992c5e35cc7eda42fd78a00b74bc17a/capsule_231x87.jpg?t=1784559831",
+      "categories": []
+    },
+    {
       "id": "steam-news-c00fc11dd",
       "title": "Unicycle Together",
       "kind": "coming_soon",
@@ -413,15 +422,6 @@
         "Çok Oyunculu",
         "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-9aa7304c6",
-      "title": "SOULMINE",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4765780/SOULMINE/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4765780/53a671412992c5e35cc7eda42fd78a00b74bc17a/capsule_231x87.jpg?t=1784559831",
-      "categories": []
     },
     {
       "id": "steam-news-02bba5488",
@@ -438,17 +438,6 @@
       ]
     },
     {
-      "id": "steam-news-c1fa1d1f4",
-      "title": "Tunnel Rot",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4708230/Tunnel_Rot/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4708230/46c97dbe54b6c203a1517015283f01af8ea75e77/capsule_231x87.jpg?t=1782981003",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-c8d6f119c",
       "title": "Defrag Incremental",
       "kind": "coming_soon",
@@ -457,6 +446,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4286660/d2ae7e79a3e2b4a18aaf67b868f5ff0356cc2ad3/capsule_231x87.jpg?t=1785255990",
       "categories": [
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-5fe9574f6",
+      "title": "Rough Draft",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4581350/Rough_Draft/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "Jul 31, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4581350/448314e1ca6f617e309ecfc45d976c0615131192/capsule_231x87.jpg?t=1783949133",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -494,17 +494,6 @@
         "Aksiyon",
         "Macera",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-5fe9574f6",
-      "title": "Rough Draft",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4581350/Rough_Draft/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "Jul 31, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4581350/448314e1ca6f617e309ecfc45d976c0615131192/capsule_231x87.jpg?t=1783949133",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -551,6 +540,17 @@
       "categories": []
     },
     {
+      "id": "steam-news-e5215df47",
+      "title": "东周拟战",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1162080/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "Jul 31, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1162080/capsule_231x87.jpg?t=1650351603",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-c560bed11",
       "title": "Steamworks SDK 1.65 has been released",
       "kind": "platform",
@@ -560,35 +560,35 @@
     },
     {
       "id": "steam-news-66543f230",
-      "title": "NEW: The Steam sales and events scheduled so far for 2027",
+      "title": "НОВОЕ: расписание распродаж и мероприятий в Steam на первую половину 2027 года",
       "kind": "platform",
       "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/668369251018480125",
       "publishedAt": "2026-07-15T18:12:44.000Z",
-      "summary": "What better way to celebrate making it (more than) halfway through 2026 than by sharing the schedule of all the awesome Steam events we have planned for the first half of 2027? Each year we work to come up with different ideas for fun themes to build fests around so that all kind"
+      "summary": "Что может быть лучше, чем отметить прохождение экватора 2026 года, объявив расписание замечательных мероприятий, которые мы запланировали на первую половину 2027 года в Steam? Каждый год мы подбираем интересные темы для фестивалей, чтобы привлечь внимание к самым разнообразным иг"
     },
     {
       "id": "steam-news-999fe50a2",
-      "title": "Updates to Developer/Publisher/Franchise Homepage Tool",
+      "title": "Обновление инструмента для настройки страниц разработчиков и издателей",
       "kind": "platform",
       "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/668369251018474261",
       "publishedAt": "2026-07-13T19:26:29.000Z",
-      "summary": "Earlier this year, we added a brand new tool for creating and editing your Developer/ Publisher/ Franchise homepages on Steam. The response from developers has been very positive and we've received some useful suggestions for further improvements. Based on the feedback, we’ve now"
+      "summary": "Ранее в этом году мы добавили новый инструмент для создания и редактирования домашних страниц разработчиков и издателей, а также страниц серий игр. Разработчики восприняли его очень положительно, и мы получили от них предложения для дальнейших улучшений. На основе этих отзывов мы"
     },
     {
       "id": "steam-news-351c8f297",
-      "title": "Steam Machine and Steam Frame Standalone Verified",
+      "title": "Программы проверки для Steam Machine и Steam Frame",
       "kind": "platform",
       "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/716780409378048028",
       "publishedAt": "2026-06-04T22:04:46.000Z",
-      "summary": "Hello!Today we are expanding the Verified program to include Steam Machine and Steam Frame, both of which are shipping this summer. As with Steam Deck Verified, the goal is to help customers understand the out-of-box experience for a given title on these new devices, and how smoo"
+      "summary": "Здравствуйте!Мы расширяем нашу программу проверки игр — теперь она будет включать рейтинги для Steam Machine и Steam Frame. Оба устройства поступят в продажу этим летом. Как и в случае со Steam Deck, наша цель — помочь пользователям понять, чего ожидать при первом запуске игры на"
     },
     {
       "id": "steam-news-ab9816f41",
-      "title": "Update to Store Tags: Additions, Removals, and Edits",
+      "title": "Обновление меток магазина: добавление, удаление и изменение",
       "kind": "platform",
       "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/528746250052307456",
       "publishedAt": "2026-05-18T20:44:39.000Z",
-      "summary": "Today we've made some changes to the set of official store tags available on Steam, adding 17 new tags, removing 28, and merging/updating a handful of others. These changes are made with the goal of helping Steam generate appropriate recommendations, and helping players identify "
+      "summary": "Сегодня мы внесли некоторые изменения в набор официальных меток в магазине Steam: добавили 17 новых, удалили 28 и объединили/обновили ещё несколько. Эти изменения должны упростить поиск новых игр, которые лучше всего соответствуют интересам пользователей, и улучшить генерацию под"
     }
   ]
 }
