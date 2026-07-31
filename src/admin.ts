@@ -1,3 +1,5 @@
+import { renderSteamRadarLogo } from "./app-shell.js";
+
 export function renderAdminPage(): string {
   return `<!doctype html>
 <html lang="tr">
@@ -6,6 +8,9 @@ export function renderAdminPage(): string {
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
   <title>Yönetim · Steam Etkinlik Radarı</title>
   <style>
     :root {
@@ -20,11 +25,12 @@ export function renderAdminPage(): string {
       --purple:#9823d7;
       --danger:#ff6c93;
       --success:#6fe3af;
+      --amber:#f6b94a;
       --shadow:0 24px 70px rgba(0,0,0,.34);
       --gradient:linear-gradient(110deg,var(--purple),var(--pink));
     }
     * { box-sizing:border-box; }
-    html { background:var(--bg); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    html { background:var(--bg); color:var(--ink); font-family:Montserrat,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
     body { margin:0; min-width:320px; background:
       radial-gradient(circle at 8% -5%,rgba(152,35,215,.18),transparent 34rem),
       radial-gradient(circle at 92% 15%,rgba(243,51,145,.12),transparent 32rem),
@@ -40,7 +46,13 @@ export function renderAdminPage(): string {
     .shell { width:min(1180px,calc(100% - 28px)); margin:0 auto; padding:20px 0 54px; }
     .topbar { display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:24px; }
     .brand { display:flex; align-items:center; gap:11px; color:var(--ink); text-decoration:none; }
-    .brand-mark { display:grid; width:38px; height:38px; place-items:center; border-radius:12px; background:var(--gradient); font-weight:950; }
+    .brand-mark { display:block; width:42px; height:42px; flex:0 0 auto; }
+    .brand-mark .app-brand-logo { display:block; width:42px; height:42px; }
+    .brand-mark .app-logo-stop-start { stop-color:var(--purple); }
+    .brand-mark .app-logo-stop-end { stop-color:var(--pink); }
+    .brand-mark .app-logo-line { stroke:var(--ink); }
+    .brand-mark .app-logo-origin { fill:var(--ink); }
+    .brand-mark .app-logo-target { fill:var(--amber); }
     .brand-copy strong,.brand-copy span { display:block; }
     .brand-copy strong { font-size:15px; }
     .brand-copy span { margin-top:2px; color:var(--muted); font-size:10px; }
@@ -93,7 +105,7 @@ export function renderAdminPage(): string {
   <main class="shell">
     <header class="topbar">
       <a class="brand" href="/" aria-label="Steam Etkinlik Radarı ana sayfasına dön">
-        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-mark">${renderSteamRadarLogo("admin-header")}</span>
         <span class="brand-copy"><strong>Steam Etkinlik Radarı</strong><span>Joygame Select</span></span>
       </a>
       <a class="back" href="/">← Panele dön</a>

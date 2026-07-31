@@ -67,6 +67,9 @@ describe("event timeline", () => {
 
     expect(html).not.toContain('class="stats"');
     expect(html).toContain("data-event-timeline");
+    expect(html).toContain('id="event-calendar-overview" data-dashboard-panel="events"');
+    expect(html).toContain("Steam Etkinlik Takvimi");
+    expect(html).not.toContain('data-i18n-html="title"');
     expect(html).toContain('id="etkinlik-test-fest"');
     expect(html).toContain("timeline-highlight");
     expect(html).not.toContain("Takvimi indir (.ics)");

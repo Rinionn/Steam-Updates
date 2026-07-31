@@ -1,6 +1,11 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { DateTime } from "luxon";
+import {
+  renderAppHeader,
+  renderAppShellStyles,
+  renderAppSidebar,
+} from "./app-shell.js";
 import { readChangelog } from "./changelog.js";
 import { config, paths } from "./config.js";
 import { deadlineCopy } from "./deadline-copy.js";
@@ -527,12 +532,27 @@ export function renderReport(
       });
     }
   }
+  const analyticsUrl = new URL("analytics", config.dashboardUrl).toString();
+  const appHeader = renderAppHeader({
+    surface: "radar",
+    centerHtml:
+      '<span data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span>',
+    actionsHtml:
+      '<div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel"><button class="active" type="button" data-language="tr" aria-pressed="true">TR</button><button type="button" data-language="en" aria-pressed="false">EN</button></div><a href="/admin" data-i18n="admin">Yönetim</a>',
+  });
+  const appSidebar = renderAppSidebar({
+    surface: "radar",
+    analyticsUrl,
+  });
   const html = `<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
   <title>Steam Etkinlik Radarı</title>
   <style>
     :root {
@@ -580,6 +600,21 @@ export function renderReport(
       --gradient-brand: linear-gradient(90deg, var(--color-action-purple), var(--color-action-pink));
       --gradient-festival: linear-gradient(90deg, var(--color-action-purple), var(--color-action-magenta));
       --gradient-seasonal: linear-gradient(90deg, var(--color-action-pink-deep), var(--color-action-pink));
+      --app-header-bg: var(--color-hero-end);
+      --app-header-text: var(--color-on-accent);
+      --app-header-muted: var(--color-hero-copy);
+      --app-surface: var(--color-panel);
+      --app-surface-soft: var(--color-panel-subtle);
+      --app-text: var(--color-ink);
+      --app-muted: var(--color-muted);
+      --app-line: var(--color-line);
+      --app-gradient: var(--gradient-brand);
+      --app-shadow: var(--color-shadow);
+      --app-transparent: var(--color-transparent);
+      --app-brand-start: var(--color-action-purple);
+      --app-brand-end: var(--color-action-pink);
+      --app-brand-target: var(--color-amber);
+      --app-logo-ink: var(--color-on-accent);
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -606,6 +641,7 @@ export function renderReport(
         --color-footer: #81758f;
       }
     }
+    ${renderAppShellStyles()}
     * { box-sizing: border-box; }
     html { overflow-x: hidden; }
     body {
@@ -613,7 +649,7 @@ export function renderReport(
       min-height: 100vh;
       overflow-x: hidden;
       color: var(--color-ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-family: Montserrat, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
       background:
         radial-gradient(circle at 12% 3%, var(--color-background-glow-purple), var(--color-transparent) 34rem),
         radial-gradient(circle at 88% 18%, var(--color-background-glow-pink), var(--color-transparent) 30rem),
@@ -671,13 +707,18 @@ export function renderReport(
       box-shadow: 0 24px 80px var(--color-shadow), 0 0 56px var(--color-shadow-glow);
     }
     .language-switch { display:flex; width:max-content; max-width:100%; gap:5px; margin:0 0 14px auto; padding:4px; border:1px solid var(--color-hero-line); border-radius:999px; background:var(--color-hero-card); }
+    .app-topbar-actions .language-switch { margin:0; }
     .hero-tools { display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:14px; }
     .hero-tools .language-switch { margin:0; }
     .language-switch button { min-width:42px; min-height:34px; padding:6px 9px; color:var(--color-hero-copy); border-color:var(--color-transparent); background:var(--color-transparent); font-size:10px; font-weight:900; }
     .language-switch button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
     .eyebrow { color: var(--color-accent-pink); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; }
-    h1 { margin: 12px 0 10px; overflow-wrap: anywhere; font-family: Montserrat, Inter, sans-serif; font-size: clamp(34px, 12vw, 70px); font-weight: 900; line-height: .98; letter-spacing: -.045em; text-transform: uppercase; }
+    h1 { margin: 12px 0 10px; overflow-wrap: anywhere; font-family: Montserrat, ui-sans-serif, sans-serif; font-size: clamp(34px, 12vw, 70px); font-weight: 900; line-height: .98; letter-spacing: -.045em; text-transform: uppercase; }
     .hero p { max-width: 690px; color: var(--color-hero-copy); font-size: 16px; line-height: 1.65; margin: 0; }
+    .calendar-overview { padding:22px; border-radius:20px; }
+    .calendar-overview h1 { margin:7px 0 8px; font-size:clamp(28px,5vw,42px); line-height:1.05; letter-spacing:-.035em; text-transform:none; }
+    .calendar-overview p { max-width:780px; font-size:14px; }
+    .calendar-overview .event-timeline { margin-top:20px; }
     .event-timeline { margin-top:28px; overflow:hidden; border:1px solid var(--color-hero-line); border-radius:20px; background:var(--color-hero-card); }
     .timeline-status { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; padding:13px 14px; border-bottom:1px solid var(--color-hero-line); color:var(--color-hero-copy); font-size:11px; }
     .timeline-status time { flex:0 1 42%; font-weight:800; }
@@ -993,41 +1034,14 @@ export function renderReport(
   </style>
 </head>
 <body>
-  <header class="global-topbar">
-    <a class="global-brand" href="/"><span class="global-brand-mark" aria-hidden="true">S</span><span>Steam Radar</span></a>
-    <span class="global-topbar-copy" data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span>
-    <div class="global-topbar-actions"><a href="/admin" data-i18n="admin">Yönetim</a></div>
-  </header>
-  <div class="dashboard-app-shell">
-    <aside class="global-sidebar" aria-label="Ana menü" data-i18n-aria-label="mainMenu">
-      <nav>
-        <span class="global-sidebar-label">Steam Radar</span>
-        <button class="active" type="button" aria-current="page" aria-pressed="true" data-view-tab="events"><span class="global-sidebar-icon" aria-hidden="true">◫</span><span data-i18n="radarTab">Etkinlik Radarı</span></button>
-        <button type="button" aria-pressed="false" data-view-tab="games"><span class="global-sidebar-icon" aria-hidden="true">▣</span><span data-i18n="myGames">Oyunlarım</span></button>
-        <button type="button" aria-pressed="false" data-view-tab="steamworks"><span class="global-sidebar-icon" aria-hidden="true">◉</span><span data-i18n="steamNews">Steam Haberleri</span></button>
-        <button type="button" aria-pressed="false" data-view-tab="releases"><span class="global-sidebar-icon" aria-hidden="true">◷</span><span data-i18n="releasesTab">Yeni Çıkan / Çıkacak</span></button>
-        <button type="button" aria-pressed="false" data-view-tab="stats"><span class="global-sidebar-icon" aria-hidden="true">▥</span><span data-i18n="gameComparison">Oyun İstatistikleri</span></button>
-        <span class="global-sidebar-separator" aria-hidden="true"></span>
-        <span class="global-sidebar-label" data-i18n="marketAnalysis">Pazar Analizi</span>
-        <a href="${new URL("analytics", config.dashboardUrl).toString()}#home"><span class="global-sidebar-icon" aria-hidden="true">⌂</span><span data-i18n="analyticsHome">Ana Sayfa</span></a>
-        <a href="${new URL("analytics", config.dashboardUrl).toString()}#steam-analytics"><span class="global-sidebar-icon" aria-hidden="true">◔</span><span data-i18n="steamAnalytics">Steam Analitiği</span></a>
-        <a href="${new URL("analytics", config.dashboardUrl).toString()}#games"><span class="global-sidebar-icon" aria-hidden="true">▣</span><span data-i18n="gamesList">Oyunlar Listesi</span></a>
-        <a href="${new URL("analytics", config.dashboardUrl).toString()}#publishers"><span class="global-sidebar-icon" aria-hidden="true">▰</span><span data-i18n="publishersList">Yayıncılar Listesi</span></a>
-        <a href="${new URL("analytics", config.dashboardUrl).toString()}#genres-tags"><span class="global-sidebar-icon" aria-hidden="true">◆</span><span data-i18n="genresTags">Türler ve Etiketler</span></a>
-        <a href="${new URL("analytics", config.dashboardUrl).toString()}#years"><span class="global-sidebar-icon" aria-hidden="true">▦</span><span data-i18n="years">Yıllar</span></a>
-      </nav>
-    </aside>
-    <main class="shell">
-    <section class="hero" id="top">
-      <div class="hero-tools">
-        <div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel">
-          <button class="active" type="button" data-language="tr" aria-pressed="true">TR</button>
-          <button type="button" data-language="en" aria-pressed="false">EN</button>
-        </div>
-      </div>
-      <span class="eyebrow" data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span>
-      <h1 data-i18n-html="title">Steam Etkinlik<br>Radarı</h1>
-      <p data-i18n="heroDescription">Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.</p>
+  ${appHeader}
+  <div class="app-layout" data-app-shell>
+    ${appSidebar}
+    <main class="app-main shell">
+    <section class="hero calendar-overview dashboard-panel" id="event-calendar-overview" data-dashboard-panel="events" aria-labelledby="event-calendar-overview-heading">
+      <span class="eyebrow" data-i18n="eventCalendarEyebrow">Resmî Steamworks takvimi</span>
+      <h1 id="event-calendar-overview-heading" data-i18n="eventCalendarTitle">Steam Etkinlik Takvimi</h1>
+      <p data-i18n="eventCalendarDescription">Önümüzdeki ayları, etkinlik başlangıçlarını ve açık başvuru tarihlerini tek takvimde takip et.</p>
       ${renderTimeline(model, config.timezone)}
     </section>
 
@@ -1441,6 +1455,7 @@ export function renderReport(
       changesShort: { tr: "Değişiklikler", en: "Changes" },
       contentView: { tr: "İçerik görünümü", en: "Content view" },
       radarTab: { tr: "Etkinlik Radarı", en: "Event Radar" },
+      eventsTab: { tr: "Etkinlik Takvimi", en: "Event Calendar" },
       releasesTab: { tr: "Yeni Çıkan / Çıkacak", en: "New / Upcoming Games" },
       marketAnalysis: { tr: "Pazar Analizi", en: "Market Analysis" },
       analyticsHome: { tr: "Ana Sayfa", en: "Home" },
@@ -1463,6 +1478,18 @@ export function renderReport(
       heroDescription: {
         tr: "Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.",
         en: "Track festivals, seasonal sales, and registration milestones from Steam’s official calendar in one Joygame Select operations view.",
+      },
+      eventCalendarEyebrow: {
+        tr: "Resmî Steamworks takvimi",
+        en: "Official Steamworks calendar",
+      },
+      eventCalendarTitle: {
+        tr: "Steam Etkinlik Takvimi",
+        en: "Steam Event Calendar",
+      },
+      eventCalendarDescription: {
+        tr: "Önümüzdeki ayları, etkinlik başlangıçlarını ve açık başvuru tarihlerini tek takvimde takip et.",
+        en: "Track the coming months, event start dates, and open registration deadlines in one calendar.",
       },
       myGames: { tr: "Oyunlarım", en: "My Games" },
       gamesIntro: {

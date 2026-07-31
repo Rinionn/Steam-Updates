@@ -1,4 +1,18 @@
+import {
+  renderAppHeader,
+  renderAppShellStyles,
+  renderAppSidebar,
+} from "./app-shell.js";
+
 export function renderAnalyticsPage(): string {
+  const appHeader = renderAppHeader({
+    surface: "analytics",
+    centerHtml:
+      '<form class="global-search" data-global-search role="search"><span aria-hidden="true">⌕</span><input type="search" name="query" aria-label="Steam oyunlarında ara" placeholder="Steam oyunlarında ara"></form>',
+    actionsHtml:
+      '<a href="/">Etkinlik Takvimi</a><a href="/admin">Yönetim</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Temayı değiştir">◐</button>',
+  });
+  const appSidebar = renderAppSidebar({ surface: "analytics" });
   return `<!doctype html>
 <html lang="tr" data-theme="light">
 <head>
@@ -6,12 +20,16 @@ export function renderAnalyticsPage(): string {
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
   <title>Steam Pazar Analizi</title>
   <style>
     :root {
       --topbar:#14091f;
       --topbar-control:#2a1738;
       --topbar-text:#fffafc;
+      --topbar-muted:#c8bdd4;
       --bg:#f7f3fa;
       --surface:#ffffff;
       --surface-soft:#fbf8fc;
@@ -41,6 +59,21 @@ export function renderAnalyticsPage(): string {
       --chart-4:#ff3e96;
       --chart-5:#f6b94a;
       --placeholder:linear-gradient(135deg,#eadff0,#fbf8fc);
+      --app-header-bg:var(--topbar);
+      --app-header-text:var(--topbar-text);
+      --app-header-muted:var(--topbar-muted);
+      --app-surface:var(--sidebar);
+      --app-surface-soft:var(--surface-soft);
+      --app-text:var(--text);
+      --app-muted:var(--muted);
+      --app-line:var(--line);
+      --app-gradient:var(--gradient-brand);
+      --app-shadow:var(--shadow);
+      --app-transparent:var(--transparent);
+      --app-brand-start:var(--brand-start);
+      --app-brand-end:var(--brand-end);
+      --app-brand-target:var(--warning);
+      --app-logo-ink:var(--topbar-text);
     }
     html[data-theme="dark"] {
       --bg:#090512;
@@ -59,8 +92,9 @@ export function renderAnalyticsPage(): string {
       --glow-pink:rgba(255,62,150,.16);
       --placeholder:linear-gradient(135deg,#2c1b38,#1a1026);
     }
+    ${renderAppShellStyles()}
     * { box-sizing:border-box; }
-    html { min-width:320px; background:var(--bg); color:var(--text); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    html { min-width:320px; background:var(--bg); color:var(--text); font-family:Montserrat,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
     body { margin:0; background:radial-gradient(circle at 12% 3%,var(--glow-purple),var(--transparent) 34rem),radial-gradient(circle at 88% 18%,var(--glow-pink),var(--transparent) 30rem),var(--bg); }
     button,input,select { font:inherit; }
     button,a,input,select,summary { -webkit-tap-highlight-color:var(--transparent); }
@@ -247,33 +281,10 @@ export function renderAnalyticsPage(): string {
   </style>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">S</span><span>Steam Radar</span></a>
-    <form class="global-search" data-global-search role="search"><span aria-hidden="true">⌕</span><input type="search" name="query" aria-label="Steam oyunlarında ara" placeholder="Steam oyunlarında ara"></form>
-    <div class="top-actions"><a href="/">Etkinlik Radarı</a><a href="/admin">Yönetim</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Temayı değiştir">◐</button></div>
-  </header>
-  <div class="app-shell">
-    <aside class="sidebar" aria-label="Ana menü">
-      <nav>
-        <span class="sidebar-label">Steam Radar</span>
-        <a href="/#view=events"><span class="nav-icon" aria-hidden="true">◫</span><span>Etkinlik Radarı</span></a>
-        <a href="/#view=games"><span class="nav-icon" aria-hidden="true">▣</span><span>Oyunlarım</span></a>
-        <a href="/#view=steamworks"><span class="nav-icon" aria-hidden="true">◉</span><span>Steam Haberleri</span></a>
-        <a href="/#view=releases"><span class="nav-icon" aria-hidden="true">◷</span><span>Yeni Çıkan / Çıkacak</span></a>
-        <a href="/#view=stats"><span class="nav-icon" aria-hidden="true">▥</span><span>Oyun İstatistikleri</span></a>
-        <span class="sidebar-separator" aria-hidden="true"></span>
-        <span class="sidebar-label">Pazar Analizi</span>
-        ${navButton("home", "⌂", "Ana Sayfa", true)}
-        ${navButton("steam-analytics", "◔", "Steam Analitiği")}
-        ${navButton("games", "▣", "Oyunlar Listesi")}
-        ${navButton("publishers", "▰", "Yayıncılar Listesi")}
-        ${navButton("genres-tags", "◆", "Türler ve Etiketler")}
-        ${navButton("years", "▦", "Yıllar")}
-        <span class="sidebar-separator" aria-hidden="true"></span>
-        <a href="/admin"><span class="nav-icon" aria-hidden="true">⚙</span><span>Yönetim</span></a>
-      </nav>
-    </aside>
-    <main class="main">
+  ${appHeader}
+  <div class="app-layout" data-app-shell>
+    ${appSidebar}
+    <main class="app-main main">
       <header class="page-intro"><h1 data-page-title tabindex="-1">Steam Pazar Analizi</h1><p data-page-description>Steam oyunlarının tahmini satış, gelir, oyuncu ve fiyat verilerini inceleyin.</p></header>
 
       <section class="view" data-view="home">
@@ -398,15 +409,6 @@ export function renderAnalyticsPage(): string {
   </script>
 </body>
 </html>`;
-}
-
-function navButton(
-  route: string,
-  icon: string,
-  label: string,
-  active = false,
-): string {
-  return `<button class="${active ? "active" : ""}" type="button" data-route="${route}"${active ? ' aria-current="page"' : ""}><span class="nav-icon" aria-hidden="true">${icon}</span><span>${label}</span></button>`;
 }
 
 function filterForm(name: string, includeReleaseStatus: boolean): string {

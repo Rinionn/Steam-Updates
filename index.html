@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
   <title>Steam Etkinlik Radarı</title>
   <style>
     :root {
@@ -51,6 +54,21 @@
       --gradient-brand: linear-gradient(90deg, var(--color-action-purple), var(--color-action-pink));
       --gradient-festival: linear-gradient(90deg, var(--color-action-purple), var(--color-action-magenta));
       --gradient-seasonal: linear-gradient(90deg, var(--color-action-pink-deep), var(--color-action-pink));
+      --app-header-bg: var(--color-hero-end);
+      --app-header-text: var(--color-on-accent);
+      --app-header-muted: var(--color-hero-copy);
+      --app-surface: var(--color-panel);
+      --app-surface-soft: var(--color-panel-subtle);
+      --app-text: var(--color-ink);
+      --app-muted: var(--color-muted);
+      --app-line: var(--color-line);
+      --app-gradient: var(--gradient-brand);
+      --app-shadow: var(--color-shadow);
+      --app-transparent: var(--color-transparent);
+      --app-brand-start: var(--color-action-purple);
+      --app-brand-end: var(--color-action-pink);
+      --app-brand-target: var(--color-amber);
+      --app-logo-ink: var(--color-on-accent);
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -77,6 +95,53 @@
         --color-footer: #81758f;
       }
     }
+
+    .app-topbar { position:sticky; top:0; z-index:50; display:grid; grid-template-columns:240px minmax(220px,1fr) auto; align-items:center; gap:16px; min-height:64px; padding:8px 22px; color:var(--app-header-text); background:var(--app-header-bg); box-shadow:0 2px 12px var(--app-shadow); }
+    .app-brand { display:flex; min-width:0; align-items:center; gap:10px; color:var(--app-header-text); text-decoration:none; }
+    .app-brand-logo { display:block; width:42px; height:42px; flex:0 0 auto; }
+    .app-logo-stop-start { stop-color:var(--app-brand-start); }
+    .app-logo-stop-end { stop-color:var(--app-brand-end); }
+    .app-logo-line { stroke:var(--app-logo-ink); }
+    .app-logo-origin { fill:var(--app-logo-ink); }
+    .app-logo-target { fill:var(--app-brand-target); }
+    .app-brand-copy { display:grid; min-width:0; line-height:1; }
+    .app-brand-copy strong { overflow:hidden; font-size:17px; font-weight:900; letter-spacing:-.025em; text-overflow:ellipsis; white-space:nowrap; }
+    .app-brand-copy small { margin-top:4px; color:var(--app-header-muted); font-size:9px; font-weight:800; letter-spacing:.09em; text-transform:uppercase; }
+    .app-topbar-center { min-width:0; overflow:hidden; color:var(--app-header-muted); font-size:12px; font-weight:700; text-overflow:ellipsis; white-space:nowrap; }
+    .app-topbar-actions { display:flex; min-width:0; align-items:center; justify-content:flex-end; gap:8px; }
+    .app-topbar-actions > a,.app-topbar-actions > button { display:inline-flex; min-height:38px; align-items:center; justify-content:center; padding:7px 12px; border:0; border-radius:8px; color:var(--app-header-text); background:var(--app-gradient); text-decoration:none; font-size:11px; font-weight:850; cursor:pointer; }
+    .app-topbar-actions > a:hover,.app-topbar-actions > button:hover { filter:brightness(1.12); }
+    .app-layout { display:grid; grid-template-columns:240px minmax(0,1fr); min-height:calc(100vh - 64px); }
+    .app-main { min-width:0; }
+    .app-sidebar { position:sticky; top:64px; align-self:start; height:calc(100vh - 64px); overflow-y:auto; border-right:1px solid var(--app-line); background:var(--app-surface); }
+    .app-sidebar nav { display:grid; padding:8px 0; }
+    .app-sidebar-label { padding:12px 16px 7px; color:var(--app-muted); font-size:10px; font-weight:850; letter-spacing:.09em; text-transform:uppercase; }
+    .app-sidebar button,.app-sidebar a { display:grid; grid-template-columns:38px minmax(0,1fr); align-items:center; width:100%; min-height:48px; padding:8px 16px; border:0; border-radius:0; color:var(--app-text); background:var(--app-transparent); text-align:left; text-decoration:none; cursor:pointer; font-size:13px; font-weight:700; }
+    .app-sidebar button:hover,.app-sidebar a:hover { background:var(--app-surface-soft); }
+    .app-sidebar button.active { color:var(--app-header-text); background:var(--app-gradient); }
+    .app-nav-icon { color:var(--app-muted); font-size:17px; text-align:center; }
+    .app-sidebar button.active .app-nav-icon { color:var(--app-header-text); }
+    .app-sidebar-separator { height:1px; margin:8px 0; background:var(--app-line); }
+    @media (max-width:920px) {
+      .app-topbar { grid-template-columns:auto minmax(180px,1fr) auto; padding-inline:12px; }
+      .app-brand-copy strong { font-size:15px; }
+      .app-topbar[data-app-surface="analytics"] .app-topbar-actions a { display:none; }
+      .app-layout { grid-template-columns:190px minmax(0,1fr); }
+      .app-sidebar button,.app-sidebar a { padding-inline:10px; }
+    }
+    @media (max-width:760px) {
+      .app-topbar { position:relative; grid-template-columns:auto minmax(0,1fr) auto; min-height:58px; gap:8px; padding-inline:10px; }
+      .app-brand-logo { width:36px; height:36px; }
+      .app-brand-copy { display:none; }
+      .app-topbar[data-app-surface="radar"] .app-topbar-center { display:none; }
+      .app-layout { display:block; min-height:0; }
+      .app-sidebar { position:sticky; top:0; z-index:40; width:100%; height:auto; overflow-x:auto; overflow-y:hidden; border-right:0; border-bottom:1px solid var(--app-line); }
+      .app-sidebar nav { display:flex; width:max-content; padding:0; }
+      .app-sidebar-label { display:flex; align-items:center; padding:8px 11px; white-space:nowrap; }
+      .app-sidebar button,.app-sidebar a { display:flex; width:auto; min-height:48px; padding:8px 11px; white-space:nowrap; }
+      .app-nav-icon { width:24px; font-size:15px; }
+      .app-sidebar-separator { width:1px; height:32px; margin:8px 2px; flex:0 0 auto; }
+    }
     * { box-sizing: border-box; }
     html { overflow-x: hidden; }
     body {
@@ -84,7 +149,7 @@
       min-height: 100vh;
       overflow-x: hidden;
       color: var(--color-ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-family: Montserrat, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
       background:
         radial-gradient(circle at 12% 3%, var(--color-background-glow-purple), var(--color-transparent) 34rem),
         radial-gradient(circle at 88% 18%, var(--color-background-glow-pink), var(--color-transparent) 30rem),
@@ -142,13 +207,18 @@
       box-shadow: 0 24px 80px var(--color-shadow), 0 0 56px var(--color-shadow-glow);
     }
     .language-switch { display:flex; width:max-content; max-width:100%; gap:5px; margin:0 0 14px auto; padding:4px; border:1px solid var(--color-hero-line); border-radius:999px; background:var(--color-hero-card); }
+    .app-topbar-actions .language-switch { margin:0; }
     .hero-tools { display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-bottom:14px; }
     .hero-tools .language-switch { margin:0; }
     .language-switch button { min-width:42px; min-height:34px; padding:6px 9px; color:var(--color-hero-copy); border-color:var(--color-transparent); background:var(--color-transparent); font-size:10px; font-weight:900; }
     .language-switch button.active { color:var(--color-on-accent); background:var(--gradient-brand); }
     .eyebrow { color: var(--color-accent-pink); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: 12px; }
-    h1 { margin: 12px 0 10px; overflow-wrap: anywhere; font-family: Montserrat, Inter, sans-serif; font-size: clamp(34px, 12vw, 70px); font-weight: 900; line-height: .98; letter-spacing: -.045em; text-transform: uppercase; }
+    h1 { margin: 12px 0 10px; overflow-wrap: anywhere; font-family: Montserrat, ui-sans-serif, sans-serif; font-size: clamp(34px, 12vw, 70px); font-weight: 900; line-height: .98; letter-spacing: -.045em; text-transform: uppercase; }
     .hero p { max-width: 690px; color: var(--color-hero-copy); font-size: 16px; line-height: 1.65; margin: 0; }
+    .calendar-overview { padding:22px; border-radius:20px; }
+    .calendar-overview h1 { margin:7px 0 8px; font-size:clamp(28px,5vw,42px); line-height:1.05; letter-spacing:-.035em; text-transform:none; }
+    .calendar-overview p { max-width:780px; font-size:14px; }
+    .calendar-overview .event-timeline { margin-top:20px; }
     .event-timeline { margin-top:28px; overflow:hidden; border:1px solid var(--color-hero-line); border-radius:20px; background:var(--color-hero-card); }
     .timeline-status { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; padding:13px 14px; border-bottom:1px solid var(--color-hero-line); color:var(--color-hero-copy); font-size:11px; }
     .timeline-status time { flex:0 1 42%; font-weight:800; }
@@ -464,41 +534,49 @@
   </style>
 </head>
 <body>
-  <header class="global-topbar">
-    <a class="global-brand" href="/"><span class="global-brand-mark" aria-hidden="true">S</span><span>Steam Radar</span></a>
-    <span class="global-topbar-copy" data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span>
-    <div class="global-topbar-actions"><a href="/admin" data-i18n="admin">Yönetim</a></div>
+  <header class="app-topbar" data-app-header data-app-surface="radar">
+    <a class="app-brand" href="/" aria-label="Steam Radar ana sayfası">
+      <svg class="app-brand-logo" data-steam-radar-logo viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+    <defs><linearGradient id="radar-header-gradient" x1="5" y1="7" x2="43" y2="43"><stop class="app-logo-stop-start"/><stop class="app-logo-stop-end" offset="1"/></linearGradient></defs>
+    <rect class="app-logo-tile" x="5" y="7" width="38" height="36" rx="10" fill="url(#radar-header-gradient)"/>
+    <g class="app-logo-line" fill="none" stroke-width="2.6" stroke-linecap="round">
+      <path d="M14 5v8M34 5v8M7 17.5h34"/>
+      <path d="M19 24a6 6 0 0 1 6 6M19 19a11 11 0 0 1 11 11M19 30l12-8"/>
+    </g>
+    <circle class="app-logo-origin" cx="19" cy="30" r="2.4"/>
+    <circle class="app-logo-target" cx="31" cy="22" r="2.2"/>
+  </svg>
+      <span class="app-brand-copy"><strong>Steam Radar</strong><small>Joygame Select</small></span>
+    </a>
+    <div class="app-topbar-center"><span data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span></div>
+    <div class="app-topbar-actions"><div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel"><button class="active" type="button" data-language="tr" aria-pressed="true">TR</button><button type="button" data-language="en" aria-pressed="false">EN</button></div><a href="/admin" data-i18n="admin">Yönetim</a></div>
   </header>
-  <div class="dashboard-app-shell">
-    <aside class="global-sidebar" aria-label="Ana menü" data-i18n-aria-label="mainMenu">
-      <nav>
-        <span class="global-sidebar-label">Steam Radar</span>
-        <button class="active" type="button" aria-current="page" aria-pressed="true" data-view-tab="events"><span class="global-sidebar-icon" aria-hidden="true">◫</span><span data-i18n="radarTab">Etkinlik Radarı</span></button>
-        <button type="button" aria-pressed="false" data-view-tab="games"><span class="global-sidebar-icon" aria-hidden="true">▣</span><span data-i18n="myGames">Oyunlarım</span></button>
-        <button type="button" aria-pressed="false" data-view-tab="steamworks"><span class="global-sidebar-icon" aria-hidden="true">◉</span><span data-i18n="steamNews">Steam Haberleri</span></button>
-        <button type="button" aria-pressed="false" data-view-tab="releases"><span class="global-sidebar-icon" aria-hidden="true">◷</span><span data-i18n="releasesTab">Yeni Çıkan / Çıkacak</span></button>
-        <button type="button" aria-pressed="false" data-view-tab="stats"><span class="global-sidebar-icon" aria-hidden="true">▥</span><span data-i18n="gameComparison">Oyun İstatistikleri</span></button>
-        <span class="global-sidebar-separator" aria-hidden="true"></span>
-        <span class="global-sidebar-label" data-i18n="marketAnalysis">Pazar Analizi</span>
-        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#home"><span class="global-sidebar-icon" aria-hidden="true">⌂</span><span data-i18n="analyticsHome">Ana Sayfa</span></a>
-        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#steam-analytics"><span class="global-sidebar-icon" aria-hidden="true">◔</span><span data-i18n="steamAnalytics">Steam Analitiği</span></a>
-        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#games"><span class="global-sidebar-icon" aria-hidden="true">▣</span><span data-i18n="gamesList">Oyunlar Listesi</span></a>
-        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#publishers"><span class="global-sidebar-icon" aria-hidden="true">▰</span><span data-i18n="publishersList">Yayıncılar Listesi</span></a>
-        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#genres-tags"><span class="global-sidebar-icon" aria-hidden="true">◆</span><span data-i18n="genresTags">Türler ve Etiketler</span></a>
-        <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#years"><span class="global-sidebar-icon" aria-hidden="true">▦</span><span data-i18n="years">Yıllar</span></a>
-      </nav>
-    </aside>
-    <main class="shell">
-    <section class="hero" id="top">
-      <div class="hero-tools">
-        <div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel">
-          <button class="active" type="button" data-language="tr" aria-pressed="true">TR</button>
-          <button type="button" data-language="en" aria-pressed="false">EN</button>
-        </div>
-      </div>
-      <span class="eyebrow" data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span>
-      <h1 data-i18n-html="title">Steam Etkinlik<br>Radarı</h1>
-      <p data-i18n="heroDescription">Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.</p>
+  <div class="app-layout" data-app-shell>
+    <aside class="app-sidebar" aria-label="Ana menü" data-i18n-aria-label="mainMenu" data-app-sidebar>
+    <nav>
+      <span class="app-sidebar-label">Steam Radar</span>
+      <button class="active" type="button" data-app-nav-id="radar:events" data-view-tab="events" aria-pressed="true" aria-current="page"><span class="app-nav-icon" aria-hidden="true">◫</span><span data-i18n="eventsTab">Etkinlik Takvimi</span></button>
+      <button class="" type="button" data-app-nav-id="radar:games" data-view-tab="games" aria-pressed="false"><span class="app-nav-icon" aria-hidden="true">▣</span><span data-i18n="myGames">Oyunlarım</span></button>
+      <button class="" type="button" data-app-nav-id="radar:steamworks" data-view-tab="steamworks" aria-pressed="false"><span class="app-nav-icon" aria-hidden="true">◉</span><span data-i18n="steamNews">Steam Haberleri</span></button>
+      <button class="" type="button" data-app-nav-id="radar:releases" data-view-tab="releases" aria-pressed="false"><span class="app-nav-icon" aria-hidden="true">◷</span><span data-i18n="releasesTab">Yeni Çıkan / Çıkacak</span></button>
+      <button class="" type="button" data-app-nav-id="radar:stats" data-view-tab="stats" aria-pressed="false"><span class="app-nav-icon" aria-hidden="true">▥</span><span data-i18n="gameComparison">Oyun İstatistikleri</span></button>
+      <span class="app-sidebar-separator" aria-hidden="true"></span>
+      <span class="app-sidebar-label" data-i18n="marketAnalysis">Pazar Analizi</span>
+      <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#home" data-app-nav-id="analytics:home"><span class="app-nav-icon" aria-hidden="true">⌂</span><span data-i18n="analyticsHome">Ana Sayfa</span></a>
+      <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#steam-analytics" data-app-nav-id="analytics:steam-analytics"><span class="app-nav-icon" aria-hidden="true">◔</span><span data-i18n="steamAnalytics">Steam Analitiği</span></a>
+      <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#games" data-app-nav-id="analytics:games"><span class="app-nav-icon" aria-hidden="true">▣</span><span data-i18n="gamesList">Oyunlar Listesi</span></a>
+      <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#publishers" data-app-nav-id="analytics:publishers"><span class="app-nav-icon" aria-hidden="true">▰</span><span data-i18n="publishersList">Yayıncılar Listesi</span></a>
+      <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#genres-tags" data-app-nav-id="analytics:genres-tags"><span class="app-nav-icon" aria-hidden="true">◆</span><span data-i18n="genresTags">Türler ve Etiketler</span></a>
+      <a href="https://steam-etkinlik-radari.batuhan-ozmen.workers.dev/analytics#years" data-app-nav-id="analytics:years"><span class="app-nav-icon" aria-hidden="true">▦</span><span data-i18n="years">Yıllar</span></a>
+      <span class="app-sidebar-separator" aria-hidden="true"></span>
+      <a href="/admin" data-app-nav-id="admin"><span class="app-nav-icon" aria-hidden="true">⚙</span><span data-i18n="admin">Yönetim</span></a>
+    </nav>
+  </aside>
+    <main class="app-main shell">
+    <section class="hero calendar-overview dashboard-panel" id="event-calendar-overview" data-dashboard-panel="events" aria-labelledby="event-calendar-overview-heading">
+      <span class="eyebrow" data-i18n="eventCalendarEyebrow">Resmî Steamworks takvimi</span>
+      <h1 id="event-calendar-overview-heading" data-i18n="eventCalendarTitle">Steam Etkinlik Takvimi</h1>
+      <p data-i18n="eventCalendarDescription">Önümüzdeki ayları, etkinlik başlangıçlarını ve açık başvuru tarihlerini tek takvimde takip et.</p>
 
     <div class="event-timeline" data-event-timeline>
       <div class="timeline-status">
@@ -1246,7 +1324,7 @@
     <section class="section dashboard-panel" id="calendar" data-dashboard-panel="events">
       <div class="section-title">
         <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
-        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="31 Temmuz 2026, 18:51" data-copy-en="31 July 2026, 18:51">31 Temmuz 2026, 18:51</span></p>
+        <p><span data-i18n="lastUpdated">Son güncelleme:</span> <span data-copy-tr="31 Temmuz 2026, 19:13" data-copy-en="31 July 2026, 19:13">31 Temmuz 2026, 19:13</span></p>
       </div>
       <div class="toolbar">
         <label class="sr-only" for="search" data-i18n="searchEvents">Etkinlik ara</label>
@@ -6406,6 +6484,7 @@
       changesShort: { tr: "Değişiklikler", en: "Changes" },
       contentView: { tr: "İçerik görünümü", en: "Content view" },
       radarTab: { tr: "Etkinlik Radarı", en: "Event Radar" },
+      eventsTab: { tr: "Etkinlik Takvimi", en: "Event Calendar" },
       releasesTab: { tr: "Yeni Çıkan / Çıkacak", en: "New / Upcoming Games" },
       marketAnalysis: { tr: "Pazar Analizi", en: "Market Analysis" },
       analyticsHome: { tr: "Ana Sayfa", en: "Home" },
@@ -6428,6 +6507,18 @@
       heroDescription: {
         tr: "Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.",
         en: "Track festivals, seasonal sales, and registration milestones from Steam’s official calendar in one Joygame Select operations view.",
+      },
+      eventCalendarEyebrow: {
+        tr: "Resmî Steamworks takvimi",
+        en: "Official Steamworks calendar",
+      },
+      eventCalendarTitle: {
+        tr: "Steam Etkinlik Takvimi",
+        en: "Steam Event Calendar",
+      },
+      eventCalendarDescription: {
+        tr: "Önümüzdeki ayları, etkinlik başlangıçlarını ve açık başvuru tarihlerini tek takvimde takip et.",
+        en: "Track the coming months, event start dates, and open registration deadlines in one calendar.",
       },
       myGames: { tr: "Oyunlarım", en: "My Games" },
       gamesIntro: {

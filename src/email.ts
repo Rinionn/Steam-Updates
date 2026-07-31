@@ -436,7 +436,7 @@ export function renderDigest(
     [data-ogsc] .priority-accent { color: ${EMAIL_COLORS.darkAccent} !important; }
   </style>
 </head>
-<body class="email-body" bgcolor="${EMAIL_COLORS.canvas}" style="margin:0;padding:0;background:${EMAIL_COLORS.canvas};color:${EMAIL_COLORS.surfaceInk};font-family:Inter,Arial,'Helvetica Neue',sans-serif">
+<body class="email-body" bgcolor="${EMAIL_COLORS.canvas}" style="margin:0;padding:0;background:${EMAIL_COLORS.canvas};color:${EMAIL_COLORS.surfaceInk};font-family:Montserrat,Arial,'Helvetica Neue',sans-serif">
   <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:${EMAIL_COLORS.transparent}">${escapeHtml(preheader)}</div>
   <table role="presentation" class="email-canvas" width="100%" cellspacing="0" cellpadding="0" bgcolor="${EMAIL_COLORS.canvas}" style="width:100%;background:${EMAIL_COLORS.canvas}">
     <tr>

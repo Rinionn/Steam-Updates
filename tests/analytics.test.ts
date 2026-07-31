@@ -43,7 +43,10 @@ describe("market analytics page", () => {
     expect(html).toContain("Historic data");
     expect(html).toContain("Store Page Insights");
     expect(html).toContain("--gradient-brand");
-    expect(html).toContain("font-family:Inter");
+    expect(html).toContain("font-family:Montserrat");
+    expect(html).toContain("data-steam-radar-logo");
+    expect(html).toContain('class="app-topbar"');
+    expect(html).toContain('class="app-sidebar"');
   });
 
   it("links the primary dashboard to the dedicated analytics route", () => {
@@ -55,13 +58,33 @@ describe("market analytics page", () => {
 
     expect(html).toContain("/analytics");
     expect(html).toContain("Pazar Analizi");
-    expect(html).toContain('class="global-sidebar"');
+    expect(html).toContain('class="app-sidebar"');
+    expect(html).toContain('class="app-topbar"');
+    expect(html).toContain("data-steam-radar-logo");
     expect(html).toContain('data-view-tab="events"');
     expect(html).toContain('data-view-tab="games"');
     expect(html).toContain('data-view-tab="steamworks"');
     expect(html).toContain('data-view-tab="releases"');
     expect(html).toContain('data-view-tab="stats"');
     expect(html).not.toContain('class="view-tabs"');
+  });
+
+  it("uses one shared application shell for Radar and Analytics", () => {
+    const radar = renderReport({
+      generatedAt: "2026-07-31T06:00:00.000Z",
+      sourceUrl: "https://example.com",
+      events: [],
+    });
+    const analytics = renderAnalyticsPage();
+
+    for (const html of [radar, analytics]) {
+      expect(html).toContain("data-app-header");
+      expect(html).toContain("data-app-shell");
+      expect(html).toContain("data-app-sidebar");
+      expect(html).toContain("data-steam-radar-logo");
+      expect(html).toContain("Steam Radar");
+      expect(html).toContain("Montserrat,");
+    }
   });
 
   it("embeds syntactically valid client-side JavaScript", () => {
