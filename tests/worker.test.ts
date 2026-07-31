@@ -227,6 +227,9 @@ describe("Steam search Worker", () => {
     );
 
     expect(response.status).toBe(200);
+    expect(response.headers.get("cache-control")).toBe(
+      "private, max-age=600",
+    );
     const [url, init] = fetchMock.mock.calls[0];
     const upstream = new URL(String(url));
     expect(upstream.origin).toBe("https://api.gamalytic.com");
@@ -513,6 +516,9 @@ describe("Steam search Worker", () => {
         },
       ),
       { ALLOWED_EMAIL_DOMAIN: "gaminginturkey.com" },
+    );
+    expect(response.headers.get("cache-control")).toBe(
+      "public, max-age=600",
     );
     expect(await response.json()).toMatchObject({
       currentPlayers: 42,

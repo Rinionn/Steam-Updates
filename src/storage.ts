@@ -140,7 +140,7 @@ export function mergeSnapshot(
       ...event,
       id: eventId,
       firstSeenAt: old?.firstSeenAt || nowIso,
-      lastSeenAt: event.lastSeenAt || nowIso,
+      lastSeenAt: event.lastSeenAt || old?.lastSeenAt || nowIso,
     };
 
     if (!old) {
@@ -174,11 +174,19 @@ export function mergeSnapshot(
     ),
   );
 
+  const sortedEvents = merged.sort((a, b) =>
+    a.startAt.localeCompare(b.startAt),
+  );
+  const snapshotChanged =
+    !previous ||
+    previous.sourceUrl !== sourceUrl ||
+    JSON.stringify(previous.events) !== JSON.stringify(sortedEvents);
+
   return {
     snapshot: {
-      generatedAt: nowIso,
+      generatedAt: snapshotChanged ? nowIso : previous.generatedAt,
       sourceUrl,
-      events: merged.sort((a, b) => a.startAt.localeCompare(b.startAt)),
+      events: sortedEvents,
     },
     added,
     changed,

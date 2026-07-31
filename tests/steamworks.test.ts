@@ -79,7 +79,7 @@ describe("Steamworks parser", () => {
     ).toThrow(/okunamadı/);
   });
 
-  it("değişmeyen ve son 7 günde çekilmiş detayları önbellekten kullanır", async () => {
+  it("değişmeyen ve son 6 saatte çekilmiş detayları önbellekten kullanır", async () => {
     const event: SteamEvent = {
       id: "cached-event",
       name: "Cached Event",
@@ -93,7 +93,7 @@ describe("Steamworks parser", () => {
     };
     const cached: SteamEvent = {
       ...event,
-      lastSeenAt: "2026-07-29T09:00:00Z",
+      lastSeenAt: "2026-07-30T06:00:00Z",
       deadlines: [
         {
           id: "cached-deadline",

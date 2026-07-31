@@ -138,6 +138,20 @@ export async function readSteamNews(
   }
 }
 
+export function mergeSteamNewsSnapshot(
+  previous: SteamNewsSnapshot | undefined,
+  items: SteamNewsItem[],
+  now = new Date(),
+): SteamNewsSnapshot {
+  if (previous && JSON.stringify(previous.items) === JSON.stringify(items)) {
+    return previous;
+  }
+  return {
+    generatedAt: now.toISOString(),
+    items,
+  };
+}
+
 export async function syncSteamNews(): Promise<SteamNewsSnapshot> {
   const now = DateTime.now().setZone("Europe/Istanbul");
   const monthAgo = now.minus({ days: 30 }).startOf("day");
@@ -169,10 +183,9 @@ export async function syncSteamNews(): Promise<SteamNewsSnapshot> {
   if (items.length === 0) {
     throw new Error("Resmî Steam haber kaynaklarından veri alınamadı.");
   }
-  const snapshot: SteamNewsSnapshot = {
-    generatedAt: new Date().toISOString(),
-    items,
-  };
+  const previous = await readSteamNews();
+  const snapshot = mergeSteamNewsSnapshot(previous, items);
+  if (snapshot === previous) return snapshot;
   await mkdir(path.dirname(paths.news), { recursive: true });
   await writeFile(paths.news, `${JSON.stringify(snapshot, null, 2)}\n`, "utf8");
   return snapshot;

@@ -69,6 +69,9 @@ describe("market analytics page", () => {
     expect(html).toContain('data-view-tab="releases"');
     expect(html).not.toContain('data-view-tab="stats"');
     expect(html).not.toContain('class="view-tabs"');
+    expect(html).toContain('name="steam-radar-data-version"');
+    expect(html).toContain("dataRefreshMs = 10 * 60 * 1000");
+    expect(html).toContain("31 Temmuz 2026, 09:00");
   });
 
   it("uses one shared application shell for Radar and Analytics", () => {

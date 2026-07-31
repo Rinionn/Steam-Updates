@@ -42,6 +42,7 @@ describe("snapshot merge", () => {
     expect(second.snapshot.events[0].firstSeenAt).toBe(
       first.snapshot.events[0].firstSeenAt,
     );
+    expect(second.snapshot.generatedAt).toBe(first.snapshot.generatedAt);
   });
 
   it("tarih değişikliğini yakalar", () => {
@@ -194,8 +195,8 @@ describe("snapshot merge", () => {
       expect(second.added).toHaveLength(0);
       expect(second.changed).toHaveLength(0);
       expect(reloaded?.events[0].firstSeenAt).toBe(firstRunAt.toISOString());
-      expect(reloaded?.events[0].lastSeenAt).toBe(secondRunAt.toISOString());
-      expect(reloaded?.generatedAt).toBe(secondRunAt.toISOString());
+      expect(reloaded?.events[0].lastSeenAt).toBe(firstRunAt.toISOString());
+      expect(reloaded?.generatedAt).toBe(firstRunAt.toISOString());
     } finally {
       await rm(tempDir, { recursive: true, force: true });
     }

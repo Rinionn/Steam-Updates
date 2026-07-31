@@ -1,6 +1,6 @@
 # Steam Etkinlik Radarı
 
-Valve’ın resmî Steamworks takvimini günlük kontrol eden, festivalleri ve sezon
+Valve’ın resmî Steamworks takvimini 10 dakikada bir kontrol eden, festivalleri ve sezon
 indirimlerini listeleyen, bilinen başvuru/inceleme tarihlerini İstanbul saatine
 çeviren ve e-posta özeti gönderebilen yerel bot.
 
@@ -12,11 +12,17 @@ Bu adres kurumsal giriş, Steam oyun araması, ekip verisi, yönetim ve analitik
 özelliklerini sunan ana yayındır. GitHub Pages çıktısı yalnız statik yedektir.
 Kurulum adımları `docs/cloudflare-access.md` dosyasındadır.
 
-GitHub Actions, Steam takvimini her gün Türkiye saatiyle yaklaşık 09:00’da
-yeniler ve `out/index.html` çıktısını GitHub Pages’e yayınlar. `main` dalına
-gönderilen her değişiklikte de site yeniden oluşturulur. Depo kökündeki
+GitHub Actions, Steam takvimini ve haber kaynaklarını 10 dakikada bir kontrol
+eder; yalnız gerçek içerik değiştiğinde `out/index.html` çıktısını yeniden
+yayınlar. Zamanlanmış işler GitHub yoğunluğunda birkaç dakika gecikebilir.
+`main` dalına gönderilen her değişiklikte de site yeniden oluşturulur. Depo kökündeki
 `index.html`, branch tabanlı Pages ayarı için aynı dashboard’un yedek çıktısıdır
-ve günlük veri commitine otomatik olarak dahil edilir.
+ve veri commitine otomatik olarak dahil edilir.
+
+Canlı oyuncu, inceleme, fiyat ve Gamalytic toplu yanıtları en fazla 10 dakika
+önbellekte tutulur. Çok sayıda üst kaynak isteği gerektiren Steamworks etkinlik
+detayları ile oyun mağaza metadatası 6 saat, görseller ise 7 gün önbellekte
+tutulur. Etkinliğin ana tarihi değişirse detay önbelleği beklenmeden yenilenir.
 
 ## Neler yapar?
 
@@ -40,7 +46,7 @@ ve günlük veri commitine otomatik olarak dahil edilir.
   analitiği, oyunlar, yayıncılar, türler ve etiketler ile yıllık kırılımlar.
   Gamalytic API anahtarı yalnız Cloudflare Worker secret olarak tutulur ve
   tarayıcıya gönderilmez.
-- Yeni çıkan/yaklaşan oyunları ve resmî Steamworks duyurularını günlük yenilenen
+- Yeni çıkan/yaklaşan oyunları ve resmî Steamworks duyurularını düzenli yenilenen
   ayrı bir haber görünümünde toplar.
 - Şifre korumalı yönetim panelinden erişim kullanıcılarını, e-posta alıcılarını
   ve son 30 günlük kullanım analitiğini yönetir.

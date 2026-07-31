@@ -503,6 +503,15 @@ export function renderReport(
   news?: SteamNewsSnapshot,
 ): string {
   const model = createReportModel(snapshot, config);
+  const snapshotGenerated = DateTime.fromISO(snapshot.generatedAt, {
+    zone: "utc",
+  }).setZone(config.timezone);
+  const dataVersion = [
+    snapshot.generatedAt,
+    news?.generatedAt || "",
+    changelog.at(-1)?.detectedAt || "",
+    String(changelog.length),
+  ].join("|");
   const changeCutoff = model.generated.minus({ days: 90 }).toMillis();
   const generatedAt = model.generated.toMillis();
   const recentChanges = changelog
@@ -550,6 +559,7 @@ export function renderReport(
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  <meta name="steam-radar-data-version" content="${escapeHtml(dataVersion)}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -1169,8 +1179,8 @@ export function renderReport(
       <div class="section-title">
         <h2 data-i18n="eventCalendar">Etkinlik takvimi</h2>
         <p><span data-i18n="lastUpdated">Son güncelleme:</span> ${localizedText(
-          model.generated.setLocale("tr").toFormat("d LLLL yyyy, HH:mm"),
-          model.generated.setLocale("en").toFormat("d LLLL yyyy, HH:mm"),
+          snapshotGenerated.setLocale("tr").toFormat("d LLLL yyyy, HH:mm"),
+          snapshotGenerated.setLocale("en").toFormat("d LLLL yyyy, HH:mm"),
         )}</p>
       </div>
       <div class="toolbar">
@@ -1266,6 +1276,37 @@ export function renderReport(
     );
     let activeEventId = hashState.get("event") || "";
     search.value = hashState.get("q") || "";
+    const currentDataVersion = ${JSON.stringify(dataVersion)};
+    const dataRefreshMs = 10 * 60 * 1000;
+
+    async function refreshWhenNewDataIsReady() {
+      if (document.visibilityState !== "visible") return;
+      try {
+        const url = new URL(location.href);
+        url.hash = "";
+        url.searchParams.set("data-check", String(Date.now()));
+        const response = await fetch(url, { cache: "no-store" });
+        if (!response.ok) return;
+        const html = await response.text();
+        const match = html.match(
+          /<meta name="steam-radar-data-version" content="([^"]+)"/i,
+        );
+        if (!match || match[1] === currentDataVersion) return;
+        const active = document.activeElement;
+        const editing = Boolean(
+          active && active.matches("input, textarea, select, [contenteditable='true']"),
+        );
+        if (editing || document.querySelector("dialog[open]")) return;
+        location.reload();
+      } catch {}
+    }
+
+    window.setInterval(refreshWhenNewDataIsReady, dataRefreshMs);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") {
+        refreshWhenNewDataIsReady();
+      }
+    });
 
     function writeUrlState() {
       const state = new URLSearchParams();
@@ -3016,7 +3057,7 @@ export function renderReport(
 
     async function refreshSavedGameDetails() {
       if (location.protocol === "file:") return;
-      const refreshCutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
+      const refreshCutoff = Date.now() - 6 * 60 * 60 * 1000;
       const pending = games.filter(
         (game) =>
           game.appId &&

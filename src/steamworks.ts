@@ -20,6 +20,7 @@ import {
 const MONTH_PATTERN =
   "(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)";
 export const DETAIL_REQUEST_DELAY_MS = 500;
+export const DETAIL_CACHE_HOURS = 6;
 
 interface DateRange {
   start: DateTime;
@@ -304,7 +305,8 @@ export async function enrichWithDeadlines(
   const enriched = [...events];
   const now = options.now || new Date();
   const requestDelayMs = options.requestDelayMs ?? DETAIL_REQUEST_DELAY_MS;
-  const cacheMs = (options.cacheDays ?? 7) * 24 * 60 * 60 * 1000;
+  const cacheMs =
+    (options.cacheDays ?? DETAIL_CACHE_HOURS / 24) * 24 * 60 * 60 * 1000;
   const previousById = new Map(
     previousEvents.map((event) => [event.id, event]),
   );

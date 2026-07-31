@@ -2,7 +2,8 @@ const STEAM_SUGGEST_URL =
   "https://store.steampowered.com/search/suggest";
 const CACHE_SECONDS = 30 * 60;
 const DETAIL_CACHE_SECONDS = 6 * 60 * 60;
-const DETAIL_SCHEMA_VERSION = 7;
+const LIVE_DATA_CACHE_SECONDS = 10 * 60;
+const DETAIL_SCHEMA_VERSION = 8;
 const MAX_RESULTS = 8;
 const MAX_TAGS = 20;
 const MAX_NEXT_FEST_RECORDS = 5;
@@ -745,7 +746,10 @@ export async function getSteamStats(request, env) {
       capturedAt: new Date().toISOString(),
     },
     200,
-    { ...cors, "cache-control": "public, max-age=900" },
+    {
+      ...cors,
+      "cache-control": `public, max-age=${LIVE_DATA_CACHE_SECONDS}`,
+    },
   );
 }
 
@@ -1231,7 +1235,7 @@ export async function getGamalyticAnalytics(request, env, resource) {
   if (cached) {
     return json(cached, 200, {
       ...cors,
-      "cache-control": "private, max-age=900",
+      "cache-control": `private, max-age=${LIVE_DATA_CACHE_SECONDS}`,
     });
   }
 
@@ -1259,9 +1263,9 @@ export async function getGamalyticAnalytics(request, env, resource) {
   const payload = await upstream.json();
   const response = json(payload, 200, {
     ...cors,
-    "cache-control": "private, max-age=900",
+    "cache-control": `private, max-age=${LIVE_DATA_CACHE_SECONDS}`,
   });
-  writeGamalyticMemoryCache(cacheKey, payload, 900);
+  writeGamalyticMemoryCache(cacheKey, payload, LIVE_DATA_CACHE_SECONDS);
   return response;
 }
 

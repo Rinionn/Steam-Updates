@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  mergeSteamNewsSnapshot,
   parseSteamworksAnnouncements,
   parseStoreSearch,
 } from "../src/news.js";
@@ -36,5 +37,27 @@ describe("Steam news parsing", () => {
         summary: "Official platform update.",
       },
     ]);
+  });
+
+  it("aynı haber içeriğinde üretim zamanını değiştirmez", () => {
+    const items = parseStoreSearch(
+      `<a class="search_result_row" data-ds-appid="42" href="https://store.steampowered.com/app/42/Test/">
+        <span class="title">Test Game</span>
+        <div class="search_released">30 Jul, 2026</div>
+      </a>`,
+      "new_release",
+    );
+    const previous = {
+      generatedAt: "2026-07-30T06:00:00.000Z",
+      items,
+    };
+
+    expect(
+      mergeSteamNewsSnapshot(
+        previous,
+        items,
+        new Date("2026-07-31T06:00:00.000Z"),
+      ),
+    ).toBe(previous);
   });
 });
