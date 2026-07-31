@@ -41,6 +41,31 @@ function cleanText(value: string): string {
   return value.replace(/\s+/g, " ").trim();
 }
 
+function canonicalStoreDateLabel(value: string): string {
+  const label = cleanText(value);
+  for (const format of ["d MMM, yyyy", "MMM d, yyyy", "d MMM yyyy"]) {
+    const parsed = DateTime.fromFormat(label, format, {
+      locale: "en",
+      zone: "Europe/Istanbul",
+    });
+    if (parsed.isValid) return parsed.setLocale("en").toFormat("d LLL, yyyy");
+  }
+  const month = DateTime.fromFormat(label, "MMM yyyy", {
+    locale: "en",
+    zone: "Europe/Istanbul",
+  });
+  return month.isValid ? month.setLocale("en").toFormat("LLL yyyy") : label;
+}
+
+function canonicalSteamImageUrl(value?: string): string | undefined {
+  const url = String(value || "").trim();
+  if (!url) return undefined;
+  return url.replace(
+    /^https:\/\/shared\.(?:akamai|cloudflare|fastly)\.steamstatic\.com/i,
+    "https://shared.fastly.steamstatic.com",
+  );
+}
+
 function categoriesFromRow(value?: string): string[] {
   try {
     const ids = JSON.parse(value || "[]") as unknown;
@@ -86,10 +111,12 @@ export function parseStoreSearch(
         title: cleanText(row.find(".title").first().text()),
         kind,
         url,
-        dateLabel: cleanText(row.find(".search_released").first().text()),
-        imageUrl:
-          String(row.find(".search_capsule img").first().attr("src") || "").trim() ||
-          undefined,
+        dateLabel: canonicalStoreDateLabel(
+          row.find(".search_released").first().text(),
+        ),
+        imageUrl: canonicalSteamImageUrl(
+          row.find(".search_capsule img").first().attr("src"),
+        ),
         categories: categoriesFromRow(row.attr("data-ds-tagids")),
       };
     })
