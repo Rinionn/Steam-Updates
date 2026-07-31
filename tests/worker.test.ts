@@ -602,6 +602,9 @@ describe("Steam search Worker", () => {
       },
     );
     expect(authorized.status).toBe(200);
+    expect(authorized.headers.get("cache-control")).toBe(
+      "public, max-age=600",
+    );
     expect(await authorized.json()).toEqual({
       results: expect.arrayContaining([
         expect.objectContaining({

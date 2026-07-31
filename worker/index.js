@@ -1,8 +1,8 @@
 const STEAM_SUGGEST_URL =
   "https://store.steampowered.com/search/suggest";
-const CACHE_SECONDS = 30 * 60;
-const DETAIL_CACHE_SECONDS = 6 * 60 * 60;
 const LIVE_DATA_CACHE_SECONDS = 10 * 60;
+const CACHE_SECONDS = LIVE_DATA_CACHE_SECONDS;
+const DETAIL_CACHE_SECONDS = 6 * 60 * 60;
 const DETAIL_SCHEMA_VERSION = 8;
 const MAX_RESULTS = 8;
 const MAX_TAGS = 20;

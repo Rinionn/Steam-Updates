@@ -19,7 +19,7 @@ yayınlar. Zamanlanmış işler GitHub yoğunluğunda birkaç dakika gecikebilir
 `index.html`, branch tabanlı Pages ayarı için aynı dashboard’un yedek çıktısıdır
 ve veri commitine otomatik olarak dahil edilir.
 
-Canlı oyuncu, inceleme, fiyat ve Gamalytic toplu yanıtları en fazla 10 dakika
+Steam arama, canlı oyuncu, inceleme, fiyat ve Gamalytic toplu yanıtları en fazla 10 dakika
 önbellekte tutulur. Çok sayıda üst kaynak isteği gerektiren Steamworks etkinlik
 detayları ile oyun mağaza metadatası 6 saat, görseller ise 7 gün önbellekte
 tutulur. Etkinliğin ana tarihi değişirse detay önbelleği beklenmeden yenilenir.
