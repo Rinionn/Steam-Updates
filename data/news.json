@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T21:29:46.425Z",
+  "generatedAt": "2026-07-31T22:35:31.465Z",
   "items": [
     {
       "id": "steam-news-31c244589",
@@ -7,11 +7,21 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4756740/Dinofurie__The_Dinosaurs_Battle_Royale/?snr=1_7_7_230_150_1",
       "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4756740/dd1e59111eb0e9fa2837a26a80e8a52417d522bd/capsule_231x87.jpg?t=1785532618",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4756740/dd1e59111eb0e9fa2837a26a80e8a52417d522bd/capsule_231x87.jpg?t=1785537220",
       "categories": [
         "Aksiyon",
-        "Gündelik",
-        "Bağımsız"
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-6f1127c20",
+      "title": "BOT.vinnik Chess: USSR vs the World",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4263370/BOTvinnik_Chess_USSR_vs_the_World/?snr=1_7_7_230_150_1",
+      "dateLabel": "31 Jul, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4263370/5732ada3b2132620fb99da47827ee2c5abbbd30f/capsule_231x87.jpg?t=1785536885",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -269,15 +279,6 @@
       ]
     },
     {
-      "id": "steam-news-8d9d8996d",
-      "title": "SOULMINE",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4765780/SOULMINE/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4765780/53a671412992c5e35cc7eda42fd78a00b74bc17a/capsule_231x87.jpg?t=1785517992",
-      "categories": []
-    },
-    {
       "id": "steam-news-3877c54c9",
       "title": "天亮之后",
       "kind": "coming_soon",
@@ -338,15 +339,6 @@
       ]
     },
     {
-      "id": "steam-news-7308ca28f",
-      "title": "Neon Bullet",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4443810/Neon_Bullet/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785501604",
-      "categories": []
-    },
-    {
       "id": "steam-news-e6e55a227",
       "title": "Talisman Codes",
       "kind": "coming_soon",
@@ -357,6 +349,15 @@
         "RPG",
         "Strateji"
       ]
+    },
+    {
+      "id": "steam-news-7308ca28f",
+      "title": "Neon Bullet",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4443810/Neon_Bullet/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785501604",
+      "categories": []
     },
     {
       "id": "steam-news-9b359d1f0",
@@ -534,26 +535,27 @@
       ]
     },
     {
-      "id": "steam-news-d9bb72add",
-      "title": "Soul Siblings",
+      "id": "steam-news-c2ff8423c",
+      "title": "MoonCraft",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4954590/MoonCraft/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4954590/810663e58a140d2a7f5570353a2d727ad4a8e26b/capsule_231x87.jpg?t=1784746045",
       "categories": [
-        "Aksiyon"
+        "Strateji",
+        "Gündelik"
       ]
     },
     {
-      "id": "steam-news-8f86e19f8",
-      "title": "SARA",
+      "id": "steam-news-60e3c93e9",
+      "title": "Robin Hood: Sherwood Valley",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
       "categories": [
         "Macera",
-        "Korku"
+        "RPG"
       ]
     },
     {
