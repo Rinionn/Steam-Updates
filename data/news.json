@@ -1,6 +1,44 @@
 {
-  "generatedAt": "2026-08-01T13:55:00.157Z",
+  "generatedAt": "2026-08-01T14:57:39.087Z",
   "items": [
+    {
+      "id": "steam-news-e18065893",
+      "title": "NOMSTERS",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4943550/NOMSTERS/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943550/1d8d7a59da105ba9d77f369dc8be6cbf5846a39e/capsule_231x87.jpg?t=1785595421",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-04025e203",
+      "title": "10-Man Idle",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4303480/10Man_Idle/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4303480/d736a6e57cd259e083462d8254a51a888482df4a/capsule_231x87.jpg?t=1785594090",
+      "categories": [
+        "Gündelik",
+        "RPG",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-99fc52b23",
+      "title": "Shuttle Strike",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4863100/Shuttle_Strike/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4863100/061fe35700277c3b0408675df6ac4d6a4e79ddf8/capsule_231x87.jpg?t=1785594048",
+      "categories": [
+        "Spor",
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-057824f1b",
       "title": "Sneaky Tail",
@@ -247,42 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-11d3322c8",
-      "title": "Soulreign",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4748420/Soulreign/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4748420/6cb84e04186cd11a19f3d33d1eb385add684c8e8/capsule_231x87.jpg?t=1785555788",
-      "categories": [
-        "Bağımsız",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-991f7d52b",
-      "title": "Dog Park",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4821510/Dog_Park/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4821510/a1b3508cb657b6b297f8efd0e6ce223a2ddc4278/capsule_231x87.jpg?t=1785553608",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-fc61458a2",
-      "title": "Road2Conquest",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4317470/Road2Conquest/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4317470/a77ea524189b55b0efb4672d7d0014ab1ee275e6/capsule_231x87.jpg?t=1785552327",
-      "categories": [
-        "Strateji",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-d31d5b85c",
       "title": "Lost Chronology",
       "kind": "coming_soon",
@@ -388,18 +390,6 @@
       ]
     },
     {
-      "id": "steam-news-15d3fbc8e",
-      "title": "Guardian Heart",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4927750/Guardian_Heart/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927750/a10d4f2de05718c8b995caacbd28ec91714d9eaa/capsule_231x87.jpg?t=1785225229",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-aa543bd12",
       "title": "Dopamine Eggs",
       "kind": "coming_soon",
@@ -418,6 +408,18 @@
       "dateLabel": "2 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
       "categories": []
+    },
+    {
+      "id": "steam-news-15d3fbc8e",
+      "title": "Guardian Heart",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4927750/Guardian_Heart/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927750/a10d4f2de05718c8b995caacbd28ec91714d9eaa/capsule_231x87.jpg?t=1785225229",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu"
+      ]
     },
     {
       "id": "steam-news-27c8ad052",
@@ -538,18 +540,6 @@
       ]
     },
     {
-      "id": "steam-news-60e3c93e9",
-      "title": "Robin Hood: Sherwood Valley",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
-      "categories": [
-        "Macera",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-8f86e19f8",
       "title": "SARA",
       "kind": "coming_soon",
@@ -559,6 +549,17 @@
       "categories": [
         "Macera",
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-f1d599a0d",
+      "title": "Meridian",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
+      "categories": [
+        "RPG"
       ]
     },
     {
