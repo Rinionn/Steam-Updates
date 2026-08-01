@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS email_delivery_settings (
   enabled INTEGER NOT NULL DEFAULT 1,
   send_time TEXT NOT NULL DEFAULT '09:30',
   timezone TEXT NOT NULL DEFAULT 'Europe/Istanbul',
-  sender_name TEXT NOT NULL DEFAULT 'Steam Etkinlik Radarı',
+  sender_name TEXT NOT NULL DEFAULT 'Steam Radar',
   subject_template TEXT NOT NULL,
   last_sent_date TEXT,
   updated_by TEXT NOT NULL,
@@ -49,12 +49,20 @@ VALUES
     1,
     '09:30',
     'Europe/Istanbul',
-    'Steam Etkinlik Radarı',
-    'Steam Etkinlik Takibi · {{kritik}} kritik tarih · {{etkinlik}} etkinlik',
+    'Steam Radar',
+    'Steam Radar · {{kritik}} kritik tarih · {{etkinlik}} etkinlik',
     NULL,
     'system',
     datetime('now')
   );
+
+UPDATE email_delivery_settings
+SET sender_name = 'Steam Radar'
+WHERE sender_name = 'Steam Etkinlik Radarı';
+
+UPDATE email_delivery_settings
+SET subject_template = 'Steam Radar · {{kritik}} kritik tarih · {{etkinlik}} etkinlik'
+WHERE subject_template = 'Steam Etkinlik Takibi · {{kritik}} kritik tarih · {{etkinlik}} etkinlik';
 
 CREATE TABLE IF NOT EXISTS analytics_events (
   id INTEGER PRIMARY KEY AUTOINCREMENT,

@@ -1,4 +1,4 @@
-# Steam Etkinlik Radarı
+# Steam Radar
 
 Valve’ın resmî Steamworks takvimini 10 dakikada bir kontrol eden, festivalleri ve sezon
 indirimlerini listeleyen, bilinen başvuru/inceleme tarihlerini İstanbul saatine
@@ -92,7 +92,7 @@ npm run daily
 ```dotenv
 EMAIL_TO=alici@ornek.com
 EMAIL_BCC=kisisel-kopya@ornek.com
-EMAIL_FROM="Steam Etkinlik Radarı <bot@alanadiniz.com>"
+EMAIL_FROM="Steam Radar <bot@alanadiniz.com>"
 ```
 
 En kolay sağlayıcı Resend’dir:
@@ -123,7 +123,7 @@ kendi grup postasını Inbox’a geri vermediği durumlarda doğrudan Inbox kopy
 sağlar.
 
 Normal Google hesap şifresini kullanmayın ve uygulama şifresini Git’e
-eklemeyin. Kurulumdan sonra **Actions → Steam Event Radar - Daily Email → Run
+eklemeyin. Kurulumdan sonra **Actions → Steam Radar - Daily Email → Run
 workflow** ile bir defalık test gönderimi yapılabilir.
 
 ## Komutlar

@@ -1526,9 +1526,9 @@ export async function adminSnapshot(request, env) {
         enabled: 1,
         sendTime: "09:30",
         timezone: "Europe/Istanbul",
-        senderName: "Steam Etkinlik Radarı",
+        senderName: "Steam Radar",
         subjectTemplate:
-          "Steam Etkinlik Takibi · {{kritik}} kritik tarih · {{etkinlik}} etkinlik",
+          "Steam Radar · {{kritik}} kritik tarih · {{etkinlik}} etkinlik",
         lastSentDate: null,
       },
       analytics: {
@@ -1746,9 +1746,9 @@ export async function automationRecipients(request, env) {
       enabled: 1,
       sendTime: "09:30",
       timezone: "Europe/Istanbul",
-      senderName: "Steam Etkinlik Radarı",
+      senderName: "Steam Radar",
       subjectTemplate:
-        "Steam Etkinlik Takibi · {{kritik}} kritik tarih · {{etkinlik}} etkinlik",
+        "Steam Radar · {{kritik}} kritik tarih · {{etkinlik}} etkinlik",
       lastSentDate: null,
     },
   });

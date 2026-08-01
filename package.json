@@ -1,9 +1,9 @@
 {
-  "name": "steam-etkinlik-radari",
+  "name": "steam-radar",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Steamworks etkinliklerini, festivallerini ve son başvuru tarihlerini günlük izleyen Türkçe bot.",
+  "description": "Steamworks etkinliklerini, festivallerini ve son başvuru tarihlerini izleyen Steam Radar.",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",

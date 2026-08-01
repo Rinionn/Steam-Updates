@@ -1,4 +1,4 @@
-name: Steam Event Radar - Daily Email
+name: Steam Radar - Daily Email
 
 on:
   workflow_dispatch:
@@ -30,7 +30,7 @@ jobs:
       EMAIL_LOOKAHEAD_DAYS: "90"
       EMAIL_TO: business.dev@gaminginturkey.com
       EMAIL_BCC: batuhan.ozmen@gaminginturkey.com, pinargulerrrr@gmail.com
-      EMAIL_FROM: "Steam Etkinlik Radarı <batuhan.ozmen@gaminginturkey.com>"
+      EMAIL_FROM: "Steam Radar <batuhan.ozmen@gaminginturkey.com>"
       SMTP_HOST: smtp.gmail.com
       SMTP_PORT: "465"
       SMTP_SECURE: "true"

@@ -11,7 +11,7 @@ export function renderAdminPage(): string {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-  <title>Yönetim · Steam Etkinlik Radarı</title>
+  <title>Yönetim · Steam Radar</title>
   <style>
     :root {
       --bg:#08040f;
@@ -122,7 +122,7 @@ export function renderAdminPage(): string {
 <body>
   <main class="shell">
     <header class="topbar">
-      <a class="brand" href="/" aria-label="Steam Etkinlik Radarı ana sayfasına dön">
+      <a class="brand" href="/" aria-label="Steam Radar ana sayfasına dön">
         ${renderSteamRadarLogo("admin-header")}
       </a>
       <a class="back" href="/">← Panele dön</a>
@@ -307,10 +307,10 @@ export function renderAdminPage(): string {
         document.querySelector("[data-email-time]").value =
           payload.emailSettings?.sendTime || "09:30";
         document.querySelector("[data-email-sender]").value =
-          payload.emailSettings?.senderName || "Steam Etkinlik Radarı";
+          payload.emailSettings?.senderName || "Steam Radar";
         document.querySelector("[data-email-subject]").value =
           payload.emailSettings?.subjectTemplate ||
-          "Steam Etkinlik Takibi · {{kritik}} kritik tarih · {{etkinlik}} etkinlik";
+          "Steam Radar · {{kritik}} kritik tarih · {{etkinlik}} etkinlik";
         const emailEnabled = payload.emailSettings?.enabled !== 0 &&
           payload.emailSettings?.enabled !== false;
         const hasPrimaryRecipient = recipients.some(

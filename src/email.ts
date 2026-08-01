@@ -239,7 +239,7 @@ export function renderDigest(
   const subject = safeSubject(
     (
       subjectTemplate ||
-      "Steam Etkinlik Takibi · {{kritik}} kritik tarih · {{etkinlik}} etkinlik"
+      "Steam Radar · {{kritik}} kritik tarih · {{etkinlik}} etkinlik"
     )
       .replaceAll("{{kritik}}", String(dueThisWeek))
       .replaceAll("{{etkinlik}}", String(events.length))
@@ -447,8 +447,8 @@ export function renderDigest(
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                 <tr>
                   <td class="stack-cell" valign="middle" style="padding:26px 24px">
-                    <span style="display:block;color:${EMAIL_COLORS.brandPink};font-size:10px;font-weight:800;letter-spacing:.13em">JOYgame SELECT · STEAMWORKS TAKİBİ</span>
-                    <h1 style="margin:8px 0 5px;color:${EMAIL_COLORS.surface};font-family:'Space Grotesk',Arial,sans-serif;font-size:27px;font-weight:800;line-height:1.08">Steam Etkinlik Takibi</h1>
+                    <span style="display:block;color:${EMAIL_COLORS.brandPink};font-size:10px;font-weight:800;letter-spacing:.13em">STEAM RADAR · STEAMWORKS TAKİBİ</span>
+                    <h1 style="margin:8px 0 5px;color:${EMAIL_COLORS.surface};font-family:'Space Grotesk',Arial,sans-serif;font-size:27px;font-weight:800;line-height:1.08">Steam Radar</h1>
                     <p style="margin:0;color:${EMAIL_COLORS.heroMuted};font-size:12px;line-height:1.5">${escapeHtml(
                       model.generated.setLocale("tr").toFormat("d LLLL yyyy, HH:mm"),
                     )} · İstanbul</p>
@@ -536,7 +536,7 @@ export function renderDigest(
 
           <tr>
             <td class="surface-subtle" align="center" style="padding:18px 16px 0;color:${EMAIL_COLORS.surfaceSubtle};font-size:10px;line-height:1.5">
-              Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu. Bot salt okunur çalışır.
+              Steam Radar · Kaynak: Valve Steamworks dokümantasyonu. Bot salt okunur çalışır.
             </td>
           </tr>
         </table>
@@ -728,7 +728,7 @@ export async function resolvedEmailDelivery(): Promise<EmailDeliverySettings> {
     enabled: true,
     sendTime: config.email.sendTime,
     timezone: config.timezone,
-    senderName: "Steam Etkinlik Radarı",
+    senderName: "Steam Radar",
     managed: false,
   };
 

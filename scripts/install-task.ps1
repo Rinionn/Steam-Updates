@@ -1,7 +1,7 @@
 param(
   [ValidatePattern('^\d{2}:\d{2}$')]
   [string]$Time = '09:00',
-  [string]$TaskName = 'Steam Etkinlik Radari'
+  [string]$TaskName = 'Steam Radar'
 )
 
 $ErrorActionPreference = 'Stop'

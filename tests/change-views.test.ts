@@ -21,6 +21,18 @@ const recentChange: ChangeRecord = {
 };
 
 describe("change log views", () => {
+  it("uses Steam Radar branding across report, admin, and email views", () => {
+    const report = renderReport(snapshot, []);
+    const admin = renderAdminPage();
+    const digest = renderDigest(snapshot, []);
+    const rendered = [report, admin, digest.html, digest.text].join("\n");
+
+    expect(report).toContain("<title>Steam Radar</title>");
+    expect(admin).toContain("<title>Yönetim · Steam Radar</title>");
+    expect(digest.subject).toMatch(/^Steam Radar ·/);
+    expect(rendered).not.toMatch(/joy\s*game\s+select/i);
+  });
+
   it("shows recent changes in a closed 90-day report section", () => {
     const html = renderReport(snapshot, [recentChange]);
 
@@ -42,7 +54,7 @@ describe("change log views", () => {
   it("renders management as a dedicated password-protected page", () => {
     const html = renderAdminPage();
 
-    expect(html).toContain("<title>Yönetim · Steam Etkinlik Radarı</title>");
+    expect(html).toContain("<title>Yönetim · Steam Radar</title>");
     expect(html).toContain('class="login-stage"');
     expect(html).toContain('class="login-logo"');
     expect(html).toContain("steam-radar-logo.png");

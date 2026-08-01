@@ -7,7 +7,7 @@ import type {
   SteamEvent,
 } from "./types.js";
 
-const PRODID = "-//Gaming in Turkey//Steam Etkinlik Radari//TR";
+const PRODID = "-//Steam Radar//Steam Calendar//TR";
 const MAX_LINE_OCTETS = 75;
 
 export function escapeIcsText(value: string): string {

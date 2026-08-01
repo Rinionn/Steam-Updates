@@ -18,7 +18,7 @@ Hedef adres: `https://steamradar.gaminginturkey.com`
 2. **Access controls → Applications → Add an application → Self-hosted**
    yolunu açın.
 3. Uygulama alanı olarak `steamradar.gaminginturkey.com/*` girin.
-4. `Allow Gaming in Turkey` adlı politika oluşturun:
+4. `Allow Steam Radar team` adlı politika oluşturun:
    - Action: `Allow`
    - Include selector: `Emails ending in`
    - Value: `@gaminginturkey.com`

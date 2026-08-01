@@ -545,7 +545,7 @@ export function renderReport(
   const appHeader = renderAppHeader({
     surface: "radar",
     centerHtml:
-      '<span data-i18n="eyebrow">Joygame Select · Steamworks Operasyonları</span>',
+      '<span data-i18n="eyebrow">Steam Radar · Steamworks Operasyonları</span>',
     actionsHtml:
       '<div class="language-switch" role="group" aria-label="Arayüz dili" data-i18n-aria-label="languageLabel"><button class="active" type="button" data-language="tr" aria-pressed="true">TR</button><button type="button" data-language="en" aria-pressed="false">EN</button></div><a href="/admin" data-i18n="admin">Yönetim</a>',
   });
@@ -563,7 +563,7 @@ export function renderReport(
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-  <title>Steam Etkinlik Radarı</title>
+  <title>Steam Radar</title>
   <style>
     :root {
       color-scheme: light;
@@ -1228,7 +1228,7 @@ export function renderReport(
 
     ${newsSection(news)}
 
-    <footer data-i18n="footer">Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
+    <footer data-i18n="footer">Steam Radar · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.</footer>
     </main>
   </div>
   <script>
@@ -1515,13 +1515,13 @@ export function renderReport(
         en: "New releases, upcoming games, and Valve’s official Steamworks announcements.",
       },
       eyebrow: {
-        tr: "Joygame Select · Steamworks Operasyonları",
-        en: "Joygame Select · Steamworks Operations",
+        tr: "Steam Radar · Steamworks Operasyonları",
+        en: "Steam Radar · Steamworks Operations",
       },
       title: { tr: "Steam Etkinlik<br>Radarı", en: "Steam Event<br>Radar" },
       heroDescription: {
-        tr: "Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Joygame Select operasyon görünümünde tek yerde takip et.",
-        en: "Track festivals, seasonal sales, and registration milestones from Steam’s official calendar in one Joygame Select operations view.",
+        tr: "Steam’in resmî takvimindeki festivalleri, sezon indirimlerini ve başvuru kilometre taşlarını Steam Radar’da tek yerde takip et.",
+        en: "Track festivals, seasonal sales, and registration milestones from Steam’s official calendar in Steam Radar.",
       },
       eventCalendarEyebrow: {
         tr: "Resmî Steamworks takvimi",
@@ -1652,8 +1652,8 @@ export function renderReport(
         en: "No events match these filters.",
       },
       footer: {
-        tr: "Joygame Select · Steam Operasyonları · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.",
-        en: "Joygame Select · Steam Operations · Source: Valve Steamworks documentation · This report is read-only.",
+        tr: "Steam Radar · Kaynak: Valve Steamworks dokümantasyonu · Bu rapor salt okunur çalışır.",
+        en: "Steam Radar · Source: Valve Steamworks documentation · This report is read-only.",
       },
     };
 
