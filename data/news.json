@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-01T04:43:36.886Z",
+  "generatedAt": "2026-08-01T07:17:06.291Z",
   "items": [
+    {
+      "id": "steam-news-2d4082d57",
+      "title": "Escape the House",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4966860/Escape_the_House/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4966860/243f36a697a17dcec207fc733e7394033afd63be/capsule_231x87.jpg?t=1785568033",
+      "categories": [
+        "RPG",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-5171d75f6",
+      "title": "KING of PROPS",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4868190/KING_of_PROPS/?snr=1_7_7_230_150_1",
+      "dateLabel": "31 Jul, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4868190/4d96118237598e788ca907019365ffeb0424f646/capsule_231x87.jpg?t=1785566691",
+      "categories": [
+        "Gündelik",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-7d9b77d66",
+      "title": "CORPSE HUNTER",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4191020/CORPSE_HUNTER/?snr=1_7_7_230_150_1",
+      "dateLabel": "31 Jul, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4191020/1f2f55e4e04c4ab3906bee021d620a2b7877c8da/capsule_231x87.jpg?t=1785562308",
+      "categories": [
+        "Korku"
+      ]
+    },
     {
       "id": "steam-news-0b158cc79",
       "title": "Law of Demons",
@@ -242,41 +277,6 @@
       ]
     },
     {
-      "id": "steam-news-bdd4d4dc7",
-      "title": "Titan Force",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2229370/Titan_Force/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2229370/bac940a487bc159678ef6ef479bd33a0a36b5034/capsule_231x87.jpg?t=1785528538",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-61061442b",
-      "title": "Rough Draft",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4581350/Rough_Draft/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4581350/448314e1ca6f617e309ecfc45d976c0615131192/capsule_231x87.jpg?t=1785528230",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-3b83c1f1d",
-      "title": "Koi Frenzy",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4927100/Koi_Frenzy/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927100/770eff7c9f3e4e6bbf8021e5ee76028d8e531f23/capsule_231x87.jpg?t=1785525480",
-      "categories": [
-        "Aksiyon",
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-3877c54c9",
       "title": "天亮之后",
       "kind": "coming_soon",
@@ -314,14 +314,14 @@
       ]
     },
     {
-      "id": "steam-news-db6f7037e",
-      "title": "Garlic Ramen Shop Simulator",
+      "id": "steam-news-60767c277",
+      "title": "TRAUMAHACK",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4525560/Garlic_Ramen_Shop_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4525560/8299cf7cdc891463e9b6242b4b4bf91dfd7db55a/capsule_231x87.jpg?t=1784628503",
+      "url": "https://store.steampowered.com/app/4694660/TRAUMAHACK/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4694660/4f4d32c7e0f3ca55f68318cd10b3c76c0e9ec0e4/capsule_231x87.jpg?t=1785568556",
       "categories": [
-        "Simülasyon"
+        "Korku"
       ]
     },
     {
@@ -334,6 +334,17 @@
       "categories": [
         "Gündelik",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-db6f7037e",
+      "title": "Garlic Ramen Shop Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4525560/Garlic_Ramen_Shop_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4525560/8299cf7cdc891463e9b6242b4b4bf91dfd7db55a/capsule_231x87.jpg?t=1784628503",
+      "categories": [
+        "Simülasyon"
       ]
     },
     {
@@ -488,7 +499,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4764560/Dungeons__Donuts/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4764560/9a2abe2714a138c91bad2b669ca012fc9d2a6918/capsule_231x87.jpg?t=1785487608",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4764560/9a2abe2714a138c91bad2b669ca012fc9d2a6918/capsule_231x87.jpg?t=1785560239",
       "categories": [
         "Bağımsız",
         "RPG"
@@ -512,7 +523,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4599500/DottyBead/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4599500/2cc12132cc3e20ddb3fccc6ce07bc04f9b7e7027/capsule_231x87.jpg?t=1785477081",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4599500/2cc12132cc3e20ddb3fccc6ce07bc04f9b7e7027/capsule_231x87.jpg?t=1785560027",
       "categories": [
         "Gündelik",
         "Simülasyon"
@@ -533,26 +544,15 @@
       ]
     },
     {
-      "id": "steam-news-c2ff8423c",
-      "title": "MoonCraft",
+      "id": "steam-news-8f86e19f8",
+      "title": "SARA",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4954590/MoonCraft/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4954590/810663e58a140d2a7f5570353a2d727ad4a8e26b/capsule_231x87.jpg?t=1784746045",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
       "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-d9bb72add",
-      "title": "Soul Siblings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
-      "categories": [
-        "Aksiyon"
+        "Macera",
+        "Korku"
       ]
     },
     {
