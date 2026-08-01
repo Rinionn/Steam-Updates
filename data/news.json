@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-01T16:08:37.354Z",
+  "generatedAt": "2026-08-01T17:14:15.638Z",
   "items": [
+    {
+      "id": "steam-news-99a90e4c9",
+      "title": "Hang in there",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4771630/Hang_in_there/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4771630/57d917c16f31e816535cf358fda4f02d033b0ff9/capsule_231x87.jpg?t=1785604352",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-7bd22ed24",
+      "title": "Reawait",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4913180/Reawait/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4913180/6409891c6cb192de5177f8990a32ecc766bd896f/capsule_231x87.jpg?t=1785602504",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-1b09c9f32",
       "title": "101 Dogs Hidden in Paris",
@@ -29,7 +52,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4380750/Emerald_Flower/?snr=1_7_7_230_150_1",
       "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4380750/788e281f6df9659621595cfe782d207f2adb0ac1/capsule_231x87.jpg?t=1785599913",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4380750/788e281f6df9659621595cfe782d207f2adb0ac1/capsule_231x87.jpg?t=1785604132",
       "categories": [
         "RPG"
       ]
@@ -259,29 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-0383e7716",
-      "title": "Pixel Three Kingdoms: Zombie Dungeon",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4888520/Pixel_Three_Kingdoms_Zombie_Dungeon/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4888520/aa74b81abeb778529f685a50bca41b90acabd402/capsule_231x87.jpg?t=1785572875",
-      "categories": [
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-9a20d2b3c",
-      "title": "Dungeon Infinite",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4434460/Dungeon_Infinite/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4434460/fa82b963d840c777bb19e34616007f748507be02/capsule_231x87.jpg?t=1785572081",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-d1bb67618",
       "title": "My Wukong",
       "kind": "coming_soon",
@@ -386,6 +386,15 @@
       ]
     },
     {
+      "id": "steam-news-973e09b5e",
+      "title": "Columbus",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
+      "categories": []
+    },
+    {
       "id": "steam-news-aa543bd12",
       "title": "Dopamine Eggs",
       "kind": "coming_soon",
@@ -395,15 +404,6 @@
       "categories": [
         "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-973e09b5e",
-      "title": "Columbus",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
-      "categories": []
     },
     {
       "id": "steam-news-27c8ad052",
@@ -462,18 +462,6 @@
       ]
     },
     {
-      "id": "steam-news-690124593",
-      "title": "Dungeons & Donuts",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4764560/Dungeons__Donuts/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4764560/9a2abe2714a138c91bad2b669ca012fc9d2a6918/capsule_231x87.jpg?t=1785560239",
-      "categories": [
-        "Bağımsız",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-94992a437",
       "title": "GeoPinQuest",
       "kind": "coming_soon",
@@ -483,6 +471,18 @@
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-690124593",
+      "title": "Dungeons & Donuts",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4764560/Dungeons__Donuts/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4764560/9a2abe2714a138c91bad2b669ca012fc9d2a6918/capsule_231x87.jpg?t=1785560239",
+      "categories": [
+        "Bağımsız",
+        "RPG"
       ]
     },
     {
@@ -524,18 +524,6 @@
       ]
     },
     {
-      "id": "steam-news-60e3c93e9",
-      "title": "Robin Hood: Sherwood Valley",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
-      "categories": [
-        "Macera",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-f1d599a0d",
       "title": "Meridian",
       "kind": "coming_soon",
@@ -556,6 +544,18 @@
       "categories": [
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-60e3c93e9",
+      "title": "Robin Hood: Sherwood Valley",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
+      "categories": [
+        "Macera",
+        "RPG"
       ]
     },
     {
