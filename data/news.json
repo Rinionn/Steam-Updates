@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-01T09:28:42.568Z",
+  "generatedAt": "2026-08-01T10:16:30.645Z",
   "items": [
+    {
+      "id": "steam-news-7e2097eeb",
+      "title": "Musica",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4712720/Musica/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4712720/04ecda81ef21984f439533e67856531fba4e0499/capsule_231x87.jpg?t=1785576928",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-9e99ffeef",
       "title": "CyberDeck: The Cyberpunk Roguelike Deckbuilder",
@@ -269,18 +281,6 @@
       ]
     },
     {
-      "id": "steam-news-31c244589",
-      "title": "Dinofurie | The Dinosaur's Battle Royale",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4756740/Dinofurie__The_Dinosaurs_Battle_Royale/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4756740/dd1e59111eb0e9fa2837a26a80e8a52417d522bd/capsule_231x87.jpg?t=1785537220",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-d31d5b85c",
       "title": "Lost Chronology",
       "kind": "coming_soon",
@@ -386,6 +386,18 @@
       ]
     },
     {
+      "id": "steam-news-15d3fbc8e",
+      "title": "Guardian Heart",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4927750/Guardian_Heart/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927750/a10d4f2de05718c8b995caacbd28ec91714d9eaa/capsule_231x87.jpg?t=1785225229",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-aa543bd12",
       "title": "Dopamine Eggs",
       "kind": "coming_soon",
@@ -404,18 +416,6 @@
       "dateLabel": "2 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
       "categories": []
-    },
-    {
-      "id": "steam-news-15d3fbc8e",
-      "title": "Guardian Heart",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4927750/Guardian_Heart/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927750/a10d4f2de05718c8b995caacbd28ec91714d9eaa/capsule_231x87.jpg?t=1785225229",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
-      ]
     },
     {
       "id": "steam-news-27c8ad052",
