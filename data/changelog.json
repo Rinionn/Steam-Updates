@@ -6,5 +6,29 @@
     "kind": "deadline_changed",
     "field": "deadlines.party-based-rpg-fest-55771f151-6552759d6.dueAt",
     "before": "2026-09-14T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-01T20:32:47.996Z",
+    "eventId": "cyberpunk-fest-51562f576",
+    "eventName": "Cyberpunk Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.cyberpunk-fest-51562f576-5a34e3e06.dueAt",
+    "after": "2026-08-03T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-01T20:32:47.996Z",
+    "eventId": "steam-scream-v-4b0a8f227",
+    "eventName": "Steam Scream V",
+    "kind": "deadline_changed",
+    "field": "deadlines.steam-scream-v-4b0a8f227-84f4ccae8.dueAt",
+    "after": "2026-10-26T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-01T20:32:47.996Z",
+    "eventId": "auto-battler-rpg-fest-92a2e84b8",
+    "eventName": "Auto-Battler RPG Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.auto-battler-rpg-fest-92a2e84b8-81629364c.dueAt",
+    "after": "2026-11-16T18:00:00Z"
   }
 ]
