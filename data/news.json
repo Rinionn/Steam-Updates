@@ -1,6 +1,33 @@
 {
-  "generatedAt": "2026-08-01T22:32:38.602Z",
+  "generatedAt": "2026-08-01T23:32:25.092Z",
   "items": [
+    {
+      "id": "steam-news-103745986",
+      "title": "Froggy's Adventures",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4173880/Froggys_Adventures/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4173880/50076d0c3969612be8360ff09912cc9bafc77af4/capsule_231x87.jpg?t=1785626872",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Macera",
+        "RPG",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-e400353c3",
+      "title": "Havoc Arena",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4484050/Havoc_Arena/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4484050/2ce2829e8e6da5869b4fcd0b8db067f0837267ea/capsule_231x87.jpg?t=1785624723",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-384984ae1",
       "title": "Ore & Odds",
@@ -260,29 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-bbb05bc99",
-      "title": "Ghosts of Tabor : LEGACY",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4836070/Ghosts_of_Tabor__LEGACY/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836070/87ff5f96c64decd2b08727da8828051381bb2760/capsule_231x87.jpg?t=1785588869",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-af765e0af",
-      "title": "SurroundedByBoys",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4673900/SurroundedByBoys/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4673900/d176fed6ed7a7ad53cfaa1e8acbf943c36be0407/capsule_231x87.jpg?t=1785585627",
-      "categories": [
-        "Gündelik",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-ee16f4063",
       "title": "YohohoDice",
       "kind": "coming_soon",
@@ -352,15 +356,6 @@
       ]
     },
     {
-      "id": "steam-news-973e09b5e",
-      "title": "Columbus",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
-      "categories": []
-    },
-    {
       "id": "steam-news-15d3fbc8e",
       "title": "Guardian Heart",
       "kind": "coming_soon",
@@ -371,6 +366,15 @@
         "Strateji",
         "Tek Oyunculu"
       ]
+    },
+    {
+      "id": "steam-news-973e09b5e",
+      "title": "Columbus",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
+      "categories": []
     },
     {
       "id": "steam-news-aa543bd12",
