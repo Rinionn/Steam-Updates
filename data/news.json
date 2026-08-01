@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-01T17:14:15.638Z",
+  "generatedAt": "2026-08-01T18:13:35.828Z",
   "items": [
+    {
+      "id": "steam-news-4205a8435",
+      "title": "Avoidvania",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1375440/Avoidvania/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1375440/capsule_231x87.jpg?t=1785606514",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-832e601b0",
+      "title": "Droned",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1712720/Droned/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1712720/0d5ce50aa68e9bf6bc1b666e6a8e9ad32db6f64d/capsule_231x87.jpg?t=1785605806",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-99a90e4c9",
       "title": "Hang in there",
@@ -257,43 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-348cb6237",
-      "title": "Wayfarer Colony: Veylan",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4961970/Wayfarer_Colony_Veylan/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961970/a35e47dcb854c21a7616e0f6ea7702a1089adc13/capsule_231x87.jpg?t=1785575216",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-c5bcf32e4",
-      "title": "Happy Digger Go-Go",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4875420/Happy_Digger_GoGo/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4875420/9e1320c38a25d5e52632f46de76d51f8835dde98/capsule_231x87.jpg?t=1785573264",
-      "categories": [
-        "Gündelik",
-        "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-d1bb67618",
-      "title": "My Wukong",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4813540/My_Wukong/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4813540/5fd570a2e7fec25063fb40199a0e275214d7d222/capsule_231x87.jpg?t=1784710990",
-      "categories": [
-        "Gündelik",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-60767c277",
       "title": "TRAUMAHACK",
       "kind": "coming_soon",
@@ -302,17 +288,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4694660/4f4d32c7e0f3ca55f68318cd10b3c76c0e9ec0e4/capsule_231x87.jpg?t=1785568556",
       "categories": [
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-db6f7037e",
-      "title": "Garlic Ramen Shop Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4525560/Garlic_Ramen_Shop_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4525560/8299cf7cdc891463e9b6242b4b4bf91dfd7db55a/capsule_231x87.jpg?t=1784628503",
-      "categories": [
-        "Simülasyon"
       ]
     },
     {
@@ -328,15 +303,14 @@
       ]
     },
     {
-      "id": "steam-news-e6e55a227",
-      "title": "Talisman Codes",
+      "id": "steam-news-db6f7037e",
+      "title": "Garlic Ramen Shop Simulator",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4535980/Talisman_Codes/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4525560/Garlic_Ramen_Shop_Simulator/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4535980/44e6c6825780e09fa66b4a2ddaf3a9adcaff3a37/capsule_231x87.jpg?t=1780109757",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4525560/8299cf7cdc891463e9b6242b4b4bf91dfd7db55a/capsule_231x87.jpg?t=1784628503",
       "categories": [
-        "RPG",
-        "Strateji"
+        "Simülasyon"
       ]
     },
     {
@@ -347,6 +321,18 @@
       "dateLabel": "2 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785501604",
       "categories": []
+    },
+    {
+      "id": "steam-news-e6e55a227",
+      "title": "Talisman Codes",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4535980/Talisman_Codes/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4535980/44e6c6825780e09fa66b4a2ddaf3a9adcaff3a37/capsule_231x87.jpg?t=1780109757",
+      "categories": [
+        "RPG",
+        "Strateji"
+      ]
     },
     {
       "id": "steam-news-9b359d1f0",
@@ -462,18 +448,6 @@
       ]
     },
     {
-      "id": "steam-news-94992a437",
-      "title": "GeoPinQuest",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4974830/GeoPinQuest/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974830/e7325864d25d2cb4503d3c4155cf3fd6d4c967ac/capsule_231x87.jpg?t=1784938211",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-690124593",
       "title": "Dungeons & Donuts",
       "kind": "coming_soon",
@@ -483,6 +457,18 @@
       "categories": [
         "Bağımsız",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-94992a437",
+      "title": "GeoPinQuest",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4974830/GeoPinQuest/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974830/e7325864d25d2cb4503d3c4155cf3fd6d4c967ac/capsule_231x87.jpg?t=1784938211",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -524,17 +510,6 @@
       ]
     },
     {
-      "id": "steam-news-f1d599a0d",
-      "title": "Meridian",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-c2ff8423c",
       "title": "MoonCraft",
       "kind": "coming_soon",
@@ -556,6 +531,29 @@
       "categories": [
         "Macera",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-d9bb72add",
+      "title": "Soul Siblings",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-8f86e19f8",
+      "title": "SARA",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
+      "categories": [
+        "Macera",
+        "Korku"
       ]
     },
     {
