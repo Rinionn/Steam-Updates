@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-01T21:29:49.081Z",
+  "generatedAt": "2026-08-01T22:32:38.602Z",
   "items": [
+    {
+      "id": "steam-news-384984ae1",
+      "title": "Ore & Odds",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4166740/Ore__Odds/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4166740/eb94c8a38849adc1cc754ee228eff36e8fa5c026/capsule_231x87.jpg?t=1785622139",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4dc529b39",
+      "title": "TRAUMAHACK",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4694660/TRAUMAHACK/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4694660/4f4d32c7e0f3ca55f68318cd10b3c76c0e9ec0e4/capsule_231x87.jpg?t=1785622095",
+      "categories": [
+        "Korku"
+      ]
+    },
     {
       "id": "steam-news-ac6e6c225",
       "title": "Résop Paz Yandere True ( Rpyt ) ( R-pyt ) ( Resop Paz )",
@@ -261,29 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-f20fba034",
-      "title": "Snek",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4699240/Snek/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4699240/d0fcd0f0d760f5a3c895e2a68c0111bebb6db279/capsule_231x87.jpg?t=1785583648",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-b0a1d5c63",
-      "title": "HackHub - Ultimate Hacker Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2980270/HackHub__Ultimate_Hacker_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2980270/73c536ce6a77ec81d73d9f6815963038a1372872/capsule_231x87.jpg?t=1785579825",
-      "categories": [
-        "Simülasyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-ee16f4063",
       "title": "YohohoDice",
       "kind": "coming_soon",
@@ -307,6 +306,15 @@
       ]
     },
     {
+      "id": "steam-news-7308ca28f",
+      "title": "Neon Bullet",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4443810/Neon_Bullet/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785501604",
+      "categories": []
+    },
+    {
       "id": "steam-news-e6e55a227",
       "title": "Talisman Codes",
       "kind": "coming_soon",
@@ -317,15 +325,6 @@
         "RPG",
         "Strateji"
       ]
-    },
-    {
-      "id": "steam-news-7308ca28f",
-      "title": "Neon Bullet",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4443810/Neon_Bullet/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785501604",
-      "categories": []
     },
     {
       "id": "steam-news-9b359d1f0",
@@ -353,6 +352,15 @@
       ]
     },
     {
+      "id": "steam-news-973e09b5e",
+      "title": "Columbus",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
+      "categories": []
+    },
+    {
       "id": "steam-news-15d3fbc8e",
       "title": "Guardian Heart",
       "kind": "coming_soon",
@@ -363,15 +371,6 @@
         "Strateji",
         "Tek Oyunculu"
       ]
-    },
-    {
-      "id": "steam-news-973e09b5e",
-      "title": "Columbus",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
-      "categories": []
     },
     {
       "id": "steam-news-aa543bd12",
@@ -503,15 +502,14 @@
       ]
     },
     {
-      "id": "steam-news-8f86e19f8",
-      "title": "SARA",
+      "id": "steam-news-d9bb72add",
+      "title": "Soul Siblings",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
       "categories": [
-        "Macera",
-        "Korku"
+        "Aksiyon"
       ]
     },
     {
@@ -538,17 +536,6 @@
       ]
     },
     {
-      "id": "steam-news-d9bb72add",
-      "title": "Soul Siblings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-60e3c93e9",
       "title": "Robin Hood: Sherwood Valley",
       "kind": "coming_soon",
@@ -558,6 +545,18 @@
       "categories": [
         "Macera",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-8f86e19f8",
+      "title": "SARA",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
+      "categories": [
+        "Macera",
+        "Korku"
       ]
     },
     {
