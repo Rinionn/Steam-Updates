@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-01T11:02:01.285Z",
+  "generatedAt": "2026-08-01T12:08:47.294Z",
   "items": [
+    {
+      "id": "steam-news-af765e0af",
+      "title": "SurroundedByBoys",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4673900/SurroundedByBoys/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4673900/d176fed6ed7a7ad53cfaa1e8acbf943c36be0407/capsule_231x87.jpg?t=1785585627",
+      "categories": [
+        "Gündelik",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-f20fba034",
+      "title": "Snek",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4699240/Snek/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4699240/d0fcd0f0d760f5a3c895e2a68c0111bebb6db279/capsule_231x87.jpg?t=1785583648",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-b0a1d5c63",
       "title": "HackHub - Ultimate Hacker Simulator",
@@ -262,26 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-5b9270f81",
-      "title": "Moshcave",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1838600/Moshcave/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1838600/03533ef5c1901471f64fc3b6c7f2fdb553622b61/capsule_231x87.jpg?t=1785543379",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-54aadf8bf",
-      "title": "Schooled",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4902420/Schooled/?snr=1_7_7_230_150_1",
-      "dateLabel": "31 Jul, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4902420/a1a84230c7cac52160c808c9eb9fe24897a33af8/capsule_231x87.jpg?t=1785540216",
-      "categories": []
-    },
-    {
       "id": "steam-news-d31d5b85c",
       "title": "Lost Chronology",
       "kind": "coming_soon",
@@ -318,6 +321,17 @@
       ]
     },
     {
+      "id": "steam-news-db6f7037e",
+      "title": "Garlic Ramen Shop Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4525560/Garlic_Ramen_Shop_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4525560/8299cf7cdc891463e9b6242b4b4bf91dfd7db55a/capsule_231x87.jpg?t=1784628503",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-ee16f4063",
       "title": "YohohoDice",
       "kind": "coming_soon",
@@ -327,17 +341,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-db6f7037e",
-      "title": "Garlic Ramen Shop Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4525560/Garlic_Ramen_Shop_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4525560/8299cf7cdc891463e9b6242b4b4bf91dfd7db55a/capsule_231x87.jpg?t=1784628503",
-      "categories": [
-        "Simülasyon"
       ]
     },
     {
@@ -387,15 +390,6 @@
       ]
     },
     {
-      "id": "steam-news-973e09b5e",
-      "title": "Columbus",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
-      "categories": []
-    },
-    {
       "id": "steam-news-15d3fbc8e",
       "title": "Guardian Heart",
       "kind": "coming_soon",
@@ -406,6 +400,15 @@
         "Strateji",
         "Tek Oyunculu"
       ]
+    },
+    {
+      "id": "steam-news-973e09b5e",
+      "title": "Columbus",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
+      "categories": []
     },
     {
       "id": "steam-news-aa543bd12",
@@ -475,18 +478,6 @@
       ]
     },
     {
-      "id": "steam-news-94992a437",
-      "title": "GeoPinQuest",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4974830/GeoPinQuest/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974830/e7325864d25d2cb4503d3c4155cf3fd6d4c967ac/capsule_231x87.jpg?t=1784938211",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-690124593",
       "title": "Dungeons & Donuts",
       "kind": "coming_soon",
@@ -496,6 +487,18 @@
       "categories": [
         "Bağımsız",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-94992a437",
+      "title": "GeoPinQuest",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4974830/GeoPinQuest/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974830/e7325864d25d2cb4503d3c4155cf3fd6d4c967ac/capsule_231x87.jpg?t=1784938211",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -548,14 +551,15 @@
       ]
     },
     {
-      "id": "steam-news-f1d599a0d",
-      "title": "Meridian",
+      "id": "steam-news-c2ff8423c",
+      "title": "MoonCraft",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4954590/MoonCraft/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4954590/810663e58a140d2a7f5570353a2d727ad4a8e26b/capsule_231x87.jpg?t=1784746045",
       "categories": [
-        "RPG"
+        "Strateji",
+        "Gündelik"
       ]
     },
     {
