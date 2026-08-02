@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-08-02T18:16:11.362Z",
+  "generatedAt": "2026-08-02T19:40:03.501Z",
   "items": [
+    {
+      "id": "steam-news-9bca6408d",
+      "title": "ACE Ninja Path",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4483260/ACE_Ninja_Path/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4483260/8fe8e5cab6a0db64202bf74426d41d0fb7885257/capsule_231x87.jpg?t=1785699234",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-2a97abc95",
+      "title": "It Comes At Night",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4440080/It_Comes_At_Night/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4440080/cafff983198a7290c0996f883071e11015029a79/capsule_231x87.jpg?t=1785697030",
+      "categories": [
+        "Macera",
+        "Korku",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-ecf73326e",
       "title": "DeepDig: Together",
@@ -259,43 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-afec4a426",
-      "title": "Roadside",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2623970/Roadside/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2623970/d9561a15018661b8ef0fca069ca79c4d52889ca0/capsule_231x87.jpg?t=1785635600",
-      "categories": [
-        "Macera",
-        "Aksiyon",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-85d9c5c40",
-      "title": "Morphing Blocks",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4790300/Morphing_Blocks/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4790300/290a96c8c98a001398805d3c7897cbc1f783e594/capsule_231x87.jpg?t=1785627576",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-9b359d1f0",
-      "title": "Desktop Grass",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4971830/Desktop_Grass/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4971830/8de6eecc910806e2e28c201035687447dd9a38dd/capsule_231x87.jpg?t=1785459571",
-      "categories": [
-        "Simülasyon",
-        "Tek Oyunculu",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-469e6d971",
       "title": "Soul Scroll",
       "kind": "coming_soon",
@@ -422,6 +411,17 @@
       ]
     },
     {
+      "id": "steam-news-d9bb72add",
+      "title": "Soul Siblings",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-c2ff8423c",
       "title": "MoonCraft",
       "kind": "coming_soon",
@@ -446,28 +446,6 @@
       ]
     },
     {
-      "id": "steam-news-f1d599a0d",
-      "title": "Meridian",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-d9bb72add",
-      "title": "Soul Siblings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-60e3c93e9",
       "title": "Robin Hood: Sherwood Valley",
       "kind": "coming_soon",
@@ -476,6 +454,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
       "categories": [
         "Macera",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-f1d599a0d",
+      "title": "Meridian",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
+      "categories": [
         "RPG"
       ]
     },
@@ -534,6 +523,18 @@
       ]
     },
     {
+      "id": "steam-news-61969702d",
+      "title": "SatelliteMemory（サテライトメモリー）",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4956850/SatelliteMemory/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4956850/9499f7aa8987e569c3e5856cb01016fe2438ffbc/capsule_231x87.jpg?t=1784727207",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
+    },
+    {
       "id": "steam-news-964cb0ee1",
       "title": "GIFT from GOD",
       "kind": "coming_soon",
@@ -547,15 +548,14 @@
       ]
     },
     {
-      "id": "steam-news-61969702d",
-      "title": "SatelliteMemory（サテライトメモリー）",
+      "id": "steam-news-71ed37026",
+      "title": "25 Days in the DARK",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4956850/SatelliteMemory/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4548480/25_Days_in_the_DARK/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4956850/9499f7aa8987e569c3e5856cb01016fe2438ffbc/capsule_231x87.jpg?t=1784727207",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4548480/0444b397945749664ee1a086f47ff0b6c473efa0/capsule_231x87.jpg?t=1784457611",
       "categories": [
-        "Aksiyon",
-        "Macera"
+        "Korku"
       ]
     },
     {
