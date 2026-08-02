@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-08-02T21:37:30.460Z",
+  "generatedAt": "2026-08-02T22:39:19.270Z",
   "items": [
+    {
+      "id": "steam-news-e15ce9038",
+      "title": "Soul Scroll",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4314050/Soul_Scroll/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4314050/6f4222e7a9fc27d2df78e6196c34d21fd4e359c4/capsule_231x87.jpg?t=1785709686",
+      "categories": [
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-2939401d3",
+      "title": "Endless Defense",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4816200/Endless_Defense/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4816200/f571c91af47903c60f0bb456998a21ee590f39c5/capsule_231x87.jpg?t=1785709369",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-2f962202a",
+      "title": "25 Days in the DARK",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4548480/25_Days_in_the_DARK/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4548480/0444b397945749664ee1a086f47ff0b6c473efa0/capsule_231x87.jpg?t=1785706968",
+      "categories": [
+        "Korku"
+      ]
+    },
     {
       "id": "steam-news-00348c5ee",
       "title": "Dunchess",
@@ -248,42 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-84e940b0e",
-      "title": "Desktop Pet: Idle Cats Cozy Chaotic Companions for your screen",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4923900/Desktop_Pet_Idle_Cats_Cozy_Chaotic_Companions_for_your_screen/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4923900/46127e929475715ae6ddab12553fb677b6f38e14/capsule_231x87.jpg?t=1785656179",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-948f3d8c3",
-      "title": "BAFF D",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4968440/BAFF_D/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4968440/a5adaad6f07caec6d7d92114038629f35f8f5dd5/capsule_231x87.jpg?t=1785654049",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-c0801fa9f",
-      "title": "28天半衰期",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4733330/28/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4733330/b6506cdadc8ea09a5c938644cd99d9580610aa1b/capsule_231x87.jpg?t=1785665076",
-      "categories": [
-        "RPG",
-        "Anime"
-      ]
-    },
-    {
       "id": "steam-news-60e3c93e9",
       "title": "Robin Hood: Sherwood Valley",
       "kind": "coming_soon",
@@ -293,17 +291,6 @@
       "categories": [
         "Macera",
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-d9bb72add",
-      "title": "Soul Siblings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
@@ -319,17 +306,6 @@
       ]
     },
     {
-      "id": "steam-news-f1d599a0d",
-      "title": "Meridian",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-c2ff8423c",
       "title": "MoonCraft",
       "kind": "coming_soon",
@@ -339,6 +315,28 @@
       "categories": [
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d9bb72add",
+      "title": "Soul Siblings",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-f1d599a0d",
+      "title": "Meridian",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
+      "categories": [
+        "RPG"
       ]
     },
     {
@@ -421,23 +419,21 @@
       ]
     },
     {
-      "id": "steam-news-71ed37026",
-      "title": "25 Days in the DARK",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4548480/25_Days_in_the_DARK/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4548480/0444b397945749664ee1a086f47ff0b6c473efa0/capsule_231x87.jpg?t=1784457611",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-746d0982b",
       "title": "Focus Froggy",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4334280/Focus_Froggy/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4334280/a530801f8ddcd3f4eaab1da77e26583adb8d8826/capsule_231x87.jpg?t=1783994330",
+      "categories": []
+    },
+    {
+      "id": "steam-news-186a5eb59",
+      "title": "Kin and Conquest",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4540820/Kin_and_Conquest/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4540820/247b1a72d0e7d433086d7a02b103a2822b2f6c09/capsule_231x87.jpg?t=1785583789",
       "categories": []
     },
     {
@@ -451,15 +447,6 @@
         "Strateji",
         "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-186a5eb59",
-      "title": "Kin and Conquest",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4540820/Kin_and_Conquest/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4540820/247b1a72d0e7d433086d7a02b103a2822b2f6c09/capsule_231x87.jpg?t=1785583789",
-      "categories": []
     },
     {
       "id": "steam-news-49e75d2f4",
@@ -524,6 +511,17 @@
       ]
     },
     {
+      "id": "steam-news-be44a9d3a",
+      "title": "Hidden Turtle Puzzle",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4631670/Hidden_Turtle_Puzzle/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4631670/74e5095cbc717feb9c6d38c8ca0f5878e33be41b/capsule_231x87.jpg?t=1784569880",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-14fd673e5",
       "title": "Shibuya 88 StarBurner",
       "kind": "coming_soon",
@@ -536,17 +534,6 @@
       ]
     },
     {
-      "id": "steam-news-be44a9d3a",
-      "title": "Hidden Turtle Puzzle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4631670/Hidden_Turtle_Puzzle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4631670/74e5095cbc717feb9c6d38c8ca0f5878e33be41b/capsule_231x87.jpg?t=1784569880",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-3cf5c52eb",
       "title": "Hacklash",
       "kind": "coming_soon",
@@ -554,6 +541,17 @@
       "dateLabel": "3 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4841280/2ccca782526da1694b6cad77e8b11a34ad8d663f/capsule_231x87.jpg?t=1782562390",
       "categories": []
+    },
+    {
+      "id": "steam-news-498133701",
+      "title": "Green Light District",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4482890/Green_Light_District/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4482890/2f81f62fcf5d26c5385231f7555281cb3aac86ce/capsule_231x87.jpg?t=1785088732",
+      "categories": [
+        "Gündelik"
+      ]
     },
     {
       "id": "steam-news-c560bed11",
