@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-08-02T12:12:05.548Z",
+  "generatedAt": "2026-08-02T13:56:12.160Z",
   "items": [
+    {
+      "id": "steam-news-d3998f807",
+      "title": "Clickstellar",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4946490/Clickstellar/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946490/195e856c741504f4ae31a563631223e87816c02e/capsule_231x87.jpg?t=1785676932",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-29b0dc8dc",
+      "title": "Exipelago",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1948540/Exipelago/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1948540/capsule_231x87.jpg?t=1785676412",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-35f7d4cb4",
+      "title": "The Referee Committee",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4915370/The_Referee_Committee/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915370/32acdab522a1174cf1426d947b3c112adfd2e018/capsule_231x87.jpg?t=1785674103",
+      "categories": [
+        "Simülasyon",
+        "Spor",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-43bbe145d",
       "title": "The Iron and the Oath",
@@ -200,7 +236,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4166740/Ore__Odds/?snr=1_7_7_230_150_1",
       "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4166740/eb94c8a38849adc1cc754ee228eff36e8fa5c026/capsule_231x87.jpg?t=1785622139",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4166740/eb94c8a38849adc1cc754ee228eff36e8fa5c026/capsule_231x87.jpg?t=1785677548",
       "categories": [
         "Gündelik"
       ]
@@ -255,40 +291,6 @@
       ]
     },
     {
-      "id": "steam-news-4205a8435",
-      "title": "Avoidvania",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1375440/Avoidvania/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1375440/capsule_231x87.jpg?t=1785606514",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-832e601b0",
-      "title": "Droned",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1712720/Droned/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1712720/0d5ce50aa68e9bf6bc1b666e6a8e9ad32db6f64d/capsule_231x87.jpg?t=1785605806",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-99a90e4c9",
-      "title": "Hang in there",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4771630/Hang_in_there/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4771630/57d917c16f31e816535cf358fda4f02d033b0ff9/capsule_231x87.jpg?t=1785604352",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-db6f7037e",
       "title": "Garlic Ramen Shop Simulator",
       "kind": "coming_soon",
@@ -298,15 +300,6 @@
       "categories": [
         "Simülasyon"
       ]
-    },
-    {
-      "id": "steam-news-7308ca28f",
-      "title": "Neon Bullet",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4443810/Neon_Bullet/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785501604",
-      "categories": []
     },
     {
       "id": "steam-news-e6e55a227",
@@ -319,6 +312,15 @@
         "RPG",
         "Strateji"
       ]
+    },
+    {
+      "id": "steam-news-7308ca28f",
+      "title": "Neon Bullet",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4443810/Neon_Bullet/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785501604",
+      "categories": []
     },
     {
       "id": "steam-news-9b359d1f0",
@@ -398,18 +400,6 @@
       ]
     },
     {
-      "id": "steam-news-58ee95b54",
-      "title": "Clickstellar",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4946490/Clickstellar/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946490/195e856c741504f4ae31a563631223e87816c02e/capsule_231x87.jpg?t=1784562419",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-b898d8a8e",
       "title": "Peasant Samurai ～ 百姓ノ持チタル国",
       "kind": "coming_soon",
@@ -484,17 +474,6 @@
       ]
     },
     {
-      "id": "steam-news-d9bb72add",
-      "title": "Soul Siblings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-c2ff8423c",
       "title": "MoonCraft",
       "kind": "coming_soon",
@@ -504,6 +483,18 @@
       "categories": [
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-60e3c93e9",
+      "title": "Robin Hood: Sherwood Valley",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
+      "categories": [
+        "Macera",
+        "RPG"
       ]
     },
     {
@@ -530,15 +521,14 @@
       ]
     },
     {
-      "id": "steam-news-60e3c93e9",
-      "title": "Robin Hood: Sherwood Valley",
+      "id": "steam-news-d9bb72add",
+      "title": "Soul Siblings",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
       "categories": [
-        "Macera",
-        "RPG"
+        "Aksiyon"
       ]
     },
     {
@@ -560,6 +550,17 @@
       "dateLabel": "3 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3651470/dc2a81b10bf4c08b64e2e403348dea84be271aee/capsule_231x87.jpg?t=1782851117",
       "categories": []
+    },
+    {
+      "id": "steam-news-4cc2947ab",
+      "title": "The Slopstar 2: Slop Wars",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4495630/The_Slopstar_2_Slop_Wars/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4495630/c5d15687cf409540cd5d1062e3ef1249e1fc9442/capsule_231x87.jpg?t=1785650751",
+      "categories": [
+        "Strateji"
+      ]
     },
     {
       "id": "steam-news-c560bed11",
