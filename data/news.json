@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-02T22:39:19.270Z",
+  "generatedAt": "2026-08-02T23:42:19.139Z",
   "items": [
+    {
+      "id": "steam-news-02200d607",
+      "title": "CONTRAL",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4857540/CONTRAL/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4857540/ad216a3a27a29b2393b925254e54c96fad067650/capsule_231x87.jpg?t=1785713383",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-e15ce9038",
       "title": "Soul Scroll",
@@ -270,18 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-5e64a56f2",
-      "title": "CRYING SCREAMING 3: JEREMY'S ENEMIES",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4818650/CRYING_SCREAMING_3_JEREMYS_ENEMIES/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4818650/5b7447ffd9c0c6e0c82e8ca21cb107ea7fe70bdd/capsule_231x87.jpg?t=1785662897",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-60e3c93e9",
       "title": "Robin Hood: Sherwood Valley",
       "kind": "coming_soon",
@@ -291,18 +291,6 @@
       "categories": [
         "Macera",
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-8f86e19f8",
-      "title": "SARA",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
-      "categories": [
-        "Macera",
-        "Korku"
       ]
     },
     {
@@ -326,6 +314,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-8f86e19f8",
+      "title": "SARA",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
+      "categories": [
+        "Macera",
+        "Korku"
       ]
     },
     {
@@ -471,20 +471,6 @@
       ]
     },
     {
-      "id": "steam-news-ff2c53717",
-      "title": "Upgradia",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4774800/Upgradia/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4774800/0dfb1f05f009daa958ee95b58eca54d28215698f/capsule_231x87.jpg?t=1785357723",
-      "categories": [
-        "Bağımsız",
-        "Macera",
-        "RPG",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-e9bd4f58a",
       "title": "Dead Zone Revive",
       "kind": "coming_soon",
@@ -496,6 +482,20 @@
         "Aksiyon",
         "RPG",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-ff2c53717",
+      "title": "Upgradia",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4774800/Upgradia/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4774800/0dfb1f05f009daa958ee95b58eca54d28215698f/capsule_231x87.jpg?t=1785357723",
+      "categories": [
+        "Bağımsız",
+        "Macera",
+        "RPG",
+        "Simülasyon"
       ]
     },
     {
