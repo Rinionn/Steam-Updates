@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-08-02T01:10:22.892Z",
+  "generatedAt": "2026-08-02T04:37:40.077Z",
   "items": [
+    {
+      "id": "steam-news-edfcbeef0",
+      "title": "ScreenSaver Idle",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4621410/ScreenSaver_Idle/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4621410/eb7c9f6c303e01bd8066755231c4648efce6e83d/capsule_231x87.jpg?t=1785640686",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-afec4a426",
+      "title": "Roadside",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2623970/Roadside/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2623970/d9561a15018661b8ef0fca069ca79c4d52889ca0/capsule_231x87.jpg?t=1785635600",
+      "categories": [
+        "Macera",
+        "Aksiyon",
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-85d9c5c40",
       "title": "Morphing Blocks",
@@ -264,29 +289,6 @@
       ]
     },
     {
-      "id": "steam-news-057824f1b",
-      "title": "Sneaky Tail",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4502420/Sneaky_Tail/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4502420/36b5de3302ef2d2dec28c0ad2dbf6d42548d2c2e/capsule_231x87.jpg?t=1785592311",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-7e4408994",
-      "title": "CATS BLOCKS: HOT SPRINGS",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4366150/CATS_BLOCKS_HOT_SPRINGS/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4366150/706bdc7eb3be3a425e3780d49bf51624f7207929/capsule_231x87.jpg?t=1785591674",
-      "categories": [
-        "Gündelik",
-        "Anime"
-      ]
-    },
-    {
       "id": "steam-news-ee16f4063",
       "title": "YohohoDice",
       "kind": "coming_soon",
@@ -310,15 +312,6 @@
       ]
     },
     {
-      "id": "steam-news-7308ca28f",
-      "title": "Neon Bullet",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4443810/Neon_Bullet/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785501604",
-      "categories": []
-    },
-    {
       "id": "steam-news-e6e55a227",
       "title": "Talisman Codes",
       "kind": "coming_soon",
@@ -329,6 +322,15 @@
         "RPG",
         "Strateji"
       ]
+    },
+    {
+      "id": "steam-news-7308ca28f",
+      "title": "Neon Bullet",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4443810/Neon_Bullet/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785501604",
+      "categories": []
     },
     {
       "id": "steam-news-9b359d1f0",
@@ -356,15 +358,6 @@
       ]
     },
     {
-      "id": "steam-news-973e09b5e",
-      "title": "Columbus",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
-      "categories": []
-    },
-    {
       "id": "steam-news-15d3fbc8e",
       "title": "Guardian Heart",
       "kind": "coming_soon",
@@ -375,6 +368,15 @@
         "Strateji",
         "Tek Oyunculu"
       ]
+    },
+    {
+      "id": "steam-news-973e09b5e",
+      "title": "Columbus",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
+      "categories": []
     },
     {
       "id": "steam-news-aa543bd12",
@@ -402,7 +404,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4953010/Sea_of_Electronica/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953010/2808376fee2a1965487ceb91aad5d0ec958a02da/capsule_231x87.jpg?t=1785579520",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953010/2808376fee2a1965487ceb91aad5d0ec958a02da/capsule_231x87.jpg?t=1785643487",
       "categories": [
         "Simülasyon"
       ]
@@ -506,17 +508,6 @@
       ]
     },
     {
-      "id": "steam-news-d9bb72add",
-      "title": "Soul Siblings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-c2ff8423c",
       "title": "MoonCraft",
       "kind": "coming_soon",
@@ -529,18 +520,6 @@
       ]
     },
     {
-      "id": "steam-news-60e3c93e9",
-      "title": "Robin Hood: Sherwood Valley",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
-      "categories": [
-        "Macera",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-8f86e19f8",
       "title": "SARA",
       "kind": "coming_soon",
@@ -550,6 +529,29 @@
       "categories": [
         "Macera",
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-d9bb72add",
+      "title": "Soul Siblings",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-60e3c93e9",
+      "title": "Robin Hood: Sherwood Valley",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
+      "categories": [
+        "Macera",
+        "RPG"
       ]
     },
     {

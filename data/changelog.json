@@ -30,5 +30,45 @@
     "kind": "deadline_changed",
     "field": "deadlines.auto-battler-rpg-fest-92a2e84b8-81629364c.dueAt",
     "after": "2026-11-16T18:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-02T04:37:39.617Z",
+    "eventId": "cyberpunk-fest-51562f576",
+    "eventName": "Cyberpunk Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.cyberpunk-fest-51562f576-5a34e3e06.dueAt",
+    "before": "2026-08-03T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-02T04:37:39.617Z",
+    "eventId": "pins-pegs-fest-2624f7168",
+    "eventName": "Pins & Pegs Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.pins-pegs-fest-2624f7168-ce6f299e3.dueAt",
+    "after": "2026-08-17T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-02T04:37:39.617Z",
+    "eventId": "steam-scream-v-4b0a8f227",
+    "eventName": "Steam Scream V",
+    "kind": "deadline_changed",
+    "field": "deadlines.steam-scream-v-4b0a8f227-84f4ccae8.dueAt",
+    "before": "2026-10-26T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-02T04:37:39.617Z",
+    "eventId": "auto-battler-rpg-fest-92a2e84b8",
+    "eventName": "Auto-Battler RPG Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.auto-battler-rpg-fest-92a2e84b8-81629364c.dueAt",
+    "before": "2026-11-16T18:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-02T04:37:39.617Z",
+    "eventId": "couch-co-op-fest-8b489c8ca",
+    "eventName": "Couch Co-Op Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.couch-co-op-fest-8b489c8ca-1dd6ff48a.dueAt",
+    "after": "2027-02-08T18:00:00Z"
   }
 ]
