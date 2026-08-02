@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-01T23:32:25.092Z",
+  "generatedAt": "2026-08-02T01:10:22.892Z",
   "items": [
+    {
+      "id": "steam-news-85d9c5c40",
+      "title": "Morphing Blocks",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4790300/Morphing_Blocks/?snr=1_7_7_230_150_1",
+      "dateLabel": "1 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4790300/290a96c8c98a001398805d3c7897cbc1f783e594/capsule_231x87.jpg?t=1785627576",
+      "categories": [
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-103745986",
       "title": "Froggy's Adventures",
@@ -45,7 +56,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4694660/TRAUMAHACK/?snr=1_7_7_230_150_1",
       "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4694660/4f4d32c7e0f3ca55f68318cd10b3c76c0e9ec0e4/capsule_231x87.jpg?t=1785622095",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4694660/4f4d32c7e0f3ca55f68318cd10b3c76c0e9ec0e4/capsule_231x87.jpg?t=1785630002",
       "categories": [
         "Korku"
       ]
@@ -276,17 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-fd20f5e67",
-      "title": "Squad Survivors - Rule-breakers",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4849300/Squad_Survivors__Rulebreakers/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4849300/c7aeb4178b0b1cd3c16d1cb6790514bf5799c0d3/capsule_231x87.jpg?t=1785591375",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-ee16f4063",
       "title": "YohohoDice",
       "kind": "coming_soon",
@@ -356,6 +356,15 @@
       ]
     },
     {
+      "id": "steam-news-973e09b5e",
+      "title": "Columbus",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
+      "categories": []
+    },
+    {
       "id": "steam-news-15d3fbc8e",
       "title": "Guardian Heart",
       "kind": "coming_soon",
@@ -366,15 +375,6 @@
         "Strateji",
         "Tek Oyunculu"
       ]
-    },
-    {
-      "id": "steam-news-973e09b5e",
-      "title": "Columbus",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
-      "categories": []
     },
     {
       "id": "steam-news-aa543bd12",
@@ -444,18 +444,6 @@
       ]
     },
     {
-      "id": "steam-news-94992a437",
-      "title": "GeoPinQuest",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4974830/GeoPinQuest/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974830/e7325864d25d2cb4503d3c4155cf3fd6d4c967ac/capsule_231x87.jpg?t=1784938211",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-690124593",
       "title": "Dungeons & Donuts",
       "kind": "coming_soon",
@@ -465,6 +453,18 @@
       "categories": [
         "Bağımsız",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-94992a437",
+      "title": "GeoPinQuest",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4974830/GeoPinQuest/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974830/e7325864d25d2cb4503d3c4155cf3fd6d4c967ac/capsule_231x87.jpg?t=1784938211",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -517,17 +517,6 @@
       ]
     },
     {
-      "id": "steam-news-f1d599a0d",
-      "title": "Meridian",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-c2ff8423c",
       "title": "MoonCraft",
       "kind": "coming_soon",
@@ -561,6 +550,17 @@
       "categories": [
         "Macera",
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-f1d599a0d",
+      "title": "Meridian",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
+      "categories": [
+        "RPG"
       ]
     },
     {
