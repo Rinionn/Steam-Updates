@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-02T11:03:54.110Z",
+  "generatedAt": "2026-08-02T12:12:05.548Z",
   "items": [
+    {
+      "id": "steam-news-43bbe145d",
+      "title": "The Iron and the Oath",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4575750/The_Iron_and_the_Oath/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4575750/18818810182f03d251dbbc8de3de33b86967db5f/capsule_231x87.jpg?t=1785672142",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-403299ce1",
+      "title": "我是校长",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4916300/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4916300/fbcd855807b3921b02e0a4b9717893b3099bb95d/capsule_231x87.jpg?t=1785668374",
+      "categories": [
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-0b85f885c",
       "title": "Invincible Magnet Warrior",
@@ -266,29 +289,6 @@
       ]
     },
     {
-      "id": "steam-news-7bd22ed24",
-      "title": "Reawait",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4913180/Reawait/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4913180/6409891c6cb192de5177f8990a32ecc766bd896f/capsule_231x87.jpg?t=1785602504",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-1b09c9f32",
-      "title": "101 Dogs Hidden in Paris",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4949810/101_Dogs_Hidden_in_Paris/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4949810/d19e44e1c143ec3a82a4a87ab037566bf90ec984/capsule_231x87.jpg?t=1785600314",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-db6f7037e",
       "title": "Garlic Ramen Shop Simulator",
       "kind": "coming_soon",
@@ -422,18 +422,6 @@
       ]
     },
     {
-      "id": "steam-news-94992a437",
-      "title": "GeoPinQuest",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4974830/GeoPinQuest/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974830/e7325864d25d2cb4503d3c4155cf3fd6d4c967ac/capsule_231x87.jpg?t=1784938211",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-690124593",
       "title": "Dungeons & Donuts",
       "kind": "coming_soon",
@@ -443,6 +431,18 @@
       "categories": [
         "Bağımsız",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-94992a437",
+      "title": "GeoPinQuest",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4974830/GeoPinQuest/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974830/e7325864d25d2cb4503d3c4155cf3fd6d4c967ac/capsule_231x87.jpg?t=1784938211",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -495,18 +495,6 @@
       ]
     },
     {
-      "id": "steam-news-60e3c93e9",
-      "title": "Robin Hood: Sherwood Valley",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
-      "categories": [
-        "Macera",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-c2ff8423c",
       "title": "MoonCraft",
       "kind": "coming_soon",
@@ -538,6 +526,18 @@
       "dateLabel": "3 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
       "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-60e3c93e9",
+      "title": "Robin Hood: Sherwood Valley",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
+      "categories": [
+        "Macera",
         "RPG"
       ]
     },
