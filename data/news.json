@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-02T07:18:21.432Z",
+  "generatedAt": "2026-08-02T09:27:44.094Z",
   "items": [
+    {
+      "id": "steam-news-84e940b0e",
+      "title": "Desktop Pet: Idle Cats Cozy Chaotic Companions for your screen",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4923900/Desktop_Pet_Idle_Cats_Cozy_Chaotic_Companions_for_your_screen/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4923900/46127e929475715ae6ddab12553fb677b6f38e14/capsule_231x87.jpg?t=1785656179",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-948f3d8c3",
       "title": "BAFF D",
@@ -275,18 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-cf306d2b8",
-      "title": "100 Undersea Cats",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4383070/100_Undersea_Cats/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4383070/d1da3e45e70707fa53aede3e7762f6ca876f2f43/capsule_231x87.jpg?t=1785596572",
-      "categories": [
-        "Gündelik",
-        "Oynaması Ücretsiz"
-      ]
-    },
-    {
       "id": "steam-news-ee16f4063",
       "title": "YohohoDice",
       "kind": "coming_soon",
@@ -368,15 +368,6 @@
       ]
     },
     {
-      "id": "steam-news-973e09b5e",
-      "title": "Columbus",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
-      "categories": []
-    },
-    {
       "id": "steam-news-aa543bd12",
       "title": "Dopamine Eggs",
       "kind": "coming_soon",
@@ -386,6 +377,15 @@
       "categories": [
         "Gündelik"
       ]
+    },
+    {
+      "id": "steam-news-973e09b5e",
+      "title": "Columbus",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785431481",
+      "categories": []
     },
     {
       "id": "steam-news-27c8ad052",
@@ -444,18 +444,6 @@
       ]
     },
     {
-      "id": "steam-news-690124593",
-      "title": "Dungeons & Donuts",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4764560/Dungeons__Donuts/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4764560/9a2abe2714a138c91bad2b669ca012fc9d2a6918/capsule_231x87.jpg?t=1785560239",
-      "categories": [
-        "Bağımsız",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-94992a437",
       "title": "GeoPinQuest",
       "kind": "coming_soon",
@@ -465,6 +453,18 @@
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-690124593",
+      "title": "Dungeons & Donuts",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4764560/Dungeons__Donuts/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4764560/9a2abe2714a138c91bad2b669ca012fc9d2a6918/capsule_231x87.jpg?t=1785560239",
+      "categories": [
+        "Bağımsız",
+        "RPG"
       ]
     },
     {
@@ -506,15 +506,14 @@
       ]
     },
     {
-      "id": "steam-news-c2ff8423c",
-      "title": "MoonCraft",
+      "id": "steam-news-d9bb72add",
+      "title": "Soul Siblings",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4954590/MoonCraft/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4954590/810663e58a140d2a7f5570353a2d727ad4a8e26b/capsule_231x87.jpg?t=1784746045",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
       "categories": [
-        "Strateji",
-        "Gündelik"
+        "Aksiyon"
       ]
     },
     {
@@ -530,28 +529,6 @@
       ]
     },
     {
-      "id": "steam-news-f1d599a0d",
-      "title": "Meridian",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-d9bb72add",
-      "title": "Soul Siblings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-60e3c93e9",
       "title": "Robin Hood: Sherwood Valley",
       "kind": "coming_soon",
@@ -560,6 +537,29 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
       "categories": [
         "Macera",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-c2ff8423c",
+      "title": "MoonCraft",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4954590/MoonCraft/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4954590/810663e58a140d2a7f5570353a2d727ad4a8e26b/capsule_231x87.jpg?t=1784746045",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-f1d599a0d",
+      "title": "Meridian",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
+      "categories": [
         "RPG"
       ]
     },
