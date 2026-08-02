@@ -86,5 +86,13 @@
     "kind": "deadline_changed",
     "field": "deadlines.couch-co-op-fest-8b489c8ca-1dd6ff48a.dueAt",
     "before": "2027-02-08T18:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-02T17:17:21.038Z",
+    "eventId": "cyberpunk-fest-51562f576",
+    "eventName": "Cyberpunk Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.cyberpunk-fest-51562f576-5a34e3e06.dueAt",
+    "after": "2026-08-03T17:00:00Z"
   }
 ]
