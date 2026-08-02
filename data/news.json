@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-02T17:17:21.544Z",
+  "generatedAt": "2026-08-02T18:16:11.362Z",
   "items": [
+    {
+      "id": "steam-news-ecf73326e",
+      "title": "DeepDig: Together",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3039180/DeepDig_Together/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3039180/79398b6819935f4892f70b521eb704298abab8e0/capsule_231x87.jpg?t=1785692437",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-004cdbb55",
+      "title": "Karakulo 21",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4805750/Karakulo_21/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4805750/a5646709785911dfc417f351a81ec486ff482ef7/capsule_231x87.jpg?t=1785691104",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-7bd012f9d",
       "title": "Neon Bullet",
@@ -259,33 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-103745986",
-      "title": "Froggy's Adventures",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4173880/Froggys_Adventures/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4173880/50076d0c3969612be8360ff09912cc9bafc77af4/capsule_231x87.jpg?t=1785626872",
-      "categories": [
-        "Aksiyon",
-        "Gündelik",
-        "Macera",
-        "RPG",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-e400353c3",
-      "title": "Havoc Arena",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4484050/Havoc_Arena/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4484050/2ce2829e8e6da5869b4fcd0b8db067f0837267ea/capsule_231x87.jpg?t=1785624723",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-9b359d1f0",
       "title": "Desktop Grass",
       "kind": "coming_soon",
@@ -392,7 +389,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3715410/Cavernreach/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3715410/f8d5575c700a824dbf0634a1a699ff44665c75f4/capsule_231x87.jpg?t=1781252565",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3715410/f8d5575c700a824dbf0634a1a699ff44665c75f4/capsule_231x87.jpg?t=1785692353",
       "categories": [
         "Macera",
         "Korku"
@@ -437,14 +434,25 @@
       ]
     },
     {
-      "id": "steam-news-60e3c93e9",
-      "title": "Robin Hood: Sherwood Valley",
+      "id": "steam-news-8f86e19f8",
+      "title": "SARA",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
       "categories": [
         "Macera",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-f1d599a0d",
+      "title": "Meridian",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
+      "categories": [
         "RPG"
       ]
     },
@@ -460,26 +468,15 @@
       ]
     },
     {
-      "id": "steam-news-f1d599a0d",
-      "title": "Meridian",
+      "id": "steam-news-60e3c93e9",
+      "title": "Robin Hood: Sherwood Valley",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-8f86e19f8",
-      "title": "SARA",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
       "categories": [
         "Macera",
-        "Korku"
+        "RPG"
       ]
     },
     {
@@ -537,18 +534,6 @@
       ]
     },
     {
-      "id": "steam-news-61969702d",
-      "title": "SatelliteMemory（サテライトメモリー）",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4956850/SatelliteMemory/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4956850/9499f7aa8987e569c3e5856cb01016fe2438ffbc/capsule_231x87.jpg?t=1784727207",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-964cb0ee1",
       "title": "GIFT from GOD",
       "kind": "coming_soon",
@@ -559,6 +544,18 @@
         "Macera",
         "Anime",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-61969702d",
+      "title": "SatelliteMemory（サテライトメモリー）",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4956850/SatelliteMemory/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4956850/9499f7aa8987e569c3e5856cb01016fe2438ffbc/capsule_231x87.jpg?t=1784727207",
+      "categories": [
+        "Aksiyon",
+        "Macera"
       ]
     },
     {
