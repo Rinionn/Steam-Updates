@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-02T19:40:03.501Z",
+  "generatedAt": "2026-08-02T20:35:47.805Z",
   "items": [
+    {
+      "id": "steam-news-605e3f9e0",
+      "title": "Mnema: The Fallen Remembered",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4959500/Mnema_The_Fallen_Remembered/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4959500/fea9d4e38a4f7eef6b56c8f28acf2621e37f9fa6/capsule_231x87.jpg?t=1785700842",
+      "categories": [
+        "RPG",
+        "Korku"
+      ]
+    },
     {
       "id": "steam-news-9bca6408d",
       "title": "ACE Ninja Path",
@@ -57,7 +69,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4443810/Neon_Bullet/?snr=1_7_7_230_150_1",
       "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785690020",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785698115",
       "categories": []
     },
     {
@@ -273,18 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-edfcbeef0",
-      "title": "ScreenSaver Idle",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4621410/ScreenSaver_Idle/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4621410/eb7c9f6c303e01bd8066755231c4648efce6e83d/capsule_231x87.jpg?t=1785640686",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-469e6d971",
       "title": "Soul Scroll",
       "kind": "coming_soon",
@@ -349,18 +349,6 @@
       ]
     },
     {
-      "id": "steam-news-690124593",
-      "title": "Dungeons & Donuts",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4764560/Dungeons__Donuts/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4764560/9a2abe2714a138c91bad2b669ca012fc9d2a6918/capsule_231x87.jpg?t=1785560239",
-      "categories": [
-        "Bağımsız",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-94992a437",
       "title": "GeoPinQuest",
       "kind": "coming_soon",
@@ -370,6 +358,18 @@
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-690124593",
+      "title": "Dungeons & Donuts",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4764560/Dungeons__Donuts/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4764560/9a2abe2714a138c91bad2b669ca012fc9d2a6918/capsule_231x87.jpg?t=1785560239",
+      "categories": [
+        "Bağımsız",
+        "RPG"
       ]
     },
     {
@@ -434,18 +434,6 @@
       ]
     },
     {
-      "id": "steam-news-8f86e19f8",
-      "title": "SARA",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
-      "categories": [
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-60e3c93e9",
       "title": "Robin Hood: Sherwood Valley",
       "kind": "coming_soon",
@@ -455,6 +443,18 @@
       "categories": [
         "Macera",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-8f86e19f8",
+      "title": "SARA",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869",
+      "categories": [
+        "Macera",
+        "Korku"
       ]
     },
     {
