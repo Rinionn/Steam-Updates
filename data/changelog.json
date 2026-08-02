@@ -70,5 +70,21 @@
     "kind": "deadline_changed",
     "field": "deadlines.couch-co-op-fest-8b489c8ca-1dd6ff48a.dueAt",
     "after": "2027-02-08T18:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-02T11:03:53.573Z",
+    "eventId": "pins-pegs-fest-2624f7168",
+    "eventName": "Pins & Pegs Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.pins-pegs-fest-2624f7168-ce6f299e3.dueAt",
+    "before": "2026-08-17T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-02T11:03:53.573Z",
+    "eventId": "couch-co-op-fest-8b489c8ca",
+    "eventName": "Couch Co-Op Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.couch-co-op-fest-8b489c8ca-1dd6ff48a.dueAt",
+    "before": "2027-02-08T18:00:00Z"
   }
 ]
