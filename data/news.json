@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T13:56:12.160Z",
+  "generatedAt": "2026-08-02T15:10:52.972Z",
   "items": [
     {
       "id": "steam-news-d3998f807",
@@ -7,7 +7,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4946490/Clickstellar/?snr=1_7_7_230_150_1",
       "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946490/195e856c741504f4ae31a563631223e87816c02e/capsule_231x87.jpg?t=1785676932",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946490/195e856c741504f4ae31a563631223e87816c02e/capsule_231x87.jpg?t=1785682017",
       "categories": [
         "Simülasyon",
         "Gündelik"
@@ -291,17 +291,6 @@
       ]
     },
     {
-      "id": "steam-news-db6f7037e",
-      "title": "Garlic Ramen Shop Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4525560/Garlic_Ramen_Shop_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4525560/8299cf7cdc891463e9b6242b4b4bf91dfd7db55a/capsule_231x87.jpg?t=1784628503",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-e6e55a227",
       "title": "Talisman Codes",
       "kind": "coming_soon",
@@ -348,6 +337,18 @@
       ]
     },
     {
+      "id": "steam-news-15d3fbc8e",
+      "title": "Guardian Heart",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4927750/Guardian_Heart/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927750/a10d4f2de05718c8b995caacbd28ec91714d9eaa/capsule_231x87.jpg?t=1785225229",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-aa543bd12",
       "title": "Dopamine Eggs",
       "kind": "coming_soon",
@@ -368,18 +369,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-15d3fbc8e",
-      "title": "Guardian Heart",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4927750/Guardian_Heart/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927750/a10d4f2de05718c8b995caacbd28ec91714d9eaa/capsule_231x87.jpg?t=1785225229",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-27c8ad052",
       "title": "Cyberpunk Inquisitor",
       "kind": "coming_soon",
@@ -394,7 +383,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4953010/Sea_of_Electronica/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953010/2808376fee2a1965487ceb91aad5d0ec958a02da/capsule_231x87.jpg?t=1785643487",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953010/2808376fee2a1965487ceb91aad5d0ec958a02da/capsule_231x87.jpg?t=1785681195",
       "categories": [
         "Simülasyon"
       ]
@@ -412,18 +401,6 @@
       ]
     },
     {
-      "id": "steam-news-690124593",
-      "title": "Dungeons & Donuts",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4764560/Dungeons__Donuts/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4764560/9a2abe2714a138c91bad2b669ca012fc9d2a6918/capsule_231x87.jpg?t=1785560239",
-      "categories": [
-        "Bağımsız",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-94992a437",
       "title": "GeoPinQuest",
       "kind": "coming_soon",
@@ -433,6 +410,18 @@
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-690124593",
+      "title": "Dungeons & Donuts",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4764560/Dungeons__Donuts/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4764560/9a2abe2714a138c91bad2b669ca012fc9d2a6918/capsule_231x87.jpg?t=1785560239",
+      "categories": [
+        "Bağımsız",
+        "RPG"
       ]
     },
     {
@@ -498,6 +487,17 @@
       ]
     },
     {
+      "id": "steam-news-d9bb72add",
+      "title": "Soul Siblings",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-8f86e19f8",
       "title": "SARA",
       "kind": "coming_soon",
@@ -518,17 +518,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
       "categories": [
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-d9bb72add",
-      "title": "Soul Siblings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
@@ -558,6 +547,17 @@
       "url": "https://store.steampowered.com/app/4495630/The_Slopstar_2_Slop_Wars/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4495630/c5d15687cf409540cd5d1062e3ef1249e1fc9442/capsule_231x87.jpg?t=1785650751",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-59a5acb08",
+      "title": "Flow Of War",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2637210/Flow_Of_War/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2637210/capsule_231x87.jpg?t=1785641116",
       "categories": [
         "Strateji"
       ]
