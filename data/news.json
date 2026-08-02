@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-02T15:10:52.972Z",
+  "generatedAt": "2026-08-02T16:12:46.932Z",
   "items": [
+    {
+      "id": "steam-news-9dcb6c154",
+      "title": "Guardian Heart",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4927750/Guardian_Heart/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927750/a10d4f2de05718c8b995caacbd28ec91714d9eaa/capsule_231x87.jpg?t=1785686984",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-4ad848cae",
+      "title": "Retro Flight Simulator 2026",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4946580/Retro_Flight_Simulator_2026/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946580/14b25fc292db4175d85f9d50a23135a61d4638f2/capsule_231x87.jpg?t=1785686100",
+      "categories": [
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-9c2ffdefa",
+      "title": "Age of New Worlds",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4833240/Age_of_New_Worlds/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4833240/4f131ce90f3dcadd9968e54a48e980b8b25c5ffd/capsule_231x87.jpg?t=1785683587",
+      "categories": [
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-d3998f807",
       "title": "Clickstellar",
@@ -253,44 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-ac6e6c225",
-      "title": "Résop Paz Yandere True ( Rpyt ) ( R-pyt ) ( Resop Paz )",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2768440/Rsop_Paz_Yandere_True__Rpyt___Rpyt___Resop_Paz/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2768440/7a6755de713badf8c027ee218671cc76d601b2d5/capsule_231x87.jpg?t=1785616471",
-      "categories": [
-        "Korku",
-        "Macera",
-        "Aksiyon",
-        "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-c305536f6",
-      "title": "AIKO",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4931010/AIKO/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4931010/8abe6ea565d31905d062c2210957bd5e1d999b5d/capsule_231x87.jpg?t=1785616281",
-      "categories": [
-        "RPG",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-a69f2c76f",
-      "title": "Frebbventure Alliance",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3670260/Frebbventure_Alliance/?snr=1_7_7_230_150_1",
-      "dateLabel": "1 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3670260/dc168dc2621b3e79f6f0ccb235be3feba37d9614/capsule_231x87.jpg?t=1785609225",
-      "categories": [
-        "Aksiyon",
-        "Anime"
-      ]
-    },
-    {
       "id": "steam-news-e6e55a227",
       "title": "Talisman Codes",
       "kind": "coming_soon",
@@ -308,7 +305,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4443810/Neon_Bullet/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785501604",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443810/5f4f31e93932bf7a5c9546f590542eed1802bc91/capsule_231x87.jpg?t=1785686251",
       "categories": []
     },
     {
@@ -334,18 +331,6 @@
       "categories": [
         "Simülasyon",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-15d3fbc8e",
-      "title": "Guardian Heart",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4927750/Guardian_Heart/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927750/a10d4f2de05718c8b995caacbd28ec91714d9eaa/capsule_231x87.jpg?t=1785225229",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
       ]
     },
     {
@@ -498,6 +483,17 @@
       ]
     },
     {
+      "id": "steam-news-f1d599a0d",
+      "title": "Meridian",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-8f86e19f8",
       "title": "SARA",
       "kind": "coming_soon",
@@ -507,17 +503,6 @@
       "categories": [
         "Macera",
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-f1d599a0d",
-      "title": "Meridian",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920590/Meridian/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -560,6 +545,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2637210/capsule_231x87.jpg?t=1785641116",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-22a6648f7",
+      "title": "Cats MiaoMiaoMiao~",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4944570/Cats_MiaoMiaoMiao/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4944570/162e12b6e821aa05a1b08744ddfe0a7551d9ccb1/capsule_231x87.jpg?t=1784680013",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
       ]
     },
     {
