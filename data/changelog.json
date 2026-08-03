@@ -102,5 +102,13 @@
     "kind": "deadline_changed",
     "field": "deadlines.cyberpunk-fest-51562f576-5a34e3e06.dueAt",
     "before": "2026-08-03T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-03T08:17:33.840Z",
+    "eventId": "cyberpunk-fest-51562f576",
+    "eventName": "Cyberpunk Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.cyberpunk-fest-51562f576-5a34e3e06.dueAt",
+    "after": "2026-08-03T17:00:00Z"
   }
 ]
