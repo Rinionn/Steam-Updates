@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-03T11:53:50.052Z",
+  "generatedAt": "2026-08-03T12:21:04.488Z",
   "items": [
+    {
+      "id": "steam-news-ff1dfbd82",
+      "title": "Deepcore Mining",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4621540/Deepcore_Mining/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4621540/85ec5d941f9a76e6221f78dcb88e2db6e7a5efe2/capsule_231x87.jpg?t=1785759338",
+      "categories": [
+        "Macera",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-43ca9f2c7",
+      "title": "Shibuya 88 StarBurner",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4541700/Shibuya_88_StarBurner/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4541700/35289c945f26a552a61ccc86fb9fa1f9427f15ac/capsule_231x87.jpg?t=1785758189",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-146ee24fb",
       "title": "Hidden Cats: Castle",
@@ -259,59 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-643ba3609",
-      "title": "Columbus",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4967530/Columbus/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967530/26311f334f87bd22d0348a44a790c79bc4311c02/capsule_231x87.jpg?t=1785741638",
-      "categories": []
-    },
-    {
-      "id": "steam-news-d2fa92780",
-      "title": "FROGGY REVENGE",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4971970/FROGGY_REVENGE/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4971970/a0b61ad3fab9342a14299b49ec286ff846347848/capsule_231x87.jpg?t=1785740936",
-      "categories": [
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-14fd673e5",
-      "title": "Shibuya 88 StarBurner",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4541700/Shibuya_88_StarBurner/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4541700/35289c945f26a552a61ccc86fb9fa1f9427f15ac/capsule_231x87.jpg?t=1784320202",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-be44a9d3a",
-      "title": "Hidden Turtle Puzzle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4631670/Hidden_Turtle_Puzzle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4631670/74e5095cbc717feb9c6d38c8ca0f5878e33be41b/capsule_231x87.jpg?t=1784569880",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-3cf5c52eb",
-      "title": "Hacklash",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4841280/Hacklash/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4841280/2ccca782526da1694b6cad77e8b11a34ad8d663f/capsule_231x87.jpg?t=1782562390",
-      "categories": []
-    },
-    {
       "id": "steam-news-498133701",
       "title": "Green Light District",
       "kind": "coming_soon",
@@ -319,18 +290,6 @@
       "dateLabel": "3 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4482890/2f81f62fcf5d26c5385231f7555281cb3aac86ce/capsule_231x87.jpg?t=1785088732",
       "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-21dd57863",
-      "title": "Deepcore Mining",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4621540/Deepcore_Mining/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4621540/85ec5d941f9a76e6221f78dcb88e2db6e7a5efe2/capsule_231x87.jpg?t=1785661965",
-      "categories": [
-        "Macera",
         "Gündelik"
       ]
     },
@@ -369,18 +328,6 @@
       ]
     },
     {
-      "id": "steam-news-9d2baab04",
-      "title": "POTUS Election Sim",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4832480/POTUS_Election_Sim/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4832480/7b7fc0df81cf8d36a982ccc2fb09f02f3f5a674a/capsule_231x87.jpg?t=1785656920",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-c2082a21b",
       "title": "Signal Zero: Dispatch",
       "kind": "coming_soon",
@@ -395,14 +342,15 @@
       ]
     },
     {
-      "id": "steam-news-ef455bf90",
-      "title": "The Luraleid",
+      "id": "steam-news-9d2baab04",
+      "title": "POTUS Election Sim",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4894210/The_Luraleid/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4832480/POTUS_Election_Sim/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4894210/355ded7498b1df0b6c87cdd4141b3c8b66ba044f/capsule_231x87.jpg?t=1783328199",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4832480/7b7fc0df81cf8d36a982ccc2fb09f02f3f5a674a/capsule_231x87.jpg?t=1785656920",
       "categories": [
-        "Macera"
+        "Simülasyon",
+        "Strateji"
       ]
     },
     {
@@ -412,18 +360,6 @@
       "url": "https://store.steampowered.com/app/4971380/Cute_Chocomancer/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4971380/34b40c95f36aaf795648bae0f172c58811801403/capsule_231x87.jpg?t=1784577549",
-      "categories": [
-        "RPG",
-        "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-a9f0ee0d2",
-      "title": "DmonMaster",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4676770/DmonMaster/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4676770/84b2777c19395775071c269a97ef1c4fb20a0df4/capsule_231x87.jpg?t=1785298671",
       "categories": [
         "RPG",
         "Anime"
@@ -443,6 +379,18 @@
       ]
     },
     {
+      "id": "steam-news-a9f0ee0d2",
+      "title": "DmonMaster",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4676770/DmonMaster/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4676770/84b2777c19395775071c269a97ef1c4fb20a0df4/capsule_231x87.jpg?t=1785298671",
+      "categories": [
+        "RPG",
+        "Anime"
+      ]
+    },
+    {
       "id": "steam-news-b6c5e70a8",
       "title": "Anomaly President",
       "kind": "coming_soon",
@@ -453,6 +401,17 @@
         "Bağımsız",
         "Tek Oyunculu",
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-ef455bf90",
+      "title": "The Luraleid",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4894210/The_Luraleid/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4894210/355ded7498b1df0b6c87cdd4141b3c8b66ba044f/capsule_231x87.jpg?t=1783328199",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -520,13 +479,17 @@
       ]
     },
     {
-      "id": "steam-news-6c2f4ee30",
-      "title": "Dispel Dark",
+      "id": "steam-news-19ea84ce1",
+      "title": "Who Am I Next? : Animals",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4487490/Dispel_Dark/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4838680/Who_Am_I_Next__Animals/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4487490/b9affeeaff10d6cbace29dcd757b8c525816720e/capsule_231x87.jpg?t=1781614940",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4838680/86065cf712d66b507b413395077d10293316f666/capsule_231x87.jpg?t=1785462143",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Çok Oyunculu"
+      ]
     },
     {
       "id": "steam-news-f37c30718",
@@ -549,6 +512,50 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951470/21b6e126f8c1edac579a2927623360a37bf014d1/capsule_231x87.jpg?t=1785124241",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-c966f8542",
+      "title": "Pulslink",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4515950/Pulslink/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4515950/3405f173a18002317cf9ad855eb6786dc05849cb/capsule_231x87.jpg?t=1785487925",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-045a0d35c",
+      "title": "Flats Full of Cats",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4098230/Flats_Full_of_Cats/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4098230/6752286cf091928dde84317d4abf45841eac055e/capsule_231x87.jpg?t=1785698580",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-2f2052d17",
+      "title": "Silly Suspects",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4117190/Silly_Suspects/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4117190/349e9bab2840b4d01ef786d0cdbbdc7b38e9e23e/capsule_231x87.jpg?t=1782992534",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-af8b968e4",
+      "title": "DOGENSTEIN",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3096230/DOGENSTEIN/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3096230/67337c15d5e793d96a297953750b99fd5489cb12/capsule_231x87.jpg?t=1785700634",
+      "categories": [
+        "Tek Oyunculu"
       ]
     },
     {
