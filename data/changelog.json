@@ -110,5 +110,13 @@
     "kind": "deadline_changed",
     "field": "deadlines.cyberpunk-fest-51562f576-5a34e3e06.dueAt",
     "after": "2026-08-03T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-03T20:25:21.299Z",
+    "eventId": "programming-fest-d92cade24",
+    "eventName": "Programming Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.programming-fest-d92cade24-053ba1c4b.dueAt",
+    "after": "2026-09-10T17:00:00Z"
   }
 ]

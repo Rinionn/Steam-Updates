@@ -1,6 +1,76 @@
 {
-  "generatedAt": "2026-08-03T18:55:04.801Z",
+  "generatedAt": "2026-08-03T20:25:21.799Z",
   "items": [
+    {
+      "id": "steam-news-4ae836c98",
+      "title": "The Slopstar 2: Slop Wars",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4495630/The_Slopstar_2_Slop_Wars/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4495630/c5d15687cf409540cd5d1062e3ef1249e1fc9442/capsule_231x87.jpg?t=1785786476",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-aedc8539c",
+      "title": "TexanLand",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4858100/TexanLand/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858100/8ef55cc6f0f7e1753b7b0dc0870ff2d179f82209/capsule_231x87.jpg?t=1785786125",
+      "categories": [
+        "Bağımsız",
+        "Macera",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-671d01b2f",
+      "title": "Skunked: Way of the Spray",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4815180/Skunked_Way_of_the_Spray/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4815180/f782e6284405215ca734d66acf329c41c3b3dbf9/capsule_231x87.jpg?t=1785785540",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-1e8f37561",
+      "title": "Silly Suspects",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4117190/Silly_Suspects/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4117190/349e9bab2840b4d01ef786d0cdbbdc7b38e9e23e/capsule_231x87.jpg?t=1785784193",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-6d584382a",
+      "title": "Hopping Out",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4297110/Hopping_Out/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4297110/59d09fac2aff39cc9e8c89bae9a51122ad94e46c/capsule_231x87.jpg?t=1785783417",
+      "categories": []
+    },
+    {
+      "id": "steam-news-0f918dee6",
+      "title": "Tidal Nexus Online",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2937310/Tidal_Nexus_Online/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2937310/45dc13669168d3d182b020336cd8dbecbb24584a/capsule_231x87.jpg?t=1785783404",
+      "categories": [
+        "Aksiyon",
+        "RPG",
+        "Oynaması Ücretsiz"
+      ]
+    },
     {
       "id": "steam-news-4ea1ca841",
       "title": "Hermitage",
@@ -111,7 +181,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/1022980/Ostranauts/?snr=1_7_7_230_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1022980/334ea263f432ce8be83a31b5200853f4dde01e37/capsule_231x87_alt_assets_1.jpg?t=1785778613",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1022980/f1f4817265263221596e10e1f1b988853e727528/capsule_231x87.jpg?t=1785778613",
       "categories": [
         "Simülasyon"
       ]
@@ -146,7 +216,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4098230/Flats_Full_of_Cats/?snr=1_7_7_230_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4098230/6752286cf091928dde84317d4abf45841eac055e/capsule_231x87.jpg?t=1785777864",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4098230/6752286cf091928dde84317d4abf45841eac055e/capsule_231x87.jpg?t=1785786367",
       "categories": [
         "Gündelik"
       ]
@@ -205,95 +275,6 @@
       ]
     },
     {
-      "id": "steam-news-767e94b36",
-      "title": "1 MIN AIM: Neo Seoul",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4951470/1_MIN_AIM_Neo_Seoul/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951470/21b6e126f8c1edac579a2927623360a37bf014d1/capsule_231x87.jpg?t=1785776144",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-237e2f76d",
-      "title": "The Obedience Experiment",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4777470/The_Obedience_Experiment/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4777470/b1e4a21115de0624c1a434d2b213937a9b4ea247/capsule_231x87.jpg?t=1785775590",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-48c4822bc",
-      "title": "Escape from the Black Monolith",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4191860/Escape_from_the_Black_Monolith/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4191860/743349ad7bc6f115d559f2042138479d2ba06a36/capsule_231x87.jpg?t=1785775544",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-f988d4583",
-      "title": "Hidden Turtle Puzzle",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4631670/Hidden_Turtle_Puzzle/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4631670/74e5095cbc717feb9c6d38c8ca0f5878e33be41b/capsule_231x87.jpg?t=1785775579",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-bb6662ddf",
-      "title": "Logic Foundry",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4931430/Logic_Foundry/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4931430/3fe92756c3e3eea2e0288f5dacf42fce85b32bad/capsule_231x87.jpg?t=1785774313",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-fe9929c7c",
-      "title": "Project: Z3R0 Chapter 1&2",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4399260/Project_Z3R0_Chapter_12/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4399260/412e7838398ee3ae3e57768c70c3419cc7afd690/capsule_231x87.jpg?t=1785772903",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-20d4698ff",
-      "title": "Hopping Out",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4297110/Hopping_Out/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4297110/59d09fac2aff39cc9e8c89bae9a51122ad94e46c/capsule_231x87.jpg?t=1784920772",
-      "categories": []
-    },
-    {
-      "id": "steam-news-dc5fcc2a8",
-      "title": "TexanLand",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4858100/TexanLand/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858100/8ef55cc6f0f7e1753b7b0dc0870ff2d179f82209/capsule_231x87.jpg?t=1783961372",
-      "categories": [
-        "Bağımsız",
-        "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-26436ebc1",
       "title": "Prehistoric Adventure",
       "kind": "coming_soon",
@@ -336,7 +317,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4295320/Crown_Of_Silence/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4295320/650edc25e241b2b7982382c97cadcd2fef4bb8cd/capsule_231x87.jpg?t=1785419968",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4295320/650edc25e241b2b7982382c97cadcd2fef4bb8cd/capsule_231x87.jpg?t=1785787185",
       "categories": [
         "Aksiyon"
       ]
@@ -550,11 +531,33 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4901970/Dangerous_Diver/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4901970/c97d1cac72ec46afcbc96ca57e492edbe5612543/capsule_231x87.jpg?t=1785675811",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4901970/c97d1cac72ec46afcbc96ca57e492edbe5612543/capsule_231x87.jpg?t=1785788189",
       "categories": [
         "Aksiyon",
         "Tek Oyunculu",
         "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-83c06ffaa",
+      "title": "令和もぐんまのやぼう -あなたのまちも ぐんまけん-",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4886420/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "4 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4886420/183f109ee9f4585e7ab176cac740f7af9ba3acbb/capsule_231x87.jpg?t=1784082125",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-8ce67f1a5",
+      "title": "corectl",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4963500/corectl/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "4 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963500/a9395d990f3cdce1924ab657fb4888cd8770dbe7/capsule_231x87.jpg?t=1785778909",
+      "categories": [
+        "Strateji"
       ]
     },
     {
