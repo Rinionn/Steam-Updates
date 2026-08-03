@@ -116,8 +116,16 @@ function changeRow(record: ChangeRecord): string {
       <span class="change-cell change-kind-cell" role="cell">
         <span class="change-cell-label">${localizedText("Değişiklik", "Change")}</span>
         <span class="change-type">${localizedText(
-          changeKindLabels[record.kind],
-          changeKindLabelsEn[record.kind],
+          record.kind === "deadline_changed" && record.before && !record.after
+            ? "Son tarih bilgisi görünmedi"
+            : record.kind === "deadline_changed" && !record.before && record.after
+              ? "Son tarih bilgisi görüldü"
+              : changeKindLabels[record.kind],
+          record.kind === "deadline_changed" && record.before && !record.after
+            ? "Deadline value missing"
+            : record.kind === "deadline_changed" && !record.before && record.after
+              ? "Deadline value detected"
+              : changeKindLabelsEn[record.kind],
         )}</span>
       </span>
       <span class="change-cell change-before" role="cell">
@@ -140,14 +148,6 @@ function changeTableHeader(): string {
       <span role="columnheader">${localizedText("Önceki tarih / değer", "Previous date / value")}</span>
       <span role="columnheader">${localizedText("Güncellenen tarih / değer", "Updated date / value")}</span>
     </div>`;
-}
-
-function isDisplayableChange(record: ChangeRecord): boolean {
-  // Legacy one-sided deadline records came from temporary empty detail pages.
-  return (
-    record.kind !== "deadline_changed" ||
-    Boolean(record.before && record.after)
-  );
 }
 
 function deadlineTimelineItem(item: DeadlineView): string {
@@ -556,7 +556,6 @@ export function renderReport(
         detectedAt <= generatedAt
       );
     })
-    .filter(isDisplayableChange)
     .sort((left, right) => right.detectedAt.localeCompare(left.detectedAt));
   const featuredDeadlines = model.deadlines.slice(0, 8);
   const groupedDeadlines = new Map<

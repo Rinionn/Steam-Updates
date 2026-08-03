@@ -51,7 +51,7 @@ describe("change log views", () => {
     expect(html).not.toMatch(/<details class="change-log" open/);
   });
 
-  it("hides incomplete legacy deadline changes instead of showing false dates", () => {
+  it("shows one-sided legacy deadline observations with a missing-value marker", () => {
     const html = renderReport(snapshot, [
       {
         ...recentChange,
@@ -61,8 +61,10 @@ describe("change log views", () => {
       },
     ]);
 
-    expect(html).not.toContain("Incomplete Deadline Fest");
-    expect(html).toContain("Son 90 günde kaydedilmiş bir değişiklik yok.");
+    expect(html).toContain("Incomplete Deadline Fest");
+    expect(html).toContain("Son tarih bilgisi görünmedi");
+    expect(html).toContain('class="change-empty"');
+    expect(html).not.toContain("Son 90 günde kaydedilmiş bir değişiklik yok.");
   });
 
   it("keeps release category filtering and game-to-event navigation functional", () => {
@@ -116,6 +118,23 @@ describe("change log views", () => {
     expect(withChanges.text).toContain("Güncellenen: 4 Ağustos 2026, 20:00");
     expect(withoutChanges.html).not.toContain("SON 24 SAATTE DEĞİŞENLER");
     expect(withoutChanges.text).not.toContain("SON 24 SAATTE DEĞİŞENLER");
+  });
+
+  it("keeps one-sided deadline observations visible in the email", () => {
+    const digest = renderDigest(snapshot, [
+      {
+        ...recentChange,
+        eventName: "Recovered Deadline Fest",
+        kind: "deadline_changed",
+        before: undefined,
+      },
+    ]);
+
+    expect(digest.html).toContain("SON 24 SAATTE DEĞİŞENLER");
+    expect(digest.html).toContain("Recovered Deadline Fest");
+    expect(digest.html).toContain("Son tarih bilgisi görüldü");
+    expect(digest.html).toContain("—");
+    expect(digest.text).toContain("Önceki: —");
   });
 
   it("applies managed email subject placeholders", () => {

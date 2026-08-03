@@ -178,12 +178,13 @@ function changeCellValue(
   return value ? changeValue(record, value) : "—";
 }
 
-function isDisplayableChange(record: ChangeRecord): boolean {
-  // Legacy one-sided deadline records came from temporary empty detail pages.
-  return (
-    record.kind !== "deadline_changed" ||
-    Boolean(record.before && record.after)
-  );
+function emailChangeKind(record: ChangeRecord): string {
+  if (record.kind !== "deadline_changed") {
+    return changeKindLabels[record.kind];
+  }
+  if (record.before && !record.after) return "Son tarih bilgisi görünmedi";
+  if (!record.before && record.after) return "Son tarih bilgisi görüldü";
+  return changeKindLabels[record.kind];
 }
 
 function emailChangeRow(record: ChangeRecord): string {
@@ -201,7 +202,7 @@ function emailChangeRow(record: ChangeRecord): string {
       </td>
       <td class="change-email-cell event-rule" width="18%" valign="top" style="width:18%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
         <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">DEĞİŞİKLİK</span>
-        <span class="soft-chip" style="display:inline-block;padding:4px 7px;border-radius:999px;background:${EMAIL_COLORS.chipBackground};color:${EMAIL_COLORS.chipInk};font-size:9px;font-weight:800;line-height:1.25">${escapeHtml(changeKindLabels[record.kind])}</span>
+        <span class="soft-chip" style="display:inline-block;padding:4px 7px;border-radius:999px;background:${EMAIL_COLORS.chipBackground};color:${EMAIL_COLORS.chipInk};font-size:9px;font-weight:800;line-height:1.25">${escapeHtml(emailChangeKind(record))}</span>
       </td>
       <td class="change-email-cell event-rule" width="20%" valign="top" style="width:20%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
         <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">ÖNCEKİ TARİH / DEĞER</span>
@@ -237,7 +238,6 @@ export function renderDigest(
         detectedAt <= generatedAt
       );
     })
-    .filter(isDisplayableChange)
     .sort((left, right) => right.detectedAt.localeCompare(left.detectedAt));
   const deadlines = model.deadlines
     .filter(
@@ -610,7 +610,7 @@ ${recentChanges
   .map((record) => {
     const before = changeCellValue(record, record.before);
     const after = changeCellValue(record, record.after);
-    return `- Algılandı: ${localDate(record.detectedAt, true)} | Festival: ${record.eventName} | Değişiklik: ${changeKindLabels[record.kind]} | Önceki: ${before} | Güncellenen: ${after}`;
+    return `- Algılandı: ${localDate(record.detectedAt, true)} | Festival: ${record.eventName} | Değişiklik: ${emailChangeKind(record)} | Önceki: ${before} | Güncellenen: ${after}`;
   })
   .join("\n")}
 
