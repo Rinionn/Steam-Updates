@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T08:17:34.274Z",
+  "generatedAt": "2026-08-03T08:22:52.744Z",
   "items": [
     {
       "id": "steam-news-f49b96ffe",
@@ -413,20 +413,6 @@
       ]
     },
     {
-      "id": "steam-news-ff2c53717",
-      "title": "Upgradia",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4774800/Upgradia/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4774800/0dfb1f05f009daa958ee95b58eca54d28215698f/capsule_231x87.jpg?t=1785357723",
-      "categories": [
-        "Bağımsız",
-        "Macera",
-        "RPG",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-e9bd4f58a",
       "title": "Dead Zone Revive",
       "kind": "coming_soon",
@@ -438,6 +424,20 @@
         "Aksiyon",
         "RPG",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-ff2c53717",
+      "title": "Upgradia",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4774800/Upgradia/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4774800/0dfb1f05f009daa958ee95b58eca54d28215698f/capsule_231x87.jpg?t=1785357723",
+      "categories": [
+        "Bağımsız",
+        "Macera",
+        "RPG",
+        "Simülasyon"
       ]
     },
     {
@@ -496,6 +496,17 @@
       ]
     },
     {
+      "id": "steam-news-f32323b9b",
+      "title": "Frog & Roll",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4355750/Frog__Roll/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4355750/e312c95d50d68b531dad37b17c488a5cae68778b/capsule_231x87.jpg?t=1785732877",
+      "categories": [
+        "Yarış"
+      ]
+    },
+    {
       "id": "steam-news-21dd57863",
       "title": "Deepcore Mining",
       "kind": "coming_soon",
@@ -505,17 +516,6 @@
       "categories": [
         "Macera",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-f32323b9b",
-      "title": "Frog & Roll",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4355750/Frog__Roll/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4355750/e312c95d50d68b531dad37b17c488a5cae68778b/capsule_231x87.jpg?t=1785732877",
-      "categories": [
-        "Yarış"
       ]
     },
     {
