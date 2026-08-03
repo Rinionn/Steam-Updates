@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T14:06:53.696Z",
+  "generatedAt": "2026-08-03T14:25:02.026Z",
   "items": [
     {
       "id": "steam-news-e2daaf4b9",
@@ -7,7 +7,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3809310/Fly_High_Runners/?snr=1_7_7_230_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3809310/969eb1d6ac0e784e1b1412761ffbb2afcf876d0a/capsule_231x87.jpg?t=1785765823",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3809310/969eb1d6ac0e784e1b1412761ffbb2afcf876d0a/capsule_231x87.jpg?t=1785766944",
       "categories": [
         "Çok Oyunculu",
         "Aksiyon"
@@ -278,6 +278,18 @@
       ]
     },
     {
+      "id": "steam-news-a9f0ee0d2",
+      "title": "DmonMaster",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4676770/DmonMaster/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4676770/84b2777c19395775071c269a97ef1c4fb20a0df4/capsule_231x87.jpg?t=1785298671",
+      "categories": [
+        "RPG",
+        "Anime"
+      ]
+    },
+    {
       "id": "steam-news-b6c5e70a8",
       "title": "Anomaly President",
       "kind": "coming_soon",
@@ -291,15 +303,14 @@
       ]
     },
     {
-      "id": "steam-news-a9f0ee0d2",
-      "title": "DmonMaster",
+      "id": "steam-news-bc3d4ad79",
+      "title": "HELLSPRINT",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4676770/DmonMaster/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3711160/HELLSPRINT/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4676770/84b2777c19395775071c269a97ef1c4fb20a0df4/capsule_231x87.jpg?t=1785298671",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3711160/31951c070d49ffd1a8adc8d96e9ed1b6f728b87e/capsule_231x87.jpg?t=1785254499",
       "categories": [
-        "RPG",
-        "Anime"
+        "Yarış"
       ]
     },
     {
@@ -310,17 +321,6 @@
       "dateLabel": "3 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4742970/33422d5c06714421423fe406d0c3dddf02873ba9/capsule_231x87.jpg?t=1785688509",
       "categories": []
-    },
-    {
-      "id": "steam-news-bc3d4ad79",
-      "title": "HELLSPRINT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3711160/HELLSPRINT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3711160/31951c070d49ffd1a8adc8d96e9ed1b6f728b87e/capsule_231x87.jpg?t=1785254499",
-      "categories": [
-        "Yarış"
-      ]
     },
     {
       "id": "steam-news-12b0207d8",
@@ -355,38 +355,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-6c2f4ee30",
-      "title": "Dispel Dark",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4487490/Dispel_Dark/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4487490/b9affeeaff10d6cbace29dcd757b8c525816720e/capsule_231x87.jpg?t=1781614940",
-      "categories": []
-    },
-    {
-      "id": "steam-news-f1e964e24",
-      "title": "1 MIN AIM: Neo Seoul",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4951470/1_MIN_AIM_Neo_Seoul/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951470/21b6e126f8c1edac579a2927623360a37bf014d1/capsule_231x87.jpg?t=1785124241",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-f37c30718",
-      "title": "Matter MazeBall: Element Trials",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4946500/Matter_MazeBall_Element_Trials/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946500/a1f0a8e803941e0020d6986fa7b214890b446488/capsule_231x87.jpg?t=1785457123",
-      "categories": [
-        "Gündelik",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-4f98d145f",
       "title": "HARDPOINT",
       "kind": "coming_soon",
@@ -396,17 +364,6 @@
       "categories": [
         "Aksiyon",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-af8b968e4",
-      "title": "DOGENSTEIN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3096230/DOGENSTEIN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3096230/67337c15d5e793d96a297953750b99fd5489cb12/capsule_231x87.jpg?t=1785700634",
-      "categories": [
-        "Tek Oyunculu"
       ]
     },
     {
@@ -443,6 +400,60 @@
       ]
     },
     {
+      "id": "steam-news-6c2f4ee30",
+      "title": "Dispel Dark",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4487490/Dispel_Dark/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4487490/b9affeeaff10d6cbace29dcd757b8c525816720e/capsule_231x87.jpg?t=1781614940",
+      "categories": []
+    },
+    {
+      "id": "steam-news-c966f8542",
+      "title": "Pulslink",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4515950/Pulslink/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4515950/3405f173a18002317cf9ad855eb6786dc05849cb/capsule_231x87.jpg?t=1785764063",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-f37c30718",
+      "title": "Matter MazeBall: Element Trials",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4946500/Matter_MazeBall_Element_Trials/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946500/a1f0a8e803941e0020d6986fa7b214890b446488/capsule_231x87.jpg?t=1785457123",
+      "categories": [
+        "Gündelik",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-f1e964e24",
+      "title": "1 MIN AIM: Neo Seoul",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4951470/1_MIN_AIM_Neo_Seoul/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951470/21b6e126f8c1edac579a2927623360a37bf014d1/capsule_231x87.jpg?t=1785124241",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-af8b968e4",
+      "title": "DOGENSTEIN",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3096230/DOGENSTEIN/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3096230/67337c15d5e793d96a297953750b99fd5489cb12/capsule_231x87.jpg?t=1785700634",
+      "categories": [
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-19ea84ce1",
       "title": "Who Am I Next? : Animals",
       "kind": "coming_soon",
@@ -465,17 +476,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-c966f8542",
-      "title": "Pulslink",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4515950/Pulslink/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4515950/3405f173a18002317cf9ad855eb6786dc05849cb/capsule_231x87.jpg?t=1785764063",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-7fbf50ed9",
       "title": "Beast of Reincarnation",
       "kind": "coming_soon",
@@ -489,6 +489,17 @@
       ]
     },
     {
+      "id": "steam-news-3bc829dbb",
+      "title": "Idle Block Breaker",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4875650/Idle_Block_Breaker/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4875650/49ce2ba0e4fbbf697324a2030ce9e07cee1fc5f8/capsule_231x87.jpg?t=1785733188",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-2cb56e28b",
       "title": "Bubble Anima",
       "kind": "coming_soon",
@@ -498,17 +509,6 @@
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-3bc829dbb",
-      "title": "Idle Block Breaker",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4875650/Idle_Block_Breaker/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4875650/49ce2ba0e4fbbf697324a2030ce9e07cee1fc5f8/capsule_231x87.jpg?t=1785733188",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
