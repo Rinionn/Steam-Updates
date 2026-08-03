@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-03T21:39:18.769Z",
+  "generatedAt": "2026-08-03T22:40:43.422Z",
   "items": [
+    {
+      "id": "steam-news-18f2f1930",
+      "title": "The Outskirts",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4936190/The_Outskirts/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4936190/eabb058e7eb1506ac7f4a457cdb7323b79dc27ca/capsule_231x87.jpg?t=1785795720",
+      "categories": [
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-f345046d9",
       "title": "Flies.",
@@ -264,15 +276,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-293e20b28",
-      "title": "Hell Deck",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4843210/Hell_Deck/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4843210/366f690113fd987042a49862d3d5ddef968cf37e/capsule_231x87.jpg?t=1785776434",
-      "categories": []
-    },
-    {
       "id": "steam-news-27aeb42ae",
       "title": "The Expansion",
       "kind": "coming_soon",
@@ -332,18 +335,6 @@
       ]
     },
     {
-      "id": "steam-news-69384a42f",
-      "title": "Phantacall Realm",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4290250/Phantacall_Realm/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4290250/25f82aafbe6fcbf70eff2ee68db134b148907615/capsule_231x87.jpg?t=1784877743",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-cebadd3f0",
       "title": "Recessive",
       "kind": "coming_soon",
@@ -354,6 +345,18 @@
         "Simülasyon",
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-69384a42f",
+      "title": "Phantacall Realm",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4290250/Phantacall_Realm/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "4 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4290250/25f82aafbe6fcbf70eff2ee68db134b148907615/capsule_231x87.jpg?t=1784877743",
+      "categories": [
+        "Gündelik",
+        "Strateji"
       ]
     },
     {
