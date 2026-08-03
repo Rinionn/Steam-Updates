@@ -5,13 +5,13 @@ import { renderReport } from "../src/report.js";
 import type { ChangeRecord, EventSnapshot } from "../src/types.js";
 
 const snapshot: EventSnapshot = {
-  generatedAt: "2026-07-30T06:00:00.000Z",
+  generatedAt: "2026-08-03T12:00:00.000Z",
   sourceUrl: "https://partner.steamgames.com/doc/marketing/upcoming_events",
   events: [],
 };
 
 const recentChange: ChangeRecord = {
-  detectedAt: new Date(Date.now() - 60 * 60 * 1000).toISOString(),
+  detectedAt: "2026-08-03T08:00:00.000Z",
   eventId: "test-fest",
   eventName: "Test Fest",
   kind: "date_shifted",
@@ -34,16 +34,29 @@ describe("change log views", () => {
   });
 
   it("shows recent changes in a closed 90-day report section", () => {
-    const html = renderReport(snapshot, [recentChange]);
+    const html = renderReport(snapshot, [
+      recentChange,
+      {
+        ...recentChange,
+        field: "endAt",
+        before: "2026-08-10T17:00:00.000Z",
+        after: "2026-08-11T17:00:00.000Z",
+      },
+    ]);
 
-    expect(html).toContain("Son 90 günde ne değişti");
+    expect(html).toContain("Doğrulanmış takvim değişiklikleri · Son 90 gün");
     expect(html).toContain("Test Fest");
+    expect(html).toContain("Festival");
     expect(html).toContain("Değişikliğin algılandığı tarih");
-    expect(html).toContain("Önceki tarih / değer");
-    expect(html).toContain("Güncellenen tarih / değer");
+    expect(html).toContain("Değişiklikten önce");
+    expect(html).toContain("Değişiklikten sonra");
+    expect(html).toContain("Başlangıç");
+    expect(html).toContain("Bitiş");
     expect(html).toContain('class="change-cell change-before"');
     expect(html).toContain('class="change-cell change-after"');
-    expect(html).toContain("grid-template-columns:repeat(2,minmax(0,1fr))");
+    expect(html.match(/class="change-row"/g)).toHaveLength(1);
+    expect(html).toContain('class="change-count">1');
+    expect(html).toContain("grid-template-columns:minmax(0,1fr)");
     expect(html).toContain("@media (min-width: 961px)");
     expect(html).toContain("3 Ağustos 2026, 20:00");
     expect(html).toContain("4 Ağustos 2026, 20:00");
@@ -51,7 +64,7 @@ describe("change log views", () => {
     expect(html).not.toMatch(/<details class="change-log" open/);
   });
 
-  it("shows one-sided legacy deadline observations with a missing-value marker", () => {
+  it("does not present one-sided parser observations as real changes", () => {
     const html = renderReport(snapshot, [
       {
         ...recentChange,
@@ -61,10 +74,9 @@ describe("change log views", () => {
       },
     ]);
 
-    expect(html).toContain("Incomplete Deadline Fest");
-    expect(html).toContain("Son tarih bilgisi görünmedi");
-    expect(html).toContain('class="change-empty"');
-    expect(html).not.toContain("Son 90 günde kaydedilmiş bir değişiklik yok.");
+    expect(html).not.toContain("Incomplete Deadline Fest");
+    expect(html).toContain("Son 90 günde doğrulanmış bir tarih değişikliği yok.");
+    expect(html).toContain('class="change-count">0');
   });
 
   it("keeps release category filtering and game-to-event navigation functional", () => {
@@ -101,26 +113,30 @@ describe("change log views", () => {
     const withoutChanges = renderDigest(snapshot, [
       {
         ...recentChange,
-        detectedAt: new Date(Date.now() - 48 * 60 * 60 * 1000).toISOString(),
+        detectedAt: "2026-08-01T08:00:00.000Z",
       },
     ]);
 
     expect(withChanges.html).toContain("SON 24 SAATTE DEĞİŞENLER");
-    expect(withChanges.html).toContain("ALGILANDIĞI TARİH");
-    expect(withChanges.html).toContain("ÖNCEKİ TARİH / DEĞER");
-    expect(withChanges.html).toContain("GÜNCELLENEN TARİH / DEĞER");
-    expect(withChanges.html).toContain('class="change-email-cell event-rule"');
+    expect(withChanges.html).toContain("DEĞİŞİKLİĞİN ALGILANDIĞI TARİH");
+    expect(withChanges.html).toContain("DEĞİŞİKLİKTEN ÖNCE");
+    expect(withChanges.html).toContain("DEĞİŞİKLİKTEN SONRA");
+    expect(withChanges.html).toContain('class="change-email-cell"');
     expect(withChanges.html).toContain(".change-email-cell { display: block !important;");
     expect(withChanges.html).toContain("3 Ağustos 2026, 20:00");
     expect(withChanges.html).toContain("4 Ağustos 2026, 20:00");
     expect(withChanges.text).toContain("SON 24 SAATTE DEĞİŞENLER");
-    expect(withChanges.text).toContain("Önceki: 3 Ağustos 2026, 20:00");
-    expect(withChanges.text).toContain("Güncellenen: 4 Ağustos 2026, 20:00");
+    expect(withChanges.text).toContain(
+      "Değişiklikten önce: Başlangıç: 3 Ağustos 2026, 20:00",
+    );
+    expect(withChanges.text).toContain(
+      "Değişiklikten sonra: Başlangıç: 4 Ağustos 2026, 20:00",
+    );
     expect(withoutChanges.html).not.toContain("SON 24 SAATTE DEĞİŞENLER");
     expect(withoutChanges.text).not.toContain("SON 24 SAATTE DEĞİŞENLER");
   });
 
-  it("keeps one-sided deadline observations visible in the email", () => {
+  it("keeps one-sided deadline observations out of the email", () => {
     const digest = renderDigest(snapshot, [
       {
         ...recentChange,
@@ -130,11 +146,9 @@ describe("change log views", () => {
       },
     ]);
 
-    expect(digest.html).toContain("SON 24 SAATTE DEĞİŞENLER");
-    expect(digest.html).toContain("Recovered Deadline Fest");
-    expect(digest.html).toContain("Son tarih bilgisi görüldü");
-    expect(digest.html).toContain("—");
-    expect(digest.text).toContain("Önceki: —");
+    expect(digest.html).not.toContain("SON 24 SAATTE DEĞİŞENLER");
+    expect(digest.html).not.toContain("Recovered Deadline Fest");
+    expect(digest.text).not.toContain("Recovered Deadline Fest");
   });
 
   it("applies managed email subject placeholders", () => {

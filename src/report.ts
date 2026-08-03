@@ -6,6 +6,11 @@ import {
   renderAppShellStyles,
   renderAppSidebar,
 } from "./app-shell.js";
+import {
+  summarizeVerifiedChanges,
+  type VerifiedChangeGroup,
+  type VerifiedChangeItem,
+} from "./change-summary.js";
 import { readChangelog } from "./changelog.js";
 import { config, paths } from "./config.js";
 import { deadlineCopy } from "./deadline-copy.js";
@@ -14,7 +19,6 @@ import { createCalendarIcs, createEventIcs } from "./ics.js";
 import { readSteamNews } from "./news.js";
 import { renderTimeline } from "./timeline.js";
 import type {
-  ChangeKind,
   ChangeRecord,
   EventSnapshot,
   SteamEvent,
@@ -36,21 +40,6 @@ const kindIcons: Record<SteamEvent["kind"], string> = {
   seasonal_sale: "％",
   themed_fest: "✦",
   next_fest: "▶",
-};
-
-const changeKindLabels: Record<ChangeKind, string> = {
-  added: "Etkinlik eklendi",
-  removed: "Etkinlik kaldırıldı",
-  date_shifted: "Tarih değişti",
-  deadline_changed: "Son tarih değişti",
-  renamed: "Adı değişti",
-};
-const changeKindLabelsEn: Record<ChangeKind, string> = {
-  added: "Event added",
-  removed: "Event removed",
-  date_shifted: "Date changed",
-  deadline_changed: "Deadline changed",
-  renamed: "Name changed",
 };
 
 function localDate(isoDate: string, withTime = false): string {
@@ -78,10 +67,10 @@ function urgencyText(daysLeft: number): string {
   return `${daysLeft} gün kaldı`;
 }
 
-function changeValue(record: ChangeRecord, value: string): string {
+function changeValue(item: VerifiedChangeItem, value: string): string {
   if (
-    record.kind === "date_shifted" ||
-    record.kind === "deadline_changed"
+    item.kind === "date_shifted" ||
+    item.kind === "deadline_changed"
   ) {
     const parsed = DateTime.fromISO(value, { zone: "utc" });
     if (parsed.isValid) {
@@ -91,50 +80,54 @@ function changeValue(record: ChangeRecord, value: string): string {
   return escapeHtml(value);
 }
 
-function changeRow(record: ChangeRecord): string {
-  const missingValue =
-    '<span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span>';
-  const before = record.before
-    ? changeValue(record, record.before)
-    : missingValue;
-  const after = record.after
-    ? changeValue(record, record.after)
-    : missingValue;
+function changeFieldLabel(item: VerifiedChangeItem): string {
+  if (item.kind === "renamed" || item.field === "name") {
+    return localizedText("Festival adı", "Festival name");
+  }
+  if (item.field === "startAt") return localizedText("Başlangıç", "Start");
+  if (item.field === "endAt") return localizedText("Bitiş", "End");
+  if (item.kind === "deadline_changed") {
+    return localizedText("Son tarih", "Deadline");
+  }
+  return localizedText("Değer", "Value");
+}
+
+function changeValues(
+  group: VerifiedChangeGroup,
+  side: "before" | "after",
+): string {
+  return group.items
+    .map(
+      (item) => `
+        <span class="change-value-line">
+          <strong>${changeFieldLabel(item)}</strong>
+          <span>${changeValue(item, item[side])}</span>
+        </span>`,
+    )
+    .join("");
+}
+
+function changeRow(group: VerifiedChangeGroup): string {
   return `
     <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label">${localizedText("Değişiklik algılandı", "Detected at")}</span>
-        <time datetime="${escapeHtml(record.detectedAt)}">${localizedText(
-          localDate(record.detectedAt, true),
-          localDateEn(record.detectedAt, true),
-        )}</time>
-      </span>
       <span class="change-cell change-event" role="cell">
         <span class="change-cell-label">${localizedText("Festival", "Festival")}</span>
-        <strong>${escapeHtml(record.eventName)}</strong>
+        <strong>${escapeHtml(group.eventName)}</strong>
       </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label">${localizedText("Değişiklik", "Change")}</span>
-        <span class="change-type">${localizedText(
-          record.kind === "deadline_changed" && record.before && !record.after
-            ? "Son tarih bilgisi görünmedi"
-            : record.kind === "deadline_changed" && !record.before && record.after
-              ? "Son tarih bilgisi görüldü"
-              : changeKindLabels[record.kind],
-          record.kind === "deadline_changed" && record.before && !record.after
-            ? "Deadline value missing"
-            : record.kind === "deadline_changed" && !record.before && record.after
-              ? "Deadline value detected"
-              : changeKindLabelsEn[record.kind],
-        )}</span>
+      <span class="change-cell change-detected" role="cell">
+        <span class="change-cell-label">${localizedText("Değişikliğin algılandığı tarih", "Detected at")}</span>
+        <time datetime="${escapeHtml(group.detectedAt)}">${localizedText(
+          localDate(group.detectedAt, true),
+          localDateEn(group.detectedAt, true),
+        )}</time>
       </span>
       <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label">${localizedText("Önceki tarih / değer", "Previous date / value")}</span>
-        <span>${before}</span>
+        <span class="change-cell-label">${localizedText("Değişiklikten önce", "Before change")}</span>
+        <span class="change-values">${changeValues(group, "before")}</span>
       </span>
       <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label">${localizedText("Güncellenen tarih / değer", "Updated date / value")}</span>
-        <span>${after}</span>
+        <span class="change-cell-label">${localizedText("Değişiklikten sonra", "After change")}</span>
+        <span class="change-values">${changeValues(group, "after")}</span>
       </span>
     </div>`;
 }
@@ -142,11 +135,10 @@ function changeRow(record: ChangeRecord): string {
 function changeTableHeader(): string {
   return `
     <div class="change-table-head" role="row">
-      <span role="columnheader">${localizedText("Değişikliğin algılandığı tarih", "Detected at")}</span>
       <span role="columnheader">${localizedText("Festival", "Festival")}</span>
-      <span role="columnheader">${localizedText("Değişiklik", "Change")}</span>
-      <span role="columnheader">${localizedText("Önceki tarih / değer", "Previous date / value")}</span>
-      <span role="columnheader">${localizedText("Güncellenen tarih / değer", "Updated date / value")}</span>
+      <span role="columnheader">${localizedText("Değişikliğin algılandığı tarih", "Detected at")}</span>
+      <span role="columnheader">${localizedText("Değişiklikten önce", "Before change")}</span>
+      <span role="columnheader">${localizedText("Değişiklikten sonra", "After change")}</span>
     </div>`;
 }
 
@@ -545,8 +537,8 @@ export function renderReport(
   ].join("|");
   const changeCutoff = model.generated.minus({ days: 90 }).toMillis();
   const generatedAt = model.generated.toMillis();
-  const recentChanges = changelog
-    .filter((record) => {
+  const recentChanges = summarizeVerifiedChanges(
+    changelog.filter((record) => {
       const detectedAt = DateTime.fromISO(record.detectedAt, {
         zone: "utc",
       }).toMillis();
@@ -555,8 +547,8 @@ export function renderReport(
         detectedAt >= changeCutoff &&
         detectedAt <= generatedAt
       );
-    })
-    .sort((left, right) => right.detectedAt.localeCompare(left.detectedAt));
+    }),
+  );
   const featuredDeadlines = model.deadlines.slice(0, 8);
   const groupedDeadlines = new Map<
     string,
@@ -984,19 +976,20 @@ export function renderReport(
     .change-count { color:var(--color-muted); font-size:12px; font-weight:700; }
     .change-list { border-top:1px solid var(--color-line); }
     .change-table-head { display:none; }
-    .change-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-areas:"event event" "kind kind" "before after" "detected detected"; gap:12px 14px; padding:16px; border-bottom:1px solid var(--color-line); }
+    .change-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-areas:"event event" "detected detected" "before after"; gap:12px 14px; padding:16px; border-bottom:1px solid var(--color-line); }
     .change-row:last-child { border-bottom:0; }
     .change-cell { min-width:0; overflow-wrap:anywhere; color:var(--color-muted); font-size:12px; line-height:1.4; }
     .change-detected { grid-area:detected; }
     .change-event { grid-area:event; }
-    .change-kind-cell { grid-area:kind; }
     .change-before { grid-area:before; }
     .change-after { grid-area:after; }
     .change-cell-label { display:block; margin-bottom:4px; color:var(--color-footer); font-size:9px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; }
     .change-detected time { color:var(--color-muted); font-size:11px; }
     .change-event strong { color:var(--color-ink); font-size:13px; }
-    .change-type { display:inline-flex; padding:4px 7px; border-radius:999px; color:var(--color-soft-text); background:var(--color-soft); font-size:10px; font-weight:800; }
-    .change-empty { color:var(--color-footer); }
+    .change-values,.change-value-line { display:grid; gap:3px; }
+    .change-values { gap:8px; }
+    .change-value-line strong { color:var(--color-footer); font-size:9px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; }
+    .change-log .empty { display:grid; gap:6px; }
     .news-block + .news-block { margin-top:32px; }
     .news-toolbar { display:flex; align-items:flex-end; flex-wrap:wrap; gap:12px; margin-bottom:18px; }
     .news-tabs { display:flex; flex:1 1 360px; gap:6px; padding:5px; overflow-x:auto; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel); }
@@ -1057,11 +1050,14 @@ export function renderReport(
       .platform-news { grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
     @media (min-width: 961px) {
-      .change-table-head,.change-row { grid-template-columns:150px minmax(170px,1fr) 130px minmax(165px,1fr) minmax(165px,1fr); align-items:center; gap:16px; padding:14px 20px; }
+      .change-table-head,.change-row { grid-template-columns:minmax(180px,1.2fr) 155px minmax(210px,1fr) minmax(210px,1fr); align-items:start; gap:16px; padding:14px 20px; }
       .change-table-head { display:grid; border-bottom:1px solid var(--color-line); color:var(--color-footer); font-size:9px; font-weight:900; letter-spacing:.05em; text-transform:uppercase; }
       .change-row { grid-template-areas:none; }
-      .change-detected,.change-event,.change-kind-cell,.change-before,.change-after { grid-area:auto; }
+      .change-detected,.change-event,.change-before,.change-after { grid-area:auto; }
       .change-cell-label { display:none; }
+    }
+    @media (max-width: 480px) {
+      .change-row { grid-template-columns:minmax(0,1fr); grid-template-areas:"event" "detected" "before" "after"; }
     }
     @media (max-width: 760px) {
       .global-topbar { position:relative; grid-template-columns:auto minmax(0,1fr) auto; min-height:58px; padding-inline:10px; }
@@ -1194,13 +1190,16 @@ export function renderReport(
     <section class="section dashboard-panel" id="changes" data-dashboard-panel="events">
       <details class="change-log">
         <summary>
-          <span data-i18n="changesTitle">Son 90 günde ne değişti</span>
+          <span data-i18n="changesTitle">Doğrulanmış takvim değişiklikleri · Son 90 gün</span>
           <span class="change-count">${recentChanges.length} <span data-i18n="records">kayıt</span></span>
         </summary>
         ${
           recentChanges.length
             ? `<div class="change-list" role="table" aria-label="Değişiklik günlüğü" data-copy-aria-tr="Değişiklik günlüğü" data-copy-aria-en="Change log">${changeTableHeader()}${recentChanges.map(changeRow).join("")}</div>`
-            : `<div class="empty">Son 90 günde kaydedilmiş bir değişiklik yok.</div>`
+            : `<div class="empty">
+                <strong>${localizedText("Son 90 günde doğrulanmış bir tarih değişikliği yok.", "No verified date changes in the last 90 days.")}</strong>
+                <span>${localizedText("Yalnızca değişiklikten önceki ve sonraki tarih birlikte doğrulandığında burada tek satır olarak gösterilir.", "A change appears here as one row only when both the before and after values are verified.")}</span>
+              </div>`
         }
       </details>
     </section>
@@ -1629,8 +1628,8 @@ export function renderReport(
         en: "Add a game to find matches.",
       },
       changesTitle: {
-        tr: "Son 90 günde ne değişti",
-        en: "What changed in the last 90 days",
+        tr: "Doğrulanmış takvim değişiklikleri · Son 90 gün",
+        en: "Verified calendar changes · Last 90 days",
       },
       records: { tr: "kayıt", en: "records" },
       registration: { tr: "Başvuru", en: "Registration" },

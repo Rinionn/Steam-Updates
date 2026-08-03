@@ -2,6 +2,11 @@ import { createHash } from "node:crypto";
 import { mkdir, writeFile } from "node:fs/promises";
 import nodemailer from "nodemailer";
 import { DateTime } from "luxon";
+import {
+  summarizeVerifiedChanges,
+  type VerifiedChangeGroup,
+  type VerifiedChangeItem,
+} from "./change-summary.js";
 import { readChangelog } from "./changelog.js";
 import { config, paths } from "./config.js";
 import { deadlineCopy } from "./deadline-copy.js";
@@ -10,12 +15,7 @@ import {
   markDigestSent,
   readNotificationState,
 } from "./storage.js";
-import type {
-  ChangeKind,
-  ChangeRecord,
-  EventSnapshot,
-  SteamEvent,
-} from "./types.js";
+import type { ChangeRecord, EventSnapshot, SteamEvent } from "./types.js";
 import { escapeHtml } from "./utils.js";
 import { createReportModel, daysUntil } from "./view-model.js";
 
@@ -23,14 +23,6 @@ const kindLabels: Record<SteamEvent["kind"], string> = {
   seasonal_sale: "Sezon indirimi",
   themed_fest: "Temalı festival",
   next_fest: "Next Fest",
-};
-
-const changeKindLabels: Record<ChangeKind, string> = {
-  added: "Etkinlik eklendi",
-  removed: "Etkinlik kaldırıldı",
-  date_shifted: "Tarih değişti",
-  deadline_changed: "Son tarih değişti",
-  renamed: "Adı değişti",
 };
 
 const EMAIL_COLORS = {
@@ -160,57 +152,65 @@ function shortCountdown(daysLeft: number): string {
   return `${daysLeft} gün`;
 }
 
-function changeValue(record: ChangeRecord, value: string): string {
-  if (
-    record.kind === "date_shifted" ||
-    record.kind === "deadline_changed"
-  ) {
+function changeValue(item: VerifiedChangeItem, value: string): string {
+  if (item.kind === "date_shifted" || item.kind === "deadline_changed") {
     const parsed = DateTime.fromISO(value, { zone: "utc" });
     if (parsed.isValid) return localDate(value, true);
   }
   return value;
 }
 
-function changeCellValue(
-  record: ChangeRecord,
-  value: string | undefined,
+function emailFieldLabel(item: VerifiedChangeItem): string {
+  if (item.kind === "renamed" || item.field === "name") return "Festival adı";
+  if (item.field === "startAt") return "Başlangıç";
+  if (item.field === "endAt") return "Bitiş";
+  if (item.kind === "deadline_changed") return "Son tarih";
+  return "Değer";
+}
+
+function emailChangeValues(
+  group: VerifiedChangeGroup,
+  side: "before" | "after",
 ): string {
-  return value ? changeValue(record, value) : "—";
+  return group.items
+    .map(
+      (item) => `<span style="display:block;margin-bottom:7px">
+        <strong class="surface-subtle" style="display:block;margin-bottom:2px;color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;letter-spacing:.04em">${escapeHtml(emailFieldLabel(item).toUpperCase())}</strong>
+        <span class="surface-muted" style="color:${EMAIL_COLORS.surfaceMuted};font-size:10px;line-height:1.4">${escapeHtml(changeValue(item, item[side]))}</span>
+      </span>`,
+    )
+    .join("");
 }
 
-function emailChangeKind(record: ChangeRecord): string {
-  if (record.kind !== "deadline_changed") {
-    return changeKindLabels[record.kind];
-  }
-  if (record.before && !record.after) return "Son tarih bilgisi görünmedi";
-  if (!record.before && record.after) return "Son tarih bilgisi görüldü";
-  return changeKindLabels[record.kind];
+function plainChangeValues(
+  group: VerifiedChangeGroup,
+  side: "before" | "after",
+): string {
+  return group.items
+    .map((item) => `${emailFieldLabel(item)}: ${changeValue(item, item[side])}`)
+    .join(" · ");
 }
 
-function emailChangeRow(record: ChangeRecord): string {
-  const before = changeCellValue(record, record.before);
-  const after = changeCellValue(record, record.after);
+function emailChangeRow(group: VerifiedChangeGroup): string {
   return `
     <tr class="change-email-row">
-      <td class="change-email-cell event-rule" width="20%" valign="top" style="width:20%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
-        <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">ALGILANDIĞI TARİH</span>
-        <span class="surface-muted" style="color:${EMAIL_COLORS.surfaceMuted};font-size:10px;line-height:1.4">${escapeHtml(localDate(record.detectedAt, true))}</span>
+      <td class="change-email-cell" width="50%" valign="top" style="width:50%;padding:12px 8px 7px">
+        <span class="surface-subtle" style="display:block;margin-bottom:3px;color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;letter-spacing:.05em">FESTİVAL</span>
+        <strong class="surface-ink" style="color:${EMAIL_COLORS.surfaceInk};font-size:12px;line-height:1.35">${escapeHtml(group.eventName)}</strong>
       </td>
-      <td class="change-email-cell event-rule" width="22%" valign="top" style="width:22%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
-        <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">FESTİVAL</span>
-        <strong class="surface-ink" style="color:${EMAIL_COLORS.surfaceInk};font-size:11px;line-height:1.35">${escapeHtml(record.eventName)}</strong>
+      <td class="change-email-cell" width="50%" valign="top" style="width:50%;padding:12px 8px 7px">
+        <span class="surface-subtle" style="display:block;margin-bottom:3px;color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;letter-spacing:.05em">DEĞİŞİKLİĞİN ALGILANDIĞI TARİH</span>
+        <span class="surface-muted" style="color:${EMAIL_COLORS.surfaceMuted};font-size:10px;line-height:1.4">${escapeHtml(localDate(group.detectedAt, true))}</span>
       </td>
-      <td class="change-email-cell event-rule" width="18%" valign="top" style="width:18%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
-        <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">DEĞİŞİKLİK</span>
-        <span class="soft-chip" style="display:inline-block;padding:4px 7px;border-radius:999px;background:${EMAIL_COLORS.chipBackground};color:${EMAIL_COLORS.chipInk};font-size:9px;font-weight:800;line-height:1.25">${escapeHtml(emailChangeKind(record))}</span>
+    </tr>
+    <tr>
+      <td class="change-email-cell change-email-last event-rule" width="50%" valign="top" style="width:50%;padding:7px 8px 12px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
+        <span class="surface-subtle" style="display:block;margin-bottom:5px;color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;letter-spacing:.05em">DEĞİŞİKLİKTEN ÖNCE</span>
+        ${emailChangeValues(group, "before")}
       </td>
-      <td class="change-email-cell event-rule" width="20%" valign="top" style="width:20%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
-        <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">ÖNCEKİ TARİH / DEĞER</span>
-        <span class="surface-muted" style="color:${EMAIL_COLORS.surfaceMuted};font-size:10px;line-height:1.4">${escapeHtml(before)}</span>
-      </td>
-      <td class="change-email-cell change-email-last event-rule" width="20%" valign="top" style="width:20%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
-        <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">GÜNCELLENEN TARİH / DEĞER</span>
-        <span class="surface-muted" style="color:${EMAIL_COLORS.surfaceMuted};font-size:10px;line-height:1.4">${escapeHtml(after)}</span>
+      <td class="change-email-cell change-email-last event-rule" width="50%" valign="top" style="width:50%;padding:7px 8px 12px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
+        <span class="surface-subtle" style="display:block;margin-bottom:5px;color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;letter-spacing:.05em">DEĞİŞİKLİKTEN SONRA</span>
+        ${emailChangeValues(group, "after")}
       </td>
     </tr>`;
 }
@@ -227,8 +227,8 @@ export function renderDigest(
   const model = createReportModel(snapshot, config);
   const changeCutoff = model.generated.minus({ hours: 24 }).toMillis();
   const generatedAt = model.generated.toMillis();
-  const recentChanges = changelog
-    .filter((record) => {
+  const recentChanges = summarizeVerifiedChanges(
+    changelog.filter((record) => {
       const detectedAt = DateTime.fromISO(record.detectedAt, {
         zone: "utc",
       }).toMillis();
@@ -237,8 +237,8 @@ export function renderDigest(
         detectedAt >= changeCutoff &&
         detectedAt <= generatedAt
       );
-    })
-    .sort((left, right) => right.detectedAt.localeCompare(left.detectedAt));
+    }),
+  );
   const deadlines = model.deadlines
     .filter(
       ({ daysLeft }) =>
@@ -397,14 +397,7 @@ export function renderDigest(
                 </tr>
                 <tr>
                   <td colspan="2">
-                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="width:100%;table-layout:fixed;border-collapse:collapse">
-                      <tr class="change-email-head">
-                        <td class="surface-subtle" width="20%" valign="bottom" style="width:20%;padding:8px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceLine};color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;line-height:1.3">ALGILANDIĞI TARİH</td>
-                        <td class="surface-subtle" width="22%" valign="bottom" style="width:22%;padding:8px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceLine};color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;line-height:1.3">FESTİVAL</td>
-                        <td class="surface-subtle" width="18%" valign="bottom" style="width:18%;padding:8px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceLine};color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;line-height:1.3">DEĞİŞİKLİK</td>
-                        <td class="surface-subtle" width="20%" valign="bottom" style="width:20%;padding:8px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceLine};color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;line-height:1.3">ÖNCEKİ TARİH / DEĞER</td>
-                        <td class="surface-subtle" width="20%" valign="bottom" style="width:20%;padding:8px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceLine};color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;line-height:1.3">GÜNCELLENEN TARİH / DEĞER</td>
-                      </tr>
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse">
                       ${recentChanges.map(emailChangeRow).join("")}
                     </table>
                   </td>
@@ -440,10 +433,9 @@ export function renderDigest(
       .deadline-action-mobile { display: table-cell !important; width: 100% !important; max-height: none !important; overflow: visible !important; padding: 0 12px 12px !important; font-size: 12px !important; line-height: 1.2 !important; }
       .priority-copy, .priority-action { display: block !important; width: 100% !important; box-sizing: border-box !important; text-align: left !important; }
       .priority-action { padding: 0 20px 18px !important; }
-      .change-email-head { display: none !important; max-height: 0 !important; overflow: hidden !important; }
       .change-email-cell { display: block !important; width: 100% !important; box-sizing: border-box !important; padding: 5px 0 !important; border-bottom: 0 !important; }
-      .change-email-last { padding-bottom: 12px !important; border-bottom: 1px solid ${EMAIL_COLORS.surfaceRule} !important; }
-      .change-mobile-label { display: block !important; margin-bottom: 2px !important; }
+      .change-email-last { padding-bottom: 12px !important; }
+      .change-email-last:last-child { border-bottom: 1px solid ${EMAIL_COLORS.surfaceRule} !important; }
     }
     @media (prefers-color-scheme: dark) {
       .email-body, .email-canvas { background-color: ${EMAIL_COLORS.darkCanvas} !important; color: ${EMAIL_COLORS.darkInk} !important; }
@@ -607,11 +599,12 @@ export function renderDigest(
     recentChanges.length > 0
       ? `SON 24 SAATTE DEĞİŞENLER
 ${recentChanges
-  .map((record) => {
-    const before = changeCellValue(record, record.before);
-    const after = changeCellValue(record, record.after);
-    return `- Algılandı: ${localDate(record.detectedAt, true)} | Festival: ${record.eventName} | Değişiklik: ${emailChangeKind(record)} | Önceki: ${before} | Güncellenen: ${after}`;
-  })
+  .map(
+    (group) => `- Festival: ${group.eventName}
+  Değişikliğin algılandığı tarih: ${localDate(group.detectedAt, true)}
+  Değişiklikten önce: ${plainChangeValues(group, "before")}
+  Değişiklikten sonra: ${plainChangeValues(group, "after")}`,
+  )
   .join("\n")}
 
 `

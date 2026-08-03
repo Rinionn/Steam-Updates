@@ -434,19 +434,20 @@
     .change-count { color:var(--color-muted); font-size:12px; font-weight:700; }
     .change-list { border-top:1px solid var(--color-line); }
     .change-table-head { display:none; }
-    .change-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-areas:"event event" "kind kind" "before after" "detected detected"; gap:12px 14px; padding:16px; border-bottom:1px solid var(--color-line); }
+    .change-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-areas:"event event" "detected detected" "before after"; gap:12px 14px; padding:16px; border-bottom:1px solid var(--color-line); }
     .change-row:last-child { border-bottom:0; }
     .change-cell { min-width:0; overflow-wrap:anywhere; color:var(--color-muted); font-size:12px; line-height:1.4; }
     .change-detected { grid-area:detected; }
     .change-event { grid-area:event; }
-    .change-kind-cell { grid-area:kind; }
     .change-before { grid-area:before; }
     .change-after { grid-area:after; }
     .change-cell-label { display:block; margin-bottom:4px; color:var(--color-footer); font-size:9px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; }
     .change-detected time { color:var(--color-muted); font-size:11px; }
     .change-event strong { color:var(--color-ink); font-size:13px; }
-    .change-type { display:inline-flex; padding:4px 7px; border-radius:999px; color:var(--color-soft-text); background:var(--color-soft); font-size:10px; font-weight:800; }
-    .change-empty { color:var(--color-footer); }
+    .change-values,.change-value-line { display:grid; gap:3px; }
+    .change-values { gap:8px; }
+    .change-value-line strong { color:var(--color-footer); font-size:9px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; }
+    .change-log .empty { display:grid; gap:6px; }
     .news-block + .news-block { margin-top:32px; }
     .news-toolbar { display:flex; align-items:flex-end; flex-wrap:wrap; gap:12px; margin-bottom:18px; }
     .news-tabs { display:flex; flex:1 1 360px; gap:6px; padding:5px; overflow-x:auto; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel); }
@@ -507,11 +508,14 @@
       .platform-news { grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
     @media (min-width: 961px) {
-      .change-table-head,.change-row { grid-template-columns:150px minmax(170px,1fr) 130px minmax(165px,1fr) minmax(165px,1fr); align-items:center; gap:16px; padding:14px 20px; }
+      .change-table-head,.change-row { grid-template-columns:minmax(180px,1.2fr) 155px minmax(210px,1fr) minmax(210px,1fr); align-items:start; gap:16px; padding:14px 20px; }
       .change-table-head { display:grid; border-bottom:1px solid var(--color-line); color:var(--color-footer); font-size:9px; font-weight:900; letter-spacing:.05em; text-transform:uppercase; }
       .change-row { grid-template-areas:none; }
-      .change-detected,.change-event,.change-kind-cell,.change-before,.change-after { grid-area:auto; }
+      .change-detected,.change-event,.change-before,.change-after { grid-area:auto; }
       .change-cell-label { display:none; }
+    }
+    @media (max-width: 480px) {
+      .change-row { grid-template-columns:minmax(0,1fr); grid-template-areas:"event" "detected" "before" "after"; }
     }
     @media (max-width: 760px) {
       .global-topbar { position:relative; grid-template-columns:auto minmax(0,1fr) auto; min-height:58px; padding-inline:10px; }
@@ -1155,325 +1159,13 @@
     <section class="section dashboard-panel" id="changes" data-dashboard-panel="events">
       <details class="change-log">
         <summary>
-          <span data-i18n="changesTitle">Son 90 günde ne değişti</span>
-          <span class="change-count">14 <span data-i18n="records">kayıt</span></span>
+          <span data-i18n="changesTitle">Doğrulanmış takvim değişiklikleri · Son 90 gün</span>
+          <span class="change-count">0 <span data-i18n="records">kayıt</span></span>
         </summary>
-        <div class="change-list" role="table" aria-label="Değişiklik günlüğü" data-copy-aria-tr="Değişiklik günlüğü" data-copy-aria-en="Change log">
-    <div class="change-table-head" role="row">
-      <span role="columnheader"><span data-copy-tr="Değişikliğin algılandığı tarih" data-copy-en="Detected at">Değişikliğin algılandığı tarih</span></span>
-      <span role="columnheader"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-      <span role="columnheader"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-      <span role="columnheader"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-      <span role="columnheader"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-03T08:17:33.840Z"><span data-copy-tr="3 Ağustos 2026, 11:17" data-copy-en="3 August 2026, 11:17">3 Ağustos 2026, 11:17</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Cyberpunk Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görüldü" data-copy-en="Deadline value detected">Son tarih bilgisi görüldü</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span data-copy-tr="3 Ağustos 2026, 20:00" data-copy-en="3 August 2026, 20:00">3 Ağustos 2026, 20:00</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-02T23:42:18.722Z"><span data-copy-tr="3 Ağustos 2026, 02:42" data-copy-en="3 August 2026, 02:42">3 Ağustos 2026, 02:42</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Cyberpunk Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görünmedi" data-copy-en="Deadline value missing">Son tarih bilgisi görünmedi</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span data-copy-tr="3 Ağustos 2026, 20:00" data-copy-en="3 August 2026, 20:00">3 Ağustos 2026, 20:00</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-02T17:17:21.038Z"><span data-copy-tr="2 Ağustos 2026, 20:17" data-copy-en="2 August 2026, 20:17">2 Ağustos 2026, 20:17</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Cyberpunk Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görüldü" data-copy-en="Deadline value detected">Son tarih bilgisi görüldü</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span data-copy-tr="3 Ağustos 2026, 20:00" data-copy-en="3 August 2026, 20:00">3 Ağustos 2026, 20:00</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-02T11:03:53.573Z"><span data-copy-tr="2 Ağustos 2026, 14:03" data-copy-en="2 August 2026, 14:03">2 Ağustos 2026, 14:03</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Pins &amp; Pegs Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görünmedi" data-copy-en="Deadline value missing">Son tarih bilgisi görünmedi</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span data-copy-tr="17 Ağustos 2026, 20:00" data-copy-en="17 August 2026, 20:00">17 Ağustos 2026, 20:00</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-02T11:03:53.573Z"><span data-copy-tr="2 Ağustos 2026, 14:03" data-copy-en="2 August 2026, 14:03">2 Ağustos 2026, 14:03</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Couch Co-Op Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görünmedi" data-copy-en="Deadline value missing">Son tarih bilgisi görünmedi</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span data-copy-tr="8 Şubat 2027, 21:00" data-copy-en="8 February 2027, 21:00">8 Şubat 2027, 21:00</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-02T04:37:39.617Z"><span data-copy-tr="2 Ağustos 2026, 07:37" data-copy-en="2 August 2026, 07:37">2 Ağustos 2026, 07:37</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Cyberpunk Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görünmedi" data-copy-en="Deadline value missing">Son tarih bilgisi görünmedi</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span data-copy-tr="3 Ağustos 2026, 20:00" data-copy-en="3 August 2026, 20:00">3 Ağustos 2026, 20:00</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-02T04:37:39.617Z"><span data-copy-tr="2 Ağustos 2026, 07:37" data-copy-en="2 August 2026, 07:37">2 Ağustos 2026, 07:37</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Pins &amp; Pegs Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görüldü" data-copy-en="Deadline value detected">Son tarih bilgisi görüldü</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span data-copy-tr="17 Ağustos 2026, 20:00" data-copy-en="17 August 2026, 20:00">17 Ağustos 2026, 20:00</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-02T04:37:39.617Z"><span data-copy-tr="2 Ağustos 2026, 07:37" data-copy-en="2 August 2026, 07:37">2 Ağustos 2026, 07:37</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Steam Scream V</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görünmedi" data-copy-en="Deadline value missing">Son tarih bilgisi görünmedi</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span data-copy-tr="26 Ekim 2026, 20:00" data-copy-en="26 October 2026, 20:00">26 Ekim 2026, 20:00</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-02T04:37:39.617Z"><span data-copy-tr="2 Ağustos 2026, 07:37" data-copy-en="2 August 2026, 07:37">2 Ağustos 2026, 07:37</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Auto-Battler RPG Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görünmedi" data-copy-en="Deadline value missing">Son tarih bilgisi görünmedi</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span data-copy-tr="16 Kasım 2026, 21:00" data-copy-en="16 November 2026, 21:00">16 Kasım 2026, 21:00</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-02T04:37:39.617Z"><span data-copy-tr="2 Ağustos 2026, 07:37" data-copy-en="2 August 2026, 07:37">2 Ağustos 2026, 07:37</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Couch Co-Op Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görüldü" data-copy-en="Deadline value detected">Son tarih bilgisi görüldü</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span data-copy-tr="8 Şubat 2027, 21:00" data-copy-en="8 February 2027, 21:00">8 Şubat 2027, 21:00</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-01T20:32:47.996Z"><span data-copy-tr="1 Ağustos 2026, 23:32" data-copy-en="1 August 2026, 23:32">1 Ağustos 2026, 23:32</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Cyberpunk Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görüldü" data-copy-en="Deadline value detected">Son tarih bilgisi görüldü</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span data-copy-tr="3 Ağustos 2026, 20:00" data-copy-en="3 August 2026, 20:00">3 Ağustos 2026, 20:00</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-01T20:32:47.996Z"><span data-copy-tr="1 Ağustos 2026, 23:32" data-copy-en="1 August 2026, 23:32">1 Ağustos 2026, 23:32</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Steam Scream V</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görüldü" data-copy-en="Deadline value detected">Son tarih bilgisi görüldü</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span data-copy-tr="26 Ekim 2026, 20:00" data-copy-en="26 October 2026, 20:00">26 Ekim 2026, 20:00</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-08-01T20:32:47.996Z"><span data-copy-tr="1 Ağustos 2026, 23:32" data-copy-en="1 August 2026, 23:32">1 Ağustos 2026, 23:32</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Auto-Battler RPG Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görüldü" data-copy-en="Deadline value detected">Son tarih bilgisi görüldü</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span data-copy-tr="16 Kasım 2026, 21:00" data-copy-en="16 November 2026, 21:00">16 Kasım 2026, 21:00</span></span>
-      </span>
-    </div>
-    <div class="change-row" role="row">
-      <span class="change-cell change-detected" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik algılandı" data-copy-en="Detected at">Değişiklik algılandı</span></span>
-        <time datetime="2026-07-30T14:38:25.590Z"><span data-copy-tr="30 Temmuz 2026, 17:38" data-copy-en="30 July 2026, 17:38">30 Temmuz 2026, 17:38</span></time>
-      </span>
-      <span class="change-cell change-event" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Festival" data-copy-en="Festival">Festival</span></span>
-        <strong>Party-Based RPG Fest</strong>
-      </span>
-      <span class="change-cell change-kind-cell" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Değişiklik" data-copy-en="Change">Değişiklik</span></span>
-        <span class="change-type"><span data-copy-tr="Son tarih bilgisi görünmedi" data-copy-en="Deadline value missing">Son tarih bilgisi görünmedi</span></span>
-      </span>
-      <span class="change-cell change-before" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Önceki tarih / değer" data-copy-en="Previous date / value">Önceki tarih / değer</span></span>
-        <span><span data-copy-tr="14 Eylül 2026, 20:00" data-copy-en="14 September 2026, 20:00">14 Eylül 2026, 20:00</span></span>
-      </span>
-      <span class="change-cell change-after" role="cell">
-        <span class="change-cell-label"><span data-copy-tr="Güncellenen tarih / değer" data-copy-en="Updated date / value">Güncellenen tarih / değer</span></span>
-        <span><span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span></span>
-      </span>
-    </div></div>
+        <div class="empty">
+                <strong><span data-copy-tr="Son 90 günde doğrulanmış bir tarih değişikliği yok." data-copy-en="No verified date changes in the last 90 days.">Son 90 günde doğrulanmış bir tarih değişikliği yok.</span></strong>
+                <span><span data-copy-tr="Yalnızca değişiklikten önceki ve sonraki tarih birlikte doğrulandığında burada tek satır olarak gösterilir." data-copy-en="A change appears here as one row only when both the before and after values are verified.">Yalnızca değişiklikten önceki ve sonraki tarih birlikte doğrulandığında burada tek satır olarak gösterilir.</span></span>
+              </div>
       </details>
     </section>
 
@@ -6972,8 +6664,8 @@
         en: "Add a game to find matches.",
       },
       changesTitle: {
-        tr: "Son 90 günde ne değişti",
-        en: "What changed in the last 90 days",
+        tr: "Doğrulanmış takvim değişiklikleri · Son 90 gün",
+        en: "Verified calendar changes · Last 90 days",
       },
       records: { tr: "kayıt", en: "records" },
       registration: { tr: "Başvuru", en: "Registration" },
