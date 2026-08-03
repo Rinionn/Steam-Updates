@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-08-02T23:42:19.139Z",
+  "generatedAt": "2026-08-03T01:16:10.884Z",
   "items": [
+    {
+      "id": "steam-news-4b97dd852",
+      "title": "Twist Master",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4853420/Twist_Master/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4853420/a7afb0d7db911e5772da656ffba8894d12d24a07/capsule_231x87.jpg?t=1785719058",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-c4a47521d",
+      "title": "My Merry May with be",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1955730/My_Merry_May_with_be/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1955730/43b6285b678a9ceb48526fe27e30c4ac98666cf6/capsule_231x87.jpg?t=1785718531",
+      "categories": [
+        "Macera",
+        "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-f2b214eeb",
+      "title": "Cyberpunk Inquisitor",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2957350/Cyberpunk_Inquisitor/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2957350/a1b851eec29d67a08118f0477ec3981b0bcb0533/capsule_231x87.jpg?t=1785717029",
+      "categories": []
+    },
     {
       "id": "steam-news-02200d607",
       "title": "CONTRAL",
@@ -247,53 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-0b85f885c",
-      "title": "Invincible Magnet Warrior",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4828620/Invincible_Magnet_Warrior/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4828620/03ad909a8dac1794c1aff291854dcd88eda95c2e/capsule_231x87.jpg?t=1785667456",
-      "categories": [
-        "Yarış",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-bdc33847a",
-      "title": "Rookspell",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4886540/Rookspell/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4886540/d6618e371e41b764e5e2ef82d4ea637abf568de9/capsule_231x87.jpg?t=1785664975",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-a51f7da90",
-      "title": "YohohoDice",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2163340/YohohoDice/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2163340/40a5a69a74411ae09f3c3465e4fcab39c2425e62/capsule_231x87.jpg?t=1785663899",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-60e3c93e9",
-      "title": "Robin Hood: Sherwood Valley",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
-      "categories": [
-        "Macera",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-c2ff8423c",
       "title": "MoonCraft",
       "kind": "coming_soon",
@@ -303,17 +289,6 @@
       "categories": [
         "Strateji",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-d9bb72add",
-      "title": "Soul Siblings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
@@ -336,6 +311,29 @@
       "dateLabel": "3 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920590/1d72bd313e4d1ca5b9158645d20999eb66f3eb4b/capsule_231x87.jpg?t=1784454718",
       "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-d9bb72add",
+      "title": "Soul Siblings",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-60e3c93e9",
+      "title": "Robin Hood: Sherwood Valley",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4792610/Robin_Hood_Sherwood_Valley/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792610/1f432d7764fad6d5369b1a60e47a2bef9bda6d5f/capsule_231x87.jpg?t=1782939819",
+      "categories": [
+        "Macera",
         "RPG"
       ]
     },
@@ -394,18 +392,6 @@
       ]
     },
     {
-      "id": "steam-news-61969702d",
-      "title": "SatelliteMemory（サテライトメモリー）",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4956850/SatelliteMemory/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4956850/9499f7aa8987e569c3e5856cb01016fe2438ffbc/capsule_231x87.jpg?t=1784727207",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-964cb0ee1",
       "title": "GIFT from GOD",
       "kind": "coming_soon",
@@ -419,22 +405,16 @@
       ]
     },
     {
-      "id": "steam-news-746d0982b",
-      "title": "Focus Froggy",
+      "id": "steam-news-61969702d",
+      "title": "SatelliteMemory（サテライトメモリー）",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4334280/Focus_Froggy/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4956850/SatelliteMemory/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4334280/a530801f8ddcd3f4eaab1da77e26583adb8d8826/capsule_231x87.jpg?t=1783994330",
-      "categories": []
-    },
-    {
-      "id": "steam-news-186a5eb59",
-      "title": "Kin and Conquest",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4540820/Kin_and_Conquest/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4540820/247b1a72d0e7d433086d7a02b103a2822b2f6c09/capsule_231x87.jpg?t=1785583789",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4956850/9499f7aa8987e569c3e5856cb01016fe2438ffbc/capsule_231x87.jpg?t=1784727207",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
     },
     {
       "id": "steam-news-e64c23d73",
@@ -447,6 +427,24 @@
         "Strateji",
         "Gündelik"
       ]
+    },
+    {
+      "id": "steam-news-186a5eb59",
+      "title": "Kin and Conquest",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4540820/Kin_and_Conquest/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4540820/247b1a72d0e7d433086d7a02b103a2822b2f6c09/capsule_231x87.jpg?t=1785583789",
+      "categories": []
+    },
+    {
+      "id": "steam-news-746d0982b",
+      "title": "Focus Froggy",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4334280/Focus_Froggy/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4334280/a530801f8ddcd3f4eaab1da77e26583adb8d8826/capsule_231x87.jpg?t=1783994330",
+      "categories": []
     },
     {
       "id": "steam-news-49e75d2f4",
@@ -471,20 +469,6 @@
       ]
     },
     {
-      "id": "steam-news-e9bd4f58a",
-      "title": "Dead Zone Revive",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3919900/Dead_Zone_Revive/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3919900/4c646c03119299010ef17d3f84dea05004974d60/capsule_231x87.jpg?t=1783095094",
-      "categories": [
-        "Bağımsız",
-        "Aksiyon",
-        "RPG",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-ff2c53717",
       "title": "Upgradia",
       "kind": "coming_soon",
@@ -496,6 +480,20 @@
         "Macera",
         "RPG",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-e9bd4f58a",
+      "title": "Dead Zone Revive",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3919900/Dead_Zone_Revive/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3919900/4c646c03119299010ef17d3f84dea05004974d60/capsule_231x87.jpg?t=1783095094",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon",
+        "RPG",
+        "Strateji"
       ]
     },
     {
