@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T22:40:43.422Z",
+  "generatedAt": "2026-08-03T23:48:27.877Z",
   "items": [
     {
       "id": "steam-news-18f2f1930",
@@ -248,7 +248,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3331000/Retrowave_2/?snr=1_7_7_230_150_1",
       "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3331000/c693f665fc04d9496732948a05b82ba0eb3d8dd7/capsule_231x87.jpg?t=1785781401",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3331000/c693f665fc04d9496732948a05b82ba0eb3d8dd7/capsule_231x87.jpg?t=1785797725",
       "categories": [
         "Yarış",
         "Aksiyon",
@@ -335,6 +335,18 @@
       ]
     },
     {
+      "id": "steam-news-69384a42f",
+      "title": "Phantacall Realm",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4290250/Phantacall_Realm/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "4 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4290250/25f82aafbe6fcbf70eff2ee68db134b148907615/capsule_231x87.jpg?t=1784877743",
+      "categories": [
+        "Gündelik",
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-cebadd3f0",
       "title": "Recessive",
       "kind": "coming_soon",
@@ -345,18 +357,6 @@
         "Simülasyon",
         "Gündelik",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-69384a42f",
-      "title": "Phantacall Realm",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4290250/Phantacall_Realm/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4290250/25f82aafbe6fcbf70eff2ee68db134b148907615/capsule_231x87.jpg?t=1784877743",
-      "categories": [
-        "Gündelik",
-        "Strateji"
       ]
     },
     {
@@ -486,15 +486,6 @@
       ]
     },
     {
-      "id": "steam-news-f59f113be",
-      "title": "It Consumes",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2371060/It_Consumes/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2371060/0cba2e97cf91a6cff96d30221ed8280a4889bec8/capsule_231x87.jpg?t=1784924172",
-      "categories": []
-    },
-    {
       "id": "steam-news-79f20f7ab",
       "title": "A Good Day Fishing",
       "kind": "coming_soon",
@@ -504,6 +495,15 @@
       "categories": [
         "Gündelik"
       ]
+    },
+    {
+      "id": "steam-news-f59f113be",
+      "title": "It Consumes",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2371060/It_Consumes/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "4 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2371060/0cba2e97cf91a6cff96d30221ed8280a4889bec8/capsule_231x87.jpg?t=1784924172",
+      "categories": []
     },
     {
       "id": "steam-news-670b7f821",
@@ -519,6 +519,17 @@
       ]
     },
     {
+      "id": "steam-news-b4d61b6b6",
+      "title": "Petri Panic",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4896230/Petri_Panic/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "4 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4896230/9297f9b929d3cf49234427bc0f1105258415c8c5/capsule_231x87.jpg?t=1784898045",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-7fb517e33",
       "title": "The Missing Rune",
       "kind": "coming_soon",
@@ -530,17 +541,6 @@
         "Strateji",
         "Korku",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-b4d61b6b6",
-      "title": "Petri Panic",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4896230/Petri_Panic/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4896230/9297f9b929d3cf49234427bc0f1105258415c8c5/capsule_231x87.jpg?t=1784898045",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
