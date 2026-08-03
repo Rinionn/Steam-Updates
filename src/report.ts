@@ -7,9 +7,9 @@ import {
   renderAppSidebar,
 } from "./app-shell.js";
 import {
-  summarizeVerifiedChanges,
-  type VerifiedChangeGroup,
-  type VerifiedChangeItem,
+  summarizeCalendarChanges,
+  type CalendarChangeGroup,
+  type CalendarChangeItem,
 } from "./change-summary.js";
 import { readChangelog } from "./changelog.js";
 import { config, paths } from "./config.js";
@@ -67,7 +67,7 @@ function urgencyText(daysLeft: number): string {
   return `${daysLeft} gün kaldı`;
 }
 
-function changeValue(item: VerifiedChangeItem, value: string): string {
+function changeValue(item: CalendarChangeItem, value: string): string {
   if (
     item.kind === "date_shifted" ||
     item.kind === "deadline_changed"
@@ -80,7 +80,7 @@ function changeValue(item: VerifiedChangeItem, value: string): string {
   return escapeHtml(value);
 }
 
-function changeFieldLabel(item: VerifiedChangeItem): string {
+function changeFieldLabel(item: CalendarChangeItem): string {
   if (item.kind === "renamed" || item.field === "name") {
     return localizedText("Festival adı", "Festival name");
   }
@@ -93,21 +93,34 @@ function changeFieldLabel(item: VerifiedChangeItem): string {
 }
 
 function changeValues(
-  group: VerifiedChangeGroup,
+  group: CalendarChangeGroup,
   side: "before" | "after",
 ): string {
   return group.items
     .map(
-      (item) => `
+      (item) => {
+        const value = item[side];
+        const renderedValue = value
+          ? changeValue(item, value)
+          : localizedText(
+              side === "before"
+                ? "Steam sayfasında görünmüyordu"
+                : "Steam sayfasında artık görünmüyor",
+              side === "before"
+                ? "Was not visible on the Steam page"
+                : "No longer visible on the Steam page",
+            );
+        return `
         <span class="change-value-line">
           <strong>${changeFieldLabel(item)}</strong>
-          <span>${changeValue(item, item[side])}</span>
-        </span>`,
+          <span>${renderedValue}</span>
+        </span>`;
+      },
     )
     .join("");
 }
 
-function changeRow(group: VerifiedChangeGroup): string {
+function changeRow(group: CalendarChangeGroup): string {
   return `
     <div class="change-row" role="row">
       <span class="change-cell change-event" role="cell">
@@ -537,7 +550,7 @@ export function renderReport(
   ].join("|");
   const changeCutoff = model.generated.minus({ days: 90 }).toMillis();
   const generatedAt = model.generated.toMillis();
-  const recentChanges = summarizeVerifiedChanges(
+  const recentChanges = summarizeCalendarChanges(
     changelog.filter((record) => {
       const detectedAt = DateTime.fromISO(record.detectedAt, {
         zone: "utc",
@@ -1190,15 +1203,14 @@ export function renderReport(
     <section class="section dashboard-panel" id="changes" data-dashboard-panel="events">
       <details class="change-log">
         <summary>
-          <span data-i18n="changesTitle">Doğrulanmış takvim değişiklikleri · Son 90 gün</span>
+          <span data-i18n="changesTitle">Takvimde son görülen değişiklikler · Son 90 gün</span>
           <span class="change-count">${recentChanges.length} <span data-i18n="records">kayıt</span></span>
         </summary>
         ${
           recentChanges.length
             ? `<div class="change-list" role="table" aria-label="Değişiklik günlüğü" data-copy-aria-tr="Değişiklik günlüğü" data-copy-aria-en="Change log">${changeTableHeader()}${recentChanges.map(changeRow).join("")}</div>`
             : `<div class="empty">
-                <strong>${localizedText("Son 90 günde doğrulanmış bir tarih değişikliği yok.", "No verified date changes in the last 90 days.")}</strong>
-                <span>${localizedText("Yalnızca değişiklikten önceki ve sonraki tarih birlikte doğrulandığında burada tek satır olarak gösterilir.", "A change appears here as one row only when both the before and after values are verified.")}</span>
+                <strong>${localizedText("Son 90 günde kaydedilmiş bir takvim değişikliği yok.", "No calendar changes were recorded in the last 90 days.")}</strong>
               </div>`
         }
       </details>
@@ -1628,8 +1640,8 @@ export function renderReport(
         en: "Add a game to find matches.",
       },
       changesTitle: {
-        tr: "Doğrulanmış takvim değişiklikleri · Son 90 gün",
-        en: "Verified calendar changes · Last 90 days",
+        tr: "Takvimde son görülen değişiklikler · Son 90 gün",
+        en: "Latest calendar changes · Last 90 days",
       },
       records: { tr: "kayıt", en: "records" },
       registration: { tr: "Başvuru", en: "Registration" },

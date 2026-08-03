@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { summarizeVerifiedChanges } from "../src/change-summary.js";
+import { summarizeCalendarChanges } from "../src/change-summary.js";
 import type { ChangeRecord } from "../src/types.js";
 
 function record(overrides: Partial<ChangeRecord> = {}): ChangeRecord {
@@ -15,7 +15,7 @@ function record(overrides: Partial<ChangeRecord> = {}): ChangeRecord {
   };
 }
 
-describe("verified change summaries", () => {
+describe("calendar change summaries", () => {
   it("groups multiple fields from the same festival scan into one row", () => {
     const startChange = record();
     const endChange = record({
@@ -24,7 +24,7 @@ describe("verified change summaries", () => {
       after: "2026-09-09T17:00:00.000Z",
     });
 
-    const groups = summarizeVerifiedChanges([
+    const groups = summarizeCalendarChanges([
       startChange,
       endChange,
       startChange,
@@ -41,38 +41,70 @@ describe("verified change summaries", () => {
     ]);
   });
 
-  it("rejects one-sided, invalid, equal, and equivalent date records", () => {
-    const groups = summarizeVerifiedChanges([
-      record({ after: undefined }),
-      record({ before: undefined }),
+  it("uses the newest one-sided observation when no verified change exists", () => {
+    const groups = summarizeCalendarChanges([
+      record({
+        detectedAt: "2026-08-01T08:00:00.000Z",
+        before: undefined,
+      }),
+      record({
+        detectedAt: "2026-08-03T08:00:00.000Z",
+        after: undefined,
+      }),
+    ]);
+
+    expect(groups).toHaveLength(1);
+    expect(groups[0].detectedAt).toBe("2026-08-03T08:00:00.000Z");
+    expect(groups[0].items[0]).toMatchObject({
+      before: "2026-09-01T17:00:00.000Z",
+      after: undefined,
+    });
+  });
+
+  it("prefers a verified change over newer one-sided observations", () => {
+    const groups = summarizeCalendarChanges([
+      record({ detectedAt: "2026-08-02T08:00:00.000Z" }),
+      record({
+        detectedAt: "2026-08-03T08:00:00.000Z",
+        after: undefined,
+      }),
+    ]);
+
+    expect(groups).toHaveLength(1);
+    expect(groups[0].detectedAt).toBe("2026-08-02T08:00:00.000Z");
+    expect(groups[0].items[0].after).toBe("2026-09-02T17:00:00.000Z");
+  });
+
+  it("rejects invalid, equal, equivalent, and non-date records", () => {
+    const groups = summarizeCalendarChanges([
       record({ after: "2026-09-01T17:00:00.000Z" }),
       record({
         before: "2026-09-01T17:00:00.000Z",
         after: "2026-09-01T19:00:00.000+02:00",
       }),
-      record({ before: "not-a-date" }),
+      record({ before: "not-a-date", after: undefined }),
       record({ kind: "added", before: undefined, after: undefined }),
+      record({ kind: "renamed", before: "Old", after: "New" }),
     ]);
 
     expect(groups).toEqual([]);
   });
 
-  it("keeps separate scans as separate rows and sorts newest first", () => {
-    const groups = summarizeVerifiedChanges([
+  it("returns at most one row per festival and sorts festivals newest first", () => {
+    const groups = summarizeCalendarChanges([
       record({ detectedAt: "2026-08-01T08:00:00.000Z" }),
       record({ detectedAt: "2026-08-03T08:00:00.000Z" }),
       record({
-        detectedAt: "2026-08-03T08:00:00.000Z",
+        detectedAt: "2026-08-02T08:00:00.000Z",
         eventId: "other-fest",
         eventName: "Other Fest",
       }),
     ]);
 
-    expect(groups).toHaveLength(3);
-    expect(groups.map((group) => group.detectedAt)).toEqual([
-      "2026-08-03T08:00:00.000Z",
-      "2026-08-03T08:00:00.000Z",
-      "2026-08-01T08:00:00.000Z",
+    expect(groups).toHaveLength(2);
+    expect(groups.map((group) => group.eventName)).toEqual([
+      "Test Fest",
+      "Other Fest",
     ]);
   });
 });

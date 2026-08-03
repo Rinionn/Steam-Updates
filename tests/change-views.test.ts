@@ -44,7 +44,7 @@ describe("change log views", () => {
       },
     ]);
 
-    expect(html).toContain("Doğrulanmış takvim değişiklikleri · Son 90 gün");
+    expect(html).toContain("Takvimde son görülen değişiklikler · Son 90 gün");
     expect(html).toContain("Test Fest");
     expect(html).toContain("Festival");
     expect(html).toContain("Değişikliğin algılandığı tarih");
@@ -64,7 +64,7 @@ describe("change log views", () => {
     expect(html).not.toMatch(/<details class="change-log" open/);
   });
 
-  it("does not present one-sided parser observations as real changes", () => {
+  it("shows one-sided observations once with an explicit visibility state", () => {
     const html = renderReport(snapshot, [
       {
         ...recentChange,
@@ -74,9 +74,10 @@ describe("change log views", () => {
       },
     ]);
 
-    expect(html).not.toContain("Incomplete Deadline Fest");
-    expect(html).toContain("Son 90 günde doğrulanmış bir tarih değişikliği yok.");
-    expect(html).toContain('class="change-count">0');
+    expect(html).toContain("Incomplete Deadline Fest");
+    expect(html).toContain("Steam sayfasında artık görünmüyor");
+    expect(html).toContain('class="change-count">1');
+    expect(html.match(/class="change-row"/g)).toHaveLength(1);
   });
 
   it("keeps release category filtering and game-to-event navigation functional", () => {
@@ -136,19 +137,24 @@ describe("change log views", () => {
     expect(withoutChanges.text).not.toContain("SON 24 SAATTE DEĞİŞENLER");
   });
 
-  it("keeps one-sided deadline observations out of the email", () => {
+  it("shows one-sided deadline observations once in the email", () => {
     const digest = renderDigest(snapshot, [
       {
         ...recentChange,
         eventName: "Recovered Deadline Fest",
         kind: "deadline_changed",
+        field: "deadlines.registration.dueAt",
         before: undefined,
       },
     ]);
 
-    expect(digest.html).not.toContain("SON 24 SAATTE DEĞİŞENLER");
-    expect(digest.html).not.toContain("Recovered Deadline Fest");
-    expect(digest.text).not.toContain("Recovered Deadline Fest");
+    expect(digest.html).toContain("SON 24 SAATTE DEĞİŞENLER");
+    expect(digest.html).toContain("Recovered Deadline Fest");
+    expect(digest.html).toContain("Steam sayfasında görünmüyordu");
+    expect(digest.text).toContain("Recovered Deadline Fest");
+    expect(digest.text).toContain(
+      "Değişiklikten önce: Son tarih: Steam sayfasında görünmüyordu",
+    );
   });
 
   it("applies managed email subject placeholders", () => {

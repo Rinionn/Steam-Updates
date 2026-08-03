@@ -3,9 +3,9 @@ import { mkdir, writeFile } from "node:fs/promises";
 import nodemailer from "nodemailer";
 import { DateTime } from "luxon";
 import {
-  summarizeVerifiedChanges,
-  type VerifiedChangeGroup,
-  type VerifiedChangeItem,
+  summarizeCalendarChanges,
+  type CalendarChangeGroup,
+  type CalendarChangeItem,
 } from "./change-summary.js";
 import { readChangelog } from "./changelog.js";
 import { config, paths } from "./config.js";
@@ -152,7 +152,7 @@ function shortCountdown(daysLeft: number): string {
   return `${daysLeft} gün`;
 }
 
-function changeValue(item: VerifiedChangeItem, value: string): string {
+function changeValue(item: CalendarChangeItem, value: string): string {
   if (item.kind === "date_shifted" || item.kind === "deadline_changed") {
     const parsed = DateTime.fromISO(value, { zone: "utc" });
     if (parsed.isValid) return localDate(value, true);
@@ -160,7 +160,7 @@ function changeValue(item: VerifiedChangeItem, value: string): string {
   return value;
 }
 
-function emailFieldLabel(item: VerifiedChangeItem): string {
+function emailFieldLabel(item: CalendarChangeItem): string {
   if (item.kind === "renamed" || item.field === "name") return "Festival adı";
   if (item.field === "startAt") return "Başlangıç";
   if (item.field === "endAt") return "Bitiş";
@@ -169,29 +169,45 @@ function emailFieldLabel(item: VerifiedChangeItem): string {
 }
 
 function emailChangeValues(
-  group: VerifiedChangeGroup,
+  group: CalendarChangeGroup,
   side: "before" | "after",
 ): string {
   return group.items
     .map(
-      (item) => `<span style="display:block;margin-bottom:7px">
+      (item) => {
+        const value = item[side];
+        const renderedValue = value
+          ? changeValue(item, value)
+          : side === "before"
+            ? "Steam sayfasında görünmüyordu"
+            : "Steam sayfasında artık görünmüyor";
+        return `<span style="display:block;margin-bottom:7px">
         <strong class="surface-subtle" style="display:block;margin-bottom:2px;color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;letter-spacing:.04em">${escapeHtml(emailFieldLabel(item).toUpperCase())}</strong>
-        <span class="surface-muted" style="color:${EMAIL_COLORS.surfaceMuted};font-size:10px;line-height:1.4">${escapeHtml(changeValue(item, item[side]))}</span>
-      </span>`,
+        <span class="surface-muted" style="color:${EMAIL_COLORS.surfaceMuted};font-size:10px;line-height:1.4">${escapeHtml(renderedValue)}</span>
+      </span>`;
+      },
     )
     .join("");
 }
 
 function plainChangeValues(
-  group: VerifiedChangeGroup,
+  group: CalendarChangeGroup,
   side: "before" | "after",
 ): string {
   return group.items
-    .map((item) => `${emailFieldLabel(item)}: ${changeValue(item, item[side])}`)
+    .map((item) => {
+      const value = item[side];
+      const renderedValue = value
+        ? changeValue(item, value)
+        : side === "before"
+          ? "Steam sayfasında görünmüyordu"
+          : "Steam sayfasında artık görünmüyor";
+      return `${emailFieldLabel(item)}: ${renderedValue}`;
+    })
     .join(" · ");
 }
 
-function emailChangeRow(group: VerifiedChangeGroup): string {
+function emailChangeRow(group: CalendarChangeGroup): string {
   return `
     <tr class="change-email-row">
       <td class="change-email-cell" width="50%" valign="top" style="width:50%;padding:12px 8px 7px">
@@ -227,7 +243,7 @@ export function renderDigest(
   const model = createReportModel(snapshot, config);
   const changeCutoff = model.generated.minus({ hours: 24 }).toMillis();
   const generatedAt = model.generated.toMillis();
-  const recentChanges = summarizeVerifiedChanges(
+  const recentChanges = summarizeCalendarChanges(
     changelog.filter((record) => {
       const detectedAt = DateTime.fromISO(record.detectedAt, {
         zone: "utc",
