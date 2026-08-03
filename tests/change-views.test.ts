@@ -38,8 +38,31 @@ describe("change log views", () => {
 
     expect(html).toContain("Son 90 günde ne değişti");
     expect(html).toContain("Test Fest");
+    expect(html).toContain("Değişikliğin algılandığı tarih");
+    expect(html).toContain("Önceki tarih / değer");
+    expect(html).toContain("Güncellenen tarih / değer");
+    expect(html).toContain('class="change-cell change-before"');
+    expect(html).toContain('class="change-cell change-after"');
+    expect(html).toContain("grid-template-columns:repeat(2,minmax(0,1fr))");
+    expect(html).toContain("@media (min-width: 961px)");
+    expect(html).toContain("3 Ağustos 2026, 20:00");
+    expect(html).toContain("4 Ağustos 2026, 20:00");
     expect(html).toMatch(/<details class="change-log">/);
     expect(html).not.toMatch(/<details class="change-log" open/);
+  });
+
+  it("hides incomplete legacy deadline changes instead of showing false dates", () => {
+    const html = renderReport(snapshot, [
+      {
+        ...recentChange,
+        eventName: "Incomplete Deadline Fest",
+        kind: "deadline_changed",
+        after: undefined,
+      },
+    ]);
+
+    expect(html).not.toContain("Incomplete Deadline Fest");
+    expect(html).toContain("Son 90 günde kaydedilmiş bir değişiklik yok.");
   });
 
   it("keeps release category filtering and game-to-event navigation functional", () => {
@@ -81,7 +104,16 @@ describe("change log views", () => {
     ]);
 
     expect(withChanges.html).toContain("SON 24 SAATTE DEĞİŞENLER");
+    expect(withChanges.html).toContain("ALGILANDIĞI TARİH");
+    expect(withChanges.html).toContain("ÖNCEKİ TARİH / DEĞER");
+    expect(withChanges.html).toContain("GÜNCELLENEN TARİH / DEĞER");
+    expect(withChanges.html).toContain('class="change-email-cell event-rule"');
+    expect(withChanges.html).toContain(".change-email-cell { display: block !important;");
+    expect(withChanges.html).toContain("3 Ağustos 2026, 20:00");
+    expect(withChanges.html).toContain("4 Ağustos 2026, 20:00");
     expect(withChanges.text).toContain("SON 24 SAATTE DEĞİŞENLER");
+    expect(withChanges.text).toContain("Önceki: 3 Ağustos 2026, 20:00");
+    expect(withChanges.text).toContain("Güncellenen: 4 Ağustos 2026, 20:00");
     expect(withoutChanges.html).not.toContain("SON 24 SAATTE DEĞİŞENLER");
     expect(withoutChanges.text).not.toContain("SON 24 SAATTE DEĞİŞENLER");
   });

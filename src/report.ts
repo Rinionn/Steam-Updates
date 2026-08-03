@@ -84,39 +84,70 @@ function changeValue(record: ChangeRecord, value: string): string {
     record.kind === "deadline_changed"
   ) {
     const parsed = DateTime.fromISO(value, { zone: "utc" });
-    if (parsed.isValid) return localDate(value, true);
+    if (parsed.isValid) {
+      return localizedText(localDate(value, true), localDateEn(value, true));
+    }
   }
-  return value;
+  return escapeHtml(value);
 }
 
 function changeRow(record: ChangeRecord): string {
+  const missingValue =
+    '<span class="change-empty" aria-label="Bilgi yok" data-copy-aria-tr="Bilgi yok" data-copy-aria-en="Unavailable">—</span>';
   const before = record.before
-    ? escapeHtml(changeValue(record, record.before))
-    : "";
+    ? changeValue(record, record.before)
+    : missingValue;
   const after = record.after
-    ? escapeHtml(changeValue(record, record.after))
-    : "";
-  const values =
-    before && after
-      ? `${before} <span aria-hidden="true">→</span> ${after}`
-      : after
-        ? `${localizedText("Yeni:", "New:")} ${after}`
-        : before
-          ? `${localizedText("Önceki:", "Previous:")} ${before}`
-          : "";
+    ? changeValue(record, record.after)
+    : missingValue;
   return `
-    <div class="change-row">
-      <time datetime="${escapeHtml(record.detectedAt)}">${localizedText(
-        localDate(record.detectedAt, true),
-        localDateEn(record.detectedAt, true),
-      )}</time>
-      <strong>${escapeHtml(record.eventName)}</strong>
-      <span class="change-type">${localizedText(
-        changeKindLabels[record.kind],
-        changeKindLabelsEn[record.kind],
-      )}</span>
-      ${values ? `<span class="change-values">${values}</span>` : ""}
+    <div class="change-row" role="row">
+      <span class="change-cell change-detected" role="cell">
+        <span class="change-cell-label">${localizedText("Değişiklik algılandı", "Detected at")}</span>
+        <time datetime="${escapeHtml(record.detectedAt)}">${localizedText(
+          localDate(record.detectedAt, true),
+          localDateEn(record.detectedAt, true),
+        )}</time>
+      </span>
+      <span class="change-cell change-event" role="cell">
+        <span class="change-cell-label">${localizedText("Festival", "Festival")}</span>
+        <strong>${escapeHtml(record.eventName)}</strong>
+      </span>
+      <span class="change-cell change-kind-cell" role="cell">
+        <span class="change-cell-label">${localizedText("Değişiklik", "Change")}</span>
+        <span class="change-type">${localizedText(
+          changeKindLabels[record.kind],
+          changeKindLabelsEn[record.kind],
+        )}</span>
+      </span>
+      <span class="change-cell change-before" role="cell">
+        <span class="change-cell-label">${localizedText("Önceki tarih / değer", "Previous date / value")}</span>
+        <span>${before}</span>
+      </span>
+      <span class="change-cell change-after" role="cell">
+        <span class="change-cell-label">${localizedText("Güncellenen tarih / değer", "Updated date / value")}</span>
+        <span>${after}</span>
+      </span>
     </div>`;
+}
+
+function changeTableHeader(): string {
+  return `
+    <div class="change-table-head" role="row">
+      <span role="columnheader">${localizedText("Değişikliğin algılandığı tarih", "Detected at")}</span>
+      <span role="columnheader">${localizedText("Festival", "Festival")}</span>
+      <span role="columnheader">${localizedText("Değişiklik", "Change")}</span>
+      <span role="columnheader">${localizedText("Önceki tarih / değer", "Previous date / value")}</span>
+      <span role="columnheader">${localizedText("Güncellenen tarih / değer", "Updated date / value")}</span>
+    </div>`;
+}
+
+function isDisplayableChange(record: ChangeRecord): boolean {
+  // Legacy one-sided deadline records came from temporary empty detail pages.
+  return (
+    record.kind !== "deadline_changed" ||
+    Boolean(record.before && record.after)
+  );
 }
 
 function deadlineTimelineItem(item: DeadlineView): string {
@@ -525,6 +556,7 @@ export function renderReport(
         detectedAt <= generatedAt
       );
     })
+    .filter(isDisplayableChange)
     .sort((left, right) => right.detectedAt.localeCompare(left.detectedAt));
   const featuredDeadlines = model.deadlines.slice(0, 8);
   const groupedDeadlines = new Map<
@@ -952,12 +984,20 @@ export function renderReport(
     .change-log > summary > span:first-of-type { margin-right:auto; }
     .change-count { color:var(--color-muted); font-size:12px; font-weight:700; }
     .change-list { border-top:1px solid var(--color-line); }
-    .change-row { display:grid; grid-template-columns:1fr; gap:7px; padding:14px 16px; border-bottom:1px solid var(--color-line); }
+    .change-table-head { display:none; }
+    .change-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-areas:"event event" "kind kind" "before after" "detected detected"; gap:12px 14px; padding:16px; border-bottom:1px solid var(--color-line); }
     .change-row:last-child { border-bottom:0; }
-    .change-row time { color:var(--color-muted); font-size:11px; }
-    .change-row strong { min-width:0; overflow-wrap:anywhere; font-size:13px; }
-    .change-type { justify-self:start; padding:4px 7px; border-radius:999px; color:var(--color-soft-text); background:var(--color-soft); font-size:10px; font-weight:800; }
-    .change-values { min-width:0; overflow-wrap:anywhere; color:var(--color-muted); font-size:12px; line-height:1.4; }
+    .change-cell { min-width:0; overflow-wrap:anywhere; color:var(--color-muted); font-size:12px; line-height:1.4; }
+    .change-detected { grid-area:detected; }
+    .change-event { grid-area:event; }
+    .change-kind-cell { grid-area:kind; }
+    .change-before { grid-area:before; }
+    .change-after { grid-area:after; }
+    .change-cell-label { display:block; margin-bottom:4px; color:var(--color-footer); font-size:9px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; }
+    .change-detected time { color:var(--color-muted); font-size:11px; }
+    .change-event strong { color:var(--color-ink); font-size:13px; }
+    .change-type { display:inline-flex; padding:4px 7px; border-radius:999px; color:var(--color-soft-text); background:var(--color-soft); font-size:10px; font-weight:800; }
+    .change-empty { color:var(--color-footer); }
     .news-block + .news-block { margin-top:32px; }
     .news-toolbar { display:flex; align-items:flex-end; flex-wrap:wrap; gap:12px; margin-bottom:18px; }
     .news-tabs { display:flex; flex:1 1 360px; gap:6px; padding:5px; overflow-x:auto; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel); }
@@ -1014,10 +1054,15 @@ export function renderReport(
       .task-item { grid-template-columns:auto minmax(0,1fr) auto; }
       .task-item > a { grid-column:auto; justify-self:auto; white-space:nowrap; }
       .change-log > summary { padding:18px 20px; }
-      .change-row { grid-template-columns:150px minmax(180px,1fr) auto minmax(220px,auto); align-items:center; gap:16px; padding:14px 20px; }
-      .change-values { text-align:right; }
       .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .platform-news { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    }
+    @media (min-width: 961px) {
+      .change-table-head,.change-row { grid-template-columns:150px minmax(170px,1fr) 130px minmax(165px,1fr) minmax(165px,1fr); align-items:center; gap:16px; padding:14px 20px; }
+      .change-table-head { display:grid; border-bottom:1px solid var(--color-line); color:var(--color-footer); font-size:9px; font-weight:900; letter-spacing:.05em; text-transform:uppercase; }
+      .change-row { grid-template-areas:none; }
+      .change-detected,.change-event,.change-kind-cell,.change-before,.change-after { grid-area:auto; }
+      .change-cell-label { display:none; }
     }
     @media (max-width: 760px) {
       .global-topbar { position:relative; grid-template-columns:auto minmax(0,1fr) auto; min-height:58px; padding-inline:10px; }
@@ -1155,7 +1200,7 @@ export function renderReport(
         </summary>
         ${
           recentChanges.length
-            ? `<div class="change-list">${recentChanges.map(changeRow).join("")}</div>`
+            ? `<div class="change-list" role="table" aria-label="Değişiklik günlüğü" data-copy-aria-tr="Değişiklik günlüğü" data-copy-aria-en="Change log">${changeTableHeader()}${recentChanges.map(changeRow).join("")}</div>`
             : `<div class="empty">Son 90 günde kaydedilmiş bir değişiklik yok.</div>`
         }
       </details>

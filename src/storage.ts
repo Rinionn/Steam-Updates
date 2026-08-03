@@ -9,7 +9,7 @@ import type {
 } from "./types.js";
 
 function deadlineKey(deadline: SteamDeadline): string {
-  return `${deadline.kind}:${deadline.label.trim().toLocaleLowerCase("tr")}`;
+  return deadline.id;
 }
 
 function sameEventIdentity(previous: SteamEvent, current: SteamEvent): boolean {

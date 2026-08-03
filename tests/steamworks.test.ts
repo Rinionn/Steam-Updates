@@ -153,4 +153,44 @@ describe("Steamworks parser", () => {
     expect(requests).toBe(1);
     expect(DETAIL_REQUEST_DELAY_MS).toBe(500);
   });
+
+  it("geçici olarak boş ayrıştırılan detayın bilinen son tarihlerini silmez", async () => {
+    const event: SteamEvent = {
+      id: "empty-detail-event",
+      name: "Empty Detail Event",
+      kind: "themed_fest",
+      startAt: "2026-08-03T17:00:00Z",
+      endAt: "2026-08-10T17:00:00Z",
+      sourceUrl,
+      detailsUrl: "https://example.com/empty-detail",
+      matchTags: [],
+      deadlines: [],
+    };
+    const previous: SteamEvent = {
+      ...event,
+      lastSeenAt: "2026-07-20T09:00:00Z",
+      deadlines: [
+        {
+          id: "stable-registration-deadline",
+          kind: "registration",
+          label: "Registration deadline",
+          dueAt: "2026-08-01T06:59:00Z",
+          sourceUrl: event.detailsUrl!,
+        },
+      ],
+    };
+
+    const result = await enrichWithDeadlines(
+      [event],
+      async () => '<div class="documentation_bbcode"></div>',
+      [previous],
+      {
+        now: new Date("2026-07-30T09:00:00Z"),
+        requestDelayMs: 0,
+      },
+    );
+
+    expect(result[0].deadlines).toEqual(previous.deadlines);
+    expect(result[0].lastSeenAt).toBe("2026-07-30T09:00:00.000Z");
+  });
 });

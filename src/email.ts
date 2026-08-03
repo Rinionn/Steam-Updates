@@ -171,26 +171,45 @@ function changeValue(record: ChangeRecord, value: string): string {
   return value;
 }
 
-function changeValues(record: ChangeRecord): string {
-  const before = record.before
-    ? changeValue(record, record.before)
-    : undefined;
-  const after = record.after ? changeValue(record, record.after) : undefined;
-  if (before && after) return `${before} → ${after}`;
-  if (after) return `Yeni: ${after}`;
-  if (before) return `Önceki: ${before}`;
-  return "";
+function changeCellValue(
+  record: ChangeRecord,
+  value: string | undefined,
+): string {
+  return value ? changeValue(record, value) : "—";
+}
+
+function isDisplayableChange(record: ChangeRecord): boolean {
+  // Legacy one-sided deadline records came from temporary empty detail pages.
+  return (
+    record.kind !== "deadline_changed" ||
+    Boolean(record.before && record.after)
+  );
 }
 
 function emailChangeRow(record: ChangeRecord): string {
-  const values = changeValues(record);
+  const before = changeCellValue(record, record.before);
+  const after = changeCellValue(record, record.after);
   return `
-    <tr>
-      <td class="event-rule" colspan="2" style="padding:12px 0;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
-        <span class="surface-subtle" style="display:block;color:${EMAIL_COLORS.surfaceSubtle};font-size:10px">${escapeHtml(localDate(record.detectedAt, true))}</span>
-        <strong class="surface-ink" style="display:block;margin-top:4px;color:${EMAIL_COLORS.surfaceInk};font-size:14px;line-height:1.3">${escapeHtml(record.eventName)}</strong>
-        <span class="soft-chip" style="display:inline-block;margin-top:6px;padding:4px 7px;border-radius:999px;background:${EMAIL_COLORS.chipBackground};color:${EMAIL_COLORS.chipInk};font-size:10px;font-weight:800">${escapeHtml(changeKindLabels[record.kind])}</span>
-        ${values ? `<span class="surface-muted" style="display:block;margin-top:6px;color:${EMAIL_COLORS.surfaceMuted};font-size:11px;line-height:1.4">${escapeHtml(values)}</span>` : ""}
+    <tr class="change-email-row">
+      <td class="change-email-cell event-rule" width="20%" valign="top" style="width:20%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
+        <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">ALGILANDIĞI TARİH</span>
+        <span class="surface-muted" style="color:${EMAIL_COLORS.surfaceMuted};font-size:10px;line-height:1.4">${escapeHtml(localDate(record.detectedAt, true))}</span>
+      </td>
+      <td class="change-email-cell event-rule" width="22%" valign="top" style="width:22%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
+        <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">FESTİVAL</span>
+        <strong class="surface-ink" style="color:${EMAIL_COLORS.surfaceInk};font-size:11px;line-height:1.35">${escapeHtml(record.eventName)}</strong>
+      </td>
+      <td class="change-email-cell event-rule" width="18%" valign="top" style="width:18%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
+        <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">DEĞİŞİKLİK</span>
+        <span class="soft-chip" style="display:inline-block;padding:4px 7px;border-radius:999px;background:${EMAIL_COLORS.chipBackground};color:${EMAIL_COLORS.chipInk};font-size:9px;font-weight:800;line-height:1.25">${escapeHtml(changeKindLabels[record.kind])}</span>
+      </td>
+      <td class="change-email-cell event-rule" width="20%" valign="top" style="width:20%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
+        <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">ÖNCEKİ TARİH / DEĞER</span>
+        <span class="surface-muted" style="color:${EMAIL_COLORS.surfaceMuted};font-size:10px;line-height:1.4">${escapeHtml(before)}</span>
+      </td>
+      <td class="change-email-cell change-email-last event-rule" width="20%" valign="top" style="width:20%;padding:11px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceRule}">
+        <span class="change-mobile-label surface-subtle" style="display:none;color:${EMAIL_COLORS.surfaceSubtle};font-size:9px;font-weight:800">GÜNCELLENEN TARİH / DEĞER</span>
+        <span class="surface-muted" style="color:${EMAIL_COLORS.surfaceMuted};font-size:10px;line-height:1.4">${escapeHtml(after)}</span>
       </td>
     </tr>`;
 }
@@ -218,6 +237,7 @@ export function renderDigest(
         detectedAt <= generatedAt
       );
     })
+    .filter(isDisplayableChange)
     .sort((left, right) => right.detectedAt.localeCompare(left.detectedAt));
   const deadlines = model.deadlines
     .filter(
@@ -375,7 +395,20 @@ export function renderDigest(
                     <span class="surface-subtle" style="color:${EMAIL_COLORS.surfaceSubtle};font-size:11px">${recentChanges.length} kayıt</span>
                   </td>
                 </tr>
-                ${recentChanges.map(emailChangeRow).join("")}
+                <tr>
+                  <td colspan="2">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="width:100%;table-layout:fixed;border-collapse:collapse">
+                      <tr class="change-email-head">
+                        <td class="surface-subtle" width="20%" valign="bottom" style="width:20%;padding:8px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceLine};color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;line-height:1.3">ALGILANDIĞI TARİH</td>
+                        <td class="surface-subtle" width="22%" valign="bottom" style="width:22%;padding:8px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceLine};color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;line-height:1.3">FESTİVAL</td>
+                        <td class="surface-subtle" width="18%" valign="bottom" style="width:18%;padding:8px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceLine};color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;line-height:1.3">DEĞİŞİKLİK</td>
+                        <td class="surface-subtle" width="20%" valign="bottom" style="width:20%;padding:8px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceLine};color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;line-height:1.3">ÖNCEKİ TARİH / DEĞER</td>
+                        <td class="surface-subtle" width="20%" valign="bottom" style="width:20%;padding:8px 7px;border-bottom:1px solid ${EMAIL_COLORS.surfaceLine};color:${EMAIL_COLORS.surfaceSubtle};font-size:8px;font-weight:800;line-height:1.3">GÜNCELLENEN TARİH / DEĞER</td>
+                      </tr>
+                      ${recentChanges.map(emailChangeRow).join("")}
+                    </table>
+                  </td>
+                </tr>
               </table>
             </td>
           </tr>`
@@ -407,6 +440,10 @@ export function renderDigest(
       .deadline-action-mobile { display: table-cell !important; width: 100% !important; max-height: none !important; overflow: visible !important; padding: 0 12px 12px !important; font-size: 12px !important; line-height: 1.2 !important; }
       .priority-copy, .priority-action { display: block !important; width: 100% !important; box-sizing: border-box !important; text-align: left !important; }
       .priority-action { padding: 0 20px 18px !important; }
+      .change-email-head { display: none !important; max-height: 0 !important; overflow: hidden !important; }
+      .change-email-cell { display: block !important; width: 100% !important; box-sizing: border-box !important; padding: 5px 0 !important; border-bottom: 0 !important; }
+      .change-email-last { padding-bottom: 12px !important; border-bottom: 1px solid ${EMAIL_COLORS.surfaceRule} !important; }
+      .change-mobile-label { display: block !important; margin-bottom: 2px !important; }
     }
     @media (prefers-color-scheme: dark) {
       .email-body, .email-canvas { background-color: ${EMAIL_COLORS.darkCanvas} !important; color: ${EMAIL_COLORS.darkInk} !important; }
@@ -571,15 +608,16 @@ export function renderDigest(
       ? `SON 24 SAATTE DEĞİŞENLER
 ${recentChanges
   .map((record) => {
-    const values = changeValues(record);
-    return `- ${localDate(record.detectedAt, true)} · ${record.eventName} · ${changeKindLabels[record.kind]}${values ? ` · ${values}` : ""}`;
+    const before = changeCellValue(record, record.before);
+    const after = changeCellValue(record, record.after);
+    return `- Algılandı: ${localDate(record.detectedAt, true)} | Festival: ${record.eventName} | Değişiklik: ${changeKindLabels[record.kind]} | Önceki: ${before} | Güncellenen: ${after}`;
   })
   .join("\n")}
 
 `
       : "";
 
-  const text = `STEAM ETKİNLİK TAKİBİ
+  const text = `STEAM RADAR
 ${model.generated.setLocale("tr").toFormat("d LLLL yyyy, HH:mm")} · İstanbul saati
 
 ${changesText}HIZLI ÖZET

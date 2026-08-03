@@ -75,9 +75,9 @@ describe("snapshot merge", () => {
       ...event,
       deadlines: [
         {
-          id: "deadline-old",
+          id: "deadline-stable",
           kind: "registration",
-          label: "Registration deadline",
+          label: "July 20 - Registration deadline",
           dueAt: "2026-07-20T07:00:00Z",
           sourceUrl: event.sourceUrl,
         },
@@ -87,9 +87,9 @@ describe("snapshot merge", () => {
       ...event,
       deadlines: [
         {
-          id: "deadline-new",
+          id: "deadline-stable",
           kind: "registration",
-          label: "Registration deadline",
+          label: "July 22 - Registration deadline",
           dueAt: "2026-07-22T07:00:00Z",
           sourceUrl: event.sourceUrl,
         },
@@ -109,6 +109,7 @@ describe("snapshot merge", () => {
     );
 
     expect(result.changed).toHaveLength(1);
+    expect(result.changes).toHaveLength(1);
     expect(result.changes).toEqual([
       expect.objectContaining({
         eventId: event.id,

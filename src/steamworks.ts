@@ -352,9 +352,18 @@ export async function enrichWithDeadlines(
     requestCount++;
     try {
       const html = await loadHtml(detailsUrl);
+      const deadlines = parseEventDeadlines(
+        html,
+        current.event,
+        detailsUrl,
+      );
       enriched[current.index] = {
         ...current.event,
-        deadlines: parseEventDeadlines(html, current.event, detailsUrl),
+        // A temporarily empty detail page must not erase known deadlines.
+        deadlines:
+          deadlines.length === 0 && previous?.deadlines.length
+            ? previous.deadlines
+            : deadlines,
         lastSeenAt: now.toISOString(),
       };
     } catch {

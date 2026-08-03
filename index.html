@@ -433,12 +433,20 @@
     .change-log > summary > span:first-of-type { margin-right:auto; }
     .change-count { color:var(--color-muted); font-size:12px; font-weight:700; }
     .change-list { border-top:1px solid var(--color-line); }
-    .change-row { display:grid; grid-template-columns:1fr; gap:7px; padding:14px 16px; border-bottom:1px solid var(--color-line); }
+    .change-table-head { display:none; }
+    .change-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-areas:"event event" "kind kind" "before after" "detected detected"; gap:12px 14px; padding:16px; border-bottom:1px solid var(--color-line); }
     .change-row:last-child { border-bottom:0; }
-    .change-row time { color:var(--color-muted); font-size:11px; }
-    .change-row strong { min-width:0; overflow-wrap:anywhere; font-size:13px; }
-    .change-type { justify-self:start; padding:4px 7px; border-radius:999px; color:var(--color-soft-text); background:var(--color-soft); font-size:10px; font-weight:800; }
-    .change-values { min-width:0; overflow-wrap:anywhere; color:var(--color-muted); font-size:12px; line-height:1.4; }
+    .change-cell { min-width:0; overflow-wrap:anywhere; color:var(--color-muted); font-size:12px; line-height:1.4; }
+    .change-detected { grid-area:detected; }
+    .change-event { grid-area:event; }
+    .change-kind-cell { grid-area:kind; }
+    .change-before { grid-area:before; }
+    .change-after { grid-area:after; }
+    .change-cell-label { display:block; margin-bottom:4px; color:var(--color-footer); font-size:9px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; }
+    .change-detected time { color:var(--color-muted); font-size:11px; }
+    .change-event strong { color:var(--color-ink); font-size:13px; }
+    .change-type { display:inline-flex; padding:4px 7px; border-radius:999px; color:var(--color-soft-text); background:var(--color-soft); font-size:10px; font-weight:800; }
+    .change-empty { color:var(--color-footer); }
     .news-block + .news-block { margin-top:32px; }
     .news-toolbar { display:flex; align-items:flex-end; flex-wrap:wrap; gap:12px; margin-bottom:18px; }
     .news-tabs { display:flex; flex:1 1 360px; gap:6px; padding:5px; overflow-x:auto; border:1px solid var(--color-line); border-radius:13px; background:var(--color-panel); }
@@ -495,10 +503,15 @@
       .task-item { grid-template-columns:auto minmax(0,1fr) auto; }
       .task-item > a { grid-column:auto; justify-self:auto; white-space:nowrap; }
       .change-log > summary { padding:18px 20px; }
-      .change-row { grid-template-columns:150px minmax(180px,1fr) auto minmax(220px,auto); align-items:center; gap:16px; padding:14px 20px; }
-      .change-values { text-align:right; }
       .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .platform-news { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    }
+    @media (min-width: 961px) {
+      .change-table-head,.change-row { grid-template-columns:150px minmax(170px,1fr) 130px minmax(165px,1fr) minmax(165px,1fr); align-items:center; gap:16px; padding:14px 20px; }
+      .change-table-head { display:grid; border-bottom:1px solid var(--color-line); color:var(--color-footer); font-size:9px; font-weight:900; letter-spacing:.05em; text-transform:uppercase; }
+      .change-row { grid-template-areas:none; }
+      .change-detected,.change-event,.change-kind-cell,.change-before,.change-after { grid-area:auto; }
+      .change-cell-label { display:none; }
     }
     @media (max-width: 760px) {
       .global-topbar { position:relative; grid-template-columns:auto minmax(0,1fr) auto; min-height:58px; padding-inline:10px; }
@@ -1143,87 +1156,9 @@
       <details class="change-log">
         <summary>
           <span data-i18n="changesTitle">Son 90 günde ne değişti</span>
-          <span class="change-count">13 <span data-i18n="records">kayıt</span></span>
+          <span class="change-count">0 <span data-i18n="records">kayıt</span></span>
         </summary>
-        <div class="change-list">
-    <div class="change-row">
-      <time datetime="2026-08-02T23:42:18.722Z"><span data-copy-tr="3 Ağustos 2026, 02:42" data-copy-en="3 August 2026, 02:42">3 Ağustos 2026, 02:42</span></time>
-      <strong>Cyberpunk Fest</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Önceki:" data-copy-en="Previous:">Önceki:</span> 3 Ağustos 2026, 20:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-08-02T17:17:21.038Z"><span data-copy-tr="2 Ağustos 2026, 20:17" data-copy-en="2 August 2026, 20:17">2 Ağustos 2026, 20:17</span></time>
-      <strong>Cyberpunk Fest</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Yeni:" data-copy-en="New:">Yeni:</span> 3 Ağustos 2026, 20:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-08-02T11:03:53.573Z"><span data-copy-tr="2 Ağustos 2026, 14:03" data-copy-en="2 August 2026, 14:03">2 Ağustos 2026, 14:03</span></time>
-      <strong>Pins &amp; Pegs Fest</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Önceki:" data-copy-en="Previous:">Önceki:</span> 17 Ağustos 2026, 20:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-08-02T11:03:53.573Z"><span data-copy-tr="2 Ağustos 2026, 14:03" data-copy-en="2 August 2026, 14:03">2 Ağustos 2026, 14:03</span></time>
-      <strong>Couch Co-Op Fest</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Önceki:" data-copy-en="Previous:">Önceki:</span> 8 Şubat 2027, 21:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-08-02T04:37:39.617Z"><span data-copy-tr="2 Ağustos 2026, 07:37" data-copy-en="2 August 2026, 07:37">2 Ağustos 2026, 07:37</span></time>
-      <strong>Cyberpunk Fest</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Önceki:" data-copy-en="Previous:">Önceki:</span> 3 Ağustos 2026, 20:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-08-02T04:37:39.617Z"><span data-copy-tr="2 Ağustos 2026, 07:37" data-copy-en="2 August 2026, 07:37">2 Ağustos 2026, 07:37</span></time>
-      <strong>Pins &amp; Pegs Fest</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Yeni:" data-copy-en="New:">Yeni:</span> 17 Ağustos 2026, 20:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-08-02T04:37:39.617Z"><span data-copy-tr="2 Ağustos 2026, 07:37" data-copy-en="2 August 2026, 07:37">2 Ağustos 2026, 07:37</span></time>
-      <strong>Steam Scream V</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Önceki:" data-copy-en="Previous:">Önceki:</span> 26 Ekim 2026, 20:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-08-02T04:37:39.617Z"><span data-copy-tr="2 Ağustos 2026, 07:37" data-copy-en="2 August 2026, 07:37">2 Ağustos 2026, 07:37</span></time>
-      <strong>Auto-Battler RPG Fest</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Önceki:" data-copy-en="Previous:">Önceki:</span> 16 Kasım 2026, 21:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-08-02T04:37:39.617Z"><span data-copy-tr="2 Ağustos 2026, 07:37" data-copy-en="2 August 2026, 07:37">2 Ağustos 2026, 07:37</span></time>
-      <strong>Couch Co-Op Fest</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Yeni:" data-copy-en="New:">Yeni:</span> 8 Şubat 2027, 21:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-08-01T20:32:47.996Z"><span data-copy-tr="1 Ağustos 2026, 23:32" data-copy-en="1 August 2026, 23:32">1 Ağustos 2026, 23:32</span></time>
-      <strong>Cyberpunk Fest</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Yeni:" data-copy-en="New:">Yeni:</span> 3 Ağustos 2026, 20:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-08-01T20:32:47.996Z"><span data-copy-tr="1 Ağustos 2026, 23:32" data-copy-en="1 August 2026, 23:32">1 Ağustos 2026, 23:32</span></time>
-      <strong>Steam Scream V</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Yeni:" data-copy-en="New:">Yeni:</span> 26 Ekim 2026, 20:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-08-01T20:32:47.996Z"><span data-copy-tr="1 Ağustos 2026, 23:32" data-copy-en="1 August 2026, 23:32">1 Ağustos 2026, 23:32</span></time>
-      <strong>Auto-Battler RPG Fest</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Yeni:" data-copy-en="New:">Yeni:</span> 16 Kasım 2026, 21:00</span>
-    </div>
-    <div class="change-row">
-      <time datetime="2026-07-30T14:38:25.590Z"><span data-copy-tr="30 Temmuz 2026, 17:38" data-copy-en="30 July 2026, 17:38">30 Temmuz 2026, 17:38</span></time>
-      <strong>Party-Based RPG Fest</strong>
-      <span class="change-type"><span data-copy-tr="Son tarih değişti" data-copy-en="Deadline changed">Son tarih değişti</span></span>
-      <span class="change-values"><span data-copy-tr="Önceki:" data-copy-en="Previous:">Önceki:</span> 14 Eylül 2026, 20:00</span>
-    </div></div>
+        <div class="empty">Son 90 günde kaydedilmiş bir değişiklik yok.</div>
       </details>
     </section>
 
@@ -5969,6 +5904,42 @@
         <h3>SARA</h3>
 
         <a href="https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="coming_soon" data-news-categories="[&quot;Strateji&quot;,&quot;Gündelik&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4954590/810663e58a140d2a7f5570353a2d727ad4a8e26b/capsule_231x87.jpg?t=1784746045" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>3 Aug, 2026</time>
+        </div>
+        <h3>MoonCraft</h3>
+
+        <a href="https://store.steampowered.com/app/4954590/MoonCraft/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="coming_soon" data-news-categories="[&quot;Macera&quot;,&quot;Korku&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920450/55b15031b99757b2980cbaac07856b8faeda1b0b/capsule_231x87.jpg?t=1784094869" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>3 Aug, 2026</time>
+        </div>
+        <h3>SARA</h3>
+
+        <a href="https://store.steampowered.com/app/4920450/SARA/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="news-card" data-news-kind="coming_soon" data-news-categories="[&quot;Aksiyon&quot;]">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706800/8e7dc7b48e736af3f617f59949e2614d8901a319/capsule_231x87.jpg?t=1785059368" alt="" loading="lazy" referrerpolicy="no-referrer">
+      <div class="news-card-body">
+        <div class="news-meta">
+          <span><span data-copy-tr="Yakında" data-copy-en="Coming soon">Yakında</span></span>
+          <time>3 Aug, 2026</time>
+        </div>
+        <h3>Soul Siblings</h3>
+
+        <a href="https://store.steampowered.com/app/4706800/Soul_Siblings/?snr=1_7_7_comingsoon_150_1" target="_blank" rel="noreferrer"><span data-copy-tr="Resmî kaynakta aç" data-copy-en="Open official source">Resmî kaynakta aç</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
     <article class="news-card" data-news-kind="coming_soon" data-news-categories="[&quot;Macera&quot;,&quot;RPG&quot;]">
