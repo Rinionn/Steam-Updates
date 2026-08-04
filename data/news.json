@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-04T21:21:36.167Z",
+  "generatedAt": "2026-08-04T22:32:59.241Z",
   "items": [
+    {
+      "id": "steam-news-b44a20f6f",
+      "title": "Rent Due",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4923090/Rent_Due/?snr=1_7_7_230_150_1",
+      "dateLabel": "4 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4923090/82d48477420a41890c8e4ccfa898eba026593f91/capsule_231x87.jpg?t=1785880745",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-6a5f3e75b",
       "title": "PentaPip",
@@ -242,7 +253,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/247970/Korea_IL2_Series/?snr=1_7_7_230_150_1",
       "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/247970/c45ce398ae7e29d9ac94a22586ad224085f84733/capsule_231x87.jpg?t=1785874869",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/247970/c45ce398ae7e29d9ac94a22586ad224085f84733/capsule_231x87.jpg?t=1785882487",
       "categories": [
         "Aksiyon"
       ]
@@ -266,17 +277,6 @@
       "dateLabel": "4 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2371060/0cba2e97cf91a6cff96d30221ed8280a4889bec8/capsule_231x87.jpg?t=1785859256",
       "categories": []
-    },
-    {
-      "id": "steam-news-f59f982f7",
-      "title": "A Good Day Fishing",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3649860/A_Good_Day_Fishing/?snr=1_7_7_230_150_1",
-      "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3649860/e38af47878591d472fa6ea8593a8e4b39c29118d/capsule_231x87.jpg?t=1785859231",
-      "categories": [
-        "Gündelik"
-      ]
     },
     {
       "id": "steam-news-36b7b8064",
@@ -410,29 +410,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-2df54792f",
-      "title": "Lost & Found: A This Bed We Made Story",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4333200/Lost__Found_A_This_Bed_We_Made_Story/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4333200/02b4027a43e9b5ea9d636dda819e8fd9c21b106d/capsule_231x87.jpg?t=1785766600",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-01c682e2a",
-      "title": "The Division Resurgence",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3749720/The_Division_Resurgence/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3749720/1b6dcb3ddde31e4211fdf604f958209125ea15e7/capsule_231x87.jpg?t=1785430896",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-efc19a1f9",
       "title": "Block Block Block",
       "kind": "coming_soon",
@@ -442,15 +419,27 @@
       "categories": []
     },
     {
-      "id": "steam-news-ad5b3a3b6",
-      "title": "Cat Chaos",
+      "id": "steam-news-b33809432",
+      "title": "Ranchbound",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3417940/Cat_Chaos/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3962040/Ranchbound/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3417940/f5ca75c4b86bcb2389e87cfadcc2871d29808220/capsule_231x87.jpg?t=1785492294",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3962040/cbcd9d0f660172b18169e37ddfd3d4b20b085774/capsule_231x87.jpg?t=1785770327",
       "categories": [
-        "Simülasyon",
-        "Gündelik"
+        "Bağımsız",
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-2df54792f",
+      "title": "Lost & Found: A This Bed We Made Story",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4333200/Lost__Found_A_This_Bed_We_Made_Story/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "5 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4333200/02b4027a43e9b5ea9d636dda819e8fd9c21b106d/capsule_231x87.jpg?t=1785766600",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -478,16 +467,27 @@
       ]
     },
     {
-      "id": "steam-news-b33809432",
-      "title": "Ranchbound",
+      "id": "steam-news-ad5b3a3b6",
+      "title": "Cat Chaos",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3962040/Ranchbound/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3417940/Cat_Chaos/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3962040/cbcd9d0f660172b18169e37ddfd3d4b20b085774/capsule_231x87.jpg?t=1785770327",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3417940/f5ca75c4b86bcb2389e87cfadcc2871d29808220/capsule_231x87.jpg?t=1785492294",
       "categories": [
-        "Bağımsız",
-        "Strateji",
-        "Simülasyon"
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-01c682e2a",
+      "title": "The Division Resurgence",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3749720/The_Division_Resurgence/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "5 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3749720/1b6dcb3ddde31e4211fdf604f958209125ea15e7/capsule_231x87.jpg?t=1785430896",
+      "categories": [
+        "Aksiyon",
+        "Macera"
       ]
     },
     {
@@ -527,29 +527,27 @@
       ]
     },
     {
-      "id": "steam-news-6382a2d28",
-      "title": "Uncanny Tales: The Watcher",
+      "id": "steam-news-9ccbda9c2",
+      "title": "MapGod",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4217690/Uncanny_Tales_The_Watcher/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4922530/MapGod/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4217690/f0e6a75f68670dd3e8c37b87e2db2ecff92b665c/capsule_231x87.jpg?t=1785853117",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4922530/0183f256c2b1e8bb1ec989df4e29ad3dc6d120f7/capsule_231x87.jpg?t=1785705045",
       "categories": [
-        "Korku"
+        "Çok Oyunculu",
+        "Gündelik"
       ]
     },
     {
-      "id": "steam-news-502e1fcb5",
-      "title": "Aooni2",
+      "id": "steam-news-11fc7d8c4",
+      "title": "Changeable Guardian ESTIQUE",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4226580/Aooni2/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4078160/Changeable_Guardian_ESTIQUE/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4226580/a979f8f41d3194a5aee28760bc89ce8407d36c95/capsule_231x87.jpg?t=1784267961",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4078160/893af884884e8013cb994f9da46d8325aa7b7132/capsule_231x87.jpg?t=1785835568",
       "categories": [
         "Aksiyon",
-        "Macera",
-        "Korku",
-        "RPG",
-        "Tek Oyunculu"
+        "Gündelik"
       ]
     },
     {
