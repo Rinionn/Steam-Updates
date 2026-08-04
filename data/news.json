@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-03T23:48:27.877Z",
+  "generatedAt": "2026-08-04T01:11:08.940Z",
   "items": [
+    {
+      "id": "steam-news-d8e228f4d",
+      "title": "Beast of Reincarnation",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001760/8051f36f9874f82c4d998354409343346b5f6b3f/capsule_231x87.jpg?t=1785803603",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu",
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-18f2f1930",
       "title": "The Outskirts",
@@ -267,15 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-e2c9ef1bc",
-      "title": "Dispel Dark",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4487490/Dispel_Dark/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4487490/b9affeeaff10d6cbace29dcd757b8c525816720e/capsule_231x87.jpg?t=1785776435",
-      "categories": []
-    },
-    {
       "id": "steam-news-27aeb42ae",
       "title": "The Expansion",
       "kind": "coming_soon",
@@ -384,6 +388,17 @@
       ]
     },
     {
+      "id": "steam-news-e8c80a34c",
+      "title": "HellSlave II: Judgment of the Archon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3399900/HellSlave_II_Judgment_of_the_Archon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "4 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3399900/119347699d0c2d076a5128d3699324587425b56a/capsule_231x87.jpg?t=1784889140",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-c8e64aa23",
       "title": "Quantum Breach",
       "kind": "coming_soon",
@@ -393,17 +408,6 @@
       "categories": [
         "Simülasyon",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-e8c80a34c",
-      "title": "HellSlave II: Judgment of the Archon",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3399900/HellSlave_II_Judgment_of_the_Archon/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3399900/119347699d0c2d076a5128d3699324587425b56a/capsule_231x87.jpg?t=1784889140",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -486,26 +490,6 @@
       ]
     },
     {
-      "id": "steam-news-79f20f7ab",
-      "title": "A Good Day Fishing",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3649860/A_Good_Day_Fishing/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3649860/e38af47878591d472fa6ea8593a8e4b39c29118d/capsule_231x87.jpg?t=1784568979",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-f59f113be",
-      "title": "It Consumes",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2371060/It_Consumes/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2371060/0cba2e97cf91a6cff96d30221ed8280a4889bec8/capsule_231x87.jpg?t=1784924172",
-      "categories": []
-    },
-    {
       "id": "steam-news-670b7f821",
       "title": "Bloodmoon Survivors",
       "kind": "coming_soon",
@@ -519,12 +503,21 @@
       ]
     },
     {
-      "id": "steam-news-b4d61b6b6",
-      "title": "Petri Panic",
+      "id": "steam-news-f59f113be",
+      "title": "It Consumes",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4896230/Petri_Panic/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2371060/It_Consumes/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4896230/9297f9b929d3cf49234427bc0f1105258415c8c5/capsule_231x87.jpg?t=1784898045",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2371060/0cba2e97cf91a6cff96d30221ed8280a4889bec8/capsule_231x87.jpg?t=1784924172",
+      "categories": []
+    },
+    {
+      "id": "steam-news-79f20f7ab",
+      "title": "A Good Day Fishing",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3649860/A_Good_Day_Fishing/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "4 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3649860/e38af47878591d472fa6ea8593a8e4b39c29118d/capsule_231x87.jpg?t=1784568979",
       "categories": [
         "Gündelik"
       ]
@@ -544,18 +537,26 @@
       ]
     },
     {
-      "id": "steam-news-50b887eb5",
-      "title": "DISTURBING FEARS - Workplace",
+      "id": "steam-news-b4d61b6b6",
+      "title": "Petri Panic",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4540090/DISTURBING_FEARS__Workplace/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4896230/Petri_Panic/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "4 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4540090/4ab3b4a78f102948e85c48d252e9933bbe6c4da7/capsule_231x87.jpg?t=1785572421",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4896230/9297f9b929d3cf49234427bc0f1105258415c8c5/capsule_231x87.jpg?t=1784898045",
       "categories": [
-        "Korku",
-        "Oynaması Ücretsiz",
-        "Çok Oyunculu",
-        "Macera",
-        "Tek Oyunculu"
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4b2329146",
+      "title": "Slot Grind",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4619420/Slot_Grind/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "4 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4619420/df74a5773ef3d42b182a484437aba7f1735f6330/capsule_231x87.jpg?t=1783955566",
+      "categories": [
+        "Tek Oyunculu",
+        "Gündelik"
       ]
     },
     {
