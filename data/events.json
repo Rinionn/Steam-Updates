@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T04:31:24.270Z",
+  "generatedAt": "2026-08-04T12:13:43.091Z",
   "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
   "events": [
     {
@@ -60,7 +60,7 @@
           "id": "cyberpunk-fest-51562f576-5a34e3e06"
         }
       ],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -79,7 +79,7 @@
         "Bowling"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -98,8 +98,16 @@
         "Crafting",
         "Open World Survival Craft"
       ],
-      "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "deadlines": [
+        {
+          "kind": "milestone",
+          "label": "August 31 @ 10:00am PDT - The event starts. This is the deadline for entering a discount, and opting out if you no longer want to participate.",
+          "dueAt": "2026-08-31T17:00:00Z",
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/pve_survival_crafting_2026",
+          "id": "pve-survival-crafting-fest-8bb6de2ec-306900b29"
+        }
+      ],
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -126,7 +134,7 @@
           "id": "programming-fest-d92cade24-053ba1c4b"
         }
       ],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -145,7 +153,7 @@
         "RPG"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -175,7 +183,7 @@
         "Cooking"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -239,7 +247,7 @@
           "id": "next-fest-october-2026-3062e7ac9-ab20d5c9d"
         }
       ],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -265,7 +273,7 @@
           "id": "steam-scream-v-4b0a8f227-84f4ccae8"
         }
       ],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -283,8 +291,16 @@
         "Auto Battler",
         "RPG"
       ],
-      "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "deadlines": [
+        {
+          "kind": "milestone",
+          "label": "November 16 @ 10:00am PDT - The event starts. This is the deadline for entering a discount, and opting out if you no longer want to participate.",
+          "dueAt": "2026-11-16T18:00:00Z",
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/auto_battler_rpg_2026",
+          "id": "auto-battler-rpg-fest-92a2e84b8-81629364c"
+        }
+      ],
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -313,8 +329,16 @@
       "matchTags": [
         "Desktop Companion"
       ],
-      "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "deadlines": [
+        {
+          "kind": "milestone",
+          "label": "January 14, 2027 @ 10:00am PDT - The event starts. This is the deadline for entering a discount, and opting out if you no longer want to participate.",
+          "dueAt": "2027-01-14T18:00:00Z",
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/desktop_companion_2027",
+          "id": "desktop-companion-fest-5bc08adee-e7c73f27c"
+        }
+      ],
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -333,7 +357,7 @@
         "Management"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -351,7 +375,7 @@
         "Animals"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -370,7 +394,7 @@
         "Shared/Split Screen"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -401,7 +425,7 @@
         "Music"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -432,7 +456,7 @@
         "Robots"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -450,7 +474,7 @@
         "Racing"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -468,7 +492,7 @@
         "Magic"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -486,7 +510,7 @@
         "Fighting"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -505,7 +529,7 @@
         "Strategy"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -523,7 +547,7 @@
         "Climbing"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-04T04:31:11.563Z",
+      "lastSeenAt": "2026-08-04T12:13:31.682Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {

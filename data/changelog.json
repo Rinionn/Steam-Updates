@@ -126,5 +126,29 @@
     "kind": "deadline_changed",
     "field": "deadlines.steam-scream-v-4b0a8f227-84f4ccae8.dueAt",
     "after": "2026-10-26T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-04T12:13:43.091Z",
+    "eventId": "pve-survival-crafting-fest-8bb6de2ec",
+    "eventName": "PvE Survival Crafting Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.pve-survival-crafting-fest-8bb6de2ec-306900b29.dueAt",
+    "after": "2026-08-31T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-04T12:13:43.091Z",
+    "eventId": "auto-battler-rpg-fest-92a2e84b8",
+    "eventName": "Auto-Battler RPG Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.auto-battler-rpg-fest-92a2e84b8-81629364c.dueAt",
+    "after": "2026-11-16T18:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-04T12:13:43.091Z",
+    "eventId": "desktop-companion-fest-5bc08adee",
+    "eventName": "Desktop Companion Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.desktop-companion-fest-5bc08adee-e7c73f27c.dueAt",
+    "after": "2027-01-14T18:00:00Z"
   }
 ]
