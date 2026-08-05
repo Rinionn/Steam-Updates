@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T18:52:01.358Z",
+  "generatedAt": "2026-08-05T20:20:55.348Z",
   "items": [
     {
       "id": "steam-news-365445f15",
@@ -78,7 +78,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/1442520/Akatori/?snr=1_7_7_230_150_1",
       "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1442520/1d58fe6aaf132f2c9ced20920488e1f9517a60f8/capsule_231x87.jpg?t=1785949252",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1442520/1d58fe6aaf132f2c9ced20920488e1f9517a60f8/capsule_231x87.jpg?t=1785956304",
       "categories": [
         "Aksiyon",
         "Macera"
@@ -321,17 +321,6 @@
       ]
     },
     {
-      "id": "steam-news-9b6792bbc",
-      "title": "SENTO SURVIVOR : Slip, Grab, and Bathe in Glory!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4214810/SENTO_SURVIVOR__Slip_Grab_and_Bathe_in_Glory/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4214810/29010e0c4c1652ec9e654c3220dad662fc9bb0ba/capsule_231x87.jpg?t=1785802673",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-356c16298",
       "title": "The Syndicate: Classified Operations",
       "kind": "coming_soon",
@@ -341,6 +330,17 @@
       "categories": [
         "Strateji",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-9b6792bbc",
+      "title": "SENTO SURVIVOR : Slip, Grab, and Bathe in Glory!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4214810/SENTO_SURVIVOR__Slip_Grab_and_Bathe_in_Glory/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "5 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4214810/29010e0c4c1652ec9e654c3220dad662fc9bb0ba/capsule_231x87.jpg?t=1785802673",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -357,17 +357,6 @@
       ]
     },
     {
-      "id": "steam-news-4aa9844d8",
-      "title": "I'm No Demonlord",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3258560/Im_No_Demonlord/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3258560/f947274da73a0adc2a75c4a2299577321e84706c/capsule_231x87.jpg?t=1785934594",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-abc98a695",
       "title": "Blast Off! Summer Showdown",
       "kind": "coming_soon",
@@ -379,6 +368,17 @@
         "Gündelik",
         "Yarış",
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-4aa9844d8",
+      "title": "I'm No Demonlord",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3258560/Im_No_Demonlord/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "5 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3258560/f947274da73a0adc2a75c4a2299577321e84706c/capsule_231x87.jpg?t=1785934594",
+      "categories": [
+        "RPG"
       ]
     },
     {
@@ -439,17 +439,6 @@
       ]
     },
     {
-      "id": "steam-news-d7056b997",
-      "title": "Take That Hill",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4530210/Take_That_Hill/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4530210/8fbcafc0ebfe1f306cdbe5b42fb0bce8c07fb652/capsule_231x87.jpg?t=1785848291",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-40613ba9a",
       "title": "Football Fictional World Simulator",
       "kind": "coming_soon",
@@ -460,6 +449,17 @@
         "Simülasyon",
         "Strateji",
         "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-d7056b997",
+      "title": "Take That Hill",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4530210/Take_That_Hill/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4530210/8fbcafc0ebfe1f306cdbe5b42fb0bce8c07fb652/capsule_231x87.jpg?t=1785848291",
+      "categories": [
+        "Strateji"
       ]
     },
     {
