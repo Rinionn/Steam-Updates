@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-08-05T22:42:38.162Z",
+  "generatedAt": "2026-08-05T23:39:57.969Z",
   "items": [
+    {
+      "id": "steam-news-22bd64aeb",
+      "title": "Blast Off! Summer Showdown",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4960110/Blast_Off_Summer_Showdown/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4960110/0f5e03e61106da4a5b11f58126ae47cf1863ad30/capsule_231x87.jpg?t=1785972477",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Yarış",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-84db81d7d",
+      "title": "PatriotMemoirs",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4108460/PatriotMemoirs/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4108460/de8f068a457d4bfe2e9b436bd5d821c84839a3be/capsule_231x87.jpg?t=1785971839",
+      "categories": [
+        "RPG",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-e50bd4d90",
       "title": "MISRECORDED",
@@ -262,30 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-622c8f99a",
-      "title": "Fields of Mistria",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2142790/Fields_of_Mistria/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2142790/9b112d1eec7cda592c2c96b50f66421f80cde937/capsule_231x87.jpg?t=1785944891",
-      "categories": [
-        "RPG",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-8a4a05047",
-      "title": "Quarantine Zombies - Prologue",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4411570/Quarantine_Zombies__Prologue/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4411570/5d8e163b2ab93bbe6baa33ea04c86820818d4191/capsule_231x87.jpg?t=1785944021",
-      "categories": [
-        "Aksiyon",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-1310f8827",
       "title": "Summoner's Gambit",
       "kind": "coming_soon",
@@ -332,6 +334,17 @@
       ]
     },
     {
+      "id": "steam-news-d7056b997",
+      "title": "Take That Hill",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4530210/Take_That_Hill/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4530210/8fbcafc0ebfe1f306cdbe5b42fb0bce8c07fb652/capsule_231x87.jpg?t=1785848291",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-40613ba9a",
       "title": "Football Fictional World Simulator",
       "kind": "coming_soon",
@@ -342,17 +355,6 @@
         "Simülasyon",
         "Strateji",
         "Spor"
-      ]
-    },
-    {
-      "id": "steam-news-d7056b997",
-      "title": "Take That Hill",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4530210/Take_That_Hill/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4530210/8fbcafc0ebfe1f306cdbe5b42fb0bce8c07fb652/capsule_231x87.jpg?t=1785848291",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -403,19 +405,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-15c4a2b8b",
-      "title": "CS Manager",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3418500/CS_Manager/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3418500/14db6902ac3f032e4d01366ea6234c1f69b6699b/capsule_231x87.jpg?t=1785887299",
-      "categories": [
-        "Strateji",
-        "Simülasyon",
-        "Spor"
-      ]
-    },
-    {
       "id": "steam-news-2a6577a9d",
       "title": "Dig, Dig, Die",
       "kind": "coming_soon",
@@ -426,6 +415,19 @@
         "Korku",
         "Çok Oyunculu",
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-15c4a2b8b",
+      "title": "CS Manager",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3418500/CS_Manager/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3418500/14db6902ac3f032e4d01366ea6234c1f69b6699b/capsule_231x87.jpg?t=1785887299",
+      "categories": [
+        "Strateji",
+        "Simülasyon",
+        "Spor"
       ]
     },
     {
@@ -513,17 +515,6 @@
       ]
     },
     {
-      "id": "steam-news-079c8db69",
-      "title": "Area Survivors",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4980380/Area_Survivors/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4980380/5363a940be3a00227b8d8f7efa52a71cb8e94b84/capsule_231x87.jpg?t=1784770685",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-8bcec264b",
       "title": "Shell Heroes: Awesome Island",
       "kind": "coming_soon",
@@ -532,17 +523,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4988130/5775ee0af51f6400b7c5bcc9324d04ea95bb7f74/capsule_231x87.jpg?t=1785187851",
       "categories": [
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-65cccebc5",
-      "title": "Talespinner",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1725410/Talespinner/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1725410/0e3cf8cff4ae71438e82958a93fdee9236f341a9/capsule_231x87.jpg?t=1785493228",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -566,6 +546,28 @@
       "categories": [
         "Aksiyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-cc99619f5",
+      "title": "IRON NEST: Heavy Turret Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2950790/IRON_NEST_Heavy_Turret_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2950790/922472560f653fd897313ab7a10dd86b018d373f/capsule_231x87.jpg?t=1785964646",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-65cccebc5",
+      "title": "Talespinner",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1725410/Talespinner/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1725410/0e3cf8cff4ae71438e82958a93fdee9236f341a9/capsule_231x87.jpg?t=1785493228",
+      "categories": [
+        "RPG"
       ]
     },
     {
