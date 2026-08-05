@@ -150,5 +150,29 @@
     "kind": "deadline_changed",
     "field": "deadlines.desktop-companion-fest-5bc08adee-e7c73f27c.dueAt",
     "after": "2027-01-14T18:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-05T01:05:13.734Z",
+    "eventId": "sheep-fest-6ec302116",
+    "eventName": "Sheep Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.sheep-fest-6ec302116-d71dee914.dueAt",
+    "after": "2027-02-04T18:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-05T01:05:13.734Z",
+    "eventId": "fighting-fest-997e98a30",
+    "eventName": "Fighting Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.fighting-fest-997e98a30-23bea36d6.dueAt",
+    "after": "2027-04-26T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-05T01:05:13.734Z",
+    "eventId": "mountaineering-fest-e94606dd4",
+    "eventName": "Mountaineering Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.mountaineering-fest-e94606dd4-6826d72fe.dueAt",
+    "after": "2027-05-31T17:00:00Z"
   }
 ]
