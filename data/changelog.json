@@ -182,5 +182,13 @@
     "kind": "deadline_changed",
     "field": "deadlines.cooking-fest-424f50fb9-42610bd87.dueAt",
     "after": "2026-10-12T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-06T04:30:54.140Z",
+    "eventId": "racing-fest-9bb5cb332",
+    "eventName": "Racing Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.racing-fest-9bb5cb332-bc3e3b041.dueAt",
+    "after": "2027-04-12T17:00:00Z"
   }
 ]
