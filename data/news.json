@@ -1,6 +1,52 @@
 {
-  "generatedAt": "2026-08-05T23:39:57.969Z",
+  "generatedAt": "2026-08-06T01:05:25.961Z",
   "items": [
+    {
+      "id": "steam-news-a65d7cb29",
+      "title": "COTTOn RockWithYou -ORIENTAL NIGHT DREAMS-",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3453070/COTTOn_RockWithYou_ORIENTAL_NIGHT_DREAMS/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3453070/88f2e36cb7f1012d685561772d0a6254dc5f6bbe/capsule_231x87.jpg?t=1785977921",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-6f56d5658",
+      "title": "The Syndicate: Classified Operations",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4598120/The_Syndicate_Classified_Operations/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4598120/bb863e2112585f41605e70cf1268a903ab62ec57/capsule_231x87.jpg?t=1785977239",
+      "categories": [
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-2c54feab6",
+      "title": "Fried chicken wings cause love fires",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3270550/Fried_chicken_wings_cause_love_fires/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3270550/d4c1a6e8dba8cc79b226176a42f4233cd4578bc9/capsule_231x87.jpg?t=1785974612",
+      "categories": [
+        "Bağımsız",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-910b6c24b",
+      "title": "SENTO SURVIVOR : Slip, Grab, and Bathe in Glory!",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4214810/SENTO_SURVIVOR__Slip_Grab_and_Bathe_in_Glory/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4214810/29010e0c4c1652ec9e654c3220dad662fc9bb0ba/capsule_231x87.jpg?t=1785974604",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-22bd64aeb",
       "title": "Blast Off! Summer Showdown",
@@ -240,54 +286,6 @@
       ]
     },
     {
-      "id": "steam-news-c1a14d923",
-      "title": "RyuuKotoba/Flowing Words",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4939240/RyuuKotobaFlowing_Words/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4939240/fc7b9907e1b7aa8d4ba876bf1dc512ea5eab81f9/capsule_231x87.jpg?t=1785945684",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-cf142c979",
-      "title": "Mazey Village",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1766240/Mazey_Village/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1766240/d96f8e02862fd20993e80f24b0075da6ebd26723/capsule_231x87_alt_assets_0.jpg?t=1785945617",
-      "categories": [
-        "Bağımsız",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-2ea33e4ed",
-      "title": "Crown Of Silence",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4295320/Crown_Of_Silence/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4295320/650edc25e241b2b7982382c97cadcd2fef4bb8cd/capsule_231x87.jpg?t=1785965469",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-72669fb3a",
-      "title": "Cargo, Please!",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4160920/Cargo_Please/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4160920/4662714fb0bb512a10d0d8ab5ac0b94171b049bd/capsule_231x87.jpg?t=1785945453",
-      "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-1310f8827",
       "title": "Summoner's Gambit",
       "kind": "coming_soon",
@@ -405,19 +403,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-2a6577a9d",
-      "title": "Dig, Dig, Die",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4074010/Dig_Dig_Die/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4074010/5c13e0cbf30028fdb0e760186a294c2ea21610fc/capsule_231x87.jpg?t=1785835515",
-      "categories": [
-        "Korku",
-        "Çok Oyunculu",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-15c4a2b8b",
       "title": "CS Manager",
       "kind": "coming_soon",
@@ -428,6 +413,19 @@
         "Strateji",
         "Simülasyon",
         "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-2a6577a9d",
+      "title": "Dig, Dig, Die",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4074010/Dig_Dig_Die/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4074010/5c13e0cbf30028fdb0e760186a294c2ea21610fc/capsule_231x87.jpg?t=1785835515",
+      "categories": [
+        "Korku",
+        "Çok Oyunculu",
+        "Aksiyon"
       ]
     },
     {
@@ -502,19 +500,6 @@
       ]
     },
     {
-      "id": "steam-news-93c008e85",
-      "title": "LiLM: Living language model",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4953630/LiLM_Living_language_model/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953630/5de35f440d9f84e8a205b8d650db614485d7341c/capsule_231x87.jpg?t=1785709082",
-      "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Anime"
-      ]
-    },
-    {
       "id": "steam-news-8bcec264b",
       "title": "Shell Heroes: Awesome Island",
       "kind": "coming_soon",
@@ -537,26 +522,14 @@
       ]
     },
     {
-      "id": "steam-news-211a0e923",
-      "title": "MARVEL Tōkon: Fighting Souls",
+      "id": "steam-news-079c8db69",
+      "title": "Area Survivors",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4980380/Area_Survivors/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3787240/59af95e2175fe017802e3fe79588197a52bef6c0/capsule_231x87.jpg?t=1784908718",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4980380/5363a940be3a00227b8d8f7efa52a71cb8e94b84/capsule_231x87.jpg?t=1785972971",
       "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-cc99619f5",
-      "title": "IRON NEST: Heavy Turret Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2950790/IRON_NEST_Heavy_Turret_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2950790/922472560f653fd897313ab7a10dd86b018d373f/capsule_231x87.jpg?t=1785964646",
-      "categories": [
-        "Simülasyon"
+        "Aksiyon"
       ]
     },
     {
@@ -568,6 +541,31 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1725410/0e3cf8cff4ae71438e82958a93fdee9236f341a9/capsule_231x87.jpg?t=1785493228",
       "categories": [
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-93c008e85",
+      "title": "LiLM: Living language model",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4953630/LiLM_Living_language_model/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953630/5de35f440d9f84e8a205b8d650db614485d7341c/capsule_231x87.jpg?t=1785709082",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-211a0e923",
+      "title": "MARVEL Tōkon: Fighting Souls",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3787240/59af95e2175fe017802e3fe79588197a52bef6c0/capsule_231x87.jpg?t=1784908718",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
       ]
     },
     {
