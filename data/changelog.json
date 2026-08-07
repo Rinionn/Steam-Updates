@@ -190,5 +190,13 @@
     "kind": "deadline_changed",
     "field": "deadlines.racing-fest-9bb5cb332-bc3e3b041.dueAt",
     "after": "2027-04-12T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-07T06:19:12.312Z",
+    "eventId": "shop-keeper-fest-0d64f4666",
+    "eventName": "Shop Keeper Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.shop-keeper-fest-0d64f4666-aca2fb8f0.dueAt",
+    "after": "2027-01-25T18:00:00Z"
   }
 ]
