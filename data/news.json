@@ -1,6 +1,43 @@
 {
-  "generatedAt": "2026-08-07T22:23:46.246Z",
+  "generatedAt": "2026-08-07T23:03:37.123Z",
   "items": [
+    {
+      "id": "steam-news-1d590c38e",
+      "title": "Cape Warrior",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4991980/Cape_Warrior/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4991980/0ea6f36bad43d29019a7d3ec44e7efc20dd2af8a/capsule_231x87.jpg?t=1786143275",
+      "categories": [
+        "Macera",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-5aecf6926",
+      "title": "Smile Protocol",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4516900/Smile_Protocol/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4516900/5419729fc89daaac667bebecfd73972e35c23b1c/capsule_231x87.jpg?t=1786141687",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-9506bd6e2",
+      "title": "Sluggy Nom Nom",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4697020/Sluggy_Nom_Nom/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4697020/5e3c0a9c2130e732a05b64bc74fe626ea672ba05/capsule_231x87.jpg?t=1786141618",
+      "categories": [
+        "Gündelik",
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-eaf76cad2",
       "title": "Shirohebi and The Tower of Mercy",
@@ -235,42 +272,6 @@
       "dateLabel": "7 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4206850/c5e919308d94d8c7dcb89e7a2f8d895f39015148/capsule_231x87.jpg?t=1786122014",
       "categories": []
-    },
-    {
-      "id": "steam-news-98746d734",
-      "title": "Miseria",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4563870/Miseria/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4563870/0886a24b17a8c5d7eaec6bd66c2210a0c952594b/capsule_231x87.jpg?t=1786121909",
-      "categories": [
-        "RPG",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-1d4089ece",
-      "title": "Lucky Shot",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4092940/Lucky_Shot/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4092940/089015e6dd6569f35944c4cc971c9a8e5d79d42f/capsule_231x87.jpg?t=1786122445",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-2327fd9c6",
-      "title": "Shield Operator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4929650/Shield_Operator/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4929650/a214e222c14e9e31d1c8d904fa0509be5df12b99/capsule_231x87.jpg?t=1786120240",
-      "categories": [
-        "Simülasyon",
-        "Strateji",
-        "Aksiyon"
-      ]
     },
     {
       "id": "steam-news-0d8e9aec9",
