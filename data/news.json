@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-07T19:34:08.356Z",
+  "generatedAt": "2026-08-07T20:18:07.033Z",
   "items": [
+    {
+      "id": "steam-news-47a2008a4",
+      "title": "Dragonhold",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1510330/Dragonhold/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1510330/cdf9eed59b6c0fe182a544b6f758b89e198f2a4f/capsule_231x87.jpg?t=1786133714",
+      "categories": [
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-ca25a11d8",
       "title": "Glyphrune",
@@ -266,29 +277,6 @@
       ]
     },
     {
-      "id": "steam-news-e29765282",
-      "title": "Hocus Focus",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4202710/Hocus_Focus/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4202710/161809b32b2dde2a0549fe4e8d74f59390ad03ad/capsule_231x87.jpg?t=1786117484",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-17508ee9b",
-      "title": "Sluggy Nom Nom",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4697020/Sluggy_Nom_Nom/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4697020/5e3c0a9c2130e732a05b64bc74fe626ea672ba05/capsule_231x87.jpg?t=1785723594",
-      "categories": [
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-be535a8ef",
       "title": "Shirohebi and The Tower of Mercy",
       "kind": "coming_soon",
@@ -418,6 +406,17 @@
       ]
     },
     {
+      "id": "steam-news-78ddab0b9",
+      "title": "The Wraith Train: Illusory Domain",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
       "id": "steam-news-307a7493b",
       "title": "Kungfu Card",
       "kind": "coming_soon",
@@ -428,17 +427,6 @@
         "Bağımsız",
         "Strateji",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-78ddab0b9",
-      "title": "The Wraith Train: Illusory Domain",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
-      "categories": [
-        "Macera"
       ]
     },
     {
@@ -541,6 +529,21 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
       "categories": [
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-d53c953a8",
+      "title": "A Game About Penguins",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4061800/A_Game_About_Penguins/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4061800/d6d42eae43f82ad8c94c4530ef30eb330db9bc7f/capsule_231x87.jpg?t=1785139936",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "Spor",
+        "Çok Oyunculu",
+        "Tek Oyunculu"
       ]
     },
     {
