@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T21:51:55.312Z",
+  "generatedAt": "2026-08-07T22:23:46.246Z",
   "items": [
     {
       "id": "steam-news-eaf76cad2",
@@ -21,6 +21,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3995840/50444a4e1afcf7def64be6dd3e6b257e1c69056c/capsule_231x87.jpg?t=1786135025",
       "categories": [
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-39a1f2362",
+      "title": "The Prince's Keeper",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4810540/The_Princes_Keeper/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4810540/467b5174f64e536281c4bbc9921b013b16305428/capsule_231x87.jpg?t=1786134473",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -258,17 +269,6 @@
       "categories": [
         "Simülasyon",
         "Strateji",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-c905cacb7",
-      "title": "John Fox",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2859080/John_Fox/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2859080/capsule_231x87.jpg?t=1786119829",
-      "categories": [
         "Aksiyon"
       ]
     },
