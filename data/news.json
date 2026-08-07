@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-08-07T23:03:37.123Z",
+  "generatedAt": "2026-08-07T23:43:31.897Z",
   "items": [
+    {
+      "id": "steam-news-e10664aa6",
+      "title": "Marine",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4855290/Marine/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4855290/45a188e488f908d6dbbb69d3454e460dee79b229/capsule_231x87.jpg?t=1786144588",
+      "categories": [
+        "Strateji",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-811e5bcc7",
+      "title": "Terra Physics & Money",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4983940/Terra_Physics__Money/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4983940/2e9f9cc3c9a1a759bf0303e9f3a641369b364df3/capsule_231x87.jpg?t=1786143841",
+      "categories": [
+        "Strateji",
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-1d590c38e",
       "title": "Cape Warrior",
@@ -252,28 +277,6 @@
       ]
     },
     {
-      "id": "steam-news-9ce4f506e",
-      "title": "Prison Gambit",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4427230/Prison_Gambit/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4427230/48c4b406a9a453a9f81bca1dcd8b262bb3a5448f/capsule_231x87.jpg?t=1786122162",
-      "categories": [
-        "Gündelik",
-        "Strateji",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-8aca08c01",
-      "title": "R.I.P.",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4206850/RIP/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4206850/c5e919308d94d8c7dcb89e7a2f8d895f39015148/capsule_231x87.jpg?t=1786122014",
-      "categories": []
-    },
-    {
       "id": "steam-news-0d8e9aec9",
       "title": "Pight",
       "kind": "coming_soon",
@@ -471,6 +474,17 @@
       ]
     },
     {
+      "id": "steam-news-c2d7cc8c7",
+      "title": "Ajnabee - The Unknown",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
       "id": "steam-news-57597808e",
       "title": "The Black Lily Blooms in Her Eyes",
       "kind": "coming_soon",
@@ -483,15 +497,13 @@
       ]
     },
     {
-      "id": "steam-news-c2d7cc8c7",
-      "title": "Ajnabee - The Unknown",
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
-      "categories": [
-        "Korku"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
     },
     {
       "id": "steam-news-d53c953a8",
@@ -507,15 +519,6 @@
         "Çok Oyunculu",
         "Tek Oyunculu"
       ]
-    },
-    {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
     },
     {
       "id": "steam-news-ea47ef186",
