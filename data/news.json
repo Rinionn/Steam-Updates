@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-07T07:49:14.288Z",
+  "generatedAt": "2026-08-07T08:42:27.514Z",
   "items": [
+    {
+      "id": "steam-news-05d4d6770",
+      "title": "中国式地雷女",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3782080/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3782080/79d477553888000dd3a2a41d118bf9f5804e3c74/capsule_231x87.jpg?t=1786091849",
+      "categories": [
+        "Macera",
+        "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-05b81f886",
+      "title": "Up, Little One",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4985000/Up_Little_One/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985000/dc509efdd4e3f51218776c7beb67590b22ff2f58/capsule_231x87.jpg?t=1786090659",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-c6b0e73d4",
+      "title": "Project Neon",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3362800/Project_Neon/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3362800/ed5df52fd5f212579532aa7d507f0982d541bb5f/capsule_231x87.jpg?t=1786090498",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-905526a8e",
       "title": "Worship Demon",
@@ -247,44 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-b8fecc15c",
-      "title": "SPACE DASHER",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4885310/SPACE_DASHER/?snr=1_7_7_230_150_1",
-      "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4885310/184756a5553188c329c3c2da94aaad7e367cf9b4/capsule_231x87.jpg?t=1786073078",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-acceccb42",
-      "title": "Super Shout Showdown",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4011300/Super_Shout_Showdown/?snr=1_7_7_230_150_1",
-      "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4011300/c782ecec9fc8eb9be2bf2f5c037e4a4afea02eb1/capsule_231x87.jpg?t=1786086534",
-      "categories": [
-        "Bağımsız",
-        "Aksiyon",
-        "Anime",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-0626ef99b",
-      "title": "Hololive Fantasy Battle",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4003770/Hololive_Fantasy_Battle/?snr=1_7_7_230_150_1",
-      "dateLabel": "6 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4003770/c0a4da9317b1c4b2f307510b4f7327aaa7bee6e2/capsule_231x87.jpg?t=1786071087",
-      "categories": [
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-eb6ba9af1",
       "title": "Smelly Bubbles",
       "kind": "coming_soon",
@@ -352,17 +349,6 @@
       ]
     },
     {
-      "id": "steam-news-b9803d3f9",
-      "title": "The Castle of Dr. Hoot",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4723300/The_Castle_of_Dr_Hoot/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4723300/37341f3378bb1ff7e75900dd411c10d4f1012b89/capsule_231x87.jpg?t=1784844057",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-c647cc7cd",
       "title": "Tetro Battle",
       "kind": "coming_soon",
@@ -371,6 +357,29 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3599150/ef9cf755d3b638f035b45ccb50a865fcf3cb3c06/capsule_231x87.jpg?t=1781908513",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-48f4f0432",
+      "title": "Toy Shop Tidy Up",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4914830/Toy_Shop_Tidy_Up/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4914830/a2ba1a0ac2b6ff089021b6eab4c61cda54a42da8/capsule_231x87.jpg?t=1786070112",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-b9803d3f9",
+      "title": "The Castle of Dr. Hoot",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4723300/The_Castle_of_Dr_Hoot/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4723300/37341f3378bb1ff7e75900dd411c10d4f1012b89/capsule_231x87.jpg?t=1784844057",
+      "categories": [
+        "Simülasyon"
       ]
     },
     {
@@ -409,18 +418,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4005630/e873c5c539266703959f12acba8f1646454eb96b/capsule_231x87.jpg?t=1785845459",
       "categories": [
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-48f4f0432",
-      "title": "Toy Shop Tidy Up",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4914830/Toy_Shop_Tidy_Up/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4914830/a2ba1a0ac2b6ff089021b6eab4c61cda54a42da8/capsule_231x87.jpg?t=1786070112",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
       ]
     },
     {
@@ -473,6 +470,17 @@
       ]
     },
     {
+      "id": "steam-news-b49875087",
+      "title": "Journeybound Idle",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4946460/Journeybound_Idle/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946460/66bf79994f54e45b069d7a9012a9fd6a8e5665ca/capsule_231x87.jpg?t=1784939343",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-e213e9f22",
       "title": "Grizzy and the Lemmings - Crazy Party",
       "kind": "coming_soon",
@@ -482,28 +490,6 @@
       "categories": [
         "Aksiyon",
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-0f808f797",
-      "title": "No Need for Flowers",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3337840/No_Need_for_Flowers/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3337840/5f670a9cb1dd0849f8082c57b5bd98446b314b56/capsule_231x87.jpg?t=1785976069",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-b49875087",
-      "title": "Journeybound Idle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4946460/Journeybound_Idle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946460/66bf79994f54e45b069d7a9012a9fd6a8e5665ca/capsule_231x87.jpg?t=1784939343",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -519,6 +505,17 @@
       ]
     },
     {
+      "id": "steam-news-0f808f797",
+      "title": "No Need for Flowers",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3337840/No_Need_for_Flowers/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3337840/5f670a9cb1dd0849f8082c57b5bd98446b314b56/capsule_231x87.jpg?t=1785976069",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-99337028b",
       "title": "Shapes: The Tower Defense Game",
       "kind": "coming_soon",
@@ -531,14 +528,14 @@
       ]
     },
     {
-      "id": "steam-news-c29e48bb6",
-      "title": "Hocus Focus",
+      "id": "steam-news-dea2a9979",
+      "title": "Expeditions: Samurai",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4202710/Hocus_Focus/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2212910/Expeditions_Samurai/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4202710/161809b32b2dde2a0549fe4e8d74f59390ad03ad/capsule_231x87.jpg?t=1785400320",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2212910/8c648661d6c32a9df15bb12f937e160bf199fc2b/capsule_231x87.jpg?t=1785250464",
       "categories": [
-        "Gündelik"
+        "RPG"
       ]
     },
     {
@@ -555,14 +552,14 @@
       ]
     },
     {
-      "id": "steam-news-dea2a9979",
-      "title": "Expeditions: Samurai",
+      "id": "steam-news-c29e48bb6",
+      "title": "Hocus Focus",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2212910/Expeditions_Samurai/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4202710/Hocus_Focus/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2212910/8c648661d6c32a9df15bb12f937e160bf199fc2b/capsule_231x87.jpg?t=1785250464",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4202710/161809b32b2dde2a0549fe4e8d74f59390ad03ad/capsule_231x87.jpg?t=1785400320",
       "categories": [
-        "RPG"
+        "Gündelik"
       ]
     },
     {
