@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-07T18:25:59.751Z",
+  "generatedAt": "2026-08-07T19:34:08.356Z",
   "items": [
+    {
+      "id": "steam-news-ca25a11d8",
+      "title": "Glyphrune",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4957150/Glyphrune/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957150/7640e0db9bc1e1bb5a2b8a5741f90ad26b2fe907/capsule_231x87.jpg?t=1786131020",
+      "categories": [
+        "RPG",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-9084250b8",
+      "title": "Bobbitz",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4792630/Bobbitz/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792630/8a2f10a7cc10cf7fb69a61a464fabf54c70a2719/capsule_231x87.jpg?t=1786128633",
+      "categories": []
+    },
+    {
+      "id": "steam-news-61312a533",
+      "title": "Cindervale Idle",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4966660/Cindervale_Idle/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4966660/acbffaf0e2835e8c18d85f25079e9c722bb633cc/capsule_231x87.jpg?t=1786128444",
+      "categories": [
+        "RPG",
+        "Gündelik",
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-9d53d22a9",
       "title": "MegaDope 2D",
@@ -10,6 +45,19 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858810/6102431f5ba2e34b4ff1221731db9d1f18189976/capsule_231x87.jpg?t=1786126093",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-4c2f63d80",
+      "title": "Stellar Odyssey",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4629900/Stellar_Odyssey/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4629900/c80daf5fab94b7195529b382936e98880daf46ad/capsule_231x87.jpg?t=1786125612",
+      "categories": [
+        "RPG",
+        "Oynaması Ücretsiz",
+        "Gündelik"
       ]
     },
     {
@@ -29,11 +77,8 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4898140/Milk_Can_Clicker/?snr=1_7_7_230_150_1",
       "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4898140/0b1dd79c587490ca0da4dc4a30a17b36a3eb8f84/capsule_231x87.jpg?t=1786124925",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4898140/0b1dd79c587490ca0da4dc4a30a17b36a3eb8f84/capsule_231x87.jpg?t=1786128315",
+      "categories": []
     },
     {
       "id": "steam-news-3518a86c1",
@@ -232,77 +277,6 @@
       ]
     },
     {
-      "id": "steam-news-12ac21c1e",
-      "title": "Château Pluie: The New Cellar Keeper",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4931630/Chteau_Pluie_The_New_Cellar_Keeper/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4931630/dc0166e44159f60c9a68b7fc0fd46e58a48cbec7/capsule_231x87.jpg?t=1786116162",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-075ee3f6b",
-      "title": "Together in Forgotten Lands",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3424990/Together_in_Forgotten_Lands/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3424990/a1aa566a96ecdfcedf0150b34559203756fb7f08/capsule_231x87.jpg?t=1786115667",
-      "categories": []
-    },
-    {
-      "id": "steam-news-42a3bd78a",
-      "title": "Point",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4357120/Point/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4357120/c5a719fcda97e1fdcd329c27c8a65fb2050691f6/capsule_231x87.jpg?t=1786114872",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-7e63f131b",
-      "title": "GRAIN ROT",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4450620/GRAIN_ROT/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4450620/4cbcd93991fb6ca72c0fdc637c6f7580453c55c3/capsule_231x87.jpg?t=1786114521",
-      "categories": []
-    },
-    {
-      "id": "steam-news-65bc0db2c",
-      "title": "Bobbitz",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4792630/Bobbitz/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792630/8a2f10a7cc10cf7fb69a61a464fabf54c70a2719/capsule_231x87.jpg?t=1785959014",
-      "categories": []
-    },
-    {
-      "id": "steam-news-2065875fb",
-      "title": "Marine",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4855290/Marine/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4855290/45a188e488f908d6dbbb69d3454e460dee79b229/capsule_231x87.jpg?t=1785000376",
-      "categories": [
-        "Strateji",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-37e44a363",
-      "title": "Vivid Intrusion",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4512180/Vivid_Intrusion/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4512180/655887a433f83e1d1a5c463007cfea191dfd7024/capsule_231x87.jpg?t=1786126075",
-      "categories": []
-    },
-    {
       "id": "steam-news-17508ee9b",
       "title": "Sluggy Nom Nom",
       "kind": "coming_soon",
@@ -444,17 +418,6 @@
       ]
     },
     {
-      "id": "steam-news-78ddab0b9",
-      "title": "The Wraith Train: Illusory Domain",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-307a7493b",
       "title": "Kungfu Card",
       "kind": "coming_soon",
@@ -465,6 +428,17 @@
         "Bağımsız",
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-78ddab0b9",
+      "title": "The Wraith Train: Illusory Domain",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -545,6 +519,38 @@
       "categories": [
         "Aksiyon"
       ]
+    },
+    {
+      "id": "steam-news-57597808e",
+      "title": "The Black Lily Blooms in Her Eyes",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4851510/The_Black_Lily_Blooms_in_Her_Eyes/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4851510/ad4b9eac578428013b7a91d6c1ec1900c97448bb/capsule_231x87.jpg?t=1785429711",
+      "categories": [
+        "Macera",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-c2d7cc8c7",
+      "title": "Ajnabee - The Unknown",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
     },
     {
       "id": "steam-news-c560bed11",
