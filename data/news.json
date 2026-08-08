@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-08T08:08:35.731Z",
+  "generatedAt": "2026-08-08T08:59:21.242Z",
   "items": [
+    {
+      "id": "steam-news-b8fe7c3ed",
+      "title": "Trippy Plains",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4866640/Trippy_Plains/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4866640/22bc03c3e6525dc7ec163d2f53753b38a17b4ff5/capsule_231x87.jpg?t=1786179439",
+      "categories": [
+        "Simülasyon",
+        "Yarış",
+        "Spor"
+      ]
+    },
     {
       "id": "steam-news-533e5d9dc",
       "title": "Accident Investigator Simulator: Black Box",
@@ -272,17 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-39a1f2362",
-      "title": "The Prince's Keeper",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4810540/The_Princes_Keeper/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4810540/467b5174f64e536281c4bbc9921b013b16305428/capsule_231x87.jpg?t=1786134473",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-0d8e9aec9",
       "title": "Pight",
       "kind": "coming_soon",
@@ -503,15 +505,6 @@
       ]
     },
     {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
-    },
-    {
       "id": "steam-news-d53c953a8",
       "title": "A Game About Penguins",
       "kind": "coming_soon",
@@ -525,6 +518,15 @@
         "Çok Oyunculu",
         "Tek Oyunculu"
       ]
+    },
+    {
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
     },
     {
       "id": "steam-news-ea47ef186",
