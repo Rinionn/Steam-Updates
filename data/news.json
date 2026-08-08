@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-08T12:01:52.554Z",
+  "generatedAt": "2026-08-08T13:06:37.444Z",
   "items": [
+    {
+      "id": "steam-news-3f2ee34bb",
+      "title": "Birb Game",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3682550/Birb_Game/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3682550/650fc091f23a812bc75e256b6f1f648d07d76805/capsule_231x87.jpg?t=1786193497",
+      "categories": [
+        "Yarış"
+      ]
+    },
+    {
+      "id": "steam-news-1e0089989",
+      "title": "Super Smash Asteroids",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2310260/Super_Smash_Asteroids/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2310260/capsule_231x87.jpg?t=1786191588",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-f8b8c4df9",
       "title": "Not a bug",
@@ -260,31 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-1d590c38e",
-      "title": "Cape Warrior",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4991980/Cape_Warrior/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4991980/0ea6f36bad43d29019a7d3ec44e7efc20dd2af8a/capsule_231x87.jpg?t=1786143275",
-      "categories": [
-        "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-5aecf6926",
-      "title": "Smile Protocol",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4516900/Smile_Protocol/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4516900/5419729fc89daaac667bebecfd73972e35c23b1c/capsule_231x87.jpg?t=1786155170",
-      "categories": [
-        "Bağımsız",
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-0d8e9aec9",
       "title": "Pight",
       "kind": "coming_soon",
@@ -379,17 +376,6 @@
       ]
     },
     {
-      "id": "steam-news-78ddab0b9",
-      "title": "The Wraith Train: Illusory Domain",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-307a7493b",
       "title": "Kungfu Card",
       "kind": "coming_soon",
@@ -400,6 +386,17 @@
         "Bağımsız",
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-78ddab0b9",
+      "title": "The Wraith Train: Illusory Domain",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -505,6 +502,15 @@
       ]
     },
     {
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
+    },
+    {
       "id": "steam-news-d53c953a8",
       "title": "A Game About Penguins",
       "kind": "coming_soon",
@@ -518,15 +524,6 @@
         "Çok Oyunculu",
         "Tek Oyunculu"
       ]
-    },
-    {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
     },
     {
       "id": "steam-news-ea47ef186",
