@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T07:27:14.694Z",
+  "generatedAt": "2026-08-08T13:57:00.673Z",
   "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
   "events": [
     {
@@ -60,7 +60,7 @@
           "id": "cyberpunk-fest-51562f576-5a34e3e06"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -87,7 +87,7 @@
           "id": "pins-pegs-fest-2624f7168-ce6f299e3"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -115,7 +115,7 @@
           "id": "pve-survival-crafting-fest-8bb6de2ec-306900b29"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -142,7 +142,7 @@
           "id": "programming-fest-d92cade24-053ba1c4b"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -160,8 +160,16 @@
         "Party-Based RPG",
         "RPG"
       ],
-      "deadlines": [],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "deadlines": [
+        {
+          "kind": "milestone",
+          "label": "September 14 @ 10:00am PDT - The event starts. This is the deadline for entering a discount, and opting out if you no longer want to participate.",
+          "dueAt": "2026-09-14T17:00:00Z",
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/party_based_rpg_2026",
+          "id": "party-based-rpg-fest-55771f151-00fae689e"
+        }
+      ],
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -199,7 +207,7 @@
           "id": "cooking-fest-424f50fb9-42610bd87"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -263,7 +271,7 @@
           "id": "next-fest-october-2026-3062e7ac9-ab20d5c9d"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -289,7 +297,7 @@
           "id": "steam-scream-v-4b0a8f227-84f4ccae8"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -316,7 +324,7 @@
           "id": "auto-battler-rpg-fest-92a2e84b8-81629364c"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -354,7 +362,7 @@
           "id": "desktop-companion-fest-5bc08adee-e7c73f27c"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -381,7 +389,7 @@
           "id": "shop-keeper-fest-0d64f4666-aca2fb8f0"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -407,7 +415,7 @@
           "id": "sheep-fest-6ec302116-d71dee914"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -426,7 +434,7 @@
         "Shared/Split Screen"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -457,7 +465,7 @@
         "Music"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -488,7 +496,7 @@
         "Robots"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -514,7 +522,7 @@
           "id": "racing-fest-9bb5cb332-bc3e3b041"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -532,7 +540,7 @@
         "Magic"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -558,7 +566,7 @@
           "id": "fighting-fest-997e98a30-23bea36d6"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -577,7 +585,7 @@
         "Strategy"
       ],
       "deadlines": [],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -603,7 +611,7 @@
           "id": "mountaineering-fest-e94606dd4-6826d72fe"
         }
       ],
-      "lastSeenAt": "2026-08-08T07:27:03.385Z",
+      "lastSeenAt": "2026-08-08T13:56:49.275Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {

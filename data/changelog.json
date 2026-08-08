@@ -206,5 +206,13 @@
     "kind": "deadline_changed",
     "field": "deadlines.pins-pegs-fest-2624f7168-ce6f299e3.dueAt",
     "after": "2026-08-17T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-08T13:57:00.673Z",
+    "eventId": "party-based-rpg-fest-55771f151",
+    "eventName": "Party-Based RPG Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.party-based-rpg-fest-55771f151-00fae689e.dueAt",
+    "after": "2026-09-14T17:00:00Z"
   }
 ]

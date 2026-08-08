@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-08T13:06:37.444Z",
+  "generatedAt": "2026-08-08T13:57:01.095Z",
   "items": [
+    {
+      "id": "steam-news-cd7ed2276",
+      "title": "Typomon Hunter",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4429150/Typomon_Hunter/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4429150/ae0da1724cd032204dbe4eff0750c035b1ebd7ad/capsule_231x87.jpg?t=1786196803",
+      "categories": [
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-3f2ee34bb",
       "title": "Birb Game",
@@ -269,19 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-811e5bcc7",
-      "title": "Terra Physics & Money",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4983940/Terra_Physics__Money/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4983940/2e9f9cc3c9a1a759bf0303e9f3a641369b364df3/capsule_231x87.jpg?t=1786143841",
-      "categories": [
-        "Strateji",
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-0d8e9aec9",
       "title": "Pight",
       "kind": "coming_soon",
@@ -376,6 +374,17 @@
       ]
     },
     {
+      "id": "steam-news-78ddab0b9",
+      "title": "The Wraith Train: Illusory Domain",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
       "id": "steam-news-307a7493b",
       "title": "Kungfu Card",
       "kind": "coming_soon",
@@ -386,17 +395,6 @@
         "Bağımsız",
         "Strateji",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-78ddab0b9",
-      "title": "The Wraith Train: Illusory Domain",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
-      "categories": [
-        "Macera"
       ]
     },
     {
@@ -479,17 +477,6 @@
       ]
     },
     {
-      "id": "steam-news-c2d7cc8c7",
-      "title": "Ajnabee - The Unknown",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-57597808e",
       "title": "The Black Lily Blooms in Her Eyes",
       "kind": "coming_soon",
@@ -502,13 +489,15 @@
       ]
     },
     {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
+      "id": "steam-news-c2d7cc8c7",
+      "title": "Ajnabee - The Unknown",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
+      "categories": [
+        "Korku"
+      ]
     },
     {
       "id": "steam-news-d53c953a8",
@@ -524,6 +513,15 @@
         "Çok Oyunculu",
         "Tek Oyunculu"
       ]
+    },
+    {
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
     },
     {
       "id": "steam-news-ea47ef186",
