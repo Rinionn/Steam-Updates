@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T16:47:48.539Z",
+  "generatedAt": "2026-08-08T17:17:42.984Z",
   "items": [
     {
       "id": "steam-news-6cecba677",
@@ -278,17 +278,6 @@
       ]
     },
     {
-      "id": "steam-news-0d8e9aec9",
-      "title": "Pight",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2682270/Pight/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2682270/a7bcf18cbc770874c11047b253a6b3fc912711ab/capsule_231x87.jpg?t=1783724453",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-b0f773416",
       "title": "100 Mystic Cats",
       "kind": "coming_soon",
@@ -475,17 +464,6 @@
       ]
     },
     {
-      "id": "steam-news-c2d7cc8c7",
-      "title": "Ajnabee - The Unknown",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-57597808e",
       "title": "The Black Lily Blooms in Her Eyes",
       "kind": "coming_soon",
@@ -495,6 +473,17 @@
       "categories": [
         "Macera",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-c2d7cc8c7",
+      "title": "Ajnabee - The Unknown",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
+      "categories": [
+        "Korku"
       ]
     },
     {
@@ -554,6 +543,20 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963970/84f091e9aa1648d85c260414c964de32662eceee/capsule_231x87.jpg?t=1786027846",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-694065d02",
+      "title": "Abys Orbit",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5007590/Abys_Orbit/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5007590/2ef96d5a1a91503169b70217ad7055cf526e6681/capsule_231x87.jpg?t=1785941190",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "Simülasyon",
+        "Strateji"
       ]
     },
     {
