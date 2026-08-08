@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-07T23:43:31.897Z",
+  "generatedAt": "2026-08-08T00:32:41.932Z",
   "items": [
+    {
+      "id": "steam-news-1a2322388",
+      "title": "Deflect",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4914740/Deflect/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4914740/428b5e4b57d86b644210596eb79604307c9121cd/capsule_231x87.jpg?t=1786148841",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-cf3e07416",
+      "title": "Tailbreak",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4685470/Tailbreak/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4685470/7ba36b3777102373be60866525d6efe91f5c868a/capsule_231x87.jpg?t=1786146215",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-e10664aa6",
       "title": "Marine",
@@ -254,29 +276,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-9a72da50e",
-      "title": "成语消消乐",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4982020/_/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4982020/fd81379bfef1efbb8412d121b576f1eafabdd021/capsule_231x87.jpg?t=1786122993",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-5c79e87c9",
-      "title": "Arcade Mogul",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4953950/Arcade_Mogul/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953950/27c99ce96d263b26ff13daf1f375a121881d5c27/capsule_231x87.jpg?t=1786122853",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-0d8e9aec9",
       "title": "Pight",
       "kind": "coming_soon",
@@ -371,6 +370,17 @@
       ]
     },
     {
+      "id": "steam-news-78ddab0b9",
+      "title": "The Wraith Train: Illusory Domain",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
       "id": "steam-news-307a7493b",
       "title": "Kungfu Card",
       "kind": "coming_soon",
@@ -381,17 +391,6 @@
         "Bağımsız",
         "Strateji",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-78ddab0b9",
-      "title": "The Wraith Train: Illusory Domain",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
-      "categories": [
-        "Macera"
       ]
     },
     {
@@ -474,17 +473,6 @@
       ]
     },
     {
-      "id": "steam-news-c2d7cc8c7",
-      "title": "Ajnabee - The Unknown",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-57597808e",
       "title": "The Black Lily Blooms in Her Eyes",
       "kind": "coming_soon",
@@ -494,6 +482,17 @@
       "categories": [
         "Macera",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-c2d7cc8c7",
+      "title": "Ajnabee - The Unknown",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
+      "categories": [
+        "Korku"
       ]
     },
     {
