@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-08T02:31:06.107Z",
+  "generatedAt": "2026-08-08T03:53:07.404Z",
   "items": [
+    {
+      "id": "steam-news-f8d12cee2",
+      "title": "Comet Dudes",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4960190/Comet_Dudes/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4960190/1eb62b2eba93d60c4a1c657fe743a4964eff2e5b/capsule_231x87.jpg?t=1786158076",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-276d14f3a",
+      "title": "Alice and the Devil's Prison",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4145350/Alice_and_the_Devils_Prison/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4145350/35c8a1b0abbd255521a2696b6b08cc30b64c8d33/capsule_231x87.jpg?t=1786158008",
+      "categories": [
+        "Macera",
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-97bfa0506",
       "title": "Dead Air County",
@@ -42,7 +66,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4663300/Apocalypse_The_Last_RV/?snr=1_7_7_230_150_1",
       "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4663300/6363f00a4a080a4b9fb432cfb44697c65cb1d0e8/capsule_231x87.jpg?t=1786149677",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4663300/6363f00a4a080a4b9fb432cfb44697c65cb1d0e8/capsule_231x87.jpg?t=1786158327",
       "categories": [
         "Bağımsız",
         "Simülasyon",
@@ -260,26 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-7da3ea58a",
-      "title": "Shard Cycle",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4564230/Shard_Cycle/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4564230/52b27a9ac116fffc414f6c8433ac485eaff1b8ac/capsule_231x87.jpg?t=1786125222",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-0dbe24bd6",
-      "title": "Milk Can Clicker",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4898140/Milk_Can_Clicker/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4898140/0b1dd79c587490ca0da4dc4a30a17b36a3eb8f84/capsule_231x87.jpg?t=1786128315",
-      "categories": []
-    },
-    {
       "id": "steam-news-0d8e9aec9",
       "title": "Pight",
       "kind": "coming_soon",
@@ -374,17 +378,6 @@
       ]
     },
     {
-      "id": "steam-news-78ddab0b9",
-      "title": "The Wraith Train: Illusory Domain",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-307a7493b",
       "title": "Kungfu Card",
       "kind": "coming_soon",
@@ -395,6 +388,17 @@
         "Bağımsız",
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-78ddab0b9",
+      "title": "The Wraith Train: Illusory Domain",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -500,15 +504,6 @@
       ]
     },
     {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
-    },
-    {
       "id": "steam-news-d53c953a8",
       "title": "A Game About Penguins",
       "kind": "coming_soon",
@@ -522,6 +517,15 @@
         "Çok Oyunculu",
         "Tek Oyunculu"
       ]
+    },
+    {
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
     },
     {
       "id": "steam-news-ea47ef186",
