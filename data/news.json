@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-08T09:48:34.626Z",
+  "generatedAt": "2026-08-08T10:17:05.927Z",
   "items": [
+    {
+      "id": "steam-news-f8b8c4df9",
+      "title": "Not a bug",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4876190/Not_a_bug/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4876190/ce3e90558b2416bdf803943f12a2c6c8808ae6d8/capsule_231x87.jpg?t=1786184094",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-38781b334",
+      "title": "Catetris",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4943170/Catetris/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943170/f2753a3e2d9b725a78edc2045e93a37aa69d404f/capsule_231x87.jpg?t=1786184049",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-8cec59566",
       "title": "Coloring",
@@ -259,29 +282,6 @@
         "Bağımsız",
         "Aksiyon",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-9506bd6e2",
-      "title": "Sluggy Nom Nom",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4697020/Sluggy_Nom_Nom/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4697020/5e3c0a9c2130e732a05b64bc74fe626ea672ba05/capsule_231x87.jpg?t=1786141618",
-      "categories": [
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-eaf76cad2",
-      "title": "Shirohebi and The Tower of Mercy",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3644170/Shirohebi_and_The_Tower_of_Mercy/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3644170/267c34063b021c2efe20b3dd683ebcefcadc1952/capsule_231x87.jpg?t=1786135739",
-      "categories": [
-        "RPG"
       ]
     },
     {
