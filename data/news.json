@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-08-08T15:40:19.201Z",
+  "generatedAt": "2026-08-08T16:47:48.539Z",
   "items": [
+    {
+      "id": "steam-news-6cecba677",
+      "title": "RE:DREAM",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4964240/REDREAM/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4964240/45c0703836715304f2ba70dde866819a9cbbfc9a/capsule_231x87.jpg?t=1786204940",
+      "categories": []
+    },
     {
       "id": "steam-news-c8da23731",
       "title": "Grand Cru: The Wine Maker",
@@ -269,17 +278,6 @@
       ]
     },
     {
-      "id": "steam-news-cf3e07416",
-      "title": "Tailbreak",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4685470/Tailbreak/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4685470/7ba36b3777102373be60866525d6efe91f5c868a/capsule_231x87.jpg?t=1786201693",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-0d8e9aec9",
       "title": "Pight",
       "kind": "coming_soon",
@@ -477,6 +475,17 @@
       ]
     },
     {
+      "id": "steam-news-c2d7cc8c7",
+      "title": "Ajnabee - The Unknown",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
       "id": "steam-news-57597808e",
       "title": "The Black Lily Blooms in Her Eyes",
       "kind": "coming_soon",
@@ -486,17 +495,6 @@
       "categories": [
         "Macera",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-c2d7cc8c7",
-      "title": "Ajnabee - The Unknown",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
-      "categories": [
-        "Korku"
       ]
     },
     {
