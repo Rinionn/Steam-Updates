@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T05:32:17.590Z",
+  "generatedAt": "2026-08-08T06:22:33.875Z",
   "items": [
     {
       "id": "steam-news-9807480b3",
@@ -503,15 +503,6 @@
       ]
     },
     {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
-    },
-    {
       "id": "steam-news-d53c953a8",
       "title": "A Game About Penguins",
       "kind": "coming_soon",
@@ -525,6 +516,15 @@
         "Çok Oyunculu",
         "Tek Oyunculu"
       ]
+    },
+    {
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
     },
     {
       "id": "steam-news-ea47ef186",
