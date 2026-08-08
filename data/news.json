@@ -1,6 +1,52 @@
 {
-  "generatedAt": "2026-08-08T06:22:33.875Z",
+  "generatedAt": "2026-08-08T07:27:15.116Z",
   "items": [
+    {
+      "id": "steam-news-9b50ce307",
+      "title": "MISCHIEF MANDARIN",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4160340/MISCHIEF_MANDARIN/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4160340/6c52361ed2ad976cb249ff027d0857095061a741/capsule_231x87.jpg?t=1786173751",
+      "categories": [
+        "Macera",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-0a92588ea",
+      "title": "Cyberpunk SFX",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1465260/Cyberpunk_SFX/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1465260/458f495161a5a61e9773502d0863e10fbce7eb1a/capsule_231x87.jpg?t=1786173817",
+      "categories": [
+        "Macera",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-fe3bd8bb1",
+      "title": "A Nibble Tale",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4823670/A_Nibble_Tale/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823670/a007ce6cc36a666d7f32e4f5eb15b427b9f9dbba/capsule_231x87.jpg?t=1786172458",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-605301d30",
+      "title": "Penguin Quest",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3389490/Penguin_Quest/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3389490/7c5fbed114e68e4597c34f1154ff98d5cd70124e/capsule_231x87.jpg?t=1786170204",
+      "categories": [
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-9807480b3",
       "title": "天亮之后",
@@ -237,52 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-47a2008a4",
-      "title": "Dragonhold",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1510330/Dragonhold/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1510330/cdf9eed59b6c0fe182a544b6f758b89e198f2a4f/capsule_231x87.jpg?t=1786133714",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-ca25a11d8",
-      "title": "Glyphrune",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4957150/Glyphrune/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957150/7640e0db9bc1e1bb5a2b8a5741f90ad26b2fe907/capsule_231x87.jpg?t=1786131020",
-      "categories": [
-        "RPG",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-9084250b8",
-      "title": "Bobbitz",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4792630/Bobbitz/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4792630/8a2f10a7cc10cf7fb69a61a464fabf54c70a2719/capsule_231x87.jpg?t=1786128633",
-      "categories": []
-    },
-    {
-      "id": "steam-news-61312a533",
-      "title": "Cindervale Idle",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4966660/Cindervale_Idle/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4966660/acbffaf0e2835e8c18d85f25079e9c722bb633cc/capsule_231x87.jpg?t=1786128444",
-      "categories": [
-        "RPG",
-        "Gündelik",
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-0d8e9aec9",
       "title": "Pight",
       "kind": "coming_soon",
@@ -480,6 +480,17 @@
       ]
     },
     {
+      "id": "steam-news-c2d7cc8c7",
+      "title": "Ajnabee - The Unknown",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
       "id": "steam-news-57597808e",
       "title": "The Black Lily Blooms in Her Eyes",
       "kind": "coming_soon",
@@ -492,15 +503,13 @@
       ]
     },
     {
-      "id": "steam-news-c2d7cc8c7",
-      "title": "Ajnabee - The Unknown",
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
-      "categories": [
-        "Korku"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
     },
     {
       "id": "steam-news-d53c953a8",
@@ -516,15 +525,6 @@
         "Çok Oyunculu",
         "Tek Oyunculu"
       ]
-    },
-    {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
     },
     {
       "id": "steam-news-ea47ef186",
