@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-09T10:57:51.353Z",
+  "generatedAt": "2026-08-09T11:37:35.514Z",
   "items": [
+    {
+      "id": "steam-news-2a0fc64b2",
+      "title": "Samurai beat demons",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3791630/Samurai_beat_demons/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3791630/da3eccae8ea270159bd3c5a34b6b1851ae013e0d/capsule_231x87.jpg?t=1786273116",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-7f3efaab4",
       "title": "Animosity",
@@ -208,7 +220,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4961730/Accident_Investigator_Simulator_Black_Box/?snr=1_7_7_230_150_1",
       "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961730/3b80d49a9830b18e0b6b1256acd6f2777af90960/capsule_231x87.jpg?t=1786175899",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961730/e527631217dade28aa7c9812972b9324a1b33ca4/capsule_231x87.jpg?t=1786275381",
       "categories": [
         "Simülasyon"
       ]
@@ -255,20 +267,9 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4823670/A_Nibble_Tale/?snr=1_7_7_230_150_1",
       "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823670/a007ce6cc36a666d7f32e4f5eb15b427b9f9dbba/capsule_231x87.jpg?t=1786272729",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823670/a007ce6cc36a666d7f32e4f5eb15b427b9f9dbba/capsule_231x87.jpg?t=1786273396",
       "categories": [
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-605301d30",
-      "title": "Penguin Quest",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3389490/Penguin_Quest/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3389490/7c5fbed114e68e4597c34f1154ff98d5cd70124e/capsule_231x87.jpg?t=1786170204",
-      "categories": [
-        "Macera"
       ]
     },
     {
@@ -308,18 +309,6 @@
       ]
     },
     {
-      "id": "steam-news-780d5173a",
-      "title": "Samurai beat demons",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3791630/Samurai_beat_demons/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3791630/da3eccae8ea270159bd3c5a34b6b1851ae013e0d/capsule_231x87.jpg?t=1785222478",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-06a621676",
       "title": "Paper2Galgame",
       "kind": "coming_soon",
@@ -355,17 +344,6 @@
       ]
     },
     {
-      "id": "steam-news-78ddab0b9",
-      "title": "The Wraith Train: Illusory Domain",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-307a7493b",
       "title": "Kungfu Card",
       "kind": "coming_soon",
@@ -376,6 +354,17 @@
         "Bağımsız",
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-78ddab0b9",
+      "title": "The Wraith Train: Illusory Domain",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -551,6 +540,17 @@
         "Macera",
         "Simülasyon",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-65061b4e4",
+      "title": "Rampallians",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4363230/Rampallians/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4363230/f4ab4fef3063ceca130fbc1aa658f66c78d921e0/capsule_231x87.jpg?t=1784109017",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
