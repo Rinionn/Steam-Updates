@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-09T15:49:24.710Z",
+  "generatedAt": "2026-08-09T16:17:06.247Z",
   "items": [
+    {
+      "id": "steam-news-85c5dc21f",
+      "title": "Welcome to Desal",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4832660/Welcome_to_Desal/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4832660/fc0a66f1119fe16e07e196984018b2f4eeaf8797/capsule_231x87.jpg?t=1786291728",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-fa34017d9",
+      "title": "Paper2Galgame",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4537400/Paper2Galgame/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4537400/0d214d309770e60b652281e0482b87dbdbb7fc83/capsule_231x87.jpg?t=1786291547",
+      "categories": [
+        "Anime"
+      ]
+    },
     {
       "id": "steam-news-a9e7e65f0",
       "title": "100 Mystic Cats",
@@ -251,30 +274,6 @@
       ]
     },
     {
-      "id": "steam-news-b8fe7c3ed",
-      "title": "Trippy Plains",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4866640/Trippy_Plains/?snr=1_7_7_230_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4866640/22bc03c3e6525dc7ec163d2f53753b38a17b4ff5/capsule_231x87.jpg?t=1786179439",
-      "categories": [
-        "Simülasyon",
-        "Yarış",
-        "Spor"
-      ]
-    },
-    {
-      "id": "steam-news-533e5d9dc",
-      "title": "Accident Investigator Simulator: Black Box",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4961730/Accident_Investigator_Simulator_Black_Box/?snr=1_7_7_230_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961730/e527631217dade28aa7c9812972b9324a1b33ca4/capsule_231x87.jpg?t=1786275639",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-643cbc022",
       "title": "Playworlds",
       "kind": "coming_soon",
@@ -283,17 +282,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4911480/367851c9a2d2fad91f9ecc32cad47706708063ea/capsule_231x87.jpg?t=1785725532",
       "categories": [
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-06a621676",
-      "title": "Paper2Galgame",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4537400/Paper2Galgame/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4537400/0d214d309770e60b652281e0482b87dbdbb7fc83/capsule_231x87.jpg?t=1785963249",
-      "categories": [
-        "Anime"
       ]
     },
     {
@@ -553,6 +541,15 @@
         "Gündelik",
         "Strateji"
       ]
+    },
+    {
+      "id": "steam-news-a5d9815a7",
+      "title": "Backpack Boy",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2875150/Backpack_Boy/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2875150/capsule_231x87.jpg?t=1780268276",
+      "categories": []
     },
     {
       "id": "steam-news-c560bed11",
