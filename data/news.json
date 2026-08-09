@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-09T04:08:01.149Z",
+  "generatedAt": "2026-08-09T05:17:56.978Z",
   "items": [
+    {
+      "id": "steam-news-3937dffb7",
+      "title": "BIZ Helmsman",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4261850/BIZ_Helmsman/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4261850/e015635d7f2fc0cf86bedfd340b882d93aa64b5d/capsule_231x87.jpg?t=1786251995",
+      "categories": [
+        "Bağımsız",
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-d1aa3d3d0",
       "title": "BLUE SHIP",
@@ -265,18 +278,6 @@
       ]
     },
     {
-      "id": "steam-news-f8fab6889",
-      "title": "Lilim Clicker",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4071500/Lilim_Clicker/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4071500/55c1437cbc5a2b4fee55320f3ce943c5c1b4ccb0/capsule_231x87.jpg?t=1786153817",
-      "categories": [
-        "Gündelik",
-        "Anime"
-      ]
-    },
-    {
       "id": "steam-news-b0f773416",
       "title": "100 Mystic Cats",
       "kind": "coming_soon",
@@ -445,7 +446,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4985540/TASMON_Taskbar_Monsters/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985540/bf513f635e9d63b057875b2043a7e5d529e205a2/capsule_231x87.jpg?t=1785251721",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985540/bf513f635e9d63b057875b2043a7e5d529e205a2/capsule_231x87.jpg?t=1786250244",
       "categories": [
         "Gündelik",
         "RPG"
@@ -463,6 +464,17 @@
       ]
     },
     {
+      "id": "steam-news-c2d7cc8c7",
+      "title": "Ajnabee - The Unknown",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
       "id": "steam-news-57597808e",
       "title": "The Black Lily Blooms in Her Eyes",
       "kind": "coming_soon",
@@ -475,15 +487,13 @@
       ]
     },
     {
-      "id": "steam-news-c2d7cc8c7",
-      "title": "Ajnabee - The Unknown",
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
-      "categories": [
-        "Korku"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
     },
     {
       "id": "steam-news-d53c953a8",
@@ -499,15 +509,6 @@
         "Çok Oyunculu",
         "Tek Oyunculu"
       ]
-    },
-    {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
     },
     {
       "id": "steam-news-ea47ef186",
