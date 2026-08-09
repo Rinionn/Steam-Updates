@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-08-09T17:39:22.064Z",
+  "generatedAt": "2026-08-09T18:04:56.001Z",
   "items": [
+    {
+      "id": "steam-news-3491e3195",
+      "title": "Cloud Sculptor",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4101700/Cloud_Sculptor/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4101700/27665ddcad89276908a73b68a6026ec9b201ba04/capsule_231x87.jpg?t=1786297221",
+      "categories": []
+    },
     {
       "id": "steam-news-7ceddd906",
       "title": "Odynloc",
@@ -264,17 +273,6 @@
       ]
     },
     {
-      "id": "steam-news-38781b334",
-      "title": "Catetris",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4943170/Catetris/?snr=1_7_7_230_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943170/f2753a3e2d9b725a78edc2045e93a37aa69d404f/capsule_231x87.jpg?t=1786184386",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-b3e76dbb0",
       "title": "The Money Pit",
       "kind": "coming_soon",
@@ -533,21 +531,21 @@
       ]
     },
     {
-      "id": "steam-news-10e335366",
-      "title": "Hole Is Mine",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4508020/Hole_Is_Mine/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4508020/d02ef1382111799eb85dfb61f1d190eeb5caba99/capsule_231x87.jpg?t=1786261243",
-      "categories": []
-    },
-    {
       "id": "steam-news-a5d9815a7",
       "title": "Backpack Boy",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/2875150/Backpack_Boy/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2875150/capsule_231x87.jpg?t=1780268276",
+      "categories": []
+    },
+    {
+      "id": "steam-news-10e335366",
+      "title": "Hole Is Mine",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4508020/Hole_Is_Mine/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4508020/d02ef1382111799eb85dfb61f1d190eeb5caba99/capsule_231x87.jpg?t=1786261243",
       "categories": []
     },
     {
