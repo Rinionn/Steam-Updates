@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-09T21:54:13.041Z",
+  "generatedAt": "2026-08-09T22:24:33.860Z",
   "items": [
+    {
+      "id": "steam-news-4e325657f",
+      "title": "Case of 1980",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4914110/Case_of_1980/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4914110/c0e128ef2b442fc36a58b7d9fb1591da24a142da/capsule_231x87.jpg?t=1786312748",
+      "categories": [
+        "Korku",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-e70006edc",
       "title": "CHEATED",
@@ -259,17 +271,6 @@
       ]
     },
     {
-      "id": "steam-news-3f2ee34bb",
-      "title": "Birb Game",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3682550/Birb_Game/?snr=1_7_7_230_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3682550/650fc091f23a812bc75e256b6f1f648d07d76805/capsule_231x87.jpg?t=1786193497",
-      "categories": [
-        "Yarış"
-      ]
-    },
-    {
       "id": "steam-news-c2d7cc8c7",
       "title": "Ajnabee - The Unknown",
       "kind": "coming_soon",
@@ -279,6 +280,15 @@
       "categories": [
         "Korku"
       ]
+    },
+    {
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
     },
     {
       "id": "steam-news-d53c953a8",
@@ -294,15 +304,6 @@
         "Çok Oyunculu",
         "Tek Oyunculu"
       ]
-    },
-    {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
     },
     {
       "id": "steam-news-38c3fc507",
@@ -390,21 +391,21 @@
       ]
     },
     {
-      "id": "steam-news-10e335366",
-      "title": "Hole Is Mine",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4508020/Hole_Is_Mine/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4508020/d02ef1382111799eb85dfb61f1d190eeb5caba99/capsule_231x87.jpg?t=1786261243",
-      "categories": []
-    },
-    {
       "id": "steam-news-a5d9815a7",
       "title": "Backpack Boy",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/2875150/Backpack_Boy/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2875150/capsule_231x87.jpg?t=1780268276",
+      "categories": []
+    },
+    {
+      "id": "steam-news-10e335366",
+      "title": "Hole Is Mine",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4508020/Hole_Is_Mine/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4508020/d02ef1382111799eb85dfb61f1d190eeb5caba99/capsule_231x87.jpg?t=1786261243",
       "categories": []
     },
     {
@@ -454,14 +455,14 @@
       ]
     },
     {
-      "id": "steam-news-29d8d78ef",
-      "title": "Wrestling Classics: Olde Timey Pro Wrestling",
+      "id": "steam-news-545b459c4",
+      "title": "Pax Autocratica",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2074820/Wrestling_Classics_Olde_Timey_Pro_Wrestling/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/1067360/Pax_Autocratica/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2074820/9a55dd4b5bad33494ced6aba6673794607781afb/capsule_231x87.jpg?t=1785987292",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1067360/84425c82428a91fe38e283efbc6a7afedb1d0332/capsule_231x87.jpg?t=1786283279",
       "categories": [
-        "Spor"
+        "Bağımsız"
       ]
     },
     {
@@ -476,14 +477,14 @@
       ]
     },
     {
-      "id": "steam-news-545b459c4",
-      "title": "Pax Autocratica",
+      "id": "steam-news-29d8d78ef",
+      "title": "Wrestling Classics: Olde Timey Pro Wrestling",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1067360/Pax_Autocratica/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2074820/Wrestling_Classics_Olde_Timey_Pro_Wrestling/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1067360/84425c82428a91fe38e283efbc6a7afedb1d0332/capsule_231x87.jpg?t=1786283279",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2074820/9a55dd4b5bad33494ced6aba6673794607781afb/capsule_231x87.jpg?t=1785987292",
       "categories": [
-        "Bağımsız"
+        "Spor"
       ]
     },
     {
