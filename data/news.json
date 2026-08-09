@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-09T16:17:06.247Z",
+  "generatedAt": "2026-08-09T17:00:39.337Z",
   "items": [
+    {
+      "id": "steam-news-7ceddd906",
+      "title": "Odynloc",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4802730/Odynloc/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4802730/36260a4ebe30d73b9cf083379adfe8350dd8a96a/capsule_231x87.jpg?t=1786293505",
+      "categories": [
+        "Gündelik",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-85c5dc21f",
       "title": "Welcome to Desal",
@@ -260,28 +272,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943170/f2753a3e2d9b725a78edc2045e93a37aa69d404f/capsule_231x87.jpg?t=1786184386",
       "categories": [
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-8cec59566",
-      "title": "Coloring",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4678810/Coloring/?snr=1_7_7_230_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4678810/bce92485d25c17305f145dac41806ed22b7c27d1/capsule_231x87.jpg?t=1786180150",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-643cbc022",
-      "title": "Playworlds",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4911480/Playworlds/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4911480/367851c9a2d2fad91f9ecc32cad47706708063ea/capsule_231x87.jpg?t=1785725532",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -549,6 +539,15 @@
       "url": "https://store.steampowered.com/app/2875150/Backpack_Boy/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2875150/capsule_231x87.jpg?t=1780268276",
+      "categories": []
+    },
+    {
+      "id": "steam-news-10e335366",
+      "title": "Hole Is Mine",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4508020/Hole_Is_Mine/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4508020/d02ef1382111799eb85dfb61f1d190eeb5caba99/capsule_231x87.jpg?t=1786261243",
       "categories": []
     },
     {
