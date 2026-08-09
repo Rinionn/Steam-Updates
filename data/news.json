@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-08T23:47:21.058Z",
+  "generatedAt": "2026-08-09T00:38:03.955Z",
   "items": [
+    {
+      "id": "steam-news-d1aa3d3d0",
+      "title": "BLUE SHIP",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4980680/BLUE_SHIP/?snr=1_7_7_230_150_1",
+      "dateLabel": "8 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4980680/bb32b902269d31197f95ceabb674e2ab4ea3a660/capsule_231x87.jpg?t=1786234872",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-21c279f20",
       "title": "Velocrash",
@@ -266,17 +277,6 @@
       ]
     },
     {
-      "id": "steam-news-97c72faaa",
-      "title": "Windborne",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4947380/Windborne/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4947380/d68ceb38487075b9c0c513a33c48989a31f87441/capsule_231x87.jpg?t=1786153204",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-b0f773416",
       "title": "100 Mystic Cats",
       "kind": "coming_soon",
@@ -360,6 +360,17 @@
       ]
     },
     {
+      "id": "steam-news-78ddab0b9",
+      "title": "The Wraith Train: Illusory Domain",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
       "id": "steam-news-307a7493b",
       "title": "Kungfu Card",
       "kind": "coming_soon",
@@ -370,17 +381,6 @@
         "Bağımsız",
         "Strateji",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-78ddab0b9",
-      "title": "The Wraith Train: Illusory Domain",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4920100/The_Wraith_Train_Illusory_Domain/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4920100/a198a1b347c46ad5dee634fcc812751cb4f5e367/capsule_231x87.jpg?t=1785992700",
-      "categories": [
-        "Macera"
       ]
     },
     {
