@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-09T14:43:44.829Z",
+  "generatedAt": "2026-08-09T15:14:18.479Z",
   "items": [
+    {
+      "id": "steam-news-a9e7e65f0",
+      "title": "100 Mystic Cats",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4326430/100_Mystic_Cats/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4326430/ef8a18652ea7fe708aa2a9ed205bb75c5a96b9a6/capsule_231x87.jpg?t=1786287753",
+      "categories": [
+        "Gündelik",
+        "Oynaması Ücretsiz"
+      ]
+    },
+    {
+      "id": "steam-news-3cb9b1a23",
+      "title": "The Black Lily Blooms in Her Eyes",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4851510/The_Black_Lily_Blooms_in_Her_Eyes/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4851510/ad4b9eac578428013b7a91d6c1ec1900c97448bb/capsule_231x87.jpg?t=1786287705",
+      "categories": [
+        "Macera",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-01f5bff16",
       "title": "zunda8",
@@ -251,55 +275,6 @@
       ]
     },
     {
-      "id": "steam-news-5ff02c212",
-      "title": "日本地図 都市パズル",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4966740/_/?snr=1_7_7_230_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4966740/14475647e53289a842579a26701eed96177dac06/capsule_231x87.jpg?t=1786174583",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-9b50ce307",
-      "title": "MISCHIEF MANDARIN",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4160340/MISCHIEF_MANDARIN/?snr=1_7_7_230_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4160340/6c52361ed2ad976cb249ff027d0857095061a741/capsule_231x87.jpg?t=1786173751",
-      "categories": [
-        "Macera",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-b0f773416",
-      "title": "100 Mystic Cats",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4326430/100_Mystic_Cats/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4326430/ef8a18652ea7fe708aa2a9ed205bb75c5a96b9a6/capsule_231x87.jpg?t=1786118912",
-      "categories": [
-        "Gündelik",
-        "Oynaması Ücretsiz"
-      ]
-    },
-    {
-      "id": "steam-news-3314521dd",
-      "title": "Chicken_Run",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4901590/Chicken_Run/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4901590/e517e4ea89c655cd2b22740ac2aab71a31b1336b/capsule_231x87.jpg?t=1785162511",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-643cbc022",
       "title": "Playworlds",
       "kind": "coming_soon",
@@ -460,16 +435,13 @@
       ]
     },
     {
-      "id": "steam-news-57597808e",
-      "title": "The Black Lily Blooms in Her Eyes",
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4851510/The_Black_Lily_Blooms_in_Her_Eyes/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4851510/ad4b9eac578428013b7a91d6c1ec1900c97448bb/capsule_231x87.jpg?t=1786264304",
-      "categories": [
-        "Macera",
-        "Strateji"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
     },
     {
       "id": "steam-news-d53c953a8",
@@ -485,15 +457,6 @@
         "Çok Oyunculu",
         "Tek Oyunculu"
       ]
-    },
-    {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
     },
     {
       "id": "steam-news-ea47ef186",
@@ -553,6 +516,42 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4363230/f4ab4fef3063ceca130fbc1aa658f66c78d921e0/capsule_231x87.jpg?t=1784109017",
       "categories": [
         "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-68babc45f",
+      "title": "Michi-Suji Puzzle: Michi Connect",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4443340/MichiSuji_Puzzle_Michi_Connect/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4443340/22938c2edd27a461012ac875bafe6ad8e05ab7ae/capsule_231x87.jpg?t=1786199997",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-38511ac6a",
+      "title": "Tale of the Bullet Knight",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3709990/Tale_of_the_Bullet_Knight/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3709990/2bf150f25cdd326c74acff4ba41b748af69cc53a/capsule_231x87.jpg?t=1786174555",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-88f583855",
+      "title": "Desktop Pinforge",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4498210/Desktop_Pinforge/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4498210/a5bd0716353068c345e5d2aba839447d2e4cd938/capsule_231x87.jpg?t=1784058359",
+      "categories": [
+        "Gündelik",
+        "Strateji"
       ]
     },
     {
