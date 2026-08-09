@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-09T18:56:40.067Z",
+  "generatedAt": "2026-08-09T19:40:55.976Z",
   "items": [
+    {
+      "id": "steam-news-21e3ac970",
+      "title": "The Dungeon Of Horror",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4102050/The_Dungeon_Of_Horror/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4102050/efac0a3d8ee31297cf3af8a711d648c7b7b58b29/capsule_231x87.jpg?t=1786302078",
+      "categories": [
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-3491e3195",
       "title": "Cloud Sculptor",
@@ -261,18 +272,6 @@
       ]
     },
     {
-      "id": "steam-news-f8b8c4df9",
-      "title": "Not a bug",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4876190/Not_a_bug/?snr=1_7_7_230_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4876190/ce3e90558b2416bdf803943f12a2c6c8808ae6d8/capsule_231x87.jpg?t=1786197852",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-b3e76dbb0",
       "title": "The Money Pit",
       "kind": "coming_soon",
@@ -411,6 +410,15 @@
       ]
     },
     {
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
+    },
+    {
       "id": "steam-news-d53c953a8",
       "title": "A Game About Penguins",
       "kind": "coming_soon",
@@ -423,26 +431,6 @@
         "Spor",
         "Çok Oyunculu",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
-    },
-    {
-      "id": "steam-news-ea47ef186",
-      "title": "The Dungeon Of Horror",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4102050/The_Dungeon_Of_Horror/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4102050/efac0a3d8ee31297cf3af8a711d648c7b7b58b29/capsule_231x87.jpg?t=1785316341",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -531,6 +519,15 @@
       ]
     },
     {
+      "id": "steam-news-10e335366",
+      "title": "Hole Is Mine",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4508020/Hole_Is_Mine/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4508020/d02ef1382111799eb85dfb61f1d190eeb5caba99/capsule_231x87.jpg?t=1786261243",
+      "categories": []
+    },
+    {
       "id": "steam-news-a5d9815a7",
       "title": "Backpack Boy",
       "kind": "coming_soon",
@@ -540,13 +537,15 @@
       "categories": []
     },
     {
-      "id": "steam-news-10e335366",
-      "title": "Hole Is Mine",
+      "id": "steam-news-fe121f08e",
+      "title": "BookStore Simulator",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4508020/Hole_Is_Mine/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4247730/BookStore_Simulator/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4508020/d02ef1382111799eb85dfb61f1d190eeb5caba99/capsule_231x87.jpg?t=1786261243",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4247730/ebce04a174c3c666479f7eb24fc49a7af68ff199/capsule_231x87.jpg?t=1785963734",
+      "categories": [
+        "Simülasyon"
+      ]
     },
     {
       "id": "steam-news-c560bed11",
