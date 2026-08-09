@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-09T11:37:35.514Z",
+  "generatedAt": "2026-08-09T12:02:35.152Z",
   "items": [
+    {
+      "id": "steam-news-503f656c8",
+      "title": "Void Miner",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4091470/Void_Miner/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4091470/1b2f59060ca3067b0961ae581f6fab09ea15973d/capsule_231x87.jpg?t=1786275921",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-2a0fc64b2",
       "title": "Samurai beat demons",
@@ -220,7 +232,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4961730/Accident_Investigator_Simulator_Black_Box/?snr=1_7_7_230_150_1",
       "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961730/e527631217dade28aa7c9812972b9324a1b33ca4/capsule_231x87.jpg?t=1786275381",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961730/e527631217dade28aa7c9812972b9324a1b33ca4/capsule_231x87.jpg?t=1786275639",
       "categories": [
         "Simülasyon"
       ]
@@ -258,17 +270,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1465260/458f495161a5a61e9773502d0863e10fbce7eb1a/capsule_231x87.jpg?t=1786173817",
       "categories": [
         "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-fe3bd8bb1",
-      "title": "A Nibble Tale",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4823670/A_Nibble_Tale/?snr=1_7_7_230_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823670/a007ce6cc36a666d7f32e4f5eb15b427b9f9dbba/capsule_231x87.jpg?t=1786273396",
-      "categories": [
         "Aksiyon"
       ]
     },
@@ -447,17 +448,6 @@
       ]
     },
     {
-      "id": "steam-news-c2d7cc8c7",
-      "title": "Ajnabee - The Unknown",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-57597808e",
       "title": "The Black Lily Blooms in Her Eyes",
       "kind": "coming_soon",
@@ -467,6 +457,17 @@
       "categories": [
         "Macera",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-c2d7cc8c7",
+      "title": "Ajnabee - The Unknown",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
+      "categories": [
+        "Korku"
       ]
     },
     {
