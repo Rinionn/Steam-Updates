@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-09T22:59:02.288Z",
+  "generatedAt": "2026-08-09T23:39:44.309Z",
   "items": [
+    {
+      "id": "steam-news-3c529f098",
+      "title": "MUGI",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4675230/MUGI/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4675230/5ef2dc29a0df8343779fa2457c0dba9d3fd0fd83/capsule_231x87.jpg?t=1786318327",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-bf85327bc",
       "title": "Cyber Spartan",
@@ -263,17 +274,6 @@
       ]
     },
     {
-      "id": "steam-news-0034a9f48",
-      "title": "Pight",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2682270/Pight/?snr=1_7_7_230_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2682270/a7bcf18cbc770874c11047b253a6b3fc912711ab/capsule_231x87.jpg?t=1786208364",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-c2d7cc8c7",
       "title": "Ajnabee - The Unknown",
       "kind": "coming_soon",
@@ -469,17 +469,6 @@
       ]
     },
     {
-      "id": "steam-news-a6df1d688",
-      "title": "T.W.I.R.L.",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4458840/TWIRL/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4458840/6968ef4f959c7a5b981c395b9d11a5c29050e4d4/capsule_231x87.jpg?t=1785715746",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-545b459c4",
       "title": "Pax Autocratica",
       "kind": "coming_soon",
@@ -491,14 +480,14 @@
       ]
     },
     {
-      "id": "steam-news-103fc840d",
-      "title": "Homeostasis",
+      "id": "steam-news-a6df1d688",
+      "title": "T.W.I.R.L.",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3748480/Homeostasis/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4458840/TWIRL/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3748480/df0b189f4ba733e4b0f7a76624fc1c106ee9d924/capsule_231x87.jpg?t=1782581437",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4458840/6968ef4f959c7a5b981c395b9d11a5c29050e4d4/capsule_231x87.jpg?t=1785715746",
       "categories": [
-        "Simülasyon"
+        "Korku"
       ]
     },
     {
@@ -516,6 +505,17 @@
       ]
     },
     {
+      "id": "steam-news-103fc840d",
+      "title": "Homeostasis",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3748480/Homeostasis/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3748480/df0b189f4ba733e4b0f7a76624fc1c106ee9d924/capsule_231x87.jpg?t=1782581437",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-55b67cd7f",
       "title": "Cult of PiN",
       "kind": "coming_soon",
@@ -523,18 +523,6 @@
       "dateLabel": "10 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3144340/dfa09c772e4dbc793d9d0fa0bcc832bd9e35f437/capsule_231x87.jpg?t=1786121051",
       "categories": []
-    },
-    {
-      "id": "steam-news-6c02ac7cf",
-      "title": "Goblin and Recipes: Match-3 Adventure",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4939700/Goblin_and_Recipes_Match3_Adventure/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4939700/a555be95aedb051a29d4ba3cb8fec01a58f41c97/capsule_231x87.jpg?t=1785134701",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
     },
     {
       "id": "steam-news-9dd90e8c5",
@@ -546,6 +534,18 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-3c5a83831",
+      "title": "Circulo",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4908520/Circulo/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908520/8d1ad99fb9e51a6e582e408b70da9b5a38729a18/capsule_231x87.jpg?t=1785257987",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
       ]
     },
     {
