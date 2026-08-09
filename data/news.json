@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-08-09T08:55:53.059Z",
+  "generatedAt": "2026-08-09T09:50:00.596Z",
   "items": [
+    {
+      "id": "steam-news-7f3efaab4",
+      "title": "Animosity",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/798680/Animosity/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/798680/7f7ace10b51ff9bd75c8a02ad37b7b2f93662787/capsule_231x87.jpg?t=1786266440",
+      "categories": []
+    },
+    {
+      "id": "steam-news-1d17ce5d4",
+      "title": "Matchstick: Cosmic Flame",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3182950/Matchstick_Cosmic_Flame/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3182950/87ccc550699d1031f1bd3bc58918f59a11c1becc/capsule_231x87.jpg?t=1786266174",
+      "categories": [
+        "Bağımsız",
+        "Korku"
+      ]
+    },
     {
       "id": "steam-news-c61216904",
       "title": "The War Machine",
@@ -16,7 +37,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4596230/Flavors_of_Spain/?snr=1_7_7_230_150_1",
       "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4596230/d06578172ecb8c62aff528df1a1fc82bf285afb7/capsule_231x87.jpg?t=1786265418",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4596230/d06578172ecb8c62aff528df1a1fc82bf285afb7/capsule_231x87.jpg?t=1786265755",
       "categories": [
         "Strateji",
         "Gündelik"
@@ -251,29 +272,6 @@
       ]
     },
     {
-      "id": "steam-news-9807480b3",
-      "title": "天亮之后",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4838500/_/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4838500/2feb45e461b1681a632504a78e4cf24248d327be/capsule_231x87.jpg?t=1786225196",
-      "categories": [
-        "Korku",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-9249b6c7d",
-      "title": "World Climate Lab",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4875150/World_Climate_Lab/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4875150/f11179b349f788e2e0f4f5cf553bc6097da52cbd/capsule_231x87.jpg?t=1786163624",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-b0f773416",
       "title": "100 Mystic Cats",
       "kind": "coming_soon",
@@ -460,17 +458,6 @@
       ]
     },
     {
-      "id": "steam-news-c2d7cc8c7",
-      "title": "Ajnabee - The Unknown",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-57597808e",
       "title": "The Black Lily Blooms in Her Eyes",
       "kind": "coming_soon",
@@ -480,6 +467,17 @@
       "categories": [
         "Macera",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-c2d7cc8c7",
+      "title": "Ajnabee - The Unknown",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
+      "categories": [
+        "Korku"
       ]
     },
     {
