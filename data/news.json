@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-10T18:27:18.643Z",
+  "generatedAt": "2026-08-10T19:34:48.950Z",
   "items": [
+    {
+      "id": "steam-news-0ce55811f",
+      "title": "Yuhtzee",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4936130/Yuhtzee/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4936130/7c24e2a6d9b86f952e984b3f442edc8842e28a8e/capsule_231x87.jpg?t=1786389845",
+      "categories": [
+        "Gündelik",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-fa9b53f61",
+      "title": "The Crossroads",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4945670/The_Crossroads/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4945670/7e91422b3e8c01f634ace262528e64bdf548674d/capsule_231x87.jpg?t=1786389718",
+      "categories": [
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-e289650b8",
+      "title": "SDETA - SUPER DEATH ENDER THE AVENGER",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4941550/SDETA__SUPER_DEATH_ENDER_THE_AVENGER/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4941550/cd9541921830f7a31be11bba2c21fd0e37b2af4b/capsule_231x87.jpg?t=1786387751",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-e151f41b3",
       "title": "Pier Pals",
@@ -31,7 +66,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/992840/Car_Wash_Simulator/?snr=1_7_7_230_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/992840/0bdc4d4932ecb31fe297a84a3aa90bb64f063011/capsule_231x87.jpg?t=1786385404",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/992840/0bdc4d4932ecb31fe297a84a3aa90bb64f063011/capsule_231x87.jpg?t=1786384259",
       "categories": [
         "Bağımsız",
         "Gündelik",
@@ -186,7 +221,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3957050/Ballatory/?snr=1_7_7_230_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3957050/f2a76440b71cab8fe74eb28d39c335fadf29c7b2/capsule_231x87_alt_assets_1.jpg?t=1786380952",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3957050/f2a76440b71cab8fe74eb28d39c335fadf29c7b2/capsule_231x87_alt_assets_1.jpg?t=1786387776",
       "categories": [
         "Gündelik"
       ]
@@ -249,50 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-371fff59e",
-      "title": "Dead Broke",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4963970/Dead_Broke/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963970/84f091e9aa1648d85c260414c964de32662eceee/capsule_231x87.jpg?t=1786374446",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-ca894b0c9",
-      "title": "Pax Autocratica",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1067360/Pax_Autocratica/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1067360/84425c82428a91fe38e283efbc6a7afedb1d0332/capsule_231x87.jpg?t=1786382900",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-5939583d7",
-      "title": "MEGAKO☆PUNCH!",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4574890/MEGAKOPUNCH/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4574890/93ee0ab5c88d69a3434a85e0cb8bc02a5e3d28a1/capsule_231x87.jpg?t=1786374033",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-ff619700d",
-      "title": "Dominocalypse",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4245340/Dominocalypse/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4245340/501e14fd41a9ac5c0b036b0e0ba92edf9998a6ae/capsule_231x87.jpg?t=1786135174",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-731887771",
       "title": "Just Anomaly: Hospital",
       "kind": "coming_soon",
@@ -318,17 +309,6 @@
       ]
     },
     {
-      "id": "steam-news-132cf63f6",
-      "title": "The Sculptor",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4187850/The_Sculptor/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4187850/8608c5e6d2d1fc9cbc31a6dbe4bec05528de7cfb/capsule_231x87.jpg?t=1784512406",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-a731aa01c",
       "title": "Gob Loggin'",
       "kind": "coming_soon",
@@ -338,6 +318,17 @@
       "categories": [
         "Yarış",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-132cf63f6",
+      "title": "The Sculptor",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4187850/The_Sculptor/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4187850/8608c5e6d2d1fc9cbc31a6dbe4bec05528de7cfb/capsule_231x87.jpg?t=1784512406",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -566,6 +557,17 @@
       "url": "https://store.steampowered.com/app/4625630/Dune_War/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625630/2360c77d65a3b28512374a968441fa268fa7683b/capsule_231x87.jpg?t=1785452308",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-5d38900f9",
+      "title": "Runerock Arena",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3855600/Runerock_Arena/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3855600/5662e10407bdba4f97f285fa62b086d633218084/capsule_231x87.jpg?t=1785179142",
       "categories": [
         "Strateji"
       ]
