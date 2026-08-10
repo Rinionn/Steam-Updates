@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-10T23:21:47.213Z",
+  "generatedAt": "2026-08-10T23:57:09.251Z",
   "items": [
+    {
+      "id": "steam-news-6fc5338bb",
+      "title": "Penko Vox: Japanese",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4836870/Penko_Vox_Japanese/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836870/80f060cc6159e54b670716e23a6eed61a98219e2/capsule_231x87.jpg?t=1786406009",
+      "categories": [
+        "Gündelik",
+        "RPG",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-fb3a0bd61",
       "title": "Rooster Booster 3D",
@@ -33,7 +46,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3809920/Wicked_Little_Witch/?snr=1_7_7_230_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3809920/bf4b576e7852d8da847709d65cc70b5ef85f4271/capsule_231x87.jpg?t=1786402259",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3809920/bf4b576e7852d8da847709d65cc70b5ef85f4271/capsule_231x87.jpg?t=1786404689",
       "categories": [
         "Gündelik",
         "Aksiyon"
@@ -45,7 +58,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4512180/Vivid_Intrusion/?snr=1_7_7_230_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4512180/655887a433f83e1d1a5c463007cfea191dfd7024/capsule_231x87.jpg?t=1786400646",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4512180/655887a433f83e1d1a5c463007cfea191dfd7024/capsule_231x87.jpg?t=1786404573",
       "categories": []
     },
     {
@@ -280,17 +293,6 @@
       ]
     },
     {
-      "id": "steam-news-764410203",
-      "title": "The Underground Press",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4637060/The_Underground_Press/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4637060/1cd715fd079cc18332f7dae521c4a77d2249c8a2/capsule_231x87.jpg?t=1786381282",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-305b562b0",
       "title": "Depths of Providence",
       "kind": "coming_soon",
@@ -409,17 +411,6 @@
       ]
     },
     {
-      "id": "steam-news-5d38900f9",
-      "title": "Runerock Arena",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3855600/Runerock_Arena/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3855600/5662e10407bdba4f97f285fa62b086d633218084/capsule_231x87.jpg?t=1785179142",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-89c301c69",
       "title": "Meat Grinder: Hotdog Simulator",
       "kind": "coming_soon",
@@ -429,6 +420,17 @@
       "categories": [
         "Macera",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-5d38900f9",
+      "title": "Runerock Arena",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3855600/Runerock_Arena/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3855600/5662e10407bdba4f97f285fa62b086d633218084/capsule_231x87.jpg?t=1785179142",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -465,17 +467,6 @@
       ]
     },
     {
-      "id": "steam-news-f6e8be844",
-      "title": "Sente",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1005180/Sente/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1005180/f3acd0e50d8f45b9878706e7912e089173e6dfca/capsule_231x87.jpg?t=1786219151",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-45f647102",
       "title": "Farming Incremental But With Guns",
       "kind": "coming_soon",
@@ -499,6 +490,17 @@
       ]
     },
     {
+      "id": "steam-news-f6e8be844",
+      "title": "Sente",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1005180/Sente/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1005180/f3acd0e50d8f45b9878706e7912e089173e6dfca/capsule_231x87.jpg?t=1786219151",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-adadfde6a",
       "title": "Project Looking Glass",
       "kind": "coming_soon",
@@ -515,26 +517,6 @@
       "dateLabel": "11 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4341950/2ec3fb1cdfa98940c33f00f7bc4bb72aa26e04d9/capsule_231x87.jpg?t=1786351760",
       "categories": []
-    },
-    {
-      "id": "steam-news-d47af3066",
-      "title": "Royalty Free-For-All",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3176720/Royalty_FreeForAll/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3176720/6354f60fad5a28d9647734aeca3412afe76882d1/capsule_231x87.jpg?t=1786380600",
-      "categories": []
-    },
-    {
-      "id": "steam-news-d5851c468",
-      "title": "Echoes of Mystralia",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/974480/Echoes_of_Mystralia/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/974480/169a2b21996d7cb07198c81caee73e57dec80248/capsule_231x87.jpg?t=1786387434",
-      "categories": [
-        "Bağımsız"
-      ]
     },
     {
       "id": "steam-news-42b9a5949",
@@ -558,6 +540,26 @@
         "RPG",
         "Strateji"
       ]
+    },
+    {
+      "id": "steam-news-d5851c468",
+      "title": "Echoes of Mystralia",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/974480/Echoes_of_Mystralia/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/974480/169a2b21996d7cb07198c81caee73e57dec80248/capsule_231x87.jpg?t=1786387434",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-d47af3066",
+      "title": "Royalty Free-For-All",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3176720/Royalty_FreeForAll/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3176720/6354f60fad5a28d9647734aeca3412afe76882d1/capsule_231x87.jpg?t=1786405951",
+      "categories": []
     },
     {
       "id": "steam-news-c560bed11",
