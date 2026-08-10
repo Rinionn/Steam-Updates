@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-10T05:50:43.436Z",
+  "generatedAt": "2026-08-10T07:00:59.647Z",
   "items": [
+    {
+      "id": "steam-news-8cc21eef3",
+      "title": "DISCIPLINE",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4951900/DISCIPLINE/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951900/a22c1330ed4718e3c3cefe53d492d307b0350a67/capsule_231x87.jpg?t=1786342609",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4594cbe00",
+      "title": "Bit Breaker",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4190000/Bit_Breaker/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4190000/28598f9beb1ea9226aaf68f85f5b581242fe1aaf/capsule_231x87.jpg?t=1786344941",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-97e666ad8",
       "title": "Witness the Dark - Episode 1 - Bloody Burger",
@@ -252,40 +274,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-c1f589d73",
-      "title": "Flavors of Spain",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4596230/Flavors_of_Spain/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4596230/d06578172ecb8c62aff528df1a1fc82bf285afb7/capsule_231x87.jpg?t=1786265755",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-1028c91e5",
-      "title": "Graveyard Shift",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1650820/Graveyard_Shift/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1650820/capsule_231x87.jpg?t=1786259784",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-c2d7cc8c7",
-      "title": "Ajnabee - The Unknown",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4259690/Ajnabee__The_Unknown/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259690/fc0f01e5c7d2d9c82b0105e3e944b4f5470413b9/capsule_231x87.jpg?t=1785934594",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-bcd9dcd0e",
       "title": "UNHUMAN",
       "kind": "coming_soon",
@@ -409,7 +397,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4508020/Hole_Is_Mine/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4508020/d02ef1382111799eb85dfb61f1d190eeb5caba99/capsule_231x87.jpg?t=1786261243",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4508020/d02ef1382111799eb85dfb61f1d190eeb5caba99/capsule_231x87.jpg?t=1786342122",
       "categories": []
     },
     {
@@ -526,18 +514,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-6c02ac7cf",
-      "title": "Goblin and Recipes: Match-3 Adventure",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4939700/Goblin_and_Recipes_Match3_Adventure/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4939700/a555be95aedb051a29d4ba3cb8fec01a58f41c97/capsule_231x87.jpg?t=1785134701",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-9dd90e8c5",
       "title": "Closed Circuit: Recursive Idle",
       "kind": "coming_soon",
@@ -547,6 +523,29 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-1419e26c0",
+      "title": "Horse Magnifier: The Full Horse",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4585340/Horse_Magnifier_The_Full_Horse/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4585340/9f91d8e2ce6f06c845eb3438a1905ddd46364a18/capsule_231x87.jpg?t=1786209561",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-c46c95c77",
+      "title": "Ballatory",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3957050/Ballatory/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3957050/a4515f53a8dc650dfa1e2a34ad580537918ec144/capsule_231x87.jpg?t=1785731306",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
