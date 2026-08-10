@@ -1,13 +1,51 @@
 {
-  "generatedAt": "2026-08-10T17:31:16.309Z",
+  "generatedAt": "2026-08-10T18:27:18.643Z",
   "items": [
+    {
+      "id": "steam-news-e151f41b3",
+      "title": "Pier Pals",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4643120/Pier_Pals/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4643120/0712b532a03aa721b7e544d25f784eef98a9750a/capsule_231x87.jpg?t=1786386069",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-2c7bea51a",
+      "title": "Bottle Cracks",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3982830/Bottle_Cracks/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3982830/f97aa25b96257203ae0f5255cd31d5b8ff2ab120/capsule_231x87.jpg?t=1786384804",
+      "categories": [
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-2391ac9ee",
+      "title": "Car Wash Simulator",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/992840/Car_Wash_Simulator/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/992840/0bdc4d4932ecb31fe297a84a3aa90bb64f063011/capsule_231x87.jpg?t=1786385404",
+      "categories": [
+        "Bağımsız",
+        "Gündelik",
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-67838532c",
       "title": "The Severed Gods",
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3755930/The_Severed_Gods/?snr=1_7_7_230_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3755930/6ba978ce4b30000f8991dea43acdec8d0e1fe5b6/capsule_231x87.jpg?t=1786381689",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3755930/6ba978ce4b30000f8991dea43acdec8d0e1fe5b6/capsule_231x87.jpg?t=1786384605",
       "categories": [
         "Bağımsız",
         "RPG",
@@ -69,7 +107,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4195910/Hamster_Ballers/?snr=1_7_7_230_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195910/fae0538ed06055a5449d4b28ef7bea09c0ac9b74/capsule_231x87.jpg?t=1786381296",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195910/fae0538ed06055a5449d4b28ef7bea09c0ac9b74/capsule_231x87.jpg?t=1786384672",
       "categories": [
         "Gündelik"
       ]
@@ -244,50 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-8644f825b",
-      "title": "RUNT",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4141350/RUNT/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4141350/02caf40d3ed27ef522bad5ebacbfc9e5d32b0bd1/capsule_231x87.jpg?t=1786373738",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-144c2dc47",
-      "title": "PhotoBricks",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4539910/PhotoBricks/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4539910/25018b5b10947ebb1c0c46947af527c2b739905a/capsule_231x87.jpg?t=1786373644",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-41d89ff04",
-      "title": "The Lady with the Dog",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4895940/The_Lady_with_the_Dog/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4895940/cf5842e99ecaac3959000b2062e2355e138b175d/capsule_231x87.jpg?t=1786370830",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-8f0f8ee0e",
-      "title": "Bottle Cracks",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3982830/Bottle_Cracks/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3982830/f97aa25b96257203ae0f5255cd31d5b8ff2ab120/capsule_231x87.jpg?t=1786377180",
-      "categories": [
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-ff619700d",
       "title": "Dominocalypse",
       "kind": "coming_soon",
@@ -335,18 +329,6 @@
       ]
     },
     {
-      "id": "steam-news-0010aca21",
-      "title": "Guilds of Mountgate",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4670220/Guilds_of_Mountgate/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4670220/18d1c33863ba8a01891a562e6dccffaf7f9f5438/capsule_231x87.jpg?t=1785864112",
-      "categories": [
-        "Bağımsız",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-a731aa01c",
       "title": "Gob Loggin'",
       "kind": "coming_soon",
@@ -356,6 +338,18 @@
       "categories": [
         "Yarış",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-0010aca21",
+      "title": "Guilds of Mountgate",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4670220/Guilds_of_Mountgate/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4670220/18d1c33863ba8a01891a562e6dccffaf7f9f5438/capsule_231x87.jpg?t=1785864112",
+      "categories": [
+        "Bağımsız",
+        "RPG"
       ]
     },
     {
@@ -562,6 +556,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3833230/6bf61cd3869c99d37f11207e6e1034302c71ea42/capsule_231x87.jpg?t=1784841900",
       "categories": [
         "Spor",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-05a32f7b5",
+      "title": "Dune War",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4625630/Dune_War/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625630/2360c77d65a3b28512374a968441fa268fa7683b/capsule_231x87.jpg?t=1785452308",
+      "categories": [
         "Strateji"
       ]
     },
