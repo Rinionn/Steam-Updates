@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-10T21:06:59.633Z",
+  "generatedAt": "2026-08-10T21:57:41.503Z",
   "items": [
+    {
+      "id": "steam-news-310935ec1",
+      "title": "Blind Rage",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4251330/Blind_Rage/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4251330/96b5e137c91cff996baad8e1a7c1d9f96a0db999/capsule_231x87.jpg?t=1786396857",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-69170b7b6",
       "title": "Gravity Grove",
@@ -149,17 +162,6 @@
       ]
     },
     {
-      "id": "steam-news-fbeba9c25",
-      "title": "Hamster Ballers",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4195910/Hamster_Ballers/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195910/fae0538ed06055a5449d4b28ef7bea09c0ac9b74/capsule_231x87.jpg?t=1786384672",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-b0eb12738",
       "title": "Tower of Scherbenmark",
       "kind": "new_release",
@@ -169,6 +171,17 @@
       "categories": [
         "RPG",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-fbeba9c25",
+      "title": "Hamster Ballers",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4195910/Hamster_Ballers/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195910/fae0538ed06055a5449d4b28ef7bea09c0ac9b74/capsule_231x87.jpg?t=1786384672",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -269,20 +282,9 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4498210/Desktop_Pinforge/?snr=1_7_7_230_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4498210/a5bd0716353068c345e5d2aba839447d2e4cd938/capsule_231x87.jpg?t=1786391024",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4498210/a5bd0716353068c345e5d2aba839447d2e4cd938/capsule_231x87.jpg?t=1786398802",
       "categories": [
         "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-9c40fecac",
-      "title": "River Devil/河牌恶魔",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4942900/River_Devil/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942900/7f9550ee243e3bbbe87671c1cea63d65ea94c58d/capsule_231x87.jpg?t=1786377235",
-      "categories": [
         "Strateji"
       ]
     },
@@ -394,14 +396,15 @@
       ]
     },
     {
-      "id": "steam-news-05a32f7b5",
-      "title": "Dune War",
+      "id": "steam-news-89c301c69",
+      "title": "Meat Grinder: Hotdog Simulator",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4625630/Dune_War/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3994680/Meat_Grinder_Hotdog_Simulator/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625630/2360c77d65a3b28512374a968441fa268fa7683b/capsule_231x87.jpg?t=1785452308",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994680/6d59a4b8bb5f6f6aa76cc8381a480bd8d752625b/capsule_231x87.jpg?t=1786285923",
       "categories": [
-        "Strateji"
+        "Macera",
+        "Simülasyon"
       ]
     },
     {
@@ -416,15 +419,14 @@
       ]
     },
     {
-      "id": "steam-news-89c301c69",
-      "title": "Meat Grinder: Hotdog Simulator",
+      "id": "steam-news-05a32f7b5",
+      "title": "Dune War",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3994680/Meat_Grinder_Hotdog_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4625630/Dune_War/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994680/6d59a4b8bb5f6f6aa76cc8381a480bd8d752625b/capsule_231x87.jpg?t=1786285923",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625630/2360c77d65a3b28512374a968441fa268fa7683b/capsule_231x87.jpg?t=1785452308",
       "categories": [
-        "Macera",
-        "Simülasyon"
+        "Strateji"
       ]
     },
     {
@@ -436,6 +438,40 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4652030/435058f267d760606760dab6f9a64678981a2db3/capsule_231x87.jpg?t=1780833247",
       "categories": [
         "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-f6e8be844",
+      "title": "Sente",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1005180/Sente/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1005180/f3acd0e50d8f45b9878706e7912e089173e6dfca/capsule_231x87.jpg?t=1786219151",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-17f563072",
+      "title": "Landscaper Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3959530/Landscaper_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3959530/5c553b891dbae1f64494e6a675aadd061f33bc2a/capsule_231x87.jpg?t=1786389974",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-45f647102",
+      "title": "Farming Incremental But With Guns",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4651120/Farming_Incremental_But_With_Guns/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4651120/a9349fc5471284364ff8497ca8bd1ad8f5c6c178/capsule_231x87.jpg?t=1785361975",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -458,40 +494,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4993410/00981e04a278b7ad7cb22129e08cb126259a6144/capsule_231x87.jpg?t=1786106636",
       "categories": [
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-f6e8be844",
-      "title": "Sente",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1005180/Sente/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1005180/f3acd0e50d8f45b9878706e7912e089173e6dfca/capsule_231x87.jpg?t=1786219151",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-45f647102",
-      "title": "Farming Incremental But With Guns",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4651120/Farming_Incremental_But_With_Guns/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4651120/a9349fc5471284364ff8497ca8bd1ad8f5c6c178/capsule_231x87.jpg?t=1785361975",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-17f563072",
-      "title": "Landscaper Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3959530/Landscaper_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3959530/5c553b891dbae1f64494e6a675aadd061f33bc2a/capsule_231x87.jpg?t=1786389974",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
       ]
     },
     {
@@ -522,6 +524,17 @@
       "categories": []
     },
     {
+      "id": "steam-news-42b9a5949",
+      "title": "Luminary",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1648360/Luminary/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1648360/6e525811a177f78a3d23da14fce603c2e7d43c66/capsule_231x87.jpg?t=1785874052",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
+    {
       "id": "steam-news-b0cc8531d",
       "title": "Warhounds",
       "kind": "coming_soon",
@@ -540,17 +553,6 @@
       "url": "https://store.steampowered.com/app/974480/Echoes_of_Mystralia/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/974480/169a2b21996d7cb07198c81caee73e57dec80248/capsule_231x87.jpg?t=1786387434",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-42b9a5949",
-      "title": "Luminary",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1648360/Luminary/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1648360/6e525811a177f78a3d23da14fce603c2e7d43c66/capsule_231x87.jpg?t=1785874052",
       "categories": [
         "Bağımsız"
       ]
