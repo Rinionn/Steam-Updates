@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-09T23:39:44.309Z",
+  "generatedAt": "2026-08-10T02:30:08.248Z",
   "items": [
+    {
+      "id": "steam-news-5bfc651fe",
+      "title": "Kungfu Card",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3340780/Kungfu_Card/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3340780/e16c506a1fde3e3185eaae3ef047ad9427b00013/capsule_231x87.jpg?t=1786327973",
+      "categories": [
+        "Bağımsız",
+        "Strateji",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-3c529f098",
       "title": "MUGI",
@@ -262,18 +275,6 @@
       ]
     },
     {
-      "id": "steam-news-21c279f20",
-      "title": "Velocrash",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4968810/Velocrash/?snr=1_7_7_230_150_1",
-      "dateLabel": "8 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4968810/2bb2430c3a5a83a37235db37e4cab6ef5581c3d4/capsule_231x87.jpg?t=1786226556",
-      "categories": [
-        "Bağımsız",
-        "Yarış"
-      ]
-    },
-    {
       "id": "steam-news-c2d7cc8c7",
       "title": "Ajnabee - The Unknown",
       "kind": "coming_soon",
@@ -283,15 +284,6 @@
       "categories": [
         "Korku"
       ]
-    },
-    {
-      "id": "steam-news-bcd9dcd0e",
-      "title": "UNHUMAN",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
-      "categories": []
     },
     {
       "id": "steam-news-d53c953a8",
@@ -307,6 +299,15 @@
         "Çok Oyunculu",
         "Tek Oyunculu"
       ]
+    },
+    {
+      "id": "steam-news-bcd9dcd0e",
+      "title": "UNHUMAN",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4289340/UNHUMAN/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289340/b80e4295fa85ced4155085022b9fef9da74c992d/capsule_231x87.jpg?t=1784833707",
+      "categories": []
     },
     {
       "id": "steam-news-38c3fc507",
@@ -458,6 +459,17 @@
       ]
     },
     {
+      "id": "steam-news-a6df1d688",
+      "title": "T.W.I.R.L.",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4458840/TWIRL/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4458840/6968ef4f959c7a5b981c395b9d11a5c29050e4d4/capsule_231x87.jpg?t=1785715746",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
       "id": "steam-news-29d8d78ef",
       "title": "Wrestling Classics: Olde Timey Pro Wrestling",
       "kind": "coming_soon",
@@ -480,14 +492,14 @@
       ]
     },
     {
-      "id": "steam-news-a6df1d688",
-      "title": "T.W.I.R.L.",
+      "id": "steam-news-103fc840d",
+      "title": "Homeostasis",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4458840/TWIRL/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3748480/Homeostasis/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4458840/6968ef4f959c7a5b981c395b9d11a5c29050e4d4/capsule_231x87.jpg?t=1785715746",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3748480/df0b189f4ba733e4b0f7a76624fc1c106ee9d924/capsule_231x87.jpg?t=1782581437",
       "categories": [
-        "Korku"
+        "Simülasyon"
       ]
     },
     {
@@ -505,17 +517,6 @@
       ]
     },
     {
-      "id": "steam-news-103fc840d",
-      "title": "Homeostasis",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3748480/Homeostasis/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3748480/df0b189f4ba733e4b0f7a76624fc1c106ee9d924/capsule_231x87.jpg?t=1782581437",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-55b67cd7f",
       "title": "Cult of PiN",
       "kind": "coming_soon",
@@ -523,18 +524,6 @@
       "dateLabel": "10 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3144340/dfa09c772e4dbc793d9d0fa0bcc832bd9e35f437/capsule_231x87.jpg?t=1786121051",
       "categories": []
-    },
-    {
-      "id": "steam-news-9dd90e8c5",
-      "title": "Closed Circuit: Recursive Idle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4164110/Closed_Circuit_Recursive_Idle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4164110/7e2f934bf74c69531abe1c15957b2ed6b904b4ac/capsule_231x87.jpg?t=1785380581",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
     },
     {
       "id": "steam-news-3c5a83831",
@@ -545,6 +534,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908520/8d1ad99fb9e51a6e582e408b70da9b5a38729a18/capsule_231x87.jpg?t=1785257987",
       "categories": [
         "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-8ae6f3683",
+      "title": "First Date",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4951690/First_Date/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951690/b61488ee271b99618a0a138d64dc3efaa14c1296/capsule_231x87.jpg?t=1785954572",
+      "categories": [
         "Tek Oyunculu"
       ]
     },
