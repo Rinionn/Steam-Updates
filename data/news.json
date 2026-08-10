@@ -1,6 +1,44 @@
 {
-  "generatedAt": "2026-08-10T22:49:19.271Z",
+  "generatedAt": "2026-08-10T23:21:47.213Z",
   "items": [
+    {
+      "id": "steam-news-fb3a0bd61",
+      "title": "Rooster Booster 3D",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4846230/Rooster_Booster_3D/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4846230/ee98d9f871621f887f1a876c020c12a2e0acfbc4/capsule_231x87.jpg?t=1786402877",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-dfa498fa4",
+      "title": "Director of Management: Football Club",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4505120/Director_of_Management_Football_Club/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4505120/f65fb28fda9be2bfd93cc145be11ca503c5986de/capsule_231x87.jpg?t=1786402374",
+      "categories": [
+        "Simülasyon",
+        "Spor",
+        "Strateji",
+        "Tek Oyunculu",
+        "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-b7a240da6",
+      "title": "Wicked Little Witch 小小坏女巫",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3809920/Wicked_Little_Witch/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3809920/bf4b576e7852d8da847709d65cc70b5ef85f4271/capsule_231x87.jpg?t=1786402259",
+      "categories": [
+        "Gündelik",
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-6f0ecada0",
       "title": "Vivid Intrusion",
@@ -253,42 +291,6 @@
       ]
     },
     {
-      "id": "steam-news-45d427d8e",
-      "title": "First Date",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4951690/First_Date/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951690/b61488ee271b99618a0a138d64dc3efaa14c1296/capsule_231x87.jpg?t=1786381240",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-f0d29fa9c",
-      "title": "Circulo",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4908520/Circulo/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908520/8d1ad99fb9e51a6e582e408b70da9b5a38729a18/capsule_231x87.jpg?t=1786381224",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-25dcf3aba",
-      "title": "Tessera",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4525690/Tessera/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4525690/caff4ed29a289b3a17158e08b39948699502c9d2/capsule_231x87.jpg?t=1786380588",
-      "categories": [
-        "Strateji",
-        "Simülasyon",
-        "Spor"
-      ]
-    },
-    {
       "id": "steam-news-305b562b0",
       "title": "Depths of Providence",
       "kind": "coming_soon",
@@ -441,29 +443,6 @@
       ]
     },
     {
-      "id": "steam-news-17f563072",
-      "title": "Landscaper Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3959530/Landscaper_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3959530/5c553b891dbae1f64494e6a675aadd061f33bc2a/capsule_231x87.jpg?t=1786389974",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-f6e8be844",
-      "title": "Sente",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1005180/Sente/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1005180/f3acd0e50d8f45b9878706e7912e089173e6dfca/capsule_231x87.jpg?t=1786219151",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-5cd16eeec",
       "title": "Retro Robot Rescue",
       "kind": "coming_soon",
@@ -486,6 +465,17 @@
       ]
     },
     {
+      "id": "steam-news-f6e8be844",
+      "title": "Sente",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1005180/Sente/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1005180/f3acd0e50d8f45b9878706e7912e089173e6dfca/capsule_231x87.jpg?t=1786219151",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-45f647102",
       "title": "Farming Incremental But With Guns",
       "kind": "coming_soon",
@@ -497,12 +487,33 @@
       ]
     },
     {
+      "id": "steam-news-17f563072",
+      "title": "Landscaper Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3959530/Landscaper_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3959530/5c553b891dbae1f64494e6a675aadd061f33bc2a/capsule_231x87.jpg?t=1786389974",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-adadfde6a",
       "title": "Project Looking Glass",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4461730/Project_Looking_Glass/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4461730/3f1f198380fd60e29a7ab5d02f97dd7933ca696e/capsule_231x87.jpg?t=1786393193",
+      "categories": []
+    },
+    {
+      "id": "steam-news-7467016ba",
+      "title": "The Unclosed Case",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4341950/The_Unclosed_Case/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4341950/2ec3fb1cdfa98940c33f00f7bc4bb72aa26e04d9/capsule_231x87.jpg?t=1786351760",
       "categories": []
     },
     {
@@ -547,15 +558,6 @@
         "RPG",
         "Strateji"
       ]
-    },
-    {
-      "id": "steam-news-7467016ba",
-      "title": "The Unclosed Case",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4341950/The_Unclosed_Case/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4341950/2ec3fb1cdfa98940c33f00f7bc4bb72aa26e04d9/capsule_231x87.jpg?t=1786351760",
-      "categories": []
     },
     {
       "id": "steam-news-c560bed11",
