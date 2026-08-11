@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-08-11T21:59:22.993Z",
+  "generatedAt": "2026-08-11T22:54:12.430Z",
   "items": [
+    {
+      "id": "steam-news-404a34143",
+      "title": "Academy: Become a Hero",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2411170/Academy_Become_a_Hero/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2411170/0567c011f59e892dd34a813439c7bc4a7386664a/capsule_231x87.jpg?t=1786486199",
+      "categories": [
+        "Yarış",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-d3cffb214",
+      "title": "King’s Well",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4332200/Kings_Well/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4332200/49d83bd6075a9309bc32bb390dde1f2f31e5bf59/capsule_231x87.jpg?t=1786485620",
+      "categories": []
+    },
     {
       "id": "steam-news-a433597b8",
       "title": "Flak Duty",
@@ -256,38 +277,6 @@
       ]
     },
     {
-      "id": "steam-news-3066b73fa",
-      "title": "Pile Up, Pirate!",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4821780/Pile_Up_Pirate/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4821780/108dc26b162ab7e0b34587670f8663a7504fe8ed/capsule_231x87.jpg?t=1786466495",
-      "categories": [
-        "Macera",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-367d16f25",
-      "title": "Dawn of Horror",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4550280/Dawn_of_Horror/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4550280/d1efeb63b5c6fc5af5edf1d19442eab888fda958/capsule_231x87.jpg?t=1786466326",
-      "categories": []
-    },
-    {
-      "id": "steam-news-0b399e886",
-      "title": "Rogue Drone",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4285020/Rogue_Drone/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4285020/f19af6618258b910c9731ee4cc2db370b572d994/capsule_231x87.jpg?t=1786011229",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-8a5f087bf",
       "title": "我的傲娇妹妹 MY TSUNDERE SISTER",
       "kind": "coming_soon",
@@ -301,14 +290,14 @@
       ]
     },
     {
-      "id": "steam-news-a23b3d860",
-      "title": "Survival Log",
+      "id": "steam-news-0b399e886",
+      "title": "Rogue Drone",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4164790/Survival_Log/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4285020/Rogue_Drone/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4164790/fd42f9bb4e955c05ed5d086216d0c9c724893d40/capsule_231x87.jpg?t=1786443713",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4285020/f19af6618258b910c9731ee4cc2db370b572d994/capsule_231x87.jpg?t=1786011229",
       "categories": [
-        "Simülasyon"
+        "Strateji"
       ]
     },
     {
@@ -332,6 +321,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915120/5441084ec7c6852ef8b420eccf014dbddeb97a05/capsule_231x87.jpg?t=1786463688",
       "categories": [
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-a23b3d860",
+      "title": "Survival Log",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4164790/Survival_Log/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4164790/fd42f9bb4e955c05ed5d086216d0c9c724893d40/capsule_231x87.jpg?t=1786443713",
+      "categories": [
+        "Simülasyon"
       ]
     },
     {
@@ -471,17 +471,6 @@
       ]
     },
     {
-      "id": "steam-news-22d07cd88",
-      "title": "Burnstation",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4370480/Burnstation/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370480/f5831e4efaef03ebfcb1a5ab18f5b199a78b9355/capsule_231x87.jpg?t=1785172252",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-0ed73e0ce",
       "title": "Airport Manager Simulator 2026",
       "kind": "coming_soon",
@@ -491,6 +480,17 @@
       "categories": [
         "RPG",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-22d07cd88",
+      "title": "Burnstation",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4370480/Burnstation/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370480/f5831e4efaef03ebfcb1a5ab18f5b199a78b9355/capsule_231x87.jpg?t=1785172252",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -541,15 +541,14 @@
       ]
     },
     {
-      "id": "steam-news-d9254c257",
-      "title": "Greedy Greedy Gnomes",
+      "id": "steam-news-2d7c051be",
+      "title": "No Knock",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4356400/Greedy_Greedy_Gnomes/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3860450/No_Knock/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4356400/19e897c6825328c6e98ad11129dff9f165cc2d9c/capsule_231x87.jpg?t=1785929142",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3860450/a0b63d84774870262f06d90f9366794ac7dce2dc/capsule_231x87.jpg?t=1785994090",
       "categories": [
-        "Gündelik",
-        "RPG"
+        "Simülasyon"
       ]
     },
     {
