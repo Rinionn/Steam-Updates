@@ -214,5 +214,23 @@
     "kind": "deadline_changed",
     "field": "deadlines.party-based-rpg-fest-55771f151-00fae689e.dueAt",
     "after": "2026-09-14T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-11T12:25:46.510Z",
+    "eventId": "social-deduction-fest-803b5a882",
+    "eventName": "Social Deduction Fest",
+    "kind": "removed"
+  },
+  {
+    "detectedAt": "2026-08-11T12:25:46.510Z",
+    "eventId": "train-fest-a5c61577c",
+    "eventName": "Train Fest",
+    "kind": "removed"
+  },
+  {
+    "detectedAt": "2026-08-11T12:25:46.510Z",
+    "eventId": "cyberpunk-fest-51562f576",
+    "eventName": "Cyberpunk Fest",
+    "kind": "removed"
   }
 ]
