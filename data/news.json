@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-11T17:11:49.350Z",
+  "generatedAt": "2026-08-11T18:07:31.270Z",
   "items": [
+    {
+      "id": "steam-news-42c72e1ee",
+      "title": "The Watch Post",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4969570/The_Watch_Post/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4969570/62521b63ce656c18ded44f36cd3b47471d3c8b9f/capsule_231x87.jpg?t=1786471392",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-1365413ed",
+      "title": "The Money Pit",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3971290/The_Money_Pit/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3971290/080fd7ac310d2cb2d93a9c744afa0e704bacebcb/capsule_231x87.jpg?t=1786469991",
+      "categories": [
+        "Korku",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-8b441296e",
+      "title": "Miners, Moos & Miracles",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4995840/Miners_Moos__Miracles/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4995840/e6fa988c2ec6b2db1a1d18e3e656fdd30b8a5d46/capsule_231x87.jpg?t=1786469003",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-2baab592b",
       "title": "Grind Up",
@@ -60,6 +95,17 @@
       ]
     },
     {
+      "id": "steam-news-f97bd3527",
+      "title": "Swordcery",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1817030/Swordcery/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817030/d628024f8bf21bd24d11078a6ac52ad135d18360/capsule_231x87.jpg?t=1786467631",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
+    {
       "id": "steam-news-4122c158b",
       "title": "Crypto Trading Simulator",
       "kind": "new_release",
@@ -69,17 +115,6 @@
       "categories": [
         "Bağımsız",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-f97bd3527",
-      "title": "Swordcery",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1817030/Swordcery/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817030/d628024f8bf21bd24d11078a6ac52ad135d18360/capsule_231x87.jpg?t=1786467631",
-      "categories": [
-        "Bağımsız"
       ]
     },
     {
@@ -200,7 +235,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/2523770/The_Lord_of_the_Rings_War_in_the_North__Legacy_Edition/?snr=1_7_7_230_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2523770/b62eeb1186b92349f4fe8820a67837bcf2d8ba88/capsule_231x87.jpg?t=1786466819",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2523770/b62eeb1186b92349f4fe8820a67837bcf2d8ba88/capsule_231x87.jpg?t=1786466870",
       "categories": [
         "Aksiyon",
         "RPG",
@@ -242,38 +277,6 @@
         "Strateji",
         "Simülasyon",
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-d699e2243",
-      "title": "Imperial Wager: The Shattered Crown of Augustus",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4548050/Imperial_Wager_The_Shattered_Crown_of_Augustus/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4548050/add5c8b315db7ee090f51b96fe7bddf6342701b5/capsule_231x87.jpg?t=1786461108",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-e1b151d4f",
-      "title": "RIFTSTORM",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2282790/RIFTSTORM/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2282790/642ec0f72674609c61e7da1ec99a689b78672920/capsule_231x87.jpg?t=1786460494",
-      "categories": []
-    },
-    {
-      "id": "steam-news-fe9891990",
-      "title": "最上邸R",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4937470/R/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4937470/01548e4f6e9c786a6d19dc4516c132e84002a1ba/capsule_231x87.jpg?t=1786460446",
-      "categories": [
-        "Macera",
-        "Korku"
       ]
     },
     {
@@ -363,14 +366,15 @@
       ]
     },
     {
-      "id": "steam-news-fe90aff64",
-      "title": "MINERALS: Deep Core Mining",
+      "id": "steam-news-679aa5889",
+      "title": "Mandate Order",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4639040/MINERALS_Deep_Core_Mining/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/1733690/Mandate_Order/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4639040/b77363aeffc2a4de4ff7aca56a0bd5d7321b49bb/capsule_231x87.jpg?t=1786449175",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1733690/8302211c2b2549465a9f91b8309a4c7cdb90d596/capsule_231x87.jpg?t=1786089808",
       "categories": [
-        "Gündelik",
+        "Bağımsız",
+        "Strateji",
         "Simülasyon"
       ]
     },
@@ -386,15 +390,14 @@
       ]
     },
     {
-      "id": "steam-news-679aa5889",
-      "title": "Mandate Order",
+      "id": "steam-news-fe90aff64",
+      "title": "MINERALS: Deep Core Mining",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1733690/Mandate_Order/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4639040/MINERALS_Deep_Core_Mining/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1733690/8302211c2b2549465a9f91b8309a4c7cdb90d596/capsule_231x87.jpg?t=1786089808",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4639040/b77363aeffc2a4de4ff7aca56a0bd5d7321b49bb/capsule_231x87.jpg?t=1786449175",
       "categories": [
-        "Bağımsız",
-        "Strateji",
+        "Gündelik",
         "Simülasyon"
       ]
     },
@@ -455,17 +458,6 @@
       ]
     },
     {
-      "id": "steam-news-68fb323d2",
-      "title": "Wacky! Deer & Munk Adventure",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4915120/Wacky_Deer__Munk_Adventure/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915120/5441084ec7c6852ef8b420eccf014dbddeb97a05/capsule_231x87.jpg?t=1786463688",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-a23b3d860",
       "title": "Survival Log",
       "kind": "coming_soon",
@@ -474,6 +466,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4164790/fd42f9bb4e955c05ed5d086216d0c9c724893d40/capsule_231x87.jpg?t=1786443713",
       "categories": [
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-68fb323d2",
+      "title": "Wacky! Deer & Munk Adventure",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4915120/Wacky_Deer__Munk_Adventure/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915120/5441084ec7c6852ef8b420eccf014dbddeb97a05/capsule_231x87.jpg?t=1786463688",
+      "categories": [
+        "Tek Oyunculu"
       ]
     },
     {
@@ -543,16 +546,15 @@
       ]
     },
     {
-      "id": "steam-news-7494d14fb",
-      "title": "Palm Sugar: A Village Story",
+      "id": "steam-news-07108f554",
+      "title": "Security 51",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2778220/Palm_Sugar_A_Village_Story/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4246860/Security_51/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2778220/054f2e3124672a782d36858a7b9eca9852c6eeec/capsule_231x87.jpg?t=1786466852",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4246860/71f326db5e120feaeff287401e82069707015c9d/capsule_231x87.jpg?t=1786446392",
       "categories": [
-        "Tek Oyunculu",
-        "Macera",
-        "RPG"
+        "Simülasyon",
+        "Korku"
       ]
     },
     {
