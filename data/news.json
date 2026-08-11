@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-08-11T09:42:05.363Z",
+  "generatedAt": "2026-08-11T10:35:07.684Z",
   "items": [
+    {
+      "id": "steam-news-5ea9a6048",
+      "title": "像素单词农场",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4986120/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4986120/d228b5fcf734da16be81c91be31946d5bf30b06e/capsule_231x87.jpg?t=1786442475",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-4c575a6ec",
+      "title": "Craftoon",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4862790/Craftoon/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4862790/d4a0ec42769f31c854c86c5788236a920dd88525/capsule_231x87.jpg?t=1786441871",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-31deb30a0",
+      "title": "Tower Realm",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4550370/Tower_Realm/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4550370/722e11d98b5697721b25b56ce62b57de32d43a96/capsule_231x87.jpg?t=1786441359",
+      "categories": [
+        "Macera",
+        "Strateji",
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-cfcfd68e0",
       "title": "Electrical Leak",
@@ -254,52 +290,14 @@
       ]
     },
     {
-      "id": "steam-news-9dc1b614e",
-      "title": "Succulent Break",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4536070/Succulent_Break/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4536070/d2bf67e293a2d12b7107ae1da074e15d21abb60f/capsule_231x87.jpg?t=1786415124",
-      "categories": [
-        "Simülasyon",
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-5922b5bab",
-      "title": "DreamEcho",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3226060/DreamEcho/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3226060/af9a08a2598d9c7e0d4414c62bddb20346f04d47/capsule_231x87.jpg?t=1786410129",
+      "id": "steam-news-89c301c69",
+      "title": "Meat Grinder: Hotdog Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3994680/Meat_Grinder_Hotdog_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994680/6d59a4b8bb5f6f6aa76cc8381a480bd8d752625b/capsule_231x87.jpg?t=1786285923",
       "categories": [
         "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-6fc5338bb",
-      "title": "Penko Vox: Japanese",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4836870/Penko_Vox_Japanese/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836870/80f060cc6159e54b670716e23a6eed61a98219e2/capsule_231x87.jpg?t=1786406009",
-      "categories": [
-        "Gündelik",
-        "RPG",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-7e8572b29",
-      "title": "像素单词农场",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4986120/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4986120/d228b5fcf734da16be81c91be31946d5bf30b06e/capsule_231x87.jpg?t=1786214063",
-      "categories": [
-        "Gündelik",
         "Simülasyon"
       ]
     },
@@ -315,18 +313,6 @@
       ]
     },
     {
-      "id": "steam-news-89c301c69",
-      "title": "Meat Grinder: Hotdog Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3994680/Meat_Grinder_Hotdog_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994680/6d59a4b8bb5f6f6aa76cc8381a480bd8d752625b/capsule_231x87.jpg?t=1786285923",
-      "categories": [
-        "Macera",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-11853d513",
       "title": "AI Apocalypse",
       "kind": "coming_soon",
@@ -338,14 +324,14 @@
       ]
     },
     {
-      "id": "steam-news-3e4326fe5",
-      "title": "Victory's Grave: Airborne",
+      "id": "steam-news-45f647102",
+      "title": "Farming Incremental But With Guns",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4993410/Victorys_Grave_Airborne/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4651120/Farming_Incremental_But_With_Guns/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4993410/00981e04a278b7ad7cb22129e08cb126259a6144/capsule_231x87.jpg?t=1786106636",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4651120/a9349fc5471284364ff8497ca8bd1ad8f5c6c178/capsule_231x87.jpg?t=1785361975",
       "categories": [
-        "Aksiyon"
+        "Gündelik"
       ]
     },
     {
@@ -372,14 +358,14 @@
       ]
     },
     {
-      "id": "steam-news-45f647102",
-      "title": "Farming Incremental But With Guns",
+      "id": "steam-news-3e4326fe5",
+      "title": "Victory's Grave: Airborne",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4651120/Farming_Incremental_But_With_Guns/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4993410/Victorys_Grave_Airborne/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4651120/a9349fc5471284364ff8497ca8bd1ad8f5c6c178/capsule_231x87.jpg?t=1785361975",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4993410/00981e04a278b7ad7cb22129e08cb126259a6144/capsule_231x87.jpg?t=1786106636",
       "categories": [
-        "Gündelik"
+        "Aksiyon"
       ]
     },
     {
@@ -390,29 +376,6 @@
       "dateLabel": "11 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4461730/3f1f198380fd60e29a7ab5d02f97dd7933ca696e/capsule_231x87.jpg?t=1786393193",
       "categories": []
-    },
-    {
-      "id": "steam-news-42b9a5949",
-      "title": "Luminary",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1648360/Luminary/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1648360/6e525811a177f78a3d23da14fce603c2e7d43c66/capsule_231x87.jpg?t=1785874052",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-b0cc8531d",
-      "title": "Warhounds",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3929470/Warhounds/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3929470/7649e448f71e731aae857753ea4917ebdf6f2af2/capsule_231x87.jpg?t=1786439434",
-      "categories": [
-        "RPG",
-        "Strateji"
-      ]
     },
     {
       "id": "steam-news-7467016ba",
@@ -444,52 +407,26 @@
       ]
     },
     {
-      "id": "steam-news-e830c3bed",
-      "title": "Bean Wizard Eviscerates the Gonklins",
+      "id": "steam-news-42b9a5949",
+      "title": "Luminary",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4574300/Bean_Wizard_Eviscerates_the_Gonklins/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/1648360/Luminary/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4574300/c8df88edfab4ab5057a2f8bf6512db637d836367/capsule_231x87.jpg?t=1784907994",
-      "categories": []
-    },
-    {
-      "id": "steam-news-eabe106d8",
-      "title": "Agent 64: Spies Never Die",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1574480/Agent_64_Spies_Never_Die/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1574480/3310c2b11a17d8188ccb4e26e0e57ba89131b5d3/capsule_231x87.jpg?t=1786419211",
-      "categories": []
-    },
-    {
-      "id": "steam-news-fe80744d3",
-      "title": "Tiny Monster Haven",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3669020/Tiny_Monster_Haven/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669020/26a64c0a2b5cdc491ee9c100f6711c3cd933b52d/capsule_231x87.jpg?t=1783070648",
-      "categories": []
-    },
-    {
-      "id": "steam-news-e8e058e9d",
-      "title": "Finding Polka",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4161140/Finding_Polka/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4161140/23d302adb18060e6e08963bc4045231d788cf178/capsule_231x87.jpg?t=1786413635",
-      "categories": []
-    },
-    {
-      "id": "steam-news-626eb30b9",
-      "title": "Heritage",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4308560/Heritage/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4308560/b05de46649018e472d5db1f1fb0e341c400d7b1d/capsule_231x87.jpg?t=1785270202",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1648360/6e525811a177f78a3d23da14fce603c2e7d43c66/capsule_231x87.jpg?t=1785874052",
       "categories": [
-        "Strateji",
-        "Simülasyon",
-        "RPG"
+        "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-b0cc8531d",
+      "title": "Warhounds",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3929470/Warhounds/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3929470/7649e448f71e731aae857753ea4917ebdf6f2af2/capsule_231x87.jpg?t=1786442077",
+      "categories": [
+        "RPG",
+        "Strateji"
       ]
     },
     {
@@ -514,6 +451,46 @@
       "categories": []
     },
     {
+      "id": "steam-news-fe80744d3",
+      "title": "Tiny Monster Haven",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3669020/Tiny_Monster_Haven/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669020/26a64c0a2b5cdc491ee9c100f6711c3cd933b52d/capsule_231x87.jpg?t=1783070648",
+      "categories": []
+    },
+    {
+      "id": "steam-news-e8e058e9d",
+      "title": "Finding Polka",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4161140/Finding_Polka/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4161140/23d302adb18060e6e08963bc4045231d788cf178/capsule_231x87.jpg?t=1786441753",
+      "categories": []
+    },
+    {
+      "id": "steam-news-626eb30b9",
+      "title": "Heritage",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4308560/Heritage/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4308560/b05de46649018e472d5db1f1fb0e341c400d7b1d/capsule_231x87.jpg?t=1785270202",
+      "categories": [
+        "Strateji",
+        "Simülasyon",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-e830c3bed",
+      "title": "Bean Wizard Eviscerates the Gonklins",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4574300/Bean_Wizard_Eviscerates_the_Gonklins/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4574300/c8df88edfab4ab5057a2f8bf6512db637d836367/capsule_231x87.jpg?t=1784907994",
+      "categories": []
+    },
+    {
       "id": "steam-news-d501ddec2",
       "title": "最上邸R",
       "kind": "coming_soon",
@@ -526,25 +503,47 @@
       ]
     },
     {
+      "id": "steam-news-eabe106d8",
+      "title": "Agent 64: Spies Never Die",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1574480/Agent_64_Spies_Never_Die/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1574480/3310c2b11a17d8188ccb4e26e0e57ba89131b5d3/capsule_231x87.jpg?t=1786419211",
+      "categories": []
+    },
+    {
       "id": "steam-news-0ad0175eb",
       "title": "Stonewards",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4502710/Stonewards/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4502710/3cfb9ee3f986546d6c4abb04ad0049c0aaa2bded/capsule_231x87.jpg?t=1785941725",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4502710/c72571ce75a39c4a6847ded74c66580f6b04ff42/capsule_231x87.jpg?t=1786441412",
       "categories": [
         "Bağımsız",
         "Aksiyon"
       ]
     },
     {
-      "id": "steam-news-460dccd31",
-      "title": "Words Of Power",
+      "id": "steam-news-2a71789e5",
+      "title": "[HERROR] Gas Station Case",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4986860/Words_Of_Power/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3902800/HERROR_Gas_Station_Case/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4986860/d5937abfefd2f35599945d316bf9420788f75a19/capsule_231x87.jpg?t=1786334032",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3902800/50a0f1df8943250a31f6837a90688e8fa18c4e13/capsule_231x87.jpg?t=1786362907",
       "categories": [
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-700579c20",
+      "title": "Corner King: Boxing Tycoon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4259990/Corner_King_Boxing_Tycoon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259990/edc19cf766db2db9ece5fc038ed5ffa4aa8b49f1/capsule_231x87.jpg?t=1786141584",
+      "categories": [
+        "Simülasyon",
+        "Spor",
         "Strateji"
       ]
     },
