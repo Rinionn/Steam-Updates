@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T05:16:28.159Z",
+  "generatedAt": "2026-08-11T06:10:57.766Z",
   "items": [
     {
       "id": "steam-news-80f77d92f",
@@ -30,7 +30,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/497320/The_Spirit_of_Twelve/?snr=1_7_7_230_150_1",
       "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/497320/266e6b7007a18b0ca480c9010b128f5cb3d22620/capsule_231x87.jpg?t=1786424179",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/497320/266e6b7007a18b0ca480c9010b128f5cb3d22620/capsule_231x87.jpg?t=1786425435",
       "categories": [
         "RPG",
         "Macera"
@@ -390,12 +390,12 @@
       ]
     },
     {
-      "id": "steam-news-5d38900f9",
-      "title": "Runerock Arena",
+      "id": "steam-news-05a32f7b5",
+      "title": "Dune War",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3855600/Runerock_Arena/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4625630/Dune_War/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3855600/5662e10407bdba4f97f285fa62b086d633218084/capsule_231x87.jpg?t=1785179142",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625630/2360c77d65a3b28512374a968441fa268fa7683b/capsule_231x87.jpg?t=1785452308",
       "categories": [
         "Strateji"
       ]
@@ -413,12 +413,12 @@
       ]
     },
     {
-      "id": "steam-news-05a32f7b5",
-      "title": "Dune War",
+      "id": "steam-news-5d38900f9",
+      "title": "Runerock Arena",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4625630/Dune_War/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3855600/Runerock_Arena/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625630/2360c77d65a3b28512374a968441fa268fa7683b/capsule_231x87.jpg?t=1785452308",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3855600/5662e10407bdba4f97f285fa62b086d633218084/capsule_231x87.jpg?t=1785179142",
       "categories": [
         "Strateji"
       ]
@@ -435,6 +435,17 @@
       ]
     },
     {
+      "id": "steam-news-3e4326fe5",
+      "title": "Victory's Grave: Airborne",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4993410/Victorys_Grave_Airborne/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4993410/00981e04a278b7ad7cb22129e08cb126259a6144/capsule_231x87.jpg?t=1786106636",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-f6e8be844",
       "title": "Sente",
       "kind": "coming_soon",
@@ -443,18 +454,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1005180/f3acd0e50d8f45b9878706e7912e089173e6dfca/capsule_231x87.jpg?t=1786219151",
       "categories": [
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-17f563072",
-      "title": "Landscaper Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3959530/Landscaper_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3959530/5c553b891dbae1f64494e6a675aadd061f33bc2a/capsule_231x87.jpg?t=1786389974",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
       ]
     },
     {
@@ -469,14 +468,15 @@
       ]
     },
     {
-      "id": "steam-news-3e4326fe5",
-      "title": "Victory's Grave: Airborne",
+      "id": "steam-news-17f563072",
+      "title": "Landscaper Simulator",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4993410/Victorys_Grave_Airborne/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3959530/Landscaper_Simulator/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4993410/00981e04a278b7ad7cb22129e08cb126259a6144/capsule_231x87.jpg?t=1786106636",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3959530/5c553b891dbae1f64494e6a675aadd061f33bc2a/capsule_231x87.jpg?t=1786389974",
       "categories": [
-        "Aksiyon"
+        "Simülasyon",
+        "Gündelik"
       ]
     },
     {
@@ -541,21 +541,24 @@
       ]
     },
     {
-      "id": "steam-news-09a1d14ce",
-      "title": "RIFTSTORM",
+      "id": "steam-news-d501ddec2",
+      "title": "最上邸R",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2282790/RIFTSTORM/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4937470/R/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2282790/642ec0f72674609c61e7da1ec99a689b78672920/capsule_231x87.jpg?t=1786417923",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4937470/01548e4f6e9c786a6d19dc4516c132e84002a1ba/capsule_231x87.jpg?t=1785413409",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
     },
     {
-      "id": "steam-news-fe80744d3",
-      "title": "Tiny Monster Haven",
+      "id": "steam-news-e830c3bed",
+      "title": "Bean Wizard Eviscerates the Gonklins",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3669020/Tiny_Monster_Haven/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4574300/Bean_Wizard_Eviscerates_the_Gonklins/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669020/26a64c0a2b5cdc491ee9c100f6711c3cd933b52d/capsule_231x87.jpg?t=1783070648",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4574300/c8df88edfab4ab5057a2f8bf6512db637d836367/capsule_231x87.jpg?t=1784907994",
       "categories": []
     },
     {
