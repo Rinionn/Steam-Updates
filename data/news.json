@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-08-11T06:10:57.766Z",
+  "generatedAt": "2026-08-11T07:36:48.870Z",
   "items": [
+    {
+      "id": "steam-news-1b6e2d220",
+      "title": "Moros",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5001460/Moros/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001460/13adb0270b846005e5dcdb18468653acaa40d21b/capsule_231x87.jpg?t=1786433705",
+      "categories": [
+        "Macera",
+        "Korku",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-d869ec536",
+      "title": "Cyber Plinko",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4735700/Cyber_Plinko/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4735700/d08b672c213c889f735239238e96dcba45c9414d/capsule_231x87.jpg?t=1786433654",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-80f77d92f",
       "title": "FishFishFishFishFish",
@@ -270,65 +295,6 @@
       ]
     },
     {
-      "id": "steam-news-69170b7b6",
-      "title": "Gravity Grove",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4239290/Gravity_Grove/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4239290/345372967e434e87cd05fb3a5d9f5449dcad4166/capsule_231x87.jpg?t=1786391188",
-      "categories": [
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-0ce55811f",
-      "title": "Yuhtzee",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4936130/Yuhtzee/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4936130/7c24e2a6d9b86f952e984b3f442edc8842e28a8e/capsule_231x87.jpg?t=1786389845",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-305b562b0",
-      "title": "Depths of Providence",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4996340/Depths_of_Providence/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4996340/5fe362b919b11a2358e5092f36dde3b014a1e136/capsule_231x87.jpg?t=1785803592",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-5f571089d",
-      "title": "Blind Touch VR",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4507690/Blind_Touch_VR/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4507690/aff52672ce01b271bf2c8d115d84996d1fcec80f/capsule_231x87.jpg?t=1786352313",
-      "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-5f756c425",
-      "title": "Shadow Slayer",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4960790/Shadow_Slayer/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4960790/12d5c92bdb755d1f869fe24598ebf798f6460b12/capsule_231x87.jpg?t=1786145004",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-d4159b452",
       "title": "Rule or Fall",
       "kind": "coming_soon",
@@ -365,19 +331,6 @@
       ]
     },
     {
-      "id": "steam-news-2562f93c0",
-      "title": "Moros",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5001460/Moros/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001460/13adb0270b846005e5dcdb18468653acaa40d21b/capsule_231x87.jpg?t=1786349949",
-      "categories": [
-        "Macera",
-        "Korku",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-5776d788f",
       "title": "The Comeback King",
       "kind": "coming_soon",
@@ -401,6 +354,17 @@
       ]
     },
     {
+      "id": "steam-news-5d38900f9",
+      "title": "Runerock Arena",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3855600/Runerock_Arena/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3855600/5662e10407bdba4f97f285fa62b086d633218084/capsule_231x87.jpg?t=1785179142",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-89c301c69",
       "title": "Meat Grinder: Hotdog Simulator",
       "kind": "coming_soon",
@@ -410,17 +374,6 @@
       "categories": [
         "Macera",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-5d38900f9",
-      "title": "Runerock Arena",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3855600/Runerock_Arena/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3855600/5662e10407bdba4f97f285fa62b086d633218084/capsule_231x87.jpg?t=1785179142",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -457,17 +410,6 @@
       ]
     },
     {
-      "id": "steam-news-45f647102",
-      "title": "Farming Incremental But With Guns",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4651120/Farming_Incremental_But_With_Guns/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4651120/a9349fc5471284364ff8497ca8bd1ad8f5c6c178/capsule_231x87.jpg?t=1785361975",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-17f563072",
       "title": "Landscaper Simulator",
       "kind": "coming_soon",
@@ -476,6 +418,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3959530/5c553b891dbae1f64494e6a675aadd061f33bc2a/capsule_231x87.jpg?t=1786389974",
       "categories": [
         "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-45f647102",
+      "title": "Farming Incremental But With Guns",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4651120/Farming_Incremental_But_With_Guns/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4651120/a9349fc5471284364ff8497ca8bd1ad8f5c6c178/capsule_231x87.jpg?t=1785361975",
+      "categories": [
         "Gündelik"
       ]
     },
@@ -489,21 +442,21 @@
       "categories": []
     },
     {
-      "id": "steam-news-d47af3066",
-      "title": "Royalty Free-For-All",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3176720/Royalty_FreeForAll/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3176720/6354f60fad5a28d9647734aeca3412afe76882d1/capsule_231x87.jpg?t=1786405951",
-      "categories": []
-    },
-    {
       "id": "steam-news-7467016ba",
       "title": "The Unclosed Case",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4341950/The_Unclosed_Case/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4341950/2ec3fb1cdfa98940c33f00f7bc4bb72aa26e04d9/capsule_231x87.jpg?t=1786351760",
+      "categories": []
+    },
+    {
+      "id": "steam-news-d47af3066",
+      "title": "Royalty Free-For-All",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3176720/Royalty_FreeForAll/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3176720/6354f60fad5a28d9647734aeca3412afe76882d1/capsule_231x87.jpg?t=1786405951",
       "categories": []
     },
     {
@@ -534,22 +487,10 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3929470/Warhounds/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3929470/7649e448f71e731aae857753ea4917ebdf6f2af2/capsule_231x87.jpg?t=1786380694",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3929470/7649e448f71e731aae857753ea4917ebdf6f2af2/capsule_231x87.jpg?t=1786433238",
       "categories": [
         "RPG",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-d501ddec2",
-      "title": "最上邸R",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4937470/R/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4937470/01548e4f6e9c786a6d19dc4516c132e84002a1ba/capsule_231x87.jpg?t=1785413409",
-      "categories": [
-        "Macera",
-        "Korku"
       ]
     },
     {
@@ -560,6 +501,61 @@
       "dateLabel": "11 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4574300/c8df88edfab4ab5057a2f8bf6512db637d836367/capsule_231x87.jpg?t=1784907994",
       "categories": []
+    },
+    {
+      "id": "steam-news-197866b74",
+      "title": "Octavia’s Alienzzle",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4966880/Octavias_Alienzzle/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4966880/5e606f70627877edbc6f6163e17ed0bbe03e3d2a/capsule_231x87.jpg?t=1785748742",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-fe80744d3",
+      "title": "Tiny Monster Haven",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3669020/Tiny_Monster_Haven/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669020/26a64c0a2b5cdc491ee9c100f6711c3cd933b52d/capsule_231x87.jpg?t=1783070648",
+      "categories": []
+    },
+    {
+      "id": "steam-news-e8e058e9d",
+      "title": "Finding Polka",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4161140/Finding_Polka/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4161140/23d302adb18060e6e08963bc4045231d788cf178/capsule_231x87.jpg?t=1786413635",
+      "categories": []
+    },
+    {
+      "id": "steam-news-626eb30b9",
+      "title": "Heritage",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4308560/Heritage/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4308560/b05de46649018e472d5db1f1fb0e341c400d7b1d/capsule_231x87.jpg?t=1785270202",
+      "categories": [
+        "Strateji",
+        "Simülasyon",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-d501ddec2",
+      "title": "最上邸R",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4937470/R/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4937470/01548e4f6e9c786a6d19dc4516c132e84002a1ba/capsule_231x87.jpg?t=1786430147",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
     },
     {
       "id": "steam-news-c560bed11",
