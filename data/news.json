@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-08-11T22:54:12.430Z",
+  "generatedAt": "2026-08-11T23:36:17.320Z",
   "items": [
+    {
+      "id": "steam-news-069a70078",
+      "title": "Scraps - Hellmouth Creek",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3806810/Scraps__Hellmouth_Creek/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3806810/0309bd49b744ce05efa1def2a27a317660d4695a/capsule_231x87.jpg?t=1786490882",
+      "categories": []
+    },
+    {
+      "id": "steam-news-3ce320050",
+      "title": "Skyliners",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4957430/Skyliners/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957430/920ec5071046650cfde264d4a8cc3c1294c394f7/capsule_231x87.jpg?t=1786489299",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-00d644bb1",
+      "title": "Regulars",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4582980/Regulars/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4582980/f8ae0dc75e956b84f0bbdb8ac53f9ff636476158/capsule_231x87.jpg?t=1786488886",
+      "categories": [
+        "Bağımsız",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-404a34143",
       "title": "Academy: Become a Hero",
@@ -133,7 +165,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3971290/The_Money_Pit/?snr=1_7_7_230_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3971290/080fd7ac310d2cb2d93a9c744afa0e704bacebcb/capsule_231x87.jpg?t=1786483100",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3971290/080fd7ac310d2cb2d93a9c744afa0e704bacebcb/capsule_231x87.jpg?t=1786489165",
       "categories": [
         "Korku",
         "Çok Oyunculu"
@@ -245,33 +277,12 @@
       ]
     },
     {
-      "id": "steam-news-13dc48023",
-      "title": "Omen",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2859970/Omen/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2859970/df779caf8816b25b8a4bb7a78ea8aa0a0b568dba/capsule_231x87.jpg?t=1786467611",
-      "categories": []
-    },
-    {
-      "id": "steam-news-0d50d3e05",
-      "title": "Ghost Battalion",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1643700/Ghost_Battalion/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1643700/57482ffee15e2efd195579efd5810b80ca6bcb5a/capsule_231x87.jpg?t=1786467564",
-      "categories": [
-        "Tek Oyunculu",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-57a33caa6",
-      "title": "Eon Empires",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4468190/Eon_Empires/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4468190/0914d9e6a36ad26ac00274024ba5d48df71e74a6/capsule_231x87.jpg?t=1786467012",
+      "id": "steam-news-0b399e886",
+      "title": "Rogue Drone",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4285020/Rogue_Drone/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4285020/f19af6618258b910c9731ee4cc2db370b572d994/capsule_231x87.jpg?t=1786011229",
       "categories": [
         "Strateji"
       ]
@@ -287,17 +298,6 @@
         "Anime",
         "RPG",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-0b399e886",
-      "title": "Rogue Drone",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4285020/Rogue_Drone/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4285020/f19af6618258b910c9731ee4cc2db370b572d994/capsule_231x87.jpg?t=1786011229",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -401,6 +401,18 @@
       ]
     },
     {
+      "id": "steam-news-29eb1e87e",
+      "title": "The Merchant's Eden",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3829280/The_Merchants_Eden/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3829280/642da31f2fa4ccea624a1ea5e56453a3e0c51285/capsule_231x87.jpg?t=1785501792",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-7494d14fb",
       "title": "Palm Sugar: A Village Story",
       "kind": "coming_soon",
@@ -411,18 +423,6 @@
         "Tek Oyunculu",
         "Macera",
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-29eb1e87e",
-      "title": "The Merchant's Eden",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3829280/The_Merchants_Eden/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3829280/642da31f2fa4ccea624a1ea5e56453a3e0c51285/capsule_231x87.jpg?t=1785501792",
-      "categories": [
-        "Strateji",
-        "Gündelik"
       ]
     },
     {
@@ -460,14 +460,14 @@
       "categories": []
     },
     {
-      "id": "steam-news-1d61d6694",
-      "title": "ABSOLUTE TOFU",
+      "id": "steam-news-22d07cd88",
+      "title": "Burnstation",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4760390/ABSOLUTE_TOFU/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4370480/Burnstation/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4760390/55f0b712fc4e45f629b1f9e5fd9f8f12eb51d330/capsule_231x87.jpg?t=1784640908",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370480/f5831e4efaef03ebfcb1a5ab18f5b199a78b9355/capsule_231x87.jpg?t=1785172252",
       "categories": [
-        "Gündelik"
+        "Strateji"
       ]
     },
     {
@@ -483,14 +483,14 @@
       ]
     },
     {
-      "id": "steam-news-22d07cd88",
-      "title": "Burnstation",
+      "id": "steam-news-1d61d6694",
+      "title": "ABSOLUTE TOFU",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4370480/Burnstation/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4760390/ABSOLUTE_TOFU/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370480/f5831e4efaef03ebfcb1a5ab18f5b199a78b9355/capsule_231x87.jpg?t=1785172252",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4760390/55f0b712fc4e45f629b1f9e5fd9f8f12eb51d330/capsule_231x87.jpg?t=1784640908",
       "categories": [
-        "Strateji"
+        "Gündelik"
       ]
     },
     {
