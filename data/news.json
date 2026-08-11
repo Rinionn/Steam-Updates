@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T21:04:16.158Z",
+  "generatedAt": "2026-08-11T21:59:22.993Z",
   "items": [
     {
       "id": "steam-news-a433597b8",
@@ -112,7 +112,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3971290/The_Money_Pit/?snr=1_7_7_230_150_1",
       "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3971290/080fd7ac310d2cb2d93a9c744afa0e704bacebcb/capsule_231x87.jpg?t=1786469991",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3971290/080fd7ac310d2cb2d93a9c744afa0e704bacebcb/capsule_231x87.jpg?t=1786483100",
       "categories": [
         "Korku",
         "Çok Oyunculu"
@@ -312,17 +312,6 @@
       ]
     },
     {
-      "id": "steam-news-68fb323d2",
-      "title": "Wacky! Deer & Munk Adventure",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4915120/Wacky_Deer__Munk_Adventure/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915120/5441084ec7c6852ef8b420eccf014dbddeb97a05/capsule_231x87.jpg?t=1786463688",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-70b1e2149",
       "title": "Da Bomb!",
       "kind": "coming_soon",
@@ -332,6 +321,17 @@
       "categories": [
         "Gündelik",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-68fb323d2",
+      "title": "Wacky! Deer & Munk Adventure",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4915120/Wacky_Deer__Munk_Adventure/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915120/5441084ec7c6852ef8b420eccf014dbddeb97a05/capsule_231x87.jpg?t=1786463688",
+      "categories": [
+        "Tek Oyunculu"
       ]
     },
     {
@@ -460,17 +460,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-22d07cd88",
-      "title": "Burnstation",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4370480/Burnstation/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370480/f5831e4efaef03ebfcb1a5ab18f5b199a78b9355/capsule_231x87.jpg?t=1785172252",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-1d61d6694",
       "title": "ABSOLUTE TOFU",
       "kind": "coming_soon",
@@ -479,6 +468,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4760390/55f0b712fc4e45f629b1f9e5fd9f8f12eb51d330/capsule_231x87.jpg?t=1784640908",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-22d07cd88",
+      "title": "Burnstation",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4370480/Burnstation/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370480/f5831e4efaef03ebfcb1a5ab18f5b199a78b9355/capsule_231x87.jpg?t=1785172252",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -541,14 +541,15 @@
       ]
     },
     {
-      "id": "steam-news-2d7c051be",
-      "title": "No Knock",
+      "id": "steam-news-d9254c257",
+      "title": "Greedy Greedy Gnomes",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3860450/No_Knock/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4356400/Greedy_Greedy_Gnomes/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3860450/a0b63d84774870262f06d90f9366794ac7dce2dc/capsule_231x87.jpg?t=1785994090",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4356400/19e897c6825328c6e98ad11129dff9f165cc2d9c/capsule_231x87.jpg?t=1785929142",
       "categories": [
-        "Simülasyon"
+        "Gündelik",
+        "RPG"
       ]
     },
     {
