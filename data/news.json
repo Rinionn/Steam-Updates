@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-12T22:09:46.746Z",
+  "generatedAt": "2026-08-12T23:00:58.254Z",
   "items": [
+    {
+      "id": "steam-news-7612326e6",
+      "title": "Alien Hunt",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4786660/Alien_Hunt/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4786660/7ff0d9a2bbdb33caf7a75e5ccaa49cd15e998985/capsule_231x87.jpg?t=1786575597",
+      "categories": [
+        "Aksiyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-212dd8b03",
+      "title": "Pro Jank Footy",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3621330/Pro_Jank_Footy/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3621330/e4824bc02189676b2bc9063cc96ce302fae57600/capsule_231x87.jpg?t=1786575462",
+      "categories": [
+        "Spor"
+      ]
+    },
     {
       "id": "steam-news-8cdc1d75f",
       "title": "Protocol Omega: Resist and Survive",
@@ -260,30 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-03e3854a6",
-      "title": "Alien Bloom",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2133680/Alien_Bloom/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2133680/ec00bde3bb8d3d33f513e73233e66a02c34c8ae4/capsule_231x87.jpg?t=1786553935",
-      "categories": [
-        "Çok Oyunculu",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-c362f8aa8",
-      "title": "Influence",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4950120/Influence/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950120/fb32d7556124da85642a355559492fb1e1e02eae/capsule_231x87.jpg?t=1786553881",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-489af2695",
       "title": "VanySlash",
       "kind": "coming_soon",
@@ -458,6 +457,18 @@
       ]
     },
     {
+      "id": "steam-news-ff3446bc7",
+      "title": "Wild West Miner Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3967130/Wild_West_Miner_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3967130/430f56ca0f9cefa1a39878052b1de6ff98d3fa61/capsule_231x87.jpg?t=1785938205",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-95a0e63b6",
       "title": "Defender of the Crown: The Legend Returns",
       "kind": "coming_soon",
@@ -468,18 +479,6 @@
         "RPG",
         "Strateji",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-ff3446bc7",
-      "title": "Wild West Miner Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3967130/Wild_West_Miner_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3967130/430f56ca0f9cefa1a39878052b1de6ff98d3fa61/capsule_231x87.jpg?t=1785938205",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
       ]
     },
     {
@@ -507,6 +506,18 @@
       ]
     },
     {
+      "id": "steam-news-46d206b3a",
+      "title": "Medieval Travelling Merchant",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5008870/Medieval_Travelling_Merchant/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5008870/b5b039493eb7eafc2bea0359ffa96698c2b75cfd/capsule_231x87.jpg?t=1786382269",
+      "categories": [
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-cc2fb0d64",
       "title": "Vape Store Miami",
       "kind": "coming_soon",
@@ -527,18 +538,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3962460/ffae420a4e231a86cb229c34640e0232549a3058/capsule_231x87.jpg?t=1786460830",
       "categories": [
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-46d206b3a",
-      "title": "Medieval Travelling Merchant",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5008870/Medieval_Travelling_Merchant/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5008870/b5b039493eb7eafc2bea0359ffa96698c2b75cfd/capsule_231x87.jpg?t=1786382269",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
       ]
     },
     {
