@@ -1,13 +1,27 @@
 {
-  "generatedAt": "2026-08-12T23:00:58.254Z",
+  "generatedAt": "2026-08-12T23:52:10.505Z",
   "items": [
+    {
+      "id": "steam-news-0e623af02",
+      "title": "Custom Image Survivors",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4380760/Custom_Image_Survivors/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4380760/361638875577e61b1fe37057dedefb55c6313376/capsule_231x87.jpg?t=1786578623",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "RPG",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-7612326e6",
       "title": "Alien Hunt",
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4786660/Alien_Hunt/?snr=1_7_7_230_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4786660/7ff0d9a2bbdb33caf7a75e5ccaa49cd15e998985/capsule_231x87.jpg?t=1786575597",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4786660/7ff0d9a2bbdb33caf7a75e5ccaa49cd15e998985/capsule_231x87.jpg?t=1786577381",
       "categories": [
         "Aksiyon",
         "Strateji"
@@ -271,18 +285,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-69bfdd0df",
-      "title": "The One Fish",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4883580/The_One_Fish/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4883580/759a1f3f013fb34ef6ea81f548873f0ab432567e/capsule_231x87.jpg?t=1786553963",
-      "categories": [
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-489af2695",
       "title": "VanySlash",
       "kind": "coming_soon",
@@ -332,12 +334,23 @@
       ]
     },
     {
+      "id": "steam-news-c8f4234cb",
+      "title": "soulstation",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4370460/soulstation/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370460/fdb9ec040e4d48e86c771a1abb2fc575166da664/capsule_231x87.jpg?t=1785320662",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
       "id": "steam-news-475f93734",
       "title": "纵横麻将 Matrix Mahjong",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3967760/_Matrix_Mahjong/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3967760/f854d43c7428492138f642f798be3facfe1372a1/capsule_231x87.jpg?t=1786516888",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3967760/f854d43c7428492138f642f798be3facfe1372a1/capsule_231x87.jpg?t=1786575715",
       "categories": [
         "Strateji",
         "Tek Oyunculu"
@@ -353,17 +366,6 @@
       "categories": [
         "Aksiyon",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-c8f4234cb",
-      "title": "soulstation",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4370460/soulstation/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370460/fdb9ec040e4d48e86c771a1abb2fc575166da664/capsule_231x87.jpg?t=1785320662",
-      "categories": [
-        "Korku"
       ]
     },
     {
@@ -487,7 +489,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/2542020/Duskfade/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2542020/fd8911e8ecfdd361b1fd50a565d98ad526f903ff/capsule_231x87.jpg?t=1785763614",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2542020/fd8911e8ecfdd361b1fd50a565d98ad526f903ff/capsule_231x87.jpg?t=1786576721",
       "categories": [
         "Aksiyon"
       ]
@@ -506,15 +508,14 @@
       ]
     },
     {
-      "id": "steam-news-46d206b3a",
-      "title": "Medieval Travelling Merchant",
+      "id": "steam-news-6fcdc98ea",
+      "title": "THE CANON OF BALLS",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5008870/Medieval_Travelling_Merchant/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3962460/THE_CANON_OF_BALLS/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5008870/b5b039493eb7eafc2bea0359ffa96698c2b75cfd/capsule_231x87.jpg?t=1786382269",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3962460/ffae420a4e231a86cb229c34640e0232549a3058/capsule_231x87.jpg?t=1786460830",
       "categories": [
-        "Simülasyon",
-        "Strateji"
+        "Aksiyon"
       ]
     },
     {
@@ -530,14 +531,15 @@
       ]
     },
     {
-      "id": "steam-news-6fcdc98ea",
-      "title": "THE CANON OF BALLS",
+      "id": "steam-news-46d206b3a",
+      "title": "Medieval Travelling Merchant",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3962460/THE_CANON_OF_BALLS/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5008870/Medieval_Travelling_Merchant/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3962460/ffae420a4e231a86cb229c34640e0232549a3058/capsule_231x87.jpg?t=1786460830",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5008870/b5b039493eb7eafc2bea0359ffa96698c2b75cfd/capsule_231x87.jpg?t=1786382269",
       "categories": [
-        "Aksiyon"
+        "Simülasyon",
+        "Strateji"
       ]
     },
     {
