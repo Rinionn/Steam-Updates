@@ -232,5 +232,21 @@
     "eventId": "cyberpunk-fest-51562f576",
     "eventName": "Cyberpunk Fest",
     "kind": "removed"
+  },
+  {
+    "detectedAt": "2026-08-12T15:45:09.370Z",
+    "eventId": "witch-fest-34647039a",
+    "eventName": "Witch Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.witch-fest-34647039a-ffeab7bf8.dueAt",
+    "after": "2027-04-22T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-12T15:45:09.370Z",
+    "eventId": "real-time-strategy-fest-96b41f8e6",
+    "eventName": "Real-Time Strategy Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.real-time-strategy-fest-96b41f8e6-2207761ac.dueAt",
+    "after": "2027-05-10T17:00:00Z"
   }
 ]
