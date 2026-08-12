@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-08-12T09:20:02.810Z",
+  "generatedAt": "2026-08-12T10:31:48.246Z",
   "items": [
+    {
+      "id": "steam-news-1b1508c81",
+      "title": "Da Bomb!",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5001100/Da_Bomb/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001100/d1bb103ac2b3c466ff2ba305fba10e8da453098b/capsule_231x87.jpg?t=1786530313",
+      "categories": [
+        "Gündelik",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-000f1f3a7",
+      "title": "Pixel City",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4515850/Pixel_City/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4515850/d5476cb87802af7fbbd1a0433ed6e5cf0c67a4a1/capsule_231x87.jpg?t=1786527362",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-3ec757c79",
+      "title": "TRAIN 9",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4992700/TRAIN_9/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4992700/c4469eb5069dce6c97974141d1674fe460e7274f/capsule_231x87.jpg?t=1786527134",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-0d552db92",
       "title": "Limbot",
@@ -16,7 +50,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4200520/Rage_Bait/?snr=1_7_7_230_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4200520/60ccbaec05286ae8d4af76e631c75d3802c097e4/capsule_231x87.jpg?t=1786524874",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4200520/60ccbaec05286ae8d4af76e631c75d3802c097e4/capsule_231x87.jpg?t=1786528177",
       "categories": [
         "RPG"
       ]
@@ -249,70 +283,27 @@
       ]
     },
     {
-      "id": "steam-news-c5b8ce1d2",
-      "title": "SWEYET(etc.)",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3063200/SWEYETetc/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3063200/c3e00f0c0d9f57e0c8aa7c6ae182a9c4cf49202b/capsule_231x87.jpg?t=1786501952",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-b7dccd126",
-      "title": "三國鼎立Online Remastered",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4770830/Online_Remastered/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4770830/7b050debf51f273993b8fde5de02d896f870709a/capsule_231x87.jpg?t=1786500357",
-      "categories": [
-        "Strateji",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-b362c5d48",
-      "title": "Underwater DuO",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3736310/Underwater_DuO/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3736310/99557edd68d2d56448d0b90b14267f723b645b63/capsule_231x87.jpg?t=1786501572",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-d73061a62",
-      "title": "Sky Scramble",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4885880/Sky_Scramble/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4885880/a6b8720ea590f9bb87629fe4d6cccf27b45cafc3/capsule_231x87.jpg?t=1785759843",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-1510d34ed",
-      "title": "Patisserie Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3893560/Patisserie_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3893560/48f9ca765c5b20bf9f7d65607843c4602e66c341/capsule_231x87.jpg?t=1785515667",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-5d7ab38d0",
       "title": "Quantum Hell",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4621690/Quantum_Hell/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4621690/9eaf3d32503fa491b1293b6baf048f5ea42f97e3/capsule_231x87.jpg?t=1785510269",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4621690/9eaf3d32503fa491b1293b6baf048f5ea42f97e3/capsule_231x87.jpg?t=1786528294",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-7494d14fb",
+      "title": "Palm Sugar: A Village Story",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2778220/Palm_Sugar_A_Village_Story/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2778220/054f2e3124672a782d36858a7b9eca9852c6eeec/capsule_231x87.jpg?t=1786516891",
+      "categories": [
+        "Tek Oyunculu",
+        "Macera",
+        "RPG"
       ]
     },
     {
@@ -337,19 +328,6 @@
       "categories": [
         "Simülasyon",
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-7494d14fb",
-      "title": "Palm Sugar: A Village Story",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2778220/Palm_Sugar_A_Village_Story/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2778220/054f2e3124672a782d36858a7b9eca9852c6eeec/capsule_231x87.jpg?t=1786516891",
-      "categories": [
-        "Tek Oyunculu",
-        "Macera",
-        "RPG"
       ]
     },
     {
@@ -420,13 +398,17 @@
       ]
     },
     {
-      "id": "steam-news-63d116efa",
-      "title": "Sunder Siege",
+      "id": "steam-news-d12efa601",
+      "title": "Renz Village Adventure",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4664900/Sunder_Siege/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4988320/Renz_Village_Adventure/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4664900/b8c48247874866420e0dbea87d2383721d556811/capsule_231x87.jpg?t=1784129481",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4988320/e46827a6a57a759ccda5244548c2d2bb358dae6c/capsule_231x87.jpg?t=1785703557",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Strateji"
+      ]
     },
     {
       "id": "steam-news-2d7c051be",
@@ -452,16 +434,35 @@
       ]
     },
     {
-      "id": "steam-news-d12efa601",
-      "title": "Renz Village Adventure",
+      "id": "steam-news-63d116efa",
+      "title": "Sunder Siege",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4988320/Renz_Village_Adventure/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4664900/Sunder_Siege/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4988320/e46827a6a57a759ccda5244548c2d2bb358dae6c/capsule_231x87.jpg?t=1785703557",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4664900/b8c48247874866420e0dbea87d2383721d556811/capsule_231x87.jpg?t=1784129481",
+      "categories": []
+    },
+    {
+      "id": "steam-news-c59011032",
+      "title": "AquaDesk",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4943290/AquaDesk/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943290/84e72c21ada2ded5dfbc9c64a22bceeaece734af/capsule_231x87.jpg?t=1786444103",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-54708a2e2",
+      "title": "Verde",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3164310/Verde/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3164310/e35435ea06ceaf2fe2b0d387d8b373da61134b71/capsule_231x87.jpg?t=1786527918",
       "categories": [
         "Gündelik",
-        "Simülasyon",
-        "Strateji"
+        "Simülasyon"
       ]
     },
     {
@@ -473,29 +474,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4485850/0c2d3a7b0acbe4d343523aacc30ebf3cd332d762/capsule_231x87.jpg?t=1784972926",
       "categories": [
         "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-54708a2e2",
-      "title": "Verde",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3164310/Verde/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3164310/e35435ea06ceaf2fe2b0d387d8b373da61134b71/capsule_231x87.jpg?t=1786441244",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-c59011032",
-      "title": "AquaDesk",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4943290/AquaDesk/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943290/84e72c21ada2ded5dfbc9c64a22bceeaece734af/capsule_231x87.jpg?t=1786444103",
-      "categories": [
         "Simülasyon"
       ]
     },
@@ -555,6 +533,28 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3562580/7ddab317040f41efa6d0a5961fa9b8a689fc6591/capsule_231x87.jpg?t=1786276448",
       "categories": [
         "Macera",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-c86e3f037",
+      "title": "The Cave Diver",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3004390/The_Cave_Diver/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3004390/67b46fdc2d6e5d5790d86cb426c8bf389fc9f1d5/capsule_231x87.jpg?t=1786307071",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-5ec67ff8e",
+      "title": "Copter Dude",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4839160/Copter_Dude/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4839160/c58e83991668763453a879de871d1fdce4669942/capsule_231x87.jpg?t=1785915187",
+      "categories": [
         "Aksiyon"
       ]
     },
