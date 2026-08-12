@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-12T17:42:17.590Z",
+  "generatedAt": "2026-08-12T18:37:35.089Z",
   "items": [
+    {
+      "id": "steam-news-dbb7f3377",
+      "title": "Vaulted Valor",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3417600/Vaulted_Valor/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3417600/767758840f9f68ed3099a4d8f69d76e084fc7fdc/capsule_231x87.jpg?t=1786559460",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-d06e8416d",
+      "title": "Whispering Maze",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4499710/Whispering_Maze/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4499710/08c08c7a9443162872ecade2247cc670f8dcea0d/capsule_231x87.jpg?t=1786558667",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-289483a0d",
+      "title": "Tileweaver",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4006200/Tileweaver/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4006200/d46888f8b3f33a1798632fc9a783bc7b6af8e36d/capsule_231x87.jpg?t=1786557437",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-0cce81cc0",
       "title": "N.I.V.O",
@@ -226,7 +261,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4216180/IGNOBLE/?snr=1_7_7_230_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4216180/bcafb46588d0d947da274babe8d6f28a96319c37/capsule_231x87.jpg?t=1786553442",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4216180/bcafb46588d0d947da274babe8d6f28a96319c37/capsule_231x87.jpg?t=1786558027",
       "categories": [
         "Tek Oyunculu"
       ]
@@ -240,103 +275,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4585070/686051e53004a4c7d73e6763467cc4572fa34bed/capsule_231x87.jpg?t=1786553529",
       "categories": [
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-405957023",
-      "title": "The Long Way Up",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4970290/The_Long_Way_Up/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4970290/ac92b507c910adc7cad612823cac0d2b5917acf8/capsule_231x87.jpg?t=1786549914",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-a71b2a9dd",
-      "title": "Agefield High: Rock the School",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3562580/Agefield_High_Rock_the_School/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3562580/7ddab317040f41efa6d0a5961fa9b8a689fc6591/capsule_231x87.jpg?t=1786549826",
-      "categories": [
-        "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-407f009a4",
-      "title": "Potato Simulato: Together",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4567510/Potato_Simulato_Together/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4567510/d5a1ad18c5a6fd598df224932c3951ccf9f7aaf3/capsule_231x87.jpg?t=1786549228",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-f7a2d3b78",
-      "title": "Tileweaver",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4006200/Tileweaver/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4006200/d46888f8b3f33a1798632fc9a783bc7b6af8e36d/capsule_231x87.jpg?t=1786547788",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-fd1158c04",
-      "title": "Gold Up",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4321400/Gold_Up/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4321400/e14d4851b1182761a5b6a3aa77dd0232d39c54b1/capsule_231x87.jpg?t=1786484434",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-fa76d3c30",
-      "title": "Red or Black: Poker Slay",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4416760/Red_or_Black_Poker_Slay/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4416760/e953523b122f505069a8edbea02788a1289599c7/capsule_231x87.jpg?t=1786365293",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-6b56d72fe",
-      "title": "Holey",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3553250/Holey/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3553250/082f95ee8640bd18899803691de05b12feafb49a/capsule_231x87.jpg?t=1786524075",
-      "categories": [
-        "Bağımsız",
-        "Korku",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-784a50540",
-      "title": "Vaulted Valor",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3417600/Vaulted_Valor/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3417600/767758840f9f68ed3099a4d8f69d76e084fc7fdc/capsule_231x87.jpg?t=1786553236",
-      "categories": [
-        "Macera"
       ]
     },
     {
@@ -431,6 +369,17 @@
       ]
     },
     {
+      "id": "steam-news-c449868ee",
+      "title": "S.O.L School Of Labyrinth",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4736830/SOL_School_Of_Labyrinth/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4736830/f83e0d2954cd9afa08d4f62bfca3cb9faddf4c7a/capsule_231x87.jpg?t=1786521383",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-1ae83ae46",
       "title": "Eye of the Incubus",
       "kind": "coming_soon",
@@ -442,17 +391,6 @@
         "Macera",
         "Tek Oyunculu",
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-c449868ee",
-      "title": "S.O.L School Of Labyrinth",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4736830/SOL_School_Of_Labyrinth/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4736830/f83e0d2954cd9afa08d4f62bfca3cb9faddf4c7a/capsule_231x87.jpg?t=1786521383",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -503,15 +441,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-2f368c7d5",
-      "title": "IGS Classic Arcade Collection",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3417140/IGS_Classic_Arcade_Collection/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3417140/30ffa5f9253925bbd7b5336ab86e01aa284e5a68/capsule_231x87.jpg?t=1784873923",
-      "categories": []
-    },
-    {
       "id": "steam-news-2a336bde9",
       "title": "Tidy Mart",
       "kind": "coming_soon",
@@ -522,6 +451,15 @@
         "Gündelik",
         "Simülasyon"
       ]
+    },
+    {
+      "id": "steam-news-2f368c7d5",
+      "title": "IGS Classic Arcade Collection",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3417140/IGS_Classic_Arcade_Collection/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3417140/30ffa5f9253925bbd7b5336ab86e01aa284e5a68/capsule_231x87.jpg?t=1784873923",
+      "categories": []
     },
     {
       "id": "steam-news-907c3c7c4",
@@ -558,6 +496,66 @@
       "categories": [
         "Spor",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-055163e8a",
+      "title": "Amlebic",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4719460/Amlebic/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4719460/5354da621c7e28ccbba33c0a2bab00eb7db5f583/capsule_231x87.jpg?t=1786254887",
+      "categories": [
+        "Strateji",
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-a99f96027",
+      "title": "Dream House Cleaning",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4860340/Dream_House_Cleaning/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4860340/66f40ad5e08b8386a2c0c4479d259016505539e8/capsule_231x87.jpg?t=1785334374",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-123fd1b31",
+      "title": "The Finest Spark",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4829490/The_Finest_Spark/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4829490/0351f957ba355859e01910fdd84efa4edfa6419e/capsule_231x87.jpg?t=1786378736",
+      "categories": [
+        "Aksiyon",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-c8f4234cb",
+      "title": "soulstation",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4370460/soulstation/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370460/fdb9ec040e4d48e86c771a1abb2fc575166da664/capsule_231x87.jpg?t=1785320662",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-475f93734",
+      "title": "纵横麻将 Matrix Mahjong",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3967760/_Matrix_Mahjong/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3967760/f854d43c7428492138f642f798be3facfe1372a1/capsule_231x87.jpg?t=1786516888",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu"
       ]
     },
     {
