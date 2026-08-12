@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-11T23:36:17.320Z",
+  "generatedAt": "2026-08-12T00:42:10.899Z",
   "items": [
+    {
+      "id": "steam-news-48afd2c10",
+      "title": "Roguelike Bricks",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5000470/Roguelike_Bricks/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5000470/2f57b7e6fcbbff07c9f53ec923112f9cd006918a/capsule_231x87.jpg?t=1786494308",
+      "categories": [
+        "RPG",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-02c91d759",
+      "title": "Matter MazeBall: Element Trials",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4946500/Matter_MazeBall_Element_Trials/?snr=1_7_7_230_150_1",
+      "dateLabel": "11 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946500/a1f0a8e803941e0020d6986fa7b214890b446488/capsule_231x87.jpg?t=1786492338",
+      "categories": [
+        "Gündelik",
+        "Çok Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-069a70078",
       "title": "Scraps - Hellmouth Creek",
@@ -252,28 +276,16 @@
       ]
     },
     {
-      "id": "steam-news-4122c158b",
-      "title": "Crypto Trading Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4163000/Crypto_Trading_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4163000/288300a2f0c6798f47f86073bbcbb1984522a9eb/capsule_231x87.jpg?t=1786467630",
+      "id": "steam-news-8a5f087bf",
+      "title": "我的傲娇妹妹 MY TSUNDERE SISTER",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4622110/_MY_TSUNDERE_SISTER/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4622110/26a601bfbaf4385eaf3196852e98ce3553cdbcae/capsule_231x87.jpg?t=1786365436",
       "categories": [
-        "Bağımsız",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-8da7fb3d2",
-      "title": "Mexican Train",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4513000/Mexican_Train/?snr=1_7_7_230_150_1",
-      "dateLabel": "11 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4513000/87ee4773e506ceb82b76a9e9223740a33f73eafe/capsule_231x87.jpg?t=1786467619",
-      "categories": [
-        "Çok Oyunculu",
-        "Strateji",
-        "Tek Oyunculu"
+        "Anime",
+        "RPG",
+        "Macera"
       ]
     },
     {
@@ -288,16 +300,14 @@
       ]
     },
     {
-      "id": "steam-news-8a5f087bf",
-      "title": "我的傲娇妹妹 MY TSUNDERE SISTER",
+      "id": "steam-news-68fb323d2",
+      "title": "Wacky! Deer & Munk Adventure",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4622110/_MY_TSUNDERE_SISTER/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4915120/Wacky_Deer__Munk_Adventure/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4622110/26a601bfbaf4385eaf3196852e98ce3553cdbcae/capsule_231x87.jpg?t=1786365436",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915120/5441084ec7c6852ef8b420eccf014dbddeb97a05/capsule_231x87.jpg?t=1786463688",
       "categories": [
-        "Anime",
-        "RPG",
-        "Macera"
+        "Tek Oyunculu"
       ]
     },
     {
@@ -310,17 +320,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-68fb323d2",
-      "title": "Wacky! Deer & Munk Adventure",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4915120/Wacky_Deer__Munk_Adventure/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915120/5441084ec7c6852ef8b420eccf014dbddeb97a05/capsule_231x87.jpg?t=1786463688",
-      "categories": [
-        "Tek Oyunculu"
       ]
     },
     {
@@ -401,18 +400,6 @@
       ]
     },
     {
-      "id": "steam-news-29eb1e87e",
-      "title": "The Merchant's Eden",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3829280/The_Merchants_Eden/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3829280/642da31f2fa4ccea624a1ea5e56453a3e0c51285/capsule_231x87.jpg?t=1785501792",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-7494d14fb",
       "title": "Palm Sugar: A Village Story",
       "kind": "coming_soon",
@@ -435,6 +422,18 @@
       "categories": [
         "Simülasyon",
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-29eb1e87e",
+      "title": "The Merchant's Eden",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3829280/The_Merchants_Eden/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3829280/642da31f2fa4ccea624a1ea5e56453a3e0c51285/capsule_231x87.jpg?t=1785501792",
+      "categories": [
+        "Strateji",
+        "Gündelik"
       ]
     },
     {
@@ -471,6 +470,17 @@
       ]
     },
     {
+      "id": "steam-news-1d61d6694",
+      "title": "ABSOLUTE TOFU",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4760390/ABSOLUTE_TOFU/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4760390/55f0b712fc4e45f629b1f9e5fd9f8f12eb51d330/capsule_231x87.jpg?t=1784640908",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-0ed73e0ce",
       "title": "Airport Manager Simulator 2026",
       "kind": "coming_soon",
@@ -480,17 +490,6 @@
       "categories": [
         "RPG",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-1d61d6694",
-      "title": "ABSOLUTE TOFU",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4760390/ABSOLUTE_TOFU/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4760390/55f0b712fc4e45f629b1f9e5fd9f8f12eb51d330/capsule_231x87.jpg?t=1784640908",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -541,15 +540,13 @@
       ]
     },
     {
-      "id": "steam-news-2d7c051be",
-      "title": "No Knock",
+      "id": "steam-news-63d116efa",
+      "title": "Sunder Siege",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3860450/No_Knock/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4664900/Sunder_Siege/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3860450/a0b63d84774870262f06d90f9366794ac7dce2dc/capsule_231x87.jpg?t=1785994090",
-      "categories": [
-        "Simülasyon"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4664900/b8c48247874866420e0dbea87d2383721d556811/capsule_231x87.jpg?t=1784129481",
+      "categories": []
     },
     {
       "id": "steam-news-c560bed11",
