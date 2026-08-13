@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-13T05:20:14.515Z",
+  "generatedAt": "2026-08-13T06:51:48.036Z",
   "items": [
+    {
+      "id": "steam-news-82536ed27",
+      "title": "Knell",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4952430/Knell/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4952430/68263ade5e2c3e4c8a663e852dc308aa96f6ff52/capsule_231x87.jpg?t=1786600609",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d36fd9a33",
+      "title": "Kaboomania",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4355080/Kaboomania/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4355080/8fe192cb3af474f6c424dd41f7f787663df9a414/capsule_231x87.jpg?t=1786600353",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-54ebc3e15",
       "title": "Tidy Mart",
@@ -261,31 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-fae352429",
-      "title": "Chainsaw",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4246300/Chainsaw/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4246300/c80b6de9b1ebfc21a8bec00fc7bd61e7b631e572/capsule_231x87_alt_assets_0.jpg?t=1786567647",
-      "categories": [
-        "RPG",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-ada391c92",
-      "title": "Vanguard - Idle Auto Battler",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4519820/Vanguard__Idle_Auto_Battler/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4519820/d08b0268e4be573d28c635067381a205de6e2902/capsule_231x87.jpg?t=1786563626",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-489af2695",
       "title": "VanySlash",
       "kind": "coming_soon",
@@ -335,15 +334,15 @@
       ]
     },
     {
-      "id": "steam-news-475f93734",
-      "title": "纵横麻将 Matrix Mahjong",
+      "id": "steam-news-123fd1b31",
+      "title": "The Finest Spark",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3967760/_Matrix_Mahjong/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4829490/The_Finest_Spark/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3967760/f854d43c7428492138f642f798be3facfe1372a1/capsule_231x87.jpg?t=1786575715",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4829490/0351f957ba355859e01910fdd84efa4edfa6419e/capsule_231x87.jpg?t=1786597149",
       "categories": [
-        "Strateji",
-        "Tek Oyunculu"
+        "Aksiyon",
+        "Simülasyon"
       ]
     },
     {
@@ -358,15 +357,15 @@
       ]
     },
     {
-      "id": "steam-news-123fd1b31",
-      "title": "The Finest Spark",
+      "id": "steam-news-475f93734",
+      "title": "纵横麻将 Matrix Mahjong",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4829490/The_Finest_Spark/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3967760/_Matrix_Mahjong/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4829490/0351f957ba355859e01910fdd84efa4edfa6419e/capsule_231x87.jpg?t=1786597149",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3967760/f854d43c7428492138f642f798be3facfe1372a1/capsule_231x87.jpg?t=1786575715",
       "categories": [
-        "Aksiyon",
-        "Simülasyon"
+        "Strateji",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -449,17 +448,6 @@
       ]
     },
     {
-      "id": "steam-news-accdfd427",
-      "title": "Drink Factory Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3913840/Drink_Factory_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3913840/dc019391e6ab4c285b4fc4df4c9195d2f3ac2ecb/capsule_231x87.jpg?t=1786544267",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-ff3446bc7",
       "title": "Wild West Miner Simulator",
       "kind": "coming_soon",
@@ -481,6 +469,17 @@
       "categories": [
         "RPG",
         "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-accdfd427",
+      "title": "Drink Factory Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3913840/Drink_Factory_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3913840/dc019391e6ab4c285b4fc4df4c9195d2f3ac2ecb/capsule_231x87.jpg?t=1786544267",
+      "categories": [
         "Simülasyon"
       ]
     },
@@ -509,6 +508,18 @@
       ]
     },
     {
+      "id": "steam-news-46d206b3a",
+      "title": "Medieval Travelling Merchant",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5008870/Medieval_Travelling_Merchant/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5008870/b5b039493eb7eafc2bea0359ffa96698c2b75cfd/capsule_231x87.jpg?t=1786382269",
+      "categories": [
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-6fcdc98ea",
       "title": "THE CANON OF BALLS",
       "kind": "coming_soon",
@@ -529,18 +540,6 @@
       "categories": [
         "Simülasyon",
         "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-46d206b3a",
-      "title": "Medieval Travelling Merchant",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5008870/Medieval_Travelling_Merchant/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5008870/b5b039493eb7eafc2bea0359ffa96698c2b75cfd/capsule_231x87.jpg?t=1786382269",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
       ]
     },
     {
