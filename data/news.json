@@ -1,6 +1,44 @@
 {
-  "generatedAt": "2026-08-12T23:52:10.505Z",
+  "generatedAt": "2026-08-13T01:02:56.203Z",
   "items": [
+    {
+      "id": "steam-news-ce82ed6d7",
+      "title": "S.O.L School Of Labyrinth",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4736830/SOL_School_Of_Labyrinth/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4736830/f83e0d2954cd9afa08d4f62bfca3cb9faddf4c7a/capsule_231x87.jpg?t=1786582875",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-bde600b5a",
+      "title": "Eye of the Incubus",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3397100/Eye_of_the_Incubus/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3397100/98f726ff068a8c7433c678bce78944159f8de60e/capsule_231x87.jpg?t=1786582803",
+      "categories": [
+        "RPG",
+        "Macera",
+        "Tek Oyunculu",
+        "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-505074442",
+      "title": "Ruin",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/663950/Ruin/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/663950/capsule_231x87.jpg?t=1786579122",
+      "categories": [
+        "Bağımsız",
+        "Macera",
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-0e623af02",
       "title": "Custom Image Survivors",
@@ -33,7 +71,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3621330/Pro_Jank_Footy/?snr=1_7_7_230_150_1",
       "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3621330/e4824bc02189676b2bc9063cc96ce302fae57600/capsule_231x87.jpg?t=1786575462",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3621330/e4824bc02189676b2bc9063cc96ce302fae57600/capsule_231x87.jpg?t=1786580108",
       "categories": [
         "Spor"
       ]
@@ -253,38 +291,6 @@
       ]
     },
     {
-      "id": "steam-news-ed20ae0bb",
-      "title": "Red Tape Rampage",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3878620/Red_Tape_Rampage/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3878620/8cd63667028807e08b81f780808d4a8493df2196/capsule_231x87.jpg?t=1786554064",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-bcd3bb40d",
-      "title": "Rogue Drone",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4285020/Rogue_Drone/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4285020/f19af6618258b910c9731ee4cc2db370b572d994/capsule_231x87.jpg?t=1786554034",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-bc6628471",
-      "title": "HELL GALAXY",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2513490/HELL_GALAXY/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2513490/0aa6ad51c73389e66a08b5468d01e74929c4c0d1/capsule_231x87.jpg?t=1786554006",
-      "categories": []
-    },
-    {
       "id": "steam-news-489af2695",
       "title": "VanySlash",
       "kind": "coming_soon",
@@ -334,17 +340,6 @@
       ]
     },
     {
-      "id": "steam-news-c8f4234cb",
-      "title": "soulstation",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4370460/soulstation/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370460/fdb9ec040e4d48e86c771a1abb2fc575166da664/capsule_231x87.jpg?t=1785320662",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-475f93734",
       "title": "纵横麻将 Matrix Mahjong",
       "kind": "coming_soon",
@@ -366,6 +361,17 @@
       "categories": [
         "Aksiyon",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-c8f4234cb",
+      "title": "soulstation",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4370460/soulstation/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370460/fdb9ec040e4d48e86c771a1abb2fc575166da664/capsule_231x87.jpg?t=1785320662",
+      "categories": [
+        "Korku"
       ]
     },
     {
