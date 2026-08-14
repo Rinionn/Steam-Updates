@@ -1,6 +1,51 @@
 {
-  "generatedAt": "2026-08-14T20:06:00.744Z",
+  "generatedAt": "2026-08-14T20:45:04.329Z",
   "items": [
+    {
+      "id": "steam-news-0cb123758",
+      "title": "Don’t Talk to Strangers",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4979520/Dont_Talk_to_Strangers/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4979520/2449e355598d4d8516ecb225ab853380955536a7/capsule_231x87.jpg?t=1786739447",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-f5978d079",
+      "title": "Konbini Cleanup",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4951190/Konbini_Cleanup/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951190/77c7a25584c205b21aafb868787d96af0dd9ec69/capsule_231x87.jpg?t=1786738540",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-a553e9724",
+      "title": "My Fly",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3517820/My_Fly/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3517820/6cde6187a438bdd7ed1df7616ea13504ec7082ca/capsule_231x87.jpg?t=1786738509",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-bf47b8f5b",
+      "title": "Invisible Archery",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4891020/Invisible_Archery/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4891020/f58b48edc9c60bc211b395867b1669bde19a894d/capsule_231x87.jpg?t=1786738121",
+      "categories": []
+    },
     {
       "id": "steam-news-1e18cf999",
       "title": "Unusual Tales: After Bark",
@@ -230,52 +275,6 @@
       "dateLabel": "14 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1946560/9763fa7078c6df3625ee35ef728ff30b0f646724/capsule_231x87.jpg?t=1786726270",
       "categories": []
-    },
-    {
-      "id": "steam-news-71a0cbddd",
-      "title": "Oldies",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3363620/Oldies/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3363620/ea1101a456426548c5892f4667fc5d21ec500d32/capsule_231x87.jpg?t=1786725073",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-7f86f5073",
-      "title": "Chards",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3938820/Chards/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3938820/24d29037617dbe38d80a2147ae7912504bee4b1e/capsule_231x87.jpg?t=1786724986",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-8dcd4dc70",
-      "title": "Mike the Hooper",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4761070/Mike_the_Hooper/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4761070/936abeca080c02ead2ddc8f09b6503ee477f3547/capsule_231x87.jpg?t=1786724442",
-      "categories": [
-        "Macera",
-        "Spor"
-      ]
-    },
-    {
-      "id": "steam-news-cd4552829",
-      "title": "Patisserie Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3893560/Patisserie_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3893560/48f9ca765c5b20bf9f7d65607843c4602e66c341/capsule_231x87.jpg?t=1786723613",
-      "categories": [
-        "Simülasyon"
-      ]
     },
     {
       "id": "steam-news-95598472e",
@@ -543,14 +542,14 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
+      "id": "steam-news-8f675531d",
+      "title": "Guardian of soul tower",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786706672",
       "categories": [
-        "RPG"
+        "Strateji"
       ]
     },
     {
