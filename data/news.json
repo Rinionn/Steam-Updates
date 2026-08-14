@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-14T19:31:47.559Z",
+  "generatedAt": "2026-08-14T20:06:00.744Z",
   "items": [
+    {
+      "id": "steam-news-1e18cf999",
+      "title": "Unusual Tales: After Bark",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4516880/Unusual_Tales_After_Bark/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4516880/c4474becb396c34d0e73a6bcf7b3532eba0f2a7e/capsule_231x87.jpg?t=1786737888",
+      "categories": [
+        "Korku",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-406447ccb",
       "title": "Star Quest",
@@ -266,28 +278,6 @@
       ]
     },
     {
-      "id": "steam-news-9ee330bc6",
-      "title": "Tank Brigade",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3785500/Tank_Brigade/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3785500/4faadb3ffa21106a860fae4d1d76626bb99e501e/capsule_231x87.jpg?t=1786723350",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-4bb9a3d6b",
-      "title": "Kubo",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4999470/Kubo/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4999470/b47a71447d68b25eee5f454a3c8f063da86f6076/capsule_231x87.jpg?t=1786484437",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-95598472e",
       "title": "Bumper Core",
       "kind": "coming_soon",
@@ -550,6 +540,17 @@
       "categories": [
         "Strateji",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-900d14641",
+      "title": "东方",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "categories": [
+        "RPG"
       ]
     },
     {
