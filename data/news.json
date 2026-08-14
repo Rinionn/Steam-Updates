@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-14T21:40:26.419Z",
+  "generatedAt": "2026-08-14T22:32:52.418Z",
   "items": [
+    {
+      "id": "steam-news-16ea8d450",
+      "title": "Thirty Years War",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4706650/Thirty_Years_War/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706650/bdeb1d90cd8cefbeeb963e6a6796a4291c2de1e7/capsule_231x87.jpg?t=1786746723",
+      "categories": [
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-2a97abab3",
+      "title": "Brass Rebellion",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4979270/Brass_Rebellion/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4979270/5b84fe68f8cef00e49db06e6d0e8cc8d96ef02df/capsule_231x87.jpg?t=1786746406",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-c2e254b17",
       "title": "BEATSHIFT ARENA",
@@ -255,30 +279,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4914340/fa6f51733fad68f00a1e6a7eac0638b5b8d713cc/capsule_231x87.jpg?t=1786726830",
       "categories": [
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-79e931c39",
-      "title": "Death Kitchen",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3603380/Death_Kitchen/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3603380/ce7ebc41b6d2a6cc59d73a95e8eb21c45d53f073/capsule_231x87.jpg?t=1786726811",
-      "categories": [
-        "Korku",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-0611e02be",
-      "title": "Boxing World Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4986600/Boxing_World_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4986600/c20e1d58effad4cb5378002e7b2a6523f04f5a1f/capsule_231x87.jpg?t=1786726746",
-      "categories": [
-        "Simülasyon",
-        "Spor"
       ]
     },
     {
