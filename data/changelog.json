@@ -248,5 +248,29 @@
     "kind": "deadline_changed",
     "field": "deadlines.real-time-strategy-fest-96b41f8e6-2207761ac.dueAt",
     "after": "2027-05-10T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-14T00:43:24.601Z",
+    "eventId": "couch-co-op-fest-8b489c8ca",
+    "eventName": "Couch Co-Op Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.couch-co-op-fest-8b489c8ca-1dd6ff48a.dueAt",
+    "after": "2027-02-08T18:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-14T00:43:24.601Z",
+    "eventId": "rhythm-fest-b3b4ca682",
+    "eventName": "Rhythm Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.rhythm-fest-b3b4ca682-1f1011bc8.dueAt",
+    "after": "2027-03-08T18:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-14T00:43:24.601Z",
+    "eventId": "dinos-vs-robots-fest-e4c058c85",
+    "eventName": "Dinos vs. Robots Fest",
+    "kind": "deadline_changed",
+    "field": "deadlines.dinos-vs-robots-fest-e4c058c85-525528f74.dueAt",
+    "after": "2027-03-29T17:00:00Z"
   }
 ]
