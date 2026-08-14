@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-08-14T21:05:43.163Z",
+  "generatedAt": "2026-08-14T21:40:26.419Z",
   "items": [
+    {
+      "id": "steam-news-c2e254b17",
+      "title": "BEATSHIFT ARENA",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4072730/BEATSHIFT_ARENA/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4072730/c448665a40517a3792504c854d0240dde7b2945c/capsule_231x87.jpg?t=1786743396",
+      "categories": [
+        "Bağımsız",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-7bff4925b",
+      "title": "Typing With Ghostie",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3617890/Typing_With_Ghostie/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3617890/34f87b50ce005c69a30f2802904c75af894a0e68/capsule_231x87.jpg?t=1786742028",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4f295cf26",
+      "title": "Eden - World Builder",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5004190/Eden__World_Builder/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5004190/c243df5dc760448f272213e146ca08b01a32fc09/capsule_231x87.jpg?t=1786741891",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-0cb123758",
       "title": "Don’t Talk to Strangers",
@@ -246,37 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-11e1e9195",
-      "title": "BLOODSHOT",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4651520/BLOODSHOT/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4651520/9b27e54e286eb8b891e82f2f579842e9ff461f8f/capsule_231x87.jpg?t=1786726535",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-0ad1ea14c",
-      "title": "Cthulhu's Reach: Devil Reef",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2412200/Cthulhus_Reach_Devil_Reef/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2412200/035a46e1ce92b90fb4e3ea1dabee05c8c0f761c9/capsule_231x87.jpg?t=1786726281",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-afca8ff9c",
-      "title": "sobosuba",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1946560/sobosuba/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1946560/9763fa7078c6df3625ee35ef728ff30b0f646724/capsule_231x87.jpg?t=1786726270",
-      "categories": []
-    },
-    {
       "id": "steam-news-edc2f2875",
       "title": "Sun Ultimate War",
       "kind": "coming_soon",
@@ -325,17 +330,6 @@
       ]
     },
     {
-      "id": "steam-news-5df2cb9e2",
-      "title": "Internet Survivor Survivors",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4625810/Internet_Survivor_Survivors/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625810/32985081ed99e143a208ff5b3f3079bd48012f44/capsule_231x87.jpg?t=1786694303",
-      "categories": [
-        "Anime"
-      ]
-    },
-    {
       "id": "steam-news-baa19bc15",
       "title": "Asobutsuri",
       "kind": "coming_soon",
@@ -357,6 +351,17 @@
       "categories": [
         "Aksiyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-5df2cb9e2",
+      "title": "Internet Survivor Survivors",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4625810/Internet_Survivor_Survivors/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625810/32985081ed99e143a208ff5b3f3079bd48012f44/capsule_231x87.jpg?t=1786694303",
+      "categories": [
+        "Anime"
       ]
     },
     {
@@ -406,6 +411,17 @@
       ]
     },
     {
+      "id": "steam-news-bfd97e280",
+      "title": "Kingdom of the Beast: CAT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-a85edc6e8",
       "title": "Crownhold",
       "kind": "coming_soon",
@@ -415,17 +431,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-bfd97e280",
-      "title": "Kingdom of the Beast: CAT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -452,17 +457,6 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-8f675531d",
       "title": "Guardian of soul tower",
       "kind": "coming_soon",
@@ -471,6 +465,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786706672",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-900d14641",
+      "title": "东方",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "categories": [
+        "RPG"
       ]
     },
     {
