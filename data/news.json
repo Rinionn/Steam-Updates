@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-15T08:11:53.936Z",
+  "generatedAt": "2026-08-15T08:45:52.396Z",
   "items": [
+    {
+      "id": "steam-news-1b1e0591f",
+      "title": "Ruthless Returns",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4958640/Ruthless_Returns/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4958640/c12ed6e302686673f022fdcab2ce343b976a69b1/capsule_231x87.jpg?t=1786781816",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-7c11ab1aa",
       "title": "Thermal Runaway",
@@ -275,18 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-c2e254b17",
-      "title": "BEATSHIFT ARENA",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4072730/BEATSHIFT_ARENA/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4072730/c448665a40517a3792504c854d0240dde7b2945c/capsule_231x87.jpg?t=1786743396",
-      "categories": [
-        "Bağımsız",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-edc2f2875",
       "title": "Sun Ultimate War",
       "kind": "coming_soon",
@@ -405,6 +405,17 @@
       ]
     },
     {
+      "id": "steam-news-bfd97e280",
+      "title": "Kingdom of the Beast: CAT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-a85edc6e8",
       "title": "Crownhold",
       "kind": "coming_soon",
@@ -414,17 +425,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-bfd97e280",
-      "title": "Kingdom of the Beast: CAT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
-      "categories": [
-        "RPG"
       ]
     },
     {
