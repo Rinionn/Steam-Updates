@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T15:53:24.262Z",
+  "generatedAt": "2026-08-15T16:14:22.916Z",
   "items": [
     {
       "id": "steam-news-f31e65fb3",
@@ -311,6 +311,17 @@
       ]
     },
     {
+      "id": "steam-news-5df2cb9e2",
+      "title": "Internet Survivor Survivors",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4625810/Internet_Survivor_Survivors/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625810/32985081ed99e143a208ff5b3f3079bd48012f44/capsule_231x87.jpg?t=1786767040",
+      "categories": [
+        "Anime"
+      ]
+    },
+    {
       "id": "steam-news-022e11253",
       "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
@@ -320,17 +331,6 @@
       "categories": [
         "Aksiyon",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-5df2cb9e2",
-      "title": "Internet Survivor Survivors",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4625810/Internet_Survivor_Survivors/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625810/32985081ed99e143a208ff5b3f3079bd48012f44/capsule_231x87.jpg?t=1786767040",
-      "categories": [
-        "Anime"
       ]
     },
     {
@@ -392,17 +392,6 @@
       ]
     },
     {
-      "id": "steam-news-bfd97e280",
-      "title": "Kingdom of the Beast: CAT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-a85edc6e8",
       "title": "Crownhold",
       "kind": "coming_soon",
@@ -412,6 +401,17 @@
       "categories": [
         "Gündelik",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-bfd97e280",
+      "title": "Kingdom of the Beast: CAT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
+      "categories": [
+        "RPG"
       ]
     },
     {
