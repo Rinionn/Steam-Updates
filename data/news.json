@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-15T11:33:48.865Z",
+  "generatedAt": "2026-08-15T11:51:47.602Z",
   "items": [
+    {
+      "id": "steam-news-b8e140a28",
+      "title": "Max Diceman",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4816620/Max_Diceman/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4816620/88adf16247dc04a5a94dc3f485ae6a97c7422d03/capsule_231x87.jpg?t=1786794596",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-2f4c9dbdc",
+      "title": "Zombolion",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2825270/Zombolion/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2825270/ca76fcc957027cb70b60a436cb60eb2f6a2d1002/capsule_231x87.jpg?t=1786794147",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-05e2e8838",
       "title": "Fungi Simulator",
@@ -264,31 +286,6 @@
       ]
     },
     {
-      "id": "steam-news-b8afda39c",
-      "title": "Broken Divide",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4525630/Broken_Divide/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4525630/8d290a83b3c0a94d0b1f851bcc61bb53c0088fb8/capsule_231x87.jpg?t=1786754592",
-      "categories": [
-        "RPG",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-0bc6c7eb7",
-      "title": "Cosmo in Tarot: Tarot Study Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4958720/Cosmo_in_Tarot_Tarot_Study_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4958720/795a55f4b5508084f63bd49fbb7defe5ccadd9e5/capsule_231x87.jpg?t=1786752996",
-      "categories": [
-        "Simülasyon",
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-ce0239c54",
       "title": "Bounty Hunters",
       "kind": "coming_soon",
@@ -313,18 +310,6 @@
       ]
     },
     {
-      "id": "steam-news-022e11253",
-      "title": "PuruPuru: Pull It Along",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-baa19bc15",
       "title": "Asobutsuri",
       "kind": "coming_soon",
@@ -333,6 +318,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
       "categories": [
         "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-022e11253",
+      "title": "PuruPuru: Pull It Along",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
+      "categories": [
+        "Aksiyon",
         "Gündelik"
       ]
     },
