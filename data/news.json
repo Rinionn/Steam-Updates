@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-15T11:51:47.602Z",
+  "generatedAt": "2026-08-15T13:01:13.498Z",
   "items": [
+    {
+      "id": "steam-news-053a266eb",
+      "title": "The Legend of Mala Tokmachka",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4787190/The_Legend_of_Mala_Tokmachka/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4787190/301e15bf33bdfcf0cad3e62834687762065860e0/capsule_231x87.jpg?t=1786798157",
+      "categories": [
+        "Strateji",
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-b8e140a28",
       "title": "Max Diceman",
@@ -275,17 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-53c900d9d",
-      "title": "Memo to the Underlord",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3984600/Memo_to_the_Underlord/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3984600/9d30720e7838a6a209ea6470965f7e585c4209e6/capsule_231x87.jpg?t=1786757190",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-ce0239c54",
       "title": "Bounty Hunters",
       "kind": "coming_soon",
@@ -437,17 +439,6 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-8f675531d",
       "title": "Guardian of soul tower",
       "kind": "coming_soon",
@@ -468,6 +459,17 @@
       "categories": [
         "Strateji",
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-900d14641",
+      "title": "东方",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "categories": [
+        "RPG"
       ]
     },
     {
