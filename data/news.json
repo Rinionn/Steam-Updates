@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-15T11:11:20.279Z",
+  "generatedAt": "2026-08-15T11:33:48.865Z",
   "items": [
+    {
+      "id": "steam-news-05e2e8838",
+      "title": "Fungi Simulator",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4943700/Fungi_Simulator/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943700/b1bece08636952ab6521b67552f48a34619a3a1d/capsule_231x87.jpg?t=1786793590",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-d7930c838",
+      "title": "Mutant Tide",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4930200/Mutant_Tide/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4930200/7185a2cd5bd11cde9704da71c792267f127f5618/capsule_231x87.jpg?t=1786792651",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-6ed2f1959",
       "title": "PhotoGuessr",
@@ -265,30 +289,6 @@
       ]
     },
     {
-      "id": "steam-news-163daf530",
-      "title": "FairyLand",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4823970/FairyLand/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823970/773b3812903af8e85172febfeff007774fdb120b/capsule_231x87.jpg?t=1786752203",
-      "categories": [
-        "Gündelik",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-9aee4a245",
-      "title": "Infinite Backrooms",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4673710/Infinite_Backrooms/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4673710/6fb55eb0cb26db6935d230f50fdb1a1c83e41b93/capsule_231x87.jpg?t=1786750994",
-      "categories": [
-        "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-ce0239c54",
       "title": "Bounty Hunters",
       "kind": "coming_soon",
@@ -410,7 +410,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4579940/Crownhold/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4579940/66eef40c46948140b964a4edc7c95396cf74e63e/capsule_231x87.jpg?t=1785853081",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4579940/66eef40c46948140b964a4edc7c95396cf74e63e/capsule_231x87.jpg?t=1786792445",
       "categories": [
         "Gündelik",
         "Strateji"
