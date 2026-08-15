@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T17:50:26.577Z",
+  "generatedAt": "2026-08-15T18:47:02.924Z",
   "items": [
     {
       "id": "steam-news-4e3ffeb03",
@@ -286,19 +286,6 @@
       ]
     },
     {
-      "id": "steam-news-ce0239c54",
-      "title": "Bounty Hunters",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2507500/Bounty_Hunters/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2507500/8fa346e1e1c4f3bca5bde1be6a6fd00270522238/capsule_231x87.jpg?t=1786035571",
-      "categories": [
-        "Bağımsız",
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-740908a1e",
       "title": "Karma Kingdom",
       "kind": "coming_soon",
@@ -369,6 +356,15 @@
       ]
     },
     {
+      "id": "steam-news-e1cbf9bd4",
+      "title": "SunWars",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
+      "categories": []
+    },
+    {
       "id": "steam-news-d6a4129fb",
       "title": "Chained Horror Experiences ～AT THE THE CATTY PARK～",
       "kind": "coming_soon",
@@ -380,15 +376,6 @@
         "Gündelik",
         "Anime"
       ]
-    },
-    {
-      "id": "steam-news-e1cbf9bd4",
-      "title": "SunWars",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
-      "categories": []
     },
     {
       "id": "steam-news-bfd97e280",
@@ -559,6 +546,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5013860/8c187346721142b3b4082ea46023f98c15bb1b8e/capsule_231x87.jpg?t=1786508288",
       "categories": [
         "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-11a1f2b8b",
+      "title": "GameOverd",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5015990/GameOverd/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5015990/d9afef017019d67b933cdcb46b6caa15791b60ff/capsule_231x87.jpg?t=1786723419",
+      "categories": [
+        "Aksiyon",
         "Gündelik"
       ]
     },
