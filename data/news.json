@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T14:31:33.286Z",
+  "generatedAt": "2026-08-15T15:12:30.130Z",
   "items": [
     {
       "id": "steam-news-728a98c88",
@@ -441,17 +441,6 @@
       ]
     },
     {
-      "id": "steam-news-8f675531d",
-      "title": "Guardian of soul tower",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-900d14641",
       "title": "东方",
       "kind": "coming_soon",
@@ -472,6 +461,17 @@
       "categories": [
         "Strateji",
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-8f675531d",
+      "title": "Guardian of soul tower",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
+      "categories": [
+        "Strateji"
       ]
     },
     {
