@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-08-15T01:44:31.161Z",
+  "generatedAt": "2026-08-15T02:39:30.831Z",
   "items": [
+    {
+      "id": "steam-news-7a4b7350d",
+      "title": "Bratki",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4359170/Bratki/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4359170/afd5b9304a9ce5cae5eb139988219d9dac1f2e2b/capsule_231x87.jpg?t=1786760847",
+      "categories": [
+        "RPG",
+        "Tek Oyunculu",
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-01048de01",
+      "title": "Hide & Seek",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5008510/Hide__Seek/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5008510/9e5ce80a557b813eca63224874afbd769455e5f9/capsule_231x87.jpg?t=1786760091",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-a07a2c233",
       "title": "Deeds were Done 2: Project Ascend",
@@ -262,29 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-1f2f58359",
-      "title": "Snow Route 2",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5018320/Snow_Route_2/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5018320/f0c84f8307c23c3829610cbf939a3a31b33a135f/capsule_231x87.jpg?t=1786731641",
-      "categories": [
-        "Yarış",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-1cda5031e",
-      "title": "Driftscape: Void",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/569660/Driftscape_Void/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/569660/a1b2b96be778927e7b4c24224336e0c282ad59d2/capsule_231x87.jpg?t=1786731329",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-edc2f2875",
       "title": "Sun Ultimate War",
       "kind": "coming_soon",
@@ -392,6 +395,15 @@
       ]
     },
     {
+      "id": "steam-news-e1cbf9bd4",
+      "title": "SunWars",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
+      "categories": []
+    },
+    {
       "id": "steam-news-d6a4129fb",
       "title": "Chained Horror Experiences ～AT THE THE CATTY PARK～",
       "kind": "coming_soon",
@@ -405,13 +417,15 @@
       ]
     },
     {
-      "id": "steam-news-e1cbf9bd4",
-      "title": "SunWars",
+      "id": "steam-news-bfd97e280",
+      "title": "Kingdom of the Beast: CAT",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
+      "categories": [
+        "RPG"
+      ]
     },
     {
       "id": "steam-news-a85edc6e8",
@@ -423,17 +437,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-bfd97e280",
-      "title": "Kingdom of the Beast: CAT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
-      "categories": [
-        "RPG"
       ]
     },
     {
