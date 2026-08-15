@@ -1,6 +1,43 @@
 {
-  "generatedAt": "2026-08-15T03:22:47.051Z",
+  "generatedAt": "2026-08-15T04:39:57.227Z",
   "items": [
+    {
+      "id": "steam-news-b4535e7dc",
+      "title": "Stellar Odyssey",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3130050/Stellar_Odyssey/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3130050/0f5c73c40c2ceaffd46210c6885f1fd4d72732b2/capsule_231x87.jpg?t=1786768421",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon",
+        "Macera",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-134a8e594",
+      "title": "Sands of Skullcreek",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2566840/Sands_of_Skullcreek/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2566840/capsule_231x87.jpg?t=1786767657",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-fbcf5a751",
+      "title": "浩游超超超变",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4919260/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4919260/e69005e0b740a8c5f6c74a7fdb336c1531b0533b/capsule_231x87.jpg?t=1786766457",
+      "categories": [
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-391e026de",
       "title": "Sister Other Paranoia",
@@ -35,6 +72,18 @@
         "Tek Oyunculu",
         "Simülasyon",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-f48e5ae56",
+      "title": "Sealed",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4960260/Sealed/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4960260/e566a32499bcc69162277130a24ba22b7eff6c9d/capsule_231x87.jpg?t=1786760823",
+      "categories": [
+        "Strateji",
+        "Aksiyon"
       ]
     },
     {
@@ -240,51 +289,6 @@
       ]
     },
     {
-      "id": "steam-news-bf47b8f5b",
-      "title": "Invisible Archery",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4891020/Invisible_Archery/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4891020/f58b48edc9c60bc211b395867b1669bde19a894d/capsule_231x87.jpg?t=1786738121",
-      "categories": []
-    },
-    {
-      "id": "steam-news-1e18cf999",
-      "title": "Unusual Tales: After Bark",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4516880/Unusual_Tales_After_Bark/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4516880/c4474becb396c34d0e73a6bcf7b3532eba0f2a7e/capsule_231x87.jpg?t=1786737888",
-      "categories": [
-        "Korku",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-406447ccb",
-      "title": "Star Quest",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4717860/Star_Quest/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4717860/373e38fbea882bfff9c04ef6b0b6370c095089f0/capsule_231x87.jpg?t=1786734454",
-      "categories": [
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-64df82f6a",
-      "title": "A Sea of Grey & Green",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3544610/A_Sea_of_Grey__Green/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3544610/fca63bde365ba38d082e55214740b1be6901b454/capsule_231x87.jpg?t=1786734031",
-      "categories": [
-        "Macera",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-edc2f2875",
       "title": "Sun Ultimate War",
       "kind": "coming_soon",
@@ -362,7 +366,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4625810/Internet_Survivor_Survivors/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625810/32985081ed99e143a208ff5b3f3079bd48012f44/capsule_231x87.jpg?t=1786694303",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625810/32985081ed99e143a208ff5b3f3079bd48012f44/capsule_231x87.jpg?t=1786767040",
       "categories": [
         "Anime"
       ]
