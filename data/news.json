@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-15T05:02:00.294Z",
+  "generatedAt": "2026-08-15T05:34:48.347Z",
   "items": [
+    {
+      "id": "steam-news-b8282b055",
+      "title": "Super Rhythm Fit",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4279200/Super_Rhythm_Fit/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279200/499998cddbafa8edc4dcdb0a5236a5ee17698807/capsule_231x87.jpg?t=1786771541",
+      "categories": [
+        "Spor",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-b4535e7dc",
       "title": "Stellar Odyssey",
@@ -277,18 +289,6 @@
       ]
     },
     {
-      "id": "steam-news-a553e9724",
-      "title": "My Fly",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3517820/My_Fly/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3517820/6cde6187a438bdd7ed1df7616ea13504ec7082ca/capsule_231x87.jpg?t=1786738509",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-edc2f2875",
       "title": "Sun Ultimate War",
       "kind": "coming_soon",
@@ -396,15 +396,6 @@
       ]
     },
     {
-      "id": "steam-news-e1cbf9bd4",
-      "title": "SunWars",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
-      "categories": []
-    },
-    {
       "id": "steam-news-d6a4129fb",
       "title": "Chained Horror Experiences ～AT THE THE CATTY PARK～",
       "kind": "coming_soon",
@@ -416,6 +407,15 @@
         "Gündelik",
         "Anime"
       ]
+    },
+    {
+      "id": "steam-news-e1cbf9bd4",
+      "title": "SunWars",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
+      "categories": []
     },
     {
       "id": "steam-news-bfd97e280",
@@ -464,14 +464,14 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
+      "id": "steam-news-8f675531d",
+      "title": "Guardian of soul tower",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786706672",
       "categories": [
-        "RPG"
+        "Strateji"
       ]
     },
     {
@@ -487,14 +487,14 @@
       ]
     },
     {
-      "id": "steam-news-8f675531d",
-      "title": "Guardian of soul tower",
+      "id": "steam-news-900d14641",
+      "title": "东方",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786706672",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
       "categories": [
-        "Strateji"
+        "RPG"
       ]
     },
     {
