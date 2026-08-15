@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T23:12:55.795Z",
+  "generatedAt": "2026-08-15T23:35:27.255Z",
   "items": [
     {
       "id": "steam-news-2aaaa7439",
@@ -288,18 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-baa19bc15",
-      "title": "Asobutsuri",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4981470/Asobutsuri/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-022e11253",
       "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
@@ -308,6 +296,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
       "categories": [
         "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-baa19bc15",
+      "title": "Asobutsuri",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4981470/Asobutsuri/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
+      "categories": [
+        "Simülasyon",
         "Gündelik"
       ]
     },
@@ -347,15 +347,6 @@
       ]
     },
     {
-      "id": "steam-news-e1cbf9bd4",
-      "title": "SunWars",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
-      "categories": []
-    },
-    {
       "id": "steam-news-d6a4129fb",
       "title": "Chained Horror Experiences ～AT THE THE CATTY PARK～",
       "kind": "coming_soon",
@@ -369,16 +360,13 @@
       ]
     },
     {
-      "id": "steam-news-a85edc6e8",
-      "title": "Crownhold",
+      "id": "steam-news-e1cbf9bd4",
+      "title": "SunWars",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4579940/Crownhold/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4579940/66eef40c46948140b964a4edc7c95396cf74e63e/capsule_231x87.jpg?t=1786792445",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
+      "categories": []
     },
     {
       "id": "steam-news-bfd97e280",
@@ -389,6 +377,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
       "categories": [
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-a85edc6e8",
+      "title": "Crownhold",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4579940/Crownhold/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4579940/66eef40c46948140b964a4edc7c95396cf74e63e/capsule_231x87.jpg?t=1786792445",
+      "categories": [
+        "Gündelik",
+        "Strateji"
       ]
     },
     {
@@ -426,18 +426,6 @@
       ]
     },
     {
-      "id": "steam-news-aa38b10d0",
-      "title": "末日战姬：废土觉醒",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4977680/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977680/6f0ada59079466789cb0ac1189a51dcd7f05ec45/capsule_231x87.jpg?t=1786711046",
-      "categories": [
-        "Strateji",
-        "Anime"
-      ]
-    },
-    {
       "id": "steam-news-8f675531d",
       "title": "Guardian of soul tower",
       "kind": "coming_soon",
@@ -449,15 +437,15 @@
       ]
     },
     {
-      "id": "steam-news-2ec111e08",
-      "title": "Toilet 101",
+      "id": "steam-news-aa38b10d0",
+      "title": "末日战姬：废土觉醒",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5051340/Toilet_101/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4977680/_/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5051340/de70c92ace46eb1242ff71e3a09c570f19703124/capsule_231x87.jpg?t=1786835348",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977680/6f0ada59079466789cb0ac1189a51dcd7f05ec45/capsule_231x87.jpg?t=1786711046",
       "categories": [
-        "Macera",
-        "Korku"
+        "Strateji",
+        "Anime"
       ]
     },
     {
@@ -562,6 +550,20 @@
       "categories": [
         "Aksiyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-337927fe8",
+      "title": "Is That a Human Organ?",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5014260/Is_That_a_Human_Organ/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5014260/fb473a7ef739d38e4e2aade57f8e4e08939a86ab/capsule_231x87.jpg?t=1785594846",
+      "categories": [
+        "Macera",
+        "Simülasyon",
+        "Korku",
+        "RPG"
       ]
     },
     {
