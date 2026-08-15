@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-15T10:52:48.950Z",
+  "generatedAt": "2026-08-15T11:11:20.279Z",
   "items": [
+    {
+      "id": "steam-news-6ed2f1959",
+      "title": "PhotoGuessr",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2825810/PhotoGuessr/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2825810/f26f34c6bf71955e4bb6eeea8fd15d5d66b3355d/capsule_231x87.jpg?t=1786791981",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-149db483c",
       "title": "The Fabricator",
@@ -278,31 +289,6 @@
       ]
     },
     {
-      "id": "steam-news-fbf3e3e0b",
-      "title": "The Newspapers of the day",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3930370/The_Newspapers_of_the_day/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3930370/e032310473b43bd23c80510fcf1051098355c068/capsule_231x87.jpg?t=1786750853",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-edc2f2875",
-      "title": "Sun Ultimate War",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4715270/Sun_Ultimate_War/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4715270/d9d89b55107aea853f850dc9f782bcc4cac3c285/capsule_231x87.jpg?t=1783089013",
-      "categories": [
-        "Gündelik",
-        "Strateji",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-ce0239c54",
       "title": "Bounty Hunters",
       "kind": "coming_soon",
@@ -327,18 +313,6 @@
       ]
     },
     {
-      "id": "steam-news-baa19bc15",
-      "title": "Asobutsuri",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4981470/Asobutsuri/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-022e11253",
       "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
@@ -347,6 +321,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
       "categories": [
         "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-baa19bc15",
+      "title": "Asobutsuri",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4981470/Asobutsuri/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
+      "categories": [
+        "Simülasyon",
         "Gündelik"
       ]
     },
@@ -566,6 +552,18 @@
       "dateLabel": "17 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5019730/bb09fd006d2afec63f8cef5fa8e09b36ad38d0fc/capsule_231x87.jpg?t=1785609798",
       "categories": []
+    },
+    {
+      "id": "steam-news-764d78064",
+      "title": "Bacteria Buster",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5013860/Bacteria_Buster/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5013860/8c187346721142b3b4082ea46023f98c15bb1b8e/capsule_231x87.jpg?t=1786508288",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
     },
     {
       "id": "steam-news-c560bed11",
