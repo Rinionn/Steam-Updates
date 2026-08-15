@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-15T19:11:07.196Z",
+  "generatedAt": "2026-08-15T19:34:36.882Z",
   "items": [
+    {
+      "id": "steam-news-0a6111dd1",
+      "title": "Bounty Hunters",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2507500/Bounty_Hunters/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2507500/8fa346e1e1c4f3bca5bde1be6a6fd00270522238/capsule_231x87.jpg?t=1786822414",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-b2e9ec9ec",
       "title": "plexum",
@@ -275,17 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-595d169c2",
-      "title": "Flowers and Deities",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3816000/Flowers_and_Deities/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3816000/4a1c8f085fafd22bdc94d239e8192be7e1be266f/capsule_231x87.jpg?t=1786773618",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-740908a1e",
       "title": "Karma Kingdom",
       "kind": "coming_soon",
@@ -297,18 +299,6 @@
       ]
     },
     {
-      "id": "steam-news-baa19bc15",
-      "title": "Asobutsuri",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4981470/Asobutsuri/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-022e11253",
       "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
@@ -317,6 +307,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
       "categories": [
         "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-baa19bc15",
+      "title": "Asobutsuri",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4981470/Asobutsuri/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
+      "categories": [
+        "Simülasyon",
         "Gündelik"
       ]
     },
@@ -424,17 +426,6 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-8f675531d",
       "title": "Guardian of soul tower",
       "kind": "coming_soon",
@@ -455,6 +446,17 @@
       "categories": [
         "Strateji",
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-900d14641",
+      "title": "东方",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "categories": [
+        "RPG"
       ]
     },
     {
