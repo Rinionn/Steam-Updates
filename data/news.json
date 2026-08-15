@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-15T20:59:21.773Z",
+  "generatedAt": "2026-08-15T21:29:00.382Z",
   "items": [
+    {
+      "id": "steam-news-672c3871e",
+      "title": "Orbital Decay",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4506600/Orbital_Decay/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4506600/26cc6105c24f653954433f675099d09a4427b702/capsule_231x87.jpg?t=1786828520",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-bf8326ba8",
       "title": "5hit Rocket",
@@ -275,17 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-7c11ab1aa",
-      "title": "Thermal Runaway",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4957620/Thermal_Runaway/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957620/b8137f3b775447b1e9dc47addc4b86c0336c39fb/capsule_231x87.jpg?t=1786780060",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-022e11253",
       "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
@@ -367,17 +369,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-bfd97e280",
-      "title": "Kingdom of the Beast: CAT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-a85edc6e8",
       "title": "Crownhold",
       "kind": "coming_soon",
@@ -387,6 +378,17 @@
       "categories": [
         "Gündelik",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-bfd97e280",
+      "title": "Kingdom of the Beast: CAT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
+      "categories": [
+        "RPG"
       ]
     },
     {
@@ -413,15 +415,14 @@
       ]
     },
     {
-      "id": "steam-news-aa38b10d0",
-      "title": "末日战姬：废土觉醒",
+      "id": "steam-news-8f675531d",
+      "title": "Guardian of soul tower",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4977680/_/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977680/6f0ada59079466789cb0ac1189a51dcd7f05ec45/capsule_231x87.jpg?t=1786711046",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
       "categories": [
-        "Strateji",
-        "Anime"
+        "Strateji"
       ]
     },
     {
@@ -436,14 +437,15 @@
       ]
     },
     {
-      "id": "steam-news-8f675531d",
-      "title": "Guardian of soul tower",
+      "id": "steam-news-aa38b10d0",
+      "title": "末日战姬：废土觉醒",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4977680/_/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977680/6f0ada59079466789cb0ac1189a51dcd7f05ec45/capsule_231x87.jpg?t=1786711046",
       "categories": [
-        "Strateji"
+        "Strateji",
+        "Anime"
       ]
     },
     {
