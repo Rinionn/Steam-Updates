@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T19:51:50.092Z",
+  "generatedAt": "2026-08-15T20:37:29.755Z",
   "items": [
     {
       "id": "steam-news-6f73e36f3",
@@ -413,17 +413,6 @@
       ]
     },
     {
-      "id": "steam-news-8f675531d",
-      "title": "Guardian of soul tower",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-aa38b10d0",
       "title": "末日战姬：废土觉醒",
       "kind": "coming_soon",
@@ -444,6 +433,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
       "categories": [
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-8f675531d",
+      "title": "Guardian of soul tower",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
+      "categories": [
+        "Strateji"
       ]
     },
     {
