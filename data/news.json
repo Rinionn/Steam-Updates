@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T21:29:00.382Z",
+  "generatedAt": "2026-08-15T22:32:45.565Z",
   "items": [
     {
       "id": "steam-news-672c3871e",
@@ -369,6 +369,17 @@
       "categories": []
     },
     {
+      "id": "steam-news-bfd97e280",
+      "title": "Kingdom of the Beast: CAT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-a85edc6e8",
       "title": "Crownhold",
       "kind": "coming_soon",
@@ -378,17 +389,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-bfd97e280",
-      "title": "Kingdom of the Beast: CAT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -415,17 +415,6 @@
       ]
     },
     {
-      "id": "steam-news-8f675531d",
-      "title": "Guardian of soul tower",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-900d14641",
       "title": "东方",
       "kind": "coming_soon",
@@ -434,6 +423,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
       "categories": [
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-8f675531d",
+      "title": "Guardian of soul tower",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
+      "categories": [
+        "Strateji"
       ]
     },
     {
