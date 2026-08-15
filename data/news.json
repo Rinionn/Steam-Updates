@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-15T13:01:13.498Z",
+  "generatedAt": "2026-08-15T13:37:18.839Z",
   "items": [
+    {
+      "id": "steam-news-48b2cc013",
+      "title": "OPEN GUARD",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4782800/OPEN_GUARD/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4782800/0979933f5b11ed4e891571cf3e7981cfd5bc4257/capsule_231x87.jpg?t=1786800434",
+      "categories": [
+        "Simülasyon",
+        "Spor",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-053a266eb",
       "title": "The Legend of Mala Tokmachka",
@@ -46,6 +59,18 @@
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-8c0f966f9",
+      "title": "Totally Normal Meat Co.",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4593660/Totally_Normal_Meat_Co/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4593660/dffec04b94f6770fac47bc586c4f957b3b1f6a62/capsule_231x87.jpg?t=1786793182",
+      "categories": [
+        "Strateji",
+        "Simülasyon"
       ]
     },
     {
@@ -262,29 +287,6 @@
       "categories": [
         "Strateji",
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-01048de01",
-      "title": "Hide & Seek",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5008510/Hide__Seek/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5008510/9e5ce80a557b813eca63224874afbd769455e5f9/capsule_231x87.jpg?t=1786760091",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-a07a2c233",
-      "title": "Deeds were Done 2: Project Ascend",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4952120/Deeds_were_Done_2_Project_Ascend/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4952120/e8d08ac41acb7840980948f138790f902d4c6362/capsule_231x87.jpg?t=1786757386",
-      "categories": [
-        "Bağımsız"
       ]
     },
     {
