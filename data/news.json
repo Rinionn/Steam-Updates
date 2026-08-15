@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-15T18:47:02.924Z",
+  "generatedAt": "2026-08-15T19:11:07.196Z",
   "items": [
+    {
+      "id": "steam-news-b2e9ec9ec",
+      "title": "plexum",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4540570/plexum/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4540570/db2d249e48bd570f71583eda03ed99cf072c84ab/capsule_231x87.jpg?t=1786820828",
+      "categories": [
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-4e3ffeb03",
       "title": "Libera Nos a Malo",
@@ -274,18 +286,6 @@
       ]
     },
     {
-      "id": "steam-news-b8282b055",
-      "title": "Super Rhythm Fit",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4279200/Super_Rhythm_Fit/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279200/499998cddbafa8edc4dcdb0a5236a5ee17698807/capsule_231x87.jpg?t=1786771541",
-      "categories": [
-        "Spor",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-740908a1e",
       "title": "Karma Kingdom",
       "kind": "coming_soon",
@@ -297,18 +297,6 @@
       ]
     },
     {
-      "id": "steam-news-022e11253",
-      "title": "PuruPuru: Pull It Along",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-baa19bc15",
       "title": "Asobutsuri",
       "kind": "coming_soon",
@@ -317,6 +305,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
       "categories": [
         "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-022e11253",
+      "title": "PuruPuru: Pull It Along",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
+      "categories": [
+        "Aksiyon",
         "Gündelik"
       ]
     },
@@ -356,15 +356,6 @@
       ]
     },
     {
-      "id": "steam-news-e1cbf9bd4",
-      "title": "SunWars",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
-      "categories": []
-    },
-    {
       "id": "steam-news-d6a4129fb",
       "title": "Chained Horror Experiences ～AT THE THE CATTY PARK～",
       "kind": "coming_soon",
@@ -376,6 +367,15 @@
         "Gündelik",
         "Anime"
       ]
+    },
+    {
+      "id": "steam-news-e1cbf9bd4",
+      "title": "SunWars",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
+      "categories": []
     },
     {
       "id": "steam-news-bfd97e280",
