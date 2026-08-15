@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-15T06:52:23.398Z",
+  "generatedAt": "2026-08-15T07:49:09.274Z",
   "items": [
+    {
+      "id": "steam-news-7c11ab1aa",
+      "title": "Thermal Runaway",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4957620/Thermal_Runaway/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957620/b8137f3b775447b1e9dc47addc4b86c0336c39fb/capsule_231x87.jpg?t=1786780060",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-9fcd01c18",
+      "title": "Witchpop",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3248200/Witchpop/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3248200/3195dd921ea513bb0164378f1022c4ebb7f00499/capsule_231x87.jpg?t=1786778628",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-bb0b7049d",
+      "title": "Escape War",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4579440/Escape_War/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4579440/01f0d907344a300a58e942c0794034d15e684dd9/capsule_231x87.jpg?t=1786778571",
+      "categories": [
+        "Aksiyon",
+        "Simülasyon",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-595d169c2",
       "title": "Flowers and Deities",
@@ -252,42 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-7bff4925b",
-      "title": "Typing With Ghostie",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3617890/Typing_With_Ghostie/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3617890/34f87b50ce005c69a30f2802904c75af894a0e68/capsule_231x87.jpg?t=1786742028",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-4f295cf26",
-      "title": "Eden - World Builder",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5004190/Eden__World_Builder/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5004190/c243df5dc760448f272213e146ca08b01a32fc09/capsule_231x87.jpg?t=1786741891",
-      "categories": [
-        "Macera",
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-0cb123758",
-      "title": "Don’t Talk to Strangers",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4979520/Dont_Talk_to_Strangers/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4979520/2449e355598d4d8516ecb225ab853380955536a7/capsule_231x87.jpg?t=1786739447",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-edc2f2875",
       "title": "Sun Ultimate War",
       "kind": "coming_soon",
@@ -322,17 +321,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4831310/47f2d63e4193b64f72821636374a223bf7d85d70/capsule_231x87.jpg?t=1781681385",
       "categories": [
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-cc374ea2b",
-      "title": "Witchpop",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3248200/Witchpop/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3248200/3195dd921ea513bb0164378f1022c4ebb7f00499/capsule_231x87.jpg?t=1785370396",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -566,6 +554,15 @@
       "categories": [
         "Gündelik"
       ]
+    },
+    {
+      "id": "steam-news-22d046c85",
+      "title": "Just boring",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5019730/Just_boring/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5019730/bb09fd006d2afec63f8cef5fa8e09b36ad38d0fc/capsule_231x87.jpg?t=1785609798",
+      "categories": []
     },
     {
       "id": "steam-news-c560bed11",
