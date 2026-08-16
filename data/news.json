@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-16T10:54:24.026Z",
+  "generatedAt": "2026-08-16T11:15:58.890Z",
   "items": [
+    {
+      "id": "steam-news-d561617d1",
+      "title": "Internet Survivor Survivors",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4625810/Internet_Survivor_Survivors/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625810/32985081ed99e143a208ff5b3f3079bd48012f44/capsule_231x87.jpg?t=1786878059",
+      "categories": [
+        "Anime"
+      ]
+    },
     {
       "id": "steam-news-229aa0d34",
       "title": "Karma Kingdom",
@@ -272,30 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-80aaf8246",
-      "title": "Will’s Quest",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4698370/Wills_Quest/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4698370/63f20633b1c27eece9fe2c02d4aee88900120d87/capsule_231x87.jpg?t=1786811110",
-      "categories": [
-        "Macera",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-022e11253",
-      "title": "PuruPuru: Pull It Along",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-baa19bc15",
       "title": "Asobutsuri",
       "kind": "coming_soon",
@@ -308,14 +295,15 @@
       ]
     },
     {
-      "id": "steam-news-5df2cb9e2",
-      "title": "Internet Survivor Survivors",
+      "id": "steam-news-022e11253",
+      "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4625810/Internet_Survivor_Survivors/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625810/32985081ed99e143a208ff5b3f3079bd48012f44/capsule_231x87.jpg?t=1786767040",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
       "categories": [
-        "Anime"
+        "Aksiyon",
+        "Gündelik"
       ]
     },
     {
@@ -561,6 +549,15 @@
         "Korku",
         "RPG"
       ]
+    },
+    {
+      "id": "steam-news-69eb3cad0",
+      "title": "Spinebreaker",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4845230/Spinebreaker/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845230/cbf718167af3a2113383226e09f099b43f1a0da1/capsule_231x87.jpg?t=1786234825",
+      "categories": []
     },
     {
       "id": "steam-news-c560bed11",
