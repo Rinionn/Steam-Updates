@@ -1,6 +1,55 @@
 {
-  "generatedAt": "2026-08-16T14:53:17.770Z",
+  "generatedAt": "2026-08-16T15:13:47.805Z",
   "items": [
+    {
+      "id": "steam-news-86176c8ce",
+      "title": "PuruPuru: Pull It Along",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786893065",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d156daadb",
+      "title": "Goblins and Gunslingers",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4557390/Goblins_and_Gunslingers/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4557390/d88d9c6f6386544a96d05b1c03906b0ed949fa56/capsule_231x87.jpg?t=1786892539",
+      "categories": [
+        "RPG",
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-5f3ca552c",
+      "title": "SOVA NA SKAKALKE",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4947950/SOVA_NA_SKAKALKE/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4947950/aaf420a5dde9d8efba5a139c7bef4e8d1ff471ab/capsule_231x87.jpg?t=1786892725",
+      "categories": [
+        "Gündelik",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-e82be04d2",
+      "title": "Eggscape",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3831170/Eggscape/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3831170/e5a80af53e697d0a8cef4a918ef50475e9064ac2/capsule_231x87.jpg?t=1786892450",
+      "categories": [
+        "Macera",
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-6a6c2f127",
       "title": "GuessWorld",
@@ -231,77 +280,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4883890/fc287a80bad562ee5ad9f7502a9dedf828728607/capsule_231x87.jpg?t=1786873697",
       "categories": [
         "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-b2124f96f",
-      "title": "One Day To Live",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4206840/One_Day_To_Live/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4206840/9885bfb51cf7737896608c45eb02c19f6e01dac6/capsule_231x87.jpg?t=1786841886",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-0e78ade01",
-      "title": "Tic-Tac-Toe Dimensions",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4110450/TicTacToe_Dimensions/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4110450/cb2887942a50b4044894995e9ad1d17944aacd5c/capsule_231x87.jpg?t=1786839773",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-c7884e334",
-      "title": "3D Printer Manager",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2498780/3D_Printer_Manager/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2498780/aac60aa17b2fc8907a894fe11e19d16e0f6ee19c/capsule_231x87.jpg?t=1786837482",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-2aaaa7439",
-      "title": "Bear With Me: The Pizza Chronicles (Prequel)",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4913420/Bear_With_Me_The_Pizza_Chronicles_Prequel/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4913420/c8828758f233c579105f3806c756f807503080c7/capsule_231x87.jpg?t=1786829449",
-      "categories": [
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-022e11253",
-      "title": "PuruPuru: Pull It Along",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-baa19bc15",
-      "title": "Asobutsuri",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4981470/Asobutsuri/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
-      "categories": [
-        "Simülasyon",
         "Gündelik"
       ]
     },
@@ -557,6 +535,31 @@
       "dateLabel": "17 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845230/cbf718167af3a2113383226e09f099b43f1a0da1/capsule_231x87.jpg?t=1786234825",
       "categories": []
+    },
+    {
+      "id": "steam-news-74b59996c",
+      "title": "Lugal: Bronze Age Survival Game",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3878380/Lugal_Bronze_Age_Survival_Game/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3878380/56f5f66cf74a0698802537600842c58e7976203a/capsule_231x87.jpg?t=1786547208",
+      "categories": [
+        "RPG",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-6daebc20c",
+      "title": "Fruit Swipe Match 3",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5053560/Fruit_Swipe_Match_3/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5053560/f3fc68e848dd21144ece28ee63192166b5015902/capsule_231x87.jpg?t=1786391064",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu",
+        "Oynaması Ücretsiz"
+      ]
     },
     {
       "id": "steam-news-c560bed11",
