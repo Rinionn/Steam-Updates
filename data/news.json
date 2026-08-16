@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-16T11:57:16.031Z",
+  "generatedAt": "2026-08-16T12:54:45.555Z",
   "items": [
+    {
+      "id": "steam-news-03eb61354",
+      "title": "Mahjong Encyclopedia",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4855430/Mahjong_Encyclopedia/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4855430/740f951ee06d7c560e044d1a0c60b6ca1e0a494e/capsule_231x87.jpg?t=1786883244",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-d561617d1",
       "title": "Internet Survivor Survivors",
@@ -270,19 +281,6 @@
       ]
     },
     {
-      "id": "steam-news-4e3ffeb03",
-      "title": "Libera Nos a Malo",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4902060/Libera_Nos_a_Malo/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4902060/d1a22cbce848ba0d9460fe6c144d95c5dab5db77/capsule_231x87.jpg?t=1786815678",
-      "categories": [
-        "Simülasyon",
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-022e11253",
       "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
@@ -423,6 +421,17 @@
       ]
     },
     {
+      "id": "steam-news-8f675531d",
+      "title": "Guardian of soul tower",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-aa38b10d0",
       "title": "末日战姬：废土觉醒",
       "kind": "coming_soon",
@@ -432,17 +441,6 @@
       "categories": [
         "Strateji",
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-8f675531d",
-      "title": "Guardian of soul tower",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4926770/Guardian_of_soul_tower/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
-      "categories": [
-        "Strateji"
       ]
     },
     {
