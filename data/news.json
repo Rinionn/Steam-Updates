@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-16T15:57:40.783Z",
+  "generatedAt": "2026-08-16T16:35:15.677Z",
   "items": [
+    {
+      "id": "steam-news-990dac31f",
+      "title": "DOGS of the DARK",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4995330/DOGS_of_the_DARK/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4995330/75f897216c345dfa6854653eb8d4edbd85be7e19/capsule_231x87.jpg?t=1786896015",
+      "categories": [
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-670d79f4b",
       "title": "Substance Lab POL",
@@ -272,18 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-0585ac703",
-      "title": "Century’s End Awakening",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4659330/Centurys_End_Awakening/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4659330/2d25f68396f96719f6b7002c1a42276de9c98c35/capsule_231x87.jpg?t=1786844813",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-371404b31",
       "title": "Lunch Break Dodgeball",
       "kind": "coming_soon",
@@ -321,15 +320,6 @@
       ]
     },
     {
-      "id": "steam-news-e1cbf9bd4",
-      "title": "SunWars",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
-      "categories": []
-    },
-    {
       "id": "steam-news-d6a4129fb",
       "title": "Chained Horror Experiences ～AT THE THE CATTY PARK～",
       "kind": "coming_soon",
@@ -341,6 +331,15 @@
         "Gündelik",
         "Anime"
       ]
+    },
+    {
+      "id": "steam-news-e1cbf9bd4",
+      "title": "SunWars",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
+      "categories": []
     },
     {
       "id": "steam-news-bfd97e280",
@@ -389,6 +388,18 @@
       ]
     },
     {
+      "id": "steam-news-aa38b10d0",
+      "title": "末日战姬：废土觉醒",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4977680/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977680/6f0ada59079466789cb0ac1189a51dcd7f05ec45/capsule_231x87.jpg?t=1786711046",
+      "categories": [
+        "Strateji",
+        "Anime"
+      ]
+    },
+    {
       "id": "steam-news-8f675531d",
       "title": "Guardian of soul tower",
       "kind": "coming_soon",
@@ -408,18 +419,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
       "categories": [
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-aa38b10d0",
-      "title": "末日战姬：废土觉醒",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4977680/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977680/6f0ada59079466789cb0ac1189a51dcd7f05ec45/capsule_231x87.jpg?t=1786711046",
-      "categories": [
-        "Strateji",
-        "Anime"
       ]
     },
     {
