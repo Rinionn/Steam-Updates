@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T18:08:15.492Z",
+  "generatedAt": "2026-08-16T18:46:41.880Z",
   "items": [
     {
       "id": "steam-news-990dac31f",
@@ -115,7 +115,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4950890/Tropical_Hop/?snr=1_7_7_230_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950890/c46c65730836f5f4ce0f2509cae9711565b9c627/capsule_231x87.jpg?t=1786903337",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950890/c46c65730836f5f4ce0f2509cae9711565b9c627/capsule_231x87.jpg?t=1786903712",
       "categories": [
         "Aksiyon",
         "Gündelik",
@@ -399,17 +399,6 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-aa38b10d0",
       "title": "末日战姬：废土觉醒",
       "kind": "coming_soon",
@@ -419,6 +408,17 @@
       "categories": [
         "Strateji",
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-900d14641",
+      "title": "东方",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "categories": [
+        "RPG"
       ]
     },
     {
