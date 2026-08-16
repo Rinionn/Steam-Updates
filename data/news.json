@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-16T13:55:42.495Z",
+  "generatedAt": "2026-08-16T14:31:26.855Z",
   "items": [
+    {
+      "id": "steam-news-6a6c2f127",
+      "title": "GuessWorld",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4919240/GuessWorld/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4919240/0f7d07226bc30d9dcede351787e44b4dd44e9104/capsule_231x87.jpg?t=1786889425",
+      "categories": [
+        "Gündelik",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-67f761d80",
+      "title": "STEAM TRIGGER",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2698100/STEAM_TRIGGER/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2698100/9fad7ebe9ac89ff345064ac6e95a76f5226d62f2/capsule_231x87.jpg?t=1786888983",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-6ddd0cab0",
       "title": "Survival Dimension",
@@ -258,30 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-672c3871e",
-      "title": "Orbital Decay",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4506600/Orbital_Decay/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4506600/26cc6105c24f653954433f675099d09a4427b702/capsule_231x87.jpg?t=1786828520",
-      "categories": [
-        "Aksiyon",
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-bf8326ba8",
-      "title": "5hit Rocket",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4674430/5hit_Rocket/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4674430/26e950616ded208f491d4d9234d164938c5d2036/capsule_231x87.jpg?t=1786826808",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-022e11253",
       "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
@@ -319,17 +319,6 @@
       ]
     },
     {
-      "id": "steam-news-88c717e7d",
-      "title": "PILLARS OF DESPAIR - Mission Valoria",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4143360/PILLARS_OF_DESPAIR__Mission_Valoria/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4143360/96b5a900822110b53626536ba59148d302b9142d/capsule_231x87.jpg?t=1786198878",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-1ffc42e51",
       "title": "Crown&Sword",
       "kind": "coming_soon",
@@ -340,6 +329,17 @@
         "Gündelik",
         "Macera",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-88c717e7d",
+      "title": "PILLARS OF DESPAIR - Mission Valoria",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4143360/PILLARS_OF_DESPAIR__Mission_Valoria/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4143360/96b5a900822110b53626536ba59148d302b9142d/capsule_231x87.jpg?t=1786198878",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -411,17 +411,6 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-8f675531d",
       "title": "Guardian of soul tower",
       "kind": "coming_soon",
@@ -430,6 +419,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-900d14641",
+      "title": "东方",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "categories": [
+        "RPG"
       ]
     },
     {
