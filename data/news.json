@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-16T06:25:28.657Z",
+  "generatedAt": "2026-08-16T07:10:53.121Z",
   "items": [
+    {
+      "id": "steam-news-118c6e2e1",
+      "title": "Brainrot Autobattler",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4765580/Brainrot_Autobattler/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4765580/2117c730c61cb2f4d95bbf4f36a6edb40ba8e782/capsule_231x87.jpg?t=1786862792",
+      "categories": [
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-38f1ef5ea",
       "title": "Chicken_Run",
@@ -276,14 +287,15 @@
       ]
     },
     {
-      "id": "steam-news-2f4c9dbdc",
-      "title": "Zombolion",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2825270/Zombolion/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2825270/ca76fcc957027cb70b60a436cb60eb2f6a2d1002/capsule_231x87.jpg?t=1786794147",
+      "id": "steam-news-baa19bc15",
+      "title": "Asobutsuri",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4981470/Asobutsuri/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
       "categories": [
-        "Aksiyon"
+        "Simülasyon",
+        "Gündelik"
       ]
     },
     {
@@ -295,18 +307,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
       "categories": [
         "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-baa19bc15",
-      "title": "Asobutsuri",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4981470/Asobutsuri/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
-      "categories": [
-        "Simülasyon",
         "Gündelik"
       ]
     },
