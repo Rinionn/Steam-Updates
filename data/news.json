@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-08-16T09:13:44.208Z",
+  "generatedAt": "2026-08-16T09:44:23.946Z",
   "items": [
+    {
+      "id": "steam-news-ca60e07b3",
+      "title": "Plonkers - totally bonkers plinko",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4939310/Plonkers__totally_bonkers_plinko/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4939310/8bcc20a8649423a695591cd9a5703b15c311842e/capsule_231x87.jpg?t=1786872755",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-1fbab3163",
+      "title": "Horus: Desert Survivor",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3269340/Horus_Desert_Survivor/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3269340/4b9ceb52f75575265e2f4358343f47ee9e916a35/capsule_231x87.jpg?t=1786872196",
+      "categories": []
+    },
     {
       "id": "steam-news-7940e0f09",
       "title": "Sweet Clockwork",
@@ -260,30 +281,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-677c7c806",
-      "title": "Chalk & Blood",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4913320/Chalk__Blood/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4913320/847e71633414b7cc78e1446e7b30a258c345a2cb/capsule_231x87.jpg?t=1786808407",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-02f686a91",
-      "title": "Angel Told Me",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4970270/Angel_Told_Me/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4970270/889930af608edc3bd1bcd7360461ee82a8b954ee/capsule_231x87.jpg?t=1786807806",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-022e11253",
       "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
@@ -424,17 +421,6 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-8f675531d",
       "title": "Guardian of soul tower",
       "kind": "coming_soon",
@@ -443,6 +429,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-900d14641",
+      "title": "东方",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "categories": [
+        "RPG"
       ]
     },
     {
