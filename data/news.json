@@ -1,17 +1,6 @@
 {
-  "generatedAt": "2026-08-16T21:35:18.497Z",
+  "generatedAt": "2026-08-16T21:56:25.140Z",
   "items": [
-    {
-      "id": "steam-news-65d60a034",
-      "title": "Dave's Questions",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4484750/Daves_Questions/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4484750/358467811bd41754c47be3ec7fc242c5f60388f7/capsule_231x87.jpg?t=1786915822",
-      "categories": [
-        "Gündelik"
-      ]
-    },
     {
       "id": "steam-news-1eaf34c37",
       "title": "PILLARS OF DESPAIR - Mission Valoria",
@@ -281,6 +270,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3756930/4f71e33087601f27aa7a5dec4ad8662061c380a0/capsule_231x87.jpg?t=1786870862",
       "categories": [
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-dd405a18b",
+      "title": "KuKu's Cinema",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4370970/KuKus_Cinema/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370970/4f61019e93ad1cdc72c292d7e4a1b4a0fb75d6f0/capsule_231x87.jpg?t=1786869813",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
