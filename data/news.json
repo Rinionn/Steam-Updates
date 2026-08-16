@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-16T20:32:55.378Z",
+  "generatedAt": "2026-08-16T20:53:11.820Z",
   "items": [
+    {
+      "id": "steam-news-ff3550c59",
+      "title": "Lunch Break Dodgeball",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4968140/Lunch_Break_Dodgeball/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4968140/6004377701d77ec951fed3b6e38417c92b4beae8/capsule_231x87.jpg?t=1786913227",
+      "categories": [
+        "Spor",
+        "Çok Oyunculu",
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-48c125702",
       "title": "The Leather Maker",
@@ -271,27 +284,16 @@
       ]
     },
     {
-      "id": "steam-news-118c6e2e1",
-      "title": "Brainrot Autobattler",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4765580/Brainrot_Autobattler/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4765580/2117c730c61cb2f4d95bbf4f36a6edb40ba8e782/capsule_231x87.jpg?t=1786862792",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-371404b31",
-      "title": "Lunch Break Dodgeball",
+      "id": "steam-news-1ffc42e51",
+      "title": "Crown&Sword",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4968140/Lunch_Break_Dodgeball/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4831290/CrownSword/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4968140/6004377701d77ec951fed3b6e38417c92b4beae8/capsule_231x87.jpg?t=1786684154",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4831290/1c9e6b0a0476f73e699160de908beabf3b2b6286/capsule_231x87.jpg?t=1786870809",
       "categories": [
-        "Spor",
-        "Çok Oyunculu",
-        "Aksiyon"
+        "Gündelik",
+        "Macera",
+        "Strateji"
       ]
     },
     {
@@ -306,17 +308,13 @@
       ]
     },
     {
-      "id": "steam-news-1ffc42e51",
-      "title": "Crown&Sword",
+      "id": "steam-news-e1cbf9bd4",
+      "title": "SunWars",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4831290/CrownSword/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4831290/1c9e6b0a0476f73e699160de908beabf3b2b6286/capsule_231x87.jpg?t=1786870809",
-      "categories": [
-        "Gündelik",
-        "Macera",
-        "Strateji"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
+      "categories": []
     },
     {
       "id": "steam-news-d6a4129fb",
@@ -330,15 +328,6 @@
         "Gündelik",
         "Anime"
       ]
-    },
-    {
-      "id": "steam-news-e1cbf9bd4",
-      "title": "SunWars",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
-      "categories": []
     },
     {
       "id": "steam-news-bfd97e280",
@@ -398,17 +387,6 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-aa38b10d0",
       "title": "末日战姬：废土觉醒",
       "kind": "coming_soon",
@@ -418,6 +396,17 @@
       "categories": [
         "Strateji",
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-900d14641",
+      "title": "东方",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "categories": [
+        "RPG"
       ]
     },
     {
@@ -555,6 +544,19 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3335490/9c2ec36b19e732baf8cac300db88852d79396369/capsule_231x87.jpg?t=1786912000",
       "categories": [
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-6daebc20c",
+      "title": "Fruit Swipe Match 3",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5053560/Fruit_Swipe_Match_3/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5053560/f3fc68e848dd21144ece28ee63192166b5015902/capsule_231x87.jpg?t=1786391064",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu",
+        "Oynaması Ücretsiz"
       ]
     },
     {
