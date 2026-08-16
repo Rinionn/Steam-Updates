@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-16T21:56:25.140Z",
+  "generatedAt": "2026-08-16T22:30:47.657Z",
   "items": [
+    {
+      "id": "steam-news-65d60a034",
+      "title": "Dave's Questions",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4484750/Daves_Questions/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4484750/358467811bd41754c47be3ec7fc242c5f60388f7/capsule_231x87.jpg?t=1786915822",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-1eaf34c37",
       "title": "PILLARS OF DESPAIR - Mission Valoria",
@@ -273,17 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-dd405a18b",
-      "title": "KuKu's Cinema",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4370970/KuKus_Cinema/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370970/4f61019e93ad1cdc72c292d7e4a1b4a0fb75d6f0/capsule_231x87.jpg?t=1786869813",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-8029d7413",
       "title": "Palianytsia",
       "kind": "coming_soon",
@@ -493,13 +493,16 @@
       ]
     },
     {
-      "id": "steam-news-924e1b31c",
-      "title": "FEED IT",
+      "id": "steam-news-94945dcc5",
+      "title": "Tukoni: Forest Keepers",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4370990/FEED_IT/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2933200/Tukoni_Forest_Keepers/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370990/4ab647d855658c5efafd0f4eaee6018dae856bae/capsule_231x87.jpg?t=1786814393",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933200/capsule_231x87.jpg?t=1786913618",
+      "categories": [
+        "Macera",
+        "Gündelik"
+      ]
     },
     {
       "id": "steam-news-ff7a37202",
@@ -515,16 +518,13 @@
       ]
     },
     {
-      "id": "steam-news-94945dcc5",
-      "title": "Tukoni: Forest Keepers",
+      "id": "steam-news-924e1b31c",
+      "title": "FEED IT",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2933200/Tukoni_Forest_Keepers/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4370990/FEED_IT/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933200/capsule_231x87.jpg?t=1786913618",
-      "categories": [
-        "Macera",
-        "Gündelik"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370990/4ab647d855658c5efafd0f4eaee6018dae856bae/capsule_231x87.jpg?t=1786814393",
+      "categories": []
     },
     {
       "id": "steam-news-03c4e4fdc",
