@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-16T03:36:35.415Z",
+  "generatedAt": "2026-08-16T04:55:13.716Z",
   "items": [
+    {
+      "id": "steam-news-38f1ef5ea",
+      "title": "Chicken_Run",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4901590/Chicken_Run/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4901590/e517e4ea89c655cd2b22740ac2aab71a31b1336b/capsule_231x87.jpg?t=1786855714",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-914f67e55",
       "title": "Cosmic Crossover",
@@ -274,15 +287,15 @@
       ]
     },
     {
-      "id": "steam-news-05e2e8838",
-      "title": "Fungi Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4943700/Fungi_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943700/b1bece08636952ab6521b67552f48a34619a3a1d/capsule_231x87.jpg?t=1786793590",
+      "id": "steam-news-022e11253",
+      "title": "PuruPuru: Pull It Along",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
       "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
+        "Aksiyon",
+        "Gündelik"
       ]
     },
     {
@@ -294,18 +307,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
       "categories": [
         "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-022e11253",
-      "title": "PuruPuru: Pull It Along",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
-      "categories": [
-        "Aksiyon",
         "Gündelik"
       ]
     },
