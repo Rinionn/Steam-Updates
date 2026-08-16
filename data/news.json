@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-16T08:48:09.352Z",
+  "generatedAt": "2026-08-16T09:13:44.208Z",
   "items": [
+    {
+      "id": "steam-news-7940e0f09",
+      "title": "Sweet Clockwork",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3756930/Sweet_Clockwork/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3756930/4f71e33087601f27aa7a5dec4ad8662061c380a0/capsule_231x87.jpg?t=1786870862",
+      "categories": [
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-dd405a18b",
       "title": "KuKu's Cinema",
@@ -273,18 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-728a98c88",
-      "title": "Puzzles Frogs",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4936740/Puzzles_Frogs/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4936740/9d0859074fa887e16c6cd731d85056f516bd1fef/capsule_231x87.jpg?t=1786801434",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-022e11253",
       "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
@@ -330,6 +329,19 @@
         "Spor",
         "Çok Oyunculu",
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-1ffc42e51",
+      "title": "Crown&Sword",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4831290/CrownSword/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4831290/1c9e6b0a0476f73e699160de908beabf3b2b6286/capsule_231x87.jpg?t=1786870809",
+      "categories": [
+        "Gündelik",
+        "Macera",
+        "Strateji"
       ]
     },
     {
@@ -549,15 +561,6 @@
         "Korku",
         "RPG"
       ]
-    },
-    {
-      "id": "steam-news-69eb3cad0",
-      "title": "Spinebreaker",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4845230/Spinebreaker/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845230/cbf718167af3a2113383226e09f099b43f1a0da1/capsule_231x87.jpg?t=1786234825",
-      "categories": []
     },
     {
       "id": "steam-news-c560bed11",
