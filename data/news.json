@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-16T10:33:32.234Z",
+  "generatedAt": "2026-08-16T10:54:24.026Z",
   "items": [
+    {
+      "id": "steam-news-229aa0d34",
+      "title": "Karma Kingdom",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4831310/Karma_Kingdom/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4831310/47f2d63e4193b64f72821636374a223bf7d85d70/capsule_231x87.jpg?t=1786877623",
+      "categories": [
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-ccbd70b3e",
       "title": "Nocturne Hollow",
@@ -273,17 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-3bf31ba7b",
-      "title": "Harvest Yuuka",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3767620/Harvest_Yuuka/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3767620/e1fabf7d688e0503fc2e0f83152c5fb1dba1920c/capsule_231x87.jpg?t=1786810999",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-022e11253",
       "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
@@ -296,17 +296,6 @@
       ]
     },
     {
-      "id": "steam-news-5df2cb9e2",
-      "title": "Internet Survivor Survivors",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4625810/Internet_Survivor_Survivors/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625810/32985081ed99e143a208ff5b3f3079bd48012f44/capsule_231x87.jpg?t=1786767040",
-      "categories": [
-        "Anime"
-      ]
-    },
-    {
       "id": "steam-news-baa19bc15",
       "title": "Asobutsuri",
       "kind": "coming_soon",
@@ -316,6 +305,17 @@
       "categories": [
         "Simülasyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-5df2cb9e2",
+      "title": "Internet Survivor Survivors",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4625810/Internet_Survivor_Survivors/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625810/32985081ed99e143a208ff5b3f3079bd48012f44/capsule_231x87.jpg?t=1786767040",
+      "categories": [
+        "Anime"
       ]
     },
     {
@@ -356,15 +356,6 @@
       ]
     },
     {
-      "id": "steam-news-e1cbf9bd4",
-      "title": "SunWars",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
-      "categories": []
-    },
-    {
       "id": "steam-news-d6a4129fb",
       "title": "Chained Horror Experiences ～AT THE THE CATTY PARK～",
       "kind": "coming_soon",
@@ -376,6 +367,15 @@
         "Gündelik",
         "Anime"
       ]
+    },
+    {
+      "id": "steam-news-e1cbf9bd4",
+      "title": "SunWars",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4319170/SunWars/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319170/c70eca39028af06d2a16b37fc967d1fe9cb08364/capsule_231x87.jpg?t=1784706739",
+      "categories": []
     },
     {
       "id": "steam-news-bfd97e280",
@@ -424,15 +424,14 @@
       ]
     },
     {
-      "id": "steam-news-aa38b10d0",
-      "title": "末日战姬：废土觉醒",
+      "id": "steam-news-900d14641",
+      "title": "东方",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4977680/_/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977680/6f0ada59079466789cb0ac1189a51dcd7f05ec45/capsule_231x87.jpg?t=1786711046",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
       "categories": [
-        "Strateji",
-        "Anime"
+        "RPG"
       ]
     },
     {
@@ -447,14 +446,15 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
+      "id": "steam-news-aa38b10d0",
+      "title": "末日战姬：废土觉醒",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4977680/_/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977680/6f0ada59079466789cb0ac1189a51dcd7f05ec45/capsule_231x87.jpg?t=1786711046",
       "categories": [
-        "RPG"
+        "Strateji",
+        "Anime"
       ]
     },
     {
