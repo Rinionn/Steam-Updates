@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-16T10:01:46.775Z",
+  "generatedAt": "2026-08-16T10:33:32.234Z",
   "items": [
+    {
+      "id": "steam-news-ccbd70b3e",
+      "title": "Nocturne Hollow",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4868070/Nocturne_Hollow/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4868070/ea094251518b1d3e34dbc2564ddad884d730c88d/capsule_231x87.jpg?t=1786874596",
+      "categories": [
+        "Macera",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-ca60e07b3",
       "title": "Plonkers - totally bonkers plinko",
@@ -272,13 +284,16 @@
       ]
     },
     {
-      "id": "steam-news-f31e65fb3",
-      "title": "Hidden Pets: 101 Cats in Athens",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4949840/Hidden_Pets_101_Cats_in_Athens/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4949840/5f5199eb10ae2ef9b194eb54e69babe8326faa1a/capsule_231x87.jpg?t=1786808947",
-      "categories": []
+      "id": "steam-news-022e11253",
+      "title": "PuruPuru: Pull It Along",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
     },
     {
       "id": "steam-news-5df2cb9e2",
@@ -289,18 +304,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625810/32985081ed99e143a208ff5b3f3079bd48012f44/capsule_231x87.jpg?t=1786767040",
       "categories": [
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-022e11253",
-      "title": "PuruPuru: Pull It Along",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
       ]
     },
     {
@@ -375,6 +378,17 @@
       ]
     },
     {
+      "id": "steam-news-bfd97e280",
+      "title": "Kingdom of the Beast: CAT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-a85edc6e8",
       "title": "Crownhold",
       "kind": "coming_soon",
@@ -384,17 +398,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-bfd97e280",
-      "title": "Kingdom of the Beast: CAT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -421,14 +424,15 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
+      "id": "steam-news-aa38b10d0",
+      "title": "末日战姬：废土觉醒",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4977680/_/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977680/6f0ada59079466789cb0ac1189a51dcd7f05ec45/capsule_231x87.jpg?t=1786711046",
       "categories": [
-        "RPG"
+        "Strateji",
+        "Anime"
       ]
     },
     {
@@ -443,15 +447,14 @@
       ]
     },
     {
-      "id": "steam-news-aa38b10d0",
-      "title": "末日战姬：废土觉醒",
+      "id": "steam-news-900d14641",
+      "title": "东方",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4977680/_/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977680/6f0ada59079466789cb0ac1189a51dcd7f05ec45/capsule_231x87.jpg?t=1786711046",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
       "categories": [
-        "Strateji",
-        "Anime"
+        "RPG"
       ]
     },
     {
