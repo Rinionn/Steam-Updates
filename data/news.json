@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T17:49:40.175Z",
+  "generatedAt": "2026-08-16T18:08:15.492Z",
   "items": [
     {
       "id": "steam-news-990dac31f",
@@ -115,7 +115,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4950890/Tropical_Hop/?snr=1_7_7_230_150_1",
       "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950890/c46c65730836f5f4ce0f2509cae9711565b9c627/capsule_231x87.jpg?t=1786887352",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950890/c46c65730836f5f4ce0f2509cae9711565b9c627/capsule_231x87.jpg?t=1786903337",
       "categories": [
         "Aksiyon",
         "Gündelik",
@@ -296,6 +296,17 @@
       ]
     },
     {
+      "id": "steam-news-88c717e7d",
+      "title": "PILLARS OF DESPAIR - Mission Valoria",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4143360/PILLARS_OF_DESPAIR__Mission_Valoria/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4143360/96b5a900822110b53626536ba59148d302b9142d/capsule_231x87.jpg?t=1786198878",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
       "id": "steam-news-1ffc42e51",
       "title": "Crown&Sword",
       "kind": "coming_soon",
@@ -306,17 +317,6 @@
         "Gündelik",
         "Macera",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-88c717e7d",
-      "title": "PILLARS OF DESPAIR - Mission Valoria",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4143360/PILLARS_OF_DESPAIR__Mission_Valoria/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4143360/96b5a900822110b53626536ba59148d302b9142d/capsule_231x87.jpg?t=1786198878",
-      "categories": [
-        "Macera"
       ]
     },
     {
@@ -342,6 +342,17 @@
       ]
     },
     {
+      "id": "steam-news-bfd97e280",
+      "title": "Kingdom of the Beast: CAT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-a85edc6e8",
       "title": "Crownhold",
       "kind": "coming_soon",
@@ -351,17 +362,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-bfd97e280",
-      "title": "Kingdom of the Beast: CAT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786503102",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -388,17 +388,6 @@
       ]
     },
     {
-      "id": "steam-news-900d14641",
-      "title": "东方",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-8f675531d",
       "title": "Guardian of soul tower",
       "kind": "coming_soon",
@@ -407,6 +396,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926770/d120eeff4d252dedac3bf2849b023b2c1df7e809/capsule_231x87.jpg?t=1786783698",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-900d14641",
+      "title": "东方",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "categories": [
+        "RPG"
       ]
     },
     {
