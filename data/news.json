@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-16T02:50:27.546Z",
+  "generatedAt": "2026-08-16T03:36:35.415Z",
   "items": [
+    {
+      "id": "steam-news-914f67e55",
+      "title": "Cosmic Crossover",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4977910/Cosmic_Crossover/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977910/0cce05cff8d79bfc3d38ea5ed90ed05d188a78b8/capsule_231x87.jpg?t=1786850686",
+      "categories": [
+        "Spor",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-0585ac703",
       "title": "Century’s End Awakening",
@@ -274,15 +286,15 @@
       ]
     },
     {
-      "id": "steam-news-8c0f966f9",
-      "title": "Totally Normal Meat Co.",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4593660/Totally_Normal_Meat_Co/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4593660/dffec04b94f6770fac47bc586c4f957b3b1f6a62/capsule_231x87.jpg?t=1786793182",
+      "id": "steam-news-baa19bc15",
+      "title": "Asobutsuri",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4981470/Asobutsuri/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
       "categories": [
-        "Strateji",
-        "Simülasyon"
+        "Simülasyon",
+        "Gündelik"
       ]
     },
     {
@@ -294,18 +306,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786723305",
       "categories": [
         "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-baa19bc15",
-      "title": "Asobutsuri",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4981470/Asobutsuri/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981470/11a0400ff7943c63148f0312cad56a565e714665/capsule_231x87.jpg?t=1785766859",
-      "categories": [
-        "Simülasyon",
         "Gündelik"
       ]
     },
@@ -424,6 +424,17 @@
       ]
     },
     {
+      "id": "steam-news-900d14641",
+      "title": "东方",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-aa38b10d0",
       "title": "末日战姬：废土觉醒",
       "kind": "coming_soon",
@@ -433,17 +444,6 @@
       "categories": [
         "Strateji",
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-900d14641",
-      "title": "东方",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
-      "categories": [
-        "RPG"
       ]
     },
     {
