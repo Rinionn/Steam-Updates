@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-16T20:01:08.432Z",
+  "generatedAt": "2026-08-16T20:32:55.378Z",
   "items": [
+    {
+      "id": "steam-news-48c125702",
+      "title": "The Leather Maker",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4805820/The_Leather_Maker/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4805820/470e906b232609ae99a44cc67dd85be789ef4dda/capsule_231x87.jpg?t=1786911501",
+      "categories": [
+        "Macera",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-b8b71ea5c",
       "title": "Puzzles Planets",
@@ -270,19 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-38f1ef5ea",
-      "title": "Chicken_Run",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4901590/Chicken_Run/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4901590/e517e4ea89c655cd2b22740ac2aab71a31b1336b/capsule_231x87.jpg?t=1786855714",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-371404b31",
       "title": "Lunch Break Dodgeball",
       "kind": "coming_soon",
@@ -399,6 +398,17 @@
       ]
     },
     {
+      "id": "steam-news-900d14641",
+      "title": "东方",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-aa38b10d0",
       "title": "末日战姬：废土觉醒",
       "kind": "coming_soon",
@@ -408,17 +418,6 @@
       "categories": [
         "Strateji",
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-900d14641",
-      "title": "东方",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576040/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576040/a5260fe614c5e05a7882f5903e313c86f16770a7/capsule_231x87.jpg?t=1785518731",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -548,16 +547,14 @@
       ]
     },
     {
-      "id": "steam-news-6daebc20c",
-      "title": "Fruit Swipe Match 3",
+      "id": "steam-news-48646ef58",
+      "title": "SkyFab",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5053560/Fruit_Swipe_Match_3/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3335490/SkyFab/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5053560/f3fc68e848dd21144ece28ee63192166b5015902/capsule_231x87.jpg?t=1786391064",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3335490/9c2ec36b19e732baf8cac300db88852d79396369/capsule_231x87.jpg?t=1786912000",
       "categories": [
-        "Gündelik",
-        "Tek Oyunculu",
-        "Oynaması Ücretsiz"
+        "Tek Oyunculu"
       ]
     },
     {
