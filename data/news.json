@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-16T08:12:34.501Z",
+  "generatedAt": "2026-08-16T08:48:09.352Z",
   "items": [
+    {
+      "id": "steam-news-dd405a18b",
+      "title": "KuKu's Cinema",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4370970/KuKus_Cinema/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370970/4f61019e93ad1cdc72c292d7e4a1b4a0fb75d6f0/capsule_231x87.jpg?t=1786869813",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-f8644eb62",
+      "title": "FinSim",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4881490/FinSim/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4881490/0351d5edc5c60fc9f206263c337577915eb41024/capsule_231x87.jpg?t=1786869732",
+      "categories": [
+        "Simülasyon",
+        "Strateji",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-9ec7be21d",
       "title": "Peganomics",
@@ -261,32 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-48b2cc013",
-      "title": "OPEN GUARD",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4782800/OPEN_GUARD/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4782800/0979933f5b11ed4e891571cf3e7981cfd5bc4257/capsule_231x87.jpg?t=1786800434",
-      "categories": [
-        "Simülasyon",
-        "Spor",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-053a266eb",
-      "title": "The Legend of Mala Tokmachka",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4787190/The_Legend_of_Mala_Tokmachka/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4787190/301e15bf33bdfcf0cad3e62834687762065860e0/capsule_231x87.jpg?t=1786798157",
-      "categories": [
-        "Strateji",
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-022e11253",
       "title": "PuruPuru: Pull It Along",
       "kind": "coming_soon",
@@ -483,19 +481,6 @@
       ]
     },
     {
-      "id": "steam-news-9f21d36a6",
-      "title": "FinSim",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4881490/FinSim/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4881490/0351d5edc5c60fc9f206263c337577915eb41024/capsule_231x87.jpg?t=1786523565",
-      "categories": [
-        "Simülasyon",
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-8029d7413",
       "title": "Palianytsia",
       "kind": "coming_soon",
@@ -564,6 +549,15 @@
         "Korku",
         "RPG"
       ]
+    },
+    {
+      "id": "steam-news-69eb3cad0",
+      "title": "Spinebreaker",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4845230/Spinebreaker/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845230/cbf718167af3a2113383226e09f099b43f1a0da1/capsule_231x87.jpg?t=1786234825",
+      "categories": []
     },
     {
       "id": "steam-news-c560bed11",
