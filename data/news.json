@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-17T20:11:23.301Z",
+  "generatedAt": "2026-08-17T20:43:58.142Z",
   "items": [
+    {
+      "id": "steam-news-415a6dc17",
+      "title": "Retro Incremental",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1238510/Retro_Incremental/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1238510/79d24341b80088505a73d35544883eea5efe4c0b/capsule_231x87.jpg?t=1786998215",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-7964f74c2",
+      "title": "Poggers 2 - A-Maze-Thing",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2073870/Poggers_2__AMazeThing/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2073870/f79a2deae6cb4cb1d5369965480f92d8c8bfcaa3/capsule_231x87.jpg?t=1786997929",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-6f64c93d4",
       "title": "Fleetfall - Galaxy Domination",
@@ -266,26 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-b89bbfe62",
-      "title": "WE ARE SO DEAD",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4796830/WE_ARE_SO_DEAD/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4796830/15ae44bc1ee99426941b730a03771857df696d50/capsule_231x87.jpg?t=1786989007",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-d19976aa8",
-      "title": "Void Pachinko",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4077060/Void_Pachinko/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4077060/e25c635dec6bcec7816c5f9e22be138a5f35f0d0/capsule_231x87.jpg?t=1786986028",
-      "categories": []
-    },
-    {
       "id": "steam-news-bba8c841a",
       "title": "Cow",
       "kind": "coming_soon",
@@ -309,17 +311,6 @@
       ]
     },
     {
-      "id": "steam-news-ce60c7f97",
-      "title": "Beat The Machine",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4819310/Beat_The_Machine/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4819310/b895e65d056a2fe8ba648f674371a939cb93f098/capsule_231x87.jpg?t=1785544792",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-6ed58530e",
       "title": "Elemental Master: Heroes Assemble",
       "kind": "coming_soon",
@@ -334,15 +325,14 @@
       ]
     },
     {
-      "id": "steam-news-2f738d4bd",
-      "title": "光与影之恋 Chiaroscuro Lovers",
+      "id": "steam-news-ce60c7f97",
+      "title": "Beat The Machine",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4412960/_Chiaroscuro_Lovers/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4819310/Beat_The_Machine/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4412960/df13ef10217e67ceb29af4a63d6f4ee073ab4bd5/capsule_231x87.jpg?t=1785740116",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4819310/b895e65d056a2fe8ba648f674371a939cb93f098/capsule_231x87.jpg?t=1785544792",
       "categories": [
-        "Gündelik",
-        "RPG"
+        "Simülasyon"
       ]
     },
     {
@@ -353,6 +343,18 @@
       "dateLabel": "17 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2648900/ffc64b28e08f75d3ed79698581ef4c49b905f111/capsule_231x87.jpg?t=1786961902",
       "categories": []
+    },
+    {
+      "id": "steam-news-2f738d4bd",
+      "title": "光与影之恋 Chiaroscuro Lovers",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4412960/_Chiaroscuro_Lovers/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4412960/df13ef10217e67ceb29af4a63d6f4ee073ab4bd5/capsule_231x87.jpg?t=1785740116",
+      "categories": [
+        "Gündelik",
+        "RPG"
+      ]
     },
     {
       "id": "steam-news-1bb6e906a",
@@ -420,21 +422,21 @@
       ]
     },
     {
-      "id": "steam-news-6c073f94e",
-      "title": "Liminal Agent",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4749450/Liminal_Agent/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
-      "categories": []
-    },
-    {
       "id": "steam-news-c7254ad44",
       "title": "Néro & Sci ∫ Integral Edition",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/2928570/Nro__Sci__Integral_Edition/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2928570/15dd2dc457547d52b2dc771442530dd87611dd13/capsule_231x87.jpg?t=1786782443",
+      "categories": []
+    },
+    {
+      "id": "steam-news-6c073f94e",
+      "title": "Liminal Agent",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4749450/Liminal_Agent/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
       "categories": []
     },
     {
