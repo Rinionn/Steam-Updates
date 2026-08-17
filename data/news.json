@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-08-17T10:50:31.505Z",
+  "generatedAt": "2026-08-17T11:13:01.134Z",
   "items": [
+    {
+      "id": "steam-news-a01e1afaf",
+      "title": "Schizm",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4913400/Schizm/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4913400/b96f34afbbe0950cde7b8f82a13cb4a881376479/capsule_231x87.jpg?t=1786964936",
+      "categories": [
+        "Gündelik",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-3ba7cdd02",
+      "title": "Kingdom of the Beast: CAT",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4915190/Kingdom_of_the_Beast_CAT/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915190/2491814a61d2dfe3bb12b88223ba25690e7ea553/capsule_231x87.jpg?t=1786964743",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-54f37b526",
+      "title": "Lurk in Abyss",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4421160/Lurk_in_Abyss/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4421160/9ae83b2a1f299db54176f359c709d4011282dd1e/capsule_231x87.jpg?t=1786964486",
+      "categories": [
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-fb4e98931",
       "title": "Korovany: A Dzhva-Year Dream",
@@ -248,56 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-41cf6b368",
-      "title": "Fill The Bucket",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4832600/Fill_The_Bucket/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4832600/c29c3ead757adc108dfb146926ea7bfc499498a4/capsule_231x87.jpg?t=1786936741",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-92f36490b",
-      "title": "Cat Meow-tilation",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4511020/Cat_Meowtilation/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4511020/f3932b150bf95e4749b497d134dd33239a77be2d/capsule_231x87.jpg?t=1786935810",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-426468ed0",
-      "title": "Apple Faces Up",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4511010/Apple_Faces_Up/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4511010/2c62e6c8697f783e487f1848aef0ddba3275f995/capsule_231x87.jpg?t=1786935733",
-      "categories": [
-        "Macera",
-        "Tek Oyunculu",
-        "Oynaması Ücretsiz"
-      ]
-    },
-    {
-      "id": "steam-news-74b59996c",
-      "title": "Lugal: Bronze Age Survival Game",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3878380/Lugal_Bronze_Age_Survival_Game/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3878380/56f5f66cf74a0698802537600842c58e7976203a/capsule_231x87.jpg?t=1786547208",
-      "categories": [
-        "RPG",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-48646ef58",
       "title": "SkyFab",
       "kind": "coming_soon",
@@ -322,18 +306,6 @@
       ]
     },
     {
-      "id": "steam-news-b11873ca1",
-      "title": "Black Flower",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576740/Black_Flower/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576740/b8f4e1bd94f5e4f718ee1006b0ae7a78134fde78/capsule_231x87.jpg?t=1786703832",
-      "categories": [
-        "Strateji",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-219690674",
       "title": "Medieval Horse Dealer Simulator",
       "kind": "coming_soon",
@@ -355,6 +327,18 @@
         "Bağımsız",
         "Gündelik",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-b11873ca1",
+      "title": "Black Flower",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576740/Black_Flower/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576740/b8f4e1bd94f5e4f718ee1006b0ae7a78134fde78/capsule_231x87.jpg?t=1786964269",
+      "categories": [
+        "Strateji",
+        "Simülasyon"
       ]
     },
     {
@@ -404,6 +388,18 @@
       ]
     },
     {
+      "id": "steam-news-94945dcc5",
+      "title": "Tukoni: Forest Keepers",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2933200/Tukoni_Forest_Keepers/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933200/capsule_231x87.jpg?t=1786961695",
+      "categories": [
+        "Macera",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-924e1b31c",
       "title": "FEED IT",
       "kind": "coming_soon",
@@ -421,29 +417,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3849000/eea9e8dd6a08d82e413e8c2643017d8d38e70764/capsule_231x87.jpg?t=1786939279",
       "categories": [
         "Macera",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-94945dcc5",
-      "title": "Tukoni: Forest Keepers",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2933200/Tukoni_Forest_Keepers/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933200/capsule_231x87.jpg?t=1786961695",
-      "categories": [
-        "Macera",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-635686e7e",
-      "title": "Lurk in Abyss",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4421160/Lurk_in_Abyss/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4421160/9ae83b2a1f299db54176f359c709d4011282dd1e/capsule_231x87.jpg?t=1785850097",
-      "categories": [
         "RPG"
       ]
     },
@@ -512,18 +485,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-9df5c36bb",
-      "title": "Cosmic Crusher",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4432790/Cosmic_Crusher/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4432790/153ca869b3bd7b0c8b66b67242cfb64c9ccec253/capsule_231x87.jpg?t=1784118127",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-636b8f924",
       "title": "Bull Run Clicker",
       "kind": "coming_soon",
@@ -557,6 +518,41 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3784200/09edbbb0bd256be9276596a37346ba8ccad85786/capsule_231x87.jpg?t=1786473396",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-9df5c36bb",
+      "title": "Cosmic Crusher",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4432790/Cosmic_Crusher/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4432790/153ca869b3bd7b0c8b66b67242cfb64c9ccec253/capsule_231x87.jpg?t=1784118127",
+      "categories": [
+        "Gündelik",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-72c10e878",
+      "title": "Nimbit Frontier",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2477710/Nimbit_Frontier/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2477710/59b5073e395d64c3d1f93813111dea5ecbe804c7/capsule_231x87.jpg?t=1786745816",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-07231befc",
+      "title": "The Pale Mimic",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4415740/The_Pale_Mimic/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4415740/2646ad5973076d7b1231837210da9656202fb863/capsule_231x87.jpg?t=1786547782",
+      "categories": [
+        "Korku",
+        "Aksiyon"
       ]
     },
     {
