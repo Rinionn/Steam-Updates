@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-17T04:54:09.895Z",
+  "generatedAt": "2026-08-17T05:29:59.957Z",
   "items": [
+    {
+      "id": "steam-news-97baf4cd8",
+      "title": "GameOverd",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5015990/GameOverd/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5015990/d9afef017019d67b933cdcb46b6caa15791b60ff/capsule_231x87.jpg?t=1786942937",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-759d886cf",
       "title": "ScapeTime",
@@ -279,18 +291,6 @@
       ]
     },
     {
-      "id": "steam-news-5f3ca552c",
-      "title": "SOVA NA SKAKALKE",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4947950/SOVA_NA_SKAKALKE/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4947950/aaf420a5dde9d8efba5a139c7bef4e8d1ff471ab/capsule_231x87.jpg?t=1786892725",
-      "categories": [
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-8029d7413",
       "title": "Palianytsia",
       "kind": "coming_soon",
@@ -331,18 +331,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5013860/8c187346721142b3b4082ea46023f98c15bb1b8e/capsule_231x87.jpg?t=1786508288",
       "categories": [
         "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-11a1f2b8b",
-      "title": "GameOverd",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5015990/GameOverd/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5015990/d9afef017019d67b933cdcb46b6caa15791b60ff/capsule_231x87.jpg?t=1786723419",
-      "categories": [
-        "Aksiyon",
         "Gündelik"
       ]
     },
@@ -404,6 +392,18 @@
       ]
     },
     {
+      "id": "steam-news-b11873ca1",
+      "title": "Black Flower",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576740/Black_Flower/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576740/b8f4e1bd94f5e4f718ee1006b0ae7a78134fde78/capsule_231x87.jpg?t=1786703832",
+      "categories": [
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-14ef84bb9",
       "title": "Pachinko Farm",
       "kind": "coming_soon",
@@ -424,18 +424,6 @@
       "dateLabel": "17 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3503710/3cc6d376ddd271c531af2e8ad4f5b0bf24529a04/capsule_231x87.jpg?t=1785598684",
       "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-b11873ca1",
-      "title": "Black Flower",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576740/Black_Flower/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576740/b8f4e1bd94f5e4f718ee1006b0ae7a78134fde78/capsule_231x87.jpg?t=1786703832",
-      "categories": [
-        "Strateji",
         "Simülasyon"
       ]
     },
@@ -486,6 +474,28 @@
       ]
     },
     {
+      "id": "steam-news-924e1b31c",
+      "title": "FEED IT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4370990/FEED_IT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370990/4ab647d855658c5efafd0f4eaee6018dae856bae/capsule_231x87.jpg?t=1786814393",
+      "categories": []
+    },
+    {
+      "id": "steam-news-ff7a37202",
+      "title": "Budget Renovation Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4561110/Budget_Renovation_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4561110/df7705efba0004f28798c6668e62461fefb56276/capsule_231x87.jpg?t=1786101912",
+      "categories": [
+        "Gündelik",
+        "RPG",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-03c4e4fdc",
       "title": "The Lantern of the Laughless Saint",
       "kind": "coming_soon",
@@ -507,28 +517,6 @@
       "categories": [
         "Macera",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-924e1b31c",
-      "title": "FEED IT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4370990/FEED_IT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370990/4ab647d855658c5efafd0f4eaee6018dae856bae/capsule_231x87.jpg?t=1786814393",
-      "categories": []
-    },
-    {
-      "id": "steam-news-ff7a37202",
-      "title": "Budget Renovation Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4561110/Budget_Renovation_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4561110/df7705efba0004f28798c6668e62461fefb56276/capsule_231x87.jpg?t=1786101912",
-      "categories": [
-        "Gündelik",
-        "RPG",
-        "Simülasyon"
       ]
     },
     {
@@ -554,6 +542,15 @@
         "Macera",
         "RPG"
       ]
+    },
+    {
+      "id": "steam-news-88c3a4e4b",
+      "title": "ploink",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3929350/ploink/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3929350/5c72ac330fbbb48db7c18b8b0cc3b893ca23e466/capsule_231x87.jpg?t=1786862530",
+      "categories": []
     },
     {
       "id": "steam-news-42795d3b7",
