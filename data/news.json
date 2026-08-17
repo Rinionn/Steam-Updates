@@ -1,6 +1,63 @@
 {
-  "generatedAt": "2026-08-17T12:01:01.721Z",
+  "generatedAt": "2026-08-17T13:00:32.851Z",
   "items": [
+    {
+      "id": "steam-news-122a66841",
+      "title": "幻想序章: Genesis",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4939630/_Genesis/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4939630/6e222ef5f47de6bde1d3531e68eb92b8b3f06a4a/capsule_231x87.jpg?t=1786970025",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-a87db3683",
+      "title": "The Three Fingers of Fate",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4958190/The_Three_Fingers_of_Fate/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4958190/2bde731b162a5fd505672ca032e2915aef5eb9d0/capsule_231x87.jpg?t=1786969497",
+      "categories": [
+        "Strateji",
+        "RPG",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-7748a2fac",
+      "title": "Farmer and Ghost",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4980280/Farmer_and_Ghost/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4980280/065313558fa0b16f340f066cd234cd705bce19c9/capsule_231x87.jpg?t=1786968582",
+      "categories": [
+        "Aksiyon",
+        "RPG",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-9a784aaf0",
+      "title": "Spinebreaker",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4845230/Spinebreaker/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845230/cbf718167af3a2113383226e09f099b43f1a0da1/capsule_231x87.jpg?t=1786968348",
+      "categories": []
+    },
+    {
+      "id": "steam-news-d6bd438e6",
+      "title": "BLOODLETTER",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3493400/BLOODLETTER/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3493400/b5755073f38d370cefd4b1053f7c53f0725f9ccc/capsule_231x87.jpg?t=1786970809",
+      "categories": []
+    },
     {
       "id": "steam-news-a01e1afaf",
       "title": "Schizm",
@@ -223,114 +280,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-5ea7b380b",
-      "title": "Balls Up",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3483330/Balls_Up/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3483330/1629a8526e9936fcb7119e6928a220828c28c708/capsule_231x87.jpg?t=1786944910",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-e865660f6",
-      "title": "Crown&Sword",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4831290/CrownSword/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4831290/1c9e6b0a0476f73e699160de908beabf3b2b6286/capsule_231x87.jpg?t=1786944879",
-      "categories": [
-        "Gündelik",
-        "Macera",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-97baf4cd8",
-      "title": "GameOverd",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5015990/GameOverd/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5015990/d9afef017019d67b933cdcb46b6caa15791b60ff/capsule_231x87.jpg?t=1786942937",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-759d886cf",
-      "title": "ScapeTime",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4780010/ScapeTime/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4780010/2aae14e464594378929237a47bf86e3bfb8764af/capsule_231x87.jpg?t=1786939453",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-347df79b2",
-      "title": "MODIFY",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4935320/MODIFY/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4935320/c45bcb9141f012665c62f2db47a75f932a985fef/capsule_231x87.jpg?t=1786939215",
-      "categories": [
-        "Tek Oyunculu",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-6daebc20c",
-      "title": "Fruit Swipe Match 3",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5053560/Fruit_Swipe_Match_3/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5053560/f3fc68e848dd21144ece28ee63192166b5015902/capsule_231x87.jpg?t=1786391064",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu",
-        "Oynaması Ücretsiz"
-      ]
-    },
-    {
-      "id": "steam-news-b11873ca1",
-      "title": "Black Flower",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576740/Black_Flower/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576740/b8f4e1bd94f5e4f718ee1006b0ae7a78134fde78/capsule_231x87.jpg?t=1786964269",
-      "categories": [
-        "Strateji",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-219690674",
-      "title": "Medieval Horse Dealer Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3503710/Medieval_Horse_Dealer_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3503710/3cc6d376ddd271c531af2e8ad4f5b0bf24529a04/capsule_231x87.jpg?t=1785598684",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-14ef84bb9",
-      "title": "Pachinko Farm",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3598690/Pachinko_Farm/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3598690/b00b350a384d0001eeea1af9058f34b9947bc43f/capsule_231x87.jpg?t=1786120459",
-      "categories": [
-        "Bağımsız",
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-5135466b7",
       "title": "Hacker vs IT",
       "kind": "coming_soon",
@@ -364,13 +313,16 @@
       ]
     },
     {
-      "id": "steam-news-924e1b31c",
-      "title": "FEED IT",
+      "id": "steam-news-94945dcc5",
+      "title": "Tukoni: Forest Keepers",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4370990/FEED_IT/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2933200/Tukoni_Forest_Keepers/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370990/4ab647d855658c5efafd0f4eaee6018dae856bae/capsule_231x87.jpg?t=1786814393",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933200/capsule_231x87.jpg?t=1786967483",
+      "categories": [
+        "Macera",
+        "Gündelik"
+      ]
     },
     {
       "id": "steam-news-03c4e4fdc",
@@ -383,6 +335,15 @@
         "Macera",
         "RPG"
       ]
+    },
+    {
+      "id": "steam-news-924e1b31c",
+      "title": "FEED IT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4370990/FEED_IT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370990/4ab647d855658c5efafd0f4eaee6018dae856bae/capsule_231x87.jpg?t=1786814393",
+      "categories": []
     },
     {
       "id": "steam-news-ff7a37202",
@@ -398,16 +359,13 @@
       ]
     },
     {
-      "id": "steam-news-94945dcc5",
-      "title": "Tukoni: Forest Keepers",
+      "id": "steam-news-88c3a4e4b",
+      "title": "ploink",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2933200/Tukoni_Forest_Keepers/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3929350/ploink/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933200/capsule_231x87.jpg?t=1786967483",
-      "categories": [
-        "Macera",
-        "Gündelik"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3929350/5c72ac330fbbb48db7c18b8b0cc3b893ca23e466/capsule_231x87.jpg?t=1786948407",
+      "categories": []
     },
     {
       "id": "steam-news-42795d3b7",
@@ -421,15 +379,6 @@
         "Strateji",
         "Simülasyon"
       ]
-    },
-    {
-      "id": "steam-news-88c3a4e4b",
-      "title": "ploink",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3929350/ploink/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3929350/5c72ac330fbbb48db7c18b8b0cc3b893ca23e466/capsule_231x87.jpg?t=1786948407",
-      "categories": []
     },
     {
       "id": "steam-news-6c3de657e",
@@ -462,7 +411,9 @@
       "url": "https://store.steampowered.com/app/3441370/Rag_Doll__Fun_Fighting_with_Physics/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3441370/1b74daebdc3f5785704418761e8c7fd0e24e7a8e/capsule_231x87.jpg?t=1785680997",
-      "categories": []
+      "categories": [
+        "Çok Oyunculu"
+      ]
     },
     {
       "id": "steam-news-0439afd6d",
@@ -526,7 +477,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4432790/Cosmic_Crusher/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4432790/153ca869b3bd7b0c8b66b67242cfb64c9ccec253/capsule_231x87.jpg?t=1784118127",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4432790/153ca869b3bd7b0c8b66b67242cfb64c9ccec253/capsule_231x87.jpg?t=1786968739",
       "categories": [
         "Gündelik",
         "Strateji"
@@ -552,6 +503,53 @@
       "dateLabel": "17 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5010780/c627a6c67a404170fcdd2ba07f6059516c762223/capsule_231x87.jpg?t=1786791227",
       "categories": []
+    },
+    {
+      "id": "steam-news-1e0bb4d5d",
+      "title": "Jarnasmal",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4707520/Jarnasmal/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4707520/25a498d85edb42dac7eb2cf1a2ab072807f047d3/capsule_231x87.jpg?t=1786196783",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-30d84002e",
+      "title": "Water Gun Cat",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4676330/Water_Gun_Cat/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4676330/086787c56cc01d96d184c400631b913faf286669/capsule_231x87.jpg?t=1786928680",
+      "categories": [
+        "Gündelik",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-fc098fe56",
+      "title": "Shady O'Grady's™ Rising Star (2007)",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4991550/Shady_OGradys_Rising_Star_2007/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4991550/430a26956db5b219a5d04ff9909f03850326161c/capsule_231x87.jpg?t=1786901182",
+      "categories": [
+        "Simülasyon",
+        "RPG",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-c1cd9632b",
+      "title": "Guild Legends",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4946840/Guild_Legends/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946840/e617a66205fb103b34745194887b99a37ecc620f/capsule_231x87.jpg?t=1785975253",
+      "categories": [
+        "Aksiyon"
+      ]
     },
     {
       "id": "steam-news-cf77e0050",
