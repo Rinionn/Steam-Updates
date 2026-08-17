@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-17T19:22:37.306Z",
+  "generatedAt": "2026-08-17T19:48:30.348Z",
   "items": [
+    {
+      "id": "steam-news-d78bcda82",
+      "title": "Voluntary Isolation",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4746960/Voluntary_Isolation/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4746960/cb900260aa586a9dfa65262ad72d27d9a1440932/capsule_231x87.jpg?t=1786994628",
+      "categories": [
+        "Korku",
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-e818dce1b",
       "title": "Dungeon Crafter",
@@ -271,30 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-44783a72c",
-      "title": "Palianytsia",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3732030/Palianytsia/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3732030/085c12efba294784adc1499dc17045782d486fae/capsule_231x87.jpg?t=1786986022",
-      "categories": [
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-8f2360267",
-      "title": "Orbit One",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4681670/Orbit_One/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4681670/0fc866b1d94e7b3b5b418e8130decb1c13db004f/capsule_231x87.jpg?t=1786568161",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-bba8c841a",
       "title": "Cow",
       "kind": "coming_soon",
@@ -549,6 +537,17 @@
       "categories": [
         "Aksiyon",
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-41c13f469",
+      "title": "Last Drop",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3275750/Last_Drop/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3275750/a853ca30a6820f9c79a0aa1bb83c45357d6e7ef0/capsule_231x87.jpg?t=1786379338",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
