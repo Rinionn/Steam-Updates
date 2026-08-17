@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-17T17:38:00.418Z",
+  "generatedAt": "2026-08-17T18:02:54.277Z",
   "items": [
+    {
+      "id": "steam-news-693afae5c",
+      "title": "Shadow of the Dead Lands",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4994960/Shadow_of_the_Dead_Lands/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4994960/a110a9908003186f40a377e275d2bce9d4e06504/capsule_231x87.jpg?t=1786988268",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-724d0633e",
       "title": "Guild Legends",
@@ -30,7 +42,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3781530/Encroacher_Snakes/?snr=1_7_7_230_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3781530/be339ffc0f8504b07fb265b35e30ae0b6e1fb8e3/capsule_231x87.jpg?t=1786986916",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3781530/be339ffc0f8504b07fb265b35e30ae0b6e1fb8e3/capsule_231x87.jpg?t=1786988917",
       "categories": [
         "Macera",
         "Tek Oyunculu"
@@ -136,7 +148,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4796830/WE_ARE_SO_DEAD/?snr=1_7_7_230_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4796830/15ae44bc1ee99426941b730a03771857df696d50/capsule_231x87.jpg?t=1786986030",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4796830/15ae44bc1ee99426941b730a03771857df696d50/capsule_231x87.jpg?t=1786989007",
       "categories": [
         "Bağımsız"
       ]
@@ -265,42 +277,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4595310/817229e48e15f10dbb2d5f87590ef5594ad934d2/capsule_231x87.jpg?t=1786985100",
       "categories": [
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-1338e432d",
-      "title": "Gulugulu",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4956830/Gulugulu/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4956830/f49443d1ab12fe60cb3b6392a337538e02898b81/capsule_231x87.jpg?t=1786984422",
-      "categories": []
-    },
-    {
-      "id": "steam-news-332240bbb",
-      "title": "Megaris",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4483990/Megaris/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4483990/08e1c3d8d02f7357392db30a061e7e9fb0a72734/capsule_231x87.jpg?t=1786704120",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-81ac1cfe7",
-      "title": "Submerge",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4180620/Submerge/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4180620/cf763e41b5d3b32b1528510815b9d44edc7dff39/capsule_231x87.jpg?t=1786726894",
-      "categories": [
-        "Bağımsız",
-        "Korku",
-        "Çok Oyunculu",
-        "Macera",
-        "Aksiyon"
       ]
     },
     {
@@ -452,15 +428,6 @@
       ]
     },
     {
-      "id": "steam-news-c48641f01",
-      "title": "Funeral Flowers Lament: Helena",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4390450/Funeral_Flowers_Lament_Helena/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4390450/efb91aba8e99a0fabcbf7398937bf71035706d5f/capsule_231x87.jpg?t=1785844228",
-      "categories": []
-    },
-    {
       "id": "steam-news-327c013df",
       "title": "All Your Wrestling Pro Manager",
       "kind": "coming_soon",
@@ -471,6 +438,26 @@
         "Simülasyon",
         "Spor",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-c48641f01",
+      "title": "Funeral Flowers Lament: Helena",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4390450/Funeral_Flowers_Lament_Helena/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4390450/efb91aba8e99a0fabcbf7398937bf71035706d5f/capsule_231x87.jpg?t=1785844228",
+      "categories": []
+    },
+    {
+      "id": "steam-news-f0bb045fb",
+      "title": "Moho-Moho DX",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4997830/MohoMoho_DX/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4997830/e420277e3a238f39ca36681c0f4a66f5bafef2fd/capsule_231x87.jpg?t=1786768785",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -490,17 +477,6 @@
       "dateLabel": "18 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
       "categories": []
-    },
-    {
-      "id": "steam-news-f0bb045fb",
-      "title": "Moho-Moho DX",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4997830/MohoMoho_DX/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4997830/e420277e3a238f39ca36681c0f4a66f5bafef2fd/capsule_231x87.jpg?t=1786768785",
-      "categories": [
-        "Gündelik"
-      ]
     },
     {
       "id": "steam-news-817ed0ec2",
@@ -527,6 +503,17 @@
       ]
     },
     {
+      "id": "steam-news-e40e2fd97",
+      "title": "Wordforge: Silent Letters",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4378740/Wordforge_Silent_Letters/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4378740/85f3d810bfc9a021084951c0d05b93887551c876/capsule_231x87.jpg?t=1785967485",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-c8611a780",
       "title": "TFC2: The Fertile Crescent 2 - Collapse of The Bronze Age",
       "kind": "coming_soon",
@@ -538,14 +525,25 @@
       ]
     },
     {
-      "id": "steam-news-e40e2fd97",
-      "title": "Wordforge: Silent Letters",
+      "id": "steam-news-e2180804b",
+      "title": "Escape the Grind",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4378740/Wordforge_Silent_Letters/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4663080/Escape_the_Grind/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4378740/85f3d810bfc9a021084951c0d05b93887551c876/capsule_231x87.jpg?t=1785967485",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4663080/432f547f61404d8c206ed7ef27eb8613d6682108/capsule_231x87.jpg?t=1785729571",
+      "categories": []
+    },
+    {
+      "id": "steam-news-0bf0ab801",
+      "title": "Watch Party: Watch the web together",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5004570/Watch_Party_Watch_the_web_together/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5004570/cf9fe0dd1c9ead6bfdbeaf27a5d584073ebf924e/capsule_231x87.jpg?t=1786486323",
       "categories": [
-        "Strateji"
+        "Gündelik",
+        "Çok Oyunculu",
+        "Anime"
       ]
     },
     {
