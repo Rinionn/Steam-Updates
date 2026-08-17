@@ -1,6 +1,88 @@
 {
-  "generatedAt": "2026-08-17T17:03:09.342Z",
+  "generatedAt": "2026-08-17T17:38:00.418Z",
   "items": [
+    {
+      "id": "steam-news-724d0633e",
+      "title": "Guild Legends",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4946840/Guild_Legends/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946840/e617a66205fb103b34745194887b99a37ecc620f/capsule_231x87.jpg?t=1786988159",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-91cf26992",
+      "title": "Vice Vision Runner",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3807750/Vice_Vision_Runner/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3807750/78b10b7919d1a82663ba0cb6c7104dd59e655da4/capsule_231x87.jpg?t=1786987410",
+      "categories": [
+        "Macera",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-89544b0dd",
+      "title": "Encroacher: Snakes",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3781530/Encroacher_Snakes/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3781530/be339ffc0f8504b07fb265b35e30ae0b6e1fb8e3/capsule_231x87.jpg?t=1786986916",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-2c3b2b38d",
+      "title": "Planet Harvester: Incremental Odyssey",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4448490/Planet_Harvester_Incremental_Odyssey/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4448490/43399d1736a7867cf62f237c2de0b2bdbb8fcf57/capsule_231x87.jpg?t=1786987089",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-2f59e2561",
+      "title": "My Toxic Darling",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4753380/My_Toxic_Darling/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4753380/6a8fbc2acea6764c164f336e8c6faec090ff968c/capsule_231x87.jpg?t=1786986302",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-bdf2be2d0",
+      "title": "EDGE 2",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4955530/EDGE_2/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4955530/b198a44acc3814afc439da1f7745a2d596c41233/capsule_231x87.jpg?t=1786986268",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-e70bbfb27",
+      "title": "Spectacular Team: Assemble",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3203170/Spectacular_Team_Assemble/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3203170/87039ec8f6d47bba943c16a49d2c773ca9153868/capsule_231x87.jpg?t=1786986177",
+      "categories": [
+        "Simülasyon",
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-dc5891a8e",
       "title": "GUTTED: Infested Crypts",
@@ -81,6 +163,17 @@
       ]
     },
     {
+      "id": "steam-news-9de3f29b6",
+      "title": "Ballmancy",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4521330/Ballmancy/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4521330/43c59ea87c2c99ea2c4cb5643f2e51a313740a17/capsule_231x87.jpg?t=1786986379",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-44783a72c",
       "title": "Palianytsia",
       "kind": "new_release",
@@ -90,17 +183,6 @@
       "categories": [
         "Macera",
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-9de3f29b6",
-      "title": "Ballmancy",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4521330/Ballmancy/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4521330/43c59ea87c2c99ea2c4cb5643f2e51a313740a17/capsule_231x87.jpg?t=1786986022",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
@@ -195,110 +277,15 @@
       "categories": []
     },
     {
-      "id": "steam-news-72dccd00d",
-      "title": "The Eternal Woods",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4509630/The_Eternal_Woods/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4509630/c66f6d47f1ac9836e8061a6627ba14f3b277aa96/capsule_231x87.jpg?t=1786984367",
-      "categories": [
-        "Aksiyon",
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-337cf242b",
-      "title": "Cosmic Crusher",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4432790/Cosmic_Crusher/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4432790/153ca869b3bd7b0c8b66b67242cfb64c9ccec253/capsule_231x87.jpg?t=1786983125",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-f2eaad891",
-      "title": "Infinite Number Factory",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4955650/Infinite_Number_Factory/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4955650/da55e1a9f4dcbd4187d22d80cfadf32c3cc8c911/capsule_231x87.jpg?t=1786983006",
-      "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-a0242c1dd",
-      "title": "PROFITS 2167: Planetary Resource Optimization & Freight Infrastructure Technician Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4534000/PROFITS_2167_Planetary_Resource_Optimization__Freight_Infrastructure_Technician_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4534000/c6f640605d9bb199a94bf2d1cf7ccb243a9be347/capsule_231x87.jpg?t=1786982972",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-4e6b7924a",
-      "title": "Robugs",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3784200/Robugs/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3784200/09edbbb0bd256be9276596a37346ba8ccad85786/capsule_231x87.jpg?t=1786982329",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-ab8930fba",
-      "title": "ARCWATT: Power Empire",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4661270/ARCWATT_Power_Empire/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4661270/86a28a7b12f1117f509c174d3bdc997733543da2/capsule_231x87.jpg?t=1786980813",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-dade52699",
-      "title": "Nimbit Frontier",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2477710/Nimbit_Frontier/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2477710/59b5073e395d64c3d1f93813111dea5ecbe804c7/capsule_231x87.jpg?t=1786980675",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-505654752",
-      "title": "Encroacher: Snakes",
+      "id": "steam-news-332240bbb",
+      "title": "Megaris",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3781530/Encroacher_Snakes/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4483990/Megaris/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3781530/be339ffc0f8504b07fb265b35e30ae0b6e1fb8e3/capsule_231x87.jpg?t=1786763740",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4483990/08e1c3d8d02f7357392db30a061e7e9fb0a72734/capsule_231x87.jpg?t=1786704120",
       "categories": [
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-2fec35589",
-      "title": "Shadow of the Dead Lands",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4994960/Shadow_of_the_Dead_Lands/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4994960/a110a9908003186f40a377e275d2bce9d4e06504/capsule_231x87.jpg?t=1786797653",
-      "categories": [
-        "Aksiyon",
-        "Macera"
+        "Strateji",
+        "Gündelik"
       ]
     },
     {
@@ -314,30 +301,6 @@
         "Çok Oyunculu",
         "Macera",
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-332240bbb",
-      "title": "Megaris",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4483990/Megaris/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4483990/08e1c3d8d02f7357392db30a061e7e9fb0a72734/capsule_231x87.jpg?t=1786704120",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-7db6552d5",
-      "title": "Planet Harvester: Incremental Odyssey",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4448490/Planet_Harvester_Incremental_Odyssey/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4448490/43399d1736a7867cf62f237c2de0b2bdbb8fcf57/capsule_231x87.jpg?t=1786986036",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
       ]
     },
     {
@@ -436,6 +399,15 @@
       ]
     },
     {
+      "id": "steam-news-d5fcacb50",
+      "title": "The World Well: Blood of Caro",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2648900/The_World_Well_Blood_of_Caro/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2648900/ffc64b28e08f75d3ed79698581ef4c49b905f111/capsule_231x87.jpg?t=1786961902",
+      "categories": []
+    },
+    {
       "id": "steam-news-2f738d4bd",
       "title": "光与影之恋 Chiaroscuro Lovers",
       "kind": "coming_soon",
@@ -446,15 +418,6 @@
         "Gündelik",
         "RPG"
       ]
-    },
-    {
-      "id": "steam-news-d5fcacb50",
-      "title": "The World Well: Blood of Caro",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2648900/The_World_Well_Blood_of_Caro/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2648900/ffc64b28e08f75d3ed79698581ef4c49b905f111/capsule_231x87.jpg?t=1786961902",
-      "categories": []
     },
     {
       "id": "steam-news-1bb6e906a",
@@ -489,6 +452,15 @@
       ]
     },
     {
+      "id": "steam-news-c48641f01",
+      "title": "Funeral Flowers Lament: Helena",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4390450/Funeral_Flowers_Lament_Helena/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4390450/efb91aba8e99a0fabcbf7398937bf71035706d5f/capsule_231x87.jpg?t=1785844228",
+      "categories": []
+    },
+    {
       "id": "steam-news-327c013df",
       "title": "All Your Wrestling Pro Manager",
       "kind": "coming_soon",
@@ -499,26 +471,6 @@
         "Simülasyon",
         "Spor",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-c48641f01",
-      "title": "Funeral Flowers Lament: Helena",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4390450/Funeral_Flowers_Lament_Helena/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4390450/efb91aba8e99a0fabcbf7398937bf71035706d5f/capsule_231x87.jpg?t=1785844228",
-      "categories": []
-    },
-    {
-      "id": "steam-news-f0bb045fb",
-      "title": "Moho-Moho DX",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4997830/MohoMoho_DX/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4997830/e420277e3a238f39ca36681c0f4a66f5bafef2fd/capsule_231x87.jpg?t=1786768785",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -540,6 +492,17 @@
       "categories": []
     },
     {
+      "id": "steam-news-f0bb045fb",
+      "title": "Moho-Moho DX",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4997830/MohoMoho_DX/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4997830/e420277e3a238f39ca36681c0f4a66f5bafef2fd/capsule_231x87.jpg?t=1786768785",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-817ed0ec2",
       "title": "Bullet Spell",
       "kind": "coming_soon",
@@ -548,6 +511,41 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4385440/58061eb1a7acbb542f1b807e0cdf35876fa7c431/capsule_231x87.jpg?t=1785178785",
       "categories": [
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-5fd88e9cf",
+      "title": "The Sinking City 2",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2825860/The_Sinking_City_2/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2825860/ab1b4d4026f073bd59648051622773657a506da6/capsule_231x87_alt_assets_1.jpg?t=1786356731",
+      "categories": [
+        "Aksiyon",
+        "Korku",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-c8611a780",
+      "title": "TFC2: The Fertile Crescent 2 - Collapse of The Bronze Age",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4158610/TFC2_The_Fertile_Crescent_2__Collapse_of_The_Bronze_Age/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4158610/8b981b02bd94ed912962f812d45ecb21c762a54c/capsule_231x87.jpg?t=1786929601",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-e40e2fd97",
+      "title": "Wordforge: Silent Letters",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4378740/Wordforge_Silent_Letters/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4378740/85f3d810bfc9a021084951c0d05b93887551c876/capsule_231x87.jpg?t=1785967485",
+      "categories": [
+        "Strateji"
       ]
     },
     {
