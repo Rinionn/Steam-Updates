@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-17T23:30:55.683Z",
+  "generatedAt": "2026-08-17T23:51:33.684Z",
   "items": [
+    {
+      "id": "steam-news-48a273e61",
+      "title": "DustFall",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5018940/DustFall/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5018940/2a7b2fac3b28106a54c04430550fd7df0e8042c6/capsule_231x87.jpg?t=1787010508",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-813ae16a5",
+      "title": "Squirterzz",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4652920/Squirterzz/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4652920/bb81730df569e33479dd63871093d2514a9a11cb/capsule_231x87.jpg?t=1787010190",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-9db43554e",
       "title": "Dungeon Portal",
@@ -264,29 +286,6 @@
       ]
     },
     {
-      "id": "steam-news-724d0633e",
-      "title": "Guild Legends",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4946840/Guild_Legends/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4946840/e617a66205fb103b34745194887b99a37ecc620f/capsule_231x87.jpg?t=1786988159",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-91cf26992",
-      "title": "Vice Vision Runner",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3807750/Vice_Vision_Runner/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3807750/78b10b7919d1a82663ba0cb6c7104dd59e655da4/capsule_231x87.jpg?t=1786987410",
-      "categories": [
-        "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-f0bb045fb",
       "title": "Moho-Moho DX",
       "kind": "coming_soon",
@@ -298,21 +297,21 @@
       ]
     },
     {
-      "id": "steam-news-6c073f94e",
-      "title": "Liminal Agent",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4749450/Liminal_Agent/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
-      "categories": []
-    },
-    {
       "id": "steam-news-c7254ad44",
       "title": "Néro & Sci ∫ Integral Edition",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/2928570/Nro__Sci__Integral_Edition/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2928570/15dd2dc457547d52b2dc771442530dd87611dd13/capsule_231x87.jpg?t=1786782443",
+      "categories": []
+    },
+    {
+      "id": "steam-news-6c073f94e",
+      "title": "Liminal Agent",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4749450/Liminal_Agent/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
       "categories": []
     },
     {
@@ -443,14 +442,15 @@
       ]
     },
     {
-      "id": "steam-news-bbba49412",
-      "title": "The Sudoku Way",
+      "id": "steam-news-f6d21531f",
+      "title": "BeastLink",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2962780/BeastLink/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2962780/5a2dd997274a25b8ad6db846ecd75260459b5095/capsule_231x87.jpg?t=1786992863",
       "categories": [
-        "Gündelik"
+        "Bağımsız",
+        "Aksiyon"
       ]
     },
     {
@@ -467,15 +467,14 @@
       ]
     },
     {
-      "id": "steam-news-f6d21531f",
-      "title": "BeastLink",
+      "id": "steam-news-bbba49412",
+      "title": "The Sudoku Way",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2962780/BeastLink/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2962780/5a2dd997274a25b8ad6db846ecd75260459b5095/capsule_231x87.jpg?t=1786992863",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
       "categories": [
-        "Bağımsız",
-        "Aksiyon"
+        "Gündelik"
       ]
     },
     {
@@ -550,15 +549,15 @@
       ]
     },
     {
-      "id": "steam-news-db09440d9",
-      "title": "Neon Tyrant",
+      "id": "steam-news-f4fd9393b",
+      "title": "Victor Space Program",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4953310/Neon_Tyrant/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4048540/Victor_Space_Program/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953310/e2d5e5496c0d24fee299442934850e448ccde5f3/capsule_231x87.jpg?t=1786912799",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4048540/20575bd9ff205fd30678fbaf620237b189d0524c/capsule_231x87.jpg?t=1785855458",
       "categories": [
-        "Bağımsız",
-        "Aksiyon"
+        "Simülasyon",
+        "RPG"
       ]
     },
     {
