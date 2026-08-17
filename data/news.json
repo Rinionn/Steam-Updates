@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-08-17T03:12:27.249Z",
+  "generatedAt": "2026-08-17T04:04:00.654Z",
   "items": [
+    {
+      "id": "steam-news-347df79b2",
+      "title": "MODIFY",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4935320/MODIFY/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4935320/c45bcb9141f012665c62f2db47a75f932a985fef/capsule_231x87.jpg?t=1786939215",
+      "categories": [
+        "Tek Oyunculu",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-41cf6b368",
+      "title": "Fill The Bucket",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4832600/Fill_The_Bucket/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4832600/c29c3ead757adc108dfb146926ea7bfc499498a4/capsule_231x87.jpg?t=1786936741",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-92f36490b",
       "title": "Cat Meow-tilation",
@@ -267,30 +292,6 @@
       ]
     },
     {
-      "id": "steam-news-6a6c2f127",
-      "title": "GuessWorld",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4919240/GuessWorld/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4919240/0f7d07226bc30d9dcede351787e44b4dd44e9104/capsule_231x87.jpg?t=1786889425",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-67f761d80",
-      "title": "STEAM TRIGGER",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2698100/STEAM_TRIGGER/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2698100/9fad7ebe9ac89ff345064ac6e95a76f5226d62f2/capsule_231x87.jpg?t=1786888983",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-8029d7413",
       "title": "Palianytsia",
       "kind": "coming_soon",
@@ -404,13 +405,14 @@
       ]
     },
     {
-      "id": "steam-news-219690674",
-      "title": "Medieval Horse Dealer Simulator",
+      "id": "steam-news-b11873ca1",
+      "title": "Black Flower",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3503710/Medieval_Horse_Dealer_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4576740/Black_Flower/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3503710/3cc6d376ddd271c531af2e8ad4f5b0bf24529a04/capsule_231x87.jpg?t=1785598684",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576740/b8f4e1bd94f5e4f718ee1006b0ae7a78134fde78/capsule_231x87.jpg?t=1786703832",
       "categories": [
+        "Strateji",
         "Simülasyon"
       ]
     },
@@ -428,14 +430,13 @@
       ]
     },
     {
-      "id": "steam-news-b11873ca1",
-      "title": "Black Flower",
+      "id": "steam-news-219690674",
+      "title": "Medieval Horse Dealer Simulator",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576740/Black_Flower/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3503710/Medieval_Horse_Dealer_Simulator/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576740/b8f4e1bd94f5e4f718ee1006b0ae7a78134fde78/capsule_231x87.jpg?t=1786703832",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3503710/3cc6d376ddd271c531af2e8ad4f5b0bf24529a04/capsule_231x87.jpg?t=1785598684",
       "categories": [
-        "Strateji",
         "Simülasyon"
       ]
     },
@@ -473,15 +474,6 @@
       ]
     },
     {
-      "id": "steam-news-924e1b31c",
-      "title": "FEED IT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4370990/FEED_IT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370990/4ab647d855658c5efafd0f4eaee6018dae856bae/capsule_231x87.jpg?t=1786814393",
-      "categories": []
-    },
-    {
       "id": "steam-news-ff7a37202",
       "title": "Budget Renovation Simulator",
       "kind": "coming_soon",
@@ -507,6 +499,15 @@
       ]
     },
     {
+      "id": "steam-news-924e1b31c",
+      "title": "FEED IT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4370990/FEED_IT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370990/4ab647d855658c5efafd0f4eaee6018dae856bae/capsule_231x87.jpg?t=1786814393",
+      "categories": []
+    },
+    {
       "id": "steam-news-8a59767a4",
       "title": "Dual Cat: Max",
       "kind": "coming_soon",
@@ -525,7 +526,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3849000/The_Lantern_of_the_Laughless_Saint/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3849000/eea9e8dd6a08d82e413e8c2643017d8d38e70764/capsule_231x87.jpg?t=1786912886",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3849000/eea9e8dd6a08d82e413e8c2643017d8d38e70764/capsule_231x87.jpg?t=1786939279",
       "categories": [
         "Macera",
         "RPG"
@@ -556,13 +557,16 @@
       ]
     },
     {
-      "id": "steam-news-88c3a4e4b",
-      "title": "ploink",
+      "id": "steam-news-59947aecb",
+      "title": "Farewells clicker",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3929350/ploink/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4264950/Farewells_clicker/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3929350/5c72ac330fbbb48db7c18b8b0cc3b893ca23e466/capsule_231x87.jpg?t=1786862530",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4264950/a561b63e0e4acdd68e34c3bdbad29a5a768b03b0/capsule_231x87.jpg?t=1786886531",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
     },
     {
       "id": "steam-news-cf77e0050",
