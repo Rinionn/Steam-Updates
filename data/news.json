@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-08-17T05:29:59.957Z",
+  "generatedAt": "2026-08-17T06:02:31.647Z",
   "items": [
+    {
+      "id": "steam-news-0ca732491",
+      "title": "Corny Johnny",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4907400/Corny_Johnny/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4907400/4eaa8cbda5c550b321b8be25add6c19f5f945003/capsule_231x87.jpg?t=1786946407",
+      "categories": []
+    },
+    {
+      "id": "steam-news-5ea7b380b",
+      "title": "Balls Up",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3483330/Balls_Up/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3483330/1629a8526e9936fcb7119e6928a220828c28c708/capsule_231x87.jpg?t=1786944910",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-e865660f6",
+      "title": "Crown&Sword",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4831290/CrownSword/?snr=1_7_7_230_150_1",
+      "dateLabel": "16 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4831290/1c9e6b0a0476f73e699160de908beabf3b2b6286/capsule_231x87.jpg?t=1786944879",
+      "categories": [
+        "Gündelik",
+        "Macera",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-97baf4cd8",
       "title": "GameOverd",
@@ -254,43 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-670d79f4b",
-      "title": "Substance Lab POL",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4998080/Substance_Lab_POL/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998080/5e9d8b9db3f98cc7f6cbfd827b0269d56500ce9c/capsule_231x87.jpg?t=1786893561",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-86176c8ce",
-      "title": "PuruPuru: Pull It Along",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4880670/PuruPuru_Pull_It_Along/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4880670/1e0a6e94af7aea5f2073addcb50633b523ae5c3a/capsule_231x87.jpg?t=1786893065",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-d156daadb",
-      "title": "Goblins and Gunslingers",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4557390/Goblins_and_Gunslingers/?snr=1_7_7_230_150_1",
-      "dateLabel": "16 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4557390/d88d9c6f6386544a96d05b1c03906b0ed949fa56/capsule_231x87.jpg?t=1786892539",
-      "categories": [
-        "RPG",
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-8029d7413",
       "title": "Palianytsia",
       "kind": "coming_soon",
@@ -461,6 +457,18 @@
       ]
     },
     {
+      "id": "steam-news-94945dcc5",
+      "title": "Tukoni: Forest Keepers",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2933200/Tukoni_Forest_Keepers/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933200/capsule_231x87.jpg?t=1786913618",
+      "categories": [
+        "Macera",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-8a59767a4",
       "title": "Dual Cat: Max",
       "kind": "coming_soon",
@@ -471,28 +479,6 @@
         "Strateji",
         "Aksiyon",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-924e1b31c",
-      "title": "FEED IT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4370990/FEED_IT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370990/4ab647d855658c5efafd0f4eaee6018dae856bae/capsule_231x87.jpg?t=1786814393",
-      "categories": []
-    },
-    {
-      "id": "steam-news-ff7a37202",
-      "title": "Budget Renovation Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4561110/Budget_Renovation_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4561110/df7705efba0004f28798c6668e62461fefb56276/capsule_231x87.jpg?t=1786101912",
-      "categories": [
-        "Gündelik",
-        "RPG",
-        "Simülasyon"
       ]
     },
     {
@@ -508,16 +494,26 @@
       ]
     },
     {
-      "id": "steam-news-94945dcc5",
-      "title": "Tukoni: Forest Keepers",
+      "id": "steam-news-ff7a37202",
+      "title": "Budget Renovation Simulator",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2933200/Tukoni_Forest_Keepers/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4561110/Budget_Renovation_Simulator/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933200/capsule_231x87.jpg?t=1786913618",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4561110/df7705efba0004f28798c6668e62461fefb56276/capsule_231x87.jpg?t=1786101912",
       "categories": [
-        "Macera",
-        "Gündelik"
+        "Gündelik",
+        "RPG",
+        "Simülasyon"
       ]
+    },
+    {
+      "id": "steam-news-924e1b31c",
+      "title": "FEED IT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4370990/FEED_IT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4370990/4ab647d855658c5efafd0f4eaee6018dae856bae/capsule_231x87.jpg?t=1786814393",
+      "categories": []
     },
     {
       "id": "steam-news-635686e7e",
