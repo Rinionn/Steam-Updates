@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T22:33:35.861Z",
+  "generatedAt": "2026-08-17T22:55:34.621Z",
   "items": [
     {
       "id": "steam-news-924283640",
@@ -287,15 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-6c073f94e",
-      "title": "Liminal Agent",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4749450/Liminal_Agent/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
-      "categories": []
-    },
-    {
       "id": "steam-news-f0bb045fb",
       "title": "Moho-Moho DX",
       "kind": "coming_soon",
@@ -305,6 +296,15 @@
       "categories": [
         "Gündelik"
       ]
+    },
+    {
+      "id": "steam-news-6c073f94e",
+      "title": "Liminal Agent",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4749450/Liminal_Agent/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
+      "categories": []
     },
     {
       "id": "steam-news-c7254ad44",
@@ -432,17 +432,6 @@
       ]
     },
     {
-      "id": "steam-news-5d66b0c4d",
-      "title": "Loop of Agony",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4950450/Loop_of_Agony/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950450/0b454a7bad9c1d69efbb7311d1cbf71601f1ecad/capsule_231x87.jpg?t=1786601562",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-bbba49412",
       "title": "The Sudoku Way",
       "kind": "coming_soon",
@@ -451,6 +440,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-5d66b0c4d",
+      "title": "Loop of Agony",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4950450/Loop_of_Agony/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950450/0b454a7bad9c1d69efbb7311d1cbf71601f1ecad/capsule_231x87.jpg?t=1786601562",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -491,17 +491,6 @@
       ]
     },
     {
-      "id": "steam-news-ffba80970",
-      "title": "MEGALITH",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4896990/MEGALITH/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4896990/bd3b4fb2200bdcb7253007293497baeb8a9422f1/capsule_231x87.jpg?t=1783538657",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-e32a77862",
       "title": "Mystic Garden",
       "kind": "coming_soon",
@@ -512,6 +501,17 @@
         "Simülasyon",
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-ffba80970",
+      "title": "MEGALITH",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4896990/MEGALITH/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4896990/bd3b4fb2200bdcb7253007293497baeb8a9422f1/capsule_231x87.jpg?t=1783538657",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -550,15 +550,14 @@
       ]
     },
     {
-      "id": "steam-news-db09440d9",
-      "title": "Neon Tyrant",
+      "id": "steam-news-ae374c645",
+      "title": "Finding Ruby: Hidden Object Adventure",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4953310/Neon_Tyrant/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4836900/Finding_Ruby_Hidden_Object_Adventure/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953310/e2d5e5496c0d24fee299442934850e448ccde5f3/capsule_231x87.jpg?t=1786912799",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836900/b9f46378203e05d9200120d6ebde17b624923bab/capsule_231x87.jpg?t=1783778991",
       "categories": [
-        "Bağımsız",
-        "Aksiyon"
+        "Gündelik"
       ]
     },
     {
