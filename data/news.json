@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T11:42:56.612Z",
+  "generatedAt": "2026-08-17T12:01:01.721Z",
   "items": [
     {
       "id": "steam-news-a01e1afaf",
@@ -282,17 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-48646ef58",
-      "title": "SkyFab",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3335490/SkyFab/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3335490/9c2ec36b19e732baf8cac300db88852d79396369/capsule_231x87.jpg?t=1786912000",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-6daebc20c",
       "title": "Fruit Swipe Match 3",
       "kind": "coming_soon",
@@ -303,6 +292,18 @@
         "Gündelik",
         "Tek Oyunculu",
         "Oynaması Ücretsiz"
+      ]
+    },
+    {
+      "id": "steam-news-b11873ca1",
+      "title": "Black Flower",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4576740/Black_Flower/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576740/b8f4e1bd94f5e4f718ee1006b0ae7a78134fde78/capsule_231x87.jpg?t=1786964269",
+      "categories": [
+        "Strateji",
+        "Simülasyon"
       ]
     },
     {
@@ -327,18 +328,6 @@
         "Bağımsız",
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-b11873ca1",
-      "title": "Black Flower",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4576740/Black_Flower/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4576740/b8f4e1bd94f5e4f718ee1006b0ae7a78134fde78/capsule_231x87.jpg?t=1786964269",
-      "categories": [
-        "Strateji",
-        "Simülasyon"
       ]
     },
     {
@@ -375,31 +364,6 @@
       ]
     },
     {
-      "id": "steam-news-94945dcc5",
-      "title": "Tukoni: Forest Keepers",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2933200/Tukoni_Forest_Keepers/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933200/capsule_231x87.jpg?t=1786961695",
-      "categories": [
-        "Macera",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-ff7a37202",
-      "title": "Budget Renovation Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4561110/Budget_Renovation_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4561110/df7705efba0004f28798c6668e62461fefb56276/capsule_231x87.jpg?t=1786101912",
-      "categories": [
-        "Gündelik",
-        "RPG",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-924e1b31c",
       "title": "FEED IT",
       "kind": "coming_soon",
@@ -418,6 +382,44 @@
       "categories": [
         "Macera",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-ff7a37202",
+      "title": "Budget Renovation Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4561110/Budget_Renovation_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4561110/df7705efba0004f28798c6668e62461fefb56276/capsule_231x87.jpg?t=1786101912",
+      "categories": [
+        "Gündelik",
+        "RPG",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-94945dcc5",
+      "title": "Tukoni: Forest Keepers",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2933200/Tukoni_Forest_Keepers/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2933200/capsule_231x87.jpg?t=1786967483",
+      "categories": [
+        "Macera",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-42795d3b7",
+      "title": "Solar Wave",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3212820/Solar_Wave/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3212820/af957ec0016f4fbdd21804a4465fda473372b01b/capsule_231x87.jpg?t=1785946577",
+      "categories": [
+        "Bağımsız",
+        "Strateji",
+        "Simülasyon"
       ]
     },
     {
@@ -440,19 +442,6 @@
         "Simülasyon",
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-42795d3b7",
-      "title": "Solar Wave",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3212820/Solar_Wave/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3212820/af957ec0016f4fbdd21804a4465fda473372b01b/capsule_231x87.jpg?t=1785946577",
-      "categories": [
-        "Bağımsız",
-        "Strateji",
-        "Simülasyon"
       ]
     },
     {
@@ -496,17 +485,6 @@
       ]
     },
     {
-      "id": "steam-news-72c10e878",
-      "title": "Nimbit Frontier",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2477710/Nimbit_Frontier/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2477710/59b5073e395d64c3d1f93813111dea5ecbe804c7/capsule_231x87.jpg?t=1786745816",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-4d4461776",
       "title": "Draft Day Sports: College Football 27",
       "kind": "coming_soon",
@@ -518,6 +496,17 @@
         "Simülasyon",
         "Strateji",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-72c10e878",
+      "title": "Nimbit Frontier",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2477710/Nimbit_Frontier/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2477710/59b5073e395d64c3d1f93813111dea5ecbe804c7/capsule_231x87.jpg?t=1786745816",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
@@ -554,6 +543,15 @@
         "Korku",
         "Aksiyon"
       ]
+    },
+    {
+      "id": "steam-news-0bad9dc1c",
+      "title": "10k Generators: The Ultimate Idle Game",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5010780/10k_Generators_The_Ultimate_Idle_Game/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5010780/c627a6c67a404170fcdd2ba07f6059516c762223/capsule_231x87.jpg?t=1786791227",
+      "categories": []
     },
     {
       "id": "steam-news-cf77e0050",
