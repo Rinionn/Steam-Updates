@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-08-17T18:53:30.404Z",
+  "generatedAt": "2026-08-17T19:22:37.306Z",
   "items": [
+    {
+      "id": "steam-news-e818dce1b",
+      "title": "Dungeon Crafter",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4810260/Dungeon_Crafter/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4810260/931be80706eecc7277843ea54edddb2967e43f4f/capsule_231x87.jpg?t=1786993307",
+      "categories": [
+        "Aksiyon",
+        "RPG",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-03ccbba29",
+      "title": "Anubis",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3531650/Anubis/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3531650/b405cf14dee072789dd88e4b4b459c57e241cc25/capsule_231x87.jpg?t=1786993255",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-52f3db2ee",
       "title": "Jarnasmal",
@@ -258,54 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-0969dad68",
-      "title": "Rag Doll - Fun Fighting with Physics",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3441370/Rag_Doll__Fun_Fighting_with_Physics/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3441370/1b74daebdc3f5785704418761e8c7fd0e24e7a8e/capsule_231x87.jpg?t=1786985986",
-      "categories": [
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-05d78feac",
-      "title": "Balls & Gamble",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4380770/Balls__Gamble/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4380770/67c6414af72fe05debfe98233cac28f1cc2cc758/capsule_231x87.jpg?t=1786985985",
-      "categories": [
-        "Gündelik",
-        "Strateji",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-334304f57",
-      "title": "Anubis",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3531650/Anubis/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3531650/b405cf14dee072789dd88e4b4b459c57e241cc25/capsule_231x87.jpg?t=1779060742",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-cbbf81117",
-      "title": "Satawn",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4702540/Satawn/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4702540/e124ea7af0d074848e7105d331f97e1c02487e79/capsule_231x87.jpg?t=1786476901",
-      "categories": [
-        "Bağımsız",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-8f2360267",
       "title": "Orbit One",
       "kind": "coming_soon",
@@ -366,15 +343,6 @@
       ]
     },
     {
-      "id": "steam-news-d5fcacb50",
-      "title": "The World Well: Blood of Caro",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2648900/The_World_Well_Blood_of_Caro/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2648900/ffc64b28e08f75d3ed79698581ef4c49b905f111/capsule_231x87.jpg?t=1786961902",
-      "categories": []
-    },
-    {
       "id": "steam-news-2f738d4bd",
       "title": "光与影之恋 Chiaroscuro Lovers",
       "kind": "coming_soon",
@@ -385,6 +353,15 @@
         "Gündelik",
         "RPG"
       ]
+    },
+    {
+      "id": "steam-news-d5fcacb50",
+      "title": "The World Well: Blood of Caro",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2648900/The_World_Well_Blood_of_Caro/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2648900/ffc64b28e08f75d3ed79698581ef4c49b905f111/capsule_231x87.jpg?t=1786961902",
+      "categories": []
     },
     {
       "id": "steam-news-1bb6e906a",
@@ -412,11 +389,20 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4231940/Army_of_Tentacles_Not_A_Cthulhu_Dating_Sim_10th_Anniversary_Edition/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4231940/0ac636770fc64482c8086abd1b720436e2c23d87/capsule_231x87.jpg?t=1786126836",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4231940/0ac636770fc64482c8086abd1b720436e2c23d87/capsule_231x87.jpg?t=1786993211",
       "categories": [
         "RPG",
         "Macera"
       ]
+    },
+    {
+      "id": "steam-news-c48641f01",
+      "title": "Funeral Flowers Lament: Helena",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4390450/Funeral_Flowers_Lament_Helena/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4390450/efb91aba8e99a0fabcbf7398937bf71035706d5f/capsule_231x87.jpg?t=1785844228",
+      "categories": []
     },
     {
       "id": "steam-news-327c013df",
@@ -432,15 +418,6 @@
       ]
     },
     {
-      "id": "steam-news-c48641f01",
-      "title": "Funeral Flowers Lament: Helena",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4390450/Funeral_Flowers_Lament_Helena/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4390450/efb91aba8e99a0fabcbf7398937bf71035706d5f/capsule_231x87.jpg?t=1785844228",
-      "categories": []
-    },
-    {
       "id": "steam-news-f0bb045fb",
       "title": "Moho-Moho DX",
       "kind": "coming_soon",
@@ -452,6 +429,15 @@
       ]
     },
     {
+      "id": "steam-news-6c073f94e",
+      "title": "Liminal Agent",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4749450/Liminal_Agent/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
+      "categories": []
+    },
+    {
       "id": "steam-news-c7254ad44",
       "title": "Néro & Sci ∫ Integral Edition",
       "kind": "coming_soon",
@@ -461,13 +447,15 @@
       "categories": []
     },
     {
-      "id": "steam-news-6c073f94e",
-      "title": "Liminal Agent",
+      "id": "steam-news-817ed0ec2",
+      "title": "Bullet Spell",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4749450/Liminal_Agent/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4385440/Bullet_Spell/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4385440/58061eb1a7acbb542f1b807e0cdf35876fa7c431/capsule_231x87.jpg?t=1785178785",
+      "categories": [
+        "Anime"
+      ]
     },
     {
       "id": "steam-news-5fd88e9cf",
@@ -480,17 +468,6 @@
         "Aksiyon",
         "Korku",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-817ed0ec2",
-      "title": "Bullet Spell",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4385440/Bullet_Spell/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4385440/58061eb1a7acbb542f1b807e0cdf35876fa7c431/capsule_231x87.jpg?t=1785178785",
-      "categories": [
-        "Anime"
       ]
     },
     {
@@ -548,6 +525,30 @@
         "Strateji",
         "Tek Oyunculu",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d520c1702",
+      "title": "Forts & Castles",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4942090/Forts__Castles/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942090/e708d4e9e01913ebb41e3a4a9206266a68f63661/capsule_231x87.jpg?t=1785525764",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-b93d9ebb8",
+      "title": "GRIT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/738090/GRIT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738090/capsule_231x87.jpg?t=1786919255",
+      "categories": [
+        "Aksiyon",
+        "Çok Oyunculu"
       ]
     },
     {
