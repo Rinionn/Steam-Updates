@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-17T22:55:34.621Z",
+  "generatedAt": "2026-08-17T23:30:55.683Z",
   "items": [
+    {
+      "id": "steam-news-9db43554e",
+      "title": "Dungeon Portal",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4936900/Dungeon_Portal/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4936900/fe073d8251498aac61a98c213e9474ff4808c040/capsule_231x87.jpg?t=1787007798",
+      "categories": [
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-151849641",
+      "title": "BALLSKIN",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4000970/BALLSKIN/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4000970/5ff9d1e3f826012ccb7938aaa08db7fab89299a5/capsule_231x87.jpg?t=1787007619",
+      "categories": [
+        "Macera",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-c6c2aab4f",
+      "title": "GLANCED",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4214060/GLANCED/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4214060/37a32ea5ee9569c9dc4fa32d7317b4141cb8a6da/capsule_231x87.jpg?t=1787007352",
+      "categories": [
+        "Aksiyon",
+        "Korku"
+      ]
+    },
     {
       "id": "steam-news-924283640",
       "title": "Yipe! V - Attack of Idle Hands",
@@ -252,41 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-89544b0dd",
-      "title": "Encroacher: Snakes",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3781530/Encroacher_Snakes/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3781530/be339ffc0f8504b07fb265b35e30ae0b6e1fb8e3/capsule_231x87.jpg?t=1786988917",
-      "categories": [
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-2c3b2b38d",
-      "title": "Planet Harvester: Incremental Odyssey",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4448490/Planet_Harvester_Incremental_Odyssey/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4448490/43399d1736a7867cf62f237c2de0b2bdbb8fcf57/capsule_231x87.jpg?t=1787005434",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-2f59e2561",
-      "title": "My Toxic Darling",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4753380/My_Toxic_Darling/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4753380/6a8fbc2acea6764c164f336e8c6faec090ff968c/capsule_231x87.jpg?t=1786986302",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-f0bb045fb",
       "title": "Moho-Moho DX",
       "kind": "coming_soon",
@@ -432,17 +432,6 @@
       ]
     },
     {
-      "id": "steam-news-bbba49412",
-      "title": "The Sudoku Way",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-5d66b0c4d",
       "title": "Loop of Agony",
       "kind": "coming_soon",
@@ -451,6 +440,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950450/0b454a7bad9c1d69efbb7311d1cbf71601f1ecad/capsule_231x87.jpg?t=1786601562",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-bbba49412",
+      "title": "The Sudoku Way",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -550,14 +550,15 @@
       ]
     },
     {
-      "id": "steam-news-ae374c645",
-      "title": "Finding Ruby: Hidden Object Adventure",
+      "id": "steam-news-db09440d9",
+      "title": "Neon Tyrant",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4836900/Finding_Ruby_Hidden_Object_Adventure/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4953310/Neon_Tyrant/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836900/b9f46378203e05d9200120d6ebde17b624923bab/capsule_231x87.jpg?t=1783778991",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953310/e2d5e5496c0d24fee299442934850e448ccde5f3/capsule_231x87.jpg?t=1786912799",
       "categories": [
-        "Gündelik"
+        "Bağımsız",
+        "Aksiyon"
       ]
     },
     {
