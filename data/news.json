@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-08-17T19:48:30.348Z",
+  "generatedAt": "2026-08-17T20:11:23.301Z",
   "items": [
+    {
+      "id": "steam-news-6f64c93d4",
+      "title": "Fleetfall - Galaxy Domination",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4933760/Fleetfall__Galaxy_Domination/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4933760/58203c349c7b7109277a0d152d6b5caeea8f473a/capsule_231x87.jpg?t=1786996348",
+      "categories": [
+        "Strateji",
+        "Gündelik",
+        "Çok Oyunculu",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-7cc96a153",
+      "title": "Orbit One",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4681670/Orbit_One/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4681670/0fc866b1d94e7b3b5b418e8130decb1c13db004f/capsule_231x87.jpg?t=1786996154",
+      "categories": [
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-d78bcda82",
       "title": "Voluntary Isolation",
@@ -260,29 +286,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-8b9b1dae0",
-      "title": "RHYTHMKILL",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3667050/RHYTHMKILL/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3667050/33d2e8ece30d81d96dca8812e97bc4e79889f693/capsule_231x87.jpg?t=1786986022",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-9de3f29b6",
-      "title": "Ballmancy",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4521330/Ballmancy/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4521330/43c59ea87c2c99ea2c4cb5643f2e51a313740a17/capsule_231x87.jpg?t=1786986379",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-bba8c841a",
       "title": "Cow",
       "kind": "coming_soon",
@@ -384,15 +387,6 @@
       ]
     },
     {
-      "id": "steam-news-c48641f01",
-      "title": "Funeral Flowers Lament: Helena",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4390450/Funeral_Flowers_Lament_Helena/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4390450/efb91aba8e99a0fabcbf7398937bf71035706d5f/capsule_231x87.jpg?t=1785844228",
-      "categories": []
-    },
-    {
       "id": "steam-news-327c013df",
       "title": "All Your Wrestling Pro Manager",
       "kind": "coming_soon",
@@ -404,6 +398,15 @@
         "Spor",
         "Strateji"
       ]
+    },
+    {
+      "id": "steam-news-c48641f01",
+      "title": "Funeral Flowers Lament: Helena",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4390450/Funeral_Flowers_Lament_Helena/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4390450/efb91aba8e99a0fabcbf7398937bf71035706d5f/capsule_231x87.jpg?t=1785844228",
+      "categories": []
     },
     {
       "id": "steam-news-f0bb045fb",
@@ -503,6 +506,18 @@
       ]
     },
     {
+      "id": "steam-news-d520c1702",
+      "title": "Forts & Castles",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4942090/Forts__Castles/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942090/e708d4e9e01913ebb41e3a4a9206266a68f63661/capsule_231x87.jpg?t=1785525764",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-2390855f6",
       "title": "Gambit's Escape",
       "kind": "coming_soon",
@@ -512,18 +527,6 @@
       "categories": [
         "Strateji",
         "Tek Oyunculu",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-d520c1702",
-      "title": "Forts & Castles",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4942090/Forts__Castles/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942090/e708d4e9e01913ebb41e3a4a9206266a68f63661/capsule_231x87.jpg?t=1785525764",
-      "categories": [
-        "Strateji",
         "Gündelik"
       ]
     },
