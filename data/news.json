@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T21:59:27.169Z",
+  "generatedAt": "2026-08-17T22:33:35.861Z",
   "items": [
     {
       "id": "steam-news-924283640",
@@ -54,7 +54,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/1429880/Little_Sim_World/?snr=1_7_7_230_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1429880/5bd3df6817157ae890ee2afcfa405550688bc1c9/capsule_231x87.jpg?t=1787003083",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1429880/5bd3df6817157ae890ee2afcfa405550688bc1c9/capsule_231x87.jpg?t=1787004722",
       "categories": [
         "Simülasyon",
         "RPG"
@@ -269,7 +269,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4448490/Planet_Harvester_Incremental_Odyssey/?snr=1_7_7_230_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4448490/43399d1736a7867cf62f237c2de0b2bdbb8fcf57/capsule_231x87.jpg?t=1786989809",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4448490/43399d1736a7867cf62f237c2de0b2bdbb8fcf57/capsule_231x87.jpg?t=1787005434",
       "categories": [
         "Gündelik",
         "Simülasyon"
@@ -285,15 +285,6 @@
       "categories": [
         "Korku"
       ]
-    },
-    {
-      "id": "steam-news-c7254ad44",
-      "title": "Néro & Sci ∫ Integral Edition",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2928570/Nro__Sci__Integral_Edition/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2928570/15dd2dc457547d52b2dc771442530dd87611dd13/capsule_231x87.jpg?t=1786782443",
-      "categories": []
     },
     {
       "id": "steam-news-6c073f94e",
@@ -314,6 +305,15 @@
       "categories": [
         "Gündelik"
       ]
+    },
+    {
+      "id": "steam-news-c7254ad44",
+      "title": "Néro & Sci ∫ Integral Edition",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2928570/Nro__Sci__Integral_Edition/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2928570/15dd2dc457547d52b2dc771442530dd87611dd13/capsule_231x87.jpg?t=1786782443",
+      "categories": []
     },
     {
       "id": "steam-news-817ed0ec2",
@@ -397,18 +397,6 @@
       ]
     },
     {
-      "id": "steam-news-b93d9ebb8",
-      "title": "GRIT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/738090/GRIT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738090/capsule_231x87.jpg?t=1786919255",
-      "categories": [
-        "Aksiyon",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-d520c1702",
       "title": "Forts & Castles",
       "kind": "coming_soon",
@@ -418,6 +406,18 @@
       "categories": [
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-b93d9ebb8",
+      "title": "GRIT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/738090/GRIT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738090/capsule_231x87.jpg?t=1786919255",
+      "categories": [
+        "Aksiyon",
+        "Çok Oyunculu"
       ]
     },
     {
@@ -432,17 +432,6 @@
       ]
     },
     {
-      "id": "steam-news-bbba49412",
-      "title": "The Sudoku Way",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-5d66b0c4d",
       "title": "Loop of Agony",
       "kind": "coming_soon",
@@ -451,6 +440,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950450/0b454a7bad9c1d69efbb7311d1cbf71601f1ecad/capsule_231x87.jpg?t=1786601562",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-bbba49412",
+      "title": "The Sudoku Way",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -502,15 +502,6 @@
       ]
     },
     {
-      "id": "steam-news-7f2465d8f",
-      "title": "Exark",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3435610/Exark/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3435610/cb827f52bb685f816f78976d9c41675e93cadaec/capsule_231x87.jpg?t=1786377746",
-      "categories": []
-    },
-    {
       "id": "steam-news-e32a77862",
       "title": "Mystic Garden",
       "kind": "coming_soon",
@@ -522,6 +513,15 @@
         "Gündelik",
         "Tek Oyunculu"
       ]
+    },
+    {
+      "id": "steam-news-7f2465d8f",
+      "title": "Exark",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3435610/Exark/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3435610/cb827f52bb685f816f78976d9c41675e93cadaec/capsule_231x87.jpg?t=1786377746",
+      "categories": []
     },
     {
       "id": "steam-news-e33b0278a",
