@@ -1,6 +1,43 @@
 {
-  "generatedAt": "2026-08-18T08:18:33.702Z",
+  "generatedAt": "2026-08-18T08:58:48.257Z",
   "items": [
+    {
+      "id": "steam-news-aa9dd5185",
+      "title": "The Sinking City 2",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2825860/The_Sinking_City_2/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2825860/ab1b4d4026f073bd59648051622773657a506da6/capsule_231x87_alt_assets_1.jpg?t=1787043434",
+      "categories": [
+        "Aksiyon",
+        "Korku",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-16002d527",
+      "title": "Move Or Die",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4853800/Move_Or_Die/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4853800/b8b2215789800fc6e44e713af0537c33f5b5cfd4/capsule_231x87.jpg?t=1787042671",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-c4a96e998",
+      "title": "Fallen Isekai",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4812160/Fallen_Isekai/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4812160/76e595d560f149c107894d380c7d6496f67380fe/capsule_231x87.jpg?t=1787041542",
+      "categories": [
+        "Strateji",
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-4079e7a45",
       "title": "Farm Harvest",
@@ -240,39 +277,6 @@
       ]
     },
     {
-      "id": "steam-news-48a273e61",
-      "title": "DustFall",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5018940/DustFall/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5018940/2a7b2fac3b28106a54c04430550fd7df0e8042c6/capsule_231x87.jpg?t=1787010508",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-813ae16a5",
-      "title": "Squirterzz",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4652920/Squirterzz/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4652920/bb81730df569e33479dd63871093d2514a9a11cb/capsule_231x87.jpg?t=1787010190",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-9db43554e",
-      "title": "Dungeon Portal",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4936900/Dungeon_Portal/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4936900/fe073d8251498aac61a98c213e9474ff4808c040/capsule_231x87.jpg?t=1787007798",
-      "categories": [
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-817ed0ec2",
       "title": "Bullet Spell",
       "kind": "coming_soon",
@@ -281,19 +285,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4385440/58061eb1a7acbb542f1b807e0cdf35876fa7c431/capsule_231x87.jpg?t=1785178785",
       "categories": [
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-5fd88e9cf",
-      "title": "The Sinking City 2",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2825860/The_Sinking_City_2/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2825860/ab1b4d4026f073bd59648051622773657a506da6/capsule_231x87_alt_assets_1.jpg?t=1786356731",
-      "categories": [
-        "Aksiyon",
-        "Korku",
-        "Macera"
       ]
     },
     {
@@ -389,28 +380,6 @@
       ]
     },
     {
-      "id": "steam-news-bbba49412",
-      "title": "The Sudoku Way",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-bc12e0d06",
-      "title": "Tower64",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4279130/Tower64/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787011625",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-5d66b0c4d",
       "title": "Loop of Agony",
       "kind": "coming_soon",
@@ -419,6 +388,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950450/0b454a7bad9c1d69efbb7311d1cbf71601f1ecad/capsule_231x87.jpg?t=1787034200",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-bbba49412",
+      "title": "The Sudoku Way",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -432,6 +412,17 @@
         "Strateji",
         "Macera",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-bc12e0d06",
+      "title": "Tower64",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4279130/Tower64/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787011625",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -470,15 +461,6 @@
       ]
     },
     {
-      "id": "steam-news-7f2465d8f",
-      "title": "Exark",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3435610/Exark/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3435610/cb827f52bb685f816f78976d9c41675e93cadaec/capsule_231x87.jpg?t=1786377746",
-      "categories": []
-    },
-    {
       "id": "steam-news-e32a77862",
       "title": "Mystic Garden",
       "kind": "coming_soon",
@@ -492,18 +474,13 @@
       ]
     },
     {
-      "id": "steam-news-d2d20d0c2",
-      "title": "Drift Mania",
+      "id": "steam-news-7f2465d8f",
+      "title": "Exark",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3929890/Drift_Mania/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3435610/Exark/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3929890/aff1841aa73da96dba51ab0cd9024416976f0e66/capsule_231x87.jpg?t=1786469663",
-      "categories": [
-        "Yarış",
-        "Spor",
-        "Tek Oyunculu",
-        "Gündelik"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3435610/cb827f52bb685f816f78976d9c41675e93cadaec/capsule_231x87.jpg?t=1786377746",
+      "categories": []
     },
     {
       "id": "steam-news-db09440d9",
@@ -515,17 +492,6 @@
       "categories": [
         "Bağımsız",
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-ae374c645",
-      "title": "Finding Ruby: Hidden Object Adventure",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4836900/Finding_Ruby_Hidden_Object_Adventure/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836900/b9f46378203e05d9200120d6ebde17b624923bab/capsule_231x87.jpg?t=1783778991",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -550,6 +516,43 @@
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-ae374c645",
+      "title": "Finding Ruby: Hidden Object Adventure",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4836900/Finding_Ruby_Hidden_Object_Adventure/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836900/b9f46378203e05d9200120d6ebde17b624923bab/capsule_231x87.jpg?t=1783778991",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d2d20d0c2",
+      "title": "Drift Mania",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3929890/Drift_Mania/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3929890/aff1841aa73da96dba51ab0cd9024416976f0e66/capsule_231x87.jpg?t=1786469663",
+      "categories": [
+        "Yarış",
+        "Spor",
+        "Tek Oyunculu",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-561cd1dc2",
+      "title": "HyperCore : Rhythm Bullet Hell",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1112390/HyperCore__Rhythm_Bullet_Hell/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1112390/capsule_231x87.jpg?t=1786111638",
+      "categories": [
+        "Aksiyon",
+        "Çok Oyunculu"
       ]
     },
     {
