@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-18T03:04:43.307Z",
+  "generatedAt": "2026-08-18T03:53:53.696Z",
   "items": [
+    {
+      "id": "steam-news-69f5e43e8",
+      "title": "Project DeepWeb: Eternal Nightmare",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3756870/Project_DeepWeb_Eternal_Nightmare/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3756870/599eea6fc45c66e84d9ea3ed9d3b6c4d69d23dee/capsule_231x87.jpg?t=1787024688",
+      "categories": []
+    },
+    {
+      "id": "steam-news-f634d4bad",
+      "title": "Captain VKing",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4316870/Captain_VKing/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4316870/eb09a0f84aaf8b497c08d90b8f686d77cd3a98ef/capsule_231x87.jpg?t=1787023130",
+      "categories": [
+        "Bağımsız",
+        "Strateji",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-8ef72db2f",
       "title": "Red Cap Adventure",
@@ -255,32 +277,6 @@
       ]
     },
     {
-      "id": "steam-news-6f64c93d4",
-      "title": "Fleetfall - Galaxy Domination",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4933760/Fleetfall__Galaxy_Domination/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4933760/58203c349c7b7109277a0d152d6b5caeea8f473a/capsule_231x87.jpg?t=1786996348",
-      "categories": [
-        "Strateji",
-        "Gündelik",
-        "Çok Oyunculu",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-7cc96a153",
-      "title": "Orbit One",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4681670/Orbit_One/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4681670/0fc866b1d94e7b3b5b418e8130decb1c13db004f/capsule_231x87.jpg?t=1786996154",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-f0bb045fb",
       "title": "Moho-Moho DX",
       "kind": "coming_soon",
@@ -292,21 +288,21 @@
       ]
     },
     {
-      "id": "steam-news-6c073f94e",
-      "title": "Liminal Agent",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4749450/Liminal_Agent/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
-      "categories": []
-    },
-    {
       "id": "steam-news-c7254ad44",
       "title": "Néro & Sci ∫ Integral Edition",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/2928570/Nero__Sci__Integral_Edition/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2928570/15dd2dc457547d52b2dc771442530dd87611dd13/capsule_231x87.jpg?t=1786782443",
+      "categories": []
+    },
+    {
+      "id": "steam-news-6c073f94e",
+      "title": "Liminal Agent",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4749450/Liminal_Agent/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
       "categories": []
     },
     {
@@ -361,7 +357,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4663080/Escape_the_Grind/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4663080/432f547f61404d8c206ed7ef27eb8613d6682108/capsule_231x87.jpg?t=1785729571",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4663080/432f547f61404d8c206ed7ef27eb8613d6682108/capsule_231x87.jpg?t=1787023826",
       "categories": []
     },
     {
@@ -390,6 +386,18 @@
       ]
     },
     {
+      "id": "steam-news-b93d9ebb8",
+      "title": "GRIT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/738090/GRIT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738090/capsule_231x87.jpg?t=1786919255",
+      "categories": [
+        "Aksiyon",
+        "Çok Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-2390855f6",
       "title": "Gambit's Escape",
       "kind": "coming_soon",
@@ -400,18 +408,6 @@
         "Strateji",
         "Tek Oyunculu",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-b93d9ebb8",
-      "title": "GRIT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/738090/GRIT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738090/capsule_231x87.jpg?t=1786919255",
-      "categories": [
-        "Aksiyon",
-        "Çok Oyunculu"
       ]
     },
     {
@@ -437,6 +433,17 @@
       ]
     },
     {
+      "id": "steam-news-bbba49412",
+      "title": "The Sudoku Way",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-bc12e0d06",
       "title": "Tower64",
       "kind": "coming_soon",
@@ -446,17 +453,6 @@
       "categories": [
         "Aksiyon",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-bbba49412",
-      "title": "The Sudoku Way",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -508,6 +504,15 @@
       ]
     },
     {
+      "id": "steam-news-7f2465d8f",
+      "title": "Exark",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3435610/Exark/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3435610/cb827f52bb685f816f78976d9c41675e93cadaec/capsule_231x87.jpg?t=1786377746",
+      "categories": []
+    },
+    {
       "id": "steam-news-e32a77862",
       "title": "Mystic Garden",
       "kind": "coming_soon",
@@ -521,29 +526,6 @@
       ]
     },
     {
-      "id": "steam-news-7f2465d8f",
-      "title": "Exark",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3435610/Exark/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3435610/cb827f52bb685f816f78976d9c41675e93cadaec/capsule_231x87.jpg?t=1786377746",
-      "categories": []
-    },
-    {
-      "id": "steam-news-d2d20d0c2",
-      "title": "Drift Mania",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3929890/Drift_Mania/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3929890/aff1841aa73da96dba51ab0cd9024416976f0e66/capsule_231x87.jpg?t=1786469663",
-      "categories": [
-        "Yarış",
-        "Spor",
-        "Tek Oyunculu",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-db09440d9",
       "title": "Neon Tyrant",
       "kind": "coming_soon",
@@ -553,6 +535,18 @@
       "categories": [
         "Bağımsız",
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-e33b0278a",
+      "title": "Literally Just A Rock",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3083550/Literally_Just_A_Rock/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3083550/ab706451a12d8cd1227f70a59365df9ca8c886bb/capsule_231x87.jpg?t=1785528113",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
       ]
     },
     {
