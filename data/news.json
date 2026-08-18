@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T19:45:40.425Z",
+  "generatedAt": "2026-08-18T20:08:24.480Z",
   "items": [
     {
       "id": "steam-news-27c7aa2f9",
@@ -292,19 +292,6 @@
       ]
     },
     {
-      "id": "steam-news-d7093b4a7",
-      "title": "Stick Legion",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4985360/Stick_Legion/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985360/a1b0ba5dddb6aa44737f8b46b69dfa00bf24ff29/capsule_231x87.jpg?t=1786056067",
-      "categories": [
-        "Strateji",
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-390048c5a",
       "title": "This Is Golf",
       "kind": "coming_soon",
@@ -316,6 +303,19 @@
         "Spor",
         "Strateji",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-d7093b4a7",
+      "title": "Stick Legion",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4985360/Stick_Legion/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985360/a1b0ba5dddb6aa44737f8b46b69dfa00bf24ff29/capsule_231x87.jpg?t=1786056067",
+      "categories": [
+        "Strateji",
+        "Simülasyon",
+        "Gündelik"
       ]
     },
     {
@@ -380,6 +380,18 @@
       ]
     },
     {
+      "id": "steam-news-aaf69c5bb",
+      "title": "Plodding Recovery",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4532490/Plodding_Recovery/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4532490/e9d1cc8aa0f8225eaf610206c89f97589888333c/capsule_231x87.jpg?t=1786109746",
+      "categories": [
+        "Macera",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-74c43dc79",
       "title": "宠物街金鱼姬 Pet Street Story",
       "kind": "coming_soon",
@@ -393,24 +405,12 @@
       ]
     },
     {
-      "id": "steam-news-aaf69c5bb",
-      "title": "Plodding Recovery",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4532490/Plodding_Recovery/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4532490/e9d1cc8aa0f8225eaf610206c89f97589888333c/capsule_231x87.jpg?t=1786109746",
-      "categories": [
-        "Macera",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-794adf81e",
       "title": "Pizza House Simulator🍕",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4132330/Pizza_House_Simulator/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4132330/816ab41ecc9996dcc4aa570498b3e6dbb3d7d661/capsule_231x87.jpg?t=1787077352",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4132330/816ab41ecc9996dcc4aa570498b3e6dbb3d7d661/capsule_231x87.jpg?t=1787082651",
       "categories": [
         "Çok Oyunculu",
         "Simülasyon"
@@ -490,18 +490,6 @@
       ]
     },
     {
-      "id": "steam-news-2c696389a",
-      "title": "Aluminium City",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4501720/Aluminium_City/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4501720/ebb45700f6e362d4ab77b647138ce505459139a2/capsule_231x87.jpg?t=1786450347",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-8563225c3",
       "title": "Esordie",
       "kind": "coming_soon",
@@ -511,6 +499,29 @@
       "categories": [
         "Aksiyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-a6df1d688",
+      "title": "T.W.I.R.L.",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4458840/TWIRL/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4458840/6968ef4f959c7a5b981c395b9d11a5c29050e4d4/capsule_231x87.jpg?t=1786976072",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-2c696389a",
+      "title": "Aluminium City",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4501720/Aluminium_City/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4501720/ebb45700f6e362d4ab77b647138ce505459139a2/capsule_231x87.jpg?t=1786450347",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -541,32 +552,13 @@
       ]
     },
     {
-      "id": "steam-news-03e816f1e",
-      "title": "Deadlock Station",
+      "id": "steam-news-f1be120c6",
+      "title": "Blood in the Panopticon",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1786987289",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1786285406",
       "categories": []
-    },
-    {
-      "id": "steam-news-0628380a1",
-      "title": "Wild Ice",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1572260/Wild_Ice/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1572260/a9e20a3ca58694d473a9b3f04a857ac0beb20832/capsule_231x87.jpg?t=1786573563",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-cf77e0050",
-      "title": "Steam Next Fest Developer Q&amp;A Session",
-      "kind": "platform",
-      "url": "https://steamcommunity.com/groups/steamworks/events//717902598999377015",
-      "publishedAt": "2026-08-18T17:00:00.000Z",
-      "summary": "A lil somethin somethin: You can find the details for this event on the announcement page [url=https://steamcommunity.com/ogg/0/announcements/detail/717902598999377016]here[/url]."
     },
     {
       "id": "steam-news-c560bed11",
