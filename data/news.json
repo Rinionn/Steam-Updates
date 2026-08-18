@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T20:08:24.480Z",
+  "generatedAt": "2026-08-18T20:40:18.996Z",
   "items": [
     {
       "id": "steam-news-27c7aa2f9",
@@ -226,7 +226,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4259990/Corner_King_Boxing_Tycoon/?snr=1_7_7_230_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259990/edc19cf766db2db9ece5fc038ed5ffa4aa8b49f1/capsule_231x87.jpg?t=1787072451",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4259990/edc19cf766db2db9ece5fc038ed5ffa4aa8b49f1/capsule_231x87.jpg?t=1787084634",
       "categories": [
         "Simülasyon",
         "Spor",
@@ -380,18 +380,6 @@
       ]
     },
     {
-      "id": "steam-news-aaf69c5bb",
-      "title": "Plodding Recovery",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4532490/Plodding_Recovery/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4532490/e9d1cc8aa0f8225eaf610206c89f97589888333c/capsule_231x87.jpg?t=1786109746",
-      "categories": [
-        "Macera",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-74c43dc79",
       "title": "宠物街金鱼姬 Pet Street Story",
       "kind": "coming_soon",
@@ -402,6 +390,18 @@
         "Simülasyon",
         "RPG",
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-aaf69c5bb",
+      "title": "Plodding Recovery",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4532490/Plodding_Recovery/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4532490/e9d1cc8aa0f8225eaf610206c89f97589888333c/capsule_231x87.jpg?t=1786109746",
+      "categories": [
+        "Macera",
+        "Simülasyon"
       ]
     },
     {
@@ -463,7 +463,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4972690/Blue_Guy_Must_Die/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4972690/a2fdd75fb671b0c2cd2ac16bb24a64b6324a7825/capsule_231x87.jpg?t=1787080926",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4972690/a2fdd75fb671b0c2cd2ac16bb24a64b6324a7825/capsule_231x87.jpg?t=1787083840",
       "categories": [
         "Aksiyon"
       ]
@@ -525,18 +525,13 @@
       ]
     },
     {
-      "id": "steam-news-bbf737e6e",
-      "title": "Peaceful Bug Catching Story",
+      "id": "steam-news-f1be120c6",
+      "title": "Blood in the Panopticon",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4980890/Peaceful_Bug_Catching_Story/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4980890/c4177535930e6360494cfdafc811b2cb213e3763/capsule_231x87.jpg?t=1785829414",
-      "categories": [
-        "Macera",
-        "Gündelik",
-        "Aksiyon",
-        "Spor"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1786285406",
+      "categories": []
     },
     {
       "id": "steam-news-f917d8fc3",
@@ -552,13 +547,15 @@
       ]
     },
     {
-      "id": "steam-news-f1be120c6",
-      "title": "Blood in the Panopticon",
+      "id": "steam-news-a7bda4522",
+      "title": "My Singing Monsters Karaoke",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4633140/My_Singing_Monsters_Karaoke/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1786285406",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4633140/00a76a59790eff1ca105d52254bc84126a5adf92/capsule_231x87.jpg?t=1786980928",
+      "categories": [
+        "Gündelik"
+      ]
     },
     {
       "id": "steam-news-c560bed11",
