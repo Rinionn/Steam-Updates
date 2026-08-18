@@ -1,6 +1,57 @@
 {
-  "generatedAt": "2026-08-17T23:51:33.684Z",
+  "generatedAt": "2026-08-18T00:28:01.542Z",
   "items": [
+    {
+      "id": "steam-news-0ccd408ba",
+      "title": "Speed Fall",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4898710/Speed_Fall/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4898710/0454c006e3413c571bb344befee315bfef61910d/capsule_231x87.jpg?t=1787012217",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4e99acb05",
+      "title": "Ball, Fall, Dungeon Crawl",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4529430/Ball_Fall_Dungeon_Crawl/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4529430/8f7cdadeda90e65c0a5885a1856d7ab0e272b7bc/capsule_231x87.jpg?t=1787011392",
+      "categories": [
+        "RPG",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-2d80c6908",
+      "title": "Elemental Master: Heroes Assemble",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2598990/Elemental_Master_Heroes_Assemble/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2598990/b0f4af81657b4e15626676c8cce0d3a54372491f/capsule_231x87.jpg?t=1787011283",
+      "categories": [
+        "Strateji",
+        "Macera",
+        "RPG",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-9d4f7e296",
+      "title": "Phase Party",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3937290/Phase_Party/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3937290/4dbb909c9d288550a4ee5c2d4ab85ed6f83720e3/capsule_231x87.jpg?t=1787010715",
+      "categories": [
+        "Bağımsız",
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-48a273e61",
       "title": "DustFall",
@@ -236,56 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-18391427a",
-      "title": "Mothership Down",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4211540/Mothership_Down/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4211540/7d62d75d3c176e48fd73521c2216e6922ea32dd6/capsule_231x87.jpg?t=1786990497",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-9d51ce64f",
-      "title": "Megaris",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4483990/Megaris/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4483990/08e1c3d8d02f7357392db30a061e7e9fb0a72734/capsule_231x87.jpg?t=1786989646",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-19f3ca62d",
-      "title": "Submerge",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4180620/Submerge/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4180620/cf763e41b5d3b32b1528510815b9d44edc7dff39/capsule_231x87.jpg?t=1786989615",
-      "categories": [
-        "Bağımsız",
-        "Korku",
-        "Çok Oyunculu",
-        "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-693afae5c",
-      "title": "Shadow of the Dead Lands",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4994960/Shadow_of_the_Dead_Lands/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4994960/a110a9908003186f40a377e275d2bce9d4e06504/capsule_231x87.jpg?t=1786988268",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-f0bb045fb",
       "title": "Moho-Moho DX",
       "kind": "coming_soon",
@@ -383,6 +384,18 @@
       ]
     },
     {
+      "id": "steam-news-d520c1702",
+      "title": "Forts & Castles",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4942090/Forts__Castles/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942090/e708d4e9e01913ebb41e3a4a9206266a68f63661/capsule_231x87.jpg?t=1785525764",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-2390855f6",
       "title": "Gambit's Escape",
       "kind": "coming_soon",
@@ -392,18 +405,6 @@
       "categories": [
         "Strateji",
         "Tek Oyunculu",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-d520c1702",
-      "title": "Forts & Castles",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4942090/Forts__Castles/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942090/e708d4e9e01913ebb41e3a4a9206266a68f63661/capsule_231x87.jpg?t=1785525764",
-      "categories": [
-        "Strateji",
         "Gündelik"
       ]
     },
@@ -442,15 +443,14 @@
       ]
     },
     {
-      "id": "steam-news-f6d21531f",
-      "title": "BeastLink",
+      "id": "steam-news-bbba49412",
+      "title": "The Sudoku Way",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2962780/BeastLink/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2962780/5a2dd997274a25b8ad6db846ecd75260459b5095/capsule_231x87.jpg?t=1786992863",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
       "categories": [
-        "Bağımsız",
-        "Aksiyon"
+        "Gündelik"
       ]
     },
     {
@@ -467,14 +467,27 @@
       ]
     },
     {
-      "id": "steam-news-bbba49412",
-      "title": "The Sudoku Way",
+      "id": "steam-news-bc12e0d06",
+      "title": "Tower64",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4279130/Tower64/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787011625",
       "categories": [
-        "Gündelik"
+        "Aksiyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-f6d21531f",
+      "title": "BeastLink",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2962780/BeastLink/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2962780/5a2dd997274a25b8ad6db846ecd75260459b5095/capsule_231x87.jpg?t=1786992863",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon"
       ]
     },
     {
@@ -546,18 +559,6 @@
         "Spor",
         "Tek Oyunculu",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-f4fd9393b",
-      "title": "Victor Space Program",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4048540/Victor_Space_Program/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4048540/20575bd9ff205fd30678fbaf620237b189d0524c/capsule_231x87.jpg?t=1785855458",
-      "categories": [
-        "Simülasyon",
-        "RPG"
       ]
     },
     {
