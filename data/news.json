@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-08-18T23:01:03.692Z",
+  "generatedAt": "2026-08-18T23:30:28.726Z",
   "items": [
+    {
+      "id": "steam-news-776bafdf3",
+      "title": "Escape the Grind",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4663080/Escape_the_Grind/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4663080/432f547f61404d8c206ed7ef27eb8613d6682108/capsule_231x87.jpg?t=1787094668",
+      "categories": []
+    },
+    {
+      "id": "steam-news-38b90f91c",
+      "title": "Ice Coast Revival",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4999040/Ice_Coast_Revival/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4999040/cb3e5e8f807a745ef6827f3767aa7628c3315dbe/capsule_231x87.jpg?t=1787094520",
+      "categories": [
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-d4cb5159d",
       "title": "This Is Golf",
@@ -259,28 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-a7cd5a5dc",
-      "title": "Loot Dungeon",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4329670/Loot_Dungeon/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4329670/8c926f128eb4fe3d6ce3cf38499d4fc30036dde7/capsule_231x87.jpg?t=1787072871",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-dd2250831",
-      "title": "Tiny Tape Store",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4604680/Tiny_Tape_Store/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4604680/1abfbe7cde29bb8546292b57a5854f0c6053e65e/capsule_231x87.jpg?t=1787072615",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-16d132bca",
       "title": "Ministry of Truth: False Memory",
       "kind": "coming_soon",
@@ -386,7 +385,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3440190/Money_Trails/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3440190/50b620aee066643fc42db1c376604a8b6e5cd331/capsule_231x87.jpg?t=1787008385",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3440190/50b620aee066643fc42db1c376604a8b6e5cd331/capsule_231x87.jpg?t=1787094147",
       "categories": []
     },
     {
@@ -428,6 +427,15 @@
       ]
     },
     {
+      "id": "steam-news-f1be120c6",
+      "title": "Blood in the Panopticon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1786285406",
+      "categories": []
+    },
+    {
       "id": "steam-news-f917d8fc3",
       "title": "The Hidden Camp",
       "kind": "coming_soon",
@@ -441,15 +449,6 @@
       ]
     },
     {
-      "id": "steam-news-f1be120c6",
-      "title": "Blood in the Panopticon",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1786285406",
-      "categories": []
-    },
-    {
       "id": "steam-news-a7bda4522",
       "title": "My Singing Monsters Karaoke",
       "kind": "coming_soon",
@@ -459,15 +458,6 @@
       "categories": [
         "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-03e816f1e",
-      "title": "Deadlock Station",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1786987289",
-      "categories": []
     },
     {
       "id": "steam-news-0628380a1",
@@ -481,6 +471,15 @@
       ]
     },
     {
+      "id": "steam-news-03e816f1e",
+      "title": "Deadlock Station",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1786987289",
+      "categories": []
+    },
+    {
       "id": "steam-news-a6df1d688",
       "title": "T.W.I.R.L.",
       "kind": "coming_soon",
@@ -489,6 +488,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4458840/6968ef4f959c7a5b981c395b9d11a5c29050e4d4/capsule_231x87.jpg?t=1787089817",
       "categories": [
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-2c696389a",
+      "title": "Aluminium City",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4501720/Aluminium_City/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4501720/ebb45700f6e362d4ab77b647138ce505459139a2/capsule_231x87.jpg?t=1786450347",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -518,18 +529,8 @@
       "url": "https://store.steampowered.com/sub/1707312/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/1707312/1385e7d595719924b63f5a33c0c19f774b08ff99/capsule_231x87.jpg?t=1785985886",
-      "categories": []
-    },
-    {
-      "id": "steam-news-2c696389a",
-      "title": "Aluminium City",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4501720/Aluminium_City/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4501720/ebb45700f6e362d4ab77b647138ce505459139a2/capsule_231x87.jpg?t=1786450347",
       "categories": [
-        "Gündelik",
-        "Simülasyon"
+        "Gündelik"
       ]
     },
     {
