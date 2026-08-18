@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-18T20:40:18.996Z",
+  "generatedAt": "2026-08-18T20:59:57.834Z",
   "items": [
+    {
+      "id": "steam-news-feded9a9a",
+      "title": "TFC2: The Fertile Crescent 2 - Collapse of The Bronze Age",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4158610/TFC2_The_Fertile_Crescent_2__Collapse_of_The_Bronze_Age/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4158610/8b981b02bd94ed912962f812d45ecb21c762a54c/capsule_231x87.jpg?t=1787086744",
+      "categories": [
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-27c7aa2f9",
       "title": "The Victim: The Evidence",
@@ -269,18 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-5aa57c340",
-      "title": "Space Punk",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5031830/Space_Punk/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5031830/2732d7ad421c6f5875220b11835d9b98fdbe50cc/capsule_231x87.jpg?t=1787071379",
-      "categories": [
-        "Aksiyon",
-        "Spor"
-      ]
-    },
-    {
       "id": "steam-news-bd9f4578c",
       "title": "Crystaria Online",
       "kind": "coming_soon",
@@ -289,6 +288,19 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5034130/e0148fdc970339e8b1598a57e213c506c5e2f689/capsule_231x87.jpg?t=1786070539",
       "categories": [
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-d7093b4a7",
+      "title": "Stick Legion",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4985360/Stick_Legion/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985360/a1b0ba5dddb6aa44737f8b46b69dfa00bf24ff29/capsule_231x87.jpg?t=1786056067",
+      "categories": [
+        "Strateji",
+        "Simülasyon",
+        "Gündelik"
       ]
     },
     {
@@ -303,19 +315,6 @@
         "Spor",
         "Strateji",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-d7093b4a7",
-      "title": "Stick Legion",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4985360/Stick_Legion/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985360/a1b0ba5dddb6aa44737f8b46b69dfa00bf24ff29/capsule_231x87.jpg?t=1786056067",
-      "categories": [
-        "Strateji",
-        "Simülasyon",
-        "Gündelik"
       ]
     },
     {
@@ -380,6 +379,18 @@
       ]
     },
     {
+      "id": "steam-news-aaf69c5bb",
+      "title": "Plodding Recovery",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4532490/Plodding_Recovery/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4532490/e9d1cc8aa0f8225eaf610206c89f97589888333c/capsule_231x87.jpg?t=1786109746",
+      "categories": [
+        "Macera",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-74c43dc79",
       "title": "宠物街金鱼姬 Pet Street Story",
       "kind": "coming_soon",
@@ -390,18 +401,6 @@
         "Simülasyon",
         "RPG",
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-aaf69c5bb",
-      "title": "Plodding Recovery",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4532490/Plodding_Recovery/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4532490/e9d1cc8aa0f8225eaf610206c89f97589888333c/capsule_231x87.jpg?t=1786109746",
-      "categories": [
-        "Macera",
-        "Simülasyon"
       ]
     },
     {
@@ -502,6 +501,31 @@
       ]
     },
     {
+      "id": "steam-news-bbf737e6e",
+      "title": "Peaceful Bug Catching Story",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4980890/Peaceful_Bug_Catching_Story/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4980890/c4177535930e6360494cfdafc811b2cb213e3763/capsule_231x87.jpg?t=1785829414",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "Aksiyon",
+        "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-0628380a1",
+      "title": "Wild Ice",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1572260/Wild_Ice/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1572260/a9e20a3ca58694d473a9b3f04a857ac0beb20832/capsule_231x87.jpg?t=1786573563",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-a6df1d688",
       "title": "T.W.I.R.L.",
       "kind": "coming_soon",
@@ -522,28 +546,6 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-f1be120c6",
-      "title": "Blood in the Panopticon",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1786285406",
-      "categories": []
-    },
-    {
-      "id": "steam-news-f917d8fc3",
-      "title": "The Hidden Camp",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4771610/The_Hidden_Camp/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4771610/049419b54e077bfe8c30433b1951e825fd931dc4/capsule_231x87.jpg?t=1786979148",
-      "categories": [
-        "Gündelik",
-        "Çok Oyunculu",
-        "Strateji"
       ]
     },
     {
@@ -588,14 +590,6 @@
       "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/716780409378048028",
       "publishedAt": "2026-06-04T22:04:46.000Z",
       "summary": "Hello!Today we are expanding the Verified program to include Steam Machine and Steam Frame, both of which are shipping this summer. As with Steam Deck Verified, the goal is to help customers understand the out-of-box experience for a given title on these new devices, and how smoo"
-    },
-    {
-      "id": "steam-news-ab9816f41",
-      "title": "Update to Store Tags: Additions, Removals, and Edits",
-      "kind": "platform",
-      "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/528746250052307456",
-      "publishedAt": "2026-05-18T20:44:39.000Z",
-      "summary": "Today we've made some changes to the set of official store tags available on Steam, adding 17 new tags, removing 28, and merging/updating a handful of others. These changes are made with the goal of helping Steam generate appropriate recommendations, and helping players identify "
     }
   ]
 }
