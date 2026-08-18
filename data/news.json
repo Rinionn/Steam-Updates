@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-18T19:20:30.463Z",
+  "generatedAt": "2026-08-18T19:45:40.425Z",
   "items": [
+    {
+      "id": "steam-news-27c7aa2f9",
+      "title": "The Victim: The Evidence",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4900720/The_Victim_The_Evidence/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4900720/c5726a391ab0cd8c3f805cdc37e48fb93edfe3db/capsule_231x87.jpg?t=1787082065",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-895ad1fd2",
+      "title": "nudge",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4516490/nudge/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4516490/f183b7565d607811b3645d16d6578f4b9e39797b/capsule_231x87.jpg?t=1787081604",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-e08188e0e",
       "title": "walstad loom",
@@ -67,7 +90,6 @@
       "dateLabel": "18 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4965510/ee201f9fccc8fb19fee09e2af9dcb304151231e9/capsule_231x87.jpg?t=1787077952",
       "categories": [
-        "Bağımsız",
         "Yarış"
       ]
     },
@@ -259,31 +281,6 @@
       ]
     },
     {
-      "id": "steam-news-fee1aa037",
-      "title": "The Loomsong Chronicle Idle",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4963690/The_Loomsong_Chronicle_Idle/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963690/420d7399be864a105d0c7a206a6ea9b92b213784/capsule_231x87.jpg?t=1787070610",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-d2ed59c80",
-      "title": "Nocturnal Echoes",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5003770/Nocturnal_Echoes/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5003770/4b8175bb6d768ec1eab1f64a6952aea6cef4150b/capsule_231x87.jpg?t=1787070204",
-      "categories": [
-        "Tek Oyunculu",
-        "Aksiyon",
-        "Macera",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-bd9f4578c",
       "title": "Crystaria Online",
       "kind": "coming_soon",
@@ -449,17 +446,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-7e1db28aa",
-      "title": "Blue Guy Must Die",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4972690/Blue_Guy_Must_Die/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4972690/a2fdd75fb671b0c2cd2ac16bb24a64b6324a7825/capsule_231x87.jpg?t=1787078482",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-6f5fb3ed9",
       "title": "Vivere Retro",
       "kind": "coming_soon",
@@ -469,6 +455,17 @@
       "categories": [
         "Aksiyon",
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-7e1db28aa",
+      "title": "Blue Guy Must Die",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4972690/Blue_Guy_Must_Die/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4972690/a2fdd75fb671b0c2cd2ac16bb24a64b6324a7825/capsule_231x87.jpg?t=1787080926",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -517,19 +514,6 @@
       ]
     },
     {
-      "id": "steam-news-f917d8fc3",
-      "title": "The Hidden Camp",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4771610/The_Hidden_Camp/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4771610/049419b54e077bfe8c30433b1951e825fd931dc4/capsule_231x87.jpg?t=1786979148",
-      "categories": [
-        "Gündelik",
-        "Çok Oyunculu",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-bbf737e6e",
       "title": "Peaceful Bug Catching Story",
       "kind": "coming_soon",
@@ -541,6 +525,19 @@
         "Gündelik",
         "Aksiyon",
         "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-f917d8fc3",
+      "title": "The Hidden Camp",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4771610/The_Hidden_Camp/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4771610/049419b54e077bfe8c30433b1951e825fd931dc4/capsule_231x87.jpg?t=1786979148",
+      "categories": [
+        "Gündelik",
+        "Çok Oyunculu",
+        "Strateji"
       ]
     },
     {
