@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-18T03:53:53.696Z",
+  "generatedAt": "2026-08-18T04:29:20.514Z",
   "items": [
+    {
+      "id": "steam-news-9b6a60c39",
+      "title": "Void Regalia",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4944760/Void_Regalia/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4944760/6801c74b804106dd55db5021724827428047c894/capsule_231x87.jpg?t=1787025637",
+      "categories": [
+        "Aksiyon",
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-69f5e43e8",
       "title": "Project DeepWeb: Eternal Nightmare",
@@ -266,28 +278,6 @@
       ]
     },
     {
-      "id": "steam-news-7964f74c2",
-      "title": "Poggers 2 - A-Maze-Thing",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2073870/Poggers_2__AMazeThing/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2073870/2d96fa34cd194cb25a1269863599e1d5236a9f6f/capsule_231x87.jpg?t=1787016659",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-f0bb045fb",
-      "title": "Moho-Moho DX",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4997830/MohoMoho_DX/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4997830/e420277e3a238f39ca36681c0f4a66f5bafef2fd/capsule_231x87.jpg?t=1786768785",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-c7254ad44",
       "title": "Néro & Sci ∫ Integral Edition",
       "kind": "coming_soon",
@@ -304,6 +294,17 @@
       "dateLabel": "18 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749450/c475aa74b5aad034d4de81f6c9c4f9e66c72421c/capsule_231x87.jpg?t=1784813585",
       "categories": []
+    },
+    {
+      "id": "steam-news-f0bb045fb",
+      "title": "Moho-Moho DX",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4997830/MohoMoho_DX/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4997830/e420277e3a238f39ca36681c0f4a66f5bafef2fd/capsule_231x87.jpg?t=1786768785",
+      "categories": [
+        "Gündelik"
+      ]
     },
     {
       "id": "steam-news-817ed0ec2",
@@ -374,14 +375,15 @@
       ]
     },
     {
-      "id": "steam-news-d520c1702",
-      "title": "Forts & Castles",
+      "id": "steam-news-2390855f6",
+      "title": "Gambit's Escape",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4942090/Forts__Castles/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4417770/Gambits_Escape/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942090/e708d4e9e01913ebb41e3a4a9206266a68f63661/capsule_231x87.jpg?t=1785525764",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4417770/a3d038d3b0f9b7126247377869e21983826143dc/capsule_231x87.jpg?t=1782688690",
       "categories": [
         "Strateji",
+        "Tek Oyunculu",
         "Gündelik"
       ]
     },
@@ -398,15 +400,14 @@
       ]
     },
     {
-      "id": "steam-news-2390855f6",
-      "title": "Gambit's Escape",
+      "id": "steam-news-d520c1702",
+      "title": "Forts & Castles",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4417770/Gambits_Escape/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4942090/Forts__Castles/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4417770/a3d038d3b0f9b7126247377869e21983826143dc/capsule_231x87.jpg?t=1782688690",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942090/e708d4e9e01913ebb41e3a4a9206266a68f63661/capsule_231x87.jpg?t=1785525764",
       "categories": [
         "Strateji",
-        "Tek Oyunculu",
         "Gündelik"
       ]
     },
@@ -419,28 +420,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3275750/a853ca30a6820f9c79a0aa1bb83c45357d6e7ef0/capsule_231x87.jpg?t=1786379338",
       "categories": [
         "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-5d66b0c4d",
-      "title": "Loop of Agony",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4950450/Loop_of_Agony/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950450/0b454a7bad9c1d69efbb7311d1cbf71601f1ecad/capsule_231x87.jpg?t=1786601562",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-bbba49412",
-      "title": "The Sudoku Way",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -469,6 +448,28 @@
       ]
     },
     {
+      "id": "steam-news-bbba49412",
+      "title": "The Sudoku Way",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-5d66b0c4d",
+      "title": "Loop of Agony",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4950450/Loop_of_Agony/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950450/0b454a7bad9c1d69efbb7311d1cbf71601f1ecad/capsule_231x87.jpg?t=1786601562",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-f6d21531f",
       "title": "BeastLink",
       "kind": "coming_soon",
@@ -490,17 +491,6 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-ffba80970",
-      "title": "MEGALITH",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4896990/MEGALITH/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4896990/bd3b4fb2200bdcb7253007293497baeb8a9422f1/capsule_231x87.jpg?t=1783538657",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
@@ -526,14 +516,13 @@
       ]
     },
     {
-      "id": "steam-news-db09440d9",
-      "title": "Neon Tyrant",
+      "id": "steam-news-ffba80970",
+      "title": "MEGALITH",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4953310/Neon_Tyrant/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4896990/MEGALITH/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953310/e2d5e5496c0d24fee299442934850e448ccde5f3/capsule_231x87.jpg?t=1786912799",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4896990/bd3b4fb2200bdcb7253007293497baeb8a9422f1/capsule_231x87.jpg?t=1783538657",
       "categories": [
-        "Bağımsız",
         "Aksiyon"
       ]
     },
@@ -547,6 +536,18 @@
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-561cd1dc2",
+      "title": "HyperCore : Rhythm Bullet Hell",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1112390/HyperCore__Rhythm_Bullet_Hell/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1112390/capsule_231x87.jpg?t=1786111638",
+      "categories": [
+        "Aksiyon",
+        "Çok Oyunculu"
       ]
     },
     {
