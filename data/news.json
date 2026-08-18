@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-18T07:47:00.255Z",
+  "generatedAt": "2026-08-18T08:18:33.702Z",
   "items": [
+    {
+      "id": "steam-news-4079e7a45",
+      "title": "Farm Harvest",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4187420/Farm_Harvest/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4187420/4cc3135cfe7284e3c3f64ee77e30c376a8bf70a1/capsule_231x87.jpg?t=1787039325",
+      "categories": [
+        "Macera",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-10c4c0536",
       "title": "NOXON",
@@ -261,18 +273,6 @@
       ]
     },
     {
-      "id": "steam-news-151849641",
-      "title": "BALLSKIN",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4000970/BALLSKIN/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4000970/5ff9d1e3f826012ccb7938aaa08db7fab89299a5/capsule_231x87.jpg?t=1787007619",
-      "categories": [
-        "Macera",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-817ed0ec2",
       "title": "Bullet Spell",
       "kind": "coming_soon",
@@ -354,18 +354,6 @@
       ]
     },
     {
-      "id": "steam-news-b93d9ebb8",
-      "title": "GRIT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/738090/GRIT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738090/capsule_231x87.jpg?t=1786919255",
-      "categories": [
-        "Aksiyon",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-d520c1702",
       "title": "Forts & Castles",
       "kind": "coming_soon",
@@ -375,6 +363,18 @@
       "categories": [
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-b93d9ebb8",
+      "title": "GRIT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/738090/GRIT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738090/capsule_231x87.jpg?t=1786919255",
+      "categories": [
+        "Aksiyon",
+        "Çok Oyunculu"
       ]
     },
     {
@@ -518,27 +518,14 @@
       ]
     },
     {
-      "id": "steam-news-561cd1dc2",
-      "title": "HyperCore : Rhythm Bullet Hell",
+      "id": "steam-news-ae374c645",
+      "title": "Finding Ruby: Hidden Object Adventure",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1112390/HyperCore__Rhythm_Bullet_Hell/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4836900/Finding_Ruby_Hidden_Object_Adventure/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1112390/capsule_231x87.jpg?t=1786111638",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836900/b9f46378203e05d9200120d6ebde17b624923bab/capsule_231x87.jpg?t=1783778991",
       "categories": [
-        "Aksiyon",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-e33b0278a",
-      "title": "Literally Just A Rock",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3083550/Literally_Just_A_Rock/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3083550/ab706451a12d8cd1227f70a59365df9ca8c886bb/capsule_231x87.jpg?t=1785528113",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
+        "Gündelik"
       ]
     },
     {
@@ -551,6 +538,18 @@
       "categories": [
         "Simülasyon",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-e33b0278a",
+      "title": "Literally Just A Rock",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3083550/Literally_Just_A_Rock/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3083550/ab706451a12d8cd1227f70a59365df9ca8c886bb/capsule_231x87.jpg?t=1785528113",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
       ]
     },
     {
