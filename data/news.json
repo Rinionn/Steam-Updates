@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T09:42:23.256Z",
+  "generatedAt": "2026-08-18T10:04:21.320Z",
   "items": [
     {
       "id": "steam-news-a02a518f0",
@@ -31,7 +31,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/2825860/The_Sinking_City_2/?snr=1_7_7_230_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2825860/ed82cb1a0bfd2331c5bbcf297dba3e6a5635d56e/capsule_231x87.jpg?t=1787043972",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2825860/ed82cb1a0bfd2331c5bbcf297dba3e6a5635d56e/capsule_231x87.jpg?t=1787046902",
       "categories": [
         "Aksiyon",
         "Korku",
@@ -180,7 +180,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3756870/Project_DeepWeb_Eternal_Nightmare/?snr=1_7_7_230_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3756870/599eea6fc45c66e84d9ea3ed9d3b6c4d69d23dee/capsule_231x87.jpg?t=1787024688",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3756870/599eea6fc45c66e84d9ea3ed9d3b6c4d69d23dee/capsule_231x87.jpg?t=1787046570",
       "categories": []
     },
     {
@@ -274,23 +274,23 @@
       ]
     },
     {
-      "id": "steam-news-c8611a780",
-      "title": "TFC2: The Fertile Crescent 2 - Collapse of The Bronze Age",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4158610/TFC2_The_Fertile_Crescent_2__Collapse_of_The_Bronze_Age/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4158610/8b981b02bd94ed912962f812d45ecb21c762a54c/capsule_231x87.jpg?t=1786929601",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-e40e2fd97",
       "title": "Wordforge: Silent Letters",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4378740/Wordforge_Silent_Letters/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4378740/85f3d810bfc9a021084951c0d05b93887551c876/capsule_231x87.jpg?t=1785967485",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-c8611a780",
+      "title": "TFC2: The Fertile Crescent 2 - Collapse of The Bronze Age",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4158610/TFC2_The_Fertile_Crescent_2__Collapse_of_The_Bronze_Age/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4158610/8b981b02bd94ed912962f812d45ecb21c762a54c/capsule_231x87.jpg?t=1786929601",
       "categories": [
         "Strateji"
       ]
@@ -366,30 +366,6 @@
       ]
     },
     {
-      "id": "steam-news-e0bd5f267",
-      "title": "Stackmon",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3729550/Stackmon/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3729550/bfb13afc36147fa208308979011372a1b9aabf41/capsule_231x87_alt_assets_1.jpg?t=1786983173",
-      "categories": [
-        "Strateji",
-        "Macera",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-bc12e0d06",
-      "title": "Tower64",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4279130/Tower64/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787011625",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-5d66b0c4d",
       "title": "Loop of Agony",
       "kind": "coming_soon",
@@ -401,14 +377,13 @@
       ]
     },
     {
-      "id": "steam-news-f6d21531f",
-      "title": "BeastLink",
+      "id": "steam-news-bc12e0d06",
+      "title": "Tower64",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2962780/BeastLink/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4279130/Tower64/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2962780/5a2dd997274a25b8ad6db846ecd75260459b5095/capsule_231x87.jpg?t=1786992863",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787011625",
       "categories": [
-        "Bağımsız",
         "Aksiyon"
       ]
     },
@@ -424,6 +399,31 @@
       ]
     },
     {
+      "id": "steam-news-e0bd5f267",
+      "title": "Stackmon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3729550/Stackmon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3729550/bfb13afc36147fa208308979011372a1b9aabf41/capsule_231x87_alt_assets_1.jpg?t=1787046564",
+      "categories": [
+        "Strateji",
+        "Macera",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-f6d21531f",
+      "title": "BeastLink",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2962780/BeastLink/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2962780/5a2dd997274a25b8ad6db846ecd75260459b5095/capsule_231x87.jpg?t=1786992863",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-0d9b4a339",
       "title": "Casino Legends",
       "kind": "coming_soon",
@@ -434,15 +434,6 @@
         "Gündelik",
         "Simülasyon"
       ]
-    },
-    {
-      "id": "steam-news-7f2465d8f",
-      "title": "Exark",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3435610/Exark/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3435610/cb827f52bb685f816f78976d9c41675e93cadaec/capsule_231x87.jpg?t=1786377746",
-      "categories": []
     },
     {
       "id": "steam-news-e32a77862",
@@ -469,16 +460,13 @@
       ]
     },
     {
-      "id": "steam-news-561cd1dc2",
-      "title": "HyperCore : Rhythm Bullet Hell",
+      "id": "steam-news-7f2465d8f",
+      "title": "Exark",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1112390/HyperCore__Rhythm_Bullet_Hell/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3435610/Exark/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1112390/capsule_231x87.jpg?t=1786111638",
-      "categories": [
-        "Aksiyon",
-        "Çok Oyunculu"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3435610/cb827f52bb685f816f78976d9c41675e93cadaec/capsule_231x87.jpg?t=1786377746",
+      "categories": []
     },
     {
       "id": "steam-news-e33b0278a",
@@ -507,6 +495,18 @@
       ]
     },
     {
+      "id": "steam-news-561cd1dc2",
+      "title": "HyperCore : Rhythm Bullet Hell",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1112390/HyperCore__Rhythm_Bullet_Hell/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1112390/capsule_231x87.jpg?t=1786111638",
+      "categories": [
+        "Aksiyon",
+        "Çok Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-f4fd9393b",
       "title": "Victor Space Program",
       "kind": "coming_soon",
@@ -519,17 +519,6 @@
       ]
     },
     {
-      "id": "steam-news-ae374c645",
-      "title": "Finding Ruby: Hidden Object Adventure",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4836900/Finding_Ruby_Hidden_Object_Adventure/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836900/b9f46378203e05d9200120d6ebde17b624923bab/capsule_231x87.jpg?t=1783778991",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-db09440d9",
       "title": "Neon Tyrant",
       "kind": "coming_soon",
@@ -539,6 +528,17 @@
       "categories": [
         "Bağımsız",
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-ae374c645",
+      "title": "Finding Ruby: Hidden Object Adventure",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4836900/Finding_Ruby_Hidden_Object_Adventure/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836900/b9f46378203e05d9200120d6ebde17b624923bab/capsule_231x87.jpg?t=1783778991",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
