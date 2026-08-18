@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-18T10:04:21.320Z",
+  "generatedAt": "2026-08-18T10:41:47.295Z",
   "items": [
+    {
+      "id": "steam-news-265e69954",
+      "title": "Ping Pong Attack",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5024040/Ping_Pong_Attack/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5024040/2537857e36fc0533aa193767939fb1c17bc1fa05/capsule_231x87.jpg?t=1787048878",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-a02a518f0",
       "title": "Boring Car Stories - Maghrebine des transports et logistique",
@@ -189,7 +200,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4316870/Captain_VKing/?snr=1_7_7_230_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4316870/eb09a0f84aaf8b497c08d90b8f686d77cd3a98ef/capsule_231x87.jpg?t=1787023130",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4316870/eb09a0f84aaf8b497c08d90b8f686d77cd3a98ef/capsule_231x87.jpg?t=1787048314",
       "categories": [
         "Bağımsız",
         "Strateji",
@@ -262,18 +273,6 @@
       ]
     },
     {
-      "id": "steam-news-4e99acb05",
-      "title": "Ball, Fall, Dungeon Crawl",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4529430/Ball_Fall_Dungeon_Crawl/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4529430/8f7cdadeda90e65c0a5885a1856d7ab0e272b7bc/capsule_231x87.jpg?t=1787014322",
-      "categories": [
-        "RPG",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-e40e2fd97",
       "title": "Wordforge: Silent Letters",
       "kind": "coming_soon",
@@ -318,18 +317,6 @@
       ]
     },
     {
-      "id": "steam-news-b93d9ebb8",
-      "title": "GRIT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/738090/GRIT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738090/capsule_231x87.jpg?t=1786919255",
-      "categories": [
-        "Aksiyon",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-2390855f6",
       "title": "Gambit's Escape",
       "kind": "coming_soon",
@@ -340,6 +327,18 @@
         "Strateji",
         "Tek Oyunculu",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-b93d9ebb8",
+      "title": "GRIT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/738090/GRIT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/738090/capsule_231x87.jpg?t=1786919255",
+      "categories": [
+        "Aksiyon",
+        "Çok Oyunculu"
       ]
     },
     {
@@ -377,14 +376,16 @@
       ]
     },
     {
-      "id": "steam-news-bc12e0d06",
-      "title": "Tower64",
+      "id": "steam-news-e0bd5f267",
+      "title": "Stackmon",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4279130/Tower64/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3729550/Stackmon/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787011625",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3729550/bfb13afc36147fa208308979011372a1b9aabf41/capsule_231x87_alt_assets_1.jpg?t=1787046564",
       "categories": [
-        "Aksiyon"
+        "Strateji",
+        "Macera",
+        "Simülasyon"
       ]
     },
     {
@@ -399,16 +400,14 @@
       ]
     },
     {
-      "id": "steam-news-e0bd5f267",
-      "title": "Stackmon",
+      "id": "steam-news-bc12e0d06",
+      "title": "Tower64",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3729550/Stackmon/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4279130/Tower64/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3729550/bfb13afc36147fa208308979011372a1b9aabf41/capsule_231x87_alt_assets_1.jpg?t=1787046564",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787011625",
       "categories": [
-        "Strateji",
-        "Macera",
-        "Simülasyon"
+        "Aksiyon"
       ]
     },
     {
@@ -436,6 +435,17 @@
       ]
     },
     {
+      "id": "steam-news-ffba80970",
+      "title": "MEGALITH",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4896990/MEGALITH/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4896990/bd3b4fb2200bdcb7253007293497baeb8a9422f1/capsule_231x87.jpg?t=1783538657",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-e32a77862",
       "title": "Mystic Garden",
       "kind": "coming_soon",
@@ -446,17 +456,6 @@
         "Simülasyon",
         "Gündelik",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-ffba80970",
-      "title": "MEGALITH",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4896990/MEGALITH/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4896990/bd3b4fb2200bdcb7253007293497baeb8a9422f1/capsule_231x87.jpg?t=1783538657",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
@@ -481,6 +480,18 @@
       ]
     },
     {
+      "id": "steam-news-db09440d9",
+      "title": "Neon Tyrant",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4953310/Neon_Tyrant/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953310/e2d5e5496c0d24fee299442934850e448ccde5f3/capsule_231x87.jpg?t=1786912799",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-d2d20d0c2",
       "title": "Drift Mania",
       "kind": "coming_soon",
@@ -492,18 +503,6 @@
         "Spor",
         "Tek Oyunculu",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-561cd1dc2",
-      "title": "HyperCore : Rhythm Bullet Hell",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1112390/HyperCore__Rhythm_Bullet_Hell/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1112390/capsule_231x87.jpg?t=1786111638",
-      "categories": [
-        "Aksiyon",
-        "Çok Oyunculu"
       ]
     },
     {
@@ -519,15 +518,15 @@
       ]
     },
     {
-      "id": "steam-news-db09440d9",
-      "title": "Neon Tyrant",
+      "id": "steam-news-561cd1dc2",
+      "title": "HyperCore : Rhythm Bullet Hell",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4953310/Neon_Tyrant/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/1112390/HyperCore__Rhythm_Bullet_Hell/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953310/e2d5e5496c0d24fee299442934850e448ccde5f3/capsule_231x87.jpg?t=1786912799",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1112390/capsule_231x87.jpg?t=1786111638",
       "categories": [
-        "Bağımsız",
-        "Aksiyon"
+        "Aksiyon",
+        "Çok Oyunculu"
       ]
     },
     {
