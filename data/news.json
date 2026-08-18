@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-18T05:04:16.415Z",
+  "generatedAt": "2026-08-18T05:40:41.154Z",
   "items": [
+    {
+      "id": "steam-news-baf105ee6",
+      "title": "Gridiron Football League",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4872020/Gridiron_Football_League/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4872020/f4f869fccfc5f4b8aee938e6f8d5e0d6f9b24f9f/capsule_231x87.jpg?t=1787031455",
+      "categories": [
+        "Simülasyon",
+        "Spor"
+      ]
+    },
     {
       "id": "steam-news-9b6a60c39",
       "title": "Void Regalia",
@@ -267,26 +279,6 @@
       ]
     },
     {
-      "id": "steam-news-415a6dc17",
-      "title": "Retro Incremental",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1238510/Retro_Incremental/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1238510/79d24341b80088505a73d35544883eea5efe4c0b/capsule_231x87.jpg?t=1786998215",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-c7254ad44",
-      "title": "Néro & Sci ∫ Integral Edition",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2928570/Nero__Sci__Integral_Edition/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2928570/15dd2dc457547d52b2dc771442530dd87611dd13/capsule_231x87.jpg?t=1786782443",
-      "categories": []
-    },
-    {
       "id": "steam-news-f0bb045fb",
       "title": "Moho-Moho DX",
       "kind": "coming_soon",
@@ -307,17 +299,13 @@
       "categories": []
     },
     {
-      "id": "steam-news-5fd88e9cf",
-      "title": "The Sinking City 2",
+      "id": "steam-news-c7254ad44",
+      "title": "Néro & Sci ∫ Integral Edition",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2825860/The_Sinking_City_2/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2928570/Nero__Sci__Integral_Edition/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2825860/ab1b4d4026f073bd59648051622773657a506da6/capsule_231x87_alt_assets_1.jpg?t=1786356731",
-      "categories": [
-        "Aksiyon",
-        "Korku",
-        "Macera"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2928570/15dd2dc457547d52b2dc771442530dd87611dd13/capsule_231x87.jpg?t=1786782443",
+      "categories": []
     },
     {
       "id": "steam-news-817ed0ec2",
@@ -328,6 +316,19 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4385440/58061eb1a7acbb542f1b807e0cdf35876fa7c431/capsule_231x87.jpg?t=1785178785",
       "categories": [
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-5fd88e9cf",
+      "title": "The Sinking City 2",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2825860/The_Sinking_City_2/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2825860/ab1b4d4026f073bd59648051622773657a506da6/capsule_231x87_alt_assets_1.jpg?t=1786356731",
+      "categories": [
+        "Aksiyon",
+        "Korku",
+        "Macera"
       ]
     },
     {
@@ -375,6 +376,19 @@
       ]
     },
     {
+      "id": "steam-news-2390855f6",
+      "title": "Gambit's Escape",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4417770/Gambits_Escape/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4417770/a3d038d3b0f9b7126247377869e21983826143dc/capsule_231x87.jpg?t=1782688690",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-d520c1702",
       "title": "Forts & Castles",
       "kind": "coming_soon",
@@ -396,19 +410,6 @@
       "categories": [
         "Aksiyon",
         "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-2390855f6",
-      "title": "Gambit's Escape",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4417770/Gambits_Escape/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4417770/a3d038d3b0f9b7126247377869e21983826143dc/capsule_231x87.jpg?t=1782688690",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu",
-        "Gündelik"
       ]
     },
     {
@@ -445,18 +446,6 @@
       ]
     },
     {
-      "id": "steam-news-bc12e0d06",
-      "title": "Tower64",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4279130/Tower64/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787011625",
-      "categories": [
-        "Aksiyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-e0bd5f267",
       "title": "Stackmon",
       "kind": "coming_soon",
@@ -467,6 +456,17 @@
         "Strateji",
         "Macera",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-bc12e0d06",
+      "title": "Tower64",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4279130/Tower64/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787011625",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -541,15 +541,15 @@
       ]
     },
     {
-      "id": "steam-news-561cd1dc2",
-      "title": "HyperCore : Rhythm Bullet Hell",
+      "id": "steam-news-db09440d9",
+      "title": "Neon Tyrant",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1112390/HyperCore__Rhythm_Bullet_Hell/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4953310/Neon_Tyrant/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1112390/capsule_231x87.jpg?t=1786111638",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953310/e2d5e5496c0d24fee299442934850e448ccde5f3/capsule_231x87.jpg?t=1786912799",
       "categories": [
-        "Aksiyon",
-        "Çok Oyunculu"
+        "Bağımsız",
+        "Aksiyon"
       ]
     },
     {
