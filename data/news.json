@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T10:41:47.295Z",
+  "generatedAt": "2026-08-18T11:03:20.815Z",
   "items": [
     {
       "id": "steam-news-265e69954",
@@ -273,28 +273,6 @@
       ]
     },
     {
-      "id": "steam-news-e40e2fd97",
-      "title": "Wordforge: Silent Letters",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4378740/Wordforge_Silent_Letters/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4378740/85f3d810bfc9a021084951c0d05b93887551c876/capsule_231x87.jpg?t=1785967485",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-c8611a780",
-      "title": "TFC2: The Fertile Crescent 2 - Collapse of The Bronze Age",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4158610/TFC2_The_Fertile_Crescent_2__Collapse_of_The_Bronze_Age/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4158610/8b981b02bd94ed912962f812d45ecb21c762a54c/capsule_231x87.jpg?t=1786929601",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-e2180804b",
       "title": "Escape the Grind",
       "kind": "coming_soon",
@@ -314,19 +292,6 @@
         "Gündelik",
         "Çok Oyunculu",
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-2390855f6",
-      "title": "Gambit's Escape",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4417770/Gambits_Escape/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4417770/a3d038d3b0f9b7126247377869e21983826143dc/capsule_231x87.jpg?t=1782688690",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu",
-        "Gündelik"
       ]
     },
     {
@@ -354,6 +319,19 @@
       ]
     },
     {
+      "id": "steam-news-2390855f6",
+      "title": "Gambit's Escape",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4417770/Gambits_Escape/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4417770/a3d038d3b0f9b7126247377869e21983826143dc/capsule_231x87.jpg?t=1782688690",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-41c13f469",
       "title": "Last Drop",
       "kind": "coming_soon",
@@ -365,6 +343,18 @@
       ]
     },
     {
+      "id": "steam-news-f6d21531f",
+      "title": "BeastLink",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2962780/BeastLink/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2962780/5a2dd997274a25b8ad6db846ecd75260459b5095/capsule_231x87.jpg?t=1786992863",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-5d66b0c4d",
       "title": "Loop of Agony",
       "kind": "coming_soon",
@@ -373,6 +363,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950450/0b454a7bad9c1d69efbb7311d1cbf71601f1ecad/capsule_231x87.jpg?t=1787034200",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-bbba49412",
+      "title": "The Sudoku Way",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -389,17 +390,6 @@
       ]
     },
     {
-      "id": "steam-news-bbba49412",
-      "title": "The Sudoku Way",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-bc12e0d06",
       "title": "Tower64",
       "kind": "coming_soon",
@@ -407,18 +397,6 @@
       "dateLabel": "18 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787011625",
       "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-f6d21531f",
-      "title": "BeastLink",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2962780/BeastLink/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2962780/5a2dd997274a25b8ad6db846ecd75260459b5095/capsule_231x87.jpg?t=1786992863",
-      "categories": [
-        "Bağımsız",
         "Aksiyon"
       ]
     },
@@ -433,6 +411,15 @@
         "Gündelik",
         "Simülasyon"
       ]
+    },
+    {
+      "id": "steam-news-7f2465d8f",
+      "title": "Exark",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3435610/Exark/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3435610/cb827f52bb685f816f78976d9c41675e93cadaec/capsule_231x87.jpg?t=1786377746",
+      "categories": []
     },
     {
       "id": "steam-news-ffba80970",
@@ -459,15 +446,6 @@
       ]
     },
     {
-      "id": "steam-news-7f2465d8f",
-      "title": "Exark",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3435610/Exark/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3435610/cb827f52bb685f816f78976d9c41675e93cadaec/capsule_231x87.jpg?t=1786377746",
-      "categories": []
-    },
-    {
       "id": "steam-news-e33b0278a",
       "title": "Literally Just A Rock",
       "kind": "coming_soon",
@@ -477,18 +455,6 @@
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-db09440d9",
-      "title": "Neon Tyrant",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4953310/Neon_Tyrant/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953310/e2d5e5496c0d24fee299442934850e448ccde5f3/capsule_231x87.jpg?t=1786912799",
-      "categories": [
-        "Bağımsız",
-        "Aksiyon"
       ]
     },
     {
@@ -518,6 +484,17 @@
       ]
     },
     {
+      "id": "steam-news-b523669a6",
+      "title": "Twisted Tower",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1575990/Twisted_Tower/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1575990/4154309e6f82c8a33e400d3fdd95b4bccae5d0f1/capsule_231x87.jpg?t=1785937074",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
       "id": "steam-news-561cd1dc2",
       "title": "HyperCore : Rhythm Bullet Hell",
       "kind": "coming_soon",
@@ -541,15 +518,36 @@
       ]
     },
     {
-      "id": "steam-news-b523669a6",
-      "title": "Twisted Tower",
+      "id": "steam-news-db09440d9",
+      "title": "Neon Tyrant",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1575990/Twisted_Tower/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4953310/Neon_Tyrant/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1575990/4154309e6f82c8a33e400d3fdd95b4bccae5d0f1/capsule_231x87.jpg?t=1785937074",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953310/e2d5e5496c0d24fee299442934850e448ccde5f3/capsule_231x87.jpg?t=1786912799",
       "categories": [
-        "Korku"
+        "Bağımsız",
+        "Aksiyon"
       ]
+    },
+    {
+      "id": "steam-news-d28a4ac49",
+      "title": "Loot Dungeon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4329670/Loot_Dungeon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4329670/8c926f128eb4fe3d6ce3cf38499d4fc30036dde7/capsule_231x87.jpg?t=1786273687",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-e3075dab0",
+      "title": "Fallin' Glocks",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3916660/Fallin_Glocks/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3916660/bbcd0cac949c2f57a19daffdffad1d6ac0547e8f/capsule_231x87.jpg?t=1786591980",
+      "categories": []
     },
     {
       "id": "steam-news-cf77e0050",
