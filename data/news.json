@@ -1,13 +1,22 @@
 {
-  "generatedAt": "2026-08-18T02:02:03.546Z",
+  "generatedAt": "2026-08-18T03:04:43.307Z",
   "items": [
+    {
+      "id": "steam-news-8ef72db2f",
+      "title": "Red Cap Adventure",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4775760/Red_Cap_Adventure/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4775760/44197926d7e82a67c427bfb052256b40a062335c/capsule_231x87.jpg?t=1787019864",
+      "categories": []
+    },
     {
       "id": "steam-news-b2752be5e",
       "title": "The World Well: Blood of Caro",
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/2648900/The_World_Well_Blood_of_Caro/?snr=1_7_7_230_150_1",
       "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2648900/ffc64b28e08f75d3ed79698581ef4c49b905f111/capsule_231x87.jpg?t=1787018408",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2648900/ffc64b28e08f75d3ed79698581ef4c49b905f111/capsule_231x87.jpg?t=1787020198",
       "categories": []
     },
     {
@@ -272,18 +281,6 @@
       ]
     },
     {
-      "id": "steam-news-d78bcda82",
-      "title": "Voluntary Isolation",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4746960/Voluntary_Isolation/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4746960/cb900260aa586a9dfa65262ad72d27d9a1440932/capsule_231x87.jpg?t=1786994628",
-      "categories": [
-        "Korku",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-f0bb045fb",
       "title": "Moho-Moho DX",
       "kind": "coming_soon",
@@ -381,6 +378,18 @@
       ]
     },
     {
+      "id": "steam-news-d520c1702",
+      "title": "Forts & Castles",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4942090/Forts__Castles/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942090/e708d4e9e01913ebb41e3a4a9206266a68f63661/capsule_231x87.jpg?t=1785525764",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-2390855f6",
       "title": "Gambit's Escape",
       "kind": "coming_soon",
@@ -403,18 +412,6 @@
       "categories": [
         "Aksiyon",
         "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-d520c1702",
-      "title": "Forts & Castles",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4942090/Forts__Castles/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942090/e708d4e9e01913ebb41e3a4a9206266a68f63661/capsule_231x87.jpg?t=1785525764",
-      "categories": [
-        "Strateji",
-        "Gündelik"
       ]
     },
     {
@@ -452,6 +449,17 @@
       ]
     },
     {
+      "id": "steam-news-bbba49412",
+      "title": "The Sudoku Way",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-e0bd5f267",
       "title": "Stackmon",
       "kind": "coming_soon",
@@ -462,17 +470,6 @@
         "Strateji",
         "Macera",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-bbba49412",
-      "title": "The Sudoku Way",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5025490/The_Sudoku_Way/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025490/bea34cfb42d43f8e0ee43eb07112064bd80512f8/capsule_231x87.jpg?t=1786742937",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -547,15 +544,15 @@
       ]
     },
     {
-      "id": "steam-news-e33b0278a",
-      "title": "Literally Just A Rock",
+      "id": "steam-news-db09440d9",
+      "title": "Neon Tyrant",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3083550/Literally_Just_A_Rock/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4953310/Neon_Tyrant/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3083550/ab706451a12d8cd1227f70a59365df9ca8c886bb/capsule_231x87.jpg?t=1785528113",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953310/e2d5e5496c0d24fee299442934850e448ccde5f3/capsule_231x87.jpg?t=1786912799",
       "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
+        "Bağımsız",
+        "Aksiyon"
       ]
     },
     {
