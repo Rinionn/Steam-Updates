@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T05:40:41.154Z",
+  "generatedAt": "2026-08-18T06:02:12.192Z",
   "items": [
     {
       "id": "steam-news-baf105ee6",
@@ -435,17 +435,6 @@
       ]
     },
     {
-      "id": "steam-news-5d66b0c4d",
-      "title": "Loop of Agony",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4950450/Loop_of_Agony/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950450/0b454a7bad9c1d69efbb7311d1cbf71601f1ecad/capsule_231x87.jpg?t=1786601562",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-e0bd5f267",
       "title": "Stackmon",
       "kind": "coming_soon",
@@ -465,6 +454,17 @@
       "url": "https://store.steampowered.com/app/4279130/Tower64/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787011625",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-5d66b0c4d",
+      "title": "Loop of Agony",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4950450/Loop_of_Agony/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4950450/0b454a7bad9c1d69efbb7311d1cbf71601f1ecad/capsule_231x87.jpg?t=1787032644",
       "categories": [
         "Aksiyon"
       ]
