@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T15:16:49.800Z",
+  "generatedAt": "2026-08-19T15:52:10.612Z",
   "items": [
     {
       "id": "steam-news-a2440d3d5",
@@ -67,7 +67,7 @@
       "dateLabel": "19 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4458840/6968ef4f959c7a5b981c395b9d11a5c29050e4d4/capsule_231x87.jpg?t=1787151654",
       "categories": [
-        "Korku"
+        "Macera"
       ]
     },
     {
@@ -103,18 +103,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-d516a2cf4",
-      "title": "STEINS;GATE REBOOT DIGITAL DELUXE EDITION",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/sub/1707312/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/1707312/1385e7d595719924b63f5a33c0c19f774b08ff99/capsule_231x87.jpg?t=1787151687",
-      "categories": [
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-762715874",
       "title": "Rekindling",
       "kind": "new_release",
@@ -127,14 +115,26 @@
       ]
     },
     {
-      "id": "steam-news-1fba03b38",
-      "title": "My Singing Monsters Karaoke",
+      "id": "steam-news-d516a2cf4",
+      "title": "STEINS;GATE RE:BOOT",
       "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4633140/My_Singing_Monsters_Karaoke/?snr=1_7_7_230_150_1",
+      "url": "https://store.steampowered.com/app/4012810/STEINSGATE_REBOOT/?snr=1_7_7_230_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4633140/00a76a59790eff1ca105d52254bc84126a5adf92/capsule_231x87.jpg?t=1786980928",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4012810/66cd3882f3926e2d0e88c598fde47213517e9a70/capsule_231x87.jpg?t=1787147797",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d516a2cf4",
+      "title": "STEINS;GATE REBOOT DIGITAL DELUXE EDITION",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/sub/1707312/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/1707312/1385e7d595719924b63f5a33c0c19f774b08ff99/capsule_231x87.jpg?t=1787152750",
+      "categories": [
+        "Gündelik",
+        "Macera"
       ]
     },
     {
@@ -193,6 +193,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4862220/0289d2a15981917523046f1cb8409d0768466e01/capsule_231x87.jpg?t=1787149178",
       "categories": [
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-1fba03b38",
+      "title": "My Singing Monsters Karaoke",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4633140/My_Singing_Monsters_Karaoke/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4633140/00a76a59790eff1ca105d52254bc84126a5adf92/capsule_231x87.jpg?t=1787153497",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -261,13 +272,46 @@
       ]
     },
     {
-      "id": "steam-news-80b0635e5",
-      "title": "Fantasy Air-Sea Battles Showdown",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4824900/Fantasy_AirSea_Battles_Showdown/?snr=1_7_7_230_150_1",
+      "id": "steam-news-13a1e29ee",
+      "title": "COSETTE: THE UNTITLED GAME",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3161350/COSETTE_THE_UNTITLED_GAME/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4824900/0a49b6453ac5f6fc67a90c96d66a1e613e06e797/capsule_231x87.jpg?t=1787147212",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3161350/fe8a5a8cdb8544849fe241717c2a786b86bf75d4/capsule_231x87.jpg?t=1770951593",
       "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-3df581189",
+      "title": "Shake it Co!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3578070/Shake_it_Co/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3578070/b7f6b8cca181955e81fb4d3724f77c07bd576da7/capsule_231x87.jpg?t=1787151442",
+      "categories": []
+    },
+    {
+      "id": "steam-news-0663383fe",
+      "title": "Ashes of the Damned: The Forgotten Ward",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3843760/Ashes_of_the_Damned_The_Forgotten_Ward/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3843760/f94feb7805ec384b922c37ca45076026fc4a1565/capsule_231x87.jpg?t=1787008288",
+      "categories": [
+        "Korku",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-9366640b2",
+      "title": "Re:Store the Record Store",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4902600/ReStore_the_Record_Store/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4902600/b05343cd670ae2cd54f8fa7e6e49962e2f81db11/capsule_231x87.jpg?t=1787062699",
+      "categories": [
+        "Gündelik",
         "Simülasyon"
       ]
     },
@@ -286,41 +330,6 @@
       ]
     },
     {
-      "id": "steam-news-13a1e29ee",
-      "title": "COSETTE: THE UNTITLED GAME",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3161350/COSETTE_THE_UNTITLED_GAME/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3161350/fe8a5a8cdb8544849fe241717c2a786b86bf75d4/capsule_231x87.jpg?t=1770951593",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-9366640b2",
-      "title": "Re:Store the Record Store",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4902600/ReStore_the_Record_Store/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4902600/b05343cd670ae2cd54f8fa7e6e49962e2f81db11/capsule_231x87.jpg?t=1787062699",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-0663383fe",
-      "title": "Ashes of the Damned: The Forgotten Ward",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3843760/Ashes_of_the_Damned_The_Forgotten_Ward/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3843760/f94feb7805ec384b922c37ca45076026fc4a1565/capsule_231x87.jpg?t=1787008288",
-      "categories": [
-        "Korku",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-d58e632ee",
       "title": "Hearth and Hamlet",
       "kind": "coming_soon",
@@ -331,15 +340,6 @@
         "Gündelik",
         "Simülasyon"
       ]
-    },
-    {
-      "id": "steam-news-3df581189",
-      "title": "Shake it Co!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3578070/Shake_it_Co/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3578070/b7f6b8cca181955e81fb4d3724f77c07bd576da7/capsule_231x87.jpg?t=1787151442",
-      "categories": []
     },
     {
       "id": "steam-news-e32a2fa4a",
@@ -360,6 +360,18 @@
       "dateLabel": "19 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4944370/99413086b81539cf8f6f94ce44628323d9a914bf/capsule_231x87.jpg?t=1786295186",
       "categories": []
+    },
+    {
+      "id": "steam-news-0988b0ea0",
+      "title": "Click & Curate: Idle Photography",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4580660/Click__Curate_Idle_Photography/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4580660/da8b9cfd469672bc9a581dd0d11bc82c650b9543/capsule_231x87.jpg?t=1787081384",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
     },
     {
       "id": "steam-news-e0ef9e24c",
@@ -391,18 +403,6 @@
       "dateLabel": "19 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5005590/0f71fda1ccdbd30546b60db9460b9732dd5e3bdb/capsule_231x87.jpg?t=1787128747",
       "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-0988b0ea0",
-      "title": "Click & Curate: Idle Photography",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4580660/Click__Curate_Idle_Photography/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4580660/da8b9cfd469672bc9a581dd0d11bc82c650b9543/capsule_231x87.jpg?t=1787081384",
-      "categories": [
-        "Strateji",
         "Gündelik"
       ]
     },
@@ -486,6 +486,15 @@
       ]
     },
     {
+      "id": "steam-news-5b2b18797",
+      "title": "LABYRINTHOS: The Depths Want You",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3883290/LABYRINTHOS_The_Depths_Want_You/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3883290/fb61410287fef71fe758f92dcbf4b2faf09587d6/capsule_231x87.jpg?t=1782694676",
+      "categories": []
+    },
+    {
       "id": "steam-news-ccd81a9ff",
       "title": "語彙コイン",
       "kind": "coming_soon",
@@ -495,15 +504,6 @@
       "categories": [
         "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-5b2b18797",
-      "title": "LABYRINTHOS: The Depths Want You",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3883290/LABYRINTHOS_The_Depths_Want_You/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3883290/fb61410287fef71fe758f92dcbf4b2faf09587d6/capsule_231x87.jpg?t=1782694676",
-      "categories": []
     },
     {
       "id": "steam-news-ff7f6df5f",
