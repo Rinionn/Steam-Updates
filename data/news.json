@@ -1,6 +1,76 @@
 {
-  "generatedAt": "2026-08-19T07:14:02.422Z",
+  "generatedAt": "2026-08-19T07:56:05.136Z",
   "items": [
+    {
+      "id": "steam-news-df732a0ea",
+      "title": "Museum of Lost Dinosaurs",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4970120/Museum_of_Lost_Dinosaurs/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4970120/ff2b3426e460ad994b9bb3bf64577e1eef164fa8/capsule_231x87.jpg?t=1787126125",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-574e703e5",
+      "title": "Perfect Dodge",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4962840/Perfect_Dodge/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4962840/2dc54d5e6f2a723941cedb27d9deea83dbd1cd33/capsule_231x87.jpg?t=1787125220",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-915f9788f",
+      "title": "Puzzles Berrys",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4964900/Puzzles_Berrys/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4964900/b1e2bacc139db97779c8103181a479ea6e59a2d6/capsule_231x87.jpg?t=1787124797",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-704254205",
+      "title": "Pachinko Swamp",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5009330/Pachinko_Swamp/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5009330/72ea9b057a96352bd49056146807c0d431ef12bd/capsule_231x87.jpg?t=1787124692",
+      "categories": [
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-032fa50e5",
+      "title": "Puzzles Bears",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4961860/Puzzles_Bears/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961860/c459e64b9058b9ceaeb8a0590c2ae81e5e13bb79/capsule_231x87.jpg?t=1787124539",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-8d1159293",
+      "title": "Puzzles Birds",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4961820/Puzzles_Birds/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961820/68add7b394f8c1530456d85abda971fbdda8cc42/capsule_231x87.jpg?t=1787124251",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-d4996badb",
       "title": "DeadTide",
@@ -223,77 +293,6 @@
       ]
     },
     {
-      "id": "steam-news-c484c3365",
-      "title": "Wane’s",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4445000/Wanes/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4445000/aa680e250693bdcf726e63698181d8fce8ce4fc5/capsule_231x87.jpg?t=1787096008",
-      "categories": [
-        "Strateji",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-776bafdf3",
-      "title": "Escape the Grind",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4663080/Escape_the_Grind/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4663080/432f547f61404d8c206ed7ef27eb8613d6682108/capsule_231x87.jpg?t=1787094668",
-      "categories": []
-    },
-    {
-      "id": "steam-news-38b90f91c",
-      "title": "Ice Coast Revival",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4999040/Ice_Coast_Revival/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4999040/cb3e5e8f807a745ef6827f3767aa7628c3315dbe/capsule_231x87.jpg?t=1787094520",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-ed7f4a2b7",
-      "title": "Swarm of the Sea",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4877170/Swarm_of_the_Sea/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4877170/70a3b8d3e2104d21a62cdcd496decc8af00a3021/capsule_231x87.jpg?t=1787094121",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-d4cb5159d",
-      "title": "This Is Golf",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4450570/This_Is_Golf/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4450570/97c7c5c6f569c3cdfd55284df03ba6b473154465/capsule_231x87.jpg?t=1787092715",
-      "categories": [
-        "Çok Oyunculu",
-        "Spor",
-        "Strateji",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-1331cee6c",
-      "title": "Rectangle Jump",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4416610/Rectangle_Jump/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4416610/5551431cb3557676f5d18133f6d88bb1d73a88d9/capsule_231x87.jpg?t=1787092127",
-      "categories": [
-        "Gündelik",
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-16d132bca",
       "title": "Ministry of Truth: False Memory",
       "kind": "coming_soon",
@@ -429,15 +428,16 @@
       ]
     },
     {
-      "id": "steam-news-2c696389a",
-      "title": "Aluminium City",
+      "id": "steam-news-f917d8fc3",
+      "title": "The Hidden Camp",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4501720/Aluminium_City/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4771610/The_Hidden_Camp/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4501720/ebb45700f6e362d4ab77b647138ce505459139a2/capsule_231x87.jpg?t=1786450347",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4771610/049419b54e077bfe8c30433b1951e825fd931dc4/capsule_231x87.jpg?t=1786979148",
       "categories": [
         "Gündelik",
-        "Simülasyon"
+        "Çok Oyunculu",
+        "Strateji"
       ]
     },
     {
@@ -452,21 +452,24 @@
       ]
     },
     {
+      "id": "steam-news-2c696389a",
+      "title": "Aluminium City",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4501720/Aluminium_City/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4501720/ebb45700f6e362d4ab77b647138ce505459139a2/capsule_231x87.jpg?t=1786450347",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-f1be120c6",
       "title": "Blood in the Panopticon",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1787104695",
-      "categories": []
-    },
-    {
-      "id": "steam-news-03e816f1e",
-      "title": "Deadlock Station",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1787112941",
       "categories": []
     },
     {
@@ -481,19 +484,6 @@
       ]
     },
     {
-      "id": "steam-news-f917d8fc3",
-      "title": "The Hidden Camp",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4771610/The_Hidden_Camp/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4771610/049419b54e077bfe8c30433b1951e825fd931dc4/capsule_231x87.jpg?t=1786979148",
-      "categories": [
-        "Gündelik",
-        "Çok Oyunculu",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-0628380a1",
       "title": "Wild Ice",
       "kind": "coming_soon",
@@ -503,6 +493,15 @@
       "categories": [
         "Strateji"
       ]
+    },
+    {
+      "id": "steam-news-03e816f1e",
+      "title": "Deadlock Station",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1787112941",
+      "categories": []
     },
     {
       "id": "steam-news-17032f309",
@@ -536,6 +535,15 @@
       ]
     },
     {
+      "id": "steam-news-3df581189",
+      "title": "Shake it Co!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3578070/Shake_it_Co/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3578070/b7f6b8cca181955e81fb4d3724f77c07bd576da7/capsule_231x87.jpg?t=1787059961",
+      "categories": []
+    },
+    {
       "id": "steam-news-0663383fe",
       "title": "Ashes of the Damned: The Forgotten Ward",
       "kind": "coming_soon",
@@ -545,20 +553,6 @@
       "categories": [
         "Korku",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-fc522d20f",
-      "title": "SFTP - Super Football Tactics Pro",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4509600/SFTP__Super_Football_Tactics_Pro/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4509600/a7de0be262f93472e875c41376a9be5ec1dcb379/capsule_231x87.jpg?t=1786633280",
-      "categories": [
-        "Strateji",
-        "Spor",
-        "Tek Oyunculu",
-        "Çok Oyunculu"
       ]
     },
     {
