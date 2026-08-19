@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-19T17:17:31.192Z",
+  "generatedAt": "2026-08-19T17:45:54.698Z",
   "items": [
+    {
+      "id": "steam-news-a4d9856c9",
+      "title": "Pizza House Simulator🍕",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4132330/Pizza_House_Simulator/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4132330/30e0db1cba795cfaefd61c946efe97c5df73ab0c/capsule_231x87.jpg?t=1787160645",
+      "categories": [
+        "Çok Oyunculu",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-d53069733",
+      "title": "100 Goblin Cats",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4310720/100_Goblin_Cats/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4310720/62d0406598112cf143732ef4abe6e514b37698e4/capsule_231x87.jpg?t=1787160108",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-362f013c7",
       "title": "Still in the Fog",
@@ -252,35 +275,12 @@
       ]
     },
     {
-      "id": "steam-news-57bafb039",
-      "title": "WORD SHIFT",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4995530/WORD_SHIFT/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4995530/80a1b7c5d2ef59f705402c62d9f16b3d1f1fe4ce/capsule_231x87.jpg?t=1787151651",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-750cceb05",
-      "title": "Vitalis",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4604300/Vitalis/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4604300/13a6b148df4fc70c568ea1c30cdacb85a7b3c92a/capsule_231x87.jpg?t=1787151621",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-7283246fa",
       "title": "Desktop Detective",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4225890/Desktop_Detective/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4225890/2b955d6cef21323109dd9bfe01da2708dbea5947/capsule_231x87.jpg?t=1787088825",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4225890/2b955d6cef21323109dd9bfe01da2708dbea5947/capsule_231x87.jpg?t=1787161457",
       "categories": []
     },
     {
@@ -330,6 +330,15 @@
       ]
     },
     {
+      "id": "steam-news-5b2b18797",
+      "title": "LABYRINTHOS: The Depths Want You",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3883290/LABYRINTHOS_The_Depths_Want_You/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3883290/fb61410287fef71fe758f92dcbf4b2faf09587d6/capsule_231x87.jpg?t=1782694676",
+      "categories": []
+    },
+    {
       "id": "steam-news-ccd81a9ff",
       "title": "語彙コイン",
       "kind": "coming_soon",
@@ -339,15 +348,6 @@
       "categories": [
         "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-5b2b18797",
-      "title": "LABYRINTHOS: The Depths Want You",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3883290/LABYRINTHOS_The_Depths_Want_You/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3883290/fb61410287fef71fe758f92dcbf4b2faf09587d6/capsule_231x87.jpg?t=1782694676",
-      "categories": []
     },
     {
       "id": "steam-news-ff7f6df5f",
@@ -470,6 +470,17 @@
       ]
     },
     {
+      "id": "steam-news-863626a35",
+      "title": "Backyard Paintball",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3509670/Backyard_Paintball/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509670/7e8ff871fb8366446352826a93300dec97340fa7/capsule_231x87.jpg?t=1785193540",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-bc2b51064",
       "title": "Deckalypse",
       "kind": "coming_soon",
@@ -480,17 +491,6 @@
         "Macera",
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-863626a35",
-      "title": "Backyard Paintball",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3509670/Backyard_Paintball/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509670/7e8ff871fb8366446352826a93300dec97340fa7/capsule_231x87.jpg?t=1785193540",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
