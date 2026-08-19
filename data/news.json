@@ -1,6 +1,59 @@
 {
-  "generatedAt": "2026-08-19T22:34:48.082Z",
+  "generatedAt": "2026-08-19T22:56:47.522Z",
   "items": [
+    {
+      "id": "steam-news-779ea6cd9",
+      "title": "星天へ発つ日",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3809340/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3809340/913bd2aeba174473a9672ce94b4499d42154bdc8/capsule_231x87.jpg?t=1787179868",
+      "categories": [
+        "Macera",
+        "Anime",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-5026a3ecc",
+      "title": "Furniture Fu",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3645490/Furniture_Fu/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3645490/2d584f24e230693f3002455e72cf28016fd8b1d8/capsule_231x87.jpg?t=1787180139",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-298bf07ed",
+      "title": "Salasasa - 开源麻将平台",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4565740/Salasasa/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4565740/2c48ce6c1b023b4208161ed8fe7bdd6d9a2619af/capsule_231x87.jpg?t=1787179812",
+      "categories": [
+        "Oynaması Ücretsiz",
+        "Gündelik",
+        "Anime",
+        "Strateji",
+        "Çok Oyunculu",
+        "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-f02a8b1ca",
+      "title": "Ultradimensional",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4913850/Ultradimensional/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4913850/69d20ebe377a5cdf24847c12b449711ede7f4bae/capsule_231x87.jpg?t=1787179511",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-538818826",
       "title": "NEVER HAPPENED",
@@ -227,49 +280,28 @@
       ]
     },
     {
-      "id": "steam-news-5b57a2ca8",
-      "title": "Crystaria Online",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5034130/Crystaria_Online/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5034130/e0148fdc970339e8b1598a57e213c506c5e2f689/capsule_231x87.jpg?t=1787156655",
+      "id": "steam-news-bc2b51064",
+      "title": "Deckalypse",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1334390/Deckalypse/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1334390/63cc180f6643a393d660a64f6d2ebfa4016afce0/capsule_231x87.jpg?t=1786135518",
       "categories": [
-        "RPG"
+        "Macera",
+        "Gündelik",
+        "Strateji"
       ]
     },
     {
-      "id": "steam-news-64a928b34",
-      "title": "Arcade Shop Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3421710/Arcade_Shop_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3421710/d847d18d2147664410e9738292352dc07f79189b/capsule_231x87.jpg?t=1787156121",
+      "id": "steam-news-b49c4bcd8",
+      "title": "PengPong",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2766910/PengPong/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2766910/4c9e595611021f83827cc05a23f630f816f7e335/capsule_231x87.jpg?t=1787144631",
       "categories": [
-        "Simülasyon"
+        "Tek Oyunculu"
       ]
-    },
-    {
-      "id": "steam-news-7f4f8e172",
-      "title": "SFTP - Super Football Tactics Pro",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4509600/SFTP__Super_Football_Tactics_Pro/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4509600/a7de0be262f93472e875c41376a9be5ec1dcb379/capsule_231x87.jpg?t=1787156472",
-      "categories": [
-        "Strateji",
-        "Spor",
-        "Tek Oyunculu",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-f459925eb",
-      "title": "Shake it Co!",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3578070/Shake_it_Co/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3578070/b7f6b8cca181955e81fb4d3724f77c07bd576da7/capsule_231x87.jpg?t=1787159360",
-      "categories": []
     },
     {
       "id": "steam-news-863626a35",
@@ -291,30 +323,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354710/a7714d1a841f192596a253c013325effcbf03a8f/capsule_231x87.jpg?t=1786713669",
       "categories": [
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-b49c4bcd8",
-      "title": "PengPong",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2766910/PengPong/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2766910/4c9e595611021f83827cc05a23f630f816f7e335/capsule_231x87.jpg?t=1787144631",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-bc2b51064",
-      "title": "Deckalypse",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1334390/Deckalypse/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1334390/63cc180f6643a393d660a64f6d2ebfa4016afce0/capsule_231x87.jpg?t=1786135518",
-      "categories": [
-        "Macera",
-        "Gündelik",
-        "Strateji"
       ]
     },
     {
@@ -465,17 +473,6 @@
       ]
     },
     {
-      "id": "steam-news-47944debd",
-      "title": "False Alarm",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3688650/False_Alarm/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3688650/1acd95e1e3a0e4cf4d5f4a4d4840e4979c11bb1f/capsule_231x87.jpg?t=1786882581",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-ae90a35e8",
       "title": "Ground Zero Hero",
       "kind": "coming_soon",
@@ -496,6 +493,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3196440/340a42b4587a124e7352a28c42765479631ddafd/capsule_231x87.jpg?t=1785688193",
       "categories": [
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-47944debd",
+      "title": "False Alarm",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3688650/False_Alarm/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3688650/1acd95e1e3a0e4cf4d5f4a4d4840e4979c11bb1f/capsule_231x87.jpg?t=1786882581",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
