@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-19T20:10:58.856Z",
+  "generatedAt": "2026-08-19T20:45:24.051Z",
   "items": [
+    {
+      "id": "steam-news-53fa4787d",
+      "title": "Weaving Stars, Painting Skies",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4423870/Weaving_Stars_Painting_Skies/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4423870/cd5d587424c606fe0e1aa043e0e023d6be74e78c/capsule_231x87.jpg?t=1787172165",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-20ef73dad",
+      "title": "Tomato Dealer",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3914400/Tomato_Dealer/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3914400/1993c3fa156ddcec4335817fe486d5dbc2526d49/capsule_231x87.jpg?t=1787170892",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-6715f6462",
+      "title": "Mines.Cafe",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4538270/MinesCafe/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4538270/4431de27435207a5a0bcae60ca6908f4e588706c/capsule_231x87.jpg?t=1787170317",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-bc0a00a60",
       "title": "Light & Glory",
@@ -231,56 +266,9 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/?snr=1_7_7_230_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4315040/cef23bc7f825aa8da91b16ea1d57ac1ce677b9ea/capsule_231x87.jpg?t=1787157670",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4315040/cef23bc7f825aa8da91b16ea1d57ac1ce677b9ea/capsule_231x87.jpg?t=1787170538",
       "categories": [
         "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-9a23c394d",
-      "title": "Blue Guy Must Die",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4972690/Blue_Guy_Must_Die/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4972690/a2fdd75fb671b0c2cd2ac16bb24a64b6324a7825/capsule_231x87.jpg?t=1787155202",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-156c81f24",
-      "title": "天雨粟",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5012340/_/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012340/4a48d4895d916806b2b7027cfa51f6b2f39e51b1/capsule_231x87.jpg?t=1787155177",
-      "categories": [
-        "Strateji",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-a2440d3d5",
-      "title": "G-MODEアーカイブス+ 機神伝 STRIKE-G-",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4368920/GMODE__STRIKEG/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4368920/2848edcdc39d419d9b4b9fb594ccd5606950abf2/capsule_231x87.jpg?t=1787152581",
-      "categories": [
-        "Anime",
-        "RPG",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-b79773467",
-      "title": "Tomato Dealer",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3914400/Tomato_Dealer/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3914400/1993c3fa156ddcec4335817fe486d5dbc2526d49/capsule_231x87.jpg?t=1787088270",
-      "categories": [
         "Simülasyon"
       ]
     },
@@ -448,17 +436,6 @@
       ]
     },
     {
-      "id": "steam-news-863626a35",
-      "title": "Backyard Paintball",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3509670/Backyard_Paintball/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509670/7e8ff871fb8366446352826a93300dec97340fa7/capsule_231x87.jpg?t=1785193540",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-bc2b51064",
       "title": "Deckalypse",
       "kind": "coming_soon",
@@ -472,17 +449,6 @@
       ]
     },
     {
-      "id": "steam-news-7e2c1bfe2",
-      "title": "Ghost Buster:Village",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4354710/Ghost_BusterVillage/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354710/a7714d1a841f192596a253c013325effcbf03a8f/capsule_231x87.jpg?t=1786713669",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-b49c4bcd8",
       "title": "PengPong",
       "kind": "coming_soon",
@@ -491,6 +457,28 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2766910/4c9e595611021f83827cc05a23f630f816f7e335/capsule_231x87.jpg?t=1787144631",
       "categories": [
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-863626a35",
+      "title": "Backyard Paintball",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3509670/Backyard_Paintball/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509670/7e8ff871fb8366446352826a93300dec97340fa7/capsule_231x87.jpg?t=1785193540",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-7e2c1bfe2",
+      "title": "Ghost Buster:Village",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4354710/Ghost_BusterVillage/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354710/a7714d1a841f192596a253c013325effcbf03a8f/capsule_231x87.jpg?t=1786713669",
+      "categories": [
+        "Korku"
       ]
     },
     {
@@ -544,6 +532,17 @@
       "categories": [
         "Bağımsız",
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-47137b026",
+      "title": "Fairysite",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3467750/Fairysite/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3467750/1b45bbb8395f953aa31fd21c2460ee8971daeadf/capsule_231x87.jpg?t=1782411065",
+      "categories": [
+        "Tek Oyunculu"
       ]
     },
     {
