@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-08-19T22:56:47.522Z",
+  "generatedAt": "2026-08-19T23:30:46.092Z",
   "items": [
+    {
+      "id": "steam-news-3b607506e",
+      "title": "Peaceful Bug Catching Story",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4980890/Peaceful_Bug_Catching_Story/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4980890/c4177535930e6360494cfdafc811b2cb213e3763/capsule_231x87.jpg?t=1787181951",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "Aksiyon",
+        "Spor"
+      ]
+    },
     {
       "id": "steam-news-779ea6cd9",
       "title": "星天へ発つ日",
@@ -268,18 +282,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-ed4331f16",
-      "title": "RanaRangam: Where Chess Pieces Bleed",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4615950/RanaRangam_Where_Chess_Pieces_Bleed/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4615950/e2ca041113ebec8e2dddee48b4e982d6728fe50d/capsule_231x87.jpg?t=1787156954",
-      "categories": [
-        "Strateji",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-bc2b51064",
       "title": "Deckalypse",
       "kind": "coming_soon",
@@ -485,17 +487,6 @@
       ]
     },
     {
-      "id": "steam-news-1bb52af41",
-      "title": "Vacation Cafe Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3196440/Vacation_Cafe_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3196440/340a42b4587a124e7352a28c42765479631ddafd/capsule_231x87.jpg?t=1785688193",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-47944debd",
       "title": "False Alarm",
       "kind": "coming_soon",
@@ -504,6 +495,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3688650/1acd95e1e3a0e4cf4d5f4a4d4840e4979c11bb1f/capsule_231x87.jpg?t=1786882581",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-1bb52af41",
+      "title": "Vacation Cafe Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3196440/Vacation_Cafe_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3196440/340a42b4587a124e7352a28c42765479631ddafd/capsule_231x87.jpg?t=1785688193",
+      "categories": [
+        "Simülasyon"
       ]
     },
     {
