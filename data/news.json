@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T04:45:52.907Z",
+  "generatedAt": "2026-08-19T05:17:08.385Z",
   "items": [
     {
       "id": "steam-news-da7bda08f",
@@ -399,18 +399,6 @@
       ]
     },
     {
-      "id": "steam-news-2c696389a",
-      "title": "Aluminium City",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4501720/Aluminium_City/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4501720/ebb45700f6e362d4ab77b647138ce505459139a2/capsule_231x87.jpg?t=1786450347",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-8563225c3",
       "title": "Esordie",
       "kind": "coming_soon",
@@ -437,22 +425,16 @@
       ]
     },
     {
-      "id": "steam-news-f1be120c6",
-      "title": "Blood in the Panopticon",
+      "id": "steam-news-2c696389a",
+      "title": "Aluminium City",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4501720/Aluminium_City/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1787104695",
-      "categories": []
-    },
-    {
-      "id": "steam-news-03e816f1e",
-      "title": "Deadlock Station",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1787112941",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4501720/ebb45700f6e362d4ab77b647138ce505459139a2/capsule_231x87.jpg?t=1786450347",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
     },
     {
       "id": "steam-news-0628380a1",
@@ -464,6 +446,24 @@
       "categories": [
         "Strateji"
       ]
+    },
+    {
+      "id": "steam-news-03e816f1e",
+      "title": "Deadlock Station",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1787112941",
+      "categories": []
+    },
+    {
+      "id": "steam-news-f1be120c6",
+      "title": "Blood in the Panopticon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1787104695",
+      "categories": []
     },
     {
       "id": "steam-news-a7bda4522",
@@ -490,6 +490,26 @@
       ]
     },
     {
+      "id": "steam-news-83f24c0b4",
+      "title": "STEINS;GATE RE:BOOT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4012810/STEINSGATE_REBOOT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4012810/66cd3882f3926e2d0e88c598fde47213517e9a70/capsule_231x87.jpg?t=1786070044",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-17032f309",
+      "title": "Project P.I.T.T.",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4026250/Project_PITT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/5f126997a54b8b733bb4d5671229b3d83bb1be7e/capsule_231x87.jpg?t=1786469548",
+      "categories": []
+    },
+    {
       "id": "steam-news-a6df1d688",
       "title": "T.W.I.R.L.",
       "kind": "coming_soon",
@@ -510,26 +530,6 @@
       "categories": [
         "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-83f24c0b4",
-      "title": "STEINS;GATE RE:BOOT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4012810/STEINSGATE_REBOOT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4012810/66cd3882f3926e2d0e88c598fde47213517e9a70/capsule_231x87.jpg?t=1786070044",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-17032f309",
-      "title": "Project P.I.T.T.",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4026250/Project_PITT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/5f126997a54b8b733bb4d5671229b3d83bb1be7e/capsule_231x87.jpg?t=1786469548",
-      "categories": []
     },
     {
       "id": "steam-news-fc522d20f",
