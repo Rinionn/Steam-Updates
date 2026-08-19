@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-19T21:43:03.514Z",
+  "generatedAt": "2026-08-19T22:01:49.794Z",
   "items": [
+    {
+      "id": "steam-news-538818826",
+      "title": "NEVER HAPPENED",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4960800/NEVER_HAPPENED/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4960800/844237d1e60ea0c2eb9c07384422c41d408c8695/capsule_231x87.jpg?t=1787175777",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-5b03426d0",
       "title": "Space Tales",
@@ -260,18 +272,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-1e2a05e89",
-      "title": "Ashes of the Damned: The Forgotten Ward",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3843760/Ashes_of_the_Damned_The_Forgotten_Ward/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3843760/f94feb7805ec384b922c37ca45076026fc4a1565/capsule_231x87.jpg?t=1787155253",
-      "categories": [
-        "Korku",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-863626a35",
       "title": "Backyard Paintball",
       "kind": "coming_soon",
@@ -280,6 +280,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509670/7e8ff871fb8366446352826a93300dec97340fa7/capsule_231x87.jpg?t=1785193540",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-7e2c1bfe2",
+      "title": "Ghost Buster:Village",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4354710/Ghost_BusterVillage/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354710/a7714d1a841f192596a253c013325effcbf03a8f/capsule_231x87.jpg?t=1786713669",
+      "categories": [
+        "Korku"
       ]
     },
     {
@@ -304,17 +315,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2766910/4c9e595611021f83827cc05a23f630f816f7e335/capsule_231x87.jpg?t=1787144631",
       "categories": [
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-7e2c1bfe2",
-      "title": "Ghost Buster:Village",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4354710/Ghost_BusterVillage/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354710/a7714d1a841f192596a253c013325effcbf03a8f/capsule_231x87.jpg?t=1786713669",
-      "categories": [
-        "Korku"
       ]
     },
     {
@@ -477,17 +477,6 @@
       ]
     },
     {
-      "id": "steam-news-1bb52af41",
-      "title": "Vacation Cafe Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3196440/Vacation_Cafe_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3196440/340a42b4587a124e7352a28c42765479631ddafd/capsule_231x87.jpg?t=1785688193",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-47944debd",
       "title": "False Alarm",
       "kind": "coming_soon",
@@ -496,6 +485,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3688650/1acd95e1e3a0e4cf4d5f4a4d4840e4979c11bb1f/capsule_231x87.jpg?t=1786882581",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-1bb52af41",
+      "title": "Vacation Cafe Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3196440/Vacation_Cafe_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3196440/340a42b4587a124e7352a28c42765479631ddafd/capsule_231x87.jpg?t=1785688193",
+      "categories": [
+        "Simülasyon"
       ]
     },
     {
