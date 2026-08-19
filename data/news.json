@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-19T19:22:35.148Z",
+  "generatedAt": "2026-08-19T19:46:56.654Z",
   "items": [
+    {
+      "id": "steam-news-bc0a00a60",
+      "title": "Light & Glory",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5032980/Light__Glory/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5032980/ec75ace5ecd38e66f28d76a444af7f7da10ceb03/capsule_231x87.jpg?t=1787168686",
+      "categories": [
+        "Strateji",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-90e1e409e",
       "title": "Manorism",
@@ -262,15 +274,6 @@
       ]
     },
     {
-      "id": "steam-news-0e092682e",
-      "title": "Blood in the Panopticon",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1787152037",
-      "categories": []
-    },
-    {
       "id": "steam-news-b79773467",
       "title": "Tomato Dealer",
       "kind": "coming_soon",
@@ -317,15 +320,6 @@
       ]
     },
     {
-      "id": "steam-news-5b2b18797",
-      "title": "LABYRINTHOS: The Depths Want You",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3883290/LABYRINTHOS_The_Depths_Want_You/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3883290/fb61410287fef71fe758f92dcbf4b2faf09587d6/capsule_231x87.jpg?t=1782694676",
-      "categories": []
-    },
-    {
       "id": "steam-news-ccd81a9ff",
       "title": "語彙コイン",
       "kind": "coming_soon",
@@ -335,6 +329,15 @@
       "categories": [
         "Gündelik"
       ]
+    },
+    {
+      "id": "steam-news-5b2b18797",
+      "title": "LABYRINTHOS: The Depths Want You",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3883290/LABYRINTHOS_The_Depths_Want_You/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3883290/fb61410287fef71fe758f92dcbf4b2faf09587d6/capsule_231x87.jpg?t=1782694676",
+      "categories": []
     },
     {
       "id": "steam-news-ff7f6df5f",
@@ -445,17 +448,6 @@
       ]
     },
     {
-      "id": "steam-news-863626a35",
-      "title": "Backyard Paintball",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3509670/Backyard_Paintball/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509670/7e8ff871fb8366446352826a93300dec97340fa7/capsule_231x87.jpg?t=1785193540",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-7e2c1bfe2",
       "title": "Ghost Buster:Village",
       "kind": "coming_soon",
@@ -464,17 +456,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354710/a7714d1a841f192596a253c013325effcbf03a8f/capsule_231x87.jpg?t=1786713669",
       "categories": [
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-b49c4bcd8",
-      "title": "PengPong",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2766910/PengPong/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2766910/4c9e595611021f83827cc05a23f630f816f7e335/capsule_231x87.jpg?t=1787144631",
-      "categories": [
-        "Tek Oyunculu"
       ]
     },
     {
@@ -488,6 +469,28 @@
         "Macera",
         "Gündelik",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-863626a35",
+      "title": "Backyard Paintball",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3509670/Backyard_Paintball/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509670/7e8ff871fb8366446352826a93300dec97340fa7/capsule_231x87.jpg?t=1785193540",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-b49c4bcd8",
+      "title": "PengPong",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2766910/PengPong/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2766910/4c9e595611021f83827cc05a23f630f816f7e335/capsule_231x87.jpg?t=1787144631",
+      "categories": [
+        "Tek Oyunculu"
       ]
     },
     {
