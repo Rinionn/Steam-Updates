@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-19T11:45:44.736Z",
+  "generatedAt": "2026-08-19T12:16:03.652Z",
   "items": [
+    {
+      "id": "steam-news-cd0060de8",
+      "title": "Sale Dash",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4515900/Sale_Dash/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4515900/06e573333cb988d0fb557f0790b42f220b8f0eaa/capsule_231x87.jpg?t=1787141347",
+      "categories": [
+        "Aksiyon",
+        "Anime",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-f26d64ccb",
+      "title": "Space Chickens",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4836390/Space_Chickens/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836390/4e0058631b181e4519badbee39edb852ce9ebb05/capsule_231x87.jpg?t=1787140077",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-fc32cc180",
       "title": "Incident Archives - Flight 882",
@@ -263,32 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-d4996badb",
-      "title": "DeadTide",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5008300/DeadTide/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5008300/7f4b20320531f714bb104b800f30882c1cda31f4/capsule_231x87.jpg?t=1787123333",
-      "categories": [
-        "Aksiyon",
-        "RPG",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-97825d00b",
-      "title": "PPWP",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4778360/PPWP/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4778360/d58a771222a3474bae2028be2f556a9e853ddf0e/capsule_231x87.jpg?t=1787121317",
-      "categories": [
-        "Aksiyon",
-        "Gündelik",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-7e1db28aa",
       "title": "Blue Guy Must Die",
       "kind": "coming_soon",
@@ -357,17 +355,14 @@
       ]
     },
     {
-      "id": "steam-news-bbf737e6e",
-      "title": "Peaceful Bug Catching Story",
+      "id": "steam-news-0628380a1",
+      "title": "Wild Ice",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4980890/Peaceful_Bug_Catching_Story/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/1572260/Wild_Ice/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4980890/c4177535930e6360494cfdafc811b2cb213e3763/capsule_231x87.jpg?t=1785829414",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1572260/a9e20a3ca58694d473a9b3f04a857ac0beb20832/capsule_231x87.jpg?t=1786573563",
       "categories": [
-        "Macera",
-        "Gündelik",
-        "Aksiyon",
-        "Spor"
+        "Strateji"
       ]
     },
     {
@@ -379,6 +374,69 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4458840/6968ef4f959c7a5b981c395b9d11a5c29050e4d4/capsule_231x87.jpg?t=1787089817",
       "categories": [
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-f1be120c6",
+      "title": "Blood in the Panopticon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1787104695",
+      "categories": []
+    },
+    {
+      "id": "steam-news-83f24c0b4",
+      "title": "STEINS;GATE REBOOT DIGITAL DELUXE EDITION",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/sub/1707312/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/1707312/1385e7d595719924b63f5a33c0c19f774b08ff99/capsule_231x87.jpg?t=1785985886",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-83f24c0b4",
+      "title": "STEINS;GATE RE:BOOT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4012810/STEINSGATE_REBOOT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4012810/66cd3882f3926e2d0e88c598fde47213517e9a70/capsule_231x87.jpg?t=1786070044",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-17032f309",
+      "title": "Project P.I.T.T.",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4026250/Project_PITT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/5f126997a54b8b733bb4d5671229b3d83bb1be7e/capsule_231x87.jpg?t=1787131476",
+      "categories": []
+    },
+    {
+      "id": "steam-news-03e816f1e",
+      "title": "Deadlock Station",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1787140243",
+      "categories": []
+    },
+    {
+      "id": "steam-news-bbf737e6e",
+      "title": "Peaceful Bug Catching Story",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4980890/Peaceful_Bug_Catching_Story/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4980890/c4177535930e6360494cfdafc811b2cb213e3763/capsule_231x87.jpg?t=1785829414",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "Aksiyon",
+        "Spor"
       ]
     },
     {
@@ -406,66 +464,6 @@
       ]
     },
     {
-      "id": "steam-news-f1be120c6",
-      "title": "Blood in the Panopticon",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1787104695",
-      "categories": []
-    },
-    {
-      "id": "steam-news-0628380a1",
-      "title": "Wild Ice",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1572260/Wild_Ice/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1572260/a9e20a3ca58694d473a9b3f04a857ac0beb20832/capsule_231x87.jpg?t=1786573563",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-03e816f1e",
-      "title": "Deadlock Station",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1787138124",
-      "categories": []
-    },
-    {
-      "id": "steam-news-83f24c0b4",
-      "title": "STEINS;GATE RE:BOOT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4012810/STEINSGATE_REBOOT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4012810/66cd3882f3926e2d0e88c598fde47213517e9a70/capsule_231x87.jpg?t=1786070044",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-17032f309",
-      "title": "Project P.I.T.T.",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4026250/Project_PITT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/5f126997a54b8b733bb4d5671229b3d83bb1be7e/capsule_231x87.jpg?t=1787131476",
-      "categories": []
-    },
-    {
-      "id": "steam-news-83f24c0b4",
-      "title": "STEINS;GATE REBOOT DIGITAL DELUXE EDITION",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/sub/1707312/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/1707312/1385e7d595719924b63f5a33c0c19f774b08ff99/capsule_231x87.jpg?t=1785985886",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-3df581189",
       "title": "Shake it Co!",
       "kind": "coming_soon",
@@ -486,6 +484,41 @@
         "Spor",
         "Tek Oyunculu",
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-13a1e29ee",
+      "title": "COSETTE: THE UNTITLED GAME",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3161350/COSETTE_THE_UNTITLED_GAME/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3161350/fe8a5a8cdb8544849fe241717c2a786b86bf75d4/capsule_231x87.jpg?t=1770951593",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-0663383fe",
+      "title": "Ashes of the Damned: The Forgotten Ward",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3843760/Ashes_of_the_Damned_The_Forgotten_Ward/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3843760/f94feb7805ec384b922c37ca45076026fc4a1565/capsule_231x87.jpg?t=1787008288",
+      "categories": [
+        "Korku",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-d58e632ee",
+      "title": "Hearth and Hamlet",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4315040/cef23bc7f825aa8da91b16ea1d57ac1ce677b9ea/capsule_231x87.jpg?t=1787130756",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -512,41 +545,6 @@
         "Aksiyon",
         "Tek Oyunculu",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-0663383fe",
-      "title": "Ashes of the Damned: The Forgotten Ward",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3843760/Ashes_of_the_Damned_The_Forgotten_Ward/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3843760/f94feb7805ec384b922c37ca45076026fc4a1565/capsule_231x87.jpg?t=1787008288",
-      "categories": [
-        "Korku",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-13a1e29ee",
-      "title": "COSETTE: THE UNTITLED GAME",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3161350/COSETTE_THE_UNTITLED_GAME/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3161350/fe8a5a8cdb8544849fe241717c2a786b86bf75d4/capsule_231x87.jpg?t=1770951593",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-d58e632ee",
-      "title": "Hearth and Hamlet",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4315040/cef23bc7f825aa8da91b16ea1d57ac1ce677b9ea/capsule_231x87.jpg?t=1787130756",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
       ]
     },
     {
