@@ -1,15 +1,46 @@
 {
-  "generatedAt": "2026-08-19T10:52:15.535Z",
+  "generatedAt": "2026-08-19T11:15:30.975Z",
   "items": [
+    {
+      "id": "steam-news-ebcaf9504",
+      "title": "Cannon Clicker",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4488300/Cannon_Clicker/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4488300/6b6d9968d733c54a5cb5b686d376581ae3f3959e/capsule_231x87.jpg?t=1787137667",
+      "categories": []
+    },
+    {
+      "id": "steam-news-9d7083472",
+      "title": "Linerunner",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4453060/Linerunner/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4453060/0c94eefaccc0c721de380f4bdc63d516253555d7/capsule_231x87.jpg?t=1787137139",
+      "categories": [
+        "Yarış"
+      ]
+    },
     {
       "id": "steam-news-ddaa6a4d9",
       "title": "Ministry of Truth: False Memory",
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3492150/Ministry_of_Truth_False_Memory/?snr=1_7_7_230_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3492150/cb1bb63358d0de9391de22492fa530ec7e371a84/capsule_231x87.jpg?t=1787136559",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3492150/cb1bb63358d0de9391de22492fa530ec7e371a84/capsule_231x87.jpg?t=1787137061",
       "categories": [
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-cc43e1e95",
+      "title": "Kubo",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4999470/Kubo/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4999470/b47a71447d68b25eee5f454a3c8f063da86f6076/capsule_231x87.jpg?t=1787135846",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -31,7 +62,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4376090/StrongWilled_Wife/?snr=1_7_7_230_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4376090/f45838d1afe35180b3229e366d9060378045f14f/capsule_231x87.jpg?t=1787134080",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4376090/f45838d1afe35180b3229e366d9060378045f14f/capsule_231x87.jpg?t=1787137256",
       "categories": [
         "Anime"
       ]
@@ -258,57 +289,16 @@
       ]
     },
     {
-      "id": "steam-news-93e0b1b72",
-      "title": "DrawTheBlock",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4961600/DrawTheBlock/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961600/3e346da945d870b381159a7d6ab6d5907579dd1a/capsule_231x87.jpg?t=1787118413",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-da7bda08f",
-      "title": "Tower64",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4279130/Tower64/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279130/116a5ada8098da2eb81cc0b22379f5b29f5357d5/capsule_231x87.jpg?t=1787111808",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-6805fbab8",
-      "title": "Just Another Animal",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4991800/Just_Another_Animal/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4991800/d3c1b7421e8c4e80348394ec8dc499c8609c3a94/capsule_231x87.jpg?t=1787107806",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-9c844edbb",
-      "title": "Linerunner",
+      "id": "steam-news-6f5fb3ed9",
+      "title": "Vivere Retro",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4453060/Linerunner/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4303290/Vivere_Retro/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4453060/0c94eefaccc0c721de380f4bdc63d516253555d7/capsule_231x87.jpg?t=1780212006",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4303290/bb414c28abaa0c3bf8a66a6dee3f22a44fb1d84e/capsule_231x87.jpg?t=1786983846",
       "categories": [
-        "Yarış"
+        "Aksiyon",
+        "Korku"
       ]
-    },
-    {
-      "id": "steam-news-927a33872",
-      "title": "Cannon Clicker",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4488300/Cannon_Clicker/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4488300/6b6d9968d733c54a5cb5b686d376581ae3f3959e/capsule_231x87.jpg?t=1784738641",
-      "categories": []
     },
     {
       "id": "steam-news-7e1db28aa",
@@ -319,18 +309,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4972690/a2fdd75fb671b0c2cd2ac16bb24a64b6324a7825/capsule_231x87.jpg?t=1787083840",
       "categories": [
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-6f5fb3ed9",
-      "title": "Vivere Retro",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4303290/Vivere_Retro/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4303290/bb414c28abaa0c3bf8a66a6dee3f22a44fb1d84e/capsule_231x87.jpg?t=1786983846",
-      "categories": [
-        "Aksiyon",
-        "Korku"
       ]
     },
     {
@@ -394,37 +372,6 @@
       ]
     },
     {
-      "id": "steam-news-0628380a1",
-      "title": "Wild Ice",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1572260/Wild_Ice/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1572260/a9e20a3ca58694d473a9b3f04a857ac0beb20832/capsule_231x87.jpg?t=1786573563",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-03e816f1e",
-      "title": "Deadlock Station",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1787126867",
-      "categories": []
-    },
-    {
-      "id": "steam-news-83f24c0b4",
-      "title": "STEINS;GATE RE:BOOT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4012810/STEINSGATE_REBOOT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4012810/66cd3882f3926e2d0e88c598fde47213517e9a70/capsule_231x87.jpg?t=1786070044",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-f1be120c6",
       "title": "Blood in the Panopticon",
       "kind": "coming_soon",
@@ -442,6 +389,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4633140/00a76a59790eff1ca105d52254bc84126a5adf92/capsule_231x87.jpg?t=1786980928",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-0628380a1",
+      "title": "Wild Ice",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1572260/Wild_Ice/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1572260/a9e20a3ca58694d473a9b3f04a857ac0beb20832/capsule_231x87.jpg?t=1786573563",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -468,12 +426,21 @@
       ]
     },
     {
-      "id": "steam-news-83f24c0b4",
-      "title": "STEINS;GATE REBOOT DIGITAL DELUXE EDITION",
+      "id": "steam-news-03e816f1e",
+      "title": "Deadlock Station",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/sub/1707312/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/1707312/1385e7d595719924b63f5a33c0c19f774b08ff99/capsule_231x87.jpg?t=1785985886",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1787138124",
+      "categories": []
+    },
+    {
+      "id": "steam-news-83f24c0b4",
+      "title": "STEINS;GATE RE:BOOT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4012810/STEINSGATE_REBOOT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4012810/66cd3882f3926e2d0e88c598fde47213517e9a70/capsule_231x87.jpg?t=1786070044",
       "categories": [
         "Gündelik"
       ]
@@ -486,6 +453,17 @@
       "dateLabel": "19 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/5f126997a54b8b733bb4d5671229b3d83bb1be7e/capsule_231x87.jpg?t=1787131476",
       "categories": []
+    },
+    {
+      "id": "steam-news-83f24c0b4",
+      "title": "STEINS;GATE REBOOT DIGITAL DELUXE EDITION",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/sub/1707312/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/1707312/1385e7d595719924b63f5a33c0c19f774b08ff99/capsule_231x87.jpg?t=1785985886",
+      "categories": [
+        "Gündelik"
+      ]
     },
     {
       "id": "steam-news-0663383fe",
@@ -507,6 +485,43 @@
       "dateLabel": "19 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3578070/b7f6b8cca181955e81fb4d3724f77c07bd576da7/capsule_231x87.jpg?t=1787059961",
       "categories": []
+    },
+    {
+      "id": "steam-news-9366640b2",
+      "title": "Re:Store the Record Store",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4902600/ReStore_the_Record_Store/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4902600/b05343cd670ae2cd54f8fa7e6e49962e2f81db11/capsule_231x87.jpg?t=1787062699",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-fc522d20f",
+      "title": "SFTP - Super Football Tactics Pro",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4509600/SFTP__Super_Football_Tactics_Pro/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4509600/a7de0be262f93472e875c41376a9be5ec1dcb379/capsule_231x87.jpg?t=1786633280",
+      "categories": [
+        "Strateji",
+        "Spor",
+        "Tek Oyunculu",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-13a1e29ee",
+      "title": "COSETTE: THE UNTITLED GAME",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3161350/COSETTE_THE_UNTITLED_GAME/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3161350/fe8a5a8cdb8544849fe241717c2a786b86bf75d4/capsule_231x87.jpg?t=1770951593",
+      "categories": [
+        "RPG"
+      ]
     },
     {
       "id": "steam-news-8ef5d31c1",
@@ -535,26 +550,14 @@
       ]
     },
     {
-      "id": "steam-news-9366640b2",
-      "title": "Re:Store the Record Store",
+      "id": "steam-news-e32a2fa4a",
+      "title": "Arcade Shop Simulator",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4902600/ReStore_the_Record_Store/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3421710/Arcade_Shop_Simulator/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4902600/b05343cd670ae2cd54f8fa7e6e49962e2f81db11/capsule_231x87.jpg?t=1787062699",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3421710/d847d18d2147664410e9738292352dc07f79189b/capsule_231x87.jpg?t=1785586114",
       "categories": [
-        "Gündelik",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-13a1e29ee",
-      "title": "COSETTE: THE UNTITLED GAME",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3161350/COSETTE_THE_UNTITLED_GAME/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3161350/fe8a5a8cdb8544849fe241717c2a786b86bf75d4/capsule_231x87.jpg?t=1770951593",
-      "categories": [
-        "RPG"
       ]
     },
     {
