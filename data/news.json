@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-19T05:52:04.065Z",
+  "generatedAt": "2026-08-19T06:24:34.637Z",
   "items": [
+    {
+      "id": "steam-news-d4ae1cbe3",
+      "title": "Stick Legion",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4985360/Stick_Legion/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985360/a1b0ba5dddb6aa44737f8b46b69dfa00bf24ff29/capsule_231x87.jpg?t=1787119276",
+      "categories": [
+        "Strateji",
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-93e0b1b72",
       "title": "DrawTheBlock",
@@ -279,21 +292,12 @@
       ]
     },
     {
-      "id": "steam-news-b6da97a88",
-      "title": "RAZE",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4279790/RAZE/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4279790/22f0d3ac89eaa5f8974a70ebb17f0dbbae7cff52/capsule_231x87.jpg?t=1787090582",
-      "categories": []
-    },
-    {
       "id": "steam-news-16d132bca",
       "title": "Ministry of Truth: False Memory",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3492150/Ministry_of_Truth_False_Memory/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3492150/cb1bb63358d0de9391de22492fa530ec7e371a84/capsule_231x87.jpg?t=1787010151",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3492150/cb1bb63358d0de9391de22492fa530ec7e371a84/capsule_231x87.jpg?t=1787119706",
       "categories": [
         "Tek Oyunculu"
       ]
@@ -423,12 +427,56 @@
       ]
     },
     {
+      "id": "steam-news-f917d8fc3",
+      "title": "The Hidden Camp",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4771610/The_Hidden_Camp/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4771610/049419b54e077bfe8c30433b1951e825fd931dc4/capsule_231x87.jpg?t=1786979148",
+      "categories": [
+        "Gündelik",
+        "Çok Oyunculu",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-a7bda4522",
+      "title": "My Singing Monsters Karaoke",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4633140/My_Singing_Monsters_Karaoke/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4633140/00a76a59790eff1ca105d52254bc84126a5adf92/capsule_231x87.jpg?t=1786980928",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-0628380a1",
+      "title": "Wild Ice",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1572260/Wild_Ice/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1572260/a9e20a3ca58694d473a9b3f04a857ac0beb20832/capsule_231x87.jpg?t=1786573563",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-f1be120c6",
       "title": "Blood in the Panopticon",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1787104695",
+      "categories": []
+    },
+    {
+      "id": "steam-news-03e816f1e",
+      "title": "Deadlock Station",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1787112941",
       "categories": []
     },
     {
@@ -463,50 +511,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4012810/66cd3882f3926e2d0e88c598fde47213517e9a70/capsule_231x87.jpg?t=1786070044",
       "categories": [
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-0628380a1",
-      "title": "Wild Ice",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1572260/Wild_Ice/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1572260/a9e20a3ca58694d473a9b3f04a857ac0beb20832/capsule_231x87.jpg?t=1786573563",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-03e816f1e",
-      "title": "Deadlock Station",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1787112941",
-      "categories": []
-    },
-    {
-      "id": "steam-news-a7bda4522",
-      "title": "My Singing Monsters Karaoke",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4633140/My_Singing_Monsters_Karaoke/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4633140/00a76a59790eff1ca105d52254bc84126a5adf92/capsule_231x87.jpg?t=1786980928",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-f917d8fc3",
-      "title": "The Hidden Camp",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4771610/The_Hidden_Camp/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4771610/049419b54e077bfe8c30433b1951e825fd931dc4/capsule_231x87.jpg?t=1786979148",
-      "categories": [
-        "Gündelik",
-        "Çok Oyunculu",
-        "Strateji"
       ]
     },
     {
