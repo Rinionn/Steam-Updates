@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-19T23:30:46.092Z",
+  "generatedAt": "2026-08-19T23:51:29.210Z",
   "items": [
+    {
+      "id": "steam-news-f0a99c766",
+      "title": "Rebind",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4492950/Rebind/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4492950/957d056e718af40688fd97cfef066cc7ec0e2541/capsule_231x87.jpg?t=1787182433",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-3b607506e",
       "title": "Peaceful Bug Catching Story",
@@ -273,25 +285,14 @@
       "categories": []
     },
     {
-      "id": "steam-news-0ee095ac6",
-      "title": "Holy Mole",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4924520/Holy_Mole/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4924520/51662dd65f9677ac28cdf1eb27f75a27c2addac0/capsule_231x87.jpg?t=1787157649",
-      "categories": []
-    },
-    {
-      "id": "steam-news-bc2b51064",
-      "title": "Deckalypse",
+      "id": "steam-news-863626a35",
+      "title": "Backyard Paintball",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1334390/Deckalypse/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3509670/Backyard_Paintball/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1334390/63cc180f6643a393d660a64f6d2ebfa4016afce0/capsule_231x87.jpg?t=1786135518",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509670/7e8ff871fb8366446352826a93300dec97340fa7/capsule_231x87.jpg?t=1785193540",
       "categories": [
-        "Macera",
-        "Gündelik",
-        "Strateji"
+        "Aksiyon"
       ]
     },
     {
@@ -306,14 +307,16 @@
       ]
     },
     {
-      "id": "steam-news-863626a35",
-      "title": "Backyard Paintball",
+      "id": "steam-news-bc2b51064",
+      "title": "Deckalypse",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3509670/Backyard_Paintball/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/1334390/Deckalypse/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509670/7e8ff871fb8366446352826a93300dec97340fa7/capsule_231x87.jpg?t=1785193540",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1334390/63cc180f6643a393d660a64f6d2ebfa4016afce0/capsule_231x87.jpg?t=1786135518",
       "categories": [
-        "Aksiyon"
+        "Macera",
+        "Gündelik",
+        "Strateji"
       ]
     },
     {
