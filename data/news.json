@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-18T23:50:54.388Z",
+  "generatedAt": "2026-08-19T00:24:15.631Z",
   "items": [
+    {
+      "id": "steam-news-09d66278a",
+      "title": "Alien Siege: Earth",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4931700/Alien_Siege_Earth/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4931700/2fe5e1719cc8995a8618951759343600e615f955/capsule_231x87.jpg?t=1787097389",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-8abc02032",
       "title": "GWIRO",
@@ -59,6 +71,17 @@
       "categories": [
         "Simülasyon",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-ed7f4a2b7",
+      "title": "Swarm of the Sea",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4877170/Swarm_of_the_Sea/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4877170/70a3b8d3e2104d21a62cdcd496decc8af00a3021/capsule_231x87.jpg?t=1787094121",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -258,30 +281,6 @@
       ]
     },
     {
-      "id": "steam-news-613c99ee9",
-      "title": "Fall Not",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4130330/Fall_Not/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4130330/8ceff5dd2f7e45f94782bf02750b2114d974bf24/capsule_231x87.jpg?t=1787073608",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-656293177",
-      "title": "Wheelchair For Two",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4767110/Wheelchair_For_Two/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4767110/c4e0671e86dee6bd96e6e6484978806f4b1b57f0/capsule_231x87.jpg?t=1787073554",
-      "categories": [
-        "Yarış",
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-16d132bca",
       "title": "Ministry of Truth: False Memory",
       "kind": "coming_soon",
@@ -290,6 +289,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3492150/cb1bb63358d0de9391de22492fa530ec7e371a84/capsule_231x87.jpg?t=1787010151",
       "categories": [
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-aaf69c5bb",
+      "title": "Plodding Recovery",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4532490/Plodding_Recovery/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4532490/e9d1cc8aa0f8225eaf610206c89f97589888333c/capsule_231x87.jpg?t=1786109746",
+      "categories": [
+        "Macera",
+        "Simülasyon"
       ]
     },
     {
@@ -303,18 +314,6 @@
         "Simülasyon",
         "RPG",
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-aaf69c5bb",
-      "title": "Plodding Recovery",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4532490/Plodding_Recovery/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4532490/e9d1cc8aa0f8225eaf610206c89f97589888333c/capsule_231x87.jpg?t=1786109746",
-      "categories": [
-        "Macera",
-        "Simülasyon"
       ]
     },
     {
@@ -428,32 +427,12 @@
       ]
     },
     {
-      "id": "steam-news-a6df1d688",
-      "title": "T.W.I.R.L.",
+      "id": "steam-news-a7bda4522",
+      "title": "My Singing Monsters Karaoke",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4458840/TWIRL/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4633140/My_Singing_Monsters_Karaoke/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4458840/6968ef4f959c7a5b981c395b9d11a5c29050e4d4/capsule_231x87.jpg?t=1787089817",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-03e816f1e",
-      "title": "Deadlock Station",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1786987289",
-      "categories": []
-    },
-    {
-      "id": "steam-news-83f24c0b4",
-      "title": "STEINS;GATE REBOOT DIGITAL DELUXE EDITION",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/sub/1707312/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/1707312/1385e7d595719924b63f5a33c0c19f774b08ff99/capsule_231x87.jpg?t=1785985886",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4633140/00a76a59790eff1ca105d52254bc84126a5adf92/capsule_231x87.jpg?t=1786980928",
       "categories": [
         "Gündelik"
       ]
@@ -470,14 +449,32 @@
       ]
     },
     {
-      "id": "steam-news-a7bda4522",
-      "title": "My Singing Monsters Karaoke",
+      "id": "steam-news-03e816f1e",
+      "title": "Deadlock Station",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4633140/My_Singing_Monsters_Karaoke/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2327640/Deadlock_Station/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4633140/00a76a59790eff1ca105d52254bc84126a5adf92/capsule_231x87.jpg?t=1786980928",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2327640/feb0b1a3ff7b9abe5be707c1938ce492c08fb35b/capsule_231x87.jpg?t=1786987289",
+      "categories": []
+    },
+    {
+      "id": "steam-news-f1be120c6",
+      "title": "Blood in the Panopticon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1787096746",
+      "categories": []
+    },
+    {
+      "id": "steam-news-a6df1d688",
+      "title": "T.W.I.R.L.",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4458840/TWIRL/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4458840/6968ef4f959c7a5b981c395b9d11a5c29050e4d4/capsule_231x87.jpg?t=1787089817",
       "categories": [
-        "Gündelik"
+        "Korku"
       ]
     },
     {
@@ -492,6 +489,18 @@
         "Gündelik",
         "Aksiyon",
         "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-2c696389a",
+      "title": "Aluminium City",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4501720/Aluminium_City/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4501720/ebb45700f6e362d4ab77b647138ce505459139a2/capsule_231x87.jpg?t=1786450347",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -515,25 +524,15 @@
       "categories": []
     },
     {
-      "id": "steam-news-2c696389a",
-      "title": "Aluminium City",
+      "id": "steam-news-83f24c0b4",
+      "title": "STEINS;GATE REBOOT DIGITAL DELUXE EDITION",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4501720/Aluminium_City/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/sub/1707312/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4501720/ebb45700f6e362d4ab77b647138ce505459139a2/capsule_231x87.jpg?t=1786450347",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/1707312/1385e7d595719924b63f5a33c0c19f774b08ff99/capsule_231x87.jpg?t=1785985886",
       "categories": [
-        "Gündelik",
-        "Simülasyon"
+        "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-f1be120c6",
-      "title": "Blood in the Panopticon",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4109210/Blood_in_the_Panopticon/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4109210/8de3e8631ae9a1f1dfb8b7fc45a6d8da49d57e20/capsule_231x87.jpg?t=1787096746",
-      "categories": []
     },
     {
       "id": "steam-news-fc522d20f",
