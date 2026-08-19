@@ -1,6 +1,47 @@
 {
-  "generatedAt": "2026-08-19T16:18:26.688Z",
+  "generatedAt": "2026-08-19T16:52:11.004Z",
   "items": [
+    {
+      "id": "steam-news-fe836bb03",
+      "title": "All Time High",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4944370/All_Time_High/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4944370/99413086b81539cf8f6f94ce44628323d9a914bf/capsule_231x87.jpg?t=1787158177",
+      "categories": []
+    },
+    {
+      "id": "steam-news-0ee095ac6",
+      "title": "Holy Mole",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4924520/Holy_Mole/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4924520/51662dd65f9677ac28cdf1eb27f75a27c2addac0/capsule_231x87.jpg?t=1787157649",
+      "categories": []
+    },
+    {
+      "id": "steam-news-ed4331f16",
+      "title": "RanaRangam: Where Chess Pieces Bleed",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4615950/RanaRangam_Where_Chess_Pieces_Bleed/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4615950/e2ca041113ebec8e2dddee48b4e982d6728fe50d/capsule_231x87.jpg?t=1787156954",
+      "categories": [
+        "Strateji",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-5b57a2ca8",
+      "title": "Crystaria Online",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5034130/Crystaria_Online/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5034130/e0148fdc970339e8b1598a57e213c506c5e2f689/capsule_231x87.jpg?t=1787156655",
+      "categories": [
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-64a928b34",
       "title": "Arcade Shop Simulator",
@@ -18,7 +59,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4509600/SFTP__Super_Football_Tactics_Pro/?snr=1_7_7_230_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4509600/a7de0be262f93472e875c41376a9be5ec1dcb379/capsule_231x87.jpg?t=1787155680",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4509600/a7de0be262f93472e875c41376a9be5ec1dcb379/capsule_231x87.jpg?t=1787156472",
       "categories": [
         "Strateji",
         "Spor",
@@ -53,7 +94,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/?snr=1_7_7_230_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4315040/cef23bc7f825aa8da91b16ea1d57ac1ce677b9ea/capsule_231x87.jpg?t=1787156145",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4315040/cef23bc7f825aa8da91b16ea1d57ac1ce677b9ea/capsule_231x87.jpg?t=1787157670",
       "categories": [
         "Gündelik",
         "Simülasyon"
@@ -122,7 +163,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4771610/The_Hidden_Camp/?snr=1_7_7_230_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4771610/049419b54e077bfe8c30433b1951e825fd931dc4/capsule_231x87.jpg?t=1787151731",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4771610/049419b54e077bfe8c30433b1951e825fd931dc4/capsule_231x87.jpg?t=1787157968",
       "categories": [
         "Gündelik",
         "Çok Oyunculu",
@@ -231,68 +272,16 @@
       ]
     },
     {
-      "id": "steam-news-da497b8af",
-      "title": "The War Of Nalluer",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4929320/The_War_Of_Nalluer/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4929320/d40d4fff8f5c10c07699a4f51f2bb5ffc489946e/capsule_231x87.jpg?t=1787150600",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-3c7c57deb",
-      "title": "Kaiju Harvest",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4819300/Kaiju_Harvest/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4819300/ca3caa81124609d5f87d0e08b5da65aee38f175b/capsule_231x87.jpg?t=1787149988",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-f6970a420",
-      "title": "Dean Archer Stories: The Missing Detective",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4905010/Dean_Archer_Stories_The_Missing_Detective/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4905010/fe3a0e400daeed7312c5290d5ee628f1edc321b7/capsule_231x87.jpg?t=1787149962",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-b75fa64ef",
-      "title": "D-short",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4862220/Dshort/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4862220/0289d2a15981917523046f1cb8409d0768466e01/capsule_231x87.jpg?t=1787149178",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-6b8547f7b",
-      "title": "All Time High",
+      "id": "steam-news-73b3b0b39",
+      "title": "Still in the Fog",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4944370/All_Time_High/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4510210/Still_in_the_Fog/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4944370/99413086b81539cf8f6f94ce44628323d9a914bf/capsule_231x87.jpg?t=1786295186",
-      "categories": []
-    },
-    {
-      "id": "steam-news-e0ef9e24c",
-      "title": "Holy Mole",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4924520/Holy_Mole/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4924520/51662dd65f9677ac28cdf1eb27f75a27c2addac0/capsule_231x87.jpg?t=1787148894",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4510210/ef4db2893870cf1d6e8312e87793b52d97ff4761/capsule_231x87.jpg?t=1787098366",
+      "categories": [
+        "Korku",
+        "Macera"
+      ]
     },
     {
       "id": "steam-news-0988b0ea0",
@@ -307,26 +296,15 @@
       ]
     },
     {
-      "id": "steam-news-63707b29f",
-      "title": "Sudoku Mansion",
+      "id": "steam-news-794adf81e",
+      "title": "Pizza House Simulator🍕",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5005590/Sudoku_Mansion/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4132330/Pizza_House_Simulator/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5005590/0f71fda1ccdbd30546b60db9460b9732dd5e3bdb/capsule_231x87.jpg?t=1787128747",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4132330/816ab41ecc9996dcc4aa570498b3e6dbb3d7d661/capsule_231x87.jpg?t=1787142806",
       "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-73b3b0b39",
-      "title": "Still in the Fog",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4510210/Still_in_the_Fog/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4510210/ef4db2893870cf1d6e8312e87793b52d97ff4761/capsule_231x87.jpg?t=1787098366",
-      "categories": [
-        "Korku",
-        "Macera"
+        "Çok Oyunculu",
+        "Simülasyon"
       ]
     },
     {
@@ -343,15 +321,14 @@
       ]
     },
     {
-      "id": "steam-news-794adf81e",
-      "title": "Pizza House Simulator🍕",
+      "id": "steam-news-63707b29f",
+      "title": "Sudoku Mansion",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4132330/Pizza_House_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5005590/Sudoku_Mansion/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4132330/816ab41ecc9996dcc4aa570498b3e6dbb3d7d661/capsule_231x87.jpg?t=1787142806",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5005590/0f71fda1ccdbd30546b60db9460b9732dd5e3bdb/capsule_231x87.jpg?t=1787128747",
       "categories": [
-        "Çok Oyunculu",
-        "Simülasyon"
+        "Gündelik"
       ]
     },
     {
@@ -410,6 +387,15 @@
       ]
     },
     {
+      "id": "steam-news-5b2b18797",
+      "title": "LABYRINTHOS: The Depths Want You",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3883290/LABYRINTHOS_The_Depths_Want_You/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3883290/fb61410287fef71fe758f92dcbf4b2faf09587d6/capsule_231x87.jpg?t=1782694676",
+      "categories": []
+    },
+    {
       "id": "steam-news-ccd81a9ff",
       "title": "語彙コイン",
       "kind": "coming_soon",
@@ -419,15 +405,6 @@
       "categories": [
         "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-5b2b18797",
-      "title": "LABYRINTHOS: The Depths Want You",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3883290/LABYRINTHOS_The_Depths_Want_You/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3883290/fb61410287fef71fe758f92dcbf4b2faf09587d6/capsule_231x87.jpg?t=1782694676",
-      "categories": []
     },
     {
       "id": "steam-news-ff7f6df5f",
@@ -547,6 +524,30 @@
       "categories": [
         "Gündelik",
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-863626a35",
+      "title": "Backyard Paintball",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3509670/Backyard_Paintball/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509670/7e8ff871fb8366446352826a93300dec97340fa7/capsule_231x87.jpg?t=1785193540",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-bc2b51064",
+      "title": "Deckalypse",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1334390/Deckalypse/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1334390/63cc180f6643a393d660a64f6d2ebfa4016afce0/capsule_231x87.jpg?t=1786135518",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "Strateji"
       ]
     },
     {
