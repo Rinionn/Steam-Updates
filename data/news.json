@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-20T19:57:54.565Z",
+  "generatedAt": "2026-08-20T20:38:20.793Z",
   "items": [
+    {
+      "id": "steam-news-dd3d4e87d",
+      "title": "ArtificialOverthrow",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4658110/ArtificialOverthrow/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4658110/62c1313b95311c792047a657adb0c48bd2d534ba/capsule_231x87.jpg?t=1787257759",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-f0e87d370",
+      "title": "Lo-Fi Laundromat",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4796890/LoFi_Laundromat/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4796890/bbcfe055684e9c35dd85e162877ad2088a2162be/capsule_231x87.jpg?t=1787256069",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-6fe1f54e0",
+      "title": "Design Studio Simulator: Print Your Empire",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4824880/Design_Studio_Simulator_Print_Your_Empire/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4824880/a890396d09fd0c6688f78cb46d72c561ebe8fc6a/capsule_231x87.jpg?t=1787256009",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-1c34fd9fa",
       "title": "DrpDrv",
@@ -31,6 +66,18 @@
       "categories": [
         "Aksiyon",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-45a194c86",
+      "title": "Vice Signalling",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4836310/Vice_Signalling/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836310/ddc63ed3098daa38d1f01dda4ac77ab7c2e54379/capsule_231x87.jpg?t=1787252086",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -225,52 +272,15 @@
       ]
     },
     {
-      "id": "steam-news-25f11c65a",
-      "title": "Still Rain: The Arrival",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4763580/Still_Rain_The_Arrival/?snr=1_7_7_230_150_1",
+      "id": "steam-news-a21aec9df",
+      "title": "IAH: INTERNET WAR",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/304770/IAH_INTERNET_WAR/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4763580/3d2a9e1a31b1a7fd87b20efa813abbc6f84f827f/capsule_231x87.jpg?t=1787245217",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304770/7482aa31f5c9223597984b6cc0cbb58ac3f455ce/capsule_231x87.jpg?t=1787243493",
       "categories": [
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-9d4c68b6e",
-      "title": "Swarmdustry",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4000770/Swarmdustry/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4000770/bcd2f4b1cfbfe22f346c2fce3cb88d32e760d1c6/capsule_231x87.jpg?t=1787245215",
-      "categories": [
-        "Bağımsız",
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-97b18315d",
-      "title": "Screw Drivers",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1279510/Screw_Drivers/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1279510/ad7a272472960bece239e94181f30ddd1525fdc3/capsule_231x87.jpg?t=1787246043",
-      "categories": [
-        "Çok Oyunculu",
-        "Yarış",
-        "Oynaması Ücretsiz"
-      ]
-    },
-    {
-      "id": "steam-news-03db58610",
-      "title": "Autodelve",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4971630/Autodelve/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4971630/42cf9da89a7bf1f8a53b165488d7bc424a30ab00/capsule_231x87.jpg?t=1787245093",
-      "categories": [
-        "Simülasyon"
+        "Strateji",
+        "Aksiyon"
       ]
     },
     {
@@ -284,18 +294,6 @@
         "Gündelik",
         "Simülasyon",
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-a21aec9df",
-      "title": "IAH: INTERNET WAR",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/304770/IAH_INTERNET_WAR/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304770/7482aa31f5c9223597984b6cc0cbb58ac3f455ce/capsule_231x87.jpg?t=1787243493",
-      "categories": [
-        "Strateji",
-        "Aksiyon"
       ]
     },
     {
@@ -422,17 +420,6 @@
       ]
     },
     {
-      "id": "steam-news-02dc93b6d",
-      "title": "The 3310 Paradox",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5069470/The_3310_Paradox/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069470/1a5bae629487ad930368f957f9be6360172c9496/capsule_231x87.jpg?t=1787209352",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-f36208ed5",
       "title": "Cat Rhapsody",
       "kind": "coming_soon",
@@ -441,6 +428,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4773980/b11a8460e255b6ddf3883b8d0c9a730b97499898/capsule_231x87.jpg?t=1786786769",
       "categories": [
         "Macera",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-02dc93b6d",
+      "title": "The 3310 Paradox",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5069470/The_3310_Paradox/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069470/1a5bae629487ad930368f957f9be6360172c9496/capsule_231x87.jpg?t=1787209352",
+      "categories": [
         "Gündelik"
       ]
     },
@@ -470,18 +468,6 @@
       ]
     },
     {
-      "id": "steam-news-39fdcb528",
-      "title": "The Last Portal",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5050310/The_Last_Portal/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050310/779e73d86166989144744574eb7c60cc545fcb02/capsule_231x87.jpg?t=1786159831",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-2827e4ed7",
       "title": "I CAN'T STOP WINNING!",
       "kind": "coming_soon",
@@ -494,15 +480,6 @@
       ]
     },
     {
-      "id": "steam-news-36308681b",
-      "title": "DAWN ONE",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2127340/DAWN_ONE/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2127340/0f0c79d6a602be14a9f15201f30ff2b9846a7640/capsule_231x87.jpg?t=1786638334",
-      "categories": []
-    },
-    {
       "id": "steam-news-27aeb42ae",
       "title": "The Expansion",
       "kind": "coming_soon",
@@ -512,6 +489,27 @@
       "categories": [
         "Macera",
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-36308681b",
+      "title": "DAWN ONE",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2127340/DAWN_ONE/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2127340/0f0c79d6a602be14a9f15201f30ff2b9846a7640/capsule_231x87.jpg?t=1786638334",
+      "categories": []
+    },
+    {
+      "id": "steam-news-39fdcb528",
+      "title": "The Last Portal",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5050310/The_Last_Portal/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050310/779e73d86166989144744574eb7c60cc545fcb02/capsule_231x87.jpg?t=1786159831",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu"
       ]
     },
     {
