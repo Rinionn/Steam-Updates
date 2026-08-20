@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-20T10:39:07.848Z",
+  "generatedAt": "2026-08-20T11:03:27.977Z",
   "items": [
+    {
+      "id": "steam-news-f1eaaa66e",
+      "title": "Repterra",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2768380/Repterra/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2768380/2545fcb86712de437218599ce47aa9a3791c3002/capsule_231x87_alt_assets_2.jpg?t=1787223378",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-e2331519b",
+      "title": "Graph TD: Cosmic",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4232270/Graph_TD_Cosmic/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4232270/9350d0d108436231b7da65bac4608835d4af2722/capsule_231x87.jpg?t=1787222556",
+      "categories": [
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-f91cdc72e",
       "title": "Yet Another Zombie Survivors",
@@ -20,6 +42,17 @@
       "categories": [
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-31a34b930",
+      "title": "TMR simulator",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4945260/TMR_simulator/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4945260/8c171bfea4825d9117380282f671cd2d8d74b953/capsule_231x87.jpg?t=1787218934",
+      "categories": [
+        "RPG"
       ]
     },
     {
@@ -243,63 +276,6 @@
       ]
     },
     {
-      "id": "steam-news-5bfe709a8",
-      "title": "Command-Ω Omega 2",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4988670/Command_Omega_2/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4988670/33ded53a126efc1b611e046247d314711dbc81e3/capsule_231x87.jpg?t=1787207217",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-ec35c0874",
-      "title": "Ghost Buster:Village",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4354710/Ghost_BusterVillage/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354710/a7714d1a841f192596a253c013325effcbf03a8f/capsule_231x87.jpg?t=1787203671",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-5d3df6e2b",
-      "title": "Contraband: Edge of the Fold",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4901100/Contraband_Edge_of_the_Fold/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4901100/9aed960f68d518cddb1d22f7fa3990fb7aa6ecc3/capsule_231x87.jpg?t=1787202199",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-33730335f",
-      "title": "Snake Extended",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4895140/Snake_Extended/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4895140/5a1d9233eda838b742e6acd1e98c1e020af1cebe/capsule_231x87.jpg?t=1786038660",
-      "categories": [
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-1bb52af41",
-      "title": "Vacation Cafe Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3196440/Vacation_Cafe_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3196440/340a42b4587a124e7352a28c42765479631ddafd/capsule_231x87.jpg?t=1785688193",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-47944debd",
       "title": "False Alarm",
       "kind": "coming_soon",
@@ -323,6 +299,17 @@
       ]
     },
     {
+      "id": "steam-news-1bb52af41",
+      "title": "Vacation Cafe Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3196440/Vacation_Cafe_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3196440/340a42b4587a124e7352a28c42765479631ddafd/capsule_231x87.jpg?t=1785688193",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-a9ee031c5",
       "title": "Friday Night",
       "kind": "coming_soon",
@@ -333,19 +320,6 @@
         "Korku",
         "Macera",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-d693d55ab",
-      "title": "Gallipoli",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3065940/Gallipoli/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3065940/8241f8f3e49226d916e09f31f642fb0f5d05f463/capsule_231x87.jpg?t=1787151673",
-      "categories": [
-        "Simülasyon",
-        "Strateji",
-        "Çok Oyunculu"
       ]
     },
     {
@@ -380,6 +354,19 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2584270/be45d87c9974a36f690480bceb01f03987a0c23a/capsule_231x87.jpg?t=1787146410",
       "categories": [
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-d693d55ab",
+      "title": "Gallipoli",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3065940/Gallipoli/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3065940/8241f8f3e49226d916e09f31f642fb0f5d05f463/capsule_231x87.jpg?t=1787223241",
+      "categories": [
+        "Simülasyon",
+        "Strateji",
+        "Çok Oyunculu"
       ]
     },
     {
@@ -431,41 +418,6 @@
       ]
     },
     {
-      "id": "steam-news-ba33f1ebb",
-      "title": "Slayblade",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4117730/Slayblade/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4117730/76ba17af014980199e1c05bccf1640714827048a/capsule_231x87.jpg?t=1787220689",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-6c02d6761",
-      "title": "Agro Simulator: Season 26",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4338100/Agro_Simulator_Season_26/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4338100/9b2d41d13b2063fc2fe1751dfce310fe31debbd7/capsule_231x87.jpg?t=1786633582",
-      "categories": [
-        "RPG",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-eb12aec03",
-      "title": "Sensory Overload",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4403510/Sensory_Overload/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4403510/a97638822bef5086c9b5301988f225aaa59f08bf/capsule_231x87.jpg?t=1786438154",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-cafd997d3",
       "title": "Deep Blue Sushi",
       "kind": "coming_soon",
@@ -501,6 +453,30 @@
       ]
     },
     {
+      "id": "steam-news-6c02d6761",
+      "title": "Agro Simulator: Season 26",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4338100/Agro_Simulator_Season_26/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4338100/9b2d41d13b2063fc2fe1751dfce310fe31debbd7/capsule_231x87.jpg?t=1786633582",
+      "categories": [
+        "RPG",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-eb12aec03",
+      "title": "Sensory Overload",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4403510/Sensory_Overload/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4403510/a97638822bef5086c9b5301988f225aaa59f08bf/capsule_231x87.jpg?t=1786438154",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-b241fa38f",
       "title": "How to Fish",
       "kind": "coming_soon",
@@ -510,6 +486,17 @@
       "categories": [
         "Çok Oyunculu",
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-ba33f1ebb",
+      "title": "Slayblade",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4117730/Slayblade/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4117730/76ba17af014980199e1c05bccf1640714827048a/capsule_231x87.jpg?t=1787223793",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -536,6 +523,18 @@
       ]
     },
     {
+      "id": "steam-news-1d8c9b8eb",
+      "title": "The Falling Hospital",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4998500/The_Falling_Hospital/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998500/e417cbcac1eb3f48936d42cfef052bfdb57870bb/capsule_231x87.jpg?t=1785933699",
+      "categories": [
+        "Korku",
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-bfa201090",
       "title": "Good Person",
       "kind": "coming_soon",
@@ -548,15 +547,14 @@
       ]
     },
     {
-      "id": "steam-news-1d8c9b8eb",
-      "title": "The Falling Hospital",
+      "id": "steam-news-a2ee9a237",
+      "title": "Hollow Hide",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4998500/The_Falling_Hospital/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4898860/Hollow_Hide/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998500/e417cbcac1eb3f48936d42cfef052bfdb57870bb/capsule_231x87.jpg?t=1785933699",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4898860/1f147c630b985d568d27713abf52adeab4ca79f0/capsule_231x87.jpg?t=1786992396",
       "categories": [
-        "Korku",
-        "Tek Oyunculu"
+        "Çok Oyunculu"
       ]
     },
     {
