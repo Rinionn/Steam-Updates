@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-20T21:03:51.730Z",
+  "generatedAt": "2026-08-20T21:38:27.031Z",
   "items": [
+    {
+      "id": "steam-news-e13cbbac3",
+      "title": "White Dwarf",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5020280/White_Dwarf/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5020280/6e8f3e7b104b0ad18de35d5fea1ad1d3d2a7f4b3/capsule_231x87.jpg?t=1787260533",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-a9af8eba9",
       "title": "Harvest Hand",
@@ -261,18 +273,6 @@
       ]
     },
     {
-      "id": "steam-news-f200f2a88",
-      "title": "Boardcraft: Crokinole",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4628460/Boardcraft_Crokinole/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4628460/444c9149bb820647512a98c3b88532b2763b7875/capsule_231x87.jpg?t=1787254314",
-      "categories": [
-        "Çok Oyunculu",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-f97673af9",
       "title": "Twin Balls Journey",
       "kind": "coming_soon",
@@ -282,27 +282,6 @@
       "categories": [
         "Aksiyon",
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-36308681b",
-      "title": "DAWN ONE",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2127340/DAWN_ONE/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2127340/0f0c79d6a602be14a9f15201f30ff2b9846a7640/capsule_231x87.jpg?t=1786638334",
-      "categories": []
-    },
-    {
-      "id": "steam-news-39fdcb528",
-      "title": "The Last Portal",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5050310/The_Last_Portal/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050310/779e73d86166989144744574eb7c60cc545fcb02/capsule_231x87.jpg?t=1786159831",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
       ]
     },
     {
@@ -328,6 +307,27 @@
         "Macera",
         "Korku"
       ]
+    },
+    {
+      "id": "steam-news-39fdcb528",
+      "title": "The Last Portal",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5050310/The_Last_Portal/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050310/779e73d86166989144744574eb7c60cc545fcb02/capsule_231x87.jpg?t=1786159831",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-36308681b",
+      "title": "DAWN ONE",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2127340/DAWN_ONE/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2127340/0f0c79d6a602be14a9f15201f30ff2b9846a7640/capsule_231x87.jpg?t=1786638334",
+      "categories": []
     },
     {
       "id": "steam-news-e9b9aeb63",
@@ -376,6 +376,17 @@
       ]
     },
     {
+      "id": "steam-news-6fa0dc6c6",
+      "title": "AI Pixel Battle",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3994120/AI_Pixel_Battle/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994120/21d885cae561c273508aac673dcaccf3b71e2ebc/capsule_231x87.jpg?t=1787020436",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-0d92a597a",
       "title": "The Legend of Fireball",
       "kind": "coming_soon",
@@ -389,17 +400,6 @@
       ]
     },
     {
-      "id": "steam-news-6fa0dc6c6",
-      "title": "AI Pixel Battle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3994120/AI_Pixel_Battle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994120/21d885cae561c273508aac673dcaccf3b71e2ebc/capsule_231x87.jpg?t=1787020436",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-9590367a6",
       "title": "LOOP SYNDROME",
       "kind": "coming_soon",
@@ -408,18 +408,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4919670/0c590223c16f1b4a6e42df45ba0f9a65a60d689a/capsule_231x87.jpg?t=1786404194",
       "categories": [
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-20eb2ebdb",
-      "title": "Amarta: Kingdom of Shadows",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4526420/Amarta_Kingdom_of_Shadows/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4526420/e0366df726e15d99c1b29755716d32f85b680ef6/capsule_231x87.jpg?t=1787104727",
-      "categories": [
-        "Strateji",
-        "Gündelik"
       ]
     },
     {
@@ -437,6 +425,18 @@
       ]
     },
     {
+      "id": "steam-news-20eb2ebdb",
+      "title": "Amarta: Kingdom of Shadows",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4526420/Amarta_Kingdom_of_Shadows/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4526420/e0366df726e15d99c1b29755716d32f85b680ef6/capsule_231x87.jpg?t=1787104727",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-026255738",
       "title": "Undo My Seal, Senpai!",
       "kind": "coming_soon",
@@ -446,6 +446,28 @@
       "categories": [
         "Gündelik",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-3bdfaf17a",
+      "title": "Big Adventure",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4996680/Big_Adventure/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4996680/a1c48c87541cd26006d15c3c6cc166c3b5e60aff/capsule_231x87.jpg?t=1787081357",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-7c3860eee",
+      "title": "Blood Red Rebirth",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4193120/Blood_Red_Rebirth/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4193120/f98b41df1b95154f0d65867c8e2b86a5339dcc3b/capsule_231x87.jpg?t=1783937434",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -469,28 +491,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5049030/31fef9a16cc0d8f3bc7f6085b802bcf8865d3a2b/capsule_231x87.jpg?t=1786149588",
       "categories": [
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-3bdfaf17a",
-      "title": "Big Adventure",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4996680/Big_Adventure/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4996680/a1c48c87541cd26006d15c3c6cc166c3b5e60aff/capsule_231x87.jpg?t=1787081357",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-7c3860eee",
-      "title": "Blood Red Rebirth",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4193120/Blood_Red_Rebirth/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4193120/f98b41df1b95154f0d65867c8e2b86a5339dcc3b/capsule_231x87.jpg?t=1783937434",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
