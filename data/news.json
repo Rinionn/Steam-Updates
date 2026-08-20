@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T19:26:21.027Z",
+  "generatedAt": "2026-08-20T19:57:54.565Z",
   "items": [
     {
       "id": "steam-news-1c34fd9fa",
@@ -140,7 +140,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/5035540/Relyora/?snr=1_7_7_230_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5035540/5e3562eb18fe2ed02d2927251ae215d2c3b4ef68/capsule_231x87.jpg?t=1787246766",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5035540/5e3562eb18fe2ed02d2927251ae215d2c3b4ef68/capsule_231x87.jpg?t=1787254946",
       "categories": [
         "RPG"
       ]
@@ -207,7 +207,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4628460/Boardcraft_Crokinole/?snr=1_7_7_230_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4628460/444c9149bb820647512a98c3b88532b2763b7875/capsule_231x87.jpg?t=1787245236",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4628460/444c9149bb820647512a98c3b88532b2763b7875/capsule_231x87.jpg?t=1787254314",
       "categories": [
         "Çok Oyunculu",
         "Gündelik"
@@ -274,18 +274,6 @@
       ]
     },
     {
-      "id": "steam-news-a21aec9df",
-      "title": "IAH: INTERNET WAR",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/304770/IAH_INTERNET_WAR/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304770/7482aa31f5c9223597984b6cc0cbb58ac3f455ce/capsule_231x87.jpg?t=1787243493",
-      "categories": [
-        "Strateji",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-22b2c5d58",
       "title": "Viva",
       "kind": "coming_soon",
@@ -296,6 +284,18 @@
         "Gündelik",
         "Simülasyon",
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-a21aec9df",
+      "title": "IAH: INTERNET WAR",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/304770/IAH_INTERNET_WAR/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304770/7482aa31f5c9223597984b6cc0cbb58ac3f455ce/capsule_231x87.jpg?t=1787243493",
+      "categories": [
+        "Strateji",
+        "Aksiyon"
       ]
     },
     {
@@ -372,6 +372,17 @@
       ]
     },
     {
+      "id": "steam-news-c21db55d1",
+      "title": "Drunken Rogue",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2836990/Drunken_Rogue/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2836990/c84095aa0f72cf5f61007f0dd6b48a1d1409f0be/capsule_231x87.jpg?t=1787206174",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-257f78d40",
       "title": "Lazy Witch's Factory",
       "kind": "coming_soon",
@@ -395,17 +406,6 @@
         "Simülasyon",
         "Strateji",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-c21db55d1",
-      "title": "Drunken Rogue",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2836990/Drunken_Rogue/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2836990/c84095aa0f72cf5f61007f0dd6b48a1d1409f0be/capsule_231x87.jpg?t=1787206174",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -470,18 +470,6 @@
       ]
     },
     {
-      "id": "steam-news-27aeb42ae",
-      "title": "The Expansion",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4939820/The_Expansion/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4939820/bdffedb02628908b07c8750dd469e92457a352c1/capsule_231x87.jpg?t=1785875515",
-      "categories": [
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-39fdcb528",
       "title": "The Last Portal",
       "kind": "coming_soon",
@@ -513,6 +501,18 @@
       "dateLabel": "21 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2127340/0f0c79d6a602be14a9f15201f30ff2b9846a7640/capsule_231x87.jpg?t=1786638334",
       "categories": []
+    },
+    {
+      "id": "steam-news-27aeb42ae",
+      "title": "The Expansion",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4939820/The_Expansion/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4939820/bdffedb02628908b07c8750dd469e92457a352c1/capsule_231x87.jpg?t=1785875515",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
     },
     {
       "id": "steam-news-e9b9aeb63",
