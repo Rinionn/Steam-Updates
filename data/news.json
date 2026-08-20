@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-20T17:44:25.082Z",
+  "generatedAt": "2026-08-20T18:02:11.547Z",
   "items": [
+    {
+      "id": "steam-news-1ef743c5c",
+      "title": "Helmet",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4893090/Helmet/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4893090/834ecea9fa90e193e18290585f3d1947c08f1f06/capsule_231x87.jpg?t=1787247989",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-5f5c646c9",
+      "title": "Brigador Killers",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/903930/Brigador_Killers/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/903930/82917d7834a73d52595aa95d5fe8fc72ace97ba6/capsule_231x87.jpg?t=1787247927",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-597fd7d38",
       "title": "Disc Dungeon",
@@ -255,58 +278,6 @@
       ]
     },
     {
-      "id": "steam-news-23dd8cf82",
-      "title": "The Birth Cry",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4699430/The_Birth_Cry/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4699430/e4668b1cf0362825eeab71ed6884817f61ef0aa4/capsule_231x87.jpg?t=1787244992",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu",
-        "Macera",
-        "Simülasyon",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-9033863b1",
-      "title": "Wardenmark",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5003530/Wardenmark/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5003530/e865b9b96a77abe3b6113f5948319b16c9d2cb73/capsule_231x87.jpg?t=1787244370",
-      "categories": [
-        "Aksiyon",
-        "RPG",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-5ebd4f15e",
-      "title": "Mitobit",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3781890/Mitobit/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3781890/5d657134adb299d9fee5b32b0af9270d4e3f1b1f/capsule_231x87.jpg?t=1785614664",
-      "categories": [
-        "Aksiyon",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-f8de90acd",
-      "title": "Vice Signalling",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4836310/Vice_Signalling/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836310/ddc63ed3098daa38d1f01dda4ac77ab7c2e54379/capsule_231x87.jpg?t=1787167248",
-      "categories": [
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-4e991bd30",
       "title": "how to kill a fly [ H2KAF ]",
       "kind": "coming_soon",
@@ -314,18 +285,6 @@
       "dateLabel": "20 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4566700/6432070b7e32d7f88401de95e3903c54e408c014/capsule_231x87.jpg?t=1787238969",
       "categories": []
-    },
-    {
-      "id": "steam-news-a21aec9df",
-      "title": "IAH: INTERNET WAR",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/304770/IAH_INTERNET_WAR/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304770/7482aa31f5c9223597984b6cc0cbb58ac3f455ce/capsule_231x87.jpg?t=1787243493",
-      "categories": [
-        "Strateji",
-        "Aksiyon"
-      ]
     },
     {
       "id": "steam-news-22b2c5d58",
@@ -338,6 +297,18 @@
         "Gündelik",
         "Simülasyon",
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-a21aec9df",
+      "title": "IAH: INTERNET WAR",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/304770/IAH_INTERNET_WAR/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304770/7482aa31f5c9223597984b6cc0cbb58ac3f455ce/capsule_231x87.jpg?t=1787243493",
+      "categories": [
+        "Strateji",
+        "Aksiyon"
       ]
     },
     {
@@ -414,14 +385,18 @@
       ]
     },
     {
-      "id": "steam-news-c21db55d1",
-      "title": "Drunken Rogue",
+      "id": "steam-news-efb0c66ed",
+      "title": "全网有点怪",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2836990/Drunken_Rogue/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4243330/_/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2836990/c84095aa0f72cf5f61007f0dd6b48a1d1409f0be/capsule_231x87.jpg?t=1787206174",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4243330/7bafd753ced994ee0f83d2afc5544e35e12062a0/capsule_231x87.jpg?t=1787039173",
       "categories": [
-        "RPG"
+        "RPG",
+        "Gündelik",
+        "Simülasyon",
+        "Strateji",
+        "Macera"
       ]
     },
     {
@@ -436,18 +411,14 @@
       ]
     },
     {
-      "id": "steam-news-efb0c66ed",
-      "title": "全网有点怪",
+      "id": "steam-news-c21db55d1",
+      "title": "Drunken Rogue",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4243330/_/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2836990/Drunken_Rogue/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4243330/7bafd753ced994ee0f83d2afc5544e35e12062a0/capsule_231x87.jpg?t=1787039173",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2836990/c84095aa0f72cf5f61007f0dd6b48a1d1409f0be/capsule_231x87.jpg?t=1787206174",
       "categories": [
-        "RPG",
-        "Gündelik",
-        "Simülasyon",
-        "Strateji",
-        "Macera"
+        "RPG"
       ]
     },
     {
@@ -566,6 +537,28 @@
       "categories": [
         "Simülasyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-b002dddc7",
+      "title": "Print I Love U",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4796160/Print_I_Love_U/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4796160/83730f8b1691d56512d4692c052772f003d9ad26/capsule_231x87.jpg?t=1786613288",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-673d174a9",
+      "title": "Two Years Later",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5036210/Two_Years_Later/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5036210/ba7cabaea8338572b58e3da57139da0bcb07fe39/capsule_231x87.jpg?t=1786922279",
+      "categories": [
+        "Macera"
       ]
     },
     {
