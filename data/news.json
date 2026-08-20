@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-20T09:23:55.285Z",
+  "generatedAt": "2026-08-20T09:59:25.796Z",
   "items": [
+    {
+      "id": "steam-news-cad10b51e",
+      "title": "Roll to Ruin",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4772010/Roll_to_Ruin/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4772010/235f017cc6f2d3c5b2be481e3f95d8de21031370/capsule_231x87.jpg?t=1787219581",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-fe94f30b4",
+      "title": "Nova Fleet",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4586750/Nova_Fleet/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4586750/4ac34bf5bbab2b74773ede3e55c62e43f9d6718c/capsule_231x87.jpg?t=1787218549",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-14eb68a5d",
       "title": "Loop of Agony",
@@ -53,7 +77,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4289150/Can_Your_Otaku_Cabinet_Grow_a_Beautiful_Girl/?snr=1_7_7_230_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289150/b96baa63f36f273e83024d6f1d083f373145e644/capsule_231x87.jpg?t=1787217770",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289150/b96baa63f36f273e83024d6f1d083f373145e644/capsule_231x87.jpg?t=1787218623",
       "categories": []
     },
     {
@@ -253,50 +277,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-378ee472c",
-      "title": "Surfing the Web With the Alien",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4712850/Surfing_the_Web_With_the_Alien/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4712850/de08fbf3362534575767576503bd7596ac427151/capsule_231x87.jpg?t=1787198979",
-      "categories": []
-    },
-    {
-      "id": "steam-news-108c520a6",
-      "title": "Arcanum Collegium",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4926910/Arcanum_Collegium/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926910/19023b0be3b0b3a88a1e55c227c09ed6d48b5c3c/capsule_231x87.jpg?t=1787198629",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-75f6fe79f",
-      "title": "Nova Fleet",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4586750/Nova_Fleet/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4586750/4ac34bf5bbab2b74773ede3e55c62e43f9d6718c/capsule_231x87.jpg?t=1787157992",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-c716377c9",
-      "title": "Wuwei Cultivation",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5070160/Wuwei_Cultivation/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5070160/b1456091b84a9ea7d807a479caa303fff839e999/capsule_231x87.jpg?t=1787108764",
-      "categories": [
-        "Gündelik",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-ec82a17d5",
       "title": "File Tower Defence",
       "kind": "coming_soon",
@@ -331,6 +311,17 @@
       ]
     },
     {
+      "id": "steam-news-47944debd",
+      "title": "False Alarm",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3688650/False_Alarm/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3688650/1acd95e1e3a0e4cf4d5f4a4d4840e4979c11bb1f/capsule_231x87.jpg?t=1786882581",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-ae90a35e8",
       "title": "Ground Zero Hero",
       "kind": "coming_soon",
@@ -339,17 +330,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2570580/f4c83dd016d40b91484bc213e2004556cb95e90b/capsule_231x87.jpg?t=1787195793",
       "categories": [
         "Tek Oyunculu",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-47944debd",
-      "title": "False Alarm",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3688650/False_Alarm/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3688650/1acd95e1e3a0e4cf4d5f4a4d4840e4979c11bb1f/capsule_231x87.jpg?t=1786882581",
-      "categories": [
         "Aksiyon"
       ]
     },
@@ -378,17 +358,6 @@
       ]
     },
     {
-      "id": "steam-news-926624ae8",
-      "title": "Meowmories",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4110900/Meowmories/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4110900/798311e4c36a967c3fea6f3b18b019c95aa64b9d/capsule_231x87.jpg?t=1787151951",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-982626938",
       "title": "Plinkomancy",
       "kind": "coming_soon",
@@ -398,6 +367,17 @@
       "categories": [
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-926624ae8",
+      "title": "Meowmories",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4110900/Meowmories/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4110900/798311e4c36a967c3fea6f3b18b019c95aa64b9d/capsule_231x87.jpg?t=1787151951",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -460,15 +440,16 @@
       ]
     },
     {
-      "id": "steam-news-563197a7c",
-      "title": "Theropods",
+      "id": "steam-news-731887771",
+      "title": "Just Anomaly: Hospital",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1091870/Theropods/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4943220/Just_Anomaly_Hospital/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091870/6575e831f9b137a7d82c2d9584c0db9a0e88612c/capsule_231x87.jpg?t=1787127359",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943220/1abc7cf38fcb9f1e09adab7d70f37c4337e5011a/capsule_231x87.jpg?t=1787187922",
       "categories": [
-        "Macera",
-        "Tek Oyunculu"
+        "Korku",
+        "Aksiyon",
+        "Macera"
       ]
     },
     {
@@ -484,18 +465,6 @@
       ]
     },
     {
-      "id": "steam-news-cafd997d3",
-      "title": "Deep Blue Sushi",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4005220/Deep_Blue_Sushi/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4005220/b1f0d07b19166ac9a33b65e159e398265ef5bcef/capsule_231x87.jpg?t=1787055563",
-      "categories": [
-        "Bağımsız",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-eb12aec03",
       "title": "Sensory Overload",
       "kind": "coming_soon",
@@ -505,6 +474,41 @@
       "categories": [
         "Aksiyon",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-563197a7c",
+      "title": "Theropods",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1091870/Theropods/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091870/6575e831f9b137a7d82c2d9584c0db9a0e88612c/capsule_231x87.jpg?t=1787218262",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-a2c94ccdf",
+      "title": "Mexican Ninja",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3764970/Mexican_Ninja/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764970/31c8a2c8d7044f51181f5718d4a150fc496a62ce/capsule_231x87.jpg?t=1787152417",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-cafd997d3",
+      "title": "Deep Blue Sushi",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4005220/Deep_Blue_Sushi/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4005220/b1f0d07b19166ac9a33b65e159e398265ef5bcef/capsule_231x87.jpg?t=1787055563",
+      "categories": [
+        "Bağımsız",
+        "Macera"
       ]
     },
     {
@@ -525,33 +529,32 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4117730/Slayblade/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4117730/76ba17af014980199e1c05bccf1640714827048a/capsule_231x87.jpg?t=1787216415",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4117730/76ba17af014980199e1c05bccf1640714827048a/capsule_231x87.jpg?t=1787219305",
       "categories": [
         "Gündelik"
       ]
     },
     {
-      "id": "steam-news-731887771",
-      "title": "Just Anomaly: Hospital",
+      "id": "steam-news-ff1f02b08",
+      "title": "探访神明Searching for the Divine ~Prologue of the Journey",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4943220/Just_Anomaly_Hospital/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4963350/Searching_for_the_Divine_Prologue_of_the_Journey/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943220/1abc7cf38fcb9f1e09adab7d70f37c4337e5011a/capsule_231x87.jpg?t=1787187922",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963350/06152ecd645bc0bf50f5905af20f5dd2965856f2/capsule_231x87.jpg?t=1787028948",
       "categories": [
-        "Korku",
-        "Aksiyon",
-        "Macera"
+        "RPG",
+        "Aksiyon"
       ]
     },
     {
-      "id": "steam-news-a2c94ccdf",
-      "title": "Mexican Ninja",
+      "id": "steam-news-d2ef55f8d",
+      "title": "Summon Stone",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3764970/Mexican_Ninja/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4022890/Summon_Stone/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764970/31c8a2c8d7044f51181f5718d4a150fc496a62ce/capsule_231x87.jpg?t=1787152417",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4022890/20a47e7c45420c9b8009c8adb630da9e3af2753a/capsule_231x87.jpg?t=1786477172",
       "categories": [
-        "Aksiyon"
+        "Gündelik"
       ]
     },
     {
