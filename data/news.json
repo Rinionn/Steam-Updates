@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-20T18:02:11.547Z",
+  "generatedAt": "2026-08-20T18:54:06.327Z",
   "items": [
+    {
+      "id": "steam-news-e5d2680bc",
+      "title": "Medieval Fantasy Blacksmith Shop",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5007970/Medieval_Fantasy_Blacksmith_Shop/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5007970/ae8449780439ae0c56593777f15062bccdfb23d0/capsule_231x87.jpg?t=1787250644",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-75b63d339",
+      "title": "Earth Simulator",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4932460/Earth_Simulator/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4932460/b9e694b928875f5ab77ec7d3e04a727bc5a73d67/capsule_231x87.jpg?t=1787249034",
+      "categories": [
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-1ef743c5c",
       "title": "Helmet",
@@ -103,6 +126,15 @@
         "Gündelik",
         "Aksiyon"
       ]
+    },
+    {
+      "id": "steam-news-bd3b4f795",
+      "title": "Roomballs",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2882310/Roomballs/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2882310/5d032a23811990222cd5b9da6ceb6f74a25631d7/capsule_231x87.jpg?t=1787245297",
+      "categories": []
     },
     {
       "id": "steam-news-f637fb53b",
@@ -244,40 +276,6 @@
       ]
     },
     {
-      "id": "steam-news-1017f19c0",
-      "title": "2nd EVE",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3516780/2nd_EVE/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3516780/6578282047fe08009ce92683397c682f67c13c19/capsule_231x87.jpg?t=1787244897",
-      "categories": [
-        "RPG",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-799f7d650",
-      "title": "Echoscope",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5016230/Echoscope/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5016230/17ad8b4f112812ac7065588641c114a9e9e56b83/capsule_231x87.jpg?t=1787244857",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-43c71f877",
-      "title": "Odd's Job",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3992420/Odds_Job/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3992420/d5cff8bd3cb95c27835b61e387ec9cb3c9de2c85/capsule_231x87.jpg?t=1787244761",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-4e991bd30",
       "title": "how to kill a fly [ H2KAF ]",
       "kind": "coming_soon",
@@ -374,14 +372,14 @@
       ]
     },
     {
-      "id": "steam-news-c806c5547",
-      "title": "Rune Robin's Dreamscape",
+      "id": "steam-news-c21db55d1",
+      "title": "Drunken Rogue",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4882570/Rune_Robins_Dreamscape/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2836990/Drunken_Rogue/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4882570/8d0975b546193f3088af6d0a45f8c48d9eaa3a4c/capsule_231x87.jpg?t=1785402463",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2836990/c84095aa0f72cf5f61007f0dd6b48a1d1409f0be/capsule_231x87.jpg?t=1787206174",
       "categories": [
-        "Aksiyon"
+        "RPG"
       ]
     },
     {
@@ -400,6 +398,17 @@
       ]
     },
     {
+      "id": "steam-news-c806c5547",
+      "title": "Rune Robin's Dreamscape",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4882570/Rune_Robins_Dreamscape/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4882570/8d0975b546193f3088af6d0a45f8c48d9eaa3a4c/capsule_231x87.jpg?t=1785402463",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-257f78d40",
       "title": "Lazy Witch's Factory",
       "kind": "coming_soon",
@@ -408,17 +417,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3971650/6d0bc7d6fafc9065b2d26d622c6a70cbf37f6b1c/capsule_231x87.jpg?t=1787210255",
       "categories": [
         "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-c21db55d1",
-      "title": "Drunken Rogue",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2836990/Drunken_Rogue/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2836990/c84095aa0f72cf5f61007f0dd6b48a1d1409f0be/capsule_231x87.jpg?t=1787206174",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -471,6 +469,18 @@
       ]
     },
     {
+      "id": "steam-news-27aeb42ae",
+      "title": "The Expansion",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4939820/The_Expansion/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4939820/bdffedb02628908b07c8750dd469e92457a352c1/capsule_231x87.jpg?t=1785875515",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
+    },
+    {
       "id": "steam-news-f97673af9",
       "title": "Twin Balls Journey",
       "kind": "coming_soon",
@@ -480,18 +490,6 @@
       "categories": [
         "Aksiyon",
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-2827e4ed7",
-      "title": "I CAN'T STOP WINNING!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4859040/I_CANT_STOP_WINNING/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4859040/bd9f22a5b8cfb2cdb428181cee2a8d9e448a3ecb/capsule_231x87.jpg?t=1782457163",
-      "categories": [
-        "Gündelik",
-        "Strateji"
       ]
     },
     {
@@ -507,15 +505,15 @@
       ]
     },
     {
-      "id": "steam-news-27aeb42ae",
-      "title": "The Expansion",
+      "id": "steam-news-2827e4ed7",
+      "title": "I CAN'T STOP WINNING!",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4939820/The_Expansion/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4859040/I_CANT_STOP_WINNING/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4939820/bdffedb02628908b07c8750dd469e92457a352c1/capsule_231x87.jpg?t=1785875515",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4859040/bd9f22a5b8cfb2cdb428181cee2a8d9e448a3ecb/capsule_231x87.jpg?t=1782457163",
       "categories": [
-        "Macera",
-        "Korku"
+        "Gündelik",
+        "Strateji"
       ]
     },
     {
