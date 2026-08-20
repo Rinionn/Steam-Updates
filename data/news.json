@@ -1,6 +1,36 @@
 {
-  "generatedAt": "2026-08-20T08:04:33.622Z",
+  "generatedAt": "2026-08-20T08:52:33.699Z",
   "items": [
+    {
+      "id": "steam-news-b0791004d",
+      "title": "Can Your Otaku Cabinet Grow a Beautiful Girl?",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4289150/Can_Your_Otaku_Cabinet_Grow_a_Beautiful_Girl/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289150/b96baa63f36f273e83024d6f1d083f373145e644/capsule_231x87.jpg?t=1787214926",
+      "categories": []
+    },
+    {
+      "id": "steam-news-39d23a8be",
+      "title": "Planet Fatta",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5014070/Planet_Fatta/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5014070/9991dced828d94ca4809432911107cc6565dc86c/capsule_231x87.jpg?t=1787213992",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-6b988751d",
+      "title": "KERF: Sawmill Tycoon",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5010520/KERF_Sawmill_Tycoon/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5010520/eaaeb8b507b116cafbcc2f62817b008f8a563162/capsule_231x87.jpg?t=1787213524",
+      "categories": []
+    },
     {
       "id": "steam-news-93493a4d1",
       "title": "Prey of The Wild",
@@ -248,77 +278,6 @@
       ]
     },
     {
-      "id": "steam-news-949b1a5a6",
-      "title": "YuYuGram",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5031010/YuYuGram/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5031010/a4f29646ddbdc66f4af9d8cf25d18753dde792f8/capsule_231x87.jpg?t=1787191217",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-79c3c41a9",
-      "title": "Arms Dealer",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4698270/Arms_Dealer/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4698270/25f38fe4c19eba36efb35982704f8127b55a3063/capsule_231x87.jpg?t=1787192546",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-efd5836fa",
-      "title": "Shao Song I",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4292950/Shao_Song_I/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4292950/f28bc20a58175ed3e167b6a1b6e17d341e2e9bef/capsule_231x87.jpg?t=1787201131",
-      "categories": [
-        "RPG",
-        "Strateji",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-d0e0aeb9e",
-      "title": "Astro beasts",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4699150/Astro_beasts/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4699150/fab1ce887470155e927f203336e24ad4bd00552d/capsule_231x87.jpg?t=1782231264",
-      "categories": [
-        "Bağımsız",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-47137b026",
-      "title": "Fairysite",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3467750/Fairysite/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3467750/1b45bbb8395f953aa31fd21c2460ee8971daeadf/capsule_231x87.jpg?t=1782411065",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-118b35990",
-      "title": "Planet Fatta",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5014070/Planet_Fatta/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5014070/9991dced828d94ca4809432911107cc6565dc86c/capsule_231x87.jpg?t=1786081502",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-75f6fe79f",
       "title": "Nova Fleet",
       "kind": "coming_soon",
@@ -377,6 +336,18 @@
       ]
     },
     {
+      "id": "steam-news-ae90a35e8",
+      "title": "Ground Zero Hero",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2570580/Ground_Zero_Hero/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2570580/f4c83dd016d40b91484bc213e2004556cb95e90b/capsule_231x87.jpg?t=1787195793",
+      "categories": [
+        "Tek Oyunculu",
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-47944debd",
       "title": "False Alarm",
       "kind": "coming_soon",
@@ -396,18 +367,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3196440/340a42b4587a124e7352a28c42765479631ddafd/capsule_231x87.jpg?t=1785688193",
       "categories": [
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-ae90a35e8",
-      "title": "Ground Zero Hero",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2570580/Ground_Zero_Hero/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2570580/f4c83dd016d40b91484bc213e2004556cb95e90b/capsule_231x87.jpg?t=1787195793",
-      "categories": [
-        "Tek Oyunculu",
-        "Aksiyon"
       ]
     },
     {
@@ -435,18 +394,6 @@
       ]
     },
     {
-      "id": "steam-news-982626938",
-      "title": "Plinkomancy",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4006600/Plinkomancy/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4006600/38397bf577d2a44e18fed36d65e27dd1ede0819e/capsule_231x87.jpg?t=1786471827",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-c16ade797",
       "title": "Mortal Shell II",
       "kind": "coming_soon",
@@ -468,6 +415,18 @@
         "Simülasyon",
         "Strateji",
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-982626938",
+      "title": "Plinkomancy",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4006600/Plinkomancy/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4006600/38397bf577d2a44e18fed36d65e27dd1ede0819e/capsule_231x87.jpg?t=1786471827",
+      "categories": [
+        "Strateji",
+        "Gündelik"
       ]
     },
     {
@@ -495,14 +454,28 @@
       ]
     },
     {
-      "id": "steam-news-4f9c73235",
-      "title": "Wyrm Words",
+      "id": "steam-news-563197a7c",
+      "title": "Theropods",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3350960/Wyrm_Words/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/1091870/Theropods/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3350960/3a6eb4315f998525014019bff45993a8fb37b1ce/capsule_231x87.jpg?t=1783607983",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091870/6575e831f9b137a7d82c2d9584c0db9a0e88612c/capsule_231x87.jpg?t=1787127359",
       "categories": [
-        "Strateji"
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-731887771",
+      "title": "Just Anomaly: Hospital",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4943220/Just_Anomaly_Hospital/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943220/1abc7cf38fcb9f1e09adab7d70f37c4337e5011a/capsule_231x87.jpg?t=1787187922",
+      "categories": [
+        "Korku",
+        "Aksiyon",
+        "Macera"
       ]
     },
     {
@@ -530,6 +503,17 @@
       ]
     },
     {
+      "id": "steam-news-4f9c73235",
+      "title": "Wyrm Words",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3350960/Wyrm_Words/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3350960/3a6eb4315f998525014019bff45993a8fb37b1ce/capsule_231x87.jpg?t=1783607983",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-a2c94ccdf",
       "title": "Mexican Ninja",
       "kind": "coming_soon",
@@ -538,6 +522,29 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764970/31c8a2c8d7044f51181f5718d4a150fc496a62ce/capsule_231x87.jpg?t=1787152417",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-ba33f1ebb",
+      "title": "Slayblade",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4117730/Slayblade/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4117730/76ba17af014980199e1c05bccf1640714827048a/capsule_231x87.jpg?t=1786023255",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-b241fa38f",
+      "title": "How to Fish",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4001890/How_to_Fish/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4001890/8f65bb2b78d37a9147aa79c970a51610e6955bf1/capsule_231x87.jpg?t=1786796338",
+      "categories": [
+        "Çok Oyunculu",
+        "Macera"
       ]
     },
     {
@@ -550,18 +557,6 @@
       "categories": [
         "Bağımsız",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-563197a7c",
-      "title": "Theropods",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1091870/Theropods/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091870/6575e831f9b137a7d82c2d9584c0db9a0e88612c/capsule_231x87.jpg?t=1787127359",
-      "categories": [
-        "Macera",
-        "Tek Oyunculu"
       ]
     },
     {
