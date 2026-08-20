@@ -1,6 +1,43 @@
 {
-  "generatedAt": "2026-08-20T22:01:16.927Z",
+  "generatedAt": "2026-08-20T22:37:32.872Z",
   "items": [
+    {
+      "id": "steam-news-7c5a461f0",
+      "title": "Sleep Aid",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5016550/Sleep_Aid/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5016550/616aa57fd855928e981e5adccaaff63fbc8b504d/capsule_231x87.jpg?t=1787264275",
+      "categories": [
+        "Korku",
+        "Macera",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-3c8d37860",
+      "title": "DeadEye: A Roguelike Shooter",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4312890/DeadEye_A_Roguelike_Shooter/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4312890/01c44db5be38eb7e57f890c69bea8faec1bee907/capsule_231x87.jpg?t=1787264259",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-89c7ad25f",
+      "title": "Sunlit Kingdom",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5011470/Sunlit_Kingdom/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5011470/5c9522b9d9f44d8000ca718fd95f48c58b7ccf6c/capsule_231x87.jpg?t=1787264259",
+      "categories": [
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-e13cbbac3",
       "title": "White Dwarf",
@@ -242,37 +279,6 @@
       ]
     },
     {
-      "id": "steam-news-bd3b4f795",
-      "title": "Roomballs",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2882310/Roomballs/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2882310/5d032a23811990222cd5b9da6ceb6f74a25631d7/capsule_231x87.jpg?t=1787245297",
-      "categories": []
-    },
-    {
-      "id": "steam-news-f637fb53b",
-      "title": "Cozy Marbles",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2836460/Cozy_Marbles/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2836460/29d4f05204d7b5f779fc6d63f70c38d57a6e5c48/capsule_231x87.jpg?t=1787245773",
-      "categories": [
-        "Yarış"
-      ]
-    },
-    {
-      "id": "steam-news-646bb02f9",
-      "title": "Capote",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3345950/Capote/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3345950/f3cde8555b34842b76a9fadcc6317035e714677e/capsule_231x87_alt_assets_0.jpg?t=1787245465",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-27aeb42ae",
       "title": "The Expansion",
       "kind": "coming_soon",
@@ -376,6 +382,17 @@
       ]
     },
     {
+      "id": "steam-news-6fa0dc6c6",
+      "title": "AI Pixel Battle",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3994120/AI_Pixel_Battle/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994120/21d885cae561c273508aac673dcaccf3b71e2ebc/capsule_231x87.jpg?t=1787020436",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-0d92a597a",
       "title": "The Legend of Fireball",
       "kind": "coming_soon",
@@ -385,17 +402,6 @@
       "categories": [
         "RPG",
         "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-6fa0dc6c6",
-      "title": "AI Pixel Battle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3994120/AI_Pixel_Battle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994120/21d885cae561c273508aac673dcaccf3b71e2ebc/capsule_231x87.jpg?t=1787020436",
-      "categories": [
         "Simülasyon"
       ]
     },
