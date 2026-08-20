@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-20T05:18:59.079Z",
+  "generatedAt": "2026-08-20T05:52:29.393Z",
   "items": [
+    {
+      "id": "steam-news-ec35c0874",
+      "title": "Ghost Buster:Village",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4354710/Ghost_BusterVillage/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354710/a7714d1a841f192596a253c013325effcbf03a8f/capsule_231x87.jpg?t=1787203671",
+      "categories": [
+        "Korku"
+      ]
+    },
     {
       "id": "steam-news-5d3df6e2b",
       "title": "Contraband: Edge of the Fold",
@@ -273,31 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-538818826",
-      "title": "NEVER HAPPENED",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4960800/NEVER_HAPPENED/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4960800/844237d1e60ea0c2eb9c07384422c41d408c8695/capsule_231x87.jpg?t=1787175777",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-bc2b51064",
-      "title": "Deckalypse",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1334390/Deckalypse/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1334390/63cc180f6643a393d660a64f6d2ebfa4016afce0/capsule_231x87.jpg?t=1786135518",
-      "categories": [
-        "Macera",
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-863626a35",
       "title": "Backyard Paintball",
       "kind": "coming_soon",
@@ -320,14 +306,16 @@
       ]
     },
     {
-      "id": "steam-news-7e2c1bfe2",
-      "title": "Ghost Buster:Village",
+      "id": "steam-news-bc2b51064",
+      "title": "Deckalypse",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4354710/Ghost_BusterVillage/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/1334390/Deckalypse/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354710/a7714d1a841f192596a253c013325effcbf03a8f/capsule_231x87.jpg?t=1786713669",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1334390/63cc180f6643a393d660a64f6d2ebfa4016afce0/capsule_231x87.jpg?t=1786135518",
       "categories": [
-        "Korku"
+        "Macera",
+        "Gündelik",
+        "Strateji"
       ]
     },
     {
@@ -478,17 +466,6 @@
       ]
     },
     {
-      "id": "steam-news-47944debd",
-      "title": "False Alarm",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3688650/False_Alarm/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3688650/1acd95e1e3a0e4cf4d5f4a4d4840e4979c11bb1f/capsule_231x87.jpg?t=1786882581",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-ae90a35e8",
       "title": "Ground Zero Hero",
       "kind": "coming_soon",
@@ -497,6 +474,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2570580/f4c83dd016d40b91484bc213e2004556cb95e90b/capsule_231x87.jpg?t=1787195793",
       "categories": [
         "Tek Oyunculu",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-47944debd",
+      "title": "False Alarm",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3688650/False_Alarm/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3688650/1acd95e1e3a0e4cf4d5f4a4d4840e4979c11bb1f/capsule_231x87.jpg?t=1786882581",
+      "categories": [
         "Aksiyon"
       ]
     },
@@ -545,6 +533,19 @@
       "categories": [
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d693d55ab",
+      "title": "Gallipoli",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3065940/Gallipoli/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3065940/8241f8f3e49226d916e09f31f642fb0f5d05f463/capsule_231x87.jpg?t=1787151673",
+      "categories": [
+        "Simülasyon",
+        "Strateji",
+        "Çok Oyunculu"
       ]
     },
     {
