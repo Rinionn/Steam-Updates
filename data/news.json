@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T23:02:36.419Z",
+  "generatedAt": "2026-08-20T23:34:45.142Z",
   "items": [
     {
       "id": "steam-news-50b08e742",
@@ -31,7 +31,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/5016550/Sleep_Aid/?snr=1_7_7_230_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5016550/616aa57fd855928e981e5adccaaff63fbc8b504d/capsule_231x87.jpg?t=1787264275",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5016550/616aa57fd855928e981e5adccaaff63fbc8b504d/capsule_231x87.jpg?t=1787268361",
       "categories": [
         "Korku",
         "Macera",
@@ -278,6 +278,18 @@
       ]
     },
     {
+      "id": "steam-news-f97673af9",
+      "title": "Twin Balls Journey",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4216750/Twin_Balls_Journey/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4216750/9d32a0b936b793b778ecbce05c0f618531fbd144/capsule_231x87.jpg?t=1785293873",
+      "categories": [
+        "Aksiyon",
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-27aeb42ae",
       "title": "The Expansion",
       "kind": "coming_soon",
@@ -299,18 +311,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-f97673af9",
-      "title": "Twin Balls Journey",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4216750/Twin_Balls_Journey/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4216750/9d32a0b936b793b778ecbce05c0f618531fbd144/capsule_231x87.jpg?t=1785293873",
-      "categories": [
-        "Aksiyon",
-        "RPG"
       ]
     },
     {
@@ -511,18 +511,6 @@
       ]
     },
     {
-      "id": "steam-news-52b62b037",
-      "title": "Taste of the Wind",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3222890/Taste_of_the_Wind/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3222890/cdf1efc7a66bb03102d7f96f8bf7cce9bcb98c07/capsule_231x87.jpg?t=1785223795",
-      "categories": [
-        "RPG",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-69fc721e3",
       "title": "Minsgon Simulator",
       "kind": "coming_soon",
@@ -545,6 +533,18 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-52b62b037",
+      "title": "Taste of the Wind",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3222890/Taste_of_the_Wind/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3222890/cdf1efc7a66bb03102d7f96f8bf7cce9bcb98c07/capsule_231x87.jpg?t=1785223795",
+      "categories": [
+        "RPG",
+        "Tek Oyunculu"
       ]
     },
     {
