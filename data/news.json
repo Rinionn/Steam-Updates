@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-20T22:37:32.872Z",
+  "generatedAt": "2026-08-20T23:02:36.419Z",
   "items": [
+    {
+      "id": "steam-news-50b08e742",
+      "title": "IAH: INTERNET WAR",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/304770/IAH_INTERNET_WAR/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304770/7482aa31f5c9223597984b6cc0cbb58ac3f455ce/capsule_231x87.jpg?t=1787266137",
+      "categories": [
+        "Strateji",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-f82eb1cbd",
+      "title": "The Falling Hospital",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4998500/The_Falling_Hospital/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998500/e417cbcac1eb3f48936d42cfef052bfdb57870bb/capsule_231x87.jpg?t=1787265556",
+      "categories": [
+        "Korku",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-7c5a461f0",
       "title": "Sleep Aid",
@@ -254,31 +278,6 @@
       ]
     },
     {
-      "id": "steam-news-b4b5be18c",
-      "title": "Entity Research Group",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4038080/Entity_Research_Group/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4038080/8c601af0882b09c1882b8609ac9814caaba8fc4e/capsule_231x87.jpg?t=1787246495",
-      "categories": [
-        "Korku",
-        "Çok Oyunculu",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-49f8f0c82",
-      "title": "Friends Before Enemies",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4987290/Friends_Before_Enemies/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4987290/9a12e54d0dbbb7bed92d867cbd0e60fbd6e28325/capsule_231x87.jpg?t=1787245308",
-      "categories": [
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-27aeb42ae",
       "title": "The Expansion",
       "kind": "coming_soon",
@@ -382,17 +381,6 @@
       ]
     },
     {
-      "id": "steam-news-6fa0dc6c6",
-      "title": "AI Pixel Battle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3994120/AI_Pixel_Battle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994120/21d885cae561c273508aac673dcaccf3b71e2ebc/capsule_231x87.jpg?t=1787020436",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-0d92a597a",
       "title": "The Legend of Fireball",
       "kind": "coming_soon",
@@ -402,6 +390,17 @@
       "categories": [
         "RPG",
         "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-6fa0dc6c6",
+      "title": "AI Pixel Battle",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3994120/AI_Pixel_Battle/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994120/21d885cae561c273508aac673dcaccf3b71e2ebc/capsule_231x87.jpg?t=1787020436",
+      "categories": [
         "Simülasyon"
       ]
     },
