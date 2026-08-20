@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-08-20T03:06:50.264Z",
+  "generatedAt": "2026-08-20T03:58:38.595Z",
   "items": [
+    {
+      "id": "steam-news-108c520a6",
+      "title": "Arcanum Collegium",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4926910/Arcanum_Collegium/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926910/19023b0be3b0b3a88a1e55c227c09ed6d48b5c3c/capsule_231x87.jpg?t=1787196211",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-ad1b6ca57",
+      "title": "Media Basket Manager",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4924370/Media_Basket_Manager/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4924370/ced0067ed811a09995704e851cf7c68bbfc251fc/capsule_231x87.jpg?t=1787195502",
+      "categories": [
+        "Spor",
+        "Strateji",
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-efffe8bdc",
       "title": "H3LLV3TE",
@@ -264,31 +289,6 @@
       ]
     },
     {
-      "id": "steam-news-6715f6462",
-      "title": "Mines.Cafe",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4538270/MinesCafe/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4538270/4431de27435207a5a0bcae60ca6908f4e588706c/capsule_231x87.jpg?t=1787170317",
-      "categories": [
-        "Aksiyon",
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-bc0a00a60",
-      "title": "Light & Glory",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5032980/Light__Glory/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5032980/ec75ace5ecd38e66f28d76a444af7f7da10ceb03/capsule_231x87.jpg?t=1787168686",
-      "categories": [
-        "Strateji",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-bc2b51064",
       "title": "Deckalypse",
       "kind": "coming_soon",
@@ -299,6 +299,17 @@
         "Macera",
         "Gündelik",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-b49c4bcd8",
+      "title": "PengPong",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2766910/PengPong/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2766910/4c9e595611021f83827cc05a23f630f816f7e335/capsule_231x87.jpg?t=1787194110",
+      "categories": [
+        "Tek Oyunculu"
       ]
     },
     {
@@ -321,17 +332,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354710/a7714d1a841f192596a253c013325effcbf03a8f/capsule_231x87.jpg?t=1786713669",
       "categories": [
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-b49c4bcd8",
-      "title": "PengPong",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2766910/PengPong/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2766910/4c9e595611021f83827cc05a23f630f816f7e335/capsule_231x87.jpg?t=1787194110",
-      "categories": [
-        "Tek Oyunculu"
       ]
     },
     {
@@ -361,7 +361,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4289150/Can_Your_Otaku_Cabinet_Grow_a_Beautiful_Girl/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289150/b96baa63f36f273e83024d6f1d083f373145e644/capsule_231x87.jpg?t=1786995529",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4289150/b96baa63f36f273e83024d6f1d083f373145e644/capsule_231x87.jpg?t=1787195888",
       "categories": []
     },
     {
@@ -482,18 +482,6 @@
       ]
     },
     {
-      "id": "steam-news-ae90a35e8",
-      "title": "Ground Zero Hero",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2570580/Ground_Zero_Hero/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2570580/f4c83dd016d40b91484bc213e2004556cb95e90b/capsule_231x87.jpg?t=1787192955",
-      "categories": [
-        "Tek Oyunculu",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-1bb52af41",
       "title": "Vacation Cafe Simulator",
       "kind": "coming_soon",
@@ -502,6 +490,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3196440/340a42b4587a124e7352a28c42765479631ddafd/capsule_231x87.jpg?t=1785688193",
       "categories": [
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-ae90a35e8",
+      "title": "Ground Zero Hero",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2570580/Ground_Zero_Hero/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2570580/f4c83dd016d40b91484bc213e2004556cb95e90b/capsule_231x87.jpg?t=1787195793",
+      "categories": [
+        "Tek Oyunculu",
+        "Aksiyon"
       ]
     },
     {
@@ -552,14 +552,16 @@
       ]
     },
     {
-      "id": "steam-news-c16ade797",
-      "title": "Mortal Shell II",
+      "id": "steam-news-d693d55ab",
+      "title": "Gallipoli",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2584270/Mortal_Shell_II/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3065940/Gallipoli/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2584270/be45d87c9974a36f690480bceb01f03987a0c23a/capsule_231x87.jpg?t=1787146410",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3065940/8241f8f3e49226d916e09f31f642fb0f5d05f463/capsule_231x87.jpg?t=1787151673",
       "categories": [
-        "Tek Oyunculu"
+        "Simülasyon",
+        "Strateji",
+        "Çok Oyunculu"
       ]
     },
     {
