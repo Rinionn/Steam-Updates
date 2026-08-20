@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-08-20T23:34:45.142Z",
+  "generatedAt": "2026-08-20T23:56:06.055Z",
   "items": [
+    {
+      "id": "steam-news-a107c3849",
+      "title": "HYPER PRIMATE",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2124360/HYPER_PRIMATE/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2124360/f4d18d8469bc72bf25b1530bc6939ee9e2ddbba0/capsule_231x87.jpg?t=1787269637",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-0955f4b7c",
+      "title": "Throne of Cards",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4559060/Throne_of_Cards/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4559060/6cf1c3953d972d4d104347a44718004e07f72a55/capsule_231x87.jpg?t=1787269471",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-478b54250",
+      "title": "Vivere Retro",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4303290/Vivere_Retro/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4303290/bb414c28abaa0c3bf8a66a6dee3f22a44fb1d84e/capsule_231x87.jpg?t=1787268961",
+      "categories": [
+        "Aksiyon",
+        "Korku"
+      ]
+    },
     {
       "id": "steam-news-50b08e742",
       "title": "IAH: INTERNET WAR",
@@ -246,47 +280,15 @@
       ]
     },
     {
-      "id": "steam-news-1f635b184",
-      "title": "Gun Shop Manager",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3656640/Gun_Shop_Manager/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3656640/b229405d7bebce509ae61cae4b4bf92d47e37a37/capsule_231x87.jpg?t=1787247016",
-      "categories": []
-    },
-    {
-      "id": "steam-news-12c12119a",
-      "title": "One More HIt",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4951890/One_More_HIt/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951890/9fa48f90016c6bd16584caffafbcbb5784aa2b16/capsule_231x87.jpg?t=1787247007",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-f528b5dbe",
-      "title": "Rélyora",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5035540/Relyora/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5035540/5e3562eb18fe2ed02d2927251ae215d2c3b4ef68/capsule_231x87.jpg?t=1787254946",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-f97673af9",
-      "title": "Twin Balls Journey",
+      "id": "steam-news-39fdcb528",
+      "title": "The Last Portal",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4216750/Twin_Balls_Journey/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5050310/The_Last_Portal/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4216750/9d32a0b936b793b778ecbce05c0f618531fbd144/capsule_231x87.jpg?t=1785293873",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050310/779e73d86166989144744574eb7c60cc545fcb02/capsule_231x87.jpg?t=1786159831",
       "categories": [
-        "Aksiyon",
-        "RPG"
+        "Strateji",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -314,18 +316,6 @@
       ]
     },
     {
-      "id": "steam-news-39fdcb528",
-      "title": "The Last Portal",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5050310/The_Last_Portal/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050310/779e73d86166989144744574eb7c60cc545fcb02/capsule_231x87.jpg?t=1786159831",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-36308681b",
       "title": "DAWN ONE",
       "kind": "coming_soon",
@@ -333,6 +323,18 @@
       "dateLabel": "21 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2127340/0f0c79d6a602be14a9f15201f30ff2b9846a7640/capsule_231x87.jpg?t=1786638334",
       "categories": []
+    },
+    {
+      "id": "steam-news-f97673af9",
+      "title": "Twin Balls Journey",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4216750/Twin_Balls_Journey/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4216750/9d32a0b936b793b778ecbce05c0f618531fbd144/capsule_231x87.jpg?t=1785293873",
+      "categories": [
+        "Aksiyon",
+        "RPG"
+      ]
     },
     {
       "id": "steam-news-e9b9aeb63",
@@ -433,7 +435,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3312250/FEAR_OF_FAITH/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3312250/106d3a0d206c5a696abd5eae016cec1b00698e2b/capsule_231x87.jpg?t=1786828555",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3312250/106d3a0d206c5a696abd5eae016cec1b00698e2b/capsule_231x87.jpg?t=1787269540",
       "categories": [
         "Bağımsız",
         "Korku",
@@ -454,23 +456,23 @@
       ]
     },
     {
-      "id": "steam-news-3bdfaf17a",
-      "title": "Big Adventure",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4996680/Big_Adventure/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4996680/a1c48c87541cd26006d15c3c6cc166c3b5e60aff/capsule_231x87.jpg?t=1787081357",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-e9b2214db",
       "title": "Make Her Real",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/5049030/Make_Her_Real/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5049030/31fef9a16cc0d8f3bc7f6085b802bcf8865d3a2b/capsule_231x87.jpg?t=1786149588",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-3bdfaf17a",
+      "title": "Big Adventure",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4996680/Big_Adventure/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4996680/a1c48c87541cd26006d15c3c6cc166c3b5e60aff/capsule_231x87.jpg?t=1787081357",
       "categories": [
         "Macera"
       ]
@@ -511,6 +513,18 @@
       ]
     },
     {
+      "id": "steam-news-52b62b037",
+      "title": "Taste of the Wind",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3222890/Taste_of_the_Wind/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3222890/cdf1efc7a66bb03102d7f96f8bf7cce9bcb98c07/capsule_231x87.jpg?t=1785223795",
+      "categories": [
+        "RPG",
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-69fc721e3",
       "title": "Minsgon Simulator",
       "kind": "coming_soon",
@@ -533,18 +547,6 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-52b62b037",
-      "title": "Taste of the Wind",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3222890/Taste_of_the_Wind/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3222890/cdf1efc7a66bb03102d7f96f8bf7cce9bcb98c07/capsule_231x87.jpg?t=1785223795",
-      "categories": [
-        "RPG",
-        "Tek Oyunculu"
       ]
     },
     {
