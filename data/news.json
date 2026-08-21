@@ -1,6 +1,44 @@
 {
-  "generatedAt": "2026-08-21T19:59:43.747Z",
+  "generatedAt": "2026-08-21T20:33:53.690Z",
   "items": [
+    {
+      "id": "steam-news-3ddf97b6f",
+      "title": "V.A.U.L.T. PROTOCOL",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4178200/VAULT_PROTOCOL/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4178200/92c2a224bb5178b970b17fc252073e32ae82eed3/capsule_231x87.jpg?t=1787343427",
+      "categories": [
+        "Bağımsız",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-04e03e82e",
+      "title": "Alice ou o Mundo?",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5015660/Alice_ou_o_Mundo/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5015660/8b019f35d257374e68ec9164b88b3f4e81d1bc79/capsule_231x87.jpg?t=1787343230",
+      "categories": [
+        "RPG",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-c3c74ecf2",
+      "title": "Unpossess 2: Exorcism Simulator",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4373870/Unpossess_2_Exorcism_Simulator/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4373870/f8e258d0f018492ad13121536a02117e0edf913d/capsule_231x87.jpg?t=1787342449",
+      "categories": [
+        "Bağımsız",
+        "Tek Oyunculu",
+        "Aksiyon",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-d644d10fe",
       "title": "Covid-26",
@@ -246,77 +284,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-de99e6a98",
-      "title": "The Sorting Bureau",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4120790/The_Sorting_Bureau/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4120790/3cd48b16a0732e6ae691feb96f348e1629b5dbe0/capsule_231x87.jpg?t=1787332434",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-d12d8411e",
-      "title": "Negative Time",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4229150/Negative_Time/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4229150/11d9d7afd8a0db64764a1aa941127e19be73a3a9/capsule_231x87.jpg?t=1787331737",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-e8a4e5e6d",
-      "title": "BURIED BELOW",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3651890/BURIED_BELOW/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3651890/fc17501d44764e9752366af7242e22d803247530/capsule_231x87.jpg?t=1787331622",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-c71c424af",
-      "title": "Unpossess 2: Exorcism Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4373870/Unpossess_2_Exorcism_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4373870/f8e258d0f018492ad13121536a02117e0edf913d/capsule_231x87.jpg?t=1786193697",
-      "categories": [
-        "Bağımsız",
-        "Tek Oyunculu",
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-74396d20e",
-      "title": "V.A.U.L.T. PROTOCOL",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4178200/VAULT_PROTOCOL/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4178200/92c2a224bb5178b970b17fc252073e32ae82eed3/capsule_231x87.jpg?t=1787341745",
-      "categories": [
-        "Bağımsız",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-1283285a4",
-      "title": "DEEP DIVER",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4592430/DEEP_DIVER/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4592430/bc66cfc82d00eb061f05840d8f665aa9e5dd4b89/capsule_231x87.jpg?t=1787322135",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-28bdc5dbb",
       "title": "Empire Eleven 2026",
       "kind": "coming_soon",
@@ -557,6 +524,42 @@
       "dateLabel": "23 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3196850/32e24bdecb8c24f5f7cbf13a0212ae79497e5d04/capsule_231x87.jpg?t=1784297689",
       "categories": []
+    },
+    {
+      "id": "steam-news-264546555",
+      "title": "Finish The Dishes!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4866520/Finish_The_Dishes/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4866520/68de601b909d76e6002b2c8840558d8f82b0164d/capsule_231x87.jpg?t=1782366304",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-86c902b63",
+      "title": "Prospector Peril",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4833990/Prospector_Peril/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4833990/8610c930b7000a013b55ab84ce08d57ca8235603/capsule_231x87.jpg?t=1787324764",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-284f27a85",
+      "title": "Titanic Escape Simulator™",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4645360/Titanic_Escape_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4645360/6cc47a13551a26c418d8ce8b59e562d3b93199a7/capsule_231x87.jpg?t=1786540399",
+      "categories": [
+        "Macera",
+        "Simülasyon"
+      ]
     },
     {
       "id": "steam-news-c560bed11",
