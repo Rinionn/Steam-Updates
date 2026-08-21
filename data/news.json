@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-21T04:23:03.401Z",
+  "generatedAt": "2026-08-21T05:02:19.452Z",
   "items": [
+    {
+      "id": "steam-news-04088d5f5",
+      "title": "Longevity: Path of the Immortal",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4809400/Longevity_Path_of_the_Immortal/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4809400/8b0ac33c567b0df92663d376efa91c9b47063299/capsule_231x87.jpg?t=1787286688",
+      "categories": [
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-082b04df7",
       "title": "Hoop Empire",
@@ -277,14 +288,14 @@
       ]
     },
     {
-      "id": "steam-news-dd3d4e87d",
-      "title": "ArtificialOverthrow",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4658110/ArtificialOverthrow/?snr=1_7_7_230_150_1",
-      "dateLabel": "20 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4658110/62c1313b95311c792047a657adb0c48bd2d534ba/capsule_231x87.jpg?t=1787257759",
+      "id": "steam-news-39fdcb528",
+      "title": "The Last Portal",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5050310/The_Last_Portal/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050310/779e73d86166989144744574eb7c60cc545fcb02/capsule_231x87.jpg?t=1786159831",
       "categories": [
-        "Aksiyon",
+        "Strateji",
         "Tek Oyunculu"
       ]
     },
@@ -301,24 +312,15 @@
       ]
     },
     {
-      "id": "steam-news-36308681b",
-      "title": "DAWN ONE",
+      "id": "steam-news-27aeb42ae",
+      "title": "The Expansion",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2127340/DAWN_ONE/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4939820/The_Expansion/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2127340/0f0c79d6a602be14a9f15201f30ff2b9846a7640/capsule_231x87.jpg?t=1786638334",
-      "categories": []
-    },
-    {
-      "id": "steam-news-39fdcb528",
-      "title": "The Last Portal",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5050310/The_Last_Portal/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050310/779e73d86166989144744574eb7c60cc545fcb02/capsule_231x87.jpg?t=1786159831",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4939820/bdffedb02628908b07c8750dd469e92457a352c1/capsule_231x87.jpg?t=1785875515",
       "categories": [
-        "Strateji",
-        "Tek Oyunculu"
+        "Macera",
+        "Korku"
       ]
     },
     {
@@ -334,16 +336,13 @@
       ]
     },
     {
-      "id": "steam-news-27aeb42ae",
-      "title": "The Expansion",
+      "id": "steam-news-36308681b",
+      "title": "DAWN ONE",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4939820/The_Expansion/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2127340/DAWN_ONE/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4939820/bdffedb02628908b07c8750dd469e92457a352c1/capsule_231x87.jpg?t=1785875515",
-      "categories": [
-        "Macera",
-        "Korku"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2127340/0f0c79d6a602be14a9f15201f30ff2b9846a7640/capsule_231x87.jpg?t=1786638334",
+      "categories": []
     },
     {
       "id": "steam-news-e9b9aeb63",
@@ -392,17 +391,6 @@
       ]
     },
     {
-      "id": "steam-news-6fa0dc6c6",
-      "title": "AI Pixel Battle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3994120/AI_Pixel_Battle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994120/21d885cae561c273508aac673dcaccf3b71e2ebc/capsule_231x87.jpg?t=1787020436",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-0d92a597a",
       "title": "The Legend of Fireball",
       "kind": "coming_soon",
@@ -412,6 +400,17 @@
       "categories": [
         "RPG",
         "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-6fa0dc6c6",
+      "title": "AI Pixel Battle",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3994120/AI_Pixel_Battle/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994120/21d885cae561c273508aac673dcaccf3b71e2ebc/capsule_231x87.jpg?t=1787020436",
+      "categories": [
         "Simülasyon"
       ]
     },
@@ -465,23 +464,23 @@
       ]
     },
     {
-      "id": "steam-news-7c3860eee",
-      "title": "Blood Red Rebirth",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4193120/Blood_Red_Rebirth/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4193120/f98b41df1b95154f0d65867c8e2b86a5339dcc3b/capsule_231x87.jpg?t=1783937434",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-3bdfaf17a",
       "title": "Big Adventure",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4996680/Big_Adventure/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4996680/a1c48c87541cd26006d15c3c6cc166c3b5e60aff/capsule_231x87.jpg?t=1787081357",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-e9b2214db",
+      "title": "Make Her Real",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5049030/Make_Her_Real/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5049030/31fef9a16cc0d8f3bc7f6085b802bcf8865d3a2b/capsule_231x87.jpg?t=1786149588",
       "categories": [
         "Macera"
       ]
@@ -499,14 +498,26 @@
       ]
     },
     {
-      "id": "steam-news-e9b2214db",
-      "title": "Make Her Real",
+      "id": "steam-news-7c3860eee",
+      "title": "Blood Red Rebirth",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5049030/Make_Her_Real/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4193120/Blood_Red_Rebirth/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5049030/31fef9a16cc0d8f3bc7f6085b802bcf8865d3a2b/capsule_231x87.jpg?t=1786149588",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4193120/f98b41df1b95154f0d65867c8e2b86a5339dcc3b/capsule_231x87.jpg?t=1783937434",
       "categories": [
-        "Macera"
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-33dbc4b1d",
+      "title": "NEON SURGE",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4891260/NEON_SURGE/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4891260/78c4de6d180ea1ae85402780f44f27c0981eadcb/capsule_231x87.jpg?t=1785415431",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
       ]
     },
     {
@@ -544,18 +555,6 @@
       "categories": [
         "RPG",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-33dbc4b1d",
-      "title": "NEON SURGE",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4891260/NEON_SURGE/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4891260/78c4de6d180ea1ae85402780f44f27c0981eadcb/capsule_231x87.jpg?t=1785415431",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
       ]
     },
     {
