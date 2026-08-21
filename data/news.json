@@ -1,6 +1,54 @@
 {
-  "generatedAt": "2026-08-21T22:20:48.204Z",
+  "generatedAt": "2026-08-21T22:46:20.973Z",
   "items": [
+    {
+      "id": "steam-news-64a15dfde",
+      "title": "E-Rally: The Linear Function Racer",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4964280/ERally_The_Linear_Function_Racer/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4964280/1e5eb45e5b2e8345d2b7ee057ab0f89c1fb48f86/capsule_231x87.jpg?t=1787352276",
+      "categories": [
+        "Yarış",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-48054164f",
+      "title": "Empire Eleven 2026",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4502700/Empire_Eleven_2026/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4502700/a13726939fdc084527f9f242c67c17a3a13e4690/capsule_231x87.jpg?t=1787351407",
+      "categories": [
+        "Simülasyon",
+        "Spor",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-e4a09735c",
+      "title": "Pavlov Shack",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3504270/Pavlov_Shack/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3504270/6ecf636d16d08343ad7fd1b8662f9f8174cbbfe3/capsule_231x87.jpg?t=1787351312",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-a6f80d432",
+      "title": "Card Maker Simulator",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4359910/Card_Maker_Simulator/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4359910/0b27d623060bdcba359fa13bfde1d8703e1adb4c/capsule_231x87.jpg?t=1787351087",
+      "categories": [
+        "Simülasyon",
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-1fba12fdb",
       "title": "System Grid Crusher",
@@ -242,50 +290,6 @@
       ]
     },
     {
-      "id": "steam-news-ac6239289",
-      "title": "Crystal Breaker Inc",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4646020/Crystal_Breaker_Inc/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4646020/2e532c947be13515d310e757af19fd1df3cdf477/capsule_231x87.jpg?t=1787336138",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-4142b9db4",
-      "title": "Tail Recursion",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5027510/Tail_Recursion/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5027510/1764a3709a3418648263849fca8b690d4b238c89/capsule_231x87.jpg?t=1787335773",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-6be4ab4b5",
-      "title": "String Theory",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4699410/String_Theory/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4699410/fc2eaf2d2d78b864813ddbb5b916652692fbf55b/capsule_231x87.jpg?t=1787335605",
-      "categories": []
-    },
-    {
-      "id": "steam-news-3c9235510",
-      "title": "Clickonomy",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3284800/Clickonomy/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3284800/bd3b7806dc911efdf65739ce568c7acdf0e4771f/capsule_231x87.jpg?t=1787335331",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-de1853792",
       "title": "The Escape From Dungeon Keep",
       "kind": "coming_soon",
@@ -311,6 +315,17 @@
       ]
     },
     {
+      "id": "steam-news-a1a14841f",
+      "title": "Dice Chemist",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-4f895deb8",
       "title": "スマートフォン",
       "kind": "coming_soon",
@@ -320,17 +335,6 @@
       "categories": [
         "Macera",
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-a1a14841f",
-      "title": "Dice Chemist",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -491,6 +495,17 @@
       ]
     },
     {
+      "id": "steam-news-4c069b58b",
+      "title": "Ultrapool",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -513,17 +528,6 @@
       ]
     },
     {
-      "id": "steam-news-4c069b58b",
-      "title": "Ultrapool",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-89cd93207",
       "title": "HOSHIKUI",
       "kind": "coming_soon",
@@ -532,6 +536,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5081400/282dfe1348dc8e0d9d2b8874743d7acc2bda77ca/capsule_231x87.jpg?t=1787142397",
       "categories": [
         "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
         "Tek Oyunculu"
       ]
     },
@@ -545,17 +560,6 @@
       "categories": [
         "Aksiyon",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-ea26de6fa",
-      "title": "Reverb",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
-      "categories": [
-        "Tek Oyunculu"
       ]
     },
     {
