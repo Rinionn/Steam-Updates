@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T05:02:19.452Z",
+  "generatedAt": "2026-08-21T05:41:30.372Z",
   "items": [
     {
       "id": "steam-news-04088d5f5",
@@ -288,18 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-39fdcb528",
-      "title": "The Last Portal",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5050310/The_Last_Portal/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050310/779e73d86166989144744574eb7c60cc545fcb02/capsule_231x87.jpg?t=1786159831",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-f97673af9",
       "title": "Twin Balls Journey",
       "kind": "coming_soon",
@@ -309,6 +297,18 @@
       "categories": [
         "Aksiyon",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-39fdcb528",
+      "title": "The Last Portal",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5050310/The_Last_Portal/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050310/779e73d86166989144744574eb7c60cc545fcb02/capsule_231x87.jpg?t=1786159831",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -391,6 +391,17 @@
       ]
     },
     {
+      "id": "steam-news-6fa0dc6c6",
+      "title": "AI Pixel Battle",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3994120/AI_Pixel_Battle/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994120/21d885cae561c273508aac673dcaccf3b71e2ebc/capsule_231x87.jpg?t=1787020436",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-0d92a597a",
       "title": "The Legend of Fireball",
       "kind": "coming_soon",
@@ -400,17 +411,6 @@
       "categories": [
         "RPG",
         "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-6fa0dc6c6",
-      "title": "AI Pixel Battle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3994120/AI_Pixel_Battle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3994120/21d885cae561c273508aac673dcaccf3b71e2ebc/capsule_231x87.jpg?t=1787020436",
-      "categories": [
         "Simülasyon"
       ]
     },
@@ -443,7 +443,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3312250/FEAR_OF_FAITH/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3312250/106d3a0d206c5a696abd5eae016cec1b00698e2b/capsule_231x87.jpg?t=1787271348",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3312250/106d3a0d206c5a696abd5eae016cec1b00698e2b/capsule_231x87.jpg?t=1787290353",
       "categories": [
         "Bağımsız",
         "Korku",
@@ -521,6 +521,18 @@
       ]
     },
     {
+      "id": "steam-news-52b62b037",
+      "title": "Taste of the Wind",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3222890/Taste_of_the_Wind/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3222890/cdf1efc7a66bb03102d7f96f8bf7cce9bcb98c07/capsule_231x87.jpg?t=1785223795",
+      "categories": [
+        "RPG",
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-69fc721e3",
       "title": "Minsgon Simulator",
       "kind": "coming_soon",
@@ -543,18 +555,6 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-52b62b037",
-      "title": "Taste of the Wind",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3222890/Taste_of_the_Wind/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3222890/cdf1efc7a66bb03102d7f96f8bf7cce9bcb98c07/capsule_231x87.jpg?t=1785223795",
-      "categories": [
-        "RPG",
-        "Tek Oyunculu"
       ]
     },
     {
