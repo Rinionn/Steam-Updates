@@ -1,6 +1,26 @@
 {
-  "generatedAt": "2026-08-21T13:21:56.472Z",
+  "generatedAt": "2026-08-21T14:04:21.314Z",
   "items": [
+    {
+      "id": "steam-news-3704e537b",
+      "title": "The Last Disease Z",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1843400/The_Last_Disease_Z/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1843400/586ecd8cd672b468d062cf27fe007253d244e4cd/capsule_231x87.jpg?t=1787320882",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-2dc8cf4ac",
+      "title": "Chaotic World",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4903960/Chaotic_World/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4903960/64d95835d9f76664d035815da2b3a085fa37a8e8/capsule_231x87.jpg?t=1787320816",
+      "categories": []
+    },
     {
       "id": "steam-news-037faeca5",
       "title": "Tanks: Total Destruction",
@@ -67,7 +87,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3935270/Minsgon_Simulator/?snr=1_7_7_230_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3935270/b0c766ad2e1d9eef54a31798fd7ec9b2e97ff175/capsule_231x87.jpg?t=1787317113",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3935270/b0c766ad2e1d9eef54a31798fd7ec9b2e97ff175/capsule_231x87.jpg?t=1787318953",
       "categories": [
         "Gündelik",
         "Simülasyon",
@@ -265,60 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-6822feb15",
-      "title": "KingLike",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5044420/KingLike/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5044420/5206527cee0603b44087e3fda12d5bbbeca36d18/capsule_231x87.jpg?t=1787307608",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-2ab724922",
-      "title": "電工らぶ -ゼロから始める電気工事士-",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5014770/_/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5014770/df8b055add104d8036f4c8e001d8ba4f93943110/capsule_231x87.jpg?t=1787307519",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-2be1e135d",
-      "title": "Temperhall 1402",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4613720/Temperhall_1402/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4613720/6ad6fdbdf38b899a3dc5dfffb5e638fbcf24095a/capsule_231x87.jpg?t=1786633553",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-d04859dd4",
-      "title": "Chaotic World",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4903960/Chaotic_World/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4903960/64d95835d9f76664d035815da2b3a085fa37a8e8/capsule_231x87.jpg?t=1787309736",
-      "categories": []
-    },
-    {
-      "id": "steam-news-c5e36b606",
-      "title": "The Last Disease Z",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1843400/The_Last_Disease_Z/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1843400/586ecd8cd672b468d062cf27fe007253d244e4cd/capsule_231x87.jpg?t=1786508201",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-d967e130c",
       "title": "Furry Roommates",
       "kind": "coming_soon",
@@ -389,18 +355,6 @@
       ]
     },
     {
-      "id": "steam-news-0a70f187f",
-      "title": "Medic Mayhem",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3543300/Medic_Mayhem/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3543300/88be4cd49315ac14c906279f960d5308fa7ccfc3/capsule_231x87.jpg?t=1787252918",
-      "categories": [
-        "Çok Oyunculu",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-1a675a654",
       "title": "Aqua Scrap: Deep Clean",
       "kind": "coming_soon",
@@ -425,6 +379,18 @@
       ]
     },
     {
+      "id": "steam-news-0a70f187f",
+      "title": "Medic Mayhem",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3543300/Medic_Mayhem/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3543300/88be4cd49315ac14c906279f960d5308fa7ccfc3/capsule_231x87.jpg?t=1787252918",
+      "categories": [
+        "Çok Oyunculu",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-b2ddbb567",
       "title": "Desktop Bouncer",
       "kind": "coming_soon",
@@ -434,17 +400,6 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-09a887954",
-      "title": "Harvest Deadline",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4898750/Harvest_Deadline/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4898750/5e17df6fcacbb58ab2a2d5a6032578b94500471f/capsule_231x87.jpg?t=1786995347",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -483,6 +438,17 @@
       ]
     },
     {
+      "id": "steam-news-09a887954",
+      "title": "Harvest Deadline",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4898750/Harvest_Deadline/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4898750/5e17df6fcacbb58ab2a2d5a6032578b94500471f/capsule_231x87.jpg?t=1786995347",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-a49c5be82",
       "title": "Galumb",
       "kind": "coming_soon",
@@ -493,17 +459,6 @@
         "Aksiyon",
         "Macera",
         "Yarış"
-      ]
-    },
-    {
-      "id": "steam-news-ea12dffd1",
-      "title": "Pawbay: Cat Chaos",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4210300/Pawbay_Cat_Chaos/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4210300/268ce82c72d6c3cc977b3fada4c6ce8b6a9050b6/capsule_231x87.jpg?t=1787250994",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
@@ -520,6 +475,17 @@
       ]
     },
     {
+      "id": "steam-news-ea12dffd1",
+      "title": "Pawbay: Cat Chaos",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4210300/Pawbay_Cat_Chaos/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4210300/268ce82c72d6c3cc977b3fada4c6ce8b6a9050b6/capsule_231x87.jpg?t=1787250994",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-30e0512f1",
       "title": "Simple Airline Sim",
       "kind": "coming_soon",
@@ -530,20 +496,6 @@
         "Simülasyon",
         "Strateji",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-ba2edd6fb",
-      "title": "Alien Apocalypse",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3635510/Alien_Apocalypse/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3635510/c2abca04388637dbaaceda30fc49a1df4e3e8b26/capsule_231x87.jpg?t=1786993643",
-      "categories": [
-        "Bağımsız",
-        "Simülasyon",
-        "Çok Oyunculu",
-        "Aksiyon"
       ]
     },
     {
@@ -559,14 +511,61 @@
       ]
     },
     {
-      "id": "steam-news-c46d838f0",
-      "title": "Moo Who?",
+      "id": "steam-news-010b32508",
+      "title": "Negative Time",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4948000/Moo_Who/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4229150/Negative_Time/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4948000/1d1a4405fab2ae1a883ab2c7ef8ca8ddbcfeb967/capsule_231x87.jpg?t=1787222611",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4229150/11d9d7afd8a0db64764a1aa941127e19be73a3a9/capsule_231x87.jpg?t=1786310310",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-f9ebcf327",
+      "title": "Doppler",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4319530/Doppler/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319530/87c3a206fa208710acad2ce09c3ef70c2080b981/capsule_231x87.jpg?t=1786378284",
+      "categories": [
+        "Yarış"
+      ]
+    },
+    {
+      "id": "steam-news-f50b90c24",
+      "title": "Crystal Breaker Inc",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4646020/Crystal_Breaker_Inc/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4646020/2e532c947be13515d310e757af19fd1df3cdf477/capsule_231x87.jpg?t=1787145314",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-2b857bf04",
+      "title": "Loot Gobblin' Together",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4651490/Loot_Gobblin_Together/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4651490/cfca0b855f96603d399442174c4228f8e7b1f4e6/capsule_231x87.jpg?t=1787275851",
+      "categories": [
+        "Çok Oyunculu",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-d6c2ed8dd",
+      "title": "C.U.B.E",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4523340/CUBE/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4523340/17b0e382b7895bf1bfb8cf490348f9752d417293/capsule_231x87.jpg?t=1787219721",
+      "categories": [
+        "Aksiyon",
+        "Korku",
+        "Çok Oyunculu"
       ]
     },
     {
