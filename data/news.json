@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-08-21T19:43:32.736Z",
+  "generatedAt": "2026-08-21T19:59:43.747Z",
   "items": [
+    {
+      "id": "steam-news-d644d10fe",
+      "title": "Covid-26",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4825430/Covid26/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4825430/f83ee2fa4ed8c65e1f1e18f98eb86bc920095c9d/capsule_231x87.jpg?t=1787342196",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-ddb94ba37",
+      "title": "BattleDeck",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4779400/BattleDeck/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4779400/5d6e0f038a34e882c7333b613b9eff8164452baf/capsule_231x87.jpg?t=1787342032",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-d9769920a",
+      "title": "Doppler",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4319530/Doppler/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319530/87c3a206fa208710acad2ce09c3ef70c2080b981/capsule_231x87.jpg?t=1787341591",
+      "categories": [
+        "Yarış"
+      ]
+    },
     {
       "id": "steam-news-e0d4cde22",
       "title": "Galumb",
@@ -246,42 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-48c3149da",
-      "title": "C.U.B.E",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4523340/CUBE/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4523340/17b0e382b7895bf1bfb8cf490348f9752d417293/capsule_231x87.jpg?t=1787331615",
-      "categories": [
-        "Aksiyon",
-        "Korku",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-5b9ad4b1b",
-      "title": "Loot Gobblin' Together",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4651490/Loot_Gobblin_Together/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4651490/cfca0b855f96603d399442174c4228f8e7b1f4e6/capsule_231x87.jpg?t=1787331613",
-      "categories": [
-        "Çok Oyunculu",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-304d7c4c4",
-      "title": "VHOLUME",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4131730/VHOLUME/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4131730/1eae8c678a24821f505ff8ab4f150697672ce092/capsule_231x87.jpg?t=1787333844",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-c71c424af",
       "title": "Unpossess 2: Exorcism Simulator",
       "kind": "coming_soon",
@@ -301,7 +299,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4178200/VAULT_PROTOCOL/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4178200/92c2a224bb5178b970b17fc252073e32ae82eed3/capsule_231x87.jpg?t=1787321672",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4178200/92c2a224bb5178b970b17fc252073e32ae82eed3/capsule_231x87.jpg?t=1787341745",
       "categories": [
         "Bağımsız",
         "Korku"
@@ -355,17 +353,6 @@
       ]
     },
     {
-      "id": "steam-news-40d8adaa3",
-      "title": "Claws Of Power",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3998900/Claws_Of_Power/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3998900/fa82c570e869089d871edc067ad4e9c3a9b8a604/capsule_231x87.jpg?t=1786610485",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-1c17fb356",
       "title": "《美少女旅馆：可爱即是正义，但正义需要处刑》",
       "kind": "coming_soon",
@@ -376,6 +363,17 @@
         "Bağımsız",
         "RPG",
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-40d8adaa3",
+      "title": "Claws Of Power",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3998900/Claws_Of_Power/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3998900/fa82c570e869089d871edc067ad4e9c3a9b8a604/capsule_231x87.jpg?t=1786610485",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -396,7 +394,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4252520/Street_Light_Simulator_2026/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4252520/c7bf319dd0097b78ff73678736a9ed7ef19a23aa/capsule_231x87.jpg?t=1786072936",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4252520/c7bf319dd0097b78ff73678736a9ed7ef19a23aa/capsule_231x87.jpg?t=1787341904",
       "categories": [
         "Gündelik",
         "Simülasyon",
