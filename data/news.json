@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-08-21T09:52:04.390Z",
+  "generatedAt": "2026-08-21T10:18:42.937Z",
   "items": [
+    {
+      "id": "steam-news-050e892cf",
+      "title": "Peace Dice",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4156450/Peace_Dice/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4156450/3cecb878f2ea30320fe18e124082f30712add792/capsule_231x87.jpg?t=1787307214",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon",
+        "Korku",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-cb6dbcee7",
+      "title": "1000 Princes: ChouChou Condo",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4846800/1000_Princes_ChouChou_Condo/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4846800/bf0b8346cbdc5495f7bd621a9a278f2b7eaba123/capsule_231x87.jpg?t=1787306548",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-e540d0685",
       "title": "Idle Dimension Breaker",
@@ -258,67 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-db74e5063",
-      "title": "Ballakala",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4947140/Ballakala/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4947140/f97a44d2b62d342f37372bda9c8b9370fa88457e/capsule_231x87.jpg?t=1787296285",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-9ca1457a7",
-      "title": "Food Fight",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4985650/Food_Fight/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985650/97b6f6dddaa087a328f24b8281fe5c38b371fb7c/capsule_231x87.jpg?t=1787295933",
-      "categories": [
-        "Bağımsız",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-20eb2ebdb",
-      "title": "Amarta: Kingdom of Shadows",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4526420/Amarta_Kingdom_of_Shadows/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4526420/e0366df726e15d99c1b29755716d32f85b680ef6/capsule_231x87.jpg?t=1787104727",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-bb701b8cd",
-      "title": "FEAR OF FAITH",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3312250/FEAR_OF_FAITH/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3312250/106d3a0d206c5a696abd5eae016cec1b00698e2b/capsule_231x87.jpg?t=1787305539",
-      "categories": [
-        "Bağımsız",
-        "Korku",
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-026255738",
-      "title": "Undo My Seal, Senpai!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4314490/Undo_My_Seal_Senpai/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4314490/745d70dfbca842c930b2e8990b809bbd3592971f/capsule_231x87.jpg?t=1785924618",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-e9b2214db",
       "title": "Make Her Real",
       "kind": "coming_soon",
@@ -353,6 +317,18 @@
       ]
     },
     {
+      "id": "steam-news-52b62b037",
+      "title": "Taste of the Wind",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3222890/Taste_of_the_Wind/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3222890/cdf1efc7a66bb03102d7f96f8bf7cce9bcb98c07/capsule_231x87.jpg?t=1785223795",
+      "categories": [
+        "RPG",
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-69fc721e3",
       "title": "Minsgon Simulator",
       "kind": "coming_soon",
@@ -378,18 +354,6 @@
       ]
     },
     {
-      "id": "steam-news-52b62b037",
-      "title": "Taste of the Wind",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3222890/Taste_of_the_Wind/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3222890/cdf1efc7a66bb03102d7f96f8bf7cce9bcb98c07/capsule_231x87.jpg?t=1785223795",
-      "categories": [
-        "RPG",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-2be1e135d",
       "title": "Temperhall 1402",
       "kind": "coming_soon",
@@ -399,6 +363,15 @@
       "categories": [
         "Simülasyon"
       ]
+    },
+    {
+      "id": "steam-news-d04859dd4",
+      "title": "Chaotic World",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4903960/Chaotic_World/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4903960/64d95835d9f76664d035815da2b3a085fa37a8e8/capsule_231x87.jpg?t=1787123674",
+      "categories": []
     },
     {
       "id": "steam-news-82ea8af6e",
@@ -413,15 +386,6 @@
         "RPG",
         "Strateji"
       ]
-    },
-    {
-      "id": "steam-news-d04859dd4",
-      "title": "Chaotic World",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4903960/Chaotic_World/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4903960/64d95835d9f76664d035815da2b3a085fa37a8e8/capsule_231x87.jpg?t=1787123674",
-      "categories": []
     },
     {
       "id": "steam-news-1cc5832fd",
@@ -562,6 +526,42 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974760/f38d42ed3643b7ab7bf9f0f9501bb67467b7d2a0/capsule_231x87.jpg?t=1787180361",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-b2ddbb567",
+      "title": "Desktop Bouncer",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4749880/Desktop_Bouncer/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4749880/8a4ed065da923f8ffdb69ec45de00511d5da2861/capsule_231x87.jpg?t=1786097211",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-09a887954",
+      "title": "Harvest Deadline",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4898750/Harvest_Deadline/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4898750/5e17df6fcacbb58ab2a2d5a6032578b94500471f/capsule_231x87.jpg?t=1786995347",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-df4e7828a",
+      "title": "Clickbait Tycoon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4998260/Clickbait_Tycoon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998260/30bbcf1c68fb567d3ba90be80da0b9f484cf0994/capsule_231x87.jpg?t=1787279987",
+      "categories": [
+        "Simülasyon",
+        "Gündelik",
+        "Tek Oyunculu"
       ]
     },
     {
