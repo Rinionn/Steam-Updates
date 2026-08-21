@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-21T11:18:37.300Z",
+  "generatedAt": "2026-08-21T11:48:08.253Z",
   "items": [
+    {
+      "id": "steam-news-d61a6d485",
+      "title": "DEFEAT THE GOBLIN KING",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3806630/DEFEAT_THE_GOBLIN_KING/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3806630/dbbaa5fcbd6ede7f35e84deb7395e60d6ba236b8/capsule_231x87.jpg?t=1787311442",
+      "categories": [
+        "RPG",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-ec7dc3ce2",
       "title": "Print I Love U",
@@ -274,24 +286,23 @@
       ]
     },
     {
-      "id": "steam-news-bbe8af1c3",
-      "title": "Eatime",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4607480/Eatime/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4607480/cfed9ebc885e3095c79233465ff5ab60a52d6ec9/capsule_231x87.jpg?t=1787298588",
-      "categories": [
-        "Strateji",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-3bdfaf17a",
       "title": "Big Adventure",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4996680/Big_Adventure/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4996680/a1c48c87541cd26006d15c3c6cc166c3b5e60aff/capsule_231x87.jpg?t=1787081357",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-e9b2214db",
+      "title": "Make Her Real",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5049030/Make_Her_Real/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5049030/31fef9a16cc0d8f3bc7f6085b802bcf8865d3a2b/capsule_231x87.jpg?t=1786149588",
       "categories": [
         "Macera"
       ]
@@ -309,14 +320,15 @@
       ]
     },
     {
-      "id": "steam-news-e9b2214db",
-      "title": "Make Her Real",
+      "id": "steam-news-55a05ce2d",
+      "title": "Click the Button",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5049030/Make_Her_Real/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3946950/Click_the_Button/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5049030/31fef9a16cc0d8f3bc7f6085b802bcf8865d3a2b/capsule_231x87.jpg?t=1786149588",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787263182",
       "categories": [
-        "Macera"
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -345,18 +357,6 @@
       ]
     },
     {
-      "id": "steam-news-55a05ce2d",
-      "title": "Click the Button",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3946950/Click_the_Button/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787263182",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-2be1e135d",
       "title": "Temperhall 1402",
       "kind": "coming_soon",
@@ -365,28 +365,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4613720/6ad6fdbdf38b899a3dc5dfffb5e638fbcf24095a/capsule_231x87.jpg?t=1786633553",
       "categories": [
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-1cc5832fd",
-      "title": "Settler's Domain",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3396920/Settlers_Domain/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3396920/dcfa740d484c8921e82f759a902b0415cf05aed9/capsule_231x87.jpg?t=1787082186",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-c5e36b606",
-      "title": "The Last Disease Z",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1843400/The_Last_Disease_Z/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1843400/586ecd8cd672b468d062cf27fe007253d244e4cd/capsule_231x87.jpg?t=1786508201",
-      "categories": [
-        "Bağımsız"
       ]
     },
     {
@@ -411,6 +389,28 @@
       "dateLabel": "21 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4903960/64d95835d9f76664d035815da2b3a085fa37a8e8/capsule_231x87.jpg?t=1787309736",
       "categories": []
+    },
+    {
+      "id": "steam-news-c5e36b606",
+      "title": "The Last Disease Z",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1843400/The_Last_Disease_Z/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1843400/586ecd8cd672b468d062cf27fe007253d244e4cd/capsule_231x87.jpg?t=1786508201",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-1cc5832fd",
+      "title": "Settler's Domain",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3396920/Settlers_Domain/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3396920/dcfa740d484c8921e82f759a902b0415cf05aed9/capsule_231x87.jpg?t=1787082186",
+      "categories": [
+        "Strateji"
+      ]
     },
     {
       "id": "steam-news-d967e130c",
@@ -483,6 +483,18 @@
       ]
     },
     {
+      "id": "steam-news-0a70f187f",
+      "title": "Medic Mayhem",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3543300/Medic_Mayhem/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3543300/88be4cd49315ac14c906279f960d5308fa7ccfc3/capsule_231x87.jpg?t=1787252918",
+      "categories": [
+        "Çok Oyunculu",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-1a675a654",
       "title": "Aqua Scrap: Deep Clean",
       "kind": "coming_soon",
@@ -507,18 +519,6 @@
       ]
     },
     {
-      "id": "steam-news-0a70f187f",
-      "title": "Medic Mayhem",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3543300/Medic_Mayhem/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3543300/88be4cd49315ac14c906279f960d5308fa7ccfc3/capsule_231x87.jpg?t=1787252918",
-      "categories": [
-        "Çok Oyunculu",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-b2ddbb567",
       "title": "Desktop Bouncer",
       "kind": "coming_soon",
@@ -528,6 +528,19 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-df4e7828a",
+      "title": "Clickbait Tycoon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4998260/Clickbait_Tycoon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998260/30bbcf1c68fb567d3ba90be80da0b9f484cf0994/capsule_231x87.jpg?t=1787279987",
+      "categories": [
+        "Simülasyon",
+        "Gündelik",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -542,29 +555,14 @@
       ]
     },
     {
-      "id": "steam-news-fd7baea22",
-      "title": "Tinturbo",
+      "id": "steam-news-fac4b71a9",
+      "title": "Two-Dye",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4752020/Tinturbo/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4967390/TwoDye/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4752020/be6e4c57d9888e71727b17d8902150a7a3770920/capsule_231x87.jpg?t=1786874583",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967390/5922c993393d7985e53c96443f9f796ca7994401/capsule_231x87.jpg?t=1787178875",
       "categories": [
-        "Yarış",
-        "Tek Oyunculu",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-df4e7828a",
-      "title": "Clickbait Tycoon",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4998260/Clickbait_Tycoon/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998260/30bbcf1c68fb567d3ba90be80da0b9f484cf0994/capsule_231x87.jpg?t=1787279987",
-      "categories": [
-        "Simülasyon",
-        "Gündelik",
-        "Tek Oyunculu"
       ]
     },
     {
