@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-08-21T18:51:13.544Z",
+  "generatedAt": "2026-08-21T19:17:55.953Z",
   "items": [
+    {
+      "id": "steam-news-6e5c9d63b",
+      "title": "Overhatched",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4769490/Overhatched/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4769490/009607681213983afcb3626cf086322982e57296/capsule_231x87.jpg?t=1787339046",
+      "categories": [
+        "Strateji",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-450d512d9",
+      "title": "Forensh",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4424650/Forensh/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4424650/ecde0bee30c8ed00440235b814e313b8d04825b6/capsule_231x87.jpg?t=1787339032",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-83bb0d5b9",
+      "title": "PRISMBLOOM",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5011600/PRISMBLOOM/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5011600/c883003eeb0b6bf5b97b5260f812a3b937ee22e7/capsule_231x87.jpg?t=1787338393",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-51bdd176e",
       "title": "Brawlzerker",
@@ -244,50 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-2e534aca3",
-      "title": "ARKADIANAX",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1425360/ARKADIANAX/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1425360/0ec3665fb8ed35b6e87cacfe921c9883981a4dc0/capsule_231x87.jpg?t=1787331438",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-1fb35530e",
-      "title": "NERMIUS",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4584300/NERMIUS/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4584300/2912b99aa2059cb5033d65c06645037cf6a9b503/capsule_231x87.jpg?t=1787330576",
-      "categories": []
-    },
-    {
-      "id": "steam-news-617b53eb8",
-      "title": "AXIS",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4787090/AXIS/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4787090/f7940b12fb25c89f92eac348d252757cd84ae5b6/capsule_231x87.jpg?t=1787330534",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-21e918c09",
-      "title": "Alice ou o Mundo?",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5015660/Alice_ou_o_Mundo/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5015660/8b019f35d257374e68ec9164b88b3f4e81d1bc79/capsule_231x87.jpg?t=1786721083",
-      "categories": [
-        "RPG",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-c71c424af",
       "title": "Unpossess 2: Exorcism Simulator",
       "kind": "coming_soon",
@@ -361,6 +353,17 @@
       ]
     },
     {
+      "id": "steam-news-40d8adaa3",
+      "title": "Claws Of Power",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3998900/Claws_Of_Power/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3998900/fa82c570e869089d871edc067ad4e9c3a9b8a604/capsule_231x87.jpg?t=1786610485",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-1c17fb356",
       "title": "《美少女旅馆：可爱即是正义，但正义需要处刑》",
       "kind": "coming_soon",
@@ -371,17 +374,6 @@
         "Bağımsız",
         "RPG",
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-40d8adaa3",
-      "title": "Claws Of Power",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3998900/Claws_Of_Power/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3998900/fa82c570e869089d871edc067ad4e9c3a9b8a604/capsule_231x87.jpg?t=1786610485",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -555,6 +547,15 @@
       "url": "https://store.steampowered.com/app/4972160/_Git/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "23 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4972160/50392431b25c917a9ef8b186a726c2de1295d475/capsule_231x87.jpg?t=1786393626",
+      "categories": []
+    },
+    {
+      "id": "steam-news-fdb9a6734",
+      "title": "Travellin Cats in USA",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3196850/Travellin_Cats_in_USA/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3196850/32e24bdecb8c24f5f7cbf13a0212ae79497e5d04/capsule_231x87.jpg?t=1784297689",
       "categories": []
     },
     {
