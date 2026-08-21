@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-21T10:53:24.002Z",
+  "generatedAt": "2026-08-21T11:18:37.300Z",
   "items": [
+    {
+      "id": "steam-news-ec7dc3ce2",
+      "title": "Print I Love U",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4796160/Print_I_Love_U/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4796160/83730f8b1691d56512d4692c052772f003d9ad26/capsule_231x87.jpg?t=1787310395",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-036efc095",
+      "title": "Light of Achmore",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4146460/Light_of_Achmore/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4146460/0ea4732faed8c920196c7f53df3da4b279317f88/capsule_231x87.jpg?t=1787309859",
+      "categories": [
+        "Macera",
+        "RPG",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-8c10007ce",
       "title": "Museum Girls Fleet Maneuvers: The Dockhand",
@@ -262,27 +286,6 @@
       ]
     },
     {
-      "id": "steam-news-a779069b8",
-      "title": "Age of Emerald",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4616320/Age_of_Emerald/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4616320/7dd9d572838600b9bc72fa37b5342ab5dd723b78/capsule_231x87.jpg?t=1787297973",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-13e8a33d6",
-      "title": "DAWN ONE",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2127340/DAWN_ONE/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2127340/0f0c79d6a602be14a9f15201f30ff2b9846a7640/capsule_231x87.jpg?t=1787297879",
-      "categories": []
-    },
-    {
       "id": "steam-news-3bdfaf17a",
       "title": "Big Adventure",
       "kind": "coming_soon",
@@ -317,18 +320,6 @@
       ]
     },
     {
-      "id": "steam-news-55a05ce2d",
-      "title": "Click the Button",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3946950/Click_the_Button/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787263182",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-69fc721e3",
       "title": "Minsgon Simulator",
       "kind": "coming_soon",
@@ -354,6 +345,18 @@
       ]
     },
     {
+      "id": "steam-news-55a05ce2d",
+      "title": "Click the Button",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3946950/Click_the_Button/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787263182",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-2be1e135d",
       "title": "Temperhall 1402",
       "kind": "coming_soon",
@@ -365,13 +368,15 @@
       ]
     },
     {
-      "id": "steam-news-d04859dd4",
-      "title": "Chaotic World",
+      "id": "steam-news-1cc5832fd",
+      "title": "Settler's Domain",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4903960/Chaotic_World/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3396920/Settlers_Domain/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4903960/64d95835d9f76664d035815da2b3a085fa37a8e8/capsule_231x87.jpg?t=1787123674",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3396920/dcfa740d484c8921e82f759a902b0415cf05aed9/capsule_231x87.jpg?t=1787082186",
+      "categories": [
+        "Strateji"
+      ]
     },
     {
       "id": "steam-news-c5e36b606",
@@ -399,15 +404,13 @@
       ]
     },
     {
-      "id": "steam-news-1cc5832fd",
-      "title": "Settler's Domain",
+      "id": "steam-news-d04859dd4",
+      "title": "Chaotic World",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3396920/Settlers_Domain/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4903960/Chaotic_World/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3396920/dcfa740d484c8921e82f759a902b0415cf05aed9/capsule_231x87.jpg?t=1787082186",
-      "categories": [
-        "Strateji"
-      ]
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4903960/64d95835d9f76664d035815da2b3a085fa37a8e8/capsule_231x87.jpg?t=1787309736",
+      "categories": []
     },
     {
       "id": "steam-news-d967e130c",
@@ -480,18 +483,6 @@
       ]
     },
     {
-      "id": "steam-news-0a70f187f",
-      "title": "Medic Mayhem",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3543300/Medic_Mayhem/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3543300/88be4cd49315ac14c906279f960d5308fa7ccfc3/capsule_231x87.jpg?t=1787252918",
-      "categories": [
-        "Çok Oyunculu",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-1a675a654",
       "title": "Aqua Scrap: Deep Clean",
       "kind": "coming_soon",
@@ -512,6 +503,18 @@
       "categories": [
         "Macera",
         "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-0a70f187f",
+      "title": "Medic Mayhem",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3543300/Medic_Mayhem/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3543300/88be4cd49315ac14c906279f960d5308fa7ccfc3/capsule_231x87.jpg?t=1787252918",
+      "categories": [
+        "Çok Oyunculu",
         "Gündelik"
       ]
     },
