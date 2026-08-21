@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-21T21:54:53.511Z",
+  "generatedAt": "2026-08-21T22:20:48.204Z",
   "items": [
+    {
+      "id": "steam-news-1fba12fdb",
+      "title": "System Grid Crusher",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4725140/System_Grid_Crusher/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4725140/7934d30bfec826672e86d771704423b021cbc1ef/capsule_231x87.jpg?t=1787349974",
+      "categories": [
+        "Aksiyon",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-ac85b0fc0",
+      "title": "Solacinity",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3277860/Solacinity/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3277860/16314e81fc58694ac33f1b344dc645e2af1a8601/capsule_231x87.jpg?t=1787349506",
+      "categories": [
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-196cce9f6",
       "title": "Chickzilla",
@@ -263,30 +286,6 @@
       ]
     },
     {
-      "id": "steam-news-bc4d8075b",
-      "title": "The Snake Is the Tower",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2957070/The_Snake_Is_the_Tower/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2957070/383d8b69d507d093784e42cbbdc85e65c0e17927/capsule_231x87.jpg?t=1787335240",
-      "categories": [
-        "Bağımsız",
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-e3c757dac",
-      "title": "Call of Duty®: Modern Warfare® 4 - Beta",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4783780/Call_of_Duty_Modern_Warfare_4__Beta/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4783780/76e77b22c4c9e874ad565da068deee3569b831f4/capsule_231x87.jpg?t=1787345813",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-de1853792",
       "title": "The Escape From Dungeon Keep",
       "kind": "coming_soon",
@@ -309,17 +308,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4895410/608b169222b09edaa7dfbb59c0aae8a93fffc166/capsule_231x87.jpg?t=1787240895",
       "categories": [
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-d9ba1fdda",
-      "title": "Solacinity",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3277860/Solacinity/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3277860/16314e81fc58694ac33f1b344dc645e2af1a8601/capsule_231x87.jpg?t=1786273222",
-      "categories": [
-        "Macera"
       ]
     },
     {
@@ -503,17 +491,6 @@
       ]
     },
     {
-      "id": "steam-news-4c069b58b",
-      "title": "Ultrapool",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -533,6 +510,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
       "categories": [
         "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-4c069b58b",
+      "title": "Ultrapool",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -557,6 +545,17 @@
       "categories": [
         "Aksiyon",
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
+        "Tek Oyunculu"
       ]
     },
     {
