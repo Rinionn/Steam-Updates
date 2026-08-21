@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-21T23:10:32.923Z",
+  "generatedAt": "2026-08-21T23:37:28.626Z",
   "items": [
+    {
+      "id": "steam-news-e9ccb38b2",
+      "title": "Realms Of Wands",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4989300/Realms_Of_Wands/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4989300/b98acd2174a97cc2fca4e6e086bd6dc238bbfbdc/capsule_231x87.jpg?t=1787354972",
+      "categories": [
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-18ae569c3",
       "title": "Beguiled Egress",
@@ -277,18 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-51bdd176e",
-      "title": "Brawlzerker",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5018630/Brawlzerker/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5018630/7f030b956a8b90a54b186957a19a123486512d7c/capsule_231x87.jpg?t=1787337521",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-de1853792",
       "title": "The Escape From Dungeon Keep",
       "kind": "coming_soon",
@@ -494,14 +493,14 @@
       ]
     },
     {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
+      "id": "steam-news-05cdc4bc4",
+      "title": "lovebyte.exe",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787300588",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
       "categories": [
-        "Gündelik"
+        "Bağımsız"
       ]
     },
     {
@@ -516,14 +515,14 @@
       ]
     },
     {
-      "id": "steam-news-05cdc4bc4",
-      "title": "lovebyte.exe",
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787300588",
       "categories": [
-        "Bağımsız"
+        "Gündelik"
       ]
     },
     {
