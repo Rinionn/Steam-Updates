@@ -1,6 +1,53 @@
 {
-  "generatedAt": "2026-08-21T19:17:55.953Z",
+  "generatedAt": "2026-08-21T19:43:32.736Z",
   "items": [
+    {
+      "id": "steam-news-e0d4cde22",
+      "title": "Galumb",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4945850/Galumb/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4945850/6ca1fe63f9360789f9cfd1eafd584afb177262f0/capsule_231x87.jpg?t=1787340875",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "Yarış"
+      ]
+    },
+    {
+      "id": "steam-news-6b0c7e0bf",
+      "title": "Hide and Squatch",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3680940/Hide_and_Squatch/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3680940/709faef94b5836642a029ceeb42cfb279520882a/capsule_231x87.jpg?t=1787340486",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-ee568c939",
+      "title": "Suas Escolhas - O Caso do Magnata Desaparecido",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4940990/Suas_Escolhas__O_Caso_do_Magnata_Desaparecido/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4940990/d5eaa097d9cad15d00feaa603eed55e30700fd36/capsule_231x87.jpg?t=1787340319",
+      "categories": []
+    },
+    {
+      "id": "steam-news-a246724dd",
+      "title": "Skijoring",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4023240/Skijoring/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4023240/45ee118abef71b3bf2fe880dea836d849a13ef0c/capsule_231x87.jpg?t=1787340008",
+      "categories": [
+        "Yarış",
+        "Spor"
+      ]
+    },
     {
       "id": "steam-news-6e5c9d63b",
       "title": "Overhatched",
@@ -235,51 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-10f992056",
-      "title": "CICADAMATA\"",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3817250/CICADAMATA/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3817250/381867c88c95fce5b8e8c8202fb3e02e562954fd/capsule_231x87.jpg?t=1787331646",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-c4b7bfde9",
-      "title": "Harvest Deadline",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4898750/Harvest_Deadline/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4898750/5e17df6fcacbb58ab2a2d5a6032578b94500471f/capsule_231x87.jpg?t=1787331560",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-78da169f3",
-      "title": "Wild Magic",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4783880/Wild_Magic/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4783880/6b2ff185a496af263057de8b63633691b600b238/capsule_231x87.jpg?t=1787331551",
-      "categories": [
-        "Aksiyon",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-2d4f33ab6",
-      "title": "Moo Who?",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4948000/Moo_Who/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4948000/1d1a4405fab2ae1a883ab2c7ef8ca8ddbcfeb967/capsule_231x87.jpg?t=1787331470",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-c71c424af",
       "title": "Unpossess 2: Exorcism Simulator",
       "kind": "coming_soon",
@@ -438,6 +440,17 @@
       ]
     },
     {
+      "id": "steam-news-a1a14841f",
+      "title": "Dice Chemist",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-4f895deb8",
       "title": "スマートフォン",
       "kind": "coming_soon",
@@ -447,17 +460,6 @@
       "categories": [
         "Macera",
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-a1a14841f",
-      "title": "Dice Chemist",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
-      "categories": [
-        "Strateji"
       ]
     },
     {
