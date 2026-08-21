@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T23:37:28.626Z",
+  "generatedAt": "2026-08-21T23:59:20.783Z",
   "items": [
     {
       "id": "steam-news-e9ccb38b2",
@@ -504,17 +504,6 @@
       ]
     },
     {
-      "id": "steam-news-4c069b58b",
-      "title": "Ultrapool",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -523,6 +512,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787300588",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4c069b58b",
+      "title": "Ultrapool",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
+      "categories": [
+        "Strateji"
       ]
     },
     {
