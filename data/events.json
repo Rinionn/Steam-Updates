@@ -1,34 +1,7 @@
 {
-  "generatedAt": "2026-08-21T11:18:36.922Z",
+  "generatedAt": "2026-08-21T16:25:28.675Z",
   "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
   "events": [
-    {
-      "id": "pins-pegs-fest-2624f7168",
-      "name": "Pins & Pegs Fest",
-      "kind": "themed_fest",
-      "startAt": "2026-08-17T17:00:00Z",
-      "endAt": "2026-08-20T17:00:00Z",
-      "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
-      "registrationUrl": "https://partner.steamgames.com/optin/sale/pins_pegs_2026",
-      "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/pins_pegs_2026",
-      "description": "Games involving pins (pinball, bowling) and pegs (pachinko, bagatelle).",
-      "descriptionTr": "Pinball ve bowling gibi lobutları ya da pachinko ve bagatelle gibi çivileri merkeze alan oyunlar.",
-      "matchTags": [
-        "Pinball",
-        "Bowling"
-      ],
-      "deadlines": [
-        {
-          "kind": "milestone",
-          "label": "August 17 @ 10:00am PDT - The event starts. This is the deadline for entering a discount, and opting out if you no longer want to participate.",
-          "dueAt": "2026-08-17T17:00:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/pins_pegs_2026",
-          "id": "pins-pegs-fest-2624f7168-ce6f299e3"
-        }
-      ],
-      "lastSeenAt": "2026-08-21T11:18:25.178Z",
-      "firstSeenAt": "2026-07-30T11:59:50.366Z"
-    },
     {
       "id": "pve-survival-crafting-fest-8bb6de2ec",
       "name": "PvE Survival Crafting Fest",

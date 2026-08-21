@@ -272,5 +272,11 @@
     "kind": "deadline_changed",
     "field": "deadlines.dinos-vs-robots-fest-e4c058c85-525528f74.dueAt",
     "after": "2027-03-29T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-08-21T16:25:28.675Z",
+    "eventId": "pins-pegs-fest-2624f7168",
+    "eventName": "Pins & Pegs Fest",
+    "kind": "removed"
   }
 ]
