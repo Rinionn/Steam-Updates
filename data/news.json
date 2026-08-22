@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T15:49:52.345Z",
+  "generatedAt": "2026-08-22T16:04:55.518Z",
   "items": [
     {
       "id": "steam-news-6b8968322",
@@ -290,17 +290,6 @@
       ]
     },
     {
-      "id": "steam-news-7e43e6d79",
-      "title": "Warrior Spirits",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4895410/Warrior_Spirits/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4895410/608b169222b09edaa7dfbb59c0aae8a93fffc166/capsule_231x87.jpg?t=1787240895",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-4f895deb8",
       "title": "スマートフォン",
       "kind": "coming_soon",
@@ -492,17 +481,6 @@
       ]
     },
     {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-4c069b58b",
       "title": "Ultrapool",
       "kind": "coming_soon",
@@ -514,6 +492,17 @@
       ]
     },
     {
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-89cd93207",
       "title": "HOSHIKUI",
       "kind": "coming_soon",
@@ -522,17 +511,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5081400/282dfe1348dc8e0d9d2b8874743d7acc2bda77ca/capsule_231x87.jpg?t=1787142397",
       "categories": [
         "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-ea26de6fa",
-      "title": "Reverb",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
-      "categories": [
         "Tek Oyunculu"
       ]
     },
@@ -549,12 +527,34 @@
       ]
     },
     {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-06d96f8c9",
       "title": "Neon Cadence",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/5046030/Neon_Cadence/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5046030/574cbaa809525af0ffe7e3767827a858163c0f0d/capsule_231x87.jpg?t=1786519381",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-154a48d56",
+      "title": "Incremental Orbits",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3457720/Incremental_Orbits/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
       "categories": [
         "Gündelik"
       ]
