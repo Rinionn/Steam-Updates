@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-22T22:52:22.555Z",
+  "generatedAt": "2026-08-22T23:10:59.897Z",
   "items": [
+    {
+      "id": "steam-news-b45a04766",
+      "title": "Word Cubes",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4984900/Word_Cubes/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4984900/1228d8cef5b1bf2b878aa99683c2445c3b030fbc/capsule_231x87.jpg?t=1787439702",
+      "categories": [
+        "Gündelik",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-4fe220166",
       "title": "Princess of Frozen Flowers",
@@ -272,18 +284,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-dbf9f6c00",
-      "title": "Meet Sudoku",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4932400/Meet_Sudoku/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4932400/c3218cec87a0ec07cf17af405b7d8bf89e2636cf/capsule_231x87.jpg?t=1787365364",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-a1a14841f",
       "title": "Dice Chemist",
       "kind": "coming_soon",
@@ -464,17 +464,6 @@
       ]
     },
     {
-      "id": "steam-news-4c069b58b",
-      "title": "Ultrapool",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -494,6 +483,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
       "categories": [
         "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-4c069b58b",
+      "title": "Ultrapool",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -543,12 +543,12 @@
       ]
     },
     {
-      "id": "steam-news-154a48d56",
-      "title": "Incremental Orbits",
+      "id": "steam-news-e4429b22a",
+      "title": "Tridan",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3457720/Incremental_Orbits/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4823350/Tridan/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823350/b047a4a9d0bcbf74ceda196ae460142afe22efda/capsule_231x87.jpg?t=1787243246",
       "categories": [
         "Gündelik"
       ]
