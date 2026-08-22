@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-08-22T14:43:19.169Z",
+  "generatedAt": "2026-08-22T15:00:17.361Z",
   "items": [
+    {
+      "id": "steam-news-2e5caff2c",
+      "title": "Puzzles Flowers",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4961740/Puzzles_Flowers/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961740/d3e8fff60d8abb2b88fdf8b6432a24894ef622b7/capsule_231x87.jpg?t=1787410476",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-202b703ea",
+      "title": "Astro Hop: Moon",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4577190/Astro_Hop_Moon/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4577190/da98a961d4ae72b0f7e36aa531ea5269f3027e0b/capsule_231x87.jpg?t=1787410415",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-1f47cf790",
+      "title": "Astro Hop: Mars",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4577200/Astro_Hop_Mars/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4577200/3dc6c31a9bbc7cd333b9de2c7072795916d0317c/capsule_231x87.jpg?t=1787410373",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-1aa72672e",
       "title": "Ashes of Kardoria",
@@ -252,39 +288,6 @@
       "categories": [
         "Aksiyon",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-e45a326e8",
-      "title": "Neko Rogue",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4973340/Neko_Rogue/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4973340/1cc0fb3d4ad5cb3cc13f0eff6485bd1bbb4e5dc4/capsule_231x87.jpg?t=1787358761",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-e9ccb38b2",
-      "title": "Realms Of Wands",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4989300/Realms_Of_Wands/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4989300/b98acd2174a97cc2fca4e6e086bd6dc238bbfbdc/capsule_231x87.jpg?t=1787354972",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-18ae569c3",
-      "title": "Beguiled Egress",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4836860/Beguiled_Egress/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4836860/0aa91a07e2a9f3d3cd2886f9d9b31dff59e887e2/capsule_231x87.jpg?t=1787352691",
-      "categories": [
-        "Korku"
       ]
     },
     {
