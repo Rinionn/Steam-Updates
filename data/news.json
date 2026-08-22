@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-22T21:17:11.297Z",
+  "generatedAt": "2026-08-22T21:57:54.561Z",
   "items": [
+    {
+      "id": "steam-news-c297c23f8",
+      "title": "Grim Reach Idle",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4915450/Grim_Reach_Idle/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915450/b87e7c771dd62d766995d3a0b3414f60b682fc79/capsule_231x87.jpg?t=1787435645",
+      "categories": [
+        "RPG",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-4288b06c4",
       "title": "Master Foot",
@@ -274,14 +286,14 @@
       ]
     },
     {
-      "id": "steam-news-0d2273551",
-      "title": "Three Kingdoms: Shu-Han Chronicles",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3669490/Three_Kingdoms_ShuHan_Chronicles/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669490/5662456eeb115e655db3f7006128f2ba693f8c29/capsule_231x87.jpg?t=1787364401",
+      "id": "steam-news-a1a14841f",
+      "title": "Dice Chemist",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
       "categories": [
-        "RPG"
+        "Strateji"
       ]
     },
     {
@@ -294,17 +306,6 @@
       "categories": [
         "Macera",
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-a1a14841f",
-      "title": "Dice Chemist",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -465,17 +466,6 @@
       ]
     },
     {
-      "id": "steam-news-4c069b58b",
-      "title": "Ultrapool",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -484,6 +474,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4c069b58b",
+      "title": "Ultrapool",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -544,14 +545,14 @@
       ]
     },
     {
-      "id": "steam-news-e4429b22a",
-      "title": "Tridan",
+      "id": "steam-news-6aab0393b",
+      "title": "Mouspionage",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4823350/Tridan/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3646000/Mouspionage/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823350/b047a4a9d0bcbf74ceda196ae460142afe22efda/capsule_231x87.jpg?t=1787243246",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
       "categories": [
-        "Gündelik"
+        "Strateji"
       ]
     },
     {
