@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-22T13:54:38.076Z",
+  "generatedAt": "2026-08-22T14:16:45.985Z",
   "items": [
+    {
+      "id": "steam-news-1aa72672e",
+      "title": "Ashes of Kardoria",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4315690/Ashes_of_Kardoria/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4315690/d73680e56260be073a107dd8325601f3d15b93ef/capsule_231x87.jpg?t=1787407901",
+      "categories": [
+        "RPG",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-c17b6f58b",
       "title": "The Escape From Dungeon Keep",
@@ -276,18 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-64a15dfde",
-      "title": "E-Rally: The Linear Function Racer",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4964280/ERally_The_Linear_Function_Racer/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4964280/1e5eb45e5b2e8345d2b7ee057ab0f89c1fb48f86/capsule_231x87.jpg?t=1787352276",
-      "categories": [
-        "Yarış",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-7e43e6d79",
       "title": "Warrior Spirits",
       "kind": "coming_soon",
@@ -296,17 +296,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4895410/608b169222b09edaa7dfbb59c0aae8a93fffc166/capsule_231x87.jpg?t=1787240895",
       "categories": [
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-a1a14841f",
-      "title": "Dice Chemist",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -319,6 +308,17 @@
       "categories": [
         "Macera",
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-a1a14841f",
+      "title": "Dice Chemist",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -490,17 +490,6 @@
       ]
     },
     {
-      "id": "steam-news-05cdc4bc4",
-      "title": "lovebyte.exe",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-4c069b58b",
       "title": "Ultrapool",
       "kind": "coming_soon",
@@ -509,6 +498,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-05cdc4bc4",
+      "title": "lovebyte.exe",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
