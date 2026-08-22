@@ -1,6 +1,87 @@
 {
-  "generatedAt": "2026-08-22T01:43:54.329Z",
+  "generatedAt": "2026-08-22T02:40:40.534Z",
   "items": [
+    {
+      "id": "steam-news-3fd1b1b86",
+      "title": "StorySmith",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4921700/StorySmith/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4921700/b343323350bc4e4aeb3d824c7dd800dbd22fe3e3/capsule_231x87.jpg?t=1787365522",
+      "categories": []
+    },
+    {
+      "id": "steam-news-dbf9f6c00",
+      "title": "Meet Sudoku",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4932400/Meet_Sudoku/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4932400/c3218cec87a0ec07cf17af405b7d8bf89e2636cf/capsule_231x87.jpg?t=1787365364",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4fb3650b0",
+      "title": "《美少女旅馆：可爱即是正义，但正义需要处刑》",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4632600/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4632600/75f305f4bec3b754d25a48cc26d9eb4584879745/capsule_231x87.jpg?t=1787364614",
+      "categories": [
+        "Bağımsız",
+        "RPG",
+        "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-11e314182",
+      "title": "Eclipsia",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5009220/Eclipsia/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5009220/fdf84fae399aef197973ad0e4dee123acd02ac28/capsule_231x87.jpg?t=1787364457",
+      "categories": [
+        "RPG",
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-0d2273551",
+      "title": "Three Kingdoms: Shu-Han Chronicles",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3669490/Three_Kingdoms_ShuHan_Chronicles/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669490/5662456eeb115e655db3f7006128f2ba693f8c29/capsule_231x87.jpg?t=1787364401",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-595a0ce6b",
+      "title": "EZY Virtual TableTop Builder",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5013430/EZY_Virtual_TableTop_Builder/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5013430/844ba542874985ff7b7f374724f166d5c5582c0f/capsule_231x87.jpg?t=1787364118",
+      "categories": [
+        "RPG",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-acf057455",
+      "title": "Claws Of Power",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3998900/Claws_Of_Power/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3998900/fa82c570e869089d871edc067ad4e9c3a9b8a604/capsule_231x87.jpg?t=1787363801",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-98f3e4819",
       "title": "中医模拟练习生",
@@ -204,89 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-c3c74ecf2",
-      "title": "Unpossess 2: Exorcism Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4373870/Unpossess_2_Exorcism_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4373870/f8e258d0f018492ad13121536a02117e0edf913d/capsule_231x87.jpg?t=1787342449",
-      "categories": [
-        "Bağımsız",
-        "Tek Oyunculu",
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-d644d10fe",
-      "title": "Covid-26",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4825430/Covid26/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4825430/f83ee2fa4ed8c65e1f1e18f98eb86bc920095c9d/capsule_231x87.jpg?t=1787342196",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-ddb94ba37",
-      "title": "BattleDeck",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4779400/BattleDeck/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4779400/5d6e0f038a34e882c7333b613b9eff8164452baf/capsule_231x87.jpg?t=1787342032",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-d9769920a",
-      "title": "Doppler",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4319530/Doppler/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4319530/87c3a206fa208710acad2ce09c3ef70c2080b981/capsule_231x87.jpg?t=1787341591",
-      "categories": [
-        "Yarış"
-      ]
-    },
-    {
-      "id": "steam-news-e0d4cde22",
-      "title": "Galumb",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4945850/Galumb/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4945850/6ca1fe63f9360789f9cfd1eafd584afb177262f0/capsule_231x87.jpg?t=1787340875",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Yarış"
-      ]
-    },
-    {
-      "id": "steam-news-6b0c7e0bf",
-      "title": "Hide and Squatch",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3680940/Hide_and_Squatch/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3680940/709faef94b5836642a029ceeb42cfb279520882a/capsule_231x87.jpg?t=1787340486",
-      "categories": [
-        "Aksiyon",
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-ee568c939",
-      "title": "Suas Escolhas - O Caso do Magnata Desaparecido",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4940990/Suas_Escolhas__O_Caso_do_Magnata_Desaparecido/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4940990/d5eaa097d9cad15d00feaa603eed55e30700fd36/capsule_231x87.jpg?t=1787340319",
-      "categories": []
-    },
-    {
       "id": "steam-news-de1853792",
       "title": "The Escape From Dungeon Keep",
       "kind": "coming_soon",
@@ -312,6 +310,17 @@
       ]
     },
     {
+      "id": "steam-news-a1a14841f",
+      "title": "Dice Chemist",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-4f895deb8",
       "title": "スマートフォン",
       "kind": "coming_soon",
@@ -321,17 +330,6 @@
       "categories": [
         "Macera",
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-a1a14841f",
-      "title": "Dice Chemist",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -352,7 +350,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3859880/CRAWLER/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3859880/7c2f410e7baf176c54a01a925fc22a12586c3a21/capsule_231x87.jpg?t=1785451081",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3859880/7c2f410e7baf176c54a01a925fc22a12586c3a21/capsule_231x87.jpg?t=1787364524",
       "categories": [
         "Simülasyon",
         "Aksiyon"
@@ -492,14 +490,14 @@
       ]
     },
     {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
+      "id": "steam-news-05cdc4bc4",
+      "title": "lovebyte.exe",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787300588",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
       "categories": [
-        "Gündelik"
+        "Bağımsız"
       ]
     },
     {
@@ -514,14 +512,14 @@
       ]
     },
     {
-      "id": "steam-news-05cdc4bc4",
-      "title": "lovebyte.exe",
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787300588",
       "categories": [
-        "Bağımsız"
+        "Gündelik"
       ]
     },
     {
