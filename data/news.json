@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-08-22T11:16:01.756Z",
+  "generatedAt": "2026-08-22T11:40:42.015Z",
   "items": [
+    {
+      "id": "steam-news-c17b6f58b",
+      "title": "The Escape From Dungeon Keep",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5050070/The_Escape_From_Dungeon_Keep/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050070/d53ded7c698db812e5049af99848566e07b23fe7/capsule_231x87.jpg?t=1787397575",
+      "categories": [
+        "RPG",
+        "Gündelik",
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-a2f0e99a7",
       "title": "Strait of Hormuz Mini Arcade",
@@ -20,7 +34,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4592430/DEEP_DIVER/?snr=1_7_7_230_150_1",
       "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4592430/bc66cfc82d00eb061f05840d8f665aa9e5dd4b89/capsule_231x87.jpg?t=1787396181",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4592430/bc66cfc82d00eb061f05840d8f665aa9e5dd4b89/capsule_231x87.jpg?t=1787397973",
       "categories": [
         "Bağımsız"
       ]
@@ -274,19 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-48054164f",
-      "title": "Empire Eleven 2026",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4502700/Empire_Eleven_2026/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4502700/a13726939fdc084527f9f242c67c17a3a13e4690/capsule_231x87.jpg?t=1787371853",
-      "categories": [
-        "Simülasyon",
-        "Spor",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-7e43e6d79",
       "title": "Warrior Spirits",
       "kind": "coming_soon",
@@ -295,6 +296,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4895410/608b169222b09edaa7dfbb59c0aae8a93fffc166/capsule_231x87.jpg?t=1787240895",
       "categories": [
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-a1a14841f",
+      "title": "Dice Chemist",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -307,17 +319,6 @@
       "categories": [
         "Macera",
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-a1a14841f",
-      "title": "Dice Chemist",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -478,17 +479,6 @@
       ]
     },
     {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-4c069b58b",
       "title": "Ultrapool",
       "kind": "coming_soon",
@@ -508,6 +498,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
       "categories": [
         "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
