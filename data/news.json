@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-08-22T02:40:40.534Z",
+  "generatedAt": "2026-08-22T03:25:08.047Z",
   "items": [
+    {
+      "id": "steam-news-d0c088c47",
+      "title": "Mado Marks",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4832290/Mado_Marks/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4832290/c148ca70a8a32287ba3877e2ecf79730308e9547/capsule_231x87.jpg?t=1787368837",
+      "categories": [
+        "Macera",
+        "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-b683af411",
+      "title": "Popping Bubbles in Space",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4803440/Popping_Bubbles_in_Space/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4803440/bc1062b33850e2c8ae0ad26f73220bc9d9970265/capsule_231x87.jpg?t=1787367816",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-2cf67d69e",
+      "title": "夯犇绿色传奇",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4951370/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951370/bd875281b097660afa004bf8cc95e2ac9763585e/capsule_231x87.jpg?t=1787367640",
+      "categories": [
+        "RPG",
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-3fd1b1b86",
       "title": "StorySmith",
@@ -112,7 +147,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4637580/Sky_Runway/?snr=1_7_7_230_150_1",
       "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4637580/97268ad94fbe2dc324fd1d388f694eb7300a10fb/capsule_231x87.jpg?t=1787360600",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4637580/97268ad94fbe2dc324fd1d388f694eb7300a10fb/capsule_231x87.jpg?t=1787367697",
       "categories": [
         "Aksiyon",
         "Macera"
@@ -247,44 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-d5344e519",
-      "title": "SquareLife",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4866310/SquareLife/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4866310/b13d0ee9a196f9319bfd4453ef0e47ddfc729973/capsule_231x87.jpg?t=1787345878",
-      "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Tek Oyunculu",
-        "Oynaması Ücretsiz"
-      ]
-    },
-    {
-      "id": "steam-news-3ddf97b6f",
-      "title": "V.A.U.L.T. PROTOCOL",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4178200/VAULT_PROTOCOL/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4178200/92c2a224bb5178b970b17fc252073e32ae82eed3/capsule_231x87.jpg?t=1787343427",
-      "categories": [
-        "Bağımsız",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-04e03e82e",
-      "title": "Alice ou o Mundo?",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5015660/Alice_ou_o_Mundo/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5015660/8b019f35d257374e68ec9164b88b3f4e81d1bc79/capsule_231x87.jpg?t=1787343230",
-      "categories": [
-        "RPG",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-de1853792",
       "title": "The Escape From Dungeon Keep",
       "kind": "coming_soon",
@@ -310,17 +307,6 @@
       ]
     },
     {
-      "id": "steam-news-a1a14841f",
-      "title": "Dice Chemist",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-4f895deb8",
       "title": "スマートフォン",
       "kind": "coming_soon",
@@ -330,6 +316,17 @@
       "categories": [
         "Macera",
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-a1a14841f",
+      "title": "Dice Chemist",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -490,17 +487,6 @@
       ]
     },
     {
-      "id": "steam-news-05cdc4bc4",
-      "title": "lovebyte.exe",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-4c069b58b",
       "title": "Ultrapool",
       "kind": "coming_soon",
@@ -520,6 +506,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787300588",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-05cdc4bc4",
+      "title": "lovebyte.exe",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
