@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-08-22T23:34:52.755Z",
+  "generatedAt": "2026-08-22T23:53:47.173Z",
   "items": [
+    {
+      "id": "steam-news-06b1abe3e",
+      "title": "Deadline",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4996950/Deadline/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4996950/d2912edb1dc8ec46608dc6b31964da6b324e13e8/capsule_231x87.jpg?t=1787441895",
+      "categories": []
+    },
     {
       "id": "steam-news-2aa906d47",
       "title": "Zone Sweeper",
@@ -275,18 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-2cf67d69e",
-      "title": "夯犇绿色传奇",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4951370/_/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951370/bd875281b097660afa004bf8cc95e2ac9763585e/capsule_231x87.jpg?t=1787367640",
-      "categories": [
-        "RPG",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-a1a14841f",
       "title": "Dice Chemist",
       "kind": "coming_soon",
@@ -467,6 +464,17 @@
       ]
     },
     {
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-05cdc4bc4",
       "title": "lovebyte.exe",
       "kind": "coming_soon",
@@ -486,17 +494,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
       "categories": [
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
