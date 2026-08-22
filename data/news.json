@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-22T22:31:06.971Z",
+  "generatedAt": "2026-08-22T22:52:22.555Z",
   "items": [
+    {
+      "id": "steam-news-4fe220166",
+      "title": "Princess of Frozen Flowers",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3349560/Princess_of_Frozen_Flowers/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3349560/a54efda5b6de359aa1683c58f99bdb119935f8a7/capsule_231x87.jpg?t=1787438498",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
     {
       "id": "steam-news-8e106e7eb",
       "title": "Garden Defence",
@@ -273,19 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-4fb3650b0",
-      "title": "《美少女旅馆：可爱即是正义，但正义需要处刑》",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4632600/_/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4632600/75f305f4bec3b754d25a48cc26d9eb4584879745/capsule_231x87.jpg?t=1787364614",
-      "categories": [
-        "Bağımsız",
-        "RPG",
-        "Anime"
-      ]
-    },
-    {
       "id": "steam-news-a1a14841f",
       "title": "Dice Chemist",
       "kind": "coming_soon",
@@ -477,17 +475,6 @@
       ]
     },
     {
-      "id": "steam-news-05cdc4bc4",
-      "title": "lovebyte.exe",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -499,6 +486,17 @@
       ]
     },
     {
+      "id": "steam-news-05cdc4bc4",
+      "title": "lovebyte.exe",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
+    {
       "id": "steam-news-89cd93207",
       "title": "HOSHIKUI",
       "kind": "coming_soon",
@@ -507,6 +505,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5081400/282dfe1348dc8e0d9d2b8874743d7acc2bda77ca/capsule_231x87.jpg?t=1787142397",
       "categories": [
         "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
         "Tek Oyunculu"
       ]
     },
@@ -523,17 +532,6 @@
       ]
     },
     {
-      "id": "steam-news-ea26de6fa",
-      "title": "Reverb",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-06d96f8c9",
       "title": "Neon Cadence",
       "kind": "coming_soon",
@@ -545,12 +543,12 @@
       ]
     },
     {
-      "id": "steam-news-e4429b22a",
-      "title": "Tridan",
+      "id": "steam-news-154a48d56",
+      "title": "Incremental Orbits",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4823350/Tridan/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3457720/Incremental_Orbits/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823350/b047a4a9d0bcbf74ceda196ae460142afe22efda/capsule_231x87.jpg?t=1787243246",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
       "categories": [
         "Gündelik"
       ]
