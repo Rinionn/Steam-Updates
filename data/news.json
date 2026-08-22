@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-22T10:54:15.248Z",
+  "generatedAt": "2026-08-22T11:16:01.756Z",
   "items": [
+    {
+      "id": "steam-news-a2f0e99a7",
+      "title": "Strait of Hormuz Mini Arcade",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5010210/Strait_of_Hormuz_Mini_Arcade/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5010210/5c16290509d0763e869442a00cb776c2ad94a099/capsule_231x87.jpg?t=1787397105",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-fa1397165",
+      "title": "DEEP DIVER",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4592430/DEEP_DIVER/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4592430/bc66cfc82d00eb061f05840d8f665aa9e5dd4b89/capsule_231x87.jpg?t=1787396181",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
     {
       "id": "steam-news-eebc2665e",
       "title": "Touhou Desktop Pet",
@@ -263,43 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-e4a09735c",
-      "title": "Pavlov Shack",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3504270/Pavlov_Shack/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3504270/6ecf636d16d08343ad7fd1b8662f9f8174cbbfe3/capsule_231x87.jpg?t=1787352893",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-a6f80d432",
-      "title": "Card Maker Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4359910/Card_Maker_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4359910/0b27d623060bdcba359fa13bfde1d8703e1adb4c/capsule_231x87.jpg?t=1787351087",
-      "categories": [
-        "Simülasyon",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-de1853792",
-      "title": "The Escape From Dungeon Keep",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5050070/The_Escape_From_Dungeon_Keep/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050070/d53ded7c698db812e5049af99848566e07b23fe7/capsule_231x87.jpg?t=1786993754",
-      "categories": [
-        "RPG",
-        "Gündelik",
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-7e43e6d79",
       "title": "Warrior Spirits",
       "kind": "coming_soon",
@@ -491,6 +478,17 @@
       ]
     },
     {
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-4c069b58b",
       "title": "Ultrapool",
       "kind": "coming_soon",
@@ -510,17 +508,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
       "categories": [
         "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -556,6 +543,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
       "categories": [
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-06d96f8c9",
+      "title": "Neon Cadence",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5046030/Neon_Cadence/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5046030/574cbaa809525af0ffe7e3767827a858163c0f0d/capsule_231x87.jpg?t=1786519381",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
