@@ -1,6 +1,53 @@
 {
-  "generatedAt": "2026-08-21T23:59:20.783Z",
+  "generatedAt": "2026-08-22T01:43:54.329Z",
   "items": [
+    {
+      "id": "steam-news-98f3e4819",
+      "title": "中医模拟练习生",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4651150/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4651150/76b6e3a67d1a0ec300880f06a06b723a3adb49c7/capsule_231x87.jpg?t=1787361288",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-ecee53924",
+      "title": "Ashfire Keep",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5009540/Ashfire_Keep/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5009540/a07c9e0a412178224c4791789da8f7846d7e1803/capsule_231x87.jpg?t=1787361161",
+      "categories": [
+        "Aksiyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-73d4c2690",
+      "title": "Sky Runway",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4637580/Sky_Runway/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4637580/97268ad94fbe2dc324fd1d388f694eb7300a10fb/capsule_231x87.jpg?t=1787360600",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-e45a326e8",
+      "title": "Neko Rogue",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4973340/Neko_Rogue/?snr=1_7_7_230_150_1",
+      "dateLabel": "21 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4973340/1cc0fb3d4ad5cb3cc13f0eff6485bd1bbb4e5dc4/capsule_231x87.jpg?t=1787358761",
+      "categories": [
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-e9ccb38b2",
       "title": "Realms Of Wands",
@@ -240,54 +287,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-a246724dd",
-      "title": "Skijoring",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4023240/Skijoring/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4023240/45ee118abef71b3bf2fe880dea836d849a13ef0c/capsule_231x87.jpg?t=1787340008",
-      "categories": [
-        "Yarış",
-        "Spor"
-      ]
-    },
-    {
-      "id": "steam-news-6e5c9d63b",
-      "title": "Overhatched",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4769490/Overhatched/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4769490/009607681213983afcb3626cf086322982e57296/capsule_231x87.jpg?t=1787339046",
-      "categories": [
-        "Strateji",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-450d512d9",
-      "title": "Forensh",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4424650/Forensh/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4424650/ecde0bee30c8ed00440235b814e313b8d04825b6/capsule_231x87.jpg?t=1787339032",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-83bb0d5b9",
-      "title": "PRISMBLOOM",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5011600/PRISMBLOOM/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5011600/c883003eeb0b6bf5b97b5260f812a3b937ee22e7/capsule_231x87.jpg?t=1787338393",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-de1853792",
       "title": "The Escape From Dungeon Keep",
       "kind": "coming_soon",
@@ -493,17 +492,6 @@
       ]
     },
     {
-      "id": "steam-news-05cdc4bc4",
-      "title": "lovebyte.exe",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -523,6 +511,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-05cdc4bc4",
+      "title": "lovebyte.exe",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
