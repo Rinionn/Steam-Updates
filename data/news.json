@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-08-23T10:54:52.757Z",
+  "generatedAt": "2026-08-23T11:17:21.123Z",
   "items": [
+    {
+      "id": "steam-news-bc52213b2",
+      "title": "The Long Drive Badland",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4478680/The_Long_Drive_Badland/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4478680/f759416fcad006bba5692ee3f1608f3937e4e4e4/capsule_231x87.jpg?t=1787482862",
+      "categories": [
+        "Macera",
+        "Simülasyon",
+        "Yarış"
+      ]
+    },
+    {
+      "id": "steam-news-c8bf26d78",
+      "title": "Casino Legends",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4922330/Casino_Legends/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4922330/a58a3f1d37950fff7b37859d4b02f2df32717782/capsule_231x87.jpg?t=1787483451",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-210e233fb",
       "title": "Type Ride",
@@ -252,28 +277,14 @@
       ]
     },
     {
-      "id": "steam-news-1f47cf790",
-      "title": "Astro Hop: Mars",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4577200/Astro_Hop_Mars/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4577200/3dc6c31a9bbc7cd333b9de2c7072795916d0317c/capsule_231x87.jpg?t=1787410373",
+      "id": "steam-news-a1a14841f",
+      "title": "Dice Chemist",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
       "categories": [
-        "Aksiyon",
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-1aa72672e",
-      "title": "Ashes of Kardoria",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4315690/Ashes_of_Kardoria/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4315690/d73680e56260be073a107dd8325601f3d15b93ef/capsule_231x87.jpg?t=1787409491",
-      "categories": [
-        "RPG",
-        "Tek Oyunculu"
+        "Strateji"
       ]
     },
     {
@@ -286,17 +297,6 @@
       "categories": [
         "Macera",
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-a1a14841f",
-      "title": "Dice Chemist",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -481,17 +481,6 @@
       ]
     },
     {
-      "id": "steam-news-ea26de6fa",
-      "title": "Reverb",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-21b66c7bb",
       "title": "No Final Run",
       "kind": "coming_soon",
@@ -504,12 +493,34 @@
       ]
     },
     {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-06d96f8c9",
       "title": "Neon Cadence",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/5046030/Neon_Cadence/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5046030/574cbaa809525af0ffe7e3767827a858163c0f0d/capsule_231x87.jpg?t=1786519381",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-154a48d56",
+      "title": "Incremental Orbits",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3457720/Incremental_Orbits/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
       "categories": [
         "Gündelik"
       ]
@@ -532,17 +543,6 @@
       "url": "https://store.steampowered.com/app/4823350/Tridan/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823350/b047a4a9d0bcbf74ceda196ae460142afe22efda/capsule_231x87.jpg?t=1787243246",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-154a48d56",
-      "title": "Incremental Orbits",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3457720/Incremental_Orbits/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
       "categories": [
         "Gündelik"
       ]
