@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T17:50:00.964Z",
+  "generatedAt": "2026-08-23T18:09:04.462Z",
   "items": [
     {
       "id": "steam-news-2db8fb54c",
@@ -363,17 +363,6 @@
       ]
     },
     {
-      "id": "steam-news-86c902b63",
-      "title": "Prospector Peril",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4833990/Prospector_Peril/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4833990/8610c930b7000a013b55ab84ce08d57ca8235603/capsule_231x87.jpg?t=1787324764",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-284f27a85",
       "title": "Titanic Escape Simulator™",
       "kind": "coming_soon",
@@ -383,6 +372,17 @@
       "categories": [
         "Macera",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-86c902b63",
+      "title": "Prospector Peril",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4833990/Prospector_Peril/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4833990/8610c930b7000a013b55ab84ce08d57ca8235603/capsule_231x87.jpg?t=1787324764",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -409,17 +409,6 @@
       ]
     },
     {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787381848",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-4c069b58b",
       "title": "Ultrapool",
       "kind": "coming_soon",
@@ -439,6 +428,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
       "categories": [
         "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787381848",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -521,18 +521,6 @@
       ]
     },
     {
-      "id": "steam-news-82ee595a2",
-      "title": "BURNED HORIZONS",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3985330/BURNED_HORIZONS/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1786807293",
-      "categories": [
-        "Bağımsız",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-bd00e76a1",
       "title": "FEED THE AI",
       "kind": "coming_soon",
@@ -542,6 +530,18 @@
       "categories": [
         "Gündelik",
         "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-82ee595a2",
+      "title": "BURNED HORIZONS",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3985330/BURNED_HORIZONS/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1786807293",
+      "categories": [
+        "Bağımsız",
         "Strateji"
       ]
     },
