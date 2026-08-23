@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-08-23T06:55:36.812Z",
+  "generatedAt": "2026-08-23T07:40:37.499Z",
   "items": [
+    {
+      "id": "steam-news-665f469ee",
+      "title": "GwenBlade Witcheresque",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4354550/GwenBlade_Witcheresque/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354550/297902e3f7b1075e0b8be7118bf2a18de33cafa0/capsule_231x87.jpg?t=1787470014",
+      "categories": [
+        "Aksiyon",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-14246a527",
+      "title": "The Keeper's Path",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4927900/The_Keepers_Path/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927900/61ee49755fa09efbd346570e0f9149f9566ba9ff/capsule_231x87.jpg?t=1787468993",
+      "categories": [
+        "RPG",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-003b502a5",
       "title": "K-jihacheol",
@@ -258,30 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-a2f0e99a7",
-      "title": "Strait of Hormuz Mini Arcade",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5010210/Strait_of_Hormuz_Mini_Arcade/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5010210/5c16290509d0763e869442a00cb776c2ad94a099/capsule_231x87.jpg?t=1787397105",
-      "categories": [
-        "Aksiyon",
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-fa1397165",
-      "title": "DEEP DIVER",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4592430/DEEP_DIVER/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4592430/bc66cfc82d00eb061f05840d8f665aa9e5dd4b89/capsule_231x87.jpg?t=1787444914",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-4f895deb8",
       "title": "スマートフォン",
       "kind": "coming_soon",
@@ -450,6 +450,17 @@
       ]
     },
     {
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-05cdc4bc4",
       "title": "lovebyte.exe",
       "kind": "coming_soon",
@@ -469,17 +480,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
       "categories": [
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -529,17 +529,6 @@
       ]
     },
     {
-      "id": "steam-news-e4429b22a",
-      "title": "Tridan",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4823350/Tridan/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823350/b047a4a9d0bcbf74ceda196ae460142afe22efda/capsule_231x87.jpg?t=1787243246",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-6aab0393b",
       "title": "Mouspionage",
       "kind": "coming_soon",
@@ -548,6 +537,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-154a48d56",
+      "title": "Incremental Orbits",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3457720/Incremental_Orbits/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
