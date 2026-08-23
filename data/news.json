@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-08-23T08:01:30.279Z",
+  "generatedAt": "2026-08-23T08:41:55.541Z",
   "items": [
+    {
+      "id": "steam-news-210e233fb",
+      "title": "Type Ride",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3295430/Type_Ride/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3295430/68979c8c248af62ac20d1b1c18584cf03a370b2a/capsule_231x87.jpg?t=1787472323",
+      "categories": []
+    },
     {
       "id": "steam-news-665f469ee",
       "title": "GwenBlade Witcheresque",
@@ -268,20 +277,6 @@
       ]
     },
     {
-      "id": "steam-news-c17b6f58b",
-      "title": "The Escape From Dungeon Keep",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5050070/The_Escape_From_Dungeon_Keep/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050070/d53ded7c698db812e5049af99848566e07b23fe7/capsule_231x87.jpg?t=1787397575",
-      "categories": [
-        "RPG",
-        "Gündelik",
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-a1a14841f",
       "title": "Dice Chemist",
       "kind": "coming_soon",
@@ -327,15 +322,6 @@
         "Macera",
         "Korku"
       ]
-    },
-    {
-      "id": "steam-news-71cad4a98",
-      "title": "Type Ride",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3295430/Type_Ride/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3295430/68979c8c248af62ac20d1b1c18584cf03a370b2a/capsule_231x87.jpg?t=1786454822",
-      "categories": []
     },
     {
       "id": "steam-news-927b54b9b",
@@ -450,6 +436,17 @@
       ]
     },
     {
+      "id": "steam-news-4c069b58b",
+      "title": "Ultrapool",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -469,17 +466,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
       "categories": [
         "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-4c069b58b",
-      "title": "Ultrapool",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -529,14 +515,14 @@
       ]
     },
     {
-      "id": "steam-news-6aab0393b",
-      "title": "Mouspionage",
+      "id": "steam-news-e4429b22a",
+      "title": "Tridan",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3646000/Mouspionage/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4823350/Tridan/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823350/b047a4a9d0bcbf74ceda196ae460142afe22efda/capsule_231x87.jpg?t=1787243246",
       "categories": [
-        "Strateji"
+        "Gündelik"
       ]
     },
     {
@@ -548,6 +534,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-6aab0393b",
+      "title": "Mouspionage",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3646000/Mouspionage/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
+      "categories": [
+        "Strateji"
       ]
     },
     {
