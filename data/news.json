@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T14:54:33.821Z",
+  "generatedAt": "2026-08-23T15:17:04.157Z",
   "items": [
     {
       "id": "steam-news-e4652dc76",
@@ -282,29 +282,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-a1a14841f",
-      "title": "Dice Chemist",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5069100/Dice_Chemist/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069100/b0b7298bc1a24d326186c22a2f4dd8f8d7783cf6/capsule_231x87.jpg?t=1787323340",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-4f895deb8",
-      "title": "スマートフォン",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4937120/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4937120/239e7af26543c20d9479a8594dc55fbe264ac399/capsule_231x87.jpg?t=1787021539",
-      "categories": [
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-41c494b1c",
       "title": "桌面塔罗 Desktop Tarot",
       "kind": "coming_soon",
@@ -550,6 +527,30 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-be5a89b7c",
+      "title": "Mythic Battle",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4858820/Mythic_Battle/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858820/e0a147f54e65b81115a46c61a100b9ac1afce1df/capsule_231x87.jpg?t=1787119046",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-bd00e76a1",
+      "title": "FEED THE AI",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4486870/FEED_THE_AI/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486870/a43c8fc4ca7aad2b8e03b6a37bc6cabe40949adb/capsule_231x87.jpg?t=1787475616",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Strateji"
       ]
     },
     {
