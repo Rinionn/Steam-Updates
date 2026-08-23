@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-23T21:17:13.070Z",
+  "generatedAt": "2026-08-23T21:41:14.515Z",
   "items": [
+    {
+      "id": "steam-news-950c3cbd0",
+      "title": "Cow",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4745980/Cow/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4745980/a15fa84d52d199b340bfce259b153487fe1c3bce/capsule_231x87.jpg?t=1787520477",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-a4e019d8b",
       "title": "Snitch Switch",
@@ -272,18 +283,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-2aa906d47",
-      "title": "Zone Sweeper",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4959960/Zone_Sweeper/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4959960/8e1ac495ded6f6f910e1d72b7f373be99e9dd56a/capsule_231x87.jpg?t=1787440336",
-      "categories": [
-        "RPG",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-86c902b63",
       "title": "Prospector Peril",
       "kind": "coming_soon",
@@ -330,17 +329,6 @@
       ]
     },
     {
-      "id": "steam-news-05cdc4bc4",
-      "title": "lovebyte.exe",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -360,6 +348,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-05cdc4bc4",
+      "title": "lovebyte.exe",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
@@ -535,6 +534,17 @@
       ]
     },
     {
+      "id": "steam-news-07b7dc457",
+      "title": "Loot Frog",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4294860/Loot_Frog/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4294860/a47eea8df328f7bb35ed4d9ee0ae9a806051e757/capsule_231x87.jpg?t=1787519832",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-5d9b6e519",
       "title": "Killer Chase",
       "kind": "coming_soon",
@@ -543,17 +553,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4545720/c821f602d4fbbd3d056ae45a13ccb724e7424351/capsule_231x87.jpg?t=1785268020",
       "categories": [
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-454a058c7",
-      "title": "A Game About Flipping Cards",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4659250/A_Game_About_Flipping_Cards/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4659250/08c2100c334cd6c07cacd935972f74edbe9232f6/capsule_231x87.jpg?t=1787205204",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
