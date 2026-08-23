@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-22T23:53:47.173Z",
+  "generatedAt": "2026-08-23T00:56:59.507Z",
   "items": [
+    {
+      "id": "steam-news-b5af8912e",
+      "title": "Oro Cade",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4706280/Oro_Cade/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706280/58962f0b494e4bd8fd888ac1453608b9bce37ec9/capsule_231x87.jpg?t=1787445064",
+      "categories": [
+        "Gündelik",
+        "Aksiyon",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-06b1abe3e",
       "title": "Deadline",
@@ -204,7 +217,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4592430/DEEP_DIVER/?snr=1_7_7_230_150_1",
       "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4592430/bc66cfc82d00eb061f05840d8f665aa9e5dd4b89/capsule_231x87.jpg?t=1787406140",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4592430/bc66cfc82d00eb061f05840d8f665aa9e5dd4b89/capsule_231x87.jpg?t=1787444914",
       "categories": [
         "Bağımsız"
       ]
@@ -270,17 +283,6 @@
       "categories": [
         "Macera",
         "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-b683af411",
-      "title": "Popping Bubbles in Space",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4803440/Popping_Bubbles_in_Space/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4803440/bc1062b33850e2c8ae0ad26f73220bc9d9970265/capsule_231x87.jpg?t=1787367816",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -464,17 +466,6 @@
       ]
     },
     {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-05cdc4bc4",
       "title": "lovebyte.exe",
       "kind": "coming_soon",
@@ -483,6 +474,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
       "categories": [
         "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
