@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-23T00:56:59.507Z",
+  "generatedAt": "2026-08-23T02:26:34.105Z",
   "items": [
+    {
+      "id": "steam-news-c62cd8322",
+      "title": "敵国工場への潜入",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4929990/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4929990/798619f164f1cfaafecb56e695f277c8b0570523/capsule_231x87.jpg?t=1787449824",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-b5af8912e",
       "title": "Oro Cade",
@@ -274,18 +286,6 @@
       ]
     },
     {
-      "id": "steam-news-d0c088c47",
-      "title": "Mado Marks",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4832290/Mado_Marks/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4832290/c148ca70a8a32287ba3877e2ecf79730308e9547/capsule_231x87.jpg?t=1787368837",
-      "categories": [
-        "Macera",
-        "Anime"
-      ]
-    },
-    {
       "id": "steam-news-a1a14841f",
       "title": "Dice Chemist",
       "kind": "coming_soon",
@@ -318,18 +318,6 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-7cc7dbdb0",
-      "title": "CRAWLER",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3859880/CRAWLER/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3859880/7c2f410e7baf176c54a01a925fc22a12586c3a21/capsule_231x87.jpg?t=1787364524",
-      "categories": [
-        "Simülasyon",
-        "Aksiyon"
       ]
     },
     {
@@ -553,6 +541,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-e4429b22a",
+      "title": "Tridan",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4823350/Tridan/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823350/b047a4a9d0bcbf74ceda196ae460142afe22efda/capsule_231x87.jpg?t=1787243246",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
