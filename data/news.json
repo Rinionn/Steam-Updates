@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-08-23T19:55:52.977Z",
+  "generatedAt": "2026-08-23T20:33:01.483Z",
   "items": [
+    {
+      "id": "steam-news-900694dcb",
+      "title": "Puzzles Raccoons",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4961830/Puzzles_Raccoons/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961830/cac924f32a9e3c8f5425274c50c4c7ce7b62d64a/capsule_231x87.jpg?t=1787516192",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-6d4bbe4b8",
+      "title": "Puzzles Hamster",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4961770/Puzzles_Hamster/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961770/aeeca8a1df97dcc46ff002f909d5d9f81a115c39/capsule_231x87.jpg?t=1787515670",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-aa0c5a4bc",
+      "title": "Puzzles Colors",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4961800/Puzzles_Colors/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961800/c207c7a4ee2a7deb4fed0189b34ae31ecd126779/capsule_231x87.jpg?t=1787515469",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-4f9eee206",
       "title": "Digline",
@@ -248,42 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-4fe220166",
-      "title": "Princess of Frozen Flowers",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3349560/Princess_of_Frozen_Flowers/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3349560/a54efda5b6de359aa1683c58f99bdb119935f8a7/capsule_231x87.jpg?t=1787438498",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-8e106e7eb",
-      "title": "Garden Defence",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4870060/Garden_Defence/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4870060/3077207b8a094c2d9c708a2fc2444bd823041cdf/capsule_231x87.jpg?t=1787436426",
-      "categories": [
-        "Strateji",
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-c297c23f8",
-      "title": "Grim Reach Idle",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4915450/Grim_Reach_Idle/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4915450/b87e7c771dd62d766995d3a0b3414f60b682fc79/capsule_231x87.jpg?t=1787435645",
-      "categories": [
-        "RPG",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-e86a586d6",
       "title": "AFTERLIGHT: The Apartment",
       "kind": "coming_soon",
@@ -408,17 +408,6 @@
       ]
     },
     {
-      "id": "steam-news-4c069b58b",
-      "title": "Ultrapool",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -427,6 +416,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787381848",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4c069b58b",
+      "title": "Ultrapool",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -520,6 +520,17 @@
       ]
     },
     {
+      "id": "steam-news-be5a89b7c",
+      "title": "Mythic Battle",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4858820/Mythic_Battle/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858820/e0a147f54e65b81115a46c61a100b9ac1afce1df/capsule_231x87.jpg?t=1787119046",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-82ee595a2",
       "title": "BURNED HORIZONS",
       "kind": "coming_soon",
@@ -528,17 +539,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1786807293",
       "categories": [
         "Bağımsız",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-be5a89b7c",
-      "title": "Mythic Battle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4858820/Mythic_Battle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858820/e0a147f54e65b81115a46c61a100b9ac1afce1df/capsule_231x87.jpg?t=1787119046",
-      "categories": [
         "Strateji"
       ]
     },
