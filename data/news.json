@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-08-23T12:56:02.300Z",
+  "generatedAt": "2026-08-23T13:39:06.925Z",
   "items": [
+    {
+      "id": "steam-news-9136eeaa3",
+      "title": "Sudoku Mania",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5043720/Sudoku_Mania/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5043720/c6ae4e3214377610129b412f13343a07e72e62df/capsule_231x87.jpg?t=1787491183",
+      "categories": [
+        "Gündelik",
+        "Strateji",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-54ebbcb23",
+      "title": "Cybersquare Madness",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4538030/Cybersquare_Madness/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4538030/578613b4b9eaf95350c92f053dd51d5922ec6b4c/capsule_231x87.jpg?t=1787490226",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-8244b3f75",
       "title": "OPEN FOR BUSINESS: Game & Movie Store Simulator",
@@ -257,26 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-398f41922",
-      "title": "QWER YUIO ASDF HJKL",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5010500/QWER_YUIO_ASDF_HJKL/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5010500/b4df3bad5c498c4427e9ad8445b127c071263cb3/capsule_231x87.jpg?t=1787431326",
-      "categories": []
-    },
-    {
-      "id": "steam-news-6b8968322",
-      "title": "Kritzel Krieg",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4765200/Kritzel_Krieg/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4765200/21dc89d0afb85275592533fb08e54c0160e41b5a/capsule_231x87.jpg?t=1787412797",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-a1a14841f",
       "title": "Dice Chemist",
       "kind": "coming_soon",
@@ -436,17 +441,6 @@
       ]
     },
     {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787381848",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-4c069b58b",
       "title": "Ultrapool",
       "kind": "coming_soon",
@@ -455,6 +449,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787381848",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -481,6 +486,17 @@
       ]
     },
     {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-21b66c7bb",
       "title": "No Final Run",
       "kind": "coming_soon",
@@ -490,17 +506,6 @@
       "categories": [
         "Aksiyon",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-ea26de6fa",
-      "title": "Reverb",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
-      "categories": [
-        "Tek Oyunculu"
       ]
     },
     {
