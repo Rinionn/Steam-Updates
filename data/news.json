@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-23T11:17:21.123Z",
+  "generatedAt": "2026-08-23T11:40:50.642Z",
   "items": [
+    {
+      "id": "steam-news-f90ec609d",
+      "title": "Breachline",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4886460/Breachline/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4886460/b8516ae5f5cb3bca01c9449c294a26f3467a0de6/capsule_231x87.jpg?t=1787484553",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-bc52213b2",
       "title": "The Long Drive Badland",
@@ -266,17 +278,6 @@
       ]
     },
     {
-      "id": "steam-news-202b703ea",
-      "title": "Astro Hop: Moon",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4577190/Astro_Hop_Moon/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4577190/da98a961d4ae72b0f7e36aa531ea5269f3027e0b/capsule_231x87.jpg?t=1787410415",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-a1a14841f",
       "title": "Dice Chemist",
       "kind": "coming_soon",
@@ -515,17 +516,6 @@
       ]
     },
     {
-      "id": "steam-news-154a48d56",
-      "title": "Incremental Orbits",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3457720/Incremental_Orbits/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-6aab0393b",
       "title": "Mouspionage",
       "kind": "coming_soon",
@@ -543,6 +533,17 @@
       "url": "https://store.steampowered.com/app/4823350/Tridan/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823350/b047a4a9d0bcbf74ceda196ae460142afe22efda/capsule_231x87.jpg?t=1787243246",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-154a48d56",
+      "title": "Incremental Orbits",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3457720/Incremental_Orbits/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
       "categories": [
         "Gündelik"
       ]
