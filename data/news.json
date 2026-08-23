@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T22:31:22.547Z",
+  "generatedAt": "2026-08-23T22:52:22.167Z",
   "items": [
     {
       "id": "steam-news-950c3cbd0",
@@ -7,7 +7,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4745980/Cow/?snr=1_7_7_230_150_1",
       "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4745980/a15fa84d52d199b340bfce259b153487fe1c3bce/capsule_231x87.jpg?t=1787520477",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4745980/a15fa84d52d199b340bfce259b153487fe1c3bce/capsule_231x87.jpg?t=1787525536",
       "categories": [
         "Gündelik"
       ]
@@ -329,17 +329,6 @@
       ]
     },
     {
-      "id": "steam-news-4c069b58b",
-      "title": "Ultrapool",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -359,6 +348,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
       "categories": [
         "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-4c069b58b",
+      "title": "Ultrapool",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
+      "categories": [
+        "Strateji"
       ]
     },
     {
