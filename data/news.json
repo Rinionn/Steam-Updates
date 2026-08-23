@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T20:33:01.483Z",
+  "generatedAt": "2026-08-23T20:54:19.467Z",
   "items": [
     {
       "id": "steam-news-900694dcb",
@@ -531,18 +531,6 @@
       ]
     },
     {
-      "id": "steam-news-82ee595a2",
-      "title": "BURNED HORIZONS",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3985330/BURNED_HORIZONS/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1786807293",
-      "categories": [
-        "Bağımsız",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-bd00e76a1",
       "title": "FEED THE AI",
       "kind": "coming_soon",
@@ -552,6 +540,18 @@
       "categories": [
         "Gündelik",
         "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-82ee595a2",
+      "title": "BURNED HORIZONS",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3985330/BURNED_HORIZONS/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1786807293",
+      "categories": [
+        "Bağımsız",
         "Strateji"
       ]
     },
