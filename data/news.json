@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-08-23T02:26:34.105Z",
+  "generatedAt": "2026-08-23T03:30:59.576Z",
   "items": [
+    {
+      "id": "steam-news-5d7426a2c",
+      "title": "Seleto's in Puzzle Land",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4959140/Seletos_in_Puzzle_Land/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4959140/41f39c4f4f48e08fc440941b9271bceb34f1a88f/capsule_231x87.jpg?t=1787453932",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-92bcbba7f",
+      "title": "Trailkeeper",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4699380/Trailkeeper/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4699380/5aea4fd6978aed94c49e1caa23239296ce8a771f/capsule_231x87.jpg?t=1787452982",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-170e2119b",
+      "title": "CRAWLER",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3859880/CRAWLER/?snr=1_7_7_230_150_1",
+      "dateLabel": "22 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3859880/7c2f410e7baf176c54a01a925fc22a12586c3a21/capsule_231x87.jpg?t=1787451746",
+      "categories": [
+        "Simülasyon",
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-c62cd8322",
       "title": "敵国工場への潜入",
@@ -249,43 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-12d4d343f",
-      "title": "The Down Below",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2947300/The_Down_Below/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2947300/6cfb437f86e45c66e24cf64fcf343de17742b9d5/capsule_231x87.jpg?t=1787386312",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-4c241c694",
-      "title": "Desktop Pal",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5007540/Desktop_Pal/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5007540/241b20e2176829808c8121c30715ef6d721841cc/capsule_231x87.jpg?t=1787385991",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-4ccdf0135",
-      "title": "KurunMania: Spiral Drop",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5002080/KurunMania_Spiral_Drop/?snr=1_7_7_230_150_1",
-      "dateLabel": "21 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5002080/d9dae332dc8e3714dc13a1cc825f10805d6b7e0e/capsule_231x87.jpg?t=1787370291",
-      "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-a1a14841f",
       "title": "Dice Chemist",
       "kind": "coming_soon",
@@ -454,17 +453,6 @@
       ]
     },
     {
-      "id": "steam-news-05cdc4bc4",
-      "title": "lovebyte.exe",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-3804debb1",
       "title": "Shelve the Potions!",
       "kind": "coming_soon",
@@ -473,6 +461,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/1c6aeab3db96129e6287b8ef69f23b519e26574f/capsule_231x87_alt_assets_0.jpg?t=1787381848",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-05cdc4bc4",
+      "title": "lovebyte.exe",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
@@ -499,6 +498,17 @@
       ]
     },
     {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-21b66c7bb",
       "title": "No Final Run",
       "kind": "coming_soon",
@@ -508,17 +518,6 @@
       "categories": [
         "Aksiyon",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-ea26de6fa",
-      "title": "Reverb",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
-      "categories": [
-        "Tek Oyunculu"
       ]
     },
     {
