@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T17:00:55.746Z",
+  "generatedAt": "2026-08-23T17:28:23.079Z",
   "items": [
     {
       "id": "steam-news-2db8fb54c",
@@ -454,6 +454,17 @@
       ]
     },
     {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-21b66c7bb",
       "title": "No Final Run",
       "kind": "coming_soon",
@@ -466,17 +477,6 @@
       ]
     },
     {
-      "id": "steam-news-ea26de6fa",
-      "title": "Reverb",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-06d96f8c9",
       "title": "Neon Cadence",
       "kind": "coming_soon",
@@ -485,6 +485,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5046030/574cbaa809525af0ffe7e3767827a858163c0f0d/capsule_231x87.jpg?t=1786519381",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-6aab0393b",
+      "title": "Mouspionage",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3646000/Mouspionage/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -510,12 +521,12 @@
       ]
     },
     {
-      "id": "steam-news-6aab0393b",
-      "title": "Mouspionage",
+      "id": "steam-news-be5a89b7c",
+      "title": "Mythic Battle",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3646000/Mouspionage/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4858820/Mythic_Battle/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858820/e0a147f54e65b81115a46c61a100b9ac1afce1df/capsule_231x87.jpg?t=1787119046",
       "categories": [
         "Strateji"
       ]
@@ -529,17 +540,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1786807293",
       "categories": [
         "Bağımsız",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-be5a89b7c",
-      "title": "Mythic Battle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4858820/Mythic_Battle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858820/e0a147f54e65b81115a46c61a100b9ac1afce1df/capsule_231x87.jpg?t=1787119046",
-      "categories": [
         "Strateji"
       ]
     },
