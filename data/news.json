@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T13:39:06.925Z",
+  "generatedAt": "2026-08-23T13:59:45.789Z",
   "items": [
     {
       "id": "steam-news-9136eeaa3",
@@ -486,17 +486,6 @@
       ]
     },
     {
-      "id": "steam-news-ea26de6fa",
-      "title": "Reverb",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-21b66c7bb",
       "title": "No Final Run",
       "kind": "coming_soon",
@@ -506,6 +495,17 @@
       "categories": [
         "Aksiyon",
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
+        "Tek Oyunculu"
       ]
     },
     {
