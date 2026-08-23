@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T15:59:19.588Z",
+  "generatedAt": "2026-08-23T16:35:36.768Z",
   "items": [
     {
       "id": "steam-news-e4652dc76",
@@ -278,20 +278,8 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3395860/Endless_Descent/?snr=1_7_7_230_150_1",
       "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3395860/490cecfd1d802f9293e9fa84bd80d24a6fb392ec/capsule_231x87.jpg?t=1787426350",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3395860/490cecfd1d802f9293e9fa84bd80d24a6fb392ec/capsule_231x87.jpg?t=1787501372",
       "categories": []
-    },
-    {
-      "id": "steam-news-41c494b1c",
-      "title": "桌面塔罗 Desktop Tarot",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4587970/_Desktop_Tarot/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4587970/693b262b06e734985862193278075b1bb2a0b868/capsule_231x87.jpg?t=1787045291",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
     },
     {
       "id": "steam-news-e86a586d6",
@@ -429,17 +417,6 @@
       ]
     },
     {
-      "id": "steam-news-4c069b58b",
-      "title": "Ultrapool",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-05cdc4bc4",
       "title": "lovebyte.exe",
       "kind": "coming_soon",
@@ -451,6 +428,17 @@
       ]
     },
     {
+      "id": "steam-news-4c069b58b",
+      "title": "Ultrapool",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-89cd93207",
       "title": "HOSHIKUI",
       "kind": "coming_soon",
@@ -459,6 +447,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5081400/282dfe1348dc8e0d9d2b8874743d7acc2bda77ca/capsule_231x87.jpg?t=1787142397",
       "categories": [
         "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
         "Tek Oyunculu"
       ]
     },
@@ -475,23 +474,23 @@
       ]
     },
     {
-      "id": "steam-news-ea26de6fa",
-      "title": "Reverb",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-06d96f8c9",
       "title": "Neon Cadence",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/5046030/Neon_Cadence/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5046030/574cbaa809525af0ffe7e3767827a858163c0f0d/capsule_231x87.jpg?t=1786519381",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-e4429b22a",
+      "title": "Tridan",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4823350/Tridan/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823350/b047a4a9d0bcbf74ceda196ae460142afe22efda/capsule_231x87.jpg?t=1787243246",
       "categories": [
         "Gündelik"
       ]
@@ -519,14 +518,15 @@
       ]
     },
     {
-      "id": "steam-news-e4429b22a",
-      "title": "Tridan",
+      "id": "steam-news-82ee595a2",
+      "title": "BURNED HORIZONS",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4823350/Tridan/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3985330/BURNED_HORIZONS/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823350/b047a4a9d0bcbf74ceda196ae460142afe22efda/capsule_231x87.jpg?t=1787243246",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1786807293",
       "categories": [
-        "Gündelik"
+        "Bağımsız",
+        "Strateji"
       ]
     },
     {
