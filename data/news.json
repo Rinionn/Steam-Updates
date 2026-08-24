@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-08-24T06:39:03.124Z",
+  "generatedAt": "2026-08-24T07:44:12.280Z",
   "items": [
+    {
+      "id": "steam-news-8fd0bad38",
+      "title": "莫待无花空折枝：做题家的 Git 重启日志",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4972160/_Git/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4972160/50392431b25c917a9ef8b186a726c2de1295d475/capsule_231x87.jpg?t=1787555350",
+      "categories": []
+    },
     {
       "id": "steam-news-fe358bf3c",
       "title": "The Brothers Karamazov",
@@ -268,41 +277,6 @@
       ]
     },
     {
-      "id": "steam-news-54ebbcb23",
-      "title": "Cybersquare Madness",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4538030/Cybersquare_Madness/?snr=1_7_7_230_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4538030/578613b4b9eaf95350c92f053dd51d5922ec6b4c/capsule_231x87.jpg?t=1787490226",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-86c902b63",
-      "title": "Prospector Peril",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4833990/Prospector_Peril/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4833990/8610c930b7000a013b55ab84ce08d57ca8235603/capsule_231x87.jpg?t=1787324764",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-284f27a85",
-      "title": "Titanic Escape Simulator™",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4645360/Titanic_Escape_Simulator/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4645360/6cc47a13551a26c418d8ce8b59e562d3b93199a7/capsule_231x87.jpg?t=1786540399",
-      "categories": [
-        "Macera",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-91a6e950f",
       "title": "Metroidvania",
       "kind": "coming_soon",
@@ -319,7 +293,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787381848",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787554608",
       "categories": [
         "Gündelik"
       ]
@@ -437,27 +411,27 @@
       ]
     },
     {
-      "id": "steam-news-bd00e76a1",
-      "title": "FEED THE AI",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4486870/FEED_THE_AI/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486870/a43c8fc4ca7aad2b8e03b6a37bc6cabe40949adb/capsule_231x87.jpg?t=1787503880",
-      "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-82ee595a2",
       "title": "BURNED HORIZONS",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3985330/BURNED_HORIZONS/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1787545805",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1787557039",
       "categories": [
         "Bağımsız",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-bd00e76a1",
+      "title": "FEED THE AI",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4486870/FEED_THE_AI/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486870/a43c8fc4ca7aad2b8e03b6a37bc6cabe40949adb/capsule_231x87.jpg?t=1787557217",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
         "Strateji"
       ]
     },
@@ -518,17 +492,6 @@
       ]
     },
     {
-      "id": "steam-news-454a058c7",
-      "title": "A Game About Flipping Cards",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4659250/A_Game_About_Flipping_Cards/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4659250/08c2100c334cd6c07cacd935972f74edbe9232f6/capsule_231x87.jpg?t=1787205204",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-07b7dc457",
       "title": "Loot Frog",
       "kind": "coming_soon",
@@ -540,12 +503,46 @@
       ]
     },
     {
+      "id": "steam-news-454a058c7",
+      "title": "A Game About Flipping Cards",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4659250/A_Game_About_Flipping_Cards/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4659250/08c2100c334cd6c07cacd935972f74edbe9232f6/capsule_231x87.jpg?t=1787205204",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-8d7218f69",
       "title": "Combolands: Roguelike Citybuilder",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4075620/Combolands_Roguelike_Citybuilder/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4075620/5f264ff8c29a1a5f848ffc2997482a618ecafd8d/capsule_231x87.jpg?t=1787319640",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-67c704675",
+      "title": "ZapStick",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4545340/ZapStick/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4545340/376fa638c6be817f48c16d444ac83900896d8ba9/capsule_231x87.jpg?t=1787510870",
+      "categories": [
+        "Gündelik",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-929fb8c6f",
+      "title": "Overtrick",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4101290/Overtrick/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4101290/8fcbb42cac5bc5d9ce757842cdbfcbb896290cd0/capsule_231x87.jpg?t=1787071480",
       "categories": [
         "Strateji"
       ]
