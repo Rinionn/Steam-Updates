@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-24T17:26:48.304Z",
+  "generatedAt": "2026-08-24T18:01:02.624Z",
   "items": [
+    {
+      "id": "steam-news-e9809d83c",
+      "title": "DARKLING",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4835190/DARKLING/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4835190/78d40f82c39b54409848cfdb36d5ad163deaf288/capsule_231x87.jpg?t=1787592660",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
+    },
     {
       "id": "steam-news-d8bc9de3f",
       "title": "Last Signal",
@@ -80,7 +92,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4101290/Overtrick/?snr=1_7_7_230_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4101290/8fcbb42cac5bc5d9ce757842cdbfcbb896290cd0/capsule_231x87.jpg?t=1787590855",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4101290/8fcbb42cac5bc5d9ce757842cdbfcbb896290cd0/capsule_231x87.jpg?t=1787592549",
       "categories": [
         "Strateji"
       ]
@@ -252,30 +264,6 @@
       ]
     },
     {
-      "id": "steam-news-345fd80bc",
-      "title": "Union Of Rivals",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4263170/Union_Of_Rivals/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4263170/f20948969a9c7a0f7193fcdf8957eb83dfd6bd1e/capsule_231x87.jpg?t=1787587259",
-      "categories": [
-        "Bağımsız",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-e4d9576b8",
-      "title": "DARKLING",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4835190/DARKLING/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4835190/78d40f82c39b54409848cfdb36d5ad163deaf288/capsule_231x87.jpg?t=1787082650",
-      "categories": [
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-3635dd3a8",
       "title": "Ghost of Kyiv",
       "kind": "coming_soon",
@@ -347,19 +335,6 @@
       ]
     },
     {
-      "id": "steam-news-01216e446",
-      "title": "Honoiro no Jikou 穗色时光",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4926100/Honoiro_no_Jikou/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926100/933abb92c8f184794891ba09e229b46a88c3da82/capsule_231x87.jpg?t=1785653363",
-      "categories": [
-        "Gündelik",
-        "Strateji",
-        "Anime"
-      ]
-    },
-    {
       "id": "steam-news-261dc0624",
       "title": "F2 A! Idle Army",
       "kind": "coming_soon",
@@ -370,6 +345,19 @@
         "Gündelik",
         "Simülasyon",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-01216e446",
+      "title": "Honoiro no Jikou 穗色时光",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4926100/Honoiro_no_Jikou/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926100/933abb92c8f184794891ba09e229b46a88c3da82/capsule_231x87.jpg?t=1785653363",
+      "categories": [
+        "Gündelik",
+        "Strateji",
+        "Anime"
       ]
     },
     {
@@ -431,18 +419,6 @@
       ]
     },
     {
-      "id": "steam-news-4ea7def7e",
-      "title": "Hero Mania",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1933520/Hero_Mania/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933520/90f52561da8171f8c2e62d03b33524274a12741f/capsule_231x87.jpg?t=1787191280",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-1638dbd48",
       "title": "Tsugunohi -The Thread That Beckons to Heaven-",
       "kind": "coming_soon",
@@ -452,6 +428,18 @@
       "categories": [
         "Macera",
         "Korku",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4ea7def7e",
+      "title": "Hero Mania",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1933520/Hero_Mania/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933520/9a1e9c95144cbe97f34376b79f1756d2915dbc9c/capsule_231x87.jpg?t=1787593608",
+      "categories": [
+        "Aksiyon",
         "Gündelik"
       ]
     },
@@ -545,6 +533,17 @@
       "categories": [
         "Aksiyon",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-d3ba4baac",
+      "title": "Idle Times",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4978200/Idle_Times/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4978200/9796c7b40b35356381d545de9a571f8bc44f3889/capsule_231x87.jpg?t=1786047141",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
