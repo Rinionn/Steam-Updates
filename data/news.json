@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-08-24T05:52:57.746Z",
+  "generatedAt": "2026-08-24T06:39:03.124Z",
   "items": [
+    {
+      "id": "steam-news-fe358bf3c",
+      "title": "The Brothers Karamazov",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4955990/The_Brothers_Karamazov/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4955990/1feb908e084fcf43bb89e7317d9ac72d3a2952f6/capsule_231x87.jpg?t=1787553208",
+      "categories": []
+    },
+    {
+      "id": "steam-news-ed5679b7e",
+      "title": "Every Step Counts",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4143750/Every_Step_Counts/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4143750/7c1dd7ccca791bb44ef259367ef246c34f03f84a/capsule_231x87.jpg?t=1787551548",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-117ea59cc",
       "title": "Travellin Cats in USA",
@@ -259,29 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-8244b3f75",
-      "title": "OPEN FOR BUSINESS: Game & Movie Store Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3919690/OPEN_FOR_BUSINESS_Game__Movie_Store_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3919690/550e73695b41ed8e8d24a4fa678d0d43a4b299df/capsule_231x87.jpg?t=1787489195",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-f90ec609d",
-      "title": "Breachline",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4886460/Breachline/?snr=1_7_7_230_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4886460/b8516ae5f5cb3bca01c9449c294a26f3467a0de6/capsule_231x87.jpg?t=1787486375",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-86c902b63",
       "title": "Prospector Peril",
       "kind": "coming_soon",
@@ -406,17 +404,6 @@
       ]
     },
     {
-      "id": "steam-news-6aab0393b",
-      "title": "Mouspionage",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3646000/Mouspionage/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-154a48d56",
       "title": "Incremental Orbits",
       "kind": "coming_soon",
@@ -425,6 +412,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-6aab0393b",
+      "title": "Mouspionage",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3646000/Mouspionage/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -520,17 +518,6 @@
       ]
     },
     {
-      "id": "steam-news-07b7dc457",
-      "title": "Loot Frog",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4294860/Loot_Frog/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4294860/a47eea8df328f7bb35ed4d9ee0ae9a806051e757/capsule_231x87.jpg?t=1787519832",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-454a058c7",
       "title": "A Game About Flipping Cards",
       "kind": "coming_soon",
@@ -539,6 +526,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4659250/08c2100c334cd6c07cacd935972f74edbe9232f6/capsule_231x87.jpg?t=1787205204",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-07b7dc457",
+      "title": "Loot Frog",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4294860/Loot_Frog/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4294860/a47eea8df328f7bb35ed4d9ee0ae9a806051e757/capsule_231x87.jpg?t=1787519832",
+      "categories": [
+        "Strateji"
       ]
     },
     {
