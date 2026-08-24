@@ -1,6 +1,55 @@
 {
-  "generatedAt": "2026-08-24T02:21:27.685Z",
+  "generatedAt": "2026-08-24T03:28:52.466Z",
   "items": [
+    {
+      "id": "steam-news-314eb5011",
+      "title": "Y2Kill",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3552780/Y2Kill/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3552780/941756205bc2a6bfaa0631d49cd2cf4e40ab7588/capsule_231x87.jpg?t=1787541264",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-51f0fb80c",
+      "title": "スマートフォン",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4937120/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4937120/239e7af26543c20d9479a8594dc55fbe264ac399/capsule_231x87.jpg?t=1787540141",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-73f871d8f",
+      "title": "Hardy & Molly",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4859490/Hardy__Molly/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4859490/9bb90212c4536f8bb723c3fa494cafaa32182c4d/capsule_231x87.jpg?t=1787538922",
+      "categories": [
+        "Gündelik",
+        "Macera",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-b511cf3ee",
+      "title": "Last Fiefdom",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4938410/Last_Fiefdom/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4938410/0d743379f1b1068e6821d99c0b7e44c5cf9d4d6d/capsule_231x87.jpg?t=1787538920",
+      "categories": [
+        "Strateji",
+        "Oynaması Ücretsiz",
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-e7d2e1908",
       "title": "Idle Demon Lord",
@@ -236,53 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-14246a527",
-      "title": "The Keeper's Path",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4927900/The_Keepers_Path/?snr=1_7_7_230_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927900/61ee49755fa09efbd346570e0f9149f9566ba9ff/capsule_231x87.jpg?t=1787468993",
-      "categories": [
-        "RPG",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-003b502a5",
-      "title": "K-jihacheol",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5015810/Kjihacheol/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5015810/dd530b8e8b67b64a96656ed76b09450f6622ff72/capsule_231x87.jpg?t=1787460169",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-5d7426a2c",
-      "title": "Seleto's in Puzzle Land",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4959140/Seletos_in_Puzzle_Land/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4959140/41f39c4f4f48e08fc440941b9271bceb34f1a88f/capsule_231x87.jpg?t=1787453932",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-92bcbba7f",
-      "title": "Trailkeeper",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4699380/Trailkeeper/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4699380/5aea4fd6978aed94c49e1caa23239296ce8a771f/capsule_231x87.jpg?t=1787452982",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-86c902b63",
       "title": "Prospector Peril",
       "kind": "coming_soon",
@@ -499,17 +501,6 @@
       ]
     },
     {
-      "id": "steam-news-a8ace1433",
-      "title": "Magic Mess: Restore Order to the Wizard's Tower!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5012990/Magic_Mess_Restore_Order_to_the_Wizards_Tower/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012990/def40cc79a898ac870a9f6aadca86b71660f9090/capsule_231x87.jpg?t=1786940753",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-5d9b6e519",
       "title": "Killer Chase",
       "kind": "coming_soon",
@@ -521,14 +512,14 @@
       ]
     },
     {
-      "id": "steam-news-07b7dc457",
-      "title": "Loot Frog",
+      "id": "steam-news-a8ace1433",
+      "title": "Magic Mess: Restore Order to the Wizard's Tower!",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4294860/Loot_Frog/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5012990/Magic_Mess_Restore_Order_to_the_Wizards_Tower/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4294860/a47eea8df328f7bb35ed4d9ee0ae9a806051e757/capsule_231x87.jpg?t=1787519832",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012990/def40cc79a898ac870a9f6aadca86b71660f9090/capsule_231x87.jpg?t=1786940753",
       "categories": [
-        "Strateji"
+        "Gündelik"
       ]
     },
     {
@@ -540,6 +531,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4659250/08c2100c334cd6c07cacd935972f74edbe9232f6/capsule_231x87.jpg?t=1787205204",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-07b7dc457",
+      "title": "Loot Frog",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4294860/Loot_Frog/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4294860/a47eea8df328f7bb35ed4d9ee0ae9a806051e757/capsule_231x87.jpg?t=1787519832",
+      "categories": [
+        "Strateji"
       ]
     },
     {
