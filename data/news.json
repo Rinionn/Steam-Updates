@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T23:31:33.692Z",
+  "generatedAt": "2026-08-24T23:51:42.852Z",
   "items": [
     {
       "id": "steam-news-9cccd1d0e",
@@ -274,6 +274,19 @@
       ]
     },
     {
+      "id": "steam-news-1638dbd48",
+      "title": "Tsugunohi -The Thread That Beckons to Heaven-",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4830660/Tsugunohi_The_Thread_That_Beckons_to_Heaven/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4830660/d24fd281c6c3b4735ffa5cda33839134776e66b2/capsule_231x87.jpg?t=1786542434",
+      "categories": [
+        "Macera",
+        "Korku",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-4ea7def7e",
       "title": "Hero Mania",
       "kind": "coming_soon",
@@ -295,19 +308,6 @@
       "categories": [
         "Korku",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-1638dbd48",
-      "title": "Tsugunohi -The Thread That Beckons to Heaven-",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4830660/Tsugunohi_The_Thread_That_Beckons_to_Heaven/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4830660/d24fd281c6c3b4735ffa5cda33839134776e66b2/capsule_231x87.jpg?t=1786542434",
-      "categories": [
-        "Macera",
-        "Korku",
-        "Gündelik"
       ]
     },
     {
@@ -403,18 +403,6 @@
       ]
     },
     {
-      "id": "steam-news-d4e05f962",
-      "title": "Lawn Order",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4373020/Lawn_Order/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4373020/46eacf431fd4ad64153d7f5ef7e42d2392a94f40/capsule_231x87.jpg?t=1787523954",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-d3ba4baac",
       "title": "Idle Times",
       "kind": "coming_soon",
@@ -432,6 +420,18 @@
       "url": "https://store.steampowered.com/app/4957510/Mochi/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957510/50552514386af64d1f9a7a41743186caac300538/capsule_231x87.jpg?t=1786461712",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-d4e05f962",
+      "title": "Lawn Order",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4373020/Lawn_Order/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4373020/46eacf431fd4ad64153d7f5ef7e42d2392a94f40/capsule_231x87.jpg?t=1787523954",
       "categories": [
         "Gündelik",
         "Simülasyon"
@@ -461,17 +461,6 @@
       ]
     },
     {
-      "id": "steam-news-417d858c9",
-      "title": "BARD'S FAULT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
-      "categories": [
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-6faa65b18",
       "title": "First Move: Classic Games Collection",
       "kind": "coming_soon",
@@ -481,6 +470,17 @@
       "categories": [
         "Gündelik",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-417d858c9",
+      "title": "BARD'S FAULT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
+      "categories": [
+        "Çok Oyunculu"
       ]
     },
     {
@@ -521,17 +521,6 @@
       ]
     },
     {
-      "id": "steam-news-d97bbb4b7",
-      "title": "Lorne",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2172970/Lorne/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172970/capsule_231x87.jpg?t=1785158730",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-ce3e21105",
       "title": "Clutter 19: Survey Says What? - Collector's Edition",
       "kind": "coming_soon",
@@ -553,6 +542,17 @@
         "Çok Oyunculu",
         "Gündelik",
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-d97bbb4b7",
+      "title": "Lorne",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2172970/Lorne/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172970/capsule_231x87.jpg?t=1785158730",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
