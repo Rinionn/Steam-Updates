@@ -1,13 +1,25 @@
 {
-  "generatedAt": "2026-08-24T22:44:55.597Z",
+  "generatedAt": "2026-08-24T23:04:41.726Z",
   "items": [
     {
-      "id": "steam-news-400461889",
-      "title": "BeginnerZombieSurvival",
+      "id": "steam-news-9312ef938",
+      "title": "Cozy Commons",
       "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5048030/BeginnerZombieSurvival/?snr=1_7_7_230_150_1",
+      "url": "https://store.steampowered.com/app/4932320/Cozy_Commons/?snr=1_7_7_230_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048030/4735f4b4e01776844edf5ab1cb200c958474a71d/capsule_231x87.jpg?t=1787609510",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4932320/98c8e017e8c8b64067673ce6fe686b00a8a50277/capsule_231x87.jpg?t=1787611651",
+      "categories": [
+        "Gündelik",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-400461889",
+      "title": "Beginner Zombie Survival",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5048030/Beginner_Zombie_Survival/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048030/4735f4b4e01776844edf5ab1cb200c958474a71d/capsule_231x87.jpg?t=1787612416",
       "categories": [
         "Aksiyon"
       ]
@@ -205,7 +217,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4638590/Goaldeck/?snr=1_7_7_230_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4638590/f88b230321d5652021dfba34cff5c3ad98a682d0/capsule_231x87.jpg?t=1787590914",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4638590/f88b230321d5652021dfba34cff5c3ad98a682d0/capsule_231x87.jpg?t=1787612188",
       "categories": [
         "Strateji"
       ]
@@ -259,17 +271,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3975150/170df9627e123393290499c32a1391190a445ffa/capsule_231x87.jpg?t=1787590855",
       "categories": [
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-2ea2ddfb4",
-      "title": "Money for Girls: Amortized",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4833450/Money_for_Girls_Amortized/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4833450/87e3dec9f91181b927c00a5aa73e804d0426c240/capsule_231x87.jpg?t=1787590854",
-      "categories": [
-        "Korku"
       ]
     },
     {
@@ -425,18 +426,6 @@
       ]
     },
     {
-      "id": "steam-news-d4e05f962",
-      "title": "Lawn Order",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4373020/Lawn_Order/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4373020/46eacf431fd4ad64153d7f5ef7e42d2392a94f40/capsule_231x87.jpg?t=1787523954",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-f3eccc40c",
       "title": "Hide and Moo!",
       "kind": "coming_soon",
@@ -446,6 +435,18 @@
       "categories": [
         "Aksiyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d4e05f962",
+      "title": "Lawn Order",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4373020/Lawn_Order/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4373020/46eacf431fd4ad64153d7f5ef7e42d2392a94f40/capsule_231x87.jpg?t=1787523954",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -460,18 +461,6 @@
       ]
     },
     {
-      "id": "steam-news-6faa65b18",
-      "title": "First Move: Classic Games Collection",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5098380/First_Move_Classic_Games_Collection/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5098380/338d2b3f0819f1281b0f89d99b2b1df1ff92e73f/capsule_231x87.jpg?t=1787541304",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-d6229cca5",
       "title": "Core Crusher",
       "kind": "coming_soon",
@@ -480,6 +469,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908610/227b041a4974ee6673a83cdec40d6d3e34a3819d/capsule_231x87.jpg?t=1787437249",
       "categories": [
         "Aksiyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-6faa65b18",
+      "title": "First Move: Classic Games Collection",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5098380/First_Move_Classic_Games_Collection/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5098380/338d2b3f0819f1281b0f89d99b2b1df1ff92e73f/capsule_231x87.jpg?t=1787541304",
+      "categories": [
+        "Gündelik",
         "Strateji"
       ]
     },
@@ -531,17 +532,6 @@
       ]
     },
     {
-      "id": "steam-news-c7a9c83ed",
-      "title": "Aliens: Fireteam Elite 2",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-68878f792",
       "title": "Twisted Party",
       "kind": "coming_soon",
@@ -551,6 +541,17 @@
       "categories": [
         "Çok Oyunculu",
         "Gündelik",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-c7a9c83ed",
+      "title": "Aliens: Fireteam Elite 2",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
+      "categories": [
         "Aksiyon"
       ]
     },
