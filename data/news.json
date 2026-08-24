@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-08-23T23:53:49.082Z",
+  "generatedAt": "2026-08-24T00:54:57.111Z",
   "items": [
+    {
+      "id": "steam-news-df5c88e4e",
+      "title": "AFTERLIGHT: The Apartment",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4986740/AFTERLIGHT_The_Apartment/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4986740/ac13226372e09c243c8383db703ffd7e824068b9/capsule_231x87.jpg?t=1787531842",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-bbfbb5235",
+      "title": "Ironvale",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4720080/Ironvale/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4720080/d8e51029067d72c0a0e1479764e97f7dc2c05a4a/capsule_231x87.jpg?t=1787530301",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-058222623",
       "title": "GLITCHED MATRIX Prototype Lab",
@@ -258,31 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-c62cd8322",
-      "title": "敵国工場への潜入",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4929990/_/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4929990/798619f164f1cfaafecb56e695f277c8b0570523/capsule_231x87.jpg?t=1787449824",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-b5af8912e",
-      "title": "Oro Cade",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4706280/Oro_Cade/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4706280/58962f0b494e4bd8fd888ac1453608b9bce37ec9/capsule_231x87.jpg?t=1787445064",
-      "categories": [
-        "Gündelik",
-        "Aksiyon",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-86c902b63",
       "title": "Prospector Peril",
       "kind": "coming_soon",
@@ -408,17 +408,6 @@
       ]
     },
     {
-      "id": "steam-news-6aab0393b",
-      "title": "Mouspionage",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3646000/Mouspionage/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-e4429b22a",
       "title": "Tridan",
       "kind": "coming_soon",
@@ -441,6 +430,17 @@
       ]
     },
     {
+      "id": "steam-news-6aab0393b",
+      "title": "Mouspionage",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3646000/Mouspionage/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-be5a89b7c",
       "title": "Mythic Battle",
       "kind": "coming_soon",
@@ -448,18 +448,6 @@
       "dateLabel": "24 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858820/e0a147f54e65b81115a46c61a100b9ac1afce1df/capsule_231x87.jpg?t=1787119046",
       "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-82ee595a2",
-      "title": "BURNED HORIZONS",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3985330/BURNED_HORIZONS/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1786807293",
-      "categories": [
-        "Bağımsız",
         "Strateji"
       ]
     },
@@ -473,6 +461,18 @@
       "categories": [
         "Gündelik",
         "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-82ee595a2",
+      "title": "BURNED HORIZONS",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3985330/BURNED_HORIZONS/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1786807293",
+      "categories": [
+        "Bağımsız",
         "Strateji"
       ]
     },
@@ -534,23 +534,23 @@
       ]
     },
     {
-      "id": "steam-news-a8ace1433",
-      "title": "Magic Mess: Restore Order to the Wizard's Tower!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5012990/Magic_Mess_Restore_Order_to_the_Wizards_Tower/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012990/def40cc79a898ac870a9f6aadca86b71660f9090/capsule_231x87.jpg?t=1786940753",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-454a058c7",
       "title": "A Game About Flipping Cards",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4659250/A_Game_About_Flipping_Cards/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4659250/08c2100c334cd6c07cacd935972f74edbe9232f6/capsule_231x87.jpg?t=1787205204",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-a8ace1433",
+      "title": "Magic Mess: Restore Order to the Wizard's Tower!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5012990/Magic_Mess_Restore_Order_to_the_Wizards_Tower/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012990/def40cc79a898ac870a9f6aadca86b71660f9090/capsule_231x87.jpg?t=1786940753",
       "categories": [
         "Gündelik"
       ]
