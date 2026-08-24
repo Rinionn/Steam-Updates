@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-24T04:24:20.124Z",
+  "generatedAt": "2026-08-24T05:10:19.592Z",
   "items": [
+    {
+      "id": "steam-news-bf5ef4fc1",
+      "title": "Backyard Paintball",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3509670/Backyard_Paintball/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509670/7e8ff871fb8366446352826a93300dec97340fa7/capsule_231x87.jpg?t=1787546504",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-00eb8ff2b",
+      "title": "Bangquet",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4951070/Bangquet/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951070/7ab5b96d527232d70a032d63c7dd8b1a36af913e/capsule_231x87.jpg?t=1787546136",
+      "categories": [
+        "Aksiyon",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-314eb5011",
       "title": "Y2Kill",
@@ -264,27 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-210e233fb",
-      "title": "Type Ride",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3295430/Type_Ride/?snr=1_7_7_230_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3295430/68979c8c248af62ac20d1b1c18584cf03a370b2a/capsule_231x87.jpg?t=1787472323",
-      "categories": []
-    },
-    {
-      "id": "steam-news-665f469ee",
-      "title": "GwenBlade Witcheresque",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4354550/GwenBlade_Witcheresque/?snr=1_7_7_230_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354550/297902e3f7b1075e0b8be7118bf2a18de33cafa0/capsule_231x87.jpg?t=1787470014",
-      "categories": [
-        "Aksiyon",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-86c902b63",
       "title": "Prospector Peril",
       "kind": "coming_soon",
@@ -319,17 +321,6 @@
       ]
     },
     {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787381848",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-4c069b58b",
       "title": "Ultrapool",
       "kind": "coming_soon",
@@ -341,12 +332,23 @@
       ]
     },
     {
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787381848",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-05cdc4bc4",
       "title": "lovebyte.exe",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3491690/lovebyteexe/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787279468",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3491690/3ab8c82d3baf1d748c73110599eadf9248f3a2f3/capsule_231x87.jpg?t=1787546509",
       "categories": [
         "Bağımsız"
       ]
@@ -442,18 +444,6 @@
       ]
     },
     {
-      "id": "steam-news-82ee595a2",
-      "title": "BURNED HORIZONS",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3985330/BURNED_HORIZONS/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1787536672",
-      "categories": [
-        "Bağımsız",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-bd00e76a1",
       "title": "FEED THE AI",
       "kind": "coming_soon",
@@ -463,6 +453,18 @@
       "categories": [
         "Gündelik",
         "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-82ee595a2",
+      "title": "BURNED HORIZONS",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3985330/BURNED_HORIZONS/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1787545805",
+      "categories": [
+        "Bağımsız",
         "Strateji"
       ]
     },
@@ -500,6 +502,28 @@
       ]
     },
     {
+      "id": "steam-news-454a058c7",
+      "title": "A Game About Flipping Cards",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4659250/A_Game_About_Flipping_Cards/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4659250/08c2100c334cd6c07cacd935972f74edbe9232f6/capsule_231x87.jpg?t=1787205204",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-07b7dc457",
+      "title": "Loot Frog",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4294860/Loot_Frog/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4294860/a47eea8df328f7bb35ed4d9ee0ae9a806051e757/capsule_231x87.jpg?t=1787519832",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-cfcf22f70",
       "title": "水浒英雄传：八幕战役",
       "kind": "coming_soon",
@@ -520,28 +544,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012990/def40cc79a898ac870a9f6aadca86b71660f9090/capsule_231x87.jpg?t=1786940753",
       "categories": [
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-454a058c7",
-      "title": "A Game About Flipping Cards",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4659250/A_Game_About_Flipping_Cards/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4659250/08c2100c334cd6c07cacd935972f74edbe9232f6/capsule_231x87.jpg?t=1787205204",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-07b7dc457",
-      "title": "Loot Frog",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4294860/Loot_Frog/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4294860/a47eea8df328f7bb35ed4d9ee0ae9a806051e757/capsule_231x87.jpg?t=1787519832",
-      "categories": [
-        "Strateji"
       ]
     },
     {
