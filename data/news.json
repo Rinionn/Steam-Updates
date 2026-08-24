@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-08-24T21:15:48.991Z",
+  "generatedAt": "2026-08-24T21:49:22.643Z",
   "items": [
+    {
+      "id": "steam-news-6a61516d2",
+      "title": "The Collector’s Curio Cabinet Toy Soldiers",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4804380/The_Collectors_Curio_Cabinet_Toy_Soldiers/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4804380/acbdb3ea2c944a832c0befd2591fd62f1d265e9a/capsule_231x87.jpg?t=1787606303",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-0dbedf2b5",
       "title": "No One Prays in Ovruch",
@@ -236,17 +249,6 @@
       ]
     },
     {
-      "id": "steam-news-e6ca340e5",
-      "title": "Unicorn Is Out Kissing",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4902510/Unicorn_Is_Out_Kissing/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4902510/d8c96c7352498c5016cdeef86126573458a0b2f9/capsule_231x87.jpg?t=1787590854",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-1009d5e5a",
       "title": "New Home",
       "kind": "new_release",
@@ -258,13 +260,15 @@
       ]
     },
     {
-      "id": "steam-news-1a2d2f515",
-      "title": "Din's Champion",
+      "id": "steam-news-e6ca340e5",
+      "title": "Unicorn Is Out Kissing",
       "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2880010/Dins_Champion/?snr=1_7_7_230_150_1",
+      "url": "https://store.steampowered.com/app/4902510/Unicorn_Is_Out_Kissing/?snr=1_7_7_230_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2880010/e983a3c6326a9c06e631191dfe3a3d98f7bb60fb/capsule_231x87.jpg?t=1787590850",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4902510/d8c96c7352498c5016cdeef86126573458a0b2f9/capsule_231x87.jpg?t=1787590854",
+      "categories": [
+        "Macera"
+      ]
     },
     {
       "id": "steam-news-e66b00191",
@@ -419,18 +423,6 @@
       ]
     },
     {
-      "id": "steam-news-f3eccc40c",
-      "title": "Hide and Moo!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5061170/Hide_and_Moo/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5061170/da0c9b6389a2feb87bea23468c6617eb8c70642a/capsule_231x87.jpg?t=1787573684",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-d4e05f962",
       "title": "Lawn Order",
       "kind": "coming_soon",
@@ -440,6 +432,18 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-f3eccc40c",
+      "title": "Hide and Moo!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5061170/Hide_and_Moo/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5061170/da0c9b6389a2feb87bea23468c6617eb8c70642a/capsule_231x87.jpg?t=1787573684",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
       ]
     },
     {
@@ -454,14 +458,15 @@
       ]
     },
     {
-      "id": "steam-news-417d858c9",
-      "title": "BARD'S FAULT",
+      "id": "steam-news-d6229cca5",
+      "title": "Core Crusher",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4908610/Core_Crusher/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908610/227b041a4974ee6673a83cdec40d6d3e34a3819d/capsule_231x87.jpg?t=1787437249",
       "categories": [
-        "Çok Oyunculu"
+        "Aksiyon",
+        "Strateji"
       ]
     },
     {
@@ -477,15 +482,14 @@
       ]
     },
     {
-      "id": "steam-news-d6229cca5",
-      "title": "Core Crusher",
+      "id": "steam-news-417d858c9",
+      "title": "BARD'S FAULT",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4908610/Core_Crusher/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908610/227b041a4974ee6673a83cdec40d6d3e34a3819d/capsule_231x87.jpg?t=1787437249",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
       "categories": [
-        "Aksiyon",
-        "Strateji"
+        "Çok Oyunculu"
       ]
     },
     {
@@ -514,6 +518,17 @@
       ]
     },
     {
+      "id": "steam-news-ce3e21105",
+      "title": "Clutter 19: Survey Says What? - Collector's Edition",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-68878f792",
       "title": "Twisted Party",
       "kind": "coming_soon",
@@ -527,25 +542,14 @@
       ]
     },
     {
-      "id": "steam-news-ce3e21105",
-      "title": "Clutter 19: Survey Says What? - Collector's Edition",
+      "id": "steam-news-c7a9c83ed",
+      "title": "Aliens: Fireteam Elite 2",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
       "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-d97bbb4b7",
-      "title": "Lorne",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2172970/Lorne/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172970/capsule_231x87.jpg?t=1785158730",
-      "categories": [
-        "Bağımsız"
+        "Aksiyon"
       ]
     },
     {
