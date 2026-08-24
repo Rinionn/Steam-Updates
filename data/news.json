@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-24T23:04:41.726Z",
+  "generatedAt": "2026-08-24T23:31:33.692Z",
   "items": [
+    {
+      "id": "steam-news-9cccd1d0e",
+      "title": "Chuck Bonesteel & The Alien Apocalypse",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3098780/Chuck_Bonesteel__The_Alien_Apocalypse/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3098780/a2b1443c62cfb292a716ea467dd5823388d72c99/capsule_231x87.jpg?t=1787613966",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-9312ef938",
       "title": "Cozy Commons",
@@ -263,14 +274,15 @@
       ]
     },
     {
-      "id": "steam-news-2ec21026c",
-      "title": "Traveler Stories: Journeys of Real People",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3975150/Traveler_Stories_Journeys_of_Real_People/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3975150/170df9627e123393290499c32a1391190a445ffa/capsule_231x87.jpg?t=1787590855",
+      "id": "steam-news-4ea7def7e",
+      "title": "Hero Mania",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1933520/Hero_Mania/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933520/9a1e9c95144cbe97f34376b79f1756d2915dbc9c/capsule_231x87.jpg?t=1787593608",
       "categories": [
-        "Macera"
+        "Aksiyon",
+        "Gündelik"
       ]
     },
     {
@@ -283,18 +295,6 @@
       "categories": [
         "Korku",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-4ea7def7e",
-      "title": "Hero Mania",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1933520/Hero_Mania/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933520/9a1e9c95144cbe97f34376b79f1756d2915dbc9c/capsule_231x87.jpg?t=1787593608",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
       ]
     },
     {
@@ -403,6 +403,18 @@
       ]
     },
     {
+      "id": "steam-news-d4e05f962",
+      "title": "Lawn Order",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4373020/Lawn_Order/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4373020/46eacf431fd4ad64153d7f5ef7e42d2392a94f40/capsule_231x87.jpg?t=1787523954",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-d3ba4baac",
       "title": "Idle Times",
       "kind": "coming_soon",
@@ -438,18 +450,6 @@
       ]
     },
     {
-      "id": "steam-news-d4e05f962",
-      "title": "Lawn Order",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4373020/Lawn_Order/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4373020/46eacf431fd4ad64153d7f5ef7e42d2392a94f40/capsule_231x87.jpg?t=1787523954",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-4819147f2",
       "title": "BULLETARIUM",
       "kind": "coming_soon",
@@ -461,15 +461,14 @@
       ]
     },
     {
-      "id": "steam-news-d6229cca5",
-      "title": "Core Crusher",
+      "id": "steam-news-417d858c9",
+      "title": "BARD'S FAULT",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4908610/Core_Crusher/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908610/227b041a4974ee6673a83cdec40d6d3e34a3819d/capsule_231x87.jpg?t=1787437249",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
       "categories": [
-        "Aksiyon",
-        "Strateji"
+        "Çok Oyunculu"
       ]
     },
     {
@@ -485,14 +484,15 @@
       ]
     },
     {
-      "id": "steam-news-417d858c9",
-      "title": "BARD'S FAULT",
+      "id": "steam-news-d6229cca5",
+      "title": "Core Crusher",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4908610/Core_Crusher/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908610/227b041a4974ee6673a83cdec40d6d3e34a3819d/capsule_231x87.jpg?t=1787437249",
       "categories": [
-        "Çok Oyunculu"
+        "Aksiyon",
+        "Strateji"
       ]
     },
     {
@@ -532,6 +532,17 @@
       ]
     },
     {
+      "id": "steam-news-ce3e21105",
+      "title": "Clutter 19: Survey Says What? - Collector's Edition",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-68878f792",
       "title": "Twisted Party",
       "kind": "coming_soon",
@@ -541,17 +552,6 @@
       "categories": [
         "Çok Oyunculu",
         "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-c7a9c83ed",
-      "title": "Aliens: Fireteam Elite 2",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
-      "categories": [
         "Aksiyon"
       ]
     },
