@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-24T00:54:57.111Z",
+  "generatedAt": "2026-08-24T02:21:27.685Z",
   "items": [
+    {
+      "id": "steam-news-e7d2e1908",
+      "title": "Idle Demon Lord",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4932620/Idle_Demon_Lord/?snr=1_7_7_230_150_1",
+      "dateLabel": "23 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4932620/5467a9749318344a9a828a98e32b3e83b5fc7405/capsule_231x87.jpg?t=1787535793",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-df5c88e4e",
       "title": "AFTERLIGHT: The Apartment",
@@ -271,18 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-170e2119b",
-      "title": "CRAWLER",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3859880/CRAWLER/?snr=1_7_7_230_150_1",
-      "dateLabel": "22 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3859880/7c2f410e7baf176c54a01a925fc22a12586c3a21/capsule_231x87.jpg?t=1787451746",
-      "categories": [
-        "Simülasyon",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-86c902b63",
       "title": "Prospector Peril",
       "kind": "coming_soon",
@@ -314,18 +314,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4986900/dd7ec5f636aebb88c9768509eae1e1d903a47c65/capsule_231x87.jpg?t=1786395484",
       "categories": [
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-a2e86eb42",
-      "title": "Idle Demon Lord",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4932620/Idle_Demon_Lord/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4932620/5467a9749318344a9a828a98e32b3e83b5fc7405/capsule_231x87.jpg?t=1787324030",
-      "categories": [
-        "Macera",
-        "Tek Oyunculu"
       ]
     },
     {
@@ -374,17 +362,6 @@
       ]
     },
     {
-      "id": "steam-news-ea26de6fa",
-      "title": "Reverb",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-21b66c7bb",
       "title": "No Final Run",
       "kind": "coming_soon",
@@ -394,6 +371,17 @@
       "categories": [
         "Aksiyon",
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
+        "Tek Oyunculu"
       ]
     },
     {
@@ -419,17 +407,6 @@
       ]
     },
     {
-      "id": "steam-news-154a48d56",
-      "title": "Incremental Orbits",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3457720/Incremental_Orbits/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-6aab0393b",
       "title": "Mouspionage",
       "kind": "coming_soon",
@@ -438,6 +415,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646000/a36b709e602bca35c247ff846ecfd3164a5408a8/capsule_231x87.jpg?t=1786548200",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-154a48d56",
+      "title": "Incremental Orbits",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3457720/Incremental_Orbits/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3457720/2946e4b7a93c1f9f6f28db751b1e7ec089f31192/capsule_231x87.jpg?t=1787292605",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -470,7 +458,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3985330/BURNED_HORIZONS/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1786807293",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1787536672",
       "categories": [
         "Bağımsız",
         "Strateji"
@@ -511,15 +499,14 @@
       ]
     },
     {
-      "id": "steam-news-76f0a4ef2",
-      "title": "Mochiwasabi Mochi's Cleaning Adventure",
+      "id": "steam-news-a8ace1433",
+      "title": "Magic Mess: Restore Order to the Wizard's Tower!",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5093700/Mochiwasabi_Mochis_Cleaning_Adventure/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5012990/Magic_Mess_Restore_Order_to_the_Wizards_Tower/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5093700/728b6c0949691f37fe7620ad5e8dcccffc9206af/capsule_231x87.jpg?t=1787355041",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012990/def40cc79a898ac870a9f6aadca86b71660f9090/capsule_231x87.jpg?t=1786940753",
       "categories": [
-        "Gündelik",
-        "Aksiyon"
+        "Gündelik"
       ]
     },
     {
@@ -534,6 +521,17 @@
       ]
     },
     {
+      "id": "steam-news-07b7dc457",
+      "title": "Loot Frog",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4294860/Loot_Frog/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4294860/a47eea8df328f7bb35ed4d9ee0ae9a806051e757/capsule_231x87.jpg?t=1787519832",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-454a058c7",
       "title": "A Game About Flipping Cards",
       "kind": "coming_soon",
@@ -545,14 +543,14 @@
       ]
     },
     {
-      "id": "steam-news-a8ace1433",
-      "title": "Magic Mess: Restore Order to the Wizard's Tower!",
+      "id": "steam-news-8d7218f69",
+      "title": "Combolands: Roguelike Citybuilder",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5012990/Magic_Mess_Restore_Order_to_the_Wizards_Tower/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4075620/Combolands_Roguelike_Citybuilder/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012990/def40cc79a898ac870a9f6aadca86b71660f9090/capsule_231x87.jpg?t=1786940753",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4075620/5f264ff8c29a1a5f848ffc2997482a618ecafd8d/capsule_231x87.jpg?t=1787319640",
       "categories": [
-        "Gündelik"
+        "Strateji"
       ]
     },
     {
