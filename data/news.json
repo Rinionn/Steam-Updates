@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-08-24T10:19:27.552Z",
+  "generatedAt": "2026-08-24T10:58:09.758Z",
   "items": [
+    {
+      "id": "steam-news-52fc41e7e",
+      "title": "Guardians Of Restoration",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3092280/Guardians_Of_Restoration/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3092280/9eac93e5cfc4566d8aba08da6a5bfbd8ee29a3b0/capsule_231x87.jpg?t=1787568925",
+      "categories": []
+    },
     {
       "id": "steam-news-b7773011d",
       "title": "西西弗斯放置（Sisyphus Idle）",
@@ -268,13 +277,15 @@
       ]
     },
     {
-      "id": "steam-news-058222623",
-      "title": "GLITCHED MATRIX Prototype Lab",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4386390/GLITCHED_MATRIX_Prototype_Lab/?snr=1_7_7_230_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4386390/ce5b27903d7b190f9bf691b37958f8d726a80c4c/capsule_231x87.jpg?t=1787525978",
-      "categories": []
+      "id": "steam-news-4c069b58b",
+      "title": "Ultrapool",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
+      "categories": [
+        "Strateji"
+      ]
     },
     {
       "id": "steam-news-3804debb1",
@@ -285,17 +296,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787554608",
       "categories": [
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-4c069b58b",
-      "title": "Ultrapool",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4195110/Ultrapool/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -322,17 +322,6 @@
       ]
     },
     {
-      "id": "steam-news-ea26de6fa",
-      "title": "Reverb",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-21b66c7bb",
       "title": "No Final Run",
       "kind": "coming_soon",
@@ -342,6 +331,17 @@
       "categories": [
         "Aksiyon",
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-ea26de6fa",
+      "title": "Reverb",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5085070/Reverb/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085070/1e2c357917f11f3439d46acf7f62d7942179e86d/capsule_231x87.jpg?t=1787231620",
+      "categories": [
+        "Tek Oyunculu"
       ]
     },
     {
@@ -389,15 +389,13 @@
       ]
     },
     {
-      "id": "steam-news-bd00e76a1",
-      "title": "FEED THE AI",
+      "id": "steam-news-be5a89b7c",
+      "title": "Mythic Battle",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4486870/FEED_THE_AI/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4858820/Mythic_Battle/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486870/a43c8fc4ca7aad2b8e03b6a37bc6cabe40949adb/capsule_231x87.jpg?t=1787557217",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858820/e0a147f54e65b81115a46c61a100b9ac1afce1df/capsule_231x87.jpg?t=1787119046",
       "categories": [
-        "Gündelik",
-        "Simülasyon",
         "Strateji"
       ]
     },
@@ -414,13 +412,15 @@
       ]
     },
     {
-      "id": "steam-news-be5a89b7c",
-      "title": "Mythic Battle",
+      "id": "steam-news-bd00e76a1",
+      "title": "FEED THE AI",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4858820/Mythic_Battle/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4486870/FEED_THE_AI/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858820/e0a147f54e65b81115a46c61a100b9ac1afce1df/capsule_231x87.jpg?t=1787119046",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486870/a43c8fc4ca7aad2b8e03b6a37bc6cabe40949adb/capsule_231x87.jpg?t=1787568660",
       "categories": [
+        "Gündelik",
+        "Simülasyon",
         "Strateji"
       ]
     },
@@ -470,12 +470,12 @@
       ]
     },
     {
-      "id": "steam-news-a8ace1433",
-      "title": "Magic Mess: Restore Order to the Wizard's Tower!",
+      "id": "steam-news-454a058c7",
+      "title": "A Game About Flipping Cards",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5012990/Magic_Mess_Restore_Order_to_the_Wizards_Tower/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4659250/A_Game_About_Flipping_Cards/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012990/def40cc79a898ac870a9f6aadca86b71660f9090/capsule_231x87.jpg?t=1786940753",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4659250/08c2100c334cd6c07cacd935972f74edbe9232f6/capsule_231x87.jpg?t=1787205204",
       "categories": [
         "Gündelik"
       ]
@@ -492,12 +492,12 @@
       ]
     },
     {
-      "id": "steam-news-454a058c7",
-      "title": "A Game About Flipping Cards",
+      "id": "steam-news-a8ace1433",
+      "title": "Magic Mess: Restore Order to the Wizard's Tower!",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4659250/A_Game_About_Flipping_Cards/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5012990/Magic_Mess_Restore_Order_to_the_Wizards_Tower/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4659250/08c2100c334cd6c07cacd935972f74edbe9232f6/capsule_231x87.jpg?t=1787205204",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012990/def40cc79a898ac870a9f6aadca86b71660f9090/capsule_231x87.jpg?t=1786940753",
       "categories": [
         "Gündelik"
       ]
