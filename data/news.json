@@ -1,13 +1,35 @@
 {
-  "generatedAt": "2026-08-24T10:58:09.758Z",
+  "generatedAt": "2026-08-24T11:36:45.495Z",
   "items": [
+    {
+      "id": "steam-news-58faa76aa",
+      "title": "Crack That Smile",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4902780/Crack_That_Smile/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4902780/4c2209e14734ee4f15d0cca5a0e64b74bb2e21e3/capsule_231x87.jpg?t=1787571228",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-addfa1a3d",
+      "title": "The Secret Dungeon",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4574250/The_Secret_Dungeon/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4574250/d87440789dd39344e623aee189aeef463b4220f2/capsule_231x87.jpg?t=1787571129",
+      "categories": [
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-52fc41e7e",
       "title": "Guardians Of Restoration",
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3092280/Guardians_Of_Restoration/?snr=1_7_7_230_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3092280/9eac93e5cfc4566d8aba08da6a5bfbd8ee29a3b0/capsule_231x87.jpg?t=1787568925",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3092280/5e86dbad780f5984249d42fa49c88f16607d822e/capsule_231x87_alt_assets_1.jpg?t=1787568925",
       "categories": []
     },
     {
@@ -132,7 +154,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4955990/The_Brothers_Karamazov/?snr=1_7_7_230_150_1",
       "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4955990/1feb908e084fcf43bb89e7317d9ac72d3a2952f6/capsule_231x87.jpg?t=1787553208",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4955990/1feb908e084fcf43bb89e7317d9ac72d3a2952f6/capsule_231x87.jpg?t=1787570884",
       "categories": []
     },
     {
@@ -252,27 +274,13 @@
       ]
     },
     {
-      "id": "steam-news-df5c88e4e",
-      "title": "AFTERLIGHT: The Apartment",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4986740/AFTERLIGHT_The_Apartment/?snr=1_7_7_230_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4986740/ac13226372e09c243c8383db703ffd7e824068b9/capsule_231x87.jpg?t=1787531842",
+      "id": "steam-news-3804debb1",
+      "title": "Shelve the Potions!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787554608",
       "categories": [
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-bbfbb5235",
-      "title": "Ironvale",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4720080/Ironvale/?snr=1_7_7_230_150_1",
-      "dateLabel": "23 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4720080/d8e51029067d72c0a0e1479764e97f7dc2c05a4a/capsule_231x87.jpg?t=1787530301",
-      "categories": [
-        "Aksiyon",
-        "Macera",
         "Gündelik"
       ]
     },
@@ -285,17 +293,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4195110/134bf8acbbdc7b63f644e363de353ddc948ebfbb/capsule_231x87.jpg?t=1787090492",
       "categories": [
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-3804debb1",
-      "title": "Shelve the Potions!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928820/cc4a09fe85b25049bd6b8de1f5529ad4929ad8c7/capsule_231x87.jpg?t=1787554608",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -400,6 +397,19 @@
       ]
     },
     {
+      "id": "steam-news-bd00e76a1",
+      "title": "FEED THE AI",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4486870/FEED_THE_AI/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486870/a43c8fc4ca7aad2b8e03b6a37bc6cabe40949adb/capsule_231x87.jpg?t=1787569149",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-82ee595a2",
       "title": "BURNED HORIZONS",
       "kind": "coming_soon",
@@ -408,19 +418,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3985330/f8f733cf963af75bb17ebeec29348a6d18e6aa93/capsule_231x87.jpg?t=1787557039",
       "categories": [
         "Bağımsız",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-bd00e76a1",
-      "title": "FEED THE AI",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4486870/FEED_THE_AI/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486870/a43c8fc4ca7aad2b8e03b6a37bc6cabe40949adb/capsule_231x87.jpg?t=1787568660",
-      "categories": [
-        "Gündelik",
-        "Simülasyon",
         "Strateji"
       ]
     },
@@ -447,18 +444,6 @@
       ]
     },
     {
-      "id": "steam-news-cfcf22f70",
-      "title": "水浒英雄传：八幕战役",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5088120/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5088120/c1478a4a039512b7dbf17fa4987977cf1fc16ea8/capsule_231x87.jpg?t=1787425310",
-      "categories": [
-        "Strateji",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-5d9b6e519",
       "title": "Killer Chase",
       "kind": "coming_soon",
@@ -467,6 +452,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4545720/c821f602d4fbbd3d056ae45a13ccb724e7424351/capsule_231x87.jpg?t=1785268020",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-a8ace1433",
+      "title": "Magic Mess: Restore Order to the Wizard's Tower!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5012990/Magic_Mess_Restore_Order_to_the_Wizards_Tower/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012990/def40cc79a898ac870a9f6aadca86b71660f9090/capsule_231x87.jpg?t=1786940753",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -492,14 +488,15 @@
       ]
     },
     {
-      "id": "steam-news-a8ace1433",
-      "title": "Magic Mess: Restore Order to the Wizard's Tower!",
+      "id": "steam-news-cfcf22f70",
+      "title": "水浒英雄传：八幕战役",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5012990/Magic_Mess_Restore_Order_to_the_Wizards_Tower/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5088120/_/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012990/def40cc79a898ac870a9f6aadca86b71660f9090/capsule_231x87.jpg?t=1786940753",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5088120/c1478a4a039512b7dbf17fa4987977cf1fc16ea8/capsule_231x87.jpg?t=1787425310",
       "categories": [
-        "Gündelik"
+        "Strateji",
+        "Simülasyon"
       ]
     },
     {
