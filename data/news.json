@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-24T22:11:33.381Z",
+  "generatedAt": "2026-08-24T22:44:55.597Z",
   "items": [
+    {
+      "id": "steam-news-400461889",
+      "title": "BeginnerZombieSurvival",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5048030/BeginnerZombieSurvival/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048030/4735f4b4e01776844edf5ab1cb200c958474a71d/capsule_231x87.jpg?t=1787609510",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-7a564f1cc",
       "title": "Descendants of the Dragon",
@@ -262,17 +273,6 @@
       ]
     },
     {
-      "id": "steam-news-1009d5e5a",
-      "title": "New Home",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4992860/New_Home/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4992860/1920e6a1377981ffacf59803741a86e4edb41e80/capsule_231x87.jpg?t=1787590854",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-e66b00191",
       "title": "OPEN UP, MICHAEL!",
       "kind": "coming_soon",
@@ -285,6 +285,18 @@
       ]
     },
     {
+      "id": "steam-news-4ea7def7e",
+      "title": "Hero Mania",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1933520/Hero_Mania/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933520/9a1e9c95144cbe97f34376b79f1756d2915dbc9c/capsule_231x87.jpg?t=1787593608",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-1638dbd48",
       "title": "Tsugunohi -The Thread That Beckons to Heaven-",
       "kind": "coming_soon",
@@ -294,18 +306,6 @@
       "categories": [
         "Macera",
         "Korku",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-4ea7def7e",
-      "title": "Hero Mania",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1933520/Hero_Mania/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933520/9a1e9c95144cbe97f34376b79f1756d2915dbc9c/capsule_231x87.jpg?t=1787593608",
-      "categories": [
-        "Aksiyon",
         "Gündelik"
       ]
     },
@@ -395,7 +395,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4568830/ASTRAL_COURT_DX/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4568830/251945f49b52b5b51f0b4f367f73748c88844f11/capsule_231x87.jpg?t=1787173033",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4568830/251945f49b52b5b51f0b4f367f73748c88844f11/capsule_231x87.jpg?t=1787609663",
       "categories": [
         "Aksiyon",
         "Tek Oyunculu"
@@ -531,14 +531,14 @@
       ]
     },
     {
-      "id": "steam-news-ce3e21105",
-      "title": "Clutter 19: Survey Says What? - Collector's Edition",
+      "id": "steam-news-c7a9c83ed",
+      "title": "Aliens: Fireteam Elite 2",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
       "categories": [
-        "Gündelik"
+        "Aksiyon"
       ]
     },
     {
