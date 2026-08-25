@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-08-25T23:33:29.560Z",
+  "generatedAt": "2026-08-25T23:54:59.013Z",
   "items": [
+    {
+      "id": "steam-news-32ea7187d",
+      "title": "Crown of the Nile: Cleopatra's Choice",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4507910/Crown_of_the_Nile_Cleopatras_Choice/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4507910/43d543634abf3ce029b79778a819784e68239ccc/capsule_231x87.jpg?t=1787701837",
+      "categories": [
+        "RPG",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-526053af9",
       "title": "A PhD Simulator - Publish & Perish",
@@ -268,18 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-d579c879e",
-      "title": "VERLIES III - Resurrection",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4720360/VERLIES_III__Resurrection/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4720360/8bdf811c67904b5597bf319a77411a88dd7fe8ff/capsule_231x87.jpg?t=1787677295",
-      "categories": [
-        "RPG",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-a2d26caa8",
       "title": "KESU-JI",
       "kind": "coming_soon",
@@ -422,6 +422,19 @@
       ]
     },
     {
+      "id": "steam-news-6b5803abd",
+      "title": "Axis Football 2027",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5026790/Axis_Football_2027/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5026790/e20e8a0117e958991577f0ad9e779b71c8e582ca/capsule_231x87.jpg?t=1786975196",
+      "categories": [
+        "Spor",
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-231b24fcd",
       "title": "Goblins Can Conquer",
       "kind": "coming_soon",
@@ -454,19 +467,6 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-6b5803abd",
-      "title": "Axis Football 2027",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5026790/Axis_Football_2027/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5026790/e20e8a0117e958991577f0ad9e779b71c8e582ca/capsule_231x87.jpg?t=1786975196",
-      "categories": [
-        "Spor",
-        "Simülasyon",
-        "Strateji"
       ]
     },
     {
@@ -537,28 +537,29 @@
       ]
     },
     {
-      "id": "steam-news-3dbf82367",
-      "title": "Order Picker Simulator",
+      "id": "steam-news-d8d8d8401",
+      "title": "Beanman Gets His Cool Back",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4798110/Order_Picker_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4863650/Beanman_Gets_His_Cool_Back/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4798110/02abbfd43a9c5fadb92cf1965aacf5ecd7cafbdf/capsule_231x87.jpg?t=1787552976",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4863650/1932c61c89e4d620d150aa0b9d7f672da0d60e78/capsule_231x87.jpg?t=1787064611",
       "categories": [
-        "Simülasyon",
-        "Gündelik"
+        "Macera",
+        "Gündelik",
+        "RPG"
       ]
     },
     {
-      "id": "steam-news-4a282bcb5",
-      "title": "Fell & Sell",
+      "id": "steam-news-e8574c07e",
+      "title": "Train Plus Japan Drive Western Japan Trains! Rapid Service Edition",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4627110/Fell__Sell/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4982590/Train_Plus_Japan_Drive_Western_Japan_Trains_Rapid_Service_Edition/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4627110/58f86a9cf3bf33495e3f603079a4096e785509a1/capsule_231x87.jpg?t=1787312444",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4982590/8b739c7078e62ad0085cc6a77d4490139408fc78/capsule_231x87.jpg?t=1787659343",
       "categories": [
+        "Gündelik",
         "Simülasyon",
-        "RPG",
-        "Tek Oyunculu"
+        "Yarış"
       ]
     },
     {
