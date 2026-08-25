@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-25T06:30:48.131Z",
+  "generatedAt": "2026-08-25T07:27:16.987Z",
   "items": [
+    {
+      "id": "steam-news-202cf4cad",
+      "title": "Beanu TAG",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5062620/Beanu_TAG/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5062620/4777d9e2b9de6b194f3fe79f1bbe45f63402ef7d/capsule_231x87.jpg?t=1787641654",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-e52a18219",
+      "title": "OPEN UP, MICHAEL!",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5058850/OPEN_UP_MICHAEL/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5058850/4ab9a75cf9415fa53fdce64b71e214622ac38ee1/capsule_231x87.jpg?t=1787641445",
+      "categories": [
+        "Korku",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-f32c02dd0",
       "title": "ROCKET SCIENCE",
@@ -93,7 +116,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4911410/CityExplorer/?snr=1_7_7_230_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4911410/36492a5321d08970e875c6610cb5542a23405c4f/capsule_231x87.jpg?t=1787624092",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4911410/36492a5321d08970e875c6610cb5542a23405c4f/capsule_231x87.jpg?t=1787641027",
       "categories": [
         "Gündelik",
         "Simülasyon"
@@ -265,42 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-a69f1aabc",
-      "title": "They Come In Boxes",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5052150/They_Come_In_Boxes/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5052150/35b2b21ce88c3a73abbb003d1e11f909c0f5495c/capsule_231x87.jpg?t=1787597466",
-      "categories": [
-        "Aksiyon",
-        "Strateji",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-474536062",
-      "title": "BirdPakour",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4645080/BirdPakour/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4645080/dad02f0a08a286904912c2926c8b4fed992579cc/capsule_231x87.jpg?t=1787595613",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-e66b00191",
-      "title": "OPEN UP, MICHAEL!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5058850/OPEN_UP_MICHAEL/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5058850/4ab9a75cf9415fa53fdce64b71e214622ac38ee1/capsule_231x87.jpg?t=1787100687",
-      "categories": [
-        "Korku",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-0f0315729",
       "title": "How Asian Parents went to School",
       "kind": "coming_soon",
@@ -328,7 +315,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4143220/The_Case_of_the_Golden_Night_Apartment/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4143220/10bdfcfdeab0091818cf45d64a89498a22605c16/capsule_231x87.jpg?t=1787639335",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4143220/10bdfcfdeab0091818cf45d64a89498a22605c16/capsule_231x87.jpg?t=1787639453",
       "categories": []
     },
     {
@@ -438,17 +425,6 @@
       ]
     },
     {
-      "id": "steam-news-417d858c9",
-      "title": "BARD'S FAULT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
-      "categories": [
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-d6229cca5",
       "title": "Core Crusher",
       "kind": "coming_soon",
@@ -470,6 +446,17 @@
       "categories": [
         "Gündelik",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-417d858c9",
+      "title": "BARD'S FAULT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
+      "categories": [
+        "Çok Oyunculu"
       ]
     },
     {
@@ -498,17 +485,6 @@
       ]
     },
     {
-      "id": "steam-news-ce3e21105",
-      "title": "Clutter 19: Survey Says What? - Collector's Edition",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-d97bbb4b7",
       "title": "Lorne",
       "kind": "coming_soon",
@@ -533,6 +509,17 @@
       ]
     },
     {
+      "id": "steam-news-ce3e21105",
+      "title": "Clutter 19: Survey Says What? - Collector's Edition",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-c7a9c83ed",
       "title": "Aliens: Fireteam Elite 2",
       "kind": "coming_soon",
@@ -553,6 +540,17 @@
       "categories": [
         "Aksiyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-354b3e000",
+      "title": "One More Slime",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4998490/One_More_Slime/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998490/57c29487f4567cfbfa1a8c228239d3e99c1fdb42/capsule_231x87.jpg?t=1787529745",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
