@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T23:02:39.233Z",
+  "generatedAt": "2026-08-25T23:33:29.560Z",
   "items": [
     {
       "id": "steam-news-526053af9",
@@ -280,15 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-3b813d903",
-      "title": "A Standard Deviation",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4438690/A_Standard_Deviation/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4438690/9aa71b8e05fb5548be59a9e4fb3f0ff47014befe/capsule_231x87.jpg?t=1785893597",
-      "categories": []
-    },
-    {
       "id": "steam-news-a2d26caa8",
       "title": "KESU-JI",
       "kind": "coming_soon",
@@ -299,6 +290,15 @@
         "Aksiyon",
         "Gündelik"
       ]
+    },
+    {
+      "id": "steam-news-3b813d903",
+      "title": "A Standard Deviation",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4438690/A_Standard_Deviation/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4438690/9aa71b8e05fb5548be59a9e4fb3f0ff47014befe/capsule_231x87.jpg?t=1785893597",
+      "categories": []
     },
     {
       "id": "steam-news-2151141ca",
@@ -324,17 +324,6 @@
       ]
     },
     {
-      "id": "steam-news-682d5d108",
-      "title": "Ether Flow :: Focus, organize, and create.",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5035800/Ether_Flow__Focus_organize_and_create/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5035800/bd65b9d9b393144d6c9353f826d96aa228a81d67/capsule_231x87.jpg?t=1786895338",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-439967fc1",
       "title": "FRAGLINE: Esports Manager",
       "kind": "coming_soon",
@@ -345,6 +334,17 @@
         "Spor",
         "Strateji",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-682d5d108",
+      "title": "Ether Flow :: Focus, organize, and create.",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5035800/Ether_Flow__Focus_organize_and_create/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5035800/bd65b9d9b393144d6c9353f826d96aa228a81d67/capsule_231x87.jpg?t=1786895338",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -386,18 +386,6 @@
       ]
     },
     {
-      "id": "steam-news-e0e3157ac",
-      "title": "Endless Silent Night",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4703320/Endless_Silent_Night/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4703320/656118e8daf1c68c34816ffaffad08b0176fbf0a/capsule_231x87.jpg?t=1786361681",
-      "categories": [
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-518d086e3",
       "title": "Besetmere Forest",
       "kind": "coming_soon",
@@ -410,6 +398,18 @@
       ]
     },
     {
+      "id": "steam-news-e0e3157ac",
+      "title": "Endless Silent Night",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4703320/Endless_Silent_Night/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4703320/656118e8daf1c68c34816ffaffad08b0176fbf0a/capsule_231x87.jpg?t=1786361681",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-edf5ce2e4",
       "title": "CoinWar",
       "kind": "coming_soon",
@@ -419,19 +419,6 @@
       "categories": [
         "Strateji",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-6b5803abd",
-      "title": "Axis Football 2027",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5026790/Axis_Football_2027/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5026790/e20e8a0117e958991577f0ad9e779b71c8e582ca/capsule_231x87.jpg?t=1786975196",
-      "categories": [
-        "Spor",
-        "Simülasyon",
-        "Strateji"
       ]
     },
     {
@@ -467,6 +454,19 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-6b5803abd",
+      "title": "Axis Football 2027",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5026790/Axis_Football_2027/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5026790/e20e8a0117e958991577f0ad9e779b71c8e582ca/capsule_231x87.jpg?t=1786975196",
+      "categories": [
+        "Spor",
+        "Simülasyon",
+        "Strateji"
       ]
     },
     {
@@ -515,17 +515,6 @@
       ]
     },
     {
-      "id": "steam-news-103dba6c9",
-      "title": "Now THAT'S a Big Dragon!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3834590/Now_THATS_a_Big_Dragon/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3834590/db51c890a83003dbbffc54bd84a8f75a029dd700/capsule_231x87.jpg?t=1787237679",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-06bb8d15a",
       "title": "Crystalyn",
       "kind": "coming_soon",
@@ -537,29 +526,39 @@
       ]
     },
     {
-      "id": "steam-news-d8d8d8401",
-      "title": "Beanman Gets His Cool Back",
+      "id": "steam-news-103dba6c9",
+      "title": "Now THAT'S a Big Dragon!",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4863650/Beanman_Gets_His_Cool_Back/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3834590/Now_THATS_a_Big_Dragon/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4863650/1932c61c89e4d620d150aa0b9d7f672da0d60e78/capsule_231x87.jpg?t=1787064611",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3834590/db51c890a83003dbbffc54bd84a8f75a029dd700/capsule_231x87.jpg?t=1787237679",
       "categories": [
-        "Macera",
-        "Gündelik",
-        "RPG"
+        "Tek Oyunculu"
       ]
     },
     {
-      "id": "steam-news-e8574c07e",
-      "title": "Train Plus Japan Drive Western Japan Trains! Rapid Service Edition",
+      "id": "steam-news-3dbf82367",
+      "title": "Order Picker Simulator",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4982590/Train_Plus_Japan_Drive_Western_Japan_Trains_Rapid_Service_Edition/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4798110/Order_Picker_Simulator/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4982590/8b739c7078e62ad0085cc6a77d4490139408fc78/capsule_231x87.jpg?t=1787659343",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4798110/02abbfd43a9c5fadb92cf1965aacf5ecd7cafbdf/capsule_231x87.jpg?t=1787552976",
       "categories": [
-        "Gündelik",
         "Simülasyon",
-        "Yarış"
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4a282bcb5",
+      "title": "Fell & Sell",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4627110/Fell__Sell/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4627110/58f86a9cf3bf33495e3f603079a4096e785509a1/capsule_231x87.jpg?t=1787312444",
+      "categories": [
+        "Simülasyon",
+        "RPG",
+        "Tek Oyunculu"
       ]
     },
     {
