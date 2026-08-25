@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-25T10:15:15.838Z",
+  "generatedAt": "2026-08-25T10:52:51.704Z",
   "items": [
+    {
+      "id": "steam-news-933738c88",
+      "title": "Metroidvania",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4986900/Metroidvania/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4986900/dd7ec5f636aebb88c9768509eae1e1d903a47c65/capsule_231x87.jpg?t=1787654616",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-437fcc649",
+      "title": "Slum Z",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5022810/Slum_Z/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5022810/8a4ad80763fa2ee77bf5089760ff44975baec88a/capsule_231x87.jpg?t=1787653661",
+      "categories": [
+        "Korku",
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-74214b119",
       "title": "Crabs: Chef's Story",
@@ -271,30 +294,6 @@
       ]
     },
     {
-      "id": "steam-news-b65514614",
-      "title": "Master Stacker: Tower Trials",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4929840/Master_Stacker_Tower_Trials/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4929840/5ca8d1809fec35a99113ed6553e919efafa0c4bd/capsule_231x87.jpg?t=1787633725",
-      "categories": [
-        "Bağımsız",
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-0680d4402",
-      "title": "Ray26 - Sync Synth",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4949170/Ray26__Sync_Synth/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4949170/a78afdccdb0c5ca4ac7340cd8cd2880351abe3d5/capsule_231x87.jpg?t=1787645142",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-daf16f8f0",
       "title": "Sokogram",
       "kind": "coming_soon",
@@ -364,18 +363,6 @@
       ]
     },
     {
-      "id": "steam-news-d6229cca5",
-      "title": "Core Crusher",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4908610/Core_Crusher/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908610/227b041a4974ee6673a83cdec40d6d3e34a3819d/capsule_231x87.jpg?t=1787437249",
-      "categories": [
-        "Aksiyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-6faa65b18",
       "title": "First Move: Classic Games Collection",
       "kind": "coming_soon",
@@ -396,6 +383,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
       "categories": [
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-d6229cca5",
+      "title": "Core Crusher",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4908610/Core_Crusher/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908610/227b041a4974ee6673a83cdec40d6d3e34a3819d/capsule_231x87.jpg?t=1787437249",
+      "categories": [
+        "Aksiyon",
+        "Strateji"
       ]
     },
     {
@@ -435,14 +434,14 @@
       ]
     },
     {
-      "id": "steam-news-c7a9c83ed",
-      "title": "Aliens: Fireteam Elite 2",
+      "id": "steam-news-ce3e21105",
+      "title": "Clutter 19: Survey Says What? - Collector's Edition",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
       "categories": [
-        "Aksiyon"
+        "Gündelik"
       ]
     },
     {
@@ -459,14 +458,14 @@
       ]
     },
     {
-      "id": "steam-news-ce3e21105",
-      "title": "Clutter 19: Survey Says What? - Collector's Edition",
+      "id": "steam-news-c7a9c83ed",
+      "title": "Aliens: Fireteam Elite 2",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
       "categories": [
-        "Gündelik"
+        "Aksiyon"
       ]
     },
     {
@@ -529,14 +528,38 @@
       ]
     },
     {
-      "id": "steam-news-0fded5ef6",
-      "title": "Monke Survivor",
+      "id": "steam-news-01ff45048",
+      "title": "Snack Invaders",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4596220/Monke_Survivor/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/1192170/Snack_Invaders/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4596220/2923ee420f19fab223ae025e1e174ba4e8ea7752/capsule_231x87.jpg?t=1786985035",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1192170/e4a835883d923b60b336ddf9bd12bef876570ab5/capsule_231x87.jpg?t=1787046900",
       "categories": [
-        "Gündelik"
+        "Bağımsız",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-a31958a26",
+      "title": "Surf Sandbox",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4480760/Surf_Sandbox/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4480760/0db6629b52982aefd2213528328f4064c9b0fbb5/capsule_231x87.jpg?t=1787641224",
+      "categories": [
+        "Simülasyon",
+        "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-ddc2bd5c9",
+      "title": "Gold Coast Gambits: Boca Raton & Palm Beach",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4307400/Gold_Coast_Gambits_Boca_Raton__Palm_Beach/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4307400/dc87568d68c5d97e924db91e759d67d4e56cb92b/capsule_231x87.jpg?t=1787314346",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -549,27 +572,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-9ba2aa407",
-      "title": "Runisthar",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4577440/Runisthar/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4577440/c2ef89cc35c8d060aa98f8f1fe5b357e39b95697/capsule_231x87.jpg?t=1786557427",
-      "categories": []
-    },
-    {
-      "id": "steam-news-3e45d2fcf",
-      "title": "Portrait Painter",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3917260/Portrait_Painter/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3917260/5992e8b75541ed507a60e0842361536eebf4f633/capsule_231x87.jpg?t=1787606965",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
       ]
     },
     {
