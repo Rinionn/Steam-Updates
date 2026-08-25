@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-25T10:52:51.704Z",
+  "generatedAt": "2026-08-25T11:24:05.781Z",
   "items": [
+    {
+      "id": "steam-news-1d83be800",
+      "title": "Victory's Grave: Airborne",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4993410/Victorys_Grave_Airborne/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4993410/00981e04a278b7ad7cb22129e08cb126259a6144/capsule_231x87.jpg?t=1787655715",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-933738c88",
       "title": "Metroidvania",
@@ -282,18 +293,6 @@
       ]
     },
     {
-      "id": "steam-news-a618b7461",
-      "title": "Hero Mania",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1933520/Hero_Mania/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933520/9a1e9c95144cbe97f34376b79f1756d2915dbc9c/capsule_231x87.jpg?t=1787634028",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-daf16f8f0",
       "title": "Sokogram",
       "kind": "coming_soon",
@@ -302,18 +301,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4054100/4d753652504ab3b4672950882b38a08c17196173/capsule_231x87.jpg?t=1787179087",
       "categories": [
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-d60e6500e",
-      "title": "ASTRAL COURT DX",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4568830/ASTRAL_COURT_DX/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4568830/251945f49b52b5b51f0b4f367f73748c88844f11/capsule_231x87.jpg?t=1787609663",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
       ]
     },
     {
@@ -328,18 +315,6 @@
       ]
     },
     {
-      "id": "steam-news-f3eccc40c",
-      "title": "Hide and Moo!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5061170/Hide_and_Moo/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5061170/da0c9b6389a2feb87bea23468c6617eb8c70642a/capsule_231x87.jpg?t=1787573684",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-9d6c21242",
       "title": "Mochi",
       "kind": "coming_soon",
@@ -349,6 +324,18 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-f3eccc40c",
+      "title": "Hide and Moo!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5061170/Hide_and_Moo/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5061170/da0c9b6389a2feb87bea23468c6617eb8c70642a/capsule_231x87.jpg?t=1787573684",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
       ]
     },
     {
@@ -375,17 +362,6 @@
       ]
     },
     {
-      "id": "steam-news-417d858c9",
-      "title": "BARD'S FAULT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
-      "categories": [
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-d6229cca5",
       "title": "Core Crusher",
       "kind": "coming_soon",
@@ -395,6 +371,17 @@
       "categories": [
         "Aksiyon",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-417d858c9",
+      "title": "BARD'S FAULT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
+      "categories": [
+        "Çok Oyunculu"
       ]
     },
     {
@@ -434,17 +421,6 @@
       ]
     },
     {
-      "id": "steam-news-ce3e21105",
-      "title": "Clutter 19: Survey Says What? - Collector's Edition",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-68878f792",
       "title": "Twisted Party",
       "kind": "coming_soon",
@@ -455,6 +431,17 @@
         "Çok Oyunculu",
         "Gündelik",
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-ce3e21105",
+      "title": "Clutter 19: Survey Says What? - Collector's Edition",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -469,15 +456,14 @@
       ]
     },
     {
-      "id": "steam-news-de62632bb",
-      "title": "Ragebait Marathon",
+      "id": "steam-news-8c7793dcb",
+      "title": "Blood Dungeon",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4978930/Ragebait_Marathon/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2431080/Blood_Dungeon/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4978930/678c3b70a80e371664eda91425a5aca181fe610d/capsule_231x87.jpg?t=1786985535",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2431080/dc74858eaedfd7e54d15033f0fcfe55fdaf5226d/capsule_231x87.jpg?t=1787580857",
       "categories": [
-        "Aksiyon",
-        "Gündelik"
+        "Aksiyon"
       ]
     },
     {
@@ -505,14 +491,15 @@
       ]
     },
     {
-      "id": "steam-news-8c7793dcb",
-      "title": "Blood Dungeon",
+      "id": "steam-news-de62632bb",
+      "title": "Ragebait Marathon",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2431080/Blood_Dungeon/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4978930/Ragebait_Marathon/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2431080/dc74858eaedfd7e54d15033f0fcfe55fdaf5226d/capsule_231x87.jpg?t=1787580857",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4978930/678c3b70a80e371664eda91425a5aca181fe610d/capsule_231x87.jpg?t=1786985535",
       "categories": [
-        "Aksiyon"
+        "Aksiyon",
+        "Gündelik"
       ]
     },
     {
@@ -528,27 +515,27 @@
       ]
     },
     {
-      "id": "steam-news-01ff45048",
-      "title": "Snack Invaders",
+      "id": "steam-news-3e45d2fcf",
+      "title": "Portrait Painter",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1192170/Snack_Invaders/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3917260/Portrait_Painter/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1192170/e4a835883d923b60b336ddf9bd12bef876570ab5/capsule_231x87.jpg?t=1787046900",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3917260/5992e8b75541ed507a60e0842361536eebf4f633/capsule_231x87.jpg?t=1787606965",
       "categories": [
-        "Bağımsız",
-        "Aksiyon"
+        "Gündelik",
+        "Tek Oyunculu"
       ]
     },
     {
-      "id": "steam-news-a31958a26",
-      "title": "Surf Sandbox",
+      "id": "steam-news-1ff3951cd",
+      "title": "Chronicles Puzzle: History Path",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4480760/Surf_Sandbox/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4518030/Chronicles_Puzzle_History_Path/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4480760/0db6629b52982aefd2213528328f4064c9b0fbb5/capsule_231x87.jpg?t=1787641224",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4518030/19697717c0b541020ba5e9d72a8231d05c2ef224/capsule_231x87.jpg?t=1785158532",
       "categories": [
-        "Simülasyon",
-        "Spor"
+        "Gündelik",
+        "Strateji"
       ]
     },
     {
@@ -563,16 +550,25 @@
       ]
     },
     {
-      "id": "steam-news-1ff3951cd",
-      "title": "Chronicles Puzzle: History Path",
+      "id": "steam-news-4c1012987",
+      "title": "VERLIES III - Resurrection",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4518030/Chronicles_Puzzle_History_Path/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4720360/VERLIES_III__Resurrection/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4518030/19697717c0b541020ba5e9d72a8231d05c2ef224/capsule_231x87.jpg?t=1785158532",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4720360/8bdf811c67904b5597bf319a77411a88dd7fe8ff/capsule_231x87.jpg?t=1787129741",
       "categories": [
-        "Gündelik",
-        "Strateji"
+        "RPG",
+        "Macera"
       ]
+    },
+    {
+      "id": "steam-news-9ba2aa407",
+      "title": "Runisthar",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4577440/Runisthar/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4577440/c2ef89cc35c8d060aa98f8f1fe5b357e39b95697/capsule_231x87.jpg?t=1786557427",
+      "categories": []
     },
     {
       "id": "steam-news-c560bed11",
