@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T03:12:30.284Z",
+  "generatedAt": "2026-08-25T04:01:14.669Z",
   "items": [
     {
       "id": "steam-news-d3b6bb19e",
@@ -295,6 +295,18 @@
       ]
     },
     {
+      "id": "steam-news-4ea7def7e",
+      "title": "Hero Mania",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1933520/Hero_Mania/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933520/9a1e9c95144cbe97f34376b79f1756d2915dbc9c/capsule_231x87.jpg?t=1787593608",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-1638dbd48",
       "title": "Tsugunohi -The Thread That Beckons to Heaven-",
       "kind": "coming_soon",
@@ -304,18 +316,6 @@
       "categories": [
         "Macera",
         "Korku",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-4ea7def7e",
-      "title": "Hero Mania",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1933520/Hero_Mania/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933520/9a1e9c95144cbe97f34376b79f1756d2915dbc9c/capsule_231x87.jpg?t=1787593608",
-      "categories": [
-        "Aksiyon",
         "Gündelik"
       ]
     },
@@ -410,18 +410,6 @@
       ]
     },
     {
-      "id": "steam-news-9d6c21242",
-      "title": "Mochi",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4957510/Mochi/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957510/50552514386af64d1f9a7a41743186caac300538/capsule_231x87.jpg?t=1786461712",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-f3eccc40c",
       "title": "Hide and Moo!",
       "kind": "coming_soon",
@@ -431,6 +419,18 @@
       "categories": [
         "Aksiyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-9d6c21242",
+      "title": "Mochi",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4957510/Mochi/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957510/50552514386af64d1f9a7a41743186caac300538/capsule_231x87.jpg?t=1786461712",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -541,17 +541,6 @@
       ]
     },
     {
-      "id": "steam-news-c7a9c83ed",
-      "title": "Aliens: Fireteam Elite 2",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-d97bbb4b7",
       "title": "Lorne",
       "kind": "coming_soon",
@@ -560,6 +549,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172970/capsule_231x87.jpg?t=1785158730",
       "categories": [
         "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-c7a9c83ed",
+      "title": "Aliens: Fireteam Elite 2",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
