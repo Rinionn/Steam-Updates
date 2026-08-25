@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-25T04:01:14.669Z",
+  "generatedAt": "2026-08-25T04:48:43.881Z",
   "items": [
+    {
+      "id": "steam-news-0680d4402",
+      "title": "Ray26 - Sync Synth",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4949170/Ray26__Sync_Synth/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4949170/a78afdccdb0c5ca4ac7340cd8cd2880351abe3d5/capsule_231x87.jpg?t=1787631427",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-d3b6bb19e",
       "title": "CityExplorer",
@@ -272,17 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-868e4c990",
-      "title": "Goaldeck",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4638590/Goaldeck/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4638590/f88b230321d5652021dfba34cff5c3ad98a682d0/capsule_231x87.jpg?t=1787612188",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-e66b00191",
       "title": "OPEN UP, MICHAEL!",
       "kind": "coming_soon",
@@ -295,18 +295,6 @@
       ]
     },
     {
-      "id": "steam-news-4ea7def7e",
-      "title": "Hero Mania",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1933520/Hero_Mania/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933520/9a1e9c95144cbe97f34376b79f1756d2915dbc9c/capsule_231x87.jpg?t=1787593608",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-1638dbd48",
       "title": "Tsugunohi -The Thread That Beckons to Heaven-",
       "kind": "coming_soon",
@@ -316,6 +304,18 @@
       "categories": [
         "Macera",
         "Korku",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4ea7def7e",
+      "title": "Hero Mania",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1933520/Hero_Mania/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1933520/9a1e9c95144cbe97f34376b79f1756d2915dbc9c/capsule_231x87.jpg?t=1787593608",
+      "categories": [
+        "Aksiyon",
         "Gündelik"
       ]
     },
@@ -410,18 +410,6 @@
       ]
     },
     {
-      "id": "steam-news-f3eccc40c",
-      "title": "Hide and Moo!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5061170/Hide_and_Moo/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5061170/da0c9b6389a2feb87bea23468c6617eb8c70642a/capsule_231x87.jpg?t=1787573684",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-9d6c21242",
       "title": "Mochi",
       "kind": "coming_soon",
@@ -446,6 +434,18 @@
       ]
     },
     {
+      "id": "steam-news-f3eccc40c",
+      "title": "Hide and Moo!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5061170/Hide_and_Moo/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5061170/da0c9b6389a2feb87bea23468c6617eb8c70642a/capsule_231x87.jpg?t=1787573684",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-4819147f2",
       "title": "BULLETARIUM",
       "kind": "coming_soon",
@@ -454,18 +454,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4600960/fc91221021f9400e6cc9bcf4218aa34a7db5de23/capsule_231x87.jpg?t=1787325647",
       "categories": [
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-6faa65b18",
-      "title": "First Move: Classic Games Collection",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5098380/First_Move_Classic_Games_Collection/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5098380/338d2b3f0819f1281b0f89d99b2b1df1ff92e73f/capsule_231x87.jpg?t=1787541304",
-      "categories": [
-        "Gündelik",
-        "Strateji"
       ]
     },
     {
@@ -489,6 +477,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
       "categories": [
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-6faa65b18",
+      "title": "First Move: Classic Games Collection",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5098380/First_Move_Classic_Games_Collection/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5098380/338d2b3f0819f1281b0f89d99b2b1df1ff92e73f/capsule_231x87.jpg?t=1787541304",
+      "categories": [
+        "Gündelik",
+        "Strateji"
       ]
     },
     {
