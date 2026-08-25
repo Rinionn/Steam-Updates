@@ -1,6 +1,43 @@
 {
-  "generatedAt": "2026-08-25T00:32:47.422Z",
+  "generatedAt": "2026-08-25T02:05:40.672Z",
   "items": [
+    {
+      "id": "steam-news-7692ac36b",
+      "title": "Honoiro no Jikou 穗色时光",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4926100/Honoiro_no_Jikou/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926100/933abb92c8f184794891ba09e229b46a88c3da82/capsule_231x87.jpg?t=1787622942",
+      "categories": [
+        "Gündelik",
+        "Strateji",
+        "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-697ebceec",
+      "title": "TORIGAME",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4727220/TORIGAME/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4727220/f4bb2815fb72200756b9608669bcb952685fd4ad/capsule_231x87.jpg?t=1787619871",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-0c811cee7",
+      "title": "A Border With No End",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5008790/A_Border_With_No_End/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5008790/7bbb06b22b5c51ddda18d8b2534cd67d93dd388b/capsule_231x87.jpg?t=1787619494",
+      "categories": [
+        "Macera",
+        "RPG"
+      ]
+    },
     {
       "id": "steam-news-9cccd1d0e",
       "title": "Chuck Bonesteel & The Alien Apocalypse",
@@ -243,37 +280,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-6ad2e23f4",
-      "title": "Ecrazeus Castle",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4106270/Ecrazeus_Castle/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4106270/d49f1067191415e65b09ed6369e6aceeb8fffc38/capsule_231x87.jpg?t=1787590888",
-      "categories": [
-        "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-3c103f877",
-      "title": "100 for Justice",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4657550/100_for_Justice/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4657550/d38784029ed7e6913c184ac1023760fc284ce376/capsule_231x87.jpg?t=1787590860",
-      "categories": []
-    },
-    {
-      "id": "steam-news-b7bc7bc18",
-      "title": "Overtrick",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4101290/Overtrick/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4101290/8fcbb42cac5bc5d9ce757842cdbfcbb896290cd0/capsule_231x87.jpg?t=1787592549",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-4ea7def7e",
       "title": "Hero Mania",
       "kind": "coming_soon",
@@ -403,17 +409,6 @@
       ]
     },
     {
-      "id": "steam-news-d3ba4baac",
-      "title": "Idle Times",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4978200/Idle_Times/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4978200/9796c7b40b35356381d545de9a571f8bc44f3889/capsule_231x87.jpg?t=1786047141",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-d4e05f962",
       "title": "Lawn Order",
       "kind": "coming_soon",
@@ -435,6 +430,17 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-d3ba4baac",
+      "title": "Idle Times",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4978200/Idle_Times/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4978200/9796c7b40b35356381d545de9a571f8bc44f3889/capsule_231x87.jpg?t=1786047141",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -461,18 +467,6 @@
       ]
     },
     {
-      "id": "steam-news-d6229cca5",
-      "title": "Core Crusher",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4908610/Core_Crusher/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908610/227b041a4974ee6673a83cdec40d6d3e34a3819d/capsule_231x87.jpg?t=1787437249",
-      "categories": [
-        "Aksiyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-6faa65b18",
       "title": "First Move: Classic Games Collection",
       "kind": "coming_soon",
@@ -481,6 +475,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5098380/338d2b3f0819f1281b0f89d99b2b1df1ff92e73f/capsule_231x87.jpg?t=1787541304",
       "categories": [
         "Gündelik",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-d6229cca5",
+      "title": "Core Crusher",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4908610/Core_Crusher/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908610/227b041a4974ee6673a83cdec40d6d3e34a3819d/capsule_231x87.jpg?t=1787437249",
+      "categories": [
+        "Aksiyon",
         "Strateji"
       ]
     },
@@ -521,17 +527,6 @@
       ]
     },
     {
-      "id": "steam-news-d97bbb4b7",
-      "title": "Lorne",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2172970/Lorne/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172970/capsule_231x87.jpg?t=1785158730",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-68878f792",
       "title": "Twisted Party",
       "kind": "coming_soon",
@@ -553,6 +548,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d97bbb4b7",
+      "title": "Lorne",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2172970/Lorne/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172970/capsule_231x87.jpg?t=1785158730",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
