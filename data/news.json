@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-25T11:49:33.750Z",
+  "generatedAt": "2026-08-25T12:18:56.737Z",
   "items": [
+    {
+      "id": "steam-news-d9f83f7bf",
+      "title": "Bubblez: Magic Bubble Quest",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/359270/Bubblez_Magic_Bubble_Quest/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/359270/58f4cc7b063992d9f7d948e4b7a7190b53686827/capsule_231x87.jpg?t=1787659956",
+      "categories": [
+        "Gündelik",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-18c10b135",
+      "title": "Sokogram",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4054100/Sokogram/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4054100/4d753652504ab3b4672950882b38a08c17196173/capsule_231x87.jpg?t=1787659207",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-e5962e399",
       "title": "Ragebait Marathon",
@@ -22,6 +45,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4993410/00981e04a278b7ad7cb22129e08cb126259a6144/capsule_231x87.jpg?t=1787655715",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-5f98bb047",
+      "title": "ASTRAL COURT DX",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4568830/ASTRAL_COURT_DX/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4568830/251945f49b52b5b51f0b4f367f73748c88844f11/capsule_231x87.jpg?t=1787655640",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -255,52 +290,15 @@
       ]
     },
     {
-      "id": "steam-news-f32c02dd0",
-      "title": "ROCKET SCIENCE",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4977610/ROCKET_SCIENCE/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977610/bb87aeeee7b5ed3852255cf251bbfac3a5c962f8/capsule_231x87.jpg?t=1787638465",
-      "categories": [
-        "Aksiyon",
-        "Spor",
-        "Çok Oyunculu",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-b9f024671",
-      "title": "Tsugunohi -The Thread That Beckons to Heaven-",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4830660/Tsugunohi_The_Thread_That_Beckons_to_Heaven/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4830660/d24fd281c6c3b4735ffa5cda33839134776e66b2/capsule_231x87.jpg?t=1787636773",
-      "categories": [
-        "Macera",
-        "Korku",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-dfe0b6768",
-      "title": "BoHeM",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4610610/BoHeM/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4610610/64382cd833a5a5c8aa9672a3b9f70dae85ef6e3f/capsule_231x87.jpg?t=1787638946",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-daf16f8f0",
-      "title": "Sokogram",
+      "id": "steam-news-9d6c21242",
+      "title": "Mochi",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4054100/Sokogram/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4957510/Mochi/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4054100/4d753652504ab3b4672950882b38a08c17196173/capsule_231x87.jpg?t=1787179087",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957510/50552514386af64d1f9a7a41743186caac300538/capsule_231x87.jpg?t=1786461712",
       "categories": [
-        "Gündelik"
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -312,18 +310,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4978200/9796c7b40b35356381d545de9a571f8bc44f3889/capsule_231x87.jpg?t=1786047141",
       "categories": [
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-9d6c21242",
-      "title": "Mochi",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4957510/Mochi/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957510/50552514386af64d1f9a7a41743186caac300538/capsule_231x87.jpg?t=1786461712",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
       ]
     },
     {
@@ -350,18 +336,6 @@
       ]
     },
     {
-      "id": "steam-news-6faa65b18",
-      "title": "First Move: Classic Games Collection",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5098380/First_Move_Classic_Games_Collection/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5098380/338d2b3f0819f1281b0f89d99b2b1df1ff92e73f/capsule_231x87.jpg?t=1787541304",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-d6229cca5",
       "title": "Core Crusher",
       "kind": "coming_soon",
@@ -382,6 +356,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
       "categories": [
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-6faa65b18",
+      "title": "First Move: Classic Games Collection",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5098380/First_Move_Classic_Games_Collection/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5098380/338d2b3f0819f1281b0f89d99b2b1df1ff92e73f/capsule_231x87.jpg?t=1787541304",
+      "categories": [
+        "Gündelik",
+        "Strateji"
       ]
     },
     {
@@ -410,28 +396,6 @@
       ]
     },
     {
-      "id": "steam-news-ce3e21105",
-      "title": "Clutter 19: Survey Says What? - Collector's Edition",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-d97bbb4b7",
-      "title": "Lorne",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2172970/Lorne/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172970/capsule_231x87.jpg?t=1785158730",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-c7a9c83ed",
       "title": "Aliens: Fireteam Elite 2",
       "kind": "coming_soon",
@@ -453,6 +417,28 @@
         "Çok Oyunculu",
         "Gündelik",
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-ce3e21105",
+      "title": "Clutter 19: Survey Says What? - Collector's Edition",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d97bbb4b7",
+      "title": "Lorne",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2172970/Lorne/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172970/capsule_231x87.jpg?t=1785158730",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
@@ -503,6 +489,18 @@
       ]
     },
     {
+      "id": "steam-news-01ff45048",
+      "title": "Snack Invaders",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/1192170/Snack_Invaders/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1192170/e4a835883d923b60b336ddf9bd12bef876570ab5/capsule_231x87.jpg?t=1787046900",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-3e45d2fcf",
       "title": "Portrait Painter",
       "kind": "coming_soon",
@@ -512,6 +510,30 @@
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-1dd5a569c",
+      "title": "Ride It!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4814510/Ride_It/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4814510/7ceed9cde7facc3ba6936bc32c5cade66811a4f6/capsule_231x87.jpg?t=1787649177",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-f495b0be6",
+      "title": "Football Agent",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4860970/Football_Agent/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4860970/825d6b2f19fff78ebcb4d54cc9847e867d12634b/capsule_231x87.jpg?t=1787238651",
+      "categories": [
+        "Spor",
+        "Simülasyon",
+        "Strateji"
       ]
     },
     {
@@ -535,37 +557,15 @@
       ]
     },
     {
-      "id": "steam-news-4c1012987",
-      "title": "VERLIES III - Resurrection",
+      "id": "steam-news-3961bed97",
+      "title": "SeaColony",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4720360/VERLIES_III__Resurrection/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4661260/SeaColony/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4720360/8bdf811c67904b5597bf319a77411a88dd7fe8ff/capsule_231x87.jpg?t=1787129741",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4661260/59491448e895bd5d13fd48c68e16b9a98366b4de/capsule_231x87.jpg?t=1786397624",
       "categories": [
-        "RPG",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-1dd5a569c",
-      "title": "Ride It!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4814510/Ride_It/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4814510/7ceed9cde7facc3ba6936bc32c5cade66811a4f6/capsule_231x87.jpg?t=1787649177",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-ddc2bd5c9",
-      "title": "Gold Coast Gambits: Boca Raton & Palm Beach",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4307400/Gold_Coast_Gambits_Boca_Raton__Palm_Beach/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4307400/dc87568d68c5d97e924db91e759d67d4e56cb92b/capsule_231x87.jpg?t=1787314346",
-      "categories": [
-        "Strateji"
+        "Strateji",
+        "Simülasyon"
       ]
     },
     {
