@@ -1,6 +1,52 @@
 {
-  "generatedAt": "2026-08-25T09:00:34.672Z",
+  "generatedAt": "2026-08-25T09:45:10.081Z",
   "items": [
+    {
+      "id": "steam-news-7fbecab36",
+      "title": "Snap the Cat",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4539530/Snap_the_Cat/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4539530/1971a5e6b1a2ae58db5447542a05049aa4579fc7/capsule_231x87.jpg?t=1787650250",
+      "categories": [
+        "Gündelik",
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-5065d8be8",
+      "title": "SSO : Stone Simulator Online",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5032660/SSO__Stone_Simulator_Online/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5032660/dcd38dbdf547e43f9f11850cc400fb44caf7b126/capsule_231x87.jpg?t=1787650160",
+      "categories": [
+        "Simülasyon",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-8230097d0",
+      "title": "Artificial Bloodline",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4804130/Artificial_Bloodline/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4804130/32825194139fc09d00f80c1d1eaea181ea894d83/capsule_231x87.jpg?t=1787649815",
+      "categories": [
+        "Bağımsız",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-8cbab352c",
+      "title": "The Case of the Golden Night Apartment",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4143220/The_Case_of_the_Golden_Night_Apartment/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4143220/10bdfcfdeab0091818cf45d64a89498a22605c16/capsule_231x87.jpg?t=1787648431",
+      "categories": []
+    },
     {
       "id": "steam-news-746a2a2ba",
       "title": "Crypto Simulator",
@@ -46,7 +92,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/5013860/Bacteria_Buster/?snr=1_7_7_230_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5013860/8c187346721142b3b4082ea46023f98c15bb1b8e/capsule_231x87.jpg?t=1787645675",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5013860/8c187346721142b3b4082ea46023f98c15bb1b8e/capsule_231x87.jpg?t=1787650652",
       "categories": [
         "Simülasyon",
         "Gündelik"
@@ -249,66 +295,6 @@
       ]
     },
     {
-      "id": "steam-news-9cccd1d0e",
-      "title": "Chuck Bonesteel & The Alien Apocalypse",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3098780/Chuck_Bonesteel__The_Alien_Apocalypse/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3098780/a2b1443c62cfb292a716ea467dd5823388d72c99/capsule_231x87.jpg?t=1787613966",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-9312ef938",
-      "title": "Cozy Commons",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4932320/Cozy_Commons/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4932320/98c8e017e8c8b64067673ce6fe686b00a8a50277/capsule_231x87.jpg?t=1787611651",
-      "categories": [
-        "Gündelik",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-400461889",
-      "title": "Beginner Zombie Survival",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5048030/Beginner_Zombie_Survival/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048030/4735f4b4e01776844edf5ab1cb200c958474a71d/capsule_231x87.jpg?t=1787612416",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-7a564f1cc",
-      "title": "Descendants of the Dragon",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4499760/Descendants_of_the_Dragon/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4499760/422bce663ecb00bbb56e5a227389f7700863071b/capsule_231x87.jpg?t=1787608593",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-3f0de48ed",
-      "title": "Snap the Cat",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4539530/Snap_the_Cat/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4539530/1971a5e6b1a2ae58db5447542a05049aa4579fc7/capsule_231x87.jpg?t=1787557922",
-      "categories": [
-        "Gündelik",
-        "Strateji",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-38fdfc264",
       "title": "Koikata: How Our Love Grows",
       "kind": "coming_soon",
@@ -344,6 +330,18 @@
       ]
     },
     {
+      "id": "steam-news-9d6c21242",
+      "title": "Mochi",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4957510/Mochi/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957510/50552514386af64d1f9a7a41743186caac300538/capsule_231x87.jpg?t=1786461712",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-d3ba4baac",
       "title": "Idle Times",
       "kind": "coming_soon",
@@ -351,6 +349,18 @@
       "dateLabel": "25 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4978200/9796c7b40b35356381d545de9a571f8bc44f3889/capsule_231x87.jpg?t=1786047141",
       "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-f3eccc40c",
+      "title": "Hide and Moo!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5061170/Hide_and_Moo/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5061170/da0c9b6389a2feb87bea23468c6617eb8c70642a/capsule_231x87.jpg?t=1787573684",
+      "categories": [
+        "Aksiyon",
         "Gündelik"
       ]
     },
@@ -364,30 +374,6 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-9d6c21242",
-      "title": "Mochi",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4957510/Mochi/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4957510/50552514386af64d1f9a7a41743186caac300538/capsule_231x87.jpg?t=1786461712",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-f3eccc40c",
-      "title": "Hide and Moo!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5061170/Hide_and_Moo/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5061170/da0c9b6389a2feb87bea23468c6617eb8c70642a/capsule_231x87.jpg?t=1787573684",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
       ]
     },
     {
@@ -462,6 +448,17 @@
       ]
     },
     {
+      "id": "steam-news-ce3e21105",
+      "title": "Clutter 19: Survey Says What? - Collector's Edition",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-d97bbb4b7",
       "title": "Lorne",
       "kind": "coming_soon",
@@ -473,14 +470,14 @@
       ]
     },
     {
-      "id": "steam-news-ce3e21105",
-      "title": "Clutter 19: Survey Says What? - Collector's Edition",
+      "id": "steam-news-c7a9c83ed",
+      "title": "Aliens: Fireteam Elite 2",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4457030/Clutter_19_Survey_Says_What__Collectors_Edition/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4457030/7b25a0954f1c5cb1a4c3c464a868bf6f5d5e78dc/capsule_231x87.jpg?t=1787052748",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
       "categories": [
-        "Gündelik"
+        "Aksiyon"
       ]
     },
     {
@@ -493,17 +490,6 @@
       "categories": [
         "Çok Oyunculu",
         "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-c7a9c83ed",
-      "title": "Aliens: Fireteam Elite 2",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
-      "categories": [
         "Aksiyon"
       ]
     },
@@ -575,6 +561,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4307400/dc87568d68c5d97e924db91e759d67d4e56cb92b/capsule_231x87.jpg?t=1787314346",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-0fded5ef6",
+      "title": "Monke Survivor",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4596220/Monke_Survivor/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4596220/2923ee420f19fab223ae025e1e174ba4e8ea7752/capsule_231x87.jpg?t=1786985035",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
