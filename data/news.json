@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T17:50:54.234Z",
+  "generatedAt": "2026-08-25T18:18:38.635Z",
   "items": [
     {
       "id": "steam-news-1ab6b0fcf",
@@ -158,9 +158,20 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/1839060/Polylithic/?snr=1_7_7_230_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1839060/0882e641f4dc0112439eb8f5e48df9403ab215e3/capsule_231x87_alt_assets_0.jpg?t=1787677177",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1839060/2316f4cf658ba2726a7b5a418243094a3d5472f1/capsule_231x87_alt_assets_0.jpg?t=1787681137",
       "categories": [
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-74022f2b1",
+      "title": "tabble",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4697000/tabble/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4697000/05b39d5c0ec51998f506b4b41232a878680d753d/capsule_231x87.jpg?t=1787676792",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -263,42 +274,6 @@
         "Gündelik",
         "Aksiyon",
         "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-c3035d2f5",
-      "title": "Twisted Party",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4332910/Twisted_Party/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4332910/d339d0922e4215ff7944c9531993148aaba270c5/capsule_231x87.jpg?t=1787670033",
-      "categories": [
-        "Çok Oyunculu",
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-2c2854408",
-      "title": "krizgame",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4859340/krizgame/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4859340/3de6593bd2fcd29b3ae41fcbf172fd8dec12fd9e/capsule_231x87.jpg?t=1787408576",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-6a9f2cfc6",
-      "title": "Adverse Action",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5067230/Adverse_Action/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5067230/351f6702b7817c08bbdf4e4600fbf820f77dc652/capsule_231x87.jpg?t=1786598566",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
       ]
     },
     {
@@ -462,15 +437,6 @@
       ]
     },
     {
-      "id": "steam-news-3b813d903",
-      "title": "A Standard Deviation",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4438690/A_Standard_Deviation/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4438690/9aa71b8e05fb5548be59a9e4fb3f0ff47014befe/capsule_231x87.jpg?t=1785893597",
-      "categories": []
-    },
-    {
       "id": "steam-news-a2d26caa8",
       "title": "KESU-JI",
       "kind": "coming_soon",
@@ -481,6 +447,15 @@
         "Aksiyon",
         "Gündelik"
       ]
+    },
+    {
+      "id": "steam-news-3b813d903",
+      "title": "A Standard Deviation",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4438690/A_Standard_Deviation/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4438690/9aa71b8e05fb5548be59a9e4fb3f0ff47014befe/capsule_231x87.jpg?t=1785893597",
+      "categories": []
     },
     {
       "id": "steam-news-2151141ca",
@@ -506,6 +481,17 @@
       ]
     },
     {
+      "id": "steam-news-682d5d108",
+      "title": "Ether Flow :: Focus, organize, and create.",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5035800/Ether_Flow__Focus_organize_and_create/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5035800/bd65b9d9b393144d6c9353f826d96aa228a81d67/capsule_231x87.jpg?t=1786895338",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-439967fc1",
       "title": "FRAGLINE: Esports Manager",
       "kind": "coming_soon",
@@ -516,17 +502,6 @@
         "Spor",
         "Strateji",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-682d5d108",
-      "title": "Ether Flow :: Focus, organize, and create.",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5035800/Ether_Flow__Focus_organize_and_create/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5035800/bd65b9d9b393144d6c9353f826d96aa228a81d67/capsule_231x87.jpg?t=1786895338",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -551,6 +526,32 @@
       "categories": [
         "Yarış",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-518d086e3",
+      "title": "Besetmere Forest",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4845300/Besetmere_Forest/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845300/d77dfb7bff00a7355068cd2aec509a143f2443da/capsule_231x87.jpg?t=1786971732",
+      "categories": [
+        "Korku",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-ba1ce4315",
+      "title": "Wawa Cicada",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5064480/Wawa_Cicada/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5064480/ecd1e440c67b9f358b3de44236dfa4519796abbf/capsule_231x87.jpg?t=1786972237",
+      "categories": [
+        "Simülasyon",
+        "Aksiyon",
+        "Gündelik",
+        "Spor"
       ]
     },
     {
