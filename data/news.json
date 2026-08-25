@@ -1,6 +1,44 @@
 {
-  "generatedAt": "2026-08-25T07:27:16.987Z",
+  "generatedAt": "2026-08-25T08:11:05.831Z",
   "items": [
+    {
+      "id": "steam-news-379a92f51",
+      "title": "Vertigo Rush",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1483380/Vertigo_Rush/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1483380/13d32d726f464a45016ffc85ea92e9a5d4c54894/capsule_231x87.jpg?t=1787645028",
+      "categories": [
+        "Bağımsız",
+        "Çok Oyunculu",
+        "Tek Oyunculu",
+        "Yarış"
+      ]
+    },
+    {
+      "id": "steam-news-bc196793b",
+      "title": "Hex Vanguard",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5023820/Hex_Vanguard/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5023820/bb2cbfad343fad7b86ceebc4a06b98d8020db1d7/capsule_231x87.jpg?t=1787643835",
+      "categories": [
+        "Simülasyon",
+        "Strateji",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-79b9f6046",
+      "title": "How Asian Parents went to School",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4154510/How_Asian_Parents_went_to_School/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4154510/dd08b04a1741d167c22d855cae55c3c4fd5e4223/capsule_231x87.jpg?t=1787643039",
+      "categories": [
+        "Çok Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-202cf4cad",
       "title": "Beanu TAG",
@@ -105,7 +143,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4949170/Ray26__Sync_Synth/?snr=1_7_7_230_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4949170/a78afdccdb0c5ca4ac7340cd8cd2880351abe3d5/capsule_231x87.jpg?t=1787631427",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4949170/a78afdccdb0c5ca4ac7340cd8cd2880351abe3d5/capsule_231x87.jpg?t=1787645142",
       "categories": [
         "Gündelik"
       ]
@@ -251,51 +289,6 @@
       "categories": [
         "Strateji",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-fe5088767",
-      "title": "Farmous",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4992330/Farmous/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4992330/2653174f2bac046ecc1ab8a370191637f3b598a6/capsule_231x87.jpg?t=1787600284",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-278a12d2a",
-      "title": "Banana Republic",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4440710/Banana_Republic/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4440710/00858e1afcc1e8807d613b214b284a5bbbc84e47/capsule_231x87.jpg?t=1787598005",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-eec3d326a",
-      "title": "Project AsteroidZ",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4611510/Project_AsteroidZ/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4611510/62e51f0a3cf4d6decae506104e02aae837b7f866/capsule_231x87.jpg?t=1787597603",
-      "categories": [
-        "Bağımsız",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-0f0315729",
-      "title": "How Asian Parents went to School",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4154510/How_Asian_Parents_went_to_School/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4154510/dd08b04a1741d167c22d855cae55c3c4fd5e4223/capsule_231x87.jpg?t=1787601805",
-      "categories": [
-        "Çok Oyunculu"
       ]
     },
     {
@@ -485,17 +478,6 @@
       ]
     },
     {
-      "id": "steam-news-d97bbb4b7",
-      "title": "Lorne",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2172970/Lorne/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172970/capsule_231x87.jpg?t=1785158730",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-68878f792",
       "title": "Twisted Party",
       "kind": "coming_soon",
@@ -520,12 +502,34 @@
       ]
     },
     {
+      "id": "steam-news-d97bbb4b7",
+      "title": "Lorne",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2172970/Lorne/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172970/capsule_231x87.jpg?t=1785158730",
+      "categories": [
+        "Bağımsız"
+      ]
+    },
+    {
       "id": "steam-news-c7a9c83ed",
       "title": "Aliens: Fireteam Elite 2",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3448650/Aliens_Fireteam_Elite_2/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3448650/ca75b2be4cfcfbbb74518f8bf963f09bbc111bf5/capsule_231x87.jpg?t=1787348030",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-354b3e000",
+      "title": "One More Slime",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4998490/One_More_Slime/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998490/57c29487f4567cfbfa1a8c228239d3e99c1fdb42/capsule_231x87.jpg?t=1787529745",
       "categories": [
         "Aksiyon"
       ]
@@ -543,14 +547,16 @@
       ]
     },
     {
-      "id": "steam-news-354b3e000",
-      "title": "One More Slime",
+      "id": "steam-news-e5af9514e",
+      "title": "A Couple Nights At The Chud House",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4998490/One_More_Slime/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5061820/A_Couple_Nights_At_The_Chud_House/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998490/57c29487f4567cfbfa1a8c228239d3e99c1fdb42/capsule_231x87.jpg?t=1787529745",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5061820/83862c85190ffc4d56ae7616c8eb9bb59b0cd51b/capsule_231x87.jpg?t=1786477079",
       "categories": [
-        "Aksiyon"
+        "Strateji",
+        "Korku",
+        "Tek Oyunculu"
       ]
     },
     {
