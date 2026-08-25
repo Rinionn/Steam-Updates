@@ -1,6 +1,43 @@
 {
-  "generatedAt": "2026-08-25T19:42:06.390Z",
+  "generatedAt": "2026-08-25T20:02:00.073Z",
   "items": [
+    {
+      "id": "steam-news-f57faaf37",
+      "title": "Heroes Of Might And Magic III",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4921760/Heroes_Of_Might_And_Magic_III/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4921760/279c2c2e5e7838f327017aea57b6454aa16f6d7d/capsule_231x87.jpg?t=1787687741",
+      "categories": [
+        "Strateji",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-08343c74a",
+      "title": "Yapori Soccer",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5017990/Yapori_Soccer/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5017990/eeafcc0a9a4d295c63e930aa1c2f515ed6c3c329/capsule_231x87.jpg?t=1787687320",
+      "categories": [
+        "Gündelik",
+        "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-5106229a5",
+      "title": "A Couple Nights At The Chud House",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5061820/A_Couple_Nights_At_The_Chud_House/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5061820/83862c85190ffc4d56ae7616c8eb9bb59b0cd51b/capsule_231x87.jpg?t=1787687243",
+      "categories": [
+        "Strateji",
+        "Korku",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-08d92266b",
       "title": "The Hunter",
@@ -242,36 +279,6 @@
       ]
     },
     {
-      "id": "steam-news-8f5f40e79",
-      "title": "SlapGains",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5053840/SlapGains/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5053840/a973145400709ffe9882aff41857764b3519b956/capsule_231x87.jpg?t=1787676118",
-      "categories": [
-        "Aksiyon",
-        "Spor"
-      ]
-    },
-    {
-      "id": "steam-news-b57426f70",
-      "title": "Runisthar",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4577440/Runisthar/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4577440/c2ef89cc35c8d060aa98f8f1fe5b357e39b95697/capsule_231x87.jpg?t=1787675016",
-      "categories": []
-    },
-    {
-      "id": "steam-news-e28056127",
-      "title": "Funguys Swarm",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3371770/Funguys_Swarm/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3371770/d2b54a34f08a0708dd900d6cc5f628c0b47fa060/capsule_231x87_alt_assets_5.jpg?t=1787675200",
-      "categories": []
-    },
-    {
       "id": "steam-news-1a67b2809",
       "title": "Masters of Magic",
       "kind": "coming_soon",
@@ -309,6 +316,15 @@
       ]
     },
     {
+      "id": "steam-news-ab4c14e60",
+      "title": "Sludgineers",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4073860/Sludgineers/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4073860/6cb8376da45b5b8ff39a649f81e0f02d4e035340/capsule_231x87.jpg?t=1787201301",
+      "categories": []
+    },
+    {
       "id": "steam-news-16093503f",
       "title": "Astral Archive",
       "kind": "coming_soon",
@@ -319,15 +335,6 @@
         "Gündelik",
         "Tek Oyunculu"
       ]
-    },
-    {
-      "id": "steam-news-ab4c14e60",
-      "title": "Sludgineers",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4073860/Sludgineers/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4073860/6cb8376da45b5b8ff39a649f81e0f02d4e035340/capsule_231x87.jpg?t=1787201301",
-      "categories": []
     },
     {
       "id": "steam-news-8d27f5911",
@@ -455,17 +462,6 @@
       ]
     },
     {
-      "id": "steam-news-682d5d108",
-      "title": "Ether Flow :: Focus, organize, and create.",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5035800/Ether_Flow__Focus_organize_and_create/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5035800/bd65b9d9b393144d6c9353f826d96aa228a81d67/capsule_231x87.jpg?t=1786895338",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-439967fc1",
       "title": "FRAGLINE: Esports Manager",
       "kind": "coming_soon",
@@ -476,6 +472,17 @@
         "Spor",
         "Strateji",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-682d5d108",
+      "title": "Ether Flow :: Focus, organize, and create.",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5035800/Ether_Flow__Focus_organize_and_create/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5035800/bd65b9d9b393144d6c9353f826d96aa228a81d67/capsule_231x87.jpg?t=1786895338",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -515,18 +522,6 @@
       ]
     },
     {
-      "id": "steam-news-e0e3157ac",
-      "title": "Endless Silent Night",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4703320/Endless_Silent_Night/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4703320/656118e8daf1c68c34816ffaffad08b0176fbf0a/capsule_231x87.jpg?t=1786361681",
-      "categories": [
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-ba1ce4315",
       "title": "Wawa Cicada",
       "kind": "coming_soon",
@@ -538,6 +533,18 @@
         "Aksiyon",
         "Gündelik",
         "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-e0e3157ac",
+      "title": "Endless Silent Night",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4703320/Endless_Silent_Night/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4703320/656118e8daf1c68c34816ffaffad08b0176fbf0a/capsule_231x87.jpg?t=1786361681",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu"
       ]
     },
     {
