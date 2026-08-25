@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-08-25T05:52:51.916Z",
+  "generatedAt": "2026-08-25T06:30:48.131Z",
   "items": [
+    {
+      "id": "steam-news-f32c02dd0",
+      "title": "ROCKET SCIENCE",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4977610/ROCKET_SCIENCE/?snr=1_7_7_230_150_1",
+      "dateLabel": "24 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4977610/bb87aeeee7b5ed3852255cf251bbfac3a5c962f8/capsule_231x87.jpg?t=1787638465",
+      "categories": [
+        "Aksiyon",
+        "Spor",
+        "Çok Oyunculu",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-b9f024671",
       "title": "Tsugunohi -The Thread That Beckons to Heaven-",
@@ -20,7 +34,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4610610/BoHeM/?snr=1_7_7_230_150_1",
       "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4610610/64382cd833a5a5c8aa9672a3b9f70dae85ef6e3f/capsule_231x87.jpg?t=1787637047",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4610610/64382cd833a5a5c8aa9672a3b9f70dae85ef6e3f/capsule_231x87.jpg?t=1787638946",
       "categories": [
         "Macera"
       ]
@@ -275,18 +289,6 @@
       ]
     },
     {
-      "id": "steam-news-213888d6a",
-      "title": "No Final Run",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4341610/No_Final_Run/?snr=1_7_7_230_150_1",
-      "dateLabel": "24 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4341610/f1e86035b9e9be57eb8a07a9c12efb6ffdc3f884/capsule_231x87.jpg?t=1787595477",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-e66b00191",
       "title": "OPEN UP, MICHAEL!",
       "kind": "coming_soon",
@@ -326,7 +328,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4143220/The_Case_of_the_Golden_Night_Apartment/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4143220/10bdfcfdeab0091818cf45d64a89498a22605c16/capsule_231x87.jpg?t=1787331149",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4143220/10bdfcfdeab0091818cf45d64a89498a22605c16/capsule_231x87.jpg?t=1787639335",
       "categories": []
     },
     {
@@ -378,14 +380,15 @@
       ]
     },
     {
-      "id": "steam-news-d3ba4baac",
-      "title": "Idle Times",
+      "id": "steam-news-d4e05f962",
+      "title": "Lawn Order",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4978200/Idle_Times/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4373020/Lawn_Order/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4978200/9796c7b40b35356381d545de9a571f8bc44f3889/capsule_231x87.jpg?t=1786047141",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4373020/f243654b3296abdb494f987aaccd80c8cbed287a/capsule_231x87.jpg?t=1787625393",
       "categories": [
-        "Gündelik"
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -401,6 +404,17 @@
       ]
     },
     {
+      "id": "steam-news-d3ba4baac",
+      "title": "Idle Times",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4978200/Idle_Times/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4978200/9796c7b40b35356381d545de9a571f8bc44f3889/capsule_231x87.jpg?t=1786047141",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-f3eccc40c",
       "title": "Hide and Moo!",
       "kind": "coming_soon",
@@ -413,18 +427,6 @@
       ]
     },
     {
-      "id": "steam-news-d4e05f962",
-      "title": "Lawn Order",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4373020/Lawn_Order/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4373020/f243654b3296abdb494f987aaccd80c8cbed287a/capsule_231x87.jpg?t=1787625393",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-4819147f2",
       "title": "BULLETARIUM",
       "kind": "coming_soon",
@@ -433,6 +435,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4600960/fc91221021f9400e6cc9bcf4218aa34a7db5de23/capsule_231x87.jpg?t=1787325647",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-417d858c9",
+      "title": "BARD'S FAULT",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
+      "categories": [
+        "Çok Oyunculu"
       ]
     },
     {
@@ -457,17 +470,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-417d858c9",
-      "title": "BARD'S FAULT",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3195470/BARDS_FAULT/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3195470/54e93fbdf86fdabd0e1398df86b7231a9dc197b1/capsule_231x87.jpg?t=1786761908",
-      "categories": [
-        "Çok Oyunculu"
       ]
     },
     {
@@ -554,12 +556,12 @@
       ]
     },
     {
-      "id": "steam-news-354b3e000",
-      "title": "One More Slime",
+      "id": "steam-news-8c7793dcb",
+      "title": "Blood Dungeon",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4998490/One_More_Slime/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2431080/Blood_Dungeon/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998490/57c29487f4567cfbfa1a8c228239d3e99c1fdb42/capsule_231x87.jpg?t=1787529745",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2431080/dc74858eaedfd7e54d15033f0fcfe55fdaf5226d/capsule_231x87.jpg?t=1787580857",
       "categories": [
         "Aksiyon"
       ]
