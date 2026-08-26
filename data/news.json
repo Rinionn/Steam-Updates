@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-26T04:24:27.697Z",
+  "generatedAt": "2026-08-26T05:04:05.752Z",
   "items": [
+    {
+      "id": "steam-news-598c76455",
+      "title": "Pleiades Zero",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4984140/Pleiades_Zero/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4984140/9c31e65f159f112042cf791a68bf9ec799b24edb/capsule_231x87.jpg?t=1787719592",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-e00afd55b",
       "title": "Slay The Berserker",
@@ -261,18 +272,6 @@
       ]
     },
     {
-      "id": "steam-news-f57faaf37",
-      "title": "Heroes Of Might And Magic III",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4921760/Heroes_Of_Might_And_Magic_III/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4921760/279c2c2e5e7838f327017aea57b6454aa16f6d7d/capsule_231x87.jpg?t=1787687741",
-      "categories": [
-        "Strateji",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-3b813d903",
       "title": "A Standard Deviation",
       "kind": "coming_soon",
@@ -280,18 +279,6 @@
       "dateLabel": "26 Aug, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4438690/9aa71b8e05fb5548be59a9e4fb3f0ff47014befe/capsule_231x87.jpg?t=1785893597",
       "categories": []
-    },
-    {
-      "id": "steam-news-2151141ca",
-      "title": "铜刀银剑",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3315770/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3315770/ff50377c1243f8343964158e5faba712a2a09468/capsule_231x87.jpg?t=1787254471",
-      "categories": [
-        "Strateji",
-        "Macera"
-      ]
     },
     {
       "id": "steam-news-a2d26caa8",
@@ -303,6 +290,18 @@
       "categories": [
         "Aksiyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-2151141ca",
+      "title": "铜刀银剑",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3315770/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3315770/ff50377c1243f8343964158e5faba712a2a09468/capsule_231x87.jpg?t=1787254471",
+      "categories": [
+        "Strateji",
+        "Macera"
       ]
     },
     {
@@ -368,18 +367,6 @@
       ]
     },
     {
-      "id": "steam-news-e0e3157ac",
-      "title": "Endless Silent Night",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4703320/Endless_Silent_Night/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4703320/656118e8daf1c68c34816ffaffad08b0176fbf0a/capsule_231x87.jpg?t=1786361681",
-      "categories": [
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-518d086e3",
       "title": "Besetmere Forest",
       "kind": "coming_soon",
@@ -389,6 +376,18 @@
       "categories": [
         "Korku",
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-e0e3157ac",
+      "title": "Endless Silent Night",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4703320/Endless_Silent_Night/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4703320/656118e8daf1c68c34816ffaffad08b0176fbf0a/capsule_231x87.jpg?t=1786361681",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -497,17 +496,6 @@
       ]
     },
     {
-      "id": "steam-news-103dba6c9",
-      "title": "Now THAT'S a Big Dragon!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3834590/Now_THATS_a_Big_Dragon/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3834590/db51c890a83003dbbffc54bd84a8f75a029dd700/capsule_231x87.jpg?t=1787237679",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-06bb8d15a",
       "title": "Crystalyn",
       "kind": "coming_soon",
@@ -519,15 +507,27 @@
       ]
     },
     {
-      "id": "steam-news-7de519c09",
-      "title": "BRIGANDINE ABYSS",
+      "id": "steam-news-103dba6c9",
+      "title": "Now THAT'S a Big Dragon!",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3211430/BRIGANDINE_ABYSS/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3834590/Now_THATS_a_Big_Dragon/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3211430/e4b6bac1c89095f23c514147be534223c6fb19ac/capsule_231x87.jpg?t=1779667319",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3834590/db51c890a83003dbbffc54bd84a8f75a029dd700/capsule_231x87.jpg?t=1787237679",
       "categories": [
-        "Strateji",
-        "Simülasyon"
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-d8d8d8401",
+      "title": "Beanman Gets His Cool Back",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4863650/Beanman_Gets_His_Cool_Back/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4863650/1932c61c89e4d620d150aa0b9d7f672da0d60e78/capsule_231x87.jpg?t=1787064611",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "RPG"
       ]
     },
     {
@@ -542,15 +542,15 @@
       ]
     },
     {
-      "id": "steam-news-3dbf82367",
-      "title": "Order Picker Simulator",
+      "id": "steam-news-7de519c09",
+      "title": "BRIGANDINE ABYSS",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4798110/Order_Picker_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3211430/BRIGANDINE_ABYSS/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4798110/02abbfd43a9c5fadb92cf1965aacf5ecd7cafbdf/capsule_231x87.jpg?t=1787552976",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3211430/e4b6bac1c89095f23c514147be534223c6fb19ac/capsule_231x87.jpg?t=1779667319",
       "categories": [
-        "Simülasyon",
-        "Gündelik"
+        "Strateji",
+        "Simülasyon"
       ]
     },
     {
