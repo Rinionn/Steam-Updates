@@ -1,6 +1,51 @@
 {
-  "generatedAt": "2026-08-25T23:54:59.013Z",
+  "generatedAt": "2026-08-26T01:05:11.426Z",
   "items": [
+    {
+      "id": "steam-news-7d926ef80",
+      "title": "ANGEL.lite",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4985420/ANGELlite/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985420/2276b72f0d9a03ffb16c44f6298906354451338b/capsule_231x87.jpg?t=1787704545",
+      "categories": [
+        "Gündelik",
+        "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-d7e271b56",
+      "title": "Land and Castles: Gold",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4755920/Land_and_Castles_Gold/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4755920/c0551ff415c039e46241bb454d28d15ffd11f3d1/capsule_231x87.jpg?t=1787704173",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-222604f54",
+      "title": "a dead astronaut in space",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5026730/a_dead_astronaut_in_space/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5026730/23b2270b905623e93bcd7f06f44cb50b87261c0d/capsule_231x87.jpg?t=1787703966",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-e1f143336",
+      "title": "Sludgineers",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4073860/Sludgineers/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4073860/6cb8376da45b5b8ff39a649f81e0f02d4e035340/capsule_231x87.jpg?t=1787703019",
+      "categories": []
+    },
     {
       "id": "steam-news-32ea7187d",
       "title": "Crown of the Nile: Cleopatra's Choice",
@@ -233,53 +278,6 @@
       ]
     },
     {
-      "id": "steam-news-70d80becd",
-      "title": "Wizard Disaster",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5055790/Wizard_Disaster/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5055790/0a784918042ab09441f54f11217a695eea5f3ae6/capsule_231x87.jpg?t=1787679639",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-2ec569107",
-      "title": "Magic Market World",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4887290/Magic_Market_World/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4887290/bd428faf3038c5d21302643605c64ebd36c9bec9/capsule_231x87.jpg?t=1787679174",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-d6eacf52b",
-      "title": "Rune Robin's Dreamscape",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4882570/Rune_Robins_Dreamscape/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4882570/8d0975b546193f3088af6d0a45f8c48d9eaa3a4c/capsule_231x87.jpg?t=1787679130",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-460473fa9",
-      "title": "Football Agent",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4860970/Football_Agent/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4860970/825d6b2f19fff78ebcb4d54cc9847e867d12634b/capsule_231x87.jpg?t=1787679145",
-      "categories": [
-        "Spor",
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-a2d26caa8",
       "title": "KESU-JI",
       "kind": "coming_soon",
@@ -329,7 +327,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4923480/FRAGLINE_Esports_Manager/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4923480/45fe03f6092130ce0124ffcda91da21bbb2d0a1c/capsule_231x87.jpg?t=1786937514",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4923480/45fe03f6092130ce0124ffcda91da21bbb2d0a1c/capsule_231x87.jpg?t=1787705326",
       "categories": [
         "Spor",
         "Strateji",
@@ -386,18 +384,6 @@
       ]
     },
     {
-      "id": "steam-news-518d086e3",
-      "title": "Besetmere Forest",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4845300/Besetmere_Forest/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845300/d77dfb7bff00a7355068cd2aec509a143f2443da/capsule_231x87.jpg?t=1786971732",
-      "categories": [
-        "Korku",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-e0e3157ac",
       "title": "Endless Silent Night",
       "kind": "coming_soon",
@@ -410,6 +396,18 @@
       ]
     },
     {
+      "id": "steam-news-518d086e3",
+      "title": "Besetmere Forest",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4845300/Besetmere_Forest/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845300/d77dfb7bff00a7355068cd2aec509a143f2443da/capsule_231x87.jpg?t=1786971732",
+      "categories": [
+        "Korku",
+        "Çok Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-edf5ce2e4",
       "title": "CoinWar",
       "kind": "coming_soon",
@@ -419,6 +417,18 @@
       "categories": [
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-55a05ce2d",
+      "title": "Click the Button",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3946950/Click_the_Button/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787415129",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -455,18 +465,6 @@
       "categories": [
         "Aksiyon",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-55a05ce2d",
-      "title": "Click the Button",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3946950/Click_the_Button/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787415129",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
       ]
     },
     {
@@ -550,16 +548,14 @@
       ]
     },
     {
-      "id": "steam-news-e8574c07e",
-      "title": "Train Plus Japan Drive Western Japan Trains! Rapid Service Edition",
+      "id": "steam-news-b39f5578a",
+      "title": "BOMBER-ANGEL BOMBRIEL -FOREVER THE KINGS-",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4982590/Train_Plus_Japan_Drive_Western_Japan_Trains_Rapid_Service_Edition/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5074210/BOMBERANGEL_BOMBRIEL_FOREVER_THE_KINGS/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4982590/8b739c7078e62ad0085cc6a77d4490139408fc78/capsule_231x87.jpg?t=1787659343",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5074210/8e8c195af28301cb73c085c5481017fe926ffa31/capsule_231x87.jpg?t=1786695375",
       "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Yarış"
+        "Aksiyon"
       ]
     },
     {
