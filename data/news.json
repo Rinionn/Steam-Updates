@@ -1,6 +1,77 @@
 {
-  "generatedAt": "2026-08-26T12:02:51.243Z",
+  "generatedAt": "2026-08-26T13:11:08.322Z",
   "items": [
+    {
+      "id": "steam-news-0e5c47c11",
+      "title": "Fractured Worlds",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1879860/Fractured_Worlds/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1879860/efc8a227b16141dcf96fc8070f3130dc74c681f3/capsule_231x87.jpg?t=1787749445",
+      "categories": [
+        "Aksiyon",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-8728ce21d",
+      "title": "Click the Button",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3946950/Click_the_Button/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787749750",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-5f31fd4de",
+      "title": "Cartoon Crime",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5057090/Cartoon_Crime/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5057090/cd470c1e1e27959e7b8fd7762480595763f383b5/capsule_231x87.jpg?t=1787748677",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-2aa906d47",
+      "title": "Zone Sweeper",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4959960/Zone_Sweeper/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4959960/8e1ac495ded6f6f910e1d72b7f373be99e9dd56a/capsule_231x87.jpg?t=1787747497",
+      "categories": [
+        "RPG",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-28cb38e13",
+      "title": "Hide and Fuse",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5001430/Hide_and_Fuse/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001430/a5e44b34dfacf9e61c5d7a25ff76126556637f03/capsule_231x87.jpg?t=1787747223",
+      "categories": [
+        "Bağımsız",
+        "Çok Oyunculu",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d31e4c859",
+      "title": "Bloom Cats",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4967970/Bloom_Cats/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4967970/66d02cd519e4b77a3da1b0ac9f914b3b86521f52/capsule_231x87.jpg?t=1787746161",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-819316c89",
       "title": "Masters of Magic",
@@ -219,106 +290,6 @@
       ]
     },
     {
-      "id": "steam-news-92b2289be",
-      "title": "Doors Closed",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3426960/Doors_Closed/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3426960/cc198ccf712c1639535f434794d1b8d71c1f0e8e/capsule_231x87.jpg?t=1787733183",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-9fc3bc10b",
-      "title": "Everything Must Fall",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/623800/Everything_Must_Fall/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/623800/capsule_231x87.jpg?t=1787745080",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-395556393",
-      "title": "Pickle Pete",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3963030/Pickle_Pete/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3963030/3564e5e11ca351eae69e46eb02400579ee4bd55a/capsule_231x87.jpg?t=1787734651",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-0f5d77d58",
-      "title": "Gem Party",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4459610/Gem_Party/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4459610/f1b2b1a7d21c3dd457016ee5841bea25de6a15f6/capsule_231x87.jpg?t=1787742829",
-      "categories": [
-        "Aksiyon",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-71f7044a4",
-      "title": "City 33",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5071070/City_33/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5071070/8c5f644e5a0beb5ee52101bc6b5db34e6032c023/capsule_231x87.jpg?t=1787731995",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-d0f8f9204",
-      "title": "Nocto And The Ray Of Light",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4440400/Nocto_And_The_Ray_Of_Light/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4440400/f7467a021e5b6a608b293dc2842ea01ff3f51f07/capsule_231x87.jpg?t=1787731634",
-      "categories": []
-    },
-    {
-      "id": "steam-news-55a05ce2d",
-      "title": "Click the Button",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3946950/Click_the_Button/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787711439",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-ae0b683b1",
-      "title": "GHOSTFLIPPERS",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4631500/GHOSTFLIPPERS/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4631500/932b3c52e786caddf45cbf779953ce906ed439f4/capsule_231x87.jpg?t=1786992080",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-6d1311467",
-      "title": "Cartoon Crime",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5057090/Cartoon_Crime/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5057090/cd470c1e1e27959e7b8fd7762480595763f383b5/capsule_231x87.jpg?t=1787634412",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-3ceb1cbfc",
       "title": "Don't Drop It",
       "kind": "coming_soon",
@@ -342,17 +313,6 @@
       ]
     },
     {
-      "id": "steam-news-06bb8d15a",
-      "title": "Crystalyn",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4754460/Crystalyn/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4754460/a95b9b4333671c48c92b076c8df8c9b4619e0e10/capsule_231x87_alt_assets_1.jpg?t=1787651529",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-103dba6c9",
       "title": "Now THAT'S a Big Dragon!",
       "kind": "coming_soon",
@@ -364,16 +324,14 @@
       ]
     },
     {
-      "id": "steam-news-e8574c07e",
-      "title": "Train Plus Japan Drive Western Japan Trains! Rapid Service Edition",
+      "id": "steam-news-06bb8d15a",
+      "title": "Crystalyn",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4982590/Train_Plus_Japan_Drive_Western_Japan_Trains_Rapid_Service_Edition/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4754460/Crystalyn/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4982590/8b739c7078e62ad0085cc6a77d4490139408fc78/capsule_231x87.jpg?t=1787659343",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4754460/a95b9b4333671c48c92b076c8df8c9b4619e0e10/capsule_231x87_alt_assets_1.jpg?t=1787651529",
       "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Yarış"
+        "Bağımsız"
       ]
     },
     {
@@ -400,6 +358,18 @@
       ]
     },
     {
+      "id": "steam-news-7de519c09",
+      "title": "BRIGANDINE ABYSS",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3211430/BRIGANDINE_ABYSS/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3211430/e4b6bac1c89095f23c514147be534223c6fb19ac/capsule_231x87.jpg?t=1779667319",
+      "categories": [
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-d8d8d8401",
       "title": "Beanman Gets His Cool Back",
       "kind": "coming_soon",
@@ -413,15 +383,16 @@
       ]
     },
     {
-      "id": "steam-news-7de519c09",
-      "title": "BRIGANDINE ABYSS",
+      "id": "steam-news-e8574c07e",
+      "title": "Train Plus Japan Drive Western Japan Trains! Rapid Service Edition",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3211430/BRIGANDINE_ABYSS/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4982590/Train_Plus_Japan_Drive_Western_Japan_Trains_Rapid_Service_Edition/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3211430/e4b6bac1c89095f23c514147be534223c6fb19ac/capsule_231x87.jpg?t=1779667319",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4982590/8b739c7078e62ad0085cc6a77d4490139408fc78/capsule_231x87.jpg?t=1787659343",
       "categories": [
-        "Strateji",
-        "Simülasyon"
+        "Gündelik",
+        "Simülasyon",
+        "Yarış"
       ]
     },
     {
@@ -463,18 +434,6 @@
       ]
     },
     {
-      "id": "steam-news-ee1bc728f",
-      "title": "The Grand Slamboree",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4130860/The_Grand_Slamboree/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4130860/1faaccc40f0603dd03ea3c5fd3c4e4ac9216e2c0/capsule_231x87.jpg?t=1786979219",
-      "categories": [
-        "Çok Oyunculu",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-4ad042dfd",
       "title": "Roots in the Sky - The Hand of Glory 2",
       "kind": "coming_soon",
@@ -486,15 +445,15 @@
       ]
     },
     {
-      "id": "steam-news-a01fca1ba",
-      "title": "Fractured Worlds",
+      "id": "steam-news-ee1bc728f",
+      "title": "The Grand Slamboree",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1879860/Fractured_Worlds/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4130860/The_Grand_Slamboree/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1879860/efc8a227b16141dcf96fc8070f3130dc74c681f3/capsule_231x87.jpg?t=1787690731",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4130860/1faaccc40f0603dd03ea3c5fd3c4e4ac9216e2c0/capsule_231x87.jpg?t=1786979219",
       "categories": [
-        "Aksiyon",
-        "RPG"
+        "Çok Oyunculu",
+        "Aksiyon"
       ]
     },
     {
@@ -545,6 +504,29 @@
       ]
     },
     {
+      "id": "steam-news-4ea4e5132",
+      "title": "SHINRAI Saku - Blooming Beyond Despair",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3941070/SHINRAI_Saku__Blooming_Beyond_Despair/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3941070/10bfe090e399eba278b82ca374ad4e8b3a77eede/capsule_231x87.jpg?t=1787504247",
+      "categories": [
+        "Macera",
+        "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-a46f14f62",
+      "title": "The Memory Library",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5057990/The_Memory_Library/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5057990/be6ea69d0a66034fd546fbbddef4ac05f7b94adc/capsule_231x87.jpg?t=1787705669",
+      "categories": [
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-ab8e21afc",
       "title": "The Rise Of The Slime King",
       "kind": "coming_soon",
@@ -557,16 +539,39 @@
       ]
     },
     {
-      "id": "steam-news-f511d4d59",
-      "title": "Night Rolls Cozy Store",
+      "id": "steam-news-74a938877",
+      "title": "Find My Frogs: Branches",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/965190/Night_Rolls_Cozy_Store/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3948760/Find_My_Frogs_Branches/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/965190/fb02972ec48664758214fea4f4530402fcac7c82/capsule_231x87.jpg?t=1787735303",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3948760/1db0e9101047874fde2852c8032cdd86d4a7131c/capsule_231x87.jpg?t=1787677001",
       "categories": [
-        "Gündelik",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-cd2012a8c",
+      "title": "Flyra: FPV Drone Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4075900/Flyra_FPV_Drone_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4075900/6309cf9e26641366d48ba1befef1702256d9a4fc/capsule_231x87.jpg?t=1787476652",
+      "categories": [
         "Simülasyon",
-        "Tek Oyunculu"
+        "Yarış"
+      ]
+    },
+    {
+      "id": "steam-news-bf20934d6",
+      "title": "D.E.C.A.Y.",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4251370/DECAY/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4251370/3ff0e642007fe36eb18c82fe460a8af9513dc817/capsule_231x87.jpg?t=1787337405",
+      "categories": [
+        "Aksiyon",
+        "RPG",
+        "Macera"
       ]
     },
     {
