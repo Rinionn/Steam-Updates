@@ -1,6 +1,51 @@
 {
-  "generatedAt": "2026-08-26T02:38:22.762Z",
+  "generatedAt": "2026-08-26T03:39:18.481Z",
   "items": [
+    {
+      "id": "steam-news-0df5440ff",
+      "title": "Astral Archive",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4636840/Astral_Archive/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4636840/a67d59cb771e81d6e4de0185c82cdb844017c985/capsule_231x87.jpg?t=1787714635",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-85bc4dbc5",
+      "title": "Express 404",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4329710/Express_404/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4329710/1c05d5bf9bc3526781b5ecfbc65b91884684b2b6/capsule_231x87.jpg?t=1787713227",
+      "categories": [
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-def4a3fa9",
+      "title": "Zong",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2334590/Zong/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2334590/capsule_231x87.jpg?t=1787712966",
+      "categories": []
+    },
+    {
+      "id": "steam-news-8b39a1b9c",
+      "title": "おかゆにゅ～～む！R ~Okayunyumu！R~",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4580450/R_OkayunyumuR/?snr=1_7_7_230_150_1",
+      "dateLabel": "25 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4580450/5bd4f71ed6d9b2dca1b59b3629d029cdae6bd9a8/capsule_231x87.jpg?t=1787712907",
+      "categories": [
+        "Macera",
+        "Anime"
+      ]
+    },
     {
       "id": "steam-news-79b315f4b",
       "title": "INvent",
@@ -229,52 +274,6 @@
       ]
     },
     {
-      "id": "steam-news-5106229a5",
-      "title": "A Couple Nights At The Chud House",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5061820/A_Couple_Nights_At_The_Chud_House/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5061820/83862c85190ffc4d56ae7616c8eb9bb59b0cd51b/capsule_231x87.jpg?t=1787687243",
-      "categories": [
-        "Strateji",
-        "Korku",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-08d92266b",
-      "title": "The Hunter",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4956200/The_Hunter/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4956200/b48525583558cc687ee1e178f56079db0c3008d7/capsule_231x87.jpg?t=1787685396",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-6b635fb85",
-      "title": "1666: Amsterdam",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3949550/1666_Amsterdam/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3949550/7a4619bcd473bc51b4cad9d18b3624ccac70e96d/capsule_231x87.jpg?t=1787686479",
-      "categories": []
-    },
-    {
-      "id": "steam-news-657842f58",
-      "title": "Fuel Cell",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4268870/Fuel_Cell/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4268870/0879c49de46e031a4d9d8626210d3feba52e9a2d/capsule_231x87.jpg?t=1787684550",
-      "categories": [
-        "Bağımsız",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-3b813d903",
       "title": "A Standard Deviation",
       "kind": "coming_soon",
@@ -356,18 +355,6 @@
       ]
     },
     {
-      "id": "steam-news-518d086e3",
-      "title": "Besetmere Forest",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4845300/Besetmere_Forest/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845300/d77dfb7bff00a7355068cd2aec509a143f2443da/capsule_231x87.jpg?t=1786971732",
-      "categories": [
-        "Korku",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-ba1ce4315",
       "title": "Wawa Cicada",
       "kind": "coming_soon",
@@ -379,6 +366,18 @@
         "Aksiyon",
         "Gündelik",
         "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-518d086e3",
+      "title": "Besetmere Forest",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4845300/Besetmere_Forest/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845300/d77dfb7bff00a7355068cd2aec509a143f2443da/capsule_231x87.jpg?t=1786971732",
+      "categories": [
+        "Korku",
+        "Çok Oyunculu"
       ]
     },
     {
@@ -447,7 +446,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3946950/Click_the_Button/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787415129",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787711439",
       "categories": [
         "Gündelik",
         "Simülasyon"
