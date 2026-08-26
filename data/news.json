@@ -1,6 +1,33 @@
 {
-  "generatedAt": "2026-08-26T10:24:48.042Z",
+  "generatedAt": "2026-08-26T11:00:40.649Z",
   "items": [
+    {
+      "id": "steam-news-af524aa20",
+      "title": "FRAGLINE: Esports Manager",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4923480/FRAGLINE_Esports_Manager/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4923480/157eeabd22553c7270ff30c4159f6ceafcd4c08e/capsule_231x87_alt_assets_0.jpg?t=1787741108",
+      "categories": [
+        "Spor",
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-8c9d25626",
+      "title": "Wawa Cicada",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5064480/Wawa_Cicada/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5064480/ecd1e440c67b9f358b3de44236dfa4519796abbf/capsule_231x87.jpg?t=1787740567",
+      "categories": [
+        "Simülasyon",
+        "Aksiyon",
+        "Gündelik",
+        "Spor"
+      ]
+    },
     {
       "id": "steam-news-4822b4397",
       "title": "Little Chef: Cozy Cooking",
@@ -260,64 +287,16 @@
       ]
     },
     {
-      "id": "steam-news-9227e6fb3",
-      "title": "KESU-JI",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4607780/KESUJI/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4607780/aeab8360f3bf936253ed110ae1fe4c84e958057f/capsule_231x87.jpg?t=1787727931",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-d0f225f73",
-      "title": "Fatal Claw",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2827750/Fatal_Claw/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2827750/51e25c8198055dda1e23f3df4deb6b80cc38ca2d/capsule_231x87.jpg?t=1787727739",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-9d779e6de",
-      "title": "Neon Highway",
+      "id": "steam-news-6b5803abd",
+      "title": "Axis Football 2027",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5046040/Neon_Highway/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5026790/Axis_Football_2027/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5046040/671ff3515301f4271b05a07b7862f5d73f980040/capsule_231x87.jpg?t=1786613831",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5026790/e20e8a0117e958991577f0ad9e779b71c8e582ca/capsule_231x87.jpg?t=1786975196",
       "categories": [
-        "Yarış",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-518d086e3",
-      "title": "Besetmere Forest",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4845300/Besetmere_Forest/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845300/d77dfb7bff00a7355068cd2aec509a143f2443da/capsule_231x87.jpg?t=1786971732",
-      "categories": [
-        "Korku",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-ba1ce4315",
-      "title": "Wawa Cicada",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5064480/Wawa_Cicada/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5064480/ecd1e440c67b9f358b3de44236dfa4519796abbf/capsule_231x87.jpg?t=1786972237",
-      "categories": [
+        "Spor",
         "Simülasyon",
-        "Aksiyon",
-        "Gündelik",
-        "Spor"
+        "Strateji"
       ]
     },
     {
@@ -330,19 +309,6 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-6b5803abd",
-      "title": "Axis Football 2027",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5026790/Axis_Football_2027/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5026790/e20e8a0117e958991577f0ad9e779b71c8e582ca/capsule_231x87.jpg?t=1786975196",
-      "categories": [
-        "Spor",
-        "Simülasyon",
-        "Strateji"
       ]
     },
     {
@@ -403,17 +369,6 @@
       ]
     },
     {
-      "id": "steam-news-103dba6c9",
-      "title": "Now THAT'S a Big Dragon!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3834590/Now_THATS_a_Big_Dragon/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3834590/db51c890a83003dbbffc54bd84a8f75a029dd700/capsule_231x87.jpg?t=1787237679",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-06bb8d15a",
       "title": "Crystalyn",
       "kind": "coming_soon",
@@ -422,6 +377,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4754460/a95b9b4333671c48c92b076c8df8c9b4619e0e10/capsule_231x87_alt_assets_1.jpg?t=1787651529",
       "categories": [
         "Bağımsız"
+      ]
+    },
+    {
+      "id": "steam-news-103dba6c9",
+      "title": "Now THAT'S a Big Dragon!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3834590/Now_THATS_a_Big_Dragon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3834590/db51c890a83003dbbffc54bd84a8f75a029dd700/capsule_231x87.jpg?t=1787237679",
+      "categories": [
+        "Tek Oyunculu"
       ]
     },
     {
@@ -435,19 +401,6 @@
         "Macera",
         "Gündelik",
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-e8574c07e",
-      "title": "Train Plus Japan Drive Western Japan Trains! Rapid Service Edition",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4982590/Train_Plus_Japan_Drive_Western_Japan_Trains_Rapid_Service_Edition/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4982590/8b739c7078e62ad0085cc6a77d4490139408fc78/capsule_231x87.jpg?t=1787659343",
-      "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Yarış"
       ]
     },
     {
@@ -471,6 +424,19 @@
       "categories": [
         "Simülasyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-e8574c07e",
+      "title": "Train Plus Japan Drive Western Japan Trains! Rapid Service Edition",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4982590/Train_Plus_Japan_Drive_Western_Japan_Trains_Rapid_Service_Edition/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4982590/8b739c7078e62ad0085cc6a77d4490139408fc78/capsule_231x87.jpg?t=1787659343",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Yarış"
       ]
     },
     {
@@ -524,6 +490,18 @@
       ]
     },
     {
+      "id": "steam-news-ee1bc728f",
+      "title": "The Grand Slamboree",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4130860/The_Grand_Slamboree/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4130860/1faaccc40f0603dd03ea3c5fd3c4e4ac9216e2c0/capsule_231x87.jpg?t=1786979219",
+      "categories": [
+        "Çok Oyunculu",
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-f364ae9ed",
       "title": "Folk Emerging",
       "kind": "coming_soon",
@@ -533,17 +511,6 @@
       "categories": [
         "Simülasyon",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-4ad042dfd",
-      "title": "Roots in the Sky - The Hand of Glory 2",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2062380/Roots_in_the_Sky__The_Hand_of_Glory_2/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2062380/c0fb1631ff291d00e7570616b46320d9cfad3c8f/capsule_231x87.jpg?t=1787247357",
-      "categories": [
-        "Macera"
       ]
     },
     {
@@ -559,15 +526,49 @@
       ]
     },
     {
-      "id": "steam-news-ee1bc728f",
-      "title": "The Grand Slamboree",
+      "id": "steam-news-4ad042dfd",
+      "title": "Roots in the Sky - The Hand of Glory 2",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4130860/The_Grand_Slamboree/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2062380/Roots_in_the_Sky__The_Hand_of_Glory_2/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4130860/1faaccc40f0603dd03ea3c5fd3c4e4ac9216e2c0/capsule_231x87.jpg?t=1786979219",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2062380/c0fb1631ff291d00e7570616b46320d9cfad3c8f/capsule_231x87.jpg?t=1787247357",
       "categories": [
-        "Çok Oyunculu",
-        "Aksiyon"
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-0caa26c54",
+      "title": "Thumps & Blows",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3650210/Thumps__Blows/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3650210/f914d45fc263b76b5fd3b60fa41f5f3b98f89b40/capsule_231x87.jpg?t=1784827633",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-c2b55d4e0",
+      "title": "捉迷藏 - Hide and Seek",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4672200/__Hide_and_Seek/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4672200/6bfabc7315215f7460285e19acf70ddac1bb22af/capsule_231x87.jpg?t=1787630009",
+      "categories": [
+        "RPG",
+        "Korku",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-326687f5a",
+      "title": "LoFi Long Distance",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5066930/LoFi_Long_Distance/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5066930/6b77bff0734efef743f083757d8acf4ee0b2d52f/capsule_231x87.jpg?t=1786565177",
+      "categories": [
+        "Macera"
       ]
     },
     {
