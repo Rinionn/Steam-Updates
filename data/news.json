@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T05:46:01.337Z",
+  "generatedAt": "2026-08-26T06:22:51.380Z",
   "items": [
     {
       "id": "steam-news-598c76455",
@@ -284,15 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-3b813d903",
-      "title": "A Standard Deviation",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4438690/A_Standard_Deviation/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4438690/9aa71b8e05fb5548be59a9e4fb3f0ff47014befe/capsule_231x87.jpg?t=1785893597",
-      "categories": []
-    },
-    {
       "id": "steam-news-2151141ca",
       "title": "铜刀银剑",
       "kind": "coming_soon",
@@ -303,6 +294,15 @@
         "Strateji",
         "Macera"
       ]
+    },
+    {
+      "id": "steam-news-3b813d903",
+      "title": "A Standard Deviation",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4438690/A_Standard_Deviation/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4438690/9aa71b8e05fb5548be59a9e4fb3f0ff47014befe/capsule_231x87.jpg?t=1785893597",
+      "categories": []
     },
     {
       "id": "steam-news-8817d16c6",
@@ -353,15 +353,17 @@
       ]
     },
     {
-      "id": "steam-news-518d086e3",
-      "title": "Besetmere Forest",
+      "id": "steam-news-ba1ce4315",
+      "title": "Wawa Cicada",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4845300/Besetmere_Forest/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5064480/Wawa_Cicada/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845300/d77dfb7bff00a7355068cd2aec509a143f2443da/capsule_231x87.jpg?t=1786971732",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5064480/ecd1e440c67b9f358b3de44236dfa4519796abbf/capsule_231x87.jpg?t=1786972237",
       "categories": [
-        "Korku",
-        "Çok Oyunculu"
+        "Simülasyon",
+        "Aksiyon",
+        "Gündelik",
+        "Spor"
       ]
     },
     {
@@ -377,17 +379,15 @@
       ]
     },
     {
-      "id": "steam-news-ba1ce4315",
-      "title": "Wawa Cicada",
+      "id": "steam-news-518d086e3",
+      "title": "Besetmere Forest",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5064480/Wawa_Cicada/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4845300/Besetmere_Forest/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5064480/ecd1e440c67b9f358b3de44236dfa4519796abbf/capsule_231x87.jpg?t=1786972237",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845300/d77dfb7bff00a7355068cd2aec509a143f2443da/capsule_231x87.jpg?t=1786971732",
       "categories": [
-        "Simülasyon",
-        "Aksiyon",
-        "Gündelik",
-        "Spor"
+        "Korku",
+        "Çok Oyunculu"
       ]
     },
     {
@@ -403,25 +403,15 @@
       ]
     },
     {
-      "id": "steam-news-004fc428b",
-      "title": "Shadow Dungeon",
+      "id": "steam-news-6b5803abd",
+      "title": "Axis Football 2027",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4423580/Shadow_Dungeon/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5026790/Axis_Football_2027/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4423580/733613c22fca72b0399ed6147890e71587828e3b/capsule_231x87.jpg?t=1787477269",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5026790/e20e8a0117e958991577f0ad9e779b71c8e582ca/capsule_231x87.jpg?t=1786975196",
       "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-231b24fcd",
-      "title": "Goblins Can Conquer",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4404110/Goblins_Can_Conquer/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4404110/100017ae663342083e391f078266a4369693e38b/capsule_231x87.jpg?t=1786550420",
-      "categories": [
+        "Spor",
+        "Simülasyon",
         "Strateji"
       ]
     },
@@ -438,16 +428,26 @@
       ]
     },
     {
-      "id": "steam-news-6b5803abd",
-      "title": "Axis Football 2027",
+      "id": "steam-news-231b24fcd",
+      "title": "Goblins Can Conquer",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5026790/Axis_Football_2027/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4404110/Goblins_Can_Conquer/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5026790/e20e8a0117e958991577f0ad9e779b71c8e582ca/capsule_231x87.jpg?t=1786975196",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4404110/100017ae663342083e391f078266a4369693e38b/capsule_231x87.jpg?t=1786550420",
       "categories": [
-        "Spor",
-        "Simülasyon",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-004fc428b",
+      "title": "Shadow Dungeon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4423580/Shadow_Dungeon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4423580/733613c22fca72b0399ed6147890e71587828e3b/capsule_231x87.jpg?t=1787477269",
+      "categories": [
+        "Aksiyon",
+        "Macera"
       ]
     },
     {
@@ -518,42 +518,39 @@
       ]
     },
     {
-      "id": "steam-news-d8d8d8401",
-      "title": "Beanman Gets His Cool Back",
+      "id": "steam-news-7de519c09",
+      "title": "BRIGANDINE ABYSS",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4863650/Beanman_Gets_His_Cool_Back/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3211430/BRIGANDINE_ABYSS/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4863650/1932c61c89e4d620d150aa0b9d7f672da0d60e78/capsule_231x87.jpg?t=1787064611",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3211430/e4b6bac1c89095f23c514147be534223c6fb19ac/capsule_231x87.jpg?t=1779667319",
       "categories": [
-        "Macera",
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-b39f5578a",
+      "title": "BOMBER-ANGEL BOMBRIEL -FOREVER THE KINGS-",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5074210/BOMBERANGEL_BOMBRIEL_FOREVER_THE_KINGS/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5074210/8e8c195af28301cb73c085c5481017fe926ffa31/capsule_231x87.jpg?t=1786695375",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-e8574c07e",
+      "title": "Train Plus Japan Drive Western Japan Trains! Rapid Service Edition",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4982590/Train_Plus_Japan_Drive_Western_Japan_Trains_Rapid_Service_Edition/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4982590/8b739c7078e62ad0085cc6a77d4490139408fc78/capsule_231x87.jpg?t=1787659343",
+      "categories": [
         "Gündelik",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-4a282bcb5",
-      "title": "Fell & Sell",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4627110/Fell__Sell/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4627110/58f86a9cf3bf33495e3f603079a4096e785509a1/capsule_231x87.jpg?t=1787312444",
-      "categories": [
         "Simülasyon",
-        "RPG",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-c480a6c5b",
-      "title": "Water You Doing?",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4429930/Water_You_Doing/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4429930/111a36e77a7eb23c2776c187d14ef2b85c00ab4f/capsule_231x87.jpg?t=1787263511",
-      "categories": [
-        "Çok Oyunculu",
-        "Aksiyon",
-        "Macera"
+        "Yarış"
       ]
     },
     {
