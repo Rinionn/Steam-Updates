@@ -1,6 +1,53 @@
 {
-  "generatedAt": "2026-08-26T11:00:40.649Z",
+  "generatedAt": "2026-08-26T11:37:36.205Z",
   "items": [
+    {
+      "id": "steam-news-5376b451d",
+      "title": "BRICK - One Block at a Time",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5042570/BRICK__One_Block_at_a_Time/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5042570/21ae63e03f11679bb2a283f950d0b7de99ded529/capsule_231x87.jpg?t=1787743038",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-00686a437",
+      "title": "A Game About Shooting Ducks",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4858190/A_Game_About_Shooting_Ducks/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4858190/a818fed68fe675628941c1f4231f987d8334fdcf/capsule_231x87.jpg?t=1787742529",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-ae192a241",
+      "title": "铜刀银剑",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3315770/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3315770/ff50377c1243f8343964158e5faba712a2a09468/capsule_231x87.jpg?t=1787742292",
+      "categories": [
+        "Strateji",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-7c9b0b8b9",
+      "title": "Besetmere Forest",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4845300/Besetmere_Forest/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4845300/d77dfb7bff00a7355068cd2aec509a143f2443da/capsule_231x87.jpg?t=1787742026",
+      "categories": [
+        "Korku",
+        "Çok Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-af524aa20",
       "title": "FRAGLINE: Esports Manager",
@@ -150,7 +197,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4459610/Gem_Party/?snr=1_7_7_230_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4459610/f1b2b1a7d21c3dd457016ee5841bea25de6a15f6/capsule_231x87.jpg?t=1787733082",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4459610/f1b2b1a7d21c3dd457016ee5841bea25de6a15f6/capsule_231x87.jpg?t=1787742829",
       "categories": [
         "Aksiyon",
         "Strateji"
@@ -236,57 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-42af45caf",
-      "title": "Poncik's Little Tragedy",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5070360/Ponciks_Little_Tragedy/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5070360/e76bbe0d0ce85944068e88e973d6563f79308133/capsule_231x87.jpg?t=1787728781",
-      "categories": [
-        "Gündelik",
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-7520d2d62",
-      "title": "Puzzles Rats",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4961840/Puzzles_Rats/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4961840/c02980407c5f831894a4ee13350af2cb06f22e20/capsule_231x87.jpg?t=1787728662",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-c4af227af",
-      "title": "Puzzles Reptiles",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4936780/Puzzles_Reptiles/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4936780/30cbffe436733a7dded8346eacbfb42ed3e58011/capsule_231x87.jpg?t=1787728411",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-5fbdad4c3",
-      "title": "CapyCam",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5066410/CapyCam/?snr=1_7_7_230_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5066410/f23f970df8708c5ca7db1321995412bac7283abb/capsule_231x87.jpg?t=1787727971",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-6b5803abd",
       "title": "Axis Football 2027",
       "kind": "coming_soon",
@@ -300,18 +296,6 @@
       ]
     },
     {
-      "id": "steam-news-55a05ce2d",
-      "title": "Click the Button",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3946950/Click_the_Button/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787711439",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-004fc428b",
       "title": "Shadow Dungeon",
       "kind": "coming_soon",
@@ -321,6 +305,18 @@
       "categories": [
         "Aksiyon",
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-55a05ce2d",
+      "title": "Click the Button",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3946950/Click_the_Button/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3946950/322299ee17e59eafc395a1b9d023612bd7a17f87/capsule_231x87.jpg?t=1787711439",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -391,16 +387,16 @@
       ]
     },
     {
-      "id": "steam-news-d8d8d8401",
-      "title": "Beanman Gets His Cool Back",
+      "id": "steam-news-e8574c07e",
+      "title": "Train Plus Japan Drive Western Japan Trains! Rapid Service Edition",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4863650/Beanman_Gets_His_Cool_Back/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4982590/Train_Plus_Japan_Drive_Western_Japan_Trains_Rapid_Service_Edition/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4863650/1932c61c89e4d620d150aa0b9d7f672da0d60e78/capsule_231x87.jpg?t=1787064611",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4982590/8b739c7078e62ad0085cc6a77d4490139408fc78/capsule_231x87.jpg?t=1787659343",
       "categories": [
-        "Macera",
         "Gündelik",
-        "RPG"
+        "Simülasyon",
+        "Yarış"
       ]
     },
     {
@@ -427,16 +423,29 @@
       ]
     },
     {
-      "id": "steam-news-e8574c07e",
-      "title": "Train Plus Japan Drive Western Japan Trains! Rapid Service Edition",
+      "id": "steam-news-d8d8d8401",
+      "title": "Beanman Gets His Cool Back",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4982590/Train_Plus_Japan_Drive_Western_Japan_Trains_Rapid_Service_Edition/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4863650/Beanman_Gets_His_Cool_Back/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4982590/8b739c7078e62ad0085cc6a77d4490139408fc78/capsule_231x87.jpg?t=1787659343",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4863650/1932c61c89e4d620d150aa0b9d7f672da0d60e78/capsule_231x87.jpg?t=1787064611",
       "categories": [
+        "Macera",
         "Gündelik",
-        "Simülasyon",
-        "Yarış"
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-c480a6c5b",
+      "title": "Water You Doing?",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4429930/Water_You_Doing/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4429930/111a36e77a7eb23c2776c187d14ef2b85c00ab4f/capsule_231x87.jpg?t=1787263511",
+      "categories": [
+        "Çok Oyunculu",
+        "Aksiyon",
+        "Macera"
       ]
     },
     {
@@ -462,19 +471,6 @@
         "Simülasyon",
         "RPG",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-c480a6c5b",
-      "title": "Water You Doing?",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4429930/Water_You_Doing/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4429930/111a36e77a7eb23c2776c187d14ef2b85c00ab4f/capsule_231x87.jpg?t=1787263511",
-      "categories": [
-        "Çok Oyunculu",
-        "Aksiyon",
-        "Macera"
       ]
     },
     {
@@ -514,6 +510,17 @@
       ]
     },
     {
+      "id": "steam-news-4ad042dfd",
+      "title": "Roots in the Sky - The Hand of Glory 2",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2062380/Roots_in_the_Sky__The_Hand_of_Glory_2/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2062380/c0fb1631ff291d00e7570616b46320d9cfad3c8f/capsule_231x87.jpg?t=1787247357",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
       "id": "steam-news-a01fca1ba",
       "title": "Fractured Worlds",
       "kind": "coming_soon",
@@ -523,17 +530,6 @@
       "categories": [
         "Aksiyon",
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-4ad042dfd",
-      "title": "Roots in the Sky - The Hand of Glory 2",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2062380/Roots_in_the_Sky__The_Hand_of_Glory_2/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2062380/c0fb1631ff291d00e7570616b46320d9cfad3c8f/capsule_231x87.jpg?t=1787247357",
-      "categories": [
-        "Macera"
       ]
     },
     {
@@ -553,7 +549,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4672200/__Hide_and_Seek/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4672200/6bfabc7315215f7460285e19acf70ddac1bb22af/capsule_231x87.jpg?t=1787630009",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4672200/6bfabc7315215f7460285e19acf70ddac1bb22af/capsule_231x87.jpg?t=1787743297",
       "categories": [
         "RPG",
         "Korku",
