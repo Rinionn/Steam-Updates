@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-08-26T09:52:34.870Z",
+  "generatedAt": "2026-08-26T10:24:48.042Z",
   "items": [
+    {
+      "id": "steam-news-4822b4397",
+      "title": "Little Chef: Cozy Cooking",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3376500/Little_Chef_Cozy_Cooking/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3376500/f3c5a2dcf6a2aed90bd0c6634bff4f686de132c3/capsule_231x87.jpg?t=1787739301",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-a46282718",
+      "title": "Endless Silent Night",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4703320/Endless_Silent_Night/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4703320/656118e8daf1c68c34816ffaffad08b0176fbf0a/capsule_231x87.jpg?t=1787738730",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-a0573733a",
       "title": "CoinWar",
@@ -260,31 +283,6 @@
       ]
     },
     {
-      "id": "steam-news-2e0aa3b58",
-      "title": "b 2",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1293650/b_2/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1293650/1bce17fe6e9395191d25b6f2dc48731236ece7fc/capsule_231x87.jpg?t=1787725958",
-      "categories": [
-        "Oynaması Ücretsiz",
-        "Gündelik",
-        "Simülasyon",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-598c76455",
-      "title": "Pleiades Zero",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4984140/Pleiades_Zero/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4984140/9c31e65f159f112042cf791a68bf9ec799b24edb/capsule_231x87.jpg?t=1787719592",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-9d779e6de",
       "title": "Neon Highway",
       "kind": "coming_soon",
@@ -294,18 +292,6 @@
       "categories": [
         "Yarış",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-e0e3157ac",
-      "title": "Endless Silent Night",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4703320/Endless_Silent_Night/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4703320/656118e8daf1c68c34816ffaffad08b0176fbf0a/capsule_231x87.jpg?t=1786361681",
-      "categories": [
-        "Macera",
-        "Tek Oyunculu"
       ]
     },
     {
@@ -347,18 +333,6 @@
       ]
     },
     {
-      "id": "steam-news-004fc428b",
-      "title": "Shadow Dungeon",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4423580/Shadow_Dungeon/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4423580/733613c22fca72b0399ed6147890e71587828e3b/capsule_231x87.jpg?t=1787477269",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-6b5803abd",
       "title": "Axis Football 2027",
       "kind": "coming_soon",
@@ -369,6 +343,18 @@
         "Spor",
         "Simülasyon",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-004fc428b",
+      "title": "Shadow Dungeon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4423580/Shadow_Dungeon/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4423580/733613c22fca72b0399ed6147890e71587828e3b/capsule_231x87.jpg?t=1787477269",
+      "categories": [
+        "Aksiyon",
+        "Macera"
       ]
     },
     {
@@ -417,17 +403,6 @@
       ]
     },
     {
-      "id": "steam-news-06bb8d15a",
-      "title": "Crystalyn",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4754460/Crystalyn/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4754460/a95b9b4333671c48c92b076c8df8c9b4619e0e10/capsule_231x87_alt_assets_1.jpg?t=1787651529",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
       "id": "steam-news-103dba6c9",
       "title": "Now THAT'S a Big Dragon!",
       "kind": "coming_soon",
@@ -439,41 +414,14 @@
       ]
     },
     {
-      "id": "steam-news-4a282bcb5",
-      "title": "Fell & Sell",
+      "id": "steam-news-06bb8d15a",
+      "title": "Crystalyn",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4627110/Fell__Sell/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4754460/Crystalyn/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4627110/58f86a9cf3bf33495e3f603079a4096e785509a1/capsule_231x87.jpg?t=1787312444",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4754460/a95b9b4333671c48c92b076c8df8c9b4619e0e10/capsule_231x87_alt_assets_1.jpg?t=1787651529",
       "categories": [
-        "Simülasyon",
-        "RPG",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-c480a6c5b",
-      "title": "Water You Doing?",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4429930/Water_You_Doing/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4429930/111a36e77a7eb23c2776c187d14ef2b85c00ab4f/capsule_231x87.jpg?t=1787263511",
-      "categories": [
-        "Çok Oyunculu",
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-7de519c09",
-      "title": "BRIGANDINE ABYSS",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3211430/BRIGANDINE_ABYSS/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3211430/e4b6bac1c89095f23c514147be534223c6fb19ac/capsule_231x87.jpg?t=1779667319",
-      "categories": [
-        "Strateji",
-        "Simülasyon"
+        "Bağımsız"
       ]
     },
     {
@@ -526,6 +474,44 @@
       ]
     },
     {
+      "id": "steam-news-7de519c09",
+      "title": "BRIGANDINE ABYSS",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3211430/BRIGANDINE_ABYSS/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3211430/e4b6bac1c89095f23c514147be534223c6fb19ac/capsule_231x87.jpg?t=1779667319",
+      "categories": [
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-4a282bcb5",
+      "title": "Fell & Sell",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4627110/Fell__Sell/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4627110/58f86a9cf3bf33495e3f603079a4096e785509a1/capsule_231x87.jpg?t=1787312444",
+      "categories": [
+        "Simülasyon",
+        "RPG",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-c480a6c5b",
+      "title": "Water You Doing?",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4429930/Water_You_Doing/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4429930/111a36e77a7eb23c2776c187d14ef2b85c00ab4f/capsule_231x87.jpg?t=1787263511",
+      "categories": [
+        "Çok Oyunculu",
+        "Aksiyon",
+        "Macera"
+      ]
+    },
+    {
       "id": "steam-news-cc0c1e19e",
       "title": "Idle Fleet",
       "kind": "coming_soon",
@@ -538,15 +524,26 @@
       ]
     },
     {
-      "id": "steam-news-ee1bc728f",
-      "title": "The Grand Slamboree",
+      "id": "steam-news-f364ae9ed",
+      "title": "Folk Emerging",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4130860/The_Grand_Slamboree/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2275300/Folk_Emerging/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4130860/1faaccc40f0603dd03ea3c5fd3c4e4ac9216e2c0/capsule_231x87.jpg?t=1786979219",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2275300/af1081275f2b3477e656d093be7eed3905028d6b/capsule_231x87.jpg?t=1787489189",
       "categories": [
-        "Çok Oyunculu",
-        "Aksiyon"
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-4ad042dfd",
+      "title": "Roots in the Sky - The Hand of Glory 2",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2062380/Roots_in_the_Sky__The_Hand_of_Glory_2/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "26 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2062380/c0fb1631ff291d00e7570616b46320d9cfad3c8f/capsule_231x87.jpg?t=1787247357",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -562,15 +559,15 @@
       ]
     },
     {
-      "id": "steam-news-f364ae9ed",
-      "title": "Folk Emerging",
+      "id": "steam-news-ee1bc728f",
+      "title": "The Grand Slamboree",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2275300/Folk_Emerging/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4130860/The_Grand_Slamboree/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "26 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2275300/af1081275f2b3477e656d093be7eed3905028d6b/capsule_231x87.jpg?t=1787489189",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4130860/1faaccc40f0603dd03ea3c5fd3c4e4ac9216e2c0/capsule_231x87.jpg?t=1786979219",
       "categories": [
-        "Simülasyon",
-        "Strateji"
+        "Çok Oyunculu",
+        "Aksiyon"
       ]
     },
     {
