@@ -1,6 +1,72 @@
 {
-  "generatedAt": "2026-08-30T06:59:27.829Z",
+  "generatedAt": "2026-08-30T12:47:00.345Z",
   "items": [
+    {
+      "id": "steam-news-a020ee67f",
+      "title": "Summon Stone",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4022890/Summon_Stone/?snr=1_7_7_230_150_1",
+      "dateLabel": "30 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4022890/20a47e7c45420c9b8009c8adb630da9e3af2753a/capsule_231x87.jpg?t=1788091233",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-4c74cdb86",
+      "title": "Fortune Factory",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5053230/Fortune_Factory/?snr=1_7_7_230_150_1",
+      "dateLabel": "30 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5053230/2fee553f314be683fc2c64b5cd3c0150e8275902/capsule_231x87.jpg?t=1788089428",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-563210b1b",
+      "title": "Just Open The Door",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4424690/Just_Open_The_Door/?snr=1_7_7_230_150_1",
+      "dateLabel": "30 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4424690/cf628132263008b37b3e0557e3d303244c58370a/capsule_231x87.jpg?t=1788088479",
+      "categories": []
+    },
+    {
+      "id": "steam-news-5293338ac",
+      "title": "Escape The Construction Site",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5000750/Escape_The_Construction_Site/?snr=1_7_7_230_150_1",
+      "dateLabel": "30 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5000750/5280eae8c9a3db523b83710ccaa141544e2037ed/capsule_231x87.jpg?t=1788084417",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-6c4b67bb3",
+      "title": "POSER",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4763600/POSER/?snr=1_7_7_230_150_1",
+      "dateLabel": "30 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4763600/d0c89272826501138d3c00e8a6f5f0c14075ef28/capsule_231x87.jpg?t=1788078166",
+      "categories": []
+    },
+    {
+      "id": "steam-news-b6e1c6c54",
+      "title": "Grey Cloaks of Aron: The Sleeping Village",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5077560/Grey_Cloaks_of_Aron_The_Sleeping_Village/?snr=1_7_7_230_150_1",
+      "dateLabel": "30 Aug, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5077560/efebaff8fbe24f5347c0b3f4a039079bb66c9bf6/capsule_231x87.jpg?t=1788073942",
+      "categories": [
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-cb91ffdab",
       "title": "Meme Farm",
@@ -19,7 +85,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4823530/CUBE/?snr=1_7_7_230_150_1",
       "dateLabel": "29 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823530/2a43124dfebcec138c2114e1aec9d3bbcf40676c/capsule_231x87.jpg?t=1788072146",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823530/2a43124dfebcec138c2114e1aec9d3bbcf40676c/capsule_231x87.jpg?t=1788073721",
       "categories": [
         "Gündelik",
         "Macera"
@@ -115,7 +181,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4940570/1_HP_DUNGEON/?snr=1_7_7_230_150_1",
       "dateLabel": "29 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4940570/cc6e9eb0f3442b18f1eb02929b4c6f08afdfb8c6/capsule_231x87.jpg?t=1788067874",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4940570/cc6e9eb0f3442b18f1eb02929b4c6f08afdfb8c6/capsule_231x87.jpg?t=1788074897",
       "categories": [
         "Çok Oyunculu"
       ]
@@ -213,111 +279,6 @@
       "categories": [
         "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-a81a5f822",
-      "title": "2007",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2761160/2007/?snr=1_7_7_230_150_1",
-      "dateLabel": "29 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2761160/6b43e1e1a878299659d28c951a0884bf3aa1267e/capsule_231x87.jpg?t=1788037232",
-      "categories": [
-        "Macera",
-        "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-00e79e0a6",
-      "title": "Catch Flex",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3670810/Catch_Flex/?snr=1_7_7_230_150_1",
-      "dateLabel": "29 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3670810/99299dff704b6abad5012520ae962563229cd100/capsule_231x87.jpg?t=1788036423",
-      "categories": [
-        "Spor"
-      ]
-    },
-    {
-      "id": "steam-news-581a18a13",
-      "title": "STO:REAM AI Voice Adventure",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4872520/STOREAM_AI_Voice_Adventure/?snr=1_7_7_230_150_1",
-      "dateLabel": "29 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4872520/76b0f9489462128a118c1684f75fe64942b2c4e5/capsule_231x87.jpg?t=1788035582",
-      "categories": [
-        "RPG",
-        "Macera",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-5c10f894b",
-      "title": "Goblin Inferno Ride",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4993630/Goblin_Inferno_Ride/?snr=1_7_7_230_150_1",
-      "dateLabel": "29 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4993630/77cccb7c40587de77085fc80880776ee805405aa/capsule_231x87.jpg?t=1788035353",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-3dd29de0d",
-      "title": "Skullchef",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4892720/Skullchef/?snr=1_7_7_230_150_1",
-      "dateLabel": "29 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4892720/5439211c3bc962d88dc286f6247c09808bc8d628/capsule_231x87.jpg?t=1788039626",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-e959e79ab",
-      "title": "BoxR",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2385780/BoxR/?snr=1_7_7_230_150_1",
-      "dateLabel": "29 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2385780/7fe496accc7f2660279bd14485aed8e77990a36f/capsule_231x87.jpg?t=1788031317",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-dc11422ba",
-      "title": "Grey Cloaks of Aron: The Sleeping Village",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5077560/Grey_Cloaks_of_Aron_The_Sleeping_Village/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "30 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5077560/efebaff8fbe24f5347c0b3f4a039079bb66c9bf6/capsule_231x87.jpg?t=1787057175",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-af32d37d6",
-      "title": "Life in red line",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5021930/Life_in_red_line/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "30 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5021930/d7b5f3b57ef7a2a182b272dd4ee6a7c151d57784/capsule_231x87.jpg?t=1787519335",
-      "categories": [
-        "Bağımsız",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-c7c682505",
-      "title": "Just Open The Door",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4424690/Just_Open_The_Door/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "30 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4424690/cf628132263008b37b3e0557e3d303244c58370a/capsule_231x87.jpg?t=1786221116",
-      "categories": []
     },
     {
       "id": "steam-news-bcd1f32f6",
@@ -531,30 +492,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5038010/5541268469a4e2180f00418300d6312048bad5aa/capsule_231x87.jpg?t=1786775238",
       "categories": [
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-c36b5ed1e",
-      "title": "Sticks & Strings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5091370/Sticks__Strings/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "31 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5091370/9ce4ecaf9e9e8a81ff310ad92c29f16de3bdb6fd/capsule_231x87.jpg?t=1787945548",
-      "categories": [
-        "Gündelik",
-        "Çok Oyunculu",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-1ef9e7fec",
-      "title": "Puzzle Clash",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5064210/Puzzle_Clash/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "31 Aug, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5064210/fa8db287bd7ed2fcc58f4b9d2e0c0fb8117f19c6/capsule_231x87.jpg?t=1786765255",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
