@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T22:07:38.477Z",
+  "generatedAt": "2026-09-02T00:14:03.032Z",
   "items": [
     {
       "id": "steam-news-ff09b402e",
@@ -140,7 +140,11 @@
       "url": "https://store.steampowered.com/app/4983800/The_Windzen_Legend/?snr=1_7_7_230_150_1",
       "dateLabel": "1 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4983800/9084651d194e61c4eead129f84210a711815bd2d/capsule_231x87.jpg?t=1788289714",
-      "categories": []
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "RPG"
+      ]
     },
     {
       "id": "steam-news-85bf6e067",
@@ -149,7 +153,10 @@
       "url": "https://store.steampowered.com/app/5020310/Dub_Together/?snr=1_7_7_230_150_1",
       "dateLabel": "1 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5020310/33f05f1c5a6e74374e0994eab7d150a0a42e496f/capsule_231x87.jpg?t=1788299994",
-      "categories": []
+      "categories": [
+        "Çok Oyunculu",
+        "Gündelik"
+      ]
     },
     {
       "id": "steam-news-4a7a4a17d",
@@ -182,7 +189,12 @@
       "url": "https://store.steampowered.com/app/4707460/Dimension_Defenders/?snr=1_7_7_230_150_1",
       "dateLabel": "1 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4707460/555a969c0d3203e1013aca46d5bd1fd58555581c/capsule_231x87.jpg?t=1788290352",
-      "categories": []
+      "categories": [
+        "Strateji",
+        "Aksiyon",
+        "Macera",
+        "Tek Oyunculu"
+      ]
     },
     {
       "id": "steam-news-6794bb360",
@@ -241,7 +253,10 @@
       "url": "https://store.steampowered.com/app/5011070/Insurance_Fraud/?snr=1_7_7_230_150_1",
       "dateLabel": "1 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5011070/bb3bc3f7e51e3697856a474e1e036275e8f322df/capsule_231x87.jpg?t=1788286455",
-      "categories": []
+      "categories": [
+        "Simülasyon",
+        "Strateji"
+      ]
     },
     {
       "id": "steam-news-0fdcf76b8",
@@ -327,7 +342,10 @@
       "url": "https://store.steampowered.com/app/3534100/Staged/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "2 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3534100/59ad74ec5dce4a2cf7755efb691cbd5c88d910c8/capsule_231x87.jpg?t=1787946025",
-      "categories": []
+      "categories": [
+        "Aksiyon",
+        "Çok Oyunculu"
+      ]
     },
     {
       "id": "steam-news-9a2a19c1d",
@@ -348,7 +366,9 @@
       "url": "https://store.steampowered.com/app/4579760/Overtime__Patrol/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "2 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4579760/f5d224ff0bb8898e180fd9858df3a4e2f2833259/capsule_231x87.jpg?t=1787900471",
-      "categories": []
+      "categories": [
+        "Macera"
+      ]
     },
     {
       "id": "steam-news-fdf0582bd",
@@ -387,6 +407,19 @@
       ]
     },
     {
+      "id": "steam-news-bddd9dc35",
+      "title": "SquareSlicer",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4787050/SquareSlicer/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4787050/0cda50848429a3a26f5cfc2d07adbacb4a0426c6/capsule_231x87.jpg?t=1786541221",
+      "categories": [
+        "Gündelik",
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-7f5893b50",
       "title": "ShipShaper: Falconeer Chronicles",
       "kind": "coming_soon",
@@ -397,15 +430,6 @@
         "Bağımsız",
         "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-bddd9dc35",
-      "title": "SquareSlicer",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4787050/SquareSlicer/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4787050/0cda50848429a3a26f5cfc2d07adbacb4a0426c6/capsule_231x87.jpg?t=1786541221",
-      "categories": []
     },
     {
       "id": "steam-news-496033bbe",
@@ -479,12 +503,12 @@
       ]
     },
     {
-      "id": "steam-news-ddfcbec1d",
-      "title": "Category 6",
+      "id": "steam-news-6e9cfce14",
+      "title": "He Who Watches",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2823820/Category_6/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/1070500/He_Who_Watches/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "2 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2823820/43ef3be90bd20f71c604e4090e0486337bab32a1/capsule_231x87.jpg?t=1787741367",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1070500/325530fec8058c3d98499900a7381af9bd78cb98/capsule_231x87.jpg?t=1788275213",
       "categories": []
     },
     {
@@ -501,12 +525,12 @@
       ]
     },
     {
-      "id": "steam-news-6e9cfce14",
-      "title": "He Who Watches",
+      "id": "steam-news-ddfcbec1d",
+      "title": "Category 6",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/1070500/He_Who_Watches/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2823820/Category_6/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "2 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1070500/325530fec8058c3d98499900a7381af9bd78cb98/capsule_231x87.jpg?t=1788275213",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2823820/43ef3be90bd20f71c604e4090e0486337bab32a1/capsule_231x87.jpg?t=1787741367",
       "categories": []
     },
     {
@@ -521,6 +545,15 @@
       ]
     },
     {
+      "id": "steam-news-c94c76df6",
+      "title": "Depths' Tale",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4900170/Depths_Tale/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "2 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4900170/f892389f8d4af94fee4dfb894ec94cbc57c8318a/capsule_231x87.jpg?t=1787585083",
+      "categories": []
+    },
+    {
       "id": "steam-news-f1f87daec",
       "title": "Storytime Cats - Meows and Mistletoes",
       "kind": "coming_soon",
@@ -530,15 +563,6 @@
       "categories": [
         "Macera"
       ]
-    },
-    {
-      "id": "steam-news-c94c76df6",
-      "title": "Depths' Tale",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4900170/Depths_Tale/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "2 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4900170/f892389f8d4af94fee4dfb894ec94cbc57c8318a/capsule_231x87.jpg?t=1787585083",
-      "categories": []
     },
     {
       "id": "steam-news-c560bed11",

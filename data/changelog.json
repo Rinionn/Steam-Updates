@@ -278,5 +278,32 @@
     "eventId": "pins-pegs-fest-2624f7168",
     "eventName": "Pins & Pegs Fest",
     "kind": "removed"
+  },
+  {
+    "detectedAt": "2026-09-02T00:14:02.586Z",
+    "eventId": "next-fest-october-2026-3062e7ac9",
+    "eventName": "Next Fest: October 2026",
+    "kind": "deadline_changed",
+    "field": "deadlines.next-fest-october-2026-3062e7ac9-97846b59c.dueAt",
+    "before": "2026-09-07T17:00:00Z",
+    "after": "2026-09-08T17:00:00Z"
+  },
+  {
+    "detectedAt": "2026-09-02T00:14:02.586Z",
+    "eventId": "next-fest-october-2026-3062e7ac9",
+    "eventName": "Next Fest: October 2026",
+    "kind": "deadline_changed",
+    "field": "deadlines.next-fest-october-2026-3062e7ac9-28286be6b.dueAt",
+    "before": "2026-09-22T06:59:00Z",
+    "after": "2026-09-15T06:59:00Z"
+  },
+  {
+    "detectedAt": "2026-09-02T00:14:02.586Z",
+    "eventId": "next-fest-october-2026-3062e7ac9",
+    "eventName": "Next Fest: October 2026",
+    "kind": "deadline_changed",
+    "field": "deadlines.next-fest-october-2026-3062e7ac9-71b75f82e.dueAt",
+    "before": "2026-10-06T06:59:00Z",
+    "after": "2026-09-29T06:59:00Z"
   }
 ]
