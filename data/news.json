@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-09-04T23:20:42.812Z",
+  "generatedAt": "2026-09-05T01:07:00.015Z",
   "items": [
+    {
+      "id": "steam-news-6c8ca24d4",
+      "title": "Magnet Hunt",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4908300/Magnet_Hunt/?snr=1_7_7_230_150_1",
+      "dateLabel": "4 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908300/ad8beedc7614bedca062d1411d0471c156337b7a/capsule_231x87.jpg?t=1788566493",
+      "categories": [
+        "Gündelik",
+        "Strateji",
+        "Yarış"
+      ]
+    },
     {
       "id": "steam-news-6f4a9b6c5",
       "title": "Football Legacy Manager 27",
@@ -269,18 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-fecb59f86",
-      "title": "NodeRise",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5033110/NodeRise/?snr=1_7_7_230_150_1",
-      "dateLabel": "4 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5033110/1cfeb64023e336a9d343ca003b7db11c34cdada4/capsule_231x87.jpg?t=1788543744",
-      "categories": [
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-bef61a842",
       "title": "Airline Founder",
       "kind": "coming_soon",
@@ -304,18 +305,6 @@
       "categories": [
         "Strateji",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-32486566a",
-      "title": "The Last Brazilian",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4833270/The_Last_Brazilian/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4833270/4f61d832fa57483503cf40cd3836096f6a737ee5/capsule_231x87.jpg?t=1788485872",
-      "categories": [
-        "Macera",
-        "Aksiyon"
       ]
     },
     {
@@ -343,17 +332,6 @@
       ]
     },
     {
-      "id": "steam-news-6fe269788",
-      "title": "My Dearest Direst Disaster",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4549300/My_Dearest_Direst_Disaster/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4549300/b554cb9889f86a262688f69377966837e8e88fbd/capsule_231x87.jpg?t=1788484665",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-c82fb3e21",
       "title": "Invictvs",
       "kind": "coming_soon",
@@ -362,6 +340,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048570/b3eea5806d8ffe88b6db0750dcdc1661b0b9ca72/capsule_231x87.jpg?t=1788090366",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-6fe269788",
+      "title": "My Dearest Direst Disaster",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4549300/My_Dearest_Direst_Disaster/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4549300/b554cb9889f86a262688f69377966837e8e88fbd/capsule_231x87.jpg?t=1788484665",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -500,18 +489,6 @@
       ]
     },
     {
-      "id": "steam-news-c21d8d0e0",
-      "title": "The Ash Remembers",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4973460/The_Ash_Remembers/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4973460/dfe02604493a4d968e21f967b66b230cec6d9eff/capsule_231x87.jpg?t=1787581580",
-      "categories": [
-        "RPG",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-2d7ca6b4d",
       "title": "Summer of Singing Insects",
       "kind": "coming_soon",
@@ -521,6 +498,18 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-c21d8d0e0",
+      "title": "The Ash Remembers",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4973460/The_Ash_Remembers/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4973460/dfe02604493a4d968e21f967b66b230cec6d9eff/capsule_231x87.jpg?t=1787581580",
+      "categories": [
+        "RPG",
+        "Gündelik"
       ]
     },
     {
@@ -549,15 +538,6 @@
       ]
     },
     {
-      "id": "steam-news-73edbdb73",
-      "title": "Sewer Crawler",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5001300/Sewer_Crawler/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001300/5a3122425cc4ae4c329b5d83dcc584ceb24f8aa9/capsule_231x87.jpg?t=1787681427",
-      "categories": []
-    },
-    {
       "id": "steam-news-a818291d3",
       "title": "The Hunter's Inn",
       "kind": "coming_soon",
@@ -567,6 +547,26 @@
       "categories": [
         "Macera",
         "RPG",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-73edbdb73",
+      "title": "Sewer Crawler",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5001300/Sewer_Crawler/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001300/5a3122425cc4ae4c329b5d83dcc584ceb24f8aa9/capsule_231x87.jpg?t=1787681427",
+      "categories": []
+    },
+    {
+      "id": "steam-news-52d9326aa",
+      "title": "Locktale",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4304820/Locktale/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4304820/f185f42714bbf01650d3ba650d2f8baf4a497af3/capsule_231x87.jpg?t=1786982571",
+      "categories": [
         "Strateji"
       ]
     },
