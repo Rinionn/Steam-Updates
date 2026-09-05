@@ -1,6 +1,75 @@
 {
-  "generatedAt": "2026-09-05T09:26:54.871Z",
+  "generatedAt": "2026-09-05T12:59:47.133Z",
   "items": [
+    {
+      "id": "steam-news-b715b84e8",
+      "title": "Final Shelter",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4641100/Final_Shelter/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4641100/df039bd81ecd2677f6273965424672efdadf9f5e/capsule_231x87.jpg?t=1788610656",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-46e84bf7e",
+      "title": "HB Inc.",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4942650/HB_Inc/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942650/845675cc247305e18a41f1dd13301510690651bb/capsule_231x87.jpg?t=1788608938",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-5c771d3bf",
+      "title": "Valdivia AllStars",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5103500/Valdivia_AllStars/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5103500/f17ef573485ff14aa990265da1f4cdd408529bcd/capsule_231x87.jpg?t=1788608480",
+      "categories": [
+        "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-538b6e8c5",
+      "title": "RAKHEM",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5134750/RAKHEM/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5134750/9117a2ccf75ad56ff110b9605dccfd09a7318b8f/capsule_231x87.jpg?t=1788606171",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-92b2289be",
+      "title": "Doors Closed",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3426960/Doors_Closed/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3426960/cc198ccf712c1639535f434794d1b8d71c1f0e8e/capsule_231x87.jpg?t=1788604419",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-c50fb0412",
+      "title": "Exspelled",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5064270/Exspelled/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5064270/fe78e742a24c96a65882c590ead47db4c79b1a43/capsule_231x87.jpg?t=1788600433",
+      "categories": [
+        "Aksiyon",
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-b0ee2c084",
       "title": "Wayfarer Protocol",
@@ -226,78 +295,6 @@
       ]
     },
     {
-      "id": "steam-news-9b7da68f8",
-      "title": "Hockey Legacy Manager 27",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4823130/Hockey_Legacy_Manager_27/?snr=1_7_7_230_150_1",
-      "dateLabel": "4 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4823130/578be0e6fbffa63a4ebaf81739f7debabf8404d4/capsule_231x87.jpg?t=1788563522",
-      "categories": [
-        "Simülasyon",
-        "Spor",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-706698aa1",
-      "title": "UPG - Underground",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4854010/UPG__Underground/?snr=1_7_7_230_150_1",
-      "dateLabel": "4 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4854010/5a96b532792e61176ee5798a4fada06e4e3d65fb/capsule_231x87.jpg?t=1788562504",
-      "categories": [
-        "Spor",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-1ea0c574f",
-      "title": "Vale Primordial",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5023540/Vale_Primordial/?snr=1_7_7_230_150_1",
-      "dateLabel": "4 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5023540/5f35431ba7f42914560815ae7034dfba966847f4/capsule_231x87.jpg?t=1788560218",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-d61498fac",
-      "title": "Soviet Shop Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4543990/Soviet_Shop_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "4 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4543990/0a55b2f309eca7bd0ef8caf479e6658716fbe656/capsule_231x87.jpg?t=1788559729",
-      "categories": [
-        "Simülasyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-fa757ce61",
-      "title": "Flip-Off",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4808110/FlipOff/?snr=1_7_7_230_150_1",
-      "dateLabel": "4 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4808110/e62b3408b15f7b7d1d3662b4ae1dac100f866c7d/capsule_231x87.jpg?t=1788559171",
-      "categories": [
-        "Strateji",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-c4974238f",
-      "title": "HEX",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3187580/HEX/?snr=1_7_7_230_150_1",
-      "dateLabel": "4 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3187580/499b15d9697aa63b6d14a3809b1bd56f1d208302/capsule_231x87.jpg?t=1788558627",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-cfcf22f70",
       "title": "水浒英雄传：八幕战役",
       "kind": "coming_soon",
@@ -339,7 +336,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/5048570/Invictvs/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048570/b3eea5806d8ffe88b6db0750dcdc1661b0b9ca72/capsule_231x87.jpg?t=1788586244",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048570/b3eea5806d8ffe88b6db0750dcdc1661b0b9ca72/capsule_231x87.jpg?t=1788601162",
       "categories": [
         "Aksiyon"
       ]
@@ -368,6 +365,17 @@
       ]
     },
     {
+      "id": "steam-news-6091e8ef3",
+      "title": "Leap Tactics",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-9e458a22d",
       "title": "Speed Weaver",
       "kind": "coming_soon",
@@ -377,17 +385,6 @@
       "categories": [
         "Yarış",
         "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-6091e8ef3",
-      "title": "Leap Tactics",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
-      "categories": [
         "Gündelik"
       ]
     },
