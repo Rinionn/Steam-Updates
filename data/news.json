@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-09-05T20:20:07.414Z",
+  "generatedAt": "2026-09-05T22:06:16.231Z",
   "items": [
+    {
+      "id": "steam-news-f440866ac",
+      "title": "Hades Hinderance",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4516620/Hades_Hinderance/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4516620/460ee36d6dfcc8c27e0ddf97652704e874248517/capsule_231x87.jpg?t=1788644429",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-504b538ba",
+      "title": "The Secret of Island of Fear",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4377690/The_Secret_of_Island_of_Fear/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4377690/14aebad2a498f62ef2ca9fbb68785f0bc227b117/capsule_231x87.jpg?t=1788642579",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-9063e1594",
       "title": "Level Up, Tiny King!",
@@ -64,7 +88,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4926400/Numble/?snr=1_7_7_230_150_1",
       "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926400/d2ed4c618c44143d68443113e814072d0a087106/capsule_231x87.jpg?t=1788632284",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4926400/d2ed4c618c44143d68443113e814072d0a087106/capsule_231x87.jpg?t=1788644631",
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
@@ -269,42 +293,6 @@
       ]
     },
     {
-      "id": "steam-news-edc21fe3f",
-      "title": "Pitchside Empire",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5099380/Pitchside_Empire/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099380/597cf163d1608c3b59883bd936c9b37724b8f147/capsule_231x87.jpg?t=1788592394",
-      "categories": [
-        "Spor",
-        "Simülasyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-6021e4f81",
-      "title": "Hive Havoc 3D",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5032490/Hive_Havoc_3D/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5032490/1738a3d1c3adf194497a65ed17250b2c6d604ddb/capsule_231x87.jpg?t=1788592062",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-0c9b7fae3",
-      "title": "Load Factor",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5078600/Load_Factor/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5078600/b942b097fc5e312d114c4f0d1ddf5562e7cd47ac/capsule_231x87.jpg?t=1787696671",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-3facff35b",
       "title": "Last Haven: Idle Survival",
       "kind": "coming_soon",
@@ -317,17 +305,6 @@
       ]
     },
     {
-      "id": "steam-news-c82fb3e21",
-      "title": "Invictvs",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5048570/Invictvs/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048570/b3eea5806d8ffe88b6db0750dcdc1661b0b9ca72/capsule_231x87.jpg?t=1788625697",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-6fe269788",
       "title": "My Dearest Direst Disaster",
       "kind": "coming_soon",
@@ -336,6 +313,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4549300/b554cb9889f86a262688f69377966837e8e88fbd/capsule_231x87.jpg?t=1788484665",
       "categories": [
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-c82fb3e21",
+      "title": "Invictvs",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5048570/Invictvs/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048570/b3eea5806d8ffe88b6db0750dcdc1661b0b9ca72/capsule_231x87.jpg?t=1788625697",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -351,17 +339,6 @@
       ]
     },
     {
-      "id": "steam-news-6091e8ef3",
-      "title": "Leap Tactics",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-9e458a22d",
       "title": "Speed Weaver",
       "kind": "coming_soon",
@@ -371,6 +348,17 @@
       "categories": [
         "Yarış",
         "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-6091e8ef3",
+      "title": "Leap Tactics",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
+      "categories": [
         "Gündelik"
       ]
     },
@@ -576,6 +564,17 @@
         "Yarış",
         "Aksiyon",
         "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-a208fbbab",
+      "title": "Bones and Coins",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4134650/Bones_and_Coins/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4134650/5be194a6a843e037bdb2cae0577cfc70668d3b14/capsule_231x87.jpg?t=1788075361",
+      "categories": [
+        "Strateji"
       ]
     },
     {
