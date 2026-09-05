@@ -1,6 +1,52 @@
 {
-  "generatedAt": "2026-09-05T22:06:16.231Z",
+  "generatedAt": "2026-09-05T23:53:43.147Z",
   "items": [
+    {
+      "id": "steam-news-2156aca62",
+      "title": "Final Rider",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3093580/Final_Rider/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3093580/fa455472c13a42348504bae75005eab9d67d3c42/capsule_231x87.jpg?t=1788648713",
+      "categories": [
+        "Aksiyon",
+        "Anime",
+        "Yarış"
+      ]
+    },
+    {
+      "id": "steam-news-05a96cf09",
+      "title": "The Quiet Below",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4916670/The_Quiet_Below/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4916670/184cbce34054780b401a4d3d8c00c331293ec550/capsule_231x87.jpg?t=1788648570",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-95e152a10",
+      "title": "Normile",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4627340/Normile/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4627340/9b47a929cbaf1e41ab9932e61d1e8385c39c4032/capsule_231x87.jpg?t=1788646809",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-964703871",
+      "title": "Darning",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4899120/Darning/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4899120/f851eee5eeddfb3dafee99475ef84dea3a0b45d3/capsule_231x87.jpg?t=1788646369",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-f440866ac",
       "title": "Hades Hinderance",
@@ -238,61 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-b0ee2c084",
-      "title": "Wayfarer Protocol",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4983860/Wayfarer_Protocol/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4983860/4f390e4f4a8b5ea76c2ffa221ccac77bb829b1eb/capsule_231x87.jpg?t=1788597506",
-      "categories": [
-        "Bağımsız",
-        "Strateji",
-        "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-4278b7428",
-      "title": "Racing Manager",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4222700/Racing_Manager/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4222700/e1400ca44f505453e8931ee14c74a8c96f1fb4c9/capsule_231x87.jpg?t=1788596537",
-      "categories": [
-        "Yarış",
-        "Spor",
-        "Strateji",
-        "Tek Oyunculu",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-a56e04f4e",
-      "title": "KANSYS: Storms Suppressed",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5133780/KANSYS_Storms_Suppressed/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5133780/e72d760e4883cf434ec2090a83d778e114faadff/capsule_231x87.jpg?t=1788637250",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-245d8c2ca",
-      "title": "Cribbage!",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4984120/Cribbage/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4984120/61c3fc0a9ce598f6f35d0b133b4085dde1d1fc44/capsule_231x87.jpg?t=1788594775",
-      "categories": [
-        "Gündelik",
-        "Çok Oyunculu",
-        "Tek Oyunculu",
-        "Oynaması Ücretsiz"
-      ]
-    },
-    {
       "id": "steam-news-3facff35b",
       "title": "Last Haven: Idle Survival",
       "kind": "coming_soon",
@@ -339,6 +330,17 @@
       ]
     },
     {
+      "id": "steam-news-6091e8ef3",
+      "title": "Leap Tactics",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-9e458a22d",
       "title": "Speed Weaver",
       "kind": "coming_soon",
@@ -348,17 +350,6 @@
       "categories": [
         "Yarış",
         "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-6091e8ef3",
-      "title": "Leap Tactics",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
-      "categories": [
         "Gündelik"
       ]
     },
@@ -486,15 +477,6 @@
       ]
     },
     {
-      "id": "steam-news-73edbdb73",
-      "title": "Sewer Crawler",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5001300/Sewer_Crawler/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001300/5a3122425cc4ae4c329b5d83dcc584ceb24f8aa9/capsule_231x87.jpg?t=1787681427",
-      "categories": []
-    },
-    {
       "id": "steam-news-a818291d3",
       "title": "The Hunter's Inn",
       "kind": "coming_soon",
@@ -506,6 +488,15 @@
         "RPG",
         "Strateji"
       ]
+    },
+    {
+      "id": "steam-news-73edbdb73",
+      "title": "Sewer Crawler",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5001300/Sewer_Crawler/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001300/5a3122425cc4ae4c329b5d83dcc584ceb24f8aa9/capsule_231x87.jpg?t=1787681427",
+      "categories": []
     },
     {
       "id": "steam-news-52d9326aa",
