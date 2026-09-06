@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-09-06T02:20:12.291Z",
+  "generatedAt": "2026-09-06T07:11:54.296Z",
   "items": [
+    {
+      "id": "steam-news-f8e8489e2",
+      "title": "水浒英雄传：八幕战役",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5088120/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5088120/c1478a4a039512b7dbf17fa4987977cf1fc16ea8/capsule_231x87.jpg?t=1788676833",
+      "categories": [
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-3195ac80a",
+      "title": "Sea of Electronica",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4953010/Sea_of_Electronica/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953010/2808376fee2a1965487ceb91aad5d0ec958a02da/capsule_231x87.jpg?t=1788662976",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-f5c51c74f",
+      "title": "Ultimate Dengon Game : A 3D Telephone Game",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4991530/Ultimate_Dengon_Game__A_3D_Telephone_Game/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4991530/66e8325e07db43f8ac2b0fc48092ad379008d72c/capsule_231x87.jpg?t=1788662526",
+      "categories": [
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-6ba90f4f7",
       "title": "Alkurai",
@@ -250,40 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-1ef407e59",
-      "title": "Gridbound",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4307480/Gridbound/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4307480/a721b2842f09603f5f7e0c024f3f334db74e1769/capsule_231x87.jpg?t=1788624445",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-b715b84e8",
-      "title": "Final Shelter",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4641100/Final_Shelter/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4641100/df039bd81ecd2677f6273965424672efdadf9f5e/capsule_231x87.jpg?t=1788610656",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-46e84bf7e",
-      "title": "HB Inc.",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4942650/HB_Inc/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4942650/845675cc247305e18a41f1dd13301510690651bb/capsule_231x87.jpg?t=1788608938",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-3facff35b",
       "title": "Last Haven: Idle Survival",
       "kind": "coming_soon",
@@ -304,6 +304,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048570/b3eea5806d8ffe88b6db0750dcdc1661b0b9ca72/capsule_231x87.jpg?t=1788625697",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-6091e8ef3",
+      "title": "Leap Tactics",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -328,17 +339,6 @@
       "categories": [
         "Yarış",
         "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-6091e8ef3",
-      "title": "Leap Tactics",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
-      "categories": [
         "Gündelik"
       ]
     },
@@ -441,17 +441,6 @@
       ]
     },
     {
-      "id": "steam-news-5e8f4999d",
-      "title": "Falk",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5099120/Falk/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099120/0e083b3738d287692d521d50ec18ad4a5ba9793a/capsule_231x87.jpg?t=1788553263",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-d017b799f",
       "title": "Roulette Simulator 2027",
       "kind": "coming_soon",
@@ -466,6 +455,26 @@
       ]
     },
     {
+      "id": "steam-news-5e8f4999d",
+      "title": "Falk",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5099120/Falk/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099120/0e083b3738d287692d521d50ec18ad4a5ba9793a/capsule_231x87.jpg?t=1788553263",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-73edbdb73",
+      "title": "Sewer Crawler",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5001300/Sewer_Crawler/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001300/5a3122425cc4ae4c329b5d83dcc584ceb24f8aa9/capsule_231x87.jpg?t=1787681427",
+      "categories": []
+    },
+    {
       "id": "steam-news-a818291d3",
       "title": "The Hunter's Inn",
       "kind": "coming_soon",
@@ -477,15 +486,6 @@
         "RPG",
         "Strateji"
       ]
-    },
-    {
-      "id": "steam-news-73edbdb73",
-      "title": "Sewer Crawler",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5001300/Sewer_Crawler/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001300/5a3122425cc4ae4c329b5d83dcc584ceb24f8aa9/capsule_231x87.jpg?t=1787681427",
-      "categories": []
     },
     {
       "id": "steam-news-52d9326aa",
@@ -504,7 +504,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4992680/Breezy_Blooms/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4992680/2722fda80a59bd3720c95a5bc82fc68cf6a3b61f/capsule_231x87.jpg?t=1788200244",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4992680/2722fda80a59bd3720c95a5bc82fc68cf6a3b61f/capsule_231x87.jpg?t=1788676794",
       "categories": [
         "Macera",
         "Gündelik",
