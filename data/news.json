@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-09-06T17:12:29.782Z",
+  "generatedAt": "2026-09-06T19:13:20.336Z",
   "items": [
+    {
+      "id": "steam-news-f789b7a2a",
+      "title": "Dice Game",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3226380/Dice_Game/?snr=1_7_7_230_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3226380/18b46343bfebfb2f55a07757f80667e2fdd8af42/capsule_231x87.jpg?t=1788720501",
+      "categories": [
+        "Strateji",
+        "Gündelik",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-4d7178c91",
+      "title": "Cells",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4327140/Cells/?snr=1_7_7_230_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4327140/73edda6daf97170521fddf44b27bf121eaa4114e/capsule_231x87.jpg?t=1788720461",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-4926f2ff6",
       "title": "Sync Together",
@@ -137,10 +161,9 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/5088120/_/?snr=1_7_7_230_150_1",
       "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5088120/c1478a4a039512b7dbf17fa4987977cf1fc16ea8/capsule_231x87.jpg?t=1788676833",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5088120/c1478a4a039512b7dbf17fa4987977cf1fc16ea8/capsule_231x87.jpg?t=1788715910",
       "categories": [
-        "Strateji",
-        "Simülasyon"
+        "Strateji"
       ]
     },
     {
@@ -256,30 +279,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4899120/f851eee5eeddfb3dafee99475ef84dea3a0b45d3/capsule_231x87.jpg?t=1788646369",
       "categories": [
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-f440866ac",
-      "title": "Hades Hinderance",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4516620/Hades_Hinderance/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4516620/460ee36d6dfcc8c27e0ddf97652704e874248517/capsule_231x87.jpg?t=1788644429",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-504b538ba",
-      "title": "The Secret of Island of Fear",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4377690/The_Secret_of_Island_of_Fear/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4377690/14aebad2a498f62ef2ca9fbb68785f0bc227b117/capsule_231x87.jpg?t=1788642579",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Strateji"
       ]
     },
     {
@@ -405,6 +404,18 @@
       ]
     },
     {
+      "id": "steam-news-2d7ca6b4d",
+      "title": "Summer of Singing Insects",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5045260/Summer_of_Singing_Insects/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5045260/bfa248066b320d96aaf7731ee886d89a1ffa0873/capsule_231x87.jpg?t=1787122248",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-c21d8d0e0",
       "title": "The Ash Remembers",
       "kind": "coming_soon",
@@ -417,15 +428,14 @@
       ]
     },
     {
-      "id": "steam-news-2d7ca6b4d",
-      "title": "Summer of Singing Insects",
+      "id": "steam-news-5e8f4999d",
+      "title": "Falk",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5045260/Summer_of_Singing_Insects/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5099120/Falk/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5045260/bfa248066b320d96aaf7731ee886d89a1ffa0873/capsule_231x87.jpg?t=1787122248",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099120/0e083b3738d287692d521d50ec18ad4a5ba9793a/capsule_231x87.jpg?t=1788553263",
       "categories": [
-        "Gündelik",
-        "Simülasyon"
+        "RPG"
       ]
     },
     {
@@ -440,17 +450,6 @@
         "Gündelik",
         "Strateji",
         "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-5e8f4999d",
-      "title": "Falk",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5099120/Falk/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099120/0e083b3738d287692d521d50ec18ad4a5ba9793a/capsule_231x87.jpg?t=1788553263",
-      "categories": [
-        "RPG"
       ]
     },
     {
