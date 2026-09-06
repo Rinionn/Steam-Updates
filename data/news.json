@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-09-06T11:39:28.099Z",
+  "generatedAt": "2026-09-06T14:24:14.076Z",
   "items": [
+    {
+      "id": "steam-news-53ce67147",
+      "title": "PuzzleTwist",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4170810/PuzzleTwist/?snr=1_7_7_230_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4170810/294330314c07713efa60ccbccb212094c28fe088/capsule_231x87.jpg?t=1788700755",
+      "categories": [
+        "Gündelik",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-a22ee1b0e",
+      "title": "Don't Stop Mike",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5069550/Dont_Stop_Mike/?snr=1_7_7_230_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5069550/9d2154d6693f0519a763dab780f019bcfa4231c8/capsule_231x87.jpg?t=1788696064",
+      "categories": [
+        "Aksiyon",
+        "Korku"
+      ]
+    },
     {
       "id": "steam-news-9e2bc161f",
       "title": "Give Me More Missile!",
@@ -31,7 +55,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4593150/Closer_than_Allowed_After_the_Bell/?snr=1_7_7_230_150_1",
       "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4593150/74315e4745bd88a4effa3304eef58767daebf6f2/capsule_231x87.jpg?t=1788689540",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4593150/e37db64bcde1fd8cd56d4daeaf7838c1978704c2/capsule_231x87_alt_assets_1.jpg?t=1788703598",
       "categories": [
         "Anime"
       ]
@@ -257,31 +281,6 @@
       ]
     },
     {
-      "id": "steam-news-f6e02eef7",
-      "title": "Cinnabar Nights",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3029380/Cinnabar_Nights/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3029380/358a716eef09c5f8b79af004c63d6ba35b2d4ca2/capsule_231x87.jpg?t=1788629611",
-      "categories": [
-        "RPG",
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-684ea8a0f",
-      "title": "1116",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4573700/1116/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4573700/04ca3a5493a2b621d55de77794478bdc57c07b53/capsule_231x87.jpg?t=1788624637",
-      "categories": [
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-c82fb3e21",
       "title": "Invictvs",
       "kind": "coming_soon",
@@ -290,18 +289,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048570/b3eea5806d8ffe88b6db0750dcdc1661b0b9ca72/capsule_231x87.jpg?t=1788625697",
       "categories": [
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-1417b229f",
-      "title": "Don't Touch Me - Goblin Zombies",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5158270/Dont_Touch_Me__Goblin_Zombies/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5158270/e94363b488b7bd5cd909ee982feb00aafe48254c/capsule_231x87.jpg?t=1788627917",
-      "categories": [
-        "Aksiyon",
-        "RPG"
       ]
     },
     {
@@ -315,6 +302,18 @@
         "Yarış",
         "Aksiyon",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-1417b229f",
+      "title": "Don't Touch Me - Goblin Zombies",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5158270/Dont_Touch_Me__Goblin_Zombies/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5158270/e94363b488b7bd5cd909ee982feb00aafe48254c/capsule_231x87.jpg?t=1788627917",
+      "categories": [
+        "Aksiyon",
+        "RPG"
       ]
     },
     {
@@ -427,17 +426,6 @@
       ]
     },
     {
-      "id": "steam-news-5e8f4999d",
-      "title": "Falk",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5099120/Falk/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099120/0e083b3738d287692d521d50ec18ad4a5ba9793a/capsule_231x87.jpg?t=1788553263",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-d017b799f",
       "title": "Roulette Simulator 2027",
       "kind": "coming_soon",
@@ -452,13 +440,15 @@
       ]
     },
     {
-      "id": "steam-news-73edbdb73",
-      "title": "Sewer Crawler",
+      "id": "steam-news-5e8f4999d",
+      "title": "Falk",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5001300/Sewer_Crawler/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5099120/Falk/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001300/5a3122425cc4ae4c329b5d83dcc584ceb24f8aa9/capsule_231x87.jpg?t=1787681427",
-      "categories": []
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099120/0e083b3738d287692d521d50ec18ad4a5ba9793a/capsule_231x87.jpg?t=1788553263",
+      "categories": [
+        "RPG"
+      ]
     },
     {
       "id": "steam-news-a818291d3",
@@ -472,6 +462,15 @@
         "RPG",
         "Strateji"
       ]
+    },
+    {
+      "id": "steam-news-73edbdb73",
+      "title": "Sewer Crawler",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5001300/Sewer_Crawler/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5001300/5a3122425cc4ae4c329b5d83dcc584ceb24f8aa9/capsule_231x87.jpg?t=1787681427",
+      "categories": []
     },
     {
       "id": "steam-news-52d9326aa",
@@ -549,7 +548,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/5097840/Spellbound__Shelved/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5097840/2762425ac2b7580befe16e49d5215398bcd18a23/capsule_231x87.jpg?t=1787633927",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5097840/2762425ac2b7580befe16e49d5215398bcd18a23/capsule_231x87.jpg?t=1788694821",
       "categories": [
         "Gündelik",
         "Oynaması Ücretsiz"
