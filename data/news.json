@@ -1,6 +1,53 @@
 {
-  "generatedAt": "2026-09-05T23:53:43.147Z",
+  "generatedAt": "2026-09-06T02:20:12.291Z",
   "items": [
+    {
+      "id": "steam-news-6ba90f4f7",
+      "title": "Alkurai",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2084590/Alkurai/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2084590/566047a517a8a47f86b75c6be018095bcdbf9040/capsule_231x87.jpg?t=1788660434",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-80f01caf0",
+      "title": "Legacy of the Ark: Beneath the Broken Sky",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5028230/Legacy_of_the_Ark_Beneath_the_Broken_Sky/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5028230/5bed14e4cd2d2bb1c6754e6cced6dc70c13f1f7d/capsule_231x87.jpg?t=1788658964",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-7808b8b3c",
+      "title": "Restcue",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4889480/Restcue/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4889480/62478a0b1628a283059841d51990d4795ad995e9/capsule_231x87.jpg?t=1788660728",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-26d8186ef",
+      "title": "My Dearest Direst Disaster",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4549300/My_Dearest_Direst_Disaster/?snr=1_7_7_230_150_1",
+      "dateLabel": "5 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4549300/b554cb9889f86a262688f69377966837e8e88fbd/capsule_231x87.jpg?t=1788653167",
+      "categories": [
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-2156aca62",
       "title": "Final Rider",
@@ -237,53 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-5c771d3bf",
-      "title": "Valdivia AllStars",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5103500/Valdivia_AllStars/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5103500/f17ef573485ff14aa990265da1f4cdd408529bcd/capsule_231x87.jpg?t=1788608480",
-      "categories": [
-        "Spor"
-      ]
-    },
-    {
-      "id": "steam-news-538b6e8c5",
-      "title": "RAKHEM",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5134750/RAKHEM/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5134750/9117a2ccf75ad56ff110b9605dccfd09a7318b8f/capsule_231x87.jpg?t=1788606171",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-92b2289be",
-      "title": "Doors Closed",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3426960/Doors_Closed/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3426960/cc198ccf712c1639535f434794d1b8d71c1f0e8e/capsule_231x87.jpg?t=1788604419",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-c50fb0412",
-      "title": "Exspelled",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5064270/Exspelled/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5064270/fe78e742a24c96a65882c590ead47db4c79b1a43/capsule_231x87.jpg?t=1788600433",
-      "categories": [
-        "Aksiyon",
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-3facff35b",
       "title": "Last Haven: Idle Survival",
       "kind": "coming_soon",
@@ -293,17 +293,6 @@
       "categories": [
         "Macera",
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-6fe269788",
-      "title": "My Dearest Direst Disaster",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4549300/My_Dearest_Direst_Disaster/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4549300/b554cb9889f86a262688f69377966837e8e88fbd/capsule_231x87.jpg?t=1788484665",
-      "categories": [
-        "Macera"
       ]
     },
     {
@@ -330,17 +319,6 @@
       ]
     },
     {
-      "id": "steam-news-6091e8ef3",
-      "title": "Leap Tactics",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-9e458a22d",
       "title": "Speed Weaver",
       "kind": "coming_soon",
@@ -350,6 +328,17 @@
       "categories": [
         "Yarış",
         "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-6091e8ef3",
+      "title": "Leap Tactics",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
+      "categories": [
         "Gündelik"
       ]
     },
@@ -566,6 +555,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4134650/5be194a6a843e037bdb2cae0577cfc70668d3b14/capsule_231x87.jpg?t=1788075361",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-41d78c71c",
+      "title": "Spellbound & Shelved",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5097840/Spellbound__Shelved/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5097840/2762425ac2b7580befe16e49d5215398bcd18a23/capsule_231x87.jpg?t=1787633927",
+      "categories": [
+        "Gündelik",
+        "Oynaması Ücretsiz"
       ]
     },
     {
