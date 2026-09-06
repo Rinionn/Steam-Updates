@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-09-06T07:11:54.296Z",
+  "generatedAt": "2026-09-06T11:39:28.099Z",
   "items": [
+    {
+      "id": "steam-news-9e2bc161f",
+      "title": "Give Me More Missile!",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4981080/Give_Me_More_Missile/?snr=1_7_7_230_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4981080/025dadb3bcdc04450c7890f7e3577d79a2422cb8/capsule_231x87.jpg?t=1788694652",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-099521ff9",
+      "title": "Load Factor",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5078600/Load_Factor/?snr=1_7_7_230_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5078600/b942b097fc5e312d114c4f0d1ddf5562e7cd47ac/capsule_231x87.jpg?t=1788689833",
+      "categories": [
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-85bc5ea50",
+      "title": "Closer than Allowed: After the Bell",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4593150/Closer_than_Allowed_After_the_Bell/?snr=1_7_7_230_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4593150/74315e4745bd88a4effa3304eef58767daebf6f2/capsule_231x87.jpg?t=1788689540",
+      "categories": [
+        "Anime"
+      ]
+    },
     {
       "id": "steam-news-f8e8489e2",
       "title": "水浒英雄传：八幕战役",
@@ -247,55 +282,6 @@
       ]
     },
     {
-      "id": "steam-news-40fb11b9f",
-      "title": "LOAGRITE: The Flightless Bird",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5103290/LOAGRITE_The_Flightless_Bird/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5103290/ddf0155dd9e16f497ef06788d18fe4be8cdb8189/capsule_231x87.jpg?t=1788623741",
-      "categories": [
-        "Macera",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-28a3c45df",
-      "title": "No World: Store Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5122920/No_World_Store_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5122920/8cff2419751a5d1eea8ad604c1cbd95d02b3104e/capsule_231x87.jpg?t=1788623052",
-      "categories": [
-        "Simülasyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-4dfb1fae1",
-      "title": "SHOSHAx2 (쇼샤쇼샤)",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4813120/SHOSHAx2/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4813120/759193390a1c6c88193417f6a057a1a17f81b5d9/capsule_231x87.jpg?t=1788622120",
-      "categories": [
-        "Macera",
-        "Simülasyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-3facff35b",
-      "title": "Last Haven: Idle Survival",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4916790/Last_Haven_Idle_Survival/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4916790/1051a2d70b8e951201d42a0e074ef5e823ade70a/capsule_231x87.jpg?t=1787598345",
-      "categories": [
-        "Macera",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-c82fb3e21",
       "title": "Invictvs",
       "kind": "coming_soon",
@@ -304,17 +290,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5048570/b3eea5806d8ffe88b6db0750dcdc1661b0b9ca72/capsule_231x87.jpg?t=1788625697",
       "categories": [
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-6091e8ef3",
-      "title": "Leap Tactics",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "6 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
@@ -339,6 +314,17 @@
       "categories": [
         "Yarış",
         "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-6091e8ef3",
+      "title": "Leap Tactics",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3549150/Leap_Tactics/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3549150/7c8020b1441f52b19280e2e10e00a24940f53c21/capsule_231x87.jpg?t=1788094848",
+      "categories": [
         "Gündelik"
       ]
     },
@@ -441,6 +427,17 @@
       ]
     },
     {
+      "id": "steam-news-5e8f4999d",
+      "title": "Falk",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5099120/Falk/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099120/0e083b3738d287692d521d50ec18ad4a5ba9793a/capsule_231x87.jpg?t=1788553263",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
       "id": "steam-news-d017b799f",
       "title": "Roulette Simulator 2027",
       "kind": "coming_soon",
@@ -452,17 +449,6 @@
         "Gündelik",
         "Strateji",
         "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-5e8f4999d",
-      "title": "Falk",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5099120/Falk/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099120/0e083b3738d287692d521d50ec18ad4a5ba9793a/capsule_231x87.jpg?t=1788553263",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -552,7 +538,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4134650/Bones_and_Coins/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4134650/5be194a6a843e037bdb2cae0577cfc70668d3b14/capsule_231x87.jpg?t=1788075361",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4134650/5be194a6a843e037bdb2cae0577cfc70668d3b14/capsule_231x87.jpg?t=1788682071",
       "categories": [
         "Strateji"
       ]
@@ -567,6 +553,17 @@
       "categories": [
         "Gündelik",
         "Oynaması Ücretsiz"
+      ]
+    },
+    {
+      "id": "steam-news-f7034464b",
+      "title": "The Ayna",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4429670/The_Ayna/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4429670/59cf071d8bf4913be96279c304c8544fba5d58c7/capsule_231x87.jpg?t=1788099099",
+      "categories": [
+        "Simülasyon"
       ]
     },
     {
