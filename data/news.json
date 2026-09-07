@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-09-06T22:56:58.418Z",
+  "generatedAt": "2026-09-07T00:51:46.074Z",
   "items": [
+    {
+      "id": "steam-news-3ff527e55",
+      "title": "Idle Clacker",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5103890/Idle_Clacker/?snr=1_7_7_230_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5103890/e97adb147a85d12868fc7a43e695527cc8c0aa2f/capsule_231x87.jpg?t=1788740359",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-feba96bf8",
+      "title": "Solve The Puzzle",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5059780/Solve_The_Puzzle/?snr=1_7_7_230_150_1",
+      "dateLabel": "6 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5059780/91d839b2dd28b0e5197af96f56529ab8bfc9370f/capsule_231x87.jpg?t=1788737997",
+      "categories": [
+        "Gündelik",
+        "Strateji",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-2ecc8a300",
       "title": "Stella",
@@ -261,28 +286,6 @@
       ]
     },
     {
-      "id": "steam-news-05a96cf09",
-      "title": "The Quiet Below",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4916670/The_Quiet_Below/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4916670/184cbce34054780b401a4d3d8c00c331293ec550/capsule_231x87.jpg?t=1788648570",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-95e152a10",
-      "title": "Normile",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4627340/Normile/?snr=1_7_7_230_150_1",
-      "dateLabel": "5 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4627340/9b47a929cbaf1e41ab9932e61d1e8385c39c4032/capsule_231x87.jpg?t=1788646809",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-2d7ca6b4d",
       "title": "Summer of Singing Insects",
       "kind": "coming_soon",
@@ -540,18 +543,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-b4afd3456",
-      "title": "Tombstone Showdown",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5131590/Tombstone_Showdown/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5131590/bdd928a833a2041cd745aef2d3c6eb9e62109d7f/capsule_231x87.jpg?t=1788522430",
-      "categories": [
-        "Gündelik",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-e80f33680",
       "title": "Doomsayer",
       "kind": "coming_soon",
@@ -561,6 +552,18 @@
       "categories": [
         "Strateji",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-b4afd3456",
+      "title": "Tombstone Showdown",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5131590/Tombstone_Showdown/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5131590/bdd928a833a2041cd745aef2d3c6eb9e62109d7f/capsule_231x87.jpg?t=1788522430",
+      "categories": [
+        "Gündelik",
+        "Çok Oyunculu"
       ]
     },
     {
