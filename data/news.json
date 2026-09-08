@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-09-07T22:23:34.690Z",
+  "generatedAt": "2026-09-08T00:34:32.422Z",
   "items": [
+    {
+      "id": "steam-news-287a4fc9b",
+      "title": "Jumpy vs. Chompy",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3238910/Jumpy_vs_Chompy/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3238910/9406f24de1e96b519773f51dbc1060038b5a7c42/capsule_231x87.jpg?t=1788827043",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-5b13f7ba4",
+      "title": "Wreckwake Endless Sea",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4819240/Wreckwake_Endless_Sea/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4819240/d5d53c63f865051ad11145aa4e1ee7744d103253/capsule_231x87.jpg?t=1788825586",
+      "categories": [
+        "Aksiyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-b560ded3f",
+      "title": "OminouSushi",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5047430/OminouSushi/?snr=1_7_7_230_150_1",
+      "dateLabel": "7 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5047430/99fa94da0713733d3e9ab4bdda0b76c6066ae13a/capsule_231x87.jpg?t=1788821243",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-579b03c83",
       "title": "No Sheep Left Behind",
@@ -243,43 +277,6 @@
       ]
     },
     {
-      "id": "steam-news-573aa4b49",
-      "title": "Veterum",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1864690/Veterum/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1864690/2755fd36ec9bda49161638ea765f5b785c13e20a/capsule_231x87.jpg?t=1788796867",
-      "categories": [
-        "Strateji",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-99943b6fe",
-      "title": "THE WELL IS NOT EMPTY",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4505150/THE_WELL_IS_NOT_EMPTY/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4505150/1d2de7f4d9858e4c25565f39b5396931170fd14e/capsule_231x87.jpg?t=1788799293",
-      "categories": [
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-b7f66db06",
-      "title": "To Raise a King",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4932290/To_Raise_a_King/?snr=1_7_7_230_150_1",
-      "dateLabel": "7 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4932290/71fd1f8aa17d81c97d0401f3ec787c4bb0193891/capsule_231x87.jpg?t=1788794198",
-      "categories": [
-        "Gündelik",
-        "RPG",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-956bf0006",
       "title": "Violet Stardust",
       "kind": "coming_soon",
@@ -375,18 +372,6 @@
       ]
     },
     {
-      "id": "steam-news-962696cc9",
-      "title": "Dicewayfarer",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3609280/Dicewayfarer/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "8 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3609280/b611b3889ed6ec62b0efdb2ed04d3b29e32e6d3c/capsule_231x87.jpg?t=1788526515",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-6a24c07ee",
       "title": "Trouble Thief",
       "kind": "coming_soon",
@@ -419,6 +404,18 @@
       "categories": [
         "Simülasyon",
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-962696cc9",
+      "title": "Dicewayfarer",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3609280/Dicewayfarer/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "8 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3609280/b611b3889ed6ec62b0efdb2ed04d3b29e32e6d3c/capsule_231x87.jpg?t=1788526515",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu"
       ]
     },
     {
@@ -495,23 +492,43 @@
       ]
     },
     {
+      "id": "steam-news-74286375e",
+      "title": "Might & Poison Mushroom",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4991340/Might__Poison_Mushroom/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "8 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4991340/e9e3de07df82e08ea01820bcb900d400c5c34d3f/capsule_231x87.jpg?t=1788330384",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-9bc4efad9",
+      "title": "SPRAWL zero",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3748520/SPRAWL_zero/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "8 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3748520/e59189f5b1c31016bfbd629ab94034cbee7f13b9/capsule_231x87.jpg?t=1787648848",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-b5184b877",
+      "title": "Restitutor: Empire Restored",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4431750/Restitutor_Empire_Restored/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "8 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4431750/74973b12f19d73ee5706413e39de28a1d4260960/capsule_231x87.jpg?t=1788815212",
+      "categories": []
+    },
+    {
       "id": "steam-news-a8cbc8373",
       "title": "Planet Nine",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4292170/Planet_Nine/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "8 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4292170/17d3cdc8f07d4935b1510a60633794707016d3d3/capsule_231x87.jpg?t=1788723761",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-090ac4aa8",
-      "title": "Cat Me If You Can",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3170490/Cat_Me_If_You_Can/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "8 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3170490/1feaefb56bf7192a319f827e2a63ba47204ecb0f/capsule_231x87.jpg?t=1788790471",
       "categories": [
         "Gündelik"
       ]
@@ -530,34 +547,14 @@
       ]
     },
     {
-      "id": "steam-news-74286375e",
-      "title": "Might & Poison Mushroom",
+      "id": "steam-news-b8b4425b0",
+      "title": "Bus Simulator 27",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4991340/Might__Poison_Mushroom/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/2397320/Bus_Simulator_27/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "8 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4991340/e9e3de07df82e08ea01820bcb900d400c5c34d3f/capsule_231x87.jpg?t=1788330384",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2397320/de365801aa823ac4bad83a7abc4974e7a7f379c7/capsule_231x87.jpg?t=1788506919",
       "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-b5184b877",
-      "title": "Restitutor: Empire Restored",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4431750/Restitutor_Empire_Restored/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "8 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4431750/74973b12f19d73ee5706413e39de28a1d4260960/capsule_231x87.jpg?t=1788815212",
-      "categories": []
-    },
-    {
-      "id": "steam-news-9bc4efad9",
-      "title": "SPRAWL zero",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3748520/SPRAWL_zero/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "8 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3748520/e59189f5b1c31016bfbd629ab94034cbee7f13b9/capsule_231x87.jpg?t=1787648848",
-      "categories": [
-        "Aksiyon"
+        "Simülasyon"
       ]
     },
     {
