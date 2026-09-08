@@ -1,35 +1,7 @@
 {
-  "generatedAt": "2026-09-08T13:53:15.698Z",
+  "generatedAt": "2026-09-08T17:41:11.955Z",
   "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
   "events": [
-    {
-      "id": "pve-survival-crafting-fest-8bb6de2ec",
-      "name": "PvE Survival Crafting Fest",
-      "kind": "themed_fest",
-      "startAt": "2026-08-31T17:00:00Z",
-      "endAt": "2026-09-07T17:00:00Z",
-      "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
-      "registrationUrl": "https://partner.steamgames.com/optin/sale/pve_survival_crafting_2026",
-      "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/pve_survival_crafting_2026",
-      "description": "Games that include survival, crafting, and a primary gameplay loop centered on PvE.",
-      "descriptionTr": "Hayatta kalma, üretim ve PvE odaklı ana oynanış döngüsü içeren oyunlar.",
-      "matchTags": [
-        "Survival",
-        "Crafting",
-        "Open World Survival Craft"
-      ],
-      "deadlines": [
-        {
-          "kind": "milestone",
-          "label": "August 31 @ 10:00am PDT - The event starts. This is the deadline for entering a discount, and opting out if you no longer want to participate.",
-          "dueAt": "2026-08-31T17:00:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/pve_survival_crafting_2026",
-          "id": "pve-survival-crafting-fest-8bb6de2ec-306900b29"
-        }
-      ],
-      "lastSeenAt": "2026-09-08T13:53:04.329Z",
-      "firstSeenAt": "2026-07-30T11:59:50.366Z"
-    },
     {
       "id": "programming-fest-d92cade24",
       "name": "Programming Fest",
