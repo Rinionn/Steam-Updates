@@ -311,5 +311,38 @@
     "eventId": "pve-survival-crafting-fest-8bb6de2ec",
     "eventName": "PvE Survival Crafting Fest",
     "kind": "removed"
+  },
+  {
+    "detectedAt": "2026-09-09T22:29:50.003Z",
+    "eventId": "next-fest-october-2026-3062e7ac9",
+    "eventName": "Next Fest: October 2026",
+    "kind": "deadline_changed",
+    "field": "deadlines.next-fest-october-2026-3062e7ac9-44bd3cce6.dueAt",
+    "before": "2026-10-09T06:59:00Z",
+    "after": "2026-10-02T06:59:00Z"
+  },
+  {
+    "detectedAt": "2026-09-09T22:29:50.003Z",
+    "eventId": "autumn-sale-f825a9dd8",
+    "eventName": "Autumn Sale",
+    "kind": "removed"
+  },
+  {
+    "detectedAt": "2026-09-09T22:29:50.003Z",
+    "eventId": "winter-sale-942a0c36e",
+    "eventName": "Winter Sale",
+    "kind": "removed"
+  },
+  {
+    "detectedAt": "2026-09-09T22:29:50.003Z",
+    "eventId": "spring-sale-23917885f",
+    "eventName": "Spring Sale",
+    "kind": "removed"
+  },
+  {
+    "detectedAt": "2026-09-09T22:29:50.003Z",
+    "eventId": "summer-sale-c5f18f5ae",
+    "eventName": "Summer Sale",
+    "kind": "removed"
   }
 ]

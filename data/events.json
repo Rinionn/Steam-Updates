@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T14:07:18.979Z",
+  "generatedAt": "2026-09-09T22:29:50.003Z",
   "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
   "events": [
     {
@@ -26,7 +26,7 @@
           "id": "programming-fest-d92cade24-053ba1c4b"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -53,20 +53,8 @@
           "id": "party-based-rpg-fest-55771f151-00fae689e"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
-    },
-    {
-      "id": "autumn-sale-f825a9dd8",
-      "name": "Autumn Sale",
-      "kind": "seasonal_sale",
-      "startAt": "2026-10-01T17:00:00Z",
-      "endAt": "2026-10-08T17:00:00Z",
-      "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
-      "matchTags": [],
-      "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-31T18:08:35.396Z"
     },
     {
       "id": "cooking-fest-424f50fb9",
@@ -91,7 +79,7 @@
           "id": "cooking-fest-424f50fb9-42610bd87"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -134,18 +122,18 @@
           "id": "next-fest-october-2026-3062e7ac9-71b75f82e"
         },
         {
+          "kind": "marketing",
+          "label": "October 1 - This is the deadline to opt OUT of trailer permissions if you have previously opted in, to ensure your trailer will NOT be included in official marketing materials.",
+          "dueAt": "2026-10-02T06:59:00Z",
+          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
+          "id": "next-fest-october-2026-3062e7ac9-44bd3cce6"
+        },
+        {
           "kind": "review",
           "label": "October 8 - Press preview starts at 10am PDT. All demos that have opted in to be available for press preview will be included.",
           "dueAt": "2026-10-08T17:00:00Z",
           "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
           "id": "next-fest-october-2026-3062e7ac9-de43adb98"
-        },
-        {
-          "kind": "marketing",
-          "label": "October 8 - This is the deadline to opt OUT of trailer permissions if you have previously opted in, to ensure your trailer will NOT be included in official marketing materials.",
-          "dueAt": "2026-10-09T06:59:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
-          "id": "next-fest-october-2026-3062e7ac9-44bd3cce6"
         },
         {
           "kind": "milestone",
@@ -155,7 +143,7 @@
           "id": "next-fest-october-2026-3062e7ac9-ab20d5c9d"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -181,7 +169,7 @@
           "id": "steam-scream-v-4b0a8f227-84f4ccae8"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -208,20 +196,8 @@
           "id": "auto-battler-rpg-fest-92a2e84b8-81629364c"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
-    },
-    {
-      "id": "winter-sale-942a0c36e",
-      "name": "Winter Sale",
-      "kind": "seasonal_sale",
-      "startAt": "2026-12-17T18:00:00Z",
-      "endAt": "2027-01-04T18:00:00Z",
-      "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
-      "matchTags": [],
-      "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-31T18:08:35.396Z"
     },
     {
       "id": "desktop-companion-fest-5bc08adee",
@@ -246,7 +222,7 @@
           "id": "desktop-companion-fest-5bc08adee-e7c73f27c"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -273,7 +249,7 @@
           "id": "shop-keeper-fest-0d64f4666-aca2fb8f0"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -299,7 +275,7 @@
           "id": "sheep-fest-6ec302116-d71dee914"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -326,7 +302,7 @@
           "id": "couch-co-op-fest-8b489c8ca-1dd6ff48a"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -365,20 +341,8 @@
           "id": "rhythm-fest-b3b4ca682-1f1011bc8"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
-    },
-    {
-      "id": "spring-sale-23917885f",
-      "name": "Spring Sale",
-      "kind": "seasonal_sale",
-      "startAt": "2027-03-18T17:00:00Z",
-      "endAt": "2027-03-25T17:00:00Z",
-      "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
-      "matchTags": [],
-      "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-31T18:08:35.396Z"
     },
     {
       "id": "dinos-vs-robots-fest-e4c058c85",
@@ -404,7 +368,7 @@
           "id": "dinos-vs-robots-fest-e4c058c85-525528f74"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -430,7 +394,7 @@
           "id": "racing-fest-9bb5cb332-bc3e3b041"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -456,7 +420,7 @@
           "id": "witch-fest-34647039a-ffeab7bf8"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -482,7 +446,7 @@
           "id": "fighting-fest-997e98a30-23bea36d6"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -509,7 +473,7 @@
           "id": "real-time-strategy-fest-96b41f8e6-2207761ac"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -535,7 +499,7 @@
           "id": "mountaineering-fest-e94606dd4-6826d72fe"
         }
       ],
-      "lastSeenAt": "2026-09-09T14:07:08.472Z",
+      "lastSeenAt": "2026-09-09T22:29:38.175Z",
       "firstSeenAt": "2026-07-30T11:59:50.366Z"
     },
     {
@@ -546,18 +510,6 @@
       "endAt": "2027-06-21T17:00:00Z",
       "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "registrationUrl": "https://partner.steamgames.com/optin/sale/nextfest_june_2027",
-      "matchTags": [],
-      "deadlines": [],
-      "firstSeenAt": "2026-07-30T11:59:50.366Z",
-      "lastSeenAt": "2026-07-31T18:08:35.396Z"
-    },
-    {
-      "id": "summer-sale-c5f18f5ae",
-      "name": "Summer Sale",
-      "kind": "seasonal_sale",
-      "startAt": "2027-06-24T17:00:00Z",
-      "endAt": "2027-07-08T17:00:00Z",
-      "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
       "matchTags": [],
       "deadlines": [],
       "firstSeenAt": "2026-07-30T11:59:50.366Z",
