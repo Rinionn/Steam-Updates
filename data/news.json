@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-09-09T22:29:50.510Z",
+  "generatedAt": "2026-09-10T00:30:54.262Z",
   "items": [
+    {
+      "id": "steam-news-8c9a8e7c2",
+      "title": "Chicken Miner",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4622310/Chicken_Miner/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4622310/f1acf0aa1a05937e7f37f22624f41676c70ca2e0/capsule_231x87.jpg?t=1788999336",
+      "categories": [
+        "Gündelik",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-7ddc5e563",
+      "title": "LED HEARTS",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5034070/LED_HEARTS/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5034070/20b18f1e37f1e0f0ebcc0fe9069b922b06d31608/capsule_231x87.jpg?t=1788996939",
+      "categories": [
+        "Gündelik",
+        "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-a12c0f48d",
+      "title": "La eclissi",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5116560/La_eclissi/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5116560/b008ed39fdf4828108b06768ee32970a3e3fa538/capsule_231x87.jpg?t=1788996164",
+      "categories": [
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-d7caf1ae2",
       "title": "Artillery Miner",
@@ -90,7 +125,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/5134300/Cubeidle__Incremental_Cube_Breaker/?snr=1_7_7_230_150_1",
       "dateLabel": "9 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5134300/9a5dafa5f6adcdb7ee56d2c7f63304e3f5323aa8/capsule_231x87.jpg?t=1788986275",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5134300/9a5dafa5f6adcdb7ee56d2c7f63304e3f5323aa8/capsule_231x87.jpg?t=1788998816",
       "categories": [
         "Simülasyon"
       ]
@@ -135,7 +170,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3543070/Cordels__Spells/?snr=1_7_7_230_150_1",
       "dateLabel": "9 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3543070/82be7f1feb6ddd6d1487ff61090ce3d0418dccda/capsule_231x87.jpg?t=1788980871",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3543070/82be7f1feb6ddd6d1487ff61090ce3d0418dccda/capsule_231x87.jpg?t=1788999135",
       "categories": []
     },
     {
@@ -245,50 +280,15 @@
       ]
     },
     {
-      "id": "steam-news-f4c8ded11",
-      "title": "Folklands",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2282890/Folklands/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2282890/8b7adec1e11b0c6ccaa112168ce5ed6e9ae059ba/capsule_231x87_alt_assets_2.jpg?t=1788973537",
-      "categories": [
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-e3196c592",
-      "title": "Elemental Witches",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4161420/Elemental_Witches/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4161420/8017e55302c5f5e72701305660488a7b117c29c0/capsule_231x87.jpg?t=1788973724",
-      "categories": [
-        "Strateji",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-81df46519",
-      "title": "Alembic",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4933990/Alembic/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4933990/88f9899d51d6cea1376ad3af6c6608f014410a6f/capsule_231x87.jpg?t=1788973220",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-6c471fea6",
-      "title": "Big Breakfast 2",
+      "id": "steam-news-0439fa25f",
+      "title": "Vacation Adventures: Park Ranger Mega Bundle 1",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4839090/Big_Breakfast_2/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5052440/Vacation_Adventures_Park_Ranger_Mega_Bundle_1/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4839090/f12f90217fcaa055227cb25a3bb6c220671902e9/capsule_231x87.jpg?t=1782288808",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5052440/c735d1971fbf618ad2709a1d7a27bb436e274b1a/capsule_231x87.jpg?t=1788425883",
       "categories": [
-        "RPG",
-        "Macera"
+        "Macera",
+        "Gündelik"
       ]
     },
     {
@@ -301,6 +301,18 @@
       "categories": [
         "Yarış",
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-6c471fea6",
+      "title": "Big Breakfast 2",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4839090/Big_Breakfast_2/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4839090/f12f90217fcaa055227cb25a3bb6c220671902e9/capsule_231x87.jpg?t=1782288808",
+      "categories": [
+        "RPG",
+        "Macera"
       ]
     },
     {
@@ -319,18 +331,6 @@
       ]
     },
     {
-      "id": "steam-news-0439fa25f",
-      "title": "Vacation Adventures: Park Ranger Mega Bundle 1",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5052440/Vacation_Adventures_Park_Ranger_Mega_Bundle_1/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5052440/c735d1971fbf618ad2709a1d7a27bb436e274b1a/capsule_231x87.jpg?t=1788425883",
-      "categories": [
-        "Macera",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-89e4560ac",
       "title": "13 Playing Cards Of Demon",
       "kind": "coming_soon",
@@ -338,6 +338,18 @@
       "dateLabel": "10 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2503990/8d196792bd7f26ca77d5a0107df9206a917b9f79/capsule_231x87.jpg?t=1788895810",
       "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-59382d64f",
+      "title": "Plan B: Colombia Edition",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3968220/Plan_B_Colombia_Edition/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3968220/e5d24fd48f88974bed37afdfe88f36d8923e682d/capsule_231x87.jpg?t=1770849095",
+      "categories": [
+        "Simülasyon",
         "Strateji"
       ]
     },
@@ -354,18 +366,6 @@
       ]
     },
     {
-      "id": "steam-news-59382d64f",
-      "title": "Plan B: Colombia Edition",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3968220/Plan_B_Colombia_Edition/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3968220/e5d24fd48f88974bed37afdfe88f36d8923e682d/capsule_231x87.jpg?t=1770849095",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-6bed20dfa",
       "title": "Hazard Pay",
       "kind": "coming_soon",
@@ -374,17 +374,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2692620/cb2be18097157da0501a2303129c97d76877d70c/capsule_231x87.jpg?t=1788873699",
       "categories": [
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-f65e91572",
-      "title": "A Night at Moka Efti: A Babylon Berlin Story",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3975470/A_Night_at_Moka_Efti_A_Babylon_Berlin_Story/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3975470/df5d8affc404ba88302a00000d765cd28f13f927/capsule_231x87.jpg?t=1788172320",
-      "categories": [
-        "Macera"
       ]
     },
     {
@@ -398,6 +387,17 @@
         "Gündelik",
         "Macera",
         "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-f65e91572",
+      "title": "A Night at Moka Efti: A Babylon Berlin Story",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3975470/A_Night_at_Moka_Efti_A_Babylon_Berlin_Story/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3975470/df5d8affc404ba88302a00000d765cd28f13f927/capsule_231x87.jpg?t=1788172320",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -435,17 +435,6 @@
       ]
     },
     {
-      "id": "steam-news-6d3e3e256",
-      "title": "BrokenLore: DON’T LIE",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3886200/BrokenLore_DONT_LIE/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3886200/be22fb2b62c5d7e7ccf11c014d632c6b27d6a5d0/capsule_231x87.jpg?t=1788957690",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-b7881d650",
       "title": "Crack Smoking Simulator",
       "kind": "coming_soon",
@@ -456,6 +445,17 @@
         "Simülasyon",
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-6d3e3e256",
+      "title": "BrokenLore: DON’T LIE",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3886200/BrokenLore_DONT_LIE/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3886200/be22fb2b62c5d7e7ccf11c014d632c6b27d6a5d0/capsule_231x87.jpg?t=1788957690",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -478,19 +478,6 @@
       "dateLabel": "10 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4932770/ced9207fa0d2f22c079606dbe9e6ef4843a325ef/capsule_231x87.jpg?t=1788236189",
       "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-c7cda7f64",
-      "title": "Titan's Shadow Killers",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3877700/Titans_Shadow_Killers/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "10 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3877700/1fbb9d9b884776b913f18bbf7dae788873e08f1d/capsule_231x87.jpg?t=1788322367",
-      "categories": [
-        "Bağımsız",
         "Aksiyon",
         "Macera"
       ]
@@ -519,6 +506,19 @@
       ]
     },
     {
+      "id": "steam-news-c7cda7f64",
+      "title": "Titan's Shadow Killers",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3877700/Titans_Shadow_Killers/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "10 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3877700/1fbb9d9b884776b913f18bbf7dae788873e08f1d/capsule_231x87.jpg?t=1788322367",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon",
+        "Macera"
+      ]
+    },
+    {
       "id": "steam-news-28e68043f",
       "title": "Dumb Ways to Build",
       "kind": "coming_soon",
@@ -542,14 +542,15 @@
       "categories": []
     },
     {
-      "id": "steam-news-4f8f2e06a",
-      "title": "La eclissi",
+      "id": "steam-news-88705445d",
+      "title": "Quiet Hour",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5116560/La_eclissi/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4697110/Quiet_Hour/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "10 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5116560/b008ed39fdf4828108b06768ee32970a3e3fa538/capsule_231x87.jpg?t=1787881646",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4697110/5b0f62d1b01ef01fd84b126f6a51aabc01011fe9/capsule_231x87.jpg?t=1788400103",
       "categories": [
-        "Macera"
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
