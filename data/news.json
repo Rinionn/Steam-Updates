@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-09-10T21:59:58.029Z",
+  "generatedAt": "2026-09-11T00:00:08.578Z",
   "items": [
+    {
+      "id": "steam-news-358173fa1",
+      "title": "Electronics Depot Simulator",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5089560/Electronics_Depot_Simulator/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5089560/f5e357245b22de2da355e2ef16059eeb2d4651f2/capsule_231x87.jpg?t=1789082320",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-a1e593a70",
+      "title": "Sudoku Solace",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4808010/Sudoku_Solace/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4808010/88beee4e45f5195417a580bd23376649d5ad99fd/capsule_231x87.jpg?t=1789080728",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-a86fd616b",
       "title": "Thumper Chess",
@@ -128,7 +151,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4284670/Would_You_Love_Me_If_I_Was_a_Snake/?snr=1_7_7_230_150_1",
       "dateLabel": "10 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4284670/41f8bc70df50dbcde655a37357ba6ddcbf9b979f/capsule_231x87.jpg?t=1789068322",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4284670/41f8bc70df50dbcde655a37357ba6ddcbf9b979f/capsule_231x87.jpg?t=1789081423",
       "categories": [
         "Strateji",
         "Tek Oyunculu",
@@ -253,26 +276,15 @@
       ]
     },
     {
-      "id": "steam-news-fe530a87d",
-      "title": "SIX SECOND SHADOW",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5009600/SIX_SECOND_SHADOW/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5009600/faf1c4f9dcfe0d6f4625951ddf6f09d3a490f69d/capsule_231x87.jpg?t=1789060757",
+      "id": "steam-news-1c3e40a49",
+      "title": "The Ascendant Sect",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5057560/The_Ascendant_Sect/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5057560/5c48048def493bce76025acf94e42cca4524b410/capsule_231x87.jpg?t=1787644862",
       "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-9e70f7613",
-      "title": "I Need to Fix My Dream Car (But I Work at a Junkyard)",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3889540/I_Need_to_Fix_My_Dream_Car_But_I_Work_at_a_Junkyard/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3889540/01fa7f457b0149ece155b5523cf84ded02e8df03/capsule_231x87.jpg?t=1789062313",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
+        "Strateji",
+        "RPG"
       ]
     },
     {
@@ -285,18 +297,6 @@
       "categories": [
         "Macera",
         "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-1c3e40a49",
-      "title": "The Ascendant Sect",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5057560/The_Ascendant_Sect/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5057560/5c48048def493bce76025acf94e42cca4524b410/capsule_231x87.jpg?t=1787644862",
-      "categories": [
-        "Strateji",
-        "RPG"
       ]
     },
     {
@@ -323,18 +323,6 @@
       ]
     },
     {
-      "id": "steam-news-62930606a",
-      "title": "Escape From Lab",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4951670/Escape_From_Lab/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951670/d00bd4dde21ab453506951c3bc76f4b452541683/capsule_231x87.jpg?t=1788759859",
-      "categories": [
-        "Macera",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-2748a3ad6",
       "title": "DIG Raiders: Anomaly Extraction",
       "kind": "coming_soon",
@@ -344,6 +332,18 @@
       "categories": [
         "Aksiyon",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-62930606a",
+      "title": "Escape From Lab",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4951670/Escape_From_Lab/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951670/d00bd4dde21ab453506951c3bc76f4b452541683/capsule_231x87.jpg?t=1788759859",
+      "categories": [
+        "Macera",
+        "Strateji"
       ]
     },
     {
@@ -384,18 +384,6 @@
       ]
     },
     {
-      "id": "steam-news-f21b4c911",
-      "title": "Clipped Reality",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5023030/Clipped_Reality/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5023030/d9c70994adde7e123e8b6844ab15c179c97e2bc0/capsule_231x87.jpg?t=1788664606",
-      "categories": [
-        "Strateji",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-0d6394a7a",
       "title": "Good Job - Prologue",
       "kind": "coming_soon",
@@ -409,13 +397,14 @@
       ]
     },
     {
-      "id": "steam-news-3b448941a",
-      "title": "La gran aventura de David Santiso",
+      "id": "steam-news-f21b4c911",
+      "title": "Clipped Reality",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4927340/La_gran_aventura_de_David_Santiso/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5023030/Clipped_Reality/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927340/9bff45f13fa2f2768eb5650c2a34a44888524cfd/capsule_231x87.jpg?t=1788308492",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5023030/d9c70994adde7e123e8b6844ab15c179c97e2bc0/capsule_231x87.jpg?t=1788664606",
       "categories": [
+        "Strateji",
         "Macera"
       ]
     },
@@ -429,6 +418,17 @@
       "categories": [
         "Strateji",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-3b448941a",
+      "title": "La gran aventura de David Santiso",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4927340/La_gran_aventura_de_David_Santiso/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4927340/9bff45f13fa2f2768eb5650c2a34a44888524cfd/capsule_231x87.jpg?t=1788308492",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -456,18 +456,6 @@
       ]
     },
     {
-      "id": "steam-news-9c412ec38",
-      "title": "Your Story: Games with Death",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3257780/Your_Story_Games_with_Death/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3257780/2c23b77059bef48358cbe6bedf7e21d64dcd44c6/capsule_231x87.jpg?t=1785217434",
-      "categories": [
-        "Gündelik",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-09ea25b83",
       "title": "Post Office: Tidy Up!",
       "kind": "coming_soon",
@@ -477,6 +465,18 @@
       "categories": [
         "Gündelik",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-9c412ec38",
+      "title": "Your Story: Games with Death",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3257780/Your_Story_Games_with_Death/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3257780/2c23b77059bef48358cbe6bedf7e21d64dcd44c6/capsule_231x87.jpg?t=1785217434",
+      "categories": [
+        "Gündelik",
+        "RPG"
       ]
     },
     {
