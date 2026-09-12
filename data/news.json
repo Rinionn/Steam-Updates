@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-09-12T20:00:11.463Z",
+  "generatedAt": "2026-09-12T22:10:48.799Z",
   "items": [
+    {
+      "id": "steam-news-9258bdcf1",
+      "title": "Strip Mall Simulator",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5050290/Strip_Mall_Simulator/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5050290/00b2be65394d057c26ee178bd8ab6c904e3b03d6/capsule_231x87.jpg?t=1789250929",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-b40ef9438",
+      "title": "Cyborg Earthworm",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1212760/Cyborg_Earthworm/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1212760/capsule_231x87.jpg?t=1789247148",
+      "categories": [
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-024862b34",
       "title": "Barrel Chess",
@@ -262,57 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-5b24ee65f",
-      "title": "Backrooms: The Entity",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4727140/Backrooms_The_Entity/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4727140/3a272839d054f030f29ffbf41d1c4daf9b8b6899/capsule_231x87.jpg?t=1789203244",
-      "categories": [
-        "Bağımsız",
-        "Macera",
-        "Gündelik",
-        "Simülasyon",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-78e4c88fe",
-      "title": "Vegeteamble",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5099030/Vegeteamble/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099030/8ef7c5d1d97ccd65f57e32a4a7d67f329b121e91/capsule_231x87.jpg?t=1789203043",
-      "categories": [
-        "Strateji",
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-89738ef6e",
-      "title": "Aethercrypt",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4908980/Aethercrypt/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908980/6f6684aaa9d80b320c398da41a98cb14b928510d/capsule_231x87.jpg?t=1789064354",
-      "categories": [
-        "RPG",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-e53c5ecb9",
-      "title": "Urban Struggle",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4357060/Urban_Struggle/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4357060/6ee62280cf07664988dbba5c04c70a9becba2e47/capsule_231x87.jpg?t=1789012789",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-579c71ece",
       "title": "Gun Of Fate: The Silver Gun Of Ylia",
       "kind": "coming_soon",
@@ -564,6 +535,29 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4628250/a2bb1db1d6d2070ee4da3157dd716960ab42fe69/capsule_231x87.jpg?t=1788183335",
       "categories": [
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-2e1f539e9",
+      "title": "MAINLINE",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4930040/MAINLINE/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4930040/2b03f3054b3bac02a0b704fd4740c051cdae1c32/capsule_231x87.jpg?t=1788360250",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-8a6daf100",
+      "title": "Depth of Mind",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3711100/Depth_of_Mind/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3711100/e2728e491b875ed740f55ac84eaf8da4963b2034/capsule_231x87.jpg?t=1788945184",
+      "categories": [
+        "Strateji",
+        "Korku"
       ]
     },
     {
