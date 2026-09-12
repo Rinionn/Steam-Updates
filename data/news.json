@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T17:53:43.395Z",
+  "generatedAt": "2026-09-12T20:00:11.463Z",
   "items": [
     {
       "id": "steam-news-024862b34",
@@ -29,7 +29,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4921030/Splimbo_City/?snr=1_7_7_230_150_1",
       "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4921030/dcfda76fdc05f0ed9f199fdd7b23cc566a359aee/capsule_231x87.jpg?t=1789231512",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4921030/dcfda76fdc05f0ed9f199fdd7b23cc566a359aee/capsule_231x87.jpg?t=1789239371",
       "categories": [
         "RPG"
       ]
@@ -383,6 +383,15 @@
       ]
     },
     {
+      "id": "steam-news-3544d0fe3",
+      "title": "Fantasy Bird Woods",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4486350/Fantasy_Bird_Woods/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486350/3145cb4fc901e4cf0944aa96c4d5251719bd898d/capsule_231x87.jpg?t=1788556113",
+      "categories": []
+    },
+    {
       "id": "steam-news-dc4297c94",
       "title": "Eternal Grove",
       "kind": "coming_soon",
@@ -395,15 +404,6 @@
         "Tek Oyunculu",
         "Gündelik"
       ]
-    },
-    {
-      "id": "steam-news-3544d0fe3",
-      "title": "Fantasy Bird Woods",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4486350/Fantasy_Bird_Woods/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486350/3145cb4fc901e4cf0944aa96c4d5251719bd898d/capsule_231x87.jpg?t=1788556113",
-      "categories": []
     },
     {
       "id": "steam-news-6acb3c045",
@@ -490,18 +490,6 @@
       ]
     },
     {
-      "id": "steam-news-71efc6843",
-      "title": "Put Back Stuff",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5130150/Put_Back_Stuff/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5130150/5616883b79afb56d1db75eee7f5c6235c71f5769/capsule_231x87.jpg?t=1789046022",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-590f0e9d1",
       "title": "Dog",
       "kind": "coming_soon",
@@ -514,15 +502,15 @@
       ]
     },
     {
-      "id": "steam-news-8a55f0112",
-      "title": "Rogue Circuit",
+      "id": "steam-news-71efc6843",
+      "title": "Put Back Stuff",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5180900/Rogue_Circuit/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "14 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5180900/96b3a77c06a1377e8ca196a6af2a05855a2d833c/capsule_231x87.jpg?t=1788358738",
+      "url": "https://store.steampowered.com/app/5130150/Put_Back_Stuff/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5130150/5616883b79afb56d1db75eee7f5c6235c71f5769/capsule_231x87.jpg?t=1789046022",
       "categories": [
-        "Yarış",
-        "Strateji"
+        "Gündelik",
+        "Simülasyon"
       ]
     },
     {
@@ -533,6 +521,18 @@
       "dateLabel": "14 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4913770/8dfc21a28c9d683c40a4b62153bc2eb2e56e7d62/capsule_231x87.jpg?t=1788385074",
       "categories": []
+    },
+    {
+      "id": "steam-news-8a55f0112",
+      "title": "Rogue Circuit",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5180900/Rogue_Circuit/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5180900/96b3a77c06a1377e8ca196a6af2a05855a2d833c/capsule_231x87.jpg?t=1788358738",
+      "categories": [
+        "Yarış",
+        "Strateji"
+      ]
     },
     {
       "id": "steam-news-03392fd3a",
