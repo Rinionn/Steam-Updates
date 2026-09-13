@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-09-13T00:00:03.974Z",
+  "generatedAt": "2026-09-13T04:36:28.667Z",
   "items": [
+    {
+      "id": "steam-news-131e7ca7d",
+      "title": "DAKENSHI",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5156410/DAKENSHI/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5156410/f4086f895ef25009c582f7729163677875de217e/capsule_231x87.jpg?t=1789262331",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-a34cd86d5",
+      "title": "Elegy For A Violet",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3991330/Elegy_For_A_Violet/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3991330/032d7eb1d6bd92ea5d460d90ee3e900111b6abcf/capsule_231x87.jpg?t=1789259976",
+      "categories": [
+        "Strateji",
+        "Tek Oyunculu",
+        "Aksiyon",
+        "Macera"
+      ]
+    },
     {
       "id": "steam-news-269d5d0e1",
       "title": "Kilnborn",
@@ -258,29 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-13f426fae",
-      "title": "NEONFALL",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4733000/NEONFALL/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4733000/c2a68b2923b091387266bdd4ff24dde56d99d58b/capsule_231x87.jpg?t=1789207508",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-00952ee78",
-      "title": "Dark Avos",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4849670/Dark_Avos/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4849670/643e60fe481d6129e1391bc2537779dda9b605d6/capsule_231x87.jpg?t=1789205692",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-579c71ece",
       "title": "Gun Of Fate: The Silver Gun Of Ylia",
       "kind": "coming_soon",
@@ -458,18 +461,6 @@
       ]
     },
     {
-      "id": "steam-news-71efc6843",
-      "title": "Put Back Stuff",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5130150/Put_Back_Stuff/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5130150/5616883b79afb56d1db75eee7f5c6235c71f5769/capsule_231x87.jpg?t=1789046022",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-590f0e9d1",
       "title": "Dog",
       "kind": "coming_soon",
@@ -482,13 +473,16 @@
       ]
     },
     {
-      "id": "steam-news-2255efa04",
-      "title": "Corsair Fleet: Tides of Plunder",
+      "id": "steam-news-71efc6843",
+      "title": "Put Back Stuff",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4913770/Corsair_Fleet_Tides_of_Plunder/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "14 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4913770/8dfc21a28c9d683c40a4b62153bc2eb2e56e7d62/capsule_231x87.jpg?t=1788385074",
-      "categories": []
+      "url": "https://store.steampowered.com/app/5130150/Put_Back_Stuff/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5130150/5616883b79afb56d1db75eee7f5c6235c71f5769/capsule_231x87.jpg?t=1789046022",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
     },
     {
       "id": "steam-news-8a55f0112",
@@ -501,6 +495,15 @@
         "Yarış",
         "Strateji"
       ]
+    },
+    {
+      "id": "steam-news-2255efa04",
+      "title": "Corsair Fleet: Tides of Plunder",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4913770/Corsair_Fleet_Tides_of_Plunder/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4913770/8dfc21a28c9d683c40a4b62153bc2eb2e56e7d62/capsule_231x87.jpg?t=1788385074",
+      "categories": []
     },
     {
       "id": "steam-news-03392fd3a",
