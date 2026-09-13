@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T21:39:16.209Z",
+  "generatedAt": "2026-09-13T23:32:26.501Z",
   "items": [
     {
       "id": "steam-news-389512eaf",
@@ -280,6 +280,15 @@
       ]
     },
     {
+      "id": "steam-news-2255efa04",
+      "title": "Corsair Fleet: Tides of Plunder",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4913770/Corsair_Fleet_Tides_of_Plunder/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4913770/8dfc21a28c9d683c40a4b62153bc2eb2e56e7d62/capsule_231x87.jpg?t=1788385074",
+      "categories": []
+    },
+    {
       "id": "steam-news-8a55f0112",
       "title": "Rogue Circuit",
       "kind": "coming_soon",
@@ -290,15 +299,6 @@
         "Yarış",
         "Strateji"
       ]
-    },
-    {
-      "id": "steam-news-2255efa04",
-      "title": "Corsair Fleet: Tides of Plunder",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4913770/Corsair_Fleet_Tides_of_Plunder/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "14 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4913770/8dfc21a28c9d683c40a4b62153bc2eb2e56e7d62/capsule_231x87.jpg?t=1788385074",
-      "categories": []
     },
     {
       "id": "steam-news-03392fd3a",
@@ -411,19 +411,6 @@
       ]
     },
     {
-      "id": "steam-news-caed62cf7",
-      "title": "Simhaus: Football",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5059850/Simhaus_Football/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "14 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5059850/d9629951f4d3b2f6e520554cf512720da24c6193/capsule_231x87.jpg?t=1789065275",
-      "categories": [
-        "Spor",
-        "Strateji",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-c79315290",
       "title": "RPG System",
       "kind": "coming_soon",
@@ -433,6 +420,19 @@
       "categories": [
         "RPG",
         "Çok Oyunculu",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-caed62cf7",
+      "title": "Simhaus: Football",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5059850/Simhaus_Football/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5059850/d9629951f4d3b2f6e520554cf512720da24c6193/capsule_231x87.jpg?t=1789065275",
+      "categories": [
+        "Spor",
+        "Strateji",
         "Simülasyon"
       ]
     },
@@ -485,17 +485,6 @@
       ]
     },
     {
-      "id": "steam-news-2c73f751c",
-      "title": "GRID/",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4244590/GRID/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "14 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4244590/e1c1044fe733911c2a03f0df444ec85bbf3bd5ab/capsule_231x87.jpg?t=1789320635",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-6f3efdd2d",
       "title": "KasMind",
       "kind": "coming_soon",
@@ -518,12 +507,32 @@
       ]
     },
     {
+      "id": "steam-news-2c73f751c",
+      "title": "GRID/",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4244590/GRID/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4244590/e1c1044fe733911c2a03f0df444ec85bbf3bd5ab/capsule_231x87.jpg?t=1789342278",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-bd8bc1c27",
       "title": "Cube Crusaders",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/2317180/Cube_Crusaders/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "14 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2317180/c8d5951d9de0d81e4a54bed3b4d104dea3c21e44/capsule_231x87.jpg?t=1789163348",
+      "categories": []
+    },
+    {
+      "id": "steam-news-0f59540c4",
+      "title": "Peacemaker: Bloody Emperor",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2548910/Peacemaker_Bloody_Emperor/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2548910/04ee02a4b42aefa07f40671be30f69e8dff1c5ff/capsule_231x87.jpg?t=1788519811",
       "categories": []
     },
     {
@@ -536,15 +545,6 @@
       "categories": [
         "RPG"
       ]
-    },
-    {
-      "id": "steam-news-0f59540c4",
-      "title": "Peacemaker: Bloody Emperor",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2548910/Peacemaker_Bloody_Emperor/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "14 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2548910/04ee02a4b42aefa07f40671be30f69e8dff1c5ff/capsule_231x87.jpg?t=1788519811",
-      "categories": []
     },
     {
       "id": "steam-news-04ef1fe90",
