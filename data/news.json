@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-12T22:10:48.799Z",
+  "generatedAt": "2026-09-13T00:00:03.974Z",
   "items": [
+    {
+      "id": "steam-news-269d5d0e1",
+      "title": "Kilnborn",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5104330/Kilnborn/?snr=1_7_7_230_150_1",
+      "dateLabel": "12 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5104330/8761f77a086274438bf7d82a6f03f14b73a8c1e4/capsule_231x87.jpg?t=1789256399",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-9258bdcf1",
       "title": "Strip Mall Simulator",
@@ -270,20 +281,6 @@
       ]
     },
     {
-      "id": "steam-news-c267d8b20",
-      "title": "Ashfall Keep",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5077290/Ashfall_Keep/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5077290/f1f364a42c802d0452e90fd6a37ba7384bded7fc/capsule_231x87.jpg?t=1789203729",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "RPG",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-579c71ece",
       "title": "Gun Of Fate: The Silver Gun Of Ylia",
       "kind": "coming_soon",
@@ -354,15 +351,6 @@
       ]
     },
     {
-      "id": "steam-news-3544d0fe3",
-      "title": "Fantasy Bird Woods",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4486350/Fantasy_Bird_Woods/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486350/3145cb4fc901e4cf0944aa96c4d5251719bd898d/capsule_231x87.jpg?t=1788556113",
-      "categories": []
-    },
-    {
       "id": "steam-news-dc4297c94",
       "title": "Eternal Grove",
       "kind": "coming_soon",
@@ -375,6 +363,15 @@
         "Tek Oyunculu",
         "Gündelik"
       ]
+    },
+    {
+      "id": "steam-news-3544d0fe3",
+      "title": "Fantasy Bird Woods",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4486350/Fantasy_Bird_Woods/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4486350/3145cb4fc901e4cf0944aa96c4d5251719bd898d/capsule_231x87.jpg?t=1788556113",
+      "categories": []
     },
     {
       "id": "steam-news-6acb3c045",
@@ -461,24 +458,24 @@
       ]
     },
     {
-      "id": "steam-news-590f0e9d1",
-      "title": "Dog",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5057210/Dog/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5057210/68f2b38ad4ac1768771be368a6946c7ff63d0fa7/capsule_231x87.jpg?t=1789126698",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-71efc6843",
       "title": "Put Back Stuff",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/5130150/Put_Back_Stuff/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "13 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5130150/5616883b79afb56d1db75eee7f5c6235c71f5769/capsule_231x87.jpg?t=1789046022",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-590f0e9d1",
+      "title": "Dog",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5057210/Dog/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5057210/68f2b38ad4ac1768771be368a6946c7ff63d0fa7/capsule_231x87.jpg?t=1789126698",
       "categories": [
         "Gündelik",
         "Simülasyon"
