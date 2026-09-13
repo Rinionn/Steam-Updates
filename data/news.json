@@ -1,6 +1,76 @@
 {
-  "generatedAt": "2026-09-13T09:44:45.307Z",
+  "generatedAt": "2026-09-13T13:55:55.426Z",
   "items": [
+    {
+      "id": "steam-news-80108dcd2",
+      "title": "Backyard Defenders",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3940000/Backyard_Defenders/?snr=1_7_7_230_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3940000/16c12e6844704473aa6acce5ef86644017684c26/capsule_231x87.jpg?t=1789307652",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-ffbf8526b",
+      "title": "No Eyes See You",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5177740/No_Eyes_See_You/?snr=1_7_7_230_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5177740/34330e9c43513d8a15f02e167a7e66cb2830c29c/capsule_231x87.jpg?t=1789302282",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-ed58b77bf",
+      "title": "Why Did You Come To My House?",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5086960/Why_Did_You_Come_To_My_House/?snr=1_7_7_230_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5086960/8637b28dc4aaaf36dd5cf11824aaf705962a30c7/capsule_231x87.jpg?t=1789301839",
+      "categories": [
+        "Korku",
+        "Macera",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-f33074a8a",
+      "title": "UpDown DX",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5177990/UpDown_DX/?snr=1_7_7_230_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5177990/3933dd499d0c83ae18036642d3ade4248e56f0b7/capsule_231x87.jpg?t=1789299294",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-cb78f8431",
+      "title": "The Rallying Ball",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4342670/The_Rallying_Ball/?snr=1_7_7_230_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4342670/21a015c6af3faef1be8403fb109630e4ca093e51/capsule_231x87.jpg?t=1789297269",
+      "categories": [
+        "Yarış",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-257da8b8f",
+      "title": "Aethercrypt",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4908980/Aethercrypt/?snr=1_7_7_230_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908980/6f6684aaa9d80b320c398da41a98cb14b928510d/capsule_231x87.jpg?t=1789294228",
+      "categories": [
+        "RPG",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-38357df26",
       "title": "Fault Lines",
@@ -209,82 +279,6 @@
       ]
     },
     {
-      "id": "steam-news-db2d29baa",
-      "title": "EGO X The Truth",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5101140/EGO_X_The_Truth/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5101140/d8bc54a6adc818a4d4ca8983f8b1679830a48fd9/capsule_231x87.jpg?t=1789222295",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-704f4ba3a",
-      "title": "Girlfriend Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5011730/Girlfriend_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5011730/bf5c4f23763880868ea1791df7b25b4942f1b16b/capsule_231x87.jpg?t=1789219885",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Simülasyon",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-69432a40e",
-      "title": "Kamenkik and Friends",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4943620/Kamenkik_and_Friends/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4943620/9c4698b106199bd0a35ea9dd03c811d8482c0a13/capsule_231x87.jpg?t=1789218580",
-      "categories": [
-        "Çok Oyunculu",
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-bc5378d02",
-      "title": "Code Name: Boogeyman",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5113810/Code_Name_Boogeyman/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5113810/35fb11b7c95b79d4685debd1dedf2913bc7b589c/capsule_231x87.jpg?t=1789216846",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-5cf1370e4",
-      "title": "I Have Only MP",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4886630/I_Have_Only_MP/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4886630/f57eaf77e532e9d17dabbc6a96a595d4eb7a17c2/capsule_231x87.jpg?t=1789216017",
-      "categories": [
-        "Gündelik",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-b873c453b",
-      "title": "Fear & Greed: Trading Empire",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5131120/Fear__Greed_Trading_Empire/?snr=1_7_7_230_150_1",
-      "dateLabel": "12 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5131120/bff6a50acbe152c7dd4c67cf18ed550df5cbac59/capsule_231x87.jpg?t=1789215566",
-      "categories": [
-        "Simülasyon",
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-579c71ece",
       "title": "Gun Of Fate: The Silver Gun Of Ylia",
       "kind": "coming_soon",
@@ -383,20 +377,9 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/2735030/Haunted_Shift/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "13 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2735030/b5568db82d6ae44c7b61cd0930a067371aa65506/capsule_231x87.jpg?t=1788890034",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2735030/b5568db82d6ae44c7b61cd0930a067371aa65506/capsule_231x87.jpg?t=1789301966",
       "categories": [
         "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-6b3f96de8",
-      "title": "Legends of Azamar",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3556700/Legends_of_Azamar/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3556700/221a4f7564ed5f57c963e43ca01cfa778a5e96e0/capsule_231x87.jpg?t=1788271573",
-      "categories": [
-        "RPG"
       ]
     },
     {
@@ -409,6 +392,17 @@
       "categories": [
         "Gündelik",
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-6b3f96de8",
+      "title": "Legends of Azamar",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3556700/Legends_of_Azamar/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "13 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3556700/221a4f7564ed5f57c963e43ca01cfa778a5e96e0/capsule_231x87.jpg?t=1788271573",
+      "categories": [
+        "RPG"
       ]
     },
     {
@@ -443,18 +437,6 @@
       "url": "https://store.steampowered.com/app/5130150/Put_Back_Stuff/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "13 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5130150/5616883b79afb56d1db75eee7f5c6235c71f5769/capsule_231x87.jpg?t=1789046022",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-590f0e9d1",
-      "title": "Dog",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5057210/Dog/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5057210/68f2b38ad4ac1768771be368a6946c7ff63d0fa7/capsule_231x87.jpg?t=1789126698",
       "categories": [
         "Gündelik",
         "Simülasyon"
@@ -514,17 +496,6 @@
       ]
     },
     {
-      "id": "steam-news-2e1f539e9",
-      "title": "MAINLINE",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4930040/MAINLINE/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "14 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4930040/2b03f3054b3bac02a0b704fd4740c051cdae1c32/capsule_231x87.jpg?t=1788360250",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-8a6daf100",
       "title": "Depth of Mind",
       "kind": "coming_soon",
@@ -537,12 +508,23 @@
       ]
     },
     {
+      "id": "steam-news-2e1f539e9",
+      "title": "MAINLINE",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4930040/MAINLINE/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4930040/2b03f3054b3bac02a0b704fd4740c051cdae1c32/capsule_231x87.jpg?t=1788360250",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-f97f9be18",
       "title": "Neat!",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4300090/Neat/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "14 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4300090/a4a50d00853628344d13ab3442f70787ad5bc1d6/capsule_231x87.jpg?t=1789273691",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4300090/a4a50d00853628344d13ab3442f70787ad5bc1d6/capsule_231x87.jpg?t=1789304359",
       "categories": [
         "Simülasyon"
       ]
@@ -555,6 +537,18 @@
       "dateLabel": "14 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5105480/75e5aaf8d2501ee2f00a677a0b7977babef88480/capsule_231x87.jpg?t=1789173817",
       "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-2d432900c",
+      "title": "Parry Survivor",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4540130/Parry_Survivor/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4540130/8da954c8828d264d5d5cdf23eedf4ba5f4e0f00e/capsule_231x87.jpg?t=1789153661",
+      "categories": [
+        "Anime",
         "Aksiyon"
       ]
     },
