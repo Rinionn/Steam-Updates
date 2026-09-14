@@ -1,34 +1,7 @@
 {
-  "generatedAt": "2026-09-14T13:53:14.979Z",
+  "generatedAt": "2026-09-14T18:57:39.254Z",
   "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
   "events": [
-    {
-      "id": "programming-fest-d92cade24",
-      "name": "Programming Fest",
-      "kind": "themed_fest",
-      "startAt": "2026-09-10T17:00:00Z",
-      "endAt": "2026-09-14T17:00:00Z",
-      "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
-      "registrationUrl": "https://partner.steamgames.com/optin/sale/programming_2026",
-      "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/programming_2026",
-      "description": "Games that are about programming or programming challenges like logic puzzles.",
-      "descriptionTr": "Programlama veya mantık bulmacaları gibi programlama görevlerini konu alan oyunlar.",
-      "matchTags": [
-        "Programming",
-        "Logic"
-      ],
-      "deadlines": [
-        {
-          "kind": "milestone",
-          "label": "September 10 @ 10:00am PDT - The event starts. This is the deadline for entering a discount, and opting out if you no longer want to participate.",
-          "dueAt": "2026-09-10T17:00:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/programming_2026",
-          "id": "programming-fest-d92cade24-053ba1c4b"
-        }
-      ],
-      "lastSeenAt": "2026-09-14T13:53:05.118Z",
-      "firstSeenAt": "2026-07-30T11:59:50.366Z"
-    },
     {
       "id": "party-based-rpg-fest-55771f151",
       "name": "Party-Based RPG Fest",
