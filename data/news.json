@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-09-14T22:25:19.986Z",
+  "generatedAt": "2026-09-15T00:46:20.426Z",
   "items": [
+    {
+      "id": "steam-news-90626e543",
+      "title": "ORACLE: Humanity, Automated",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5083470/ORACLE_Humanity_Automated/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5083470/bc02279710838e27210a77b970ecbaac432c2f73/capsule_231x87.jpg?t=1789431233",
+      "categories": [
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-fd2d815a7",
+      "title": "Squirrel Day",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2459250/Squirrel_Day/?snr=1_7_7_230_150_1",
+      "dateLabel": "14 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2459250/capsule_231x87.jpg?t=1789429706",
+      "categories": [
+        "Yarış"
+      ]
+    },
     {
       "id": "steam-news-87e82bbb5",
       "title": "SAYONARA++",
@@ -269,30 +292,6 @@
       ]
     },
     {
-      "id": "steam-news-6838d1c48",
-      "title": "Apple Shoot",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4311770/Apple_Shoot/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4311770/44410859544935b558779873c27a1428b7d7736c/capsule_231x87.jpg?t=1789406057",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-cece83b12",
-      "title": "Phantom Town",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4311780/Phantom_Town/?snr=1_7_7_230_150_1",
-      "dateLabel": "14 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4311780/98cfd09a80bfbab8ca67bc8564ccabaeecbc4b47/capsule_231x87.jpg?t=1789406032",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-367c43536",
       "title": "Starbase Tactics",
       "kind": "coming_soon",
@@ -504,19 +503,6 @@
       ]
     },
     {
-      "id": "steam-news-4b933b5ba",
-      "title": "DETSTVO",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5007280/DETSTVO/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "15 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5007280/c09feaf0336d30ace2ea711a1b2aafb36e8d7beb/capsule_231x87.jpg?t=1788612974",
-      "categories": [
-        "Simülasyon",
-        "Macera",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-ecd79d639",
       "title": "MapCity",
       "kind": "coming_soon",
@@ -540,6 +526,19 @@
       ]
     },
     {
+      "id": "steam-news-4b933b5ba",
+      "title": "DETSTVO",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5007280/DETSTVO/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "15 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5007280/c09feaf0336d30ace2ea711a1b2aafb36e8d7beb/capsule_231x87.jpg?t=1788612974",
+      "categories": [
+        "Simülasyon",
+        "Macera",
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-a82189989",
       "title": "Batomon Showdown",
       "kind": "coming_soon",
@@ -551,19 +550,6 @@
       ]
     },
     {
-      "id": "steam-news-8a9cb4432",
-      "title": "Station Command",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3542330/Station_Command/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "15 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3542330/39ec396538f0120bc2fcb5481f5aeb312bf9fa2b/capsule_231x87.jpg?t=1789158368",
-      "categories": [
-        "Strateji",
-        "RPG",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-aaae4ac23",
       "title": "A Decent Farewell",
       "kind": "coming_soon",
@@ -572,6 +558,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5109380/782ec1587febdfc49f3c94e90314faa46f0c07e5/capsule_231x87.jpg?t=1788795357",
       "categories": [
         "RPG",
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-d2e2e232a",
+      "title": "Neko Neko Shop",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5129240/Neko_Neko_Shop/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "15 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5129240/305b273fe96e046c14b22eccf1e73314f161b353/capsule_231x87.jpg?t=1789406669",
+      "categories": [
         "Gündelik",
         "Simülasyon"
       ]
