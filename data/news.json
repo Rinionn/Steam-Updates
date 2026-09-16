@@ -1,6 +1,109 @@
 {
-  "generatedAt": "2026-09-16T00:19:25.736Z",
+  "generatedAt": "2026-09-16T04:58:46.362Z",
   "items": [
+    {
+      "id": "steam-news-acb11c41c",
+      "title": "ShutterOut",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5132730/ShutterOut/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5132730/5e99c05eee2435db14e5f7473acaf0a410cf3645/capsule_231x87.jpg?t=1789531342",
+      "categories": [
+        "Korku",
+        "Çok Oyunculu",
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-ce033c06a",
+      "title": "Zhong Kui: Survivor",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4971170/Zhong_Kui_Survivor/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4971170/02b5dedae6e5909914f098cfb8109b15356b17ab/capsule_231x87.jpg?t=1789529963",
+      "categories": [
+        "RPG",
+        "Gündelik",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-4ad114f9b",
+      "title": "Oops! You're the Hero!",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3166160/Oops_Youre_the_Hero/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3166160/6b118f7ed5cf36cc20e8b98ce900e73ce1b22b5a/capsule_231x87.jpg?t=1789528083",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-d9e2304a3",
+      "title": "JettFuel+",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4921830/JettFuel/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4921830/fdc309445975467fabb537e936a0cb8e5440883f/capsule_231x87.jpg?t=1789527486",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-64c2b7de7",
+      "title": "Arrow Card Arena (箭域卡戰)",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5011490/Arrow_Card_Arena/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5011490/385489c637034dee554a525d05977fdda0b063e4/capsule_231x87.jpg?t=1789524010",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-763df2b18",
+      "title": "Aniimo",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4126040/Aniimo/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4126040/9cd26f736939c12a37f54cd3a49a9c08a318ec03/capsule_231x87.jpg?t=1789523496",
+      "categories": [
+        "Macera",
+        "Çok Oyunculu",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-f1bcb26c9",
+      "title": "忌品管理部",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4851090/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4851090/fa0ccd2920109a58afc6c77472214d9bef69b4ed/capsule_231x87.jpg?t=1789520498",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-2b73f76e1",
+      "title": "DEATH PENALTY",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4182430/DEATH_PENALTY/?snr=1_7_7_230_150_1",
+      "dateLabel": "15 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4182430/5ab5218f7348610273b1c9aa9bc59e30a4a4bd1e/capsule_231x87.jpg?t=1789514956",
+      "categories": [
+        "Macera",
+        "RPG",
+        "Korku",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-d0b989c29",
       "title": "BLOODMONEY: Requiem",
@@ -190,103 +293,6 @@
       ]
     },
     {
-      "id": "steam-news-d5ada2c30",
-      "title": "Melaka 1511: The Malay Chronicles - Before The Storm",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5132570/Melaka_1511_The_Malay_Chronicles__Before_The_Storm/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5132570/7fb89a3f63a547efc4fe880c787f4ae343f0bf59/capsule_231x87.jpg?t=1789492497",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-55d42669f",
-      "title": "STILLTRACE",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5115240/STILLTRACE/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5115240/6ef3b8c23c264d45959411896e1a515c96b02f48/capsule_231x87.jpg?t=1789491991",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-43e1df4b1",
-      "title": "Fleetbreakers",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2929040/Fleetbreakers/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2929040/afec61c05d1aa87d654962cf1e1fff03a633853c/capsule_231x87.jpg?t=1789491865",
-      "categories": [
-        "Bağımsız",
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-6e2a3dffd",
-      "title": "That FireOc Game",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4963550/That_FireOc_Game/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4963550/496beabd4f1d55fdb451eed18bf30bf56ef60849/capsule_231x87.jpg?t=1789491782",
-      "categories": [
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-b71a24b23",
-      "title": "SIDE OUT",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5146540/SIDE_OUT/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5146540/fca4b5d19e7c373a101fb9f8ddd983f0e7ff8ea7/capsule_231x87.jpg?t=1789491761",
-      "categories": [
-        "Çok Oyunculu",
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-21fdd006a",
-      "title": "Muse Ingenium",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5066270/Muse_Ingenium/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5066270/4bf262ae413994a8a129d2cb684850d147b7907d/capsule_231x87.jpg?t=1789491743",
-      "categories": [
-        "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-58dbe419e",
-      "title": "Neko Neko Shop",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5129240/Neko_Neko_Shop/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5129240/305b273fe96e046c14b22eccf1e73314f161b353/capsule_231x87.jpg?t=1789491704",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-9ca99eb02",
-      "title": "PawMart Tiny Market",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4414270/PawMart_Tiny_Market/?snr=1_7_7_230_150_1",
-      "dateLabel": "15 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4414270/13d85b2978e2459c479fa1ef4ba8e8289dcc30d4/capsule_231x87.jpg?t=1789511190",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-40b77449f",
       "title": "Sky Scaffold",
       "kind": "coming_soon",
@@ -304,11 +310,11 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4240610/Code_Velocity/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4240610/cc5fd7c6a8a8c06e9132356bc401fda05d90ba49/capsule_231x87.jpg?t=1787553558",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4240610/cc5fd7c6a8a8c06e9132356bc401fda05d90ba49/capsule_231x87.jpg?t=1789528100",
       "categories": [
-        "Yarış",
+        "Gündelik",
         "Simülasyon",
-        "Gündelik"
+        "Yarış"
       ]
     },
     {
@@ -329,7 +335,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3351280/Tinker_Shot/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "16 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3351280/250cc4761f856398c3892c8c4ac69e27eea6a123/capsule_231x87.jpg?t=1787219995",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3351280/250cc4761f856398c3892c8c4ac69e27eea6a123/capsule_231x87.jpg?t=1789526388",
       "categories": [
         "Strateji"
       ]
@@ -432,17 +438,6 @@
       ]
     },
     {
-      "id": "steam-news-1f628900a",
-      "title": "Lucent",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5178670/Lucent/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5178670/8cc0c2ec7f41e3da01b13121461e61917ad655ba/capsule_231x87.jpg?t=1788679484",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-c1aedfe3b",
       "title": "Circle Test Suite",
       "kind": "coming_soon",
@@ -452,6 +447,17 @@
       "categories": [
         "Aksiyon",
         "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-1f628900a",
+      "title": "Lucent",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5178670/Lucent/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5178670/8cc0c2ec7f41e3da01b13121461e61917ad655ba/capsule_231x87.jpg?t=1788679484",
+      "categories": [
+        "Gündelik"
       ]
     },
     {
@@ -492,6 +498,27 @@
       ]
     },
     {
+      "id": "steam-news-5252dd992",
+      "title": "Populus Run",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3989220/Populus_Run/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3989220/43595a630aa4b73e1a662212c15f2d433034ffce/capsule_231x87.jpg?t=1788372398",
+      "categories": []
+    },
+    {
+      "id": "steam-news-172d12e57",
+      "title": "Welcome To Mars 9",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2434330/Welcome_To_Mars_9/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "16 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2434330/79caa7699bad1187afe0412904b11dfb340a8cb5/capsule_231x87.jpg?t=1789495590",
+      "categories": [
+        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-1ead77d4d",
       "title": "Decide Your Fate",
       "kind": "coming_soon",
@@ -526,27 +553,6 @@
       "categories": [
         "Macera"
       ]
-    },
-    {
-      "id": "steam-news-172d12e57",
-      "title": "Welcome To Mars 9",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2434330/Welcome_To_Mars_9/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2434330/79caa7699bad1187afe0412904b11dfb340a8cb5/capsule_231x87.jpg?t=1789495590",
-      "categories": [
-        "Macera",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-5252dd992",
-      "title": "Populus Run",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3989220/Populus_Run/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "16 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3989220/43595a630aa4b73e1a662212c15f2d433034ffce/capsule_231x87.jpg?t=1788372398",
-      "categories": []
     },
     {
       "id": "steam-news-b7fe8249a",
