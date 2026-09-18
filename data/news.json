@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-09-17T22:53:07.743Z",
+  "generatedAt": "2026-09-18T00:54:51.510Z",
   "items": [
+    {
+      "id": "steam-news-2d4ad4a9b",
+      "title": "Second Nature: Night Authority",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5002460/Second_Nature_Night_Authority/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5002460/01f9a60805e59f11546898db3f2094c226a6ab92/capsule_231x87.jpg?t=1789687086",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon",
+        "Macera",
+        "Gündelik",
+        "RPG",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-a88beff15",
       "title": "The Mansion of Campanillas",
@@ -212,7 +228,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/3927250/Frog_It_Up/?snr=1_7_7_230_150_1",
       "dateLabel": "17 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3927250/d7c1403a83785ab8404ba7e0dbd43a9f406cb2ad/capsule_231x87.jpg?t=1789664480",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3927250/d7c1403a83785ab8404ba7e0dbd43a9f406cb2ad/capsule_231x87.jpg?t=1789688971",
       "categories": [
         "Gündelik"
       ]
@@ -282,19 +298,6 @@
       ]
     },
     {
-      "id": "steam-news-d2e6ac6b5",
-      "title": "Unmourned VR",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4403900/Unmourned_VR/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4403900/3a5e1efc5860fb3e10213029ea9e53b6dce3aa4d/capsule_231x87.jpg?t=1789664354",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-fb2f737d6",
       "title": "Coin Rush",
       "kind": "coming_soon",
@@ -318,17 +321,6 @@
       ]
     },
     {
-      "id": "steam-news-e781c8017",
-      "title": "Rogue Racer",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/764420/Rogue_Racer/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/764420/048cd2ebe0d766c00e9b1f9374953281f2cbe0bc/capsule_231x87.jpg?t=1789438058",
-      "categories": [
-        "Yarış"
-      ]
-    },
-    {
       "id": "steam-news-009f842cf",
       "title": "Northanger Abbey",
       "kind": "coming_soon",
@@ -340,19 +332,14 @@
       ]
     },
     {
-      "id": "steam-news-dfc5ca00a",
-      "title": "Second Nature: Night Authority",
+      "id": "steam-news-e781c8017",
+      "title": "Rogue Racer",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5002460/Second_Nature_Night_Authority/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/764420/Rogue_Racer/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5002460/01f9a60805e59f11546898db3f2094c226a6ab92/capsule_231x87.jpg?t=1787825396",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/764420/048cd2ebe0d766c00e9b1f9374953281f2cbe0bc/capsule_231x87.jpg?t=1789438058",
       "categories": [
-        "Bağımsız",
-        "Aksiyon",
-        "Macera",
-        "Gündelik",
-        "RPG",
-        "Simülasyon"
+        "Yarış"
       ]
     },
     {
@@ -394,6 +381,19 @@
       ]
     },
     {
+      "id": "steam-news-6a3864103",
+      "title": "君と最後の放課後",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4951700/_/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951700/1d025b8efbe6a9c7370d63251cabecef2149facc/capsule_231x87.jpg?t=1788508364",
+      "categories": [
+        "Macera",
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-1b94f25b1",
       "title": "Data Survivor",
       "kind": "coming_soon",
@@ -406,29 +406,15 @@
       ]
     },
     {
-      "id": "steam-news-5f256ecbf",
-      "title": "The Legend of Water",
+      "id": "steam-news-705dac4b4",
+      "title": "Goddess of Fate: Waifu Strategy RPG",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5158250/The_Legend_of_Water/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5064710/Goddess_of_Fate_Waifu_Strategy_RPG/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5158250/0277082c7af9f88d50ce915a1811f5d7920b6dda/capsule_231x87.jpg?t=1788582007",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5064710/2496cf7af9aa26ca797b50e56da3cc23735a32d6/capsule_231x87.jpg?t=1788524342",
       "categories": [
-        "Aksiyon",
-        "Macera",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-6a3864103",
-      "title": "君と最後の放課後",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4951700/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4951700/1d025b8efbe6a9c7370d63251cabecef2149facc/capsule_231x87.jpg?t=1788508364",
-      "categories": [
-        "Macera",
         "Strateji",
-        "Simülasyon"
+        "Anime"
       ]
     },
     {
@@ -445,15 +431,16 @@
       ]
     },
     {
-      "id": "steam-news-705dac4b4",
-      "title": "Goddess of Fate: Waifu Strategy RPG",
+      "id": "steam-news-5f256ecbf",
+      "title": "The Legend of Water",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5064710/Goddess_of_Fate_Waifu_Strategy_RPG/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5158250/The_Legend_of_Water/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5064710/2496cf7af9aa26ca797b50e56da3cc23735a32d6/capsule_231x87.jpg?t=1788524342",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5158250/0277082c7af9f88d50ce915a1811f5d7920b6dda/capsule_231x87.jpg?t=1788582007",
       "categories": [
-        "Strateji",
-        "Anime"
+        "Aksiyon",
+        "Macera",
+        "Gündelik"
       ]
     },
     {
@@ -481,17 +468,6 @@
       ]
     },
     {
-      "id": "steam-news-cc19a7359",
-      "title": "Debt of Life",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5058740/Debt_of_Life/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5058740/893d91a55211b0825f54c4993647db0d748bd663/capsule_231x87.jpg?t=1789032476",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-8cba2e9c8",
       "title": "Runner Gunner",
       "kind": "coming_soon",
@@ -515,6 +491,17 @@
         "RPG",
         "Simülasyon",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-cc19a7359",
+      "title": "Debt of Life",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5058740/Debt_of_Life/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5058740/893d91a55211b0825f54c4993647db0d748bd663/capsule_231x87.jpg?t=1789032476",
+      "categories": [
+        "Macera"
       ]
     },
     {
@@ -572,6 +559,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3470800/a2cd7f32082079755533b63a085e6b82a776fa97/capsule_231x87.jpg?t=1788196760",
       "categories": [
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-9cd5d0a86",
+      "title": "Waterjacked!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3878980/Waterjacked/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3878980/a623c06a0c66995fcbf50fd91de63ea3b440adc8/capsule_231x87.jpg?t=1789163295",
+      "categories": [
+        "Bağımsız"
       ]
     },
     {
