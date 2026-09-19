@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-09-19T09:23:22.755Z",
+  "generatedAt": "2026-09-19T13:15:40.813Z",
   "items": [
+    {
+      "id": "steam-news-ba4331de2",
+      "title": "Relaxation Massage Studio",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5040600/Relaxation_Massage_Studio/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5040600/9175730d66a9d2820d31cb84fc21a190be8b4946/capsule_231x87.jpg?t=1789814976",
+      "categories": []
+    },
     {
       "id": "steam-news-b80fc8041",
       "title": "Pixel BlackJack - 二十一点",
@@ -283,35 +292,9 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4816840/At_Face_Value/?snr=1_7_7_230_150_1",
       "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4816840/16e4560cda8455a563351503eaec128d3fe1b1de/capsule_231x87.jpg?t=1789771312",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4816840/16e4560cda8455a563351503eaec128d3fe1b1de/capsule_231x87.jpg?t=1789821055",
       "categories": [
         "Gündelik",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-bf5aeec23",
-      "title": "Night Shift: Anomaly",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5202790/Night_Shift_Anomaly/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5202790/62431df3915aa7f35072e8a8dfb1c30a4f140c36/capsule_231x87.jpg?t=1789766862",
-      "categories": [
-        "Aksiyon",
-        "Macera",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-5c897e9ed",
-      "title": "Somebody's Tale",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/776250/Somebodys_Tale/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/776250/3066b3cdbb65e9323e4c80a897a6ce472616502b/capsule_231x87.jpg?t=1789071869",
-      "categories": [
-        "Macera",
-        "Aksiyon",
         "Tek Oyunculu"
       ]
     },
@@ -390,7 +373,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/5166800/Partyforge_Idle/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5166800/e9e543cc129190b843fb26398462348241ac2555/capsule_231x87.jpg?t=1789784491",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5166800/e9e543cc129190b843fb26398462348241ac2555/capsule_231x87.jpg?t=1789816154",
       "categories": [
         "RPG",
         "Tek Oyunculu"
@@ -566,6 +549,19 @@
         "Simülasyon",
         "Tek Oyunculu",
         "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-e458edf2d",
+      "title": "Thanks for the Soup",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2132610/Thanks_for_the_Soup/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2132610/f5d8bfcf4c6c4ba204f2b8f40ed659b251255a40/capsule_231x87.jpg?t=1789817663",
+      "categories": [
+        "Bağımsız",
+        "Korku",
+        "Macera"
       ]
     },
     {
