@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-09-19T18:51:07.982Z",
+  "generatedAt": "2026-09-19T21:08:47.810Z",
   "items": [
+    {
+      "id": "steam-news-ddb3e87b9",
+      "title": "Slap the Gamer",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5195850/Slap_the_Gamer/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5195850/ec1ba1ee8166625270079eaa68ab0c8fc58b3939/capsule_231x87.jpg?t=1789849354",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-eab21e740",
+      "title": "Wreckcore",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5012330/Wreckcore/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012330/3aa11946a703b6ec3a67f0f20d21370be6c9b7c5/capsule_231x87.jpg?t=1789848358",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-f76447eb2",
       "title": "Foosball2D",
@@ -263,57 +287,6 @@
       ]
     },
     {
-      "id": "steam-news-b084b83a1",
-      "title": "Perfect Cut",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4131820/Perfect_Cut/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4131820/b5226661cf78c5e1ded8fec9518f3b2db2d1b417/capsule_231x87.jpg?t=1789803021",
-      "categories": [
-        "Gündelik",
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-cd1649957",
-      "title": "Slime Trader",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5164660/Slime_Trader/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5164660/7ef3103d1c5acb8c4e31d0b8468132b26e01a203/capsule_231x87.jpg?t=1789802835",
-      "categories": [
-        "Simülasyon",
-        "Oynaması Ücretsiz",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-801bc0f15",
-      "title": "Slap the Gamer",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5195850/Slap_the_Gamer/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5195850/ec1ba1ee8166625270079eaa68ab0c8fc58b3939/capsule_231x87.jpg?t=1788742363",
-      "categories": [
-        "Aksiyon",
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-c55784d8a",
-      "title": "Sakura: The Eternal Night",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5013390/Sakura_The_Eternal_Night/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5013390/f223d9a864dc8beb8aa931a452a4b6b3bff2009e/capsule_231x87.jpg?t=1789653486",
-      "categories": [
-        "RPG",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-86aeb635e",
       "title": "DIY Dadish",
       "kind": "coming_soon",
@@ -519,6 +492,18 @@
       ]
     },
     {
+      "id": "steam-news-4624c95a6",
+      "title": "Turning point",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4602350/Turning_point/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4602350/8233906abb1643872e1dae39b2c63528e3d01d55/capsule_231x87.jpg?t=1789204088",
+      "categories": [
+        "Aksiyon",
+        "Macera"
+      ]
+    },
+    {
       "id": "steam-news-e458edf2d",
       "title": "Thanks for the Soup",
       "kind": "coming_soon",
@@ -528,18 +513,6 @@
       "categories": [
         "Bağımsız",
         "Korku",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-4624c95a6",
-      "title": "Turning point",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4602350/Turning_point/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4602350/8233906abb1643872e1dae39b2c63528e3d01d55/capsule_231x87.jpg?t=1789204088",
-      "categories": [
-        "Aksiyon",
         "Macera"
       ]
     },
@@ -556,6 +529,15 @@
       ]
     },
     {
+      "id": "steam-news-2d02e9843",
+      "title": "IGTAP: an Incremental Game That's Also a Platformer",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4364730/IGTAP_an_Incremental_Game_Thats_Also_a_Platformer/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4364730/166db1b61869379302b84059808afda23aec3bd9/capsule_231x87.jpg?t=1789749917",
+      "categories": []
+    },
+    {
       "id": "steam-news-08000aabd",
       "title": "GridEnergy",
       "kind": "coming_soon",
@@ -565,6 +547,17 @@
       "categories": [
         "Simülasyon",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-15e92b578",
+      "title": "Echoes of Mora",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3129050/Echoes_of_Mora/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3129050/4259207f64df4efb686251dc117ae3af91a8ce26/capsule_231x87.jpg?t=1789745477",
+      "categories": [
+        "Macera"
       ]
     },
     {
