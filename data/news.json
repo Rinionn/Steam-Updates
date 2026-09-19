@@ -1,6 +1,55 @@
 {
-  "generatedAt": "2026-09-18T22:29:16.252Z",
+  "generatedAt": "2026-09-19T00:33:00.374Z",
   "items": [
+    {
+      "id": "steam-news-295a1b80f",
+      "title": "Warm",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3813060/Warm/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3813060/7baf951462539f6d6d0bf615447e4f1d55fbb0d9/capsule_231x87.jpg?t=1789776011",
+      "categories": [
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-1dc7ac97c",
+      "title": "ToonSouls Maker",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2842720/ToonSouls_Maker/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2842720/f59c48e9180d2b69e0718114d2a9ed9f44b81012/capsule_231x87.jpg?t=1789773990",
+      "categories": [
+        "Bağımsız",
+        "Aksiyon",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-a4279f4c8",
+      "title": "Needle In A Haystack - A Time For Goats",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4772020/Needle_In_A_Haystack__A_Time_For_Goats/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4772020/12f8b4ccbed7913b0bbfc668c32107dd69446e86/capsule_231x87.jpg?t=1789775244",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-35347df01",
+      "title": "At Face Value",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4816840/At_Face_Value/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4816840/16e4560cda8455a563351503eaec128d3fe1b1de/capsule_231x87.jpg?t=1789771312",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-bf5aeec23",
       "title": "Night Shift: Anomaly",
@@ -225,51 +274,6 @@
       "categories": [
         "Gündelik",
         "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-fc99f11d5",
-      "title": "Sunken Realms",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1897860/Sunken_Realms/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1897860/397d21b83c9d953a93f6914baf38763981e68a4b/capsule_231x87.jpg?t=1789750813",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-d0c8e152b",
-      "title": "Parisian Bistro Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3058360/Parisian_Bistro_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3058360/8e349d536141a302b4a81b8f44af43a2963101cd/capsule_231x87.jpg?t=1789750809",
-      "categories": [
-        "Çok Oyunculu",
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-05ea2e6d1",
-      "title": "Super Moncat",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4356680/Super_Moncat/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4356680/c9d34c907d95ceee1334359cb8a7ca2b7daeefce/capsule_231x87.jpg?t=1789750620",
-      "categories": []
-    },
-    {
-      "id": "steam-news-e76c4ed06",
-      "title": "Vibe Lab: Idle Dev Sim",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4892330/Vibe_Lab_Idle_Dev_Sim/?snr=1_7_7_230_150_1",
-      "dateLabel": "18 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4892330/79b0bf1fb1d110fc45eec8347bcd3d484732a7cc/capsule_231x87.jpg?t=1789751221",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
       ]
     },
     {
