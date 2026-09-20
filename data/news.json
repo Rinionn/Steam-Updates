@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-09-20T14:43:00.437Z",
+  "generatedAt": "2026-09-20T17:41:10.046Z",
   "items": [
+    {
+      "id": "steam-news-63ba1a2e5",
+      "title": "Techfront",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5170690/Techfront/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5170690/2b416fd7f23aee1b1afd7f681be3d71d62fdaad8/capsule_231x87.jpg?t=1789920507",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-0c5cdca84",
+      "title": "DISCIPLINE SIMULATOR",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4739040/DISCIPLINE_SIMULATOR/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4739040/65419c6d1ddd2942275924fb4ed71f3b82acd2a4/capsule_231x87.jpg?t=1789916676",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
     {
       "id": "steam-news-42e5ff38e",
       "title": "Darby Is Here Forever",
@@ -239,6 +261,18 @@
       ]
     },
     {
+      "id": "steam-news-10558a73a",
+      "title": "Canyon Carnage",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5010120/Canyon_Carnage/?snr=1_7_7_230_150_1",
+      "dateLabel": "19 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5010120/d3caf2f596ff2d20152e164ee752de9d35547282/capsule_231x87.jpg?t=1789917401",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
       "id": "steam-news-ddb3e87b9",
       "title": "Slap the Gamer",
       "kind": "new_release",
@@ -249,51 +283,6 @@
         "Aksiyon",
         "Gündelik",
         "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-eab21e740",
-      "title": "Wreckcore",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5012330/Wreckcore/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5012330/3aa11946a703b6ec3a67f0f20d21370be6c9b7c5/capsule_231x87.jpg?t=1789848358",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-f76447eb2",
-      "title": "Foosball2D",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5022380/Foosball2D/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5022380/5f5e16ae3c0adabdbb4f6cd16dcbdbb38198a62d/capsule_231x87.jpg?t=1789840663",
-      "categories": [
-        "Gündelik",
-        "Spor"
-      ]
-    },
-    {
-      "id": "steam-news-4b3633c14",
-      "title": "Rusted Awakening",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2874490/Rusted_Awakening/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2874490/capsule_231x87.jpg?t=1789837890",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-3f5ce6add",
-      "title": "DISCIPLINE SIMULATOR",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4739040/DISCIPLINE_SIMULATOR/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4739040/65419c6d1ddd2942275924fb4ed71f3b82acd2a4/capsule_231x87.jpg?t=1789898358",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
@@ -314,7 +303,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/5142630/Fund_Manager_Buy_Side/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5142630/ce30c8b805f3ae89fc32fee4c1421271be482a05/capsule_231x87.jpg?t=1789790053",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5142630/ce30c8b805f3ae89fc32fee4c1421271be482a05/capsule_231x87.jpg?t=1789918199",
       "categories": [
         "Simülasyon",
         "Strateji"
@@ -361,7 +350,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4535170/Dicebinder/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4535170/99f54674fa0fc10b98592586d0852a4eeb760b18/capsule_231x87.jpg?t=1789766626",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4535170/99f54674fa0fc10b98592586d0852a4eeb760b18/capsule_231x87.jpg?t=1789925220",
       "categories": []
     },
     {
@@ -427,7 +416,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4639490/Custom_Corner/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4639490/eab8a8df3e2a875ed9cdef25a98981bae0b7f2ed/capsule_231x87.jpg?t=1789213681",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4639490/eab8a8df3e2a875ed9cdef25a98981bae0b7f2ed/capsule_231x87.jpg?t=1789920603",
       "categories": []
     },
     {
@@ -470,18 +459,6 @@
       ]
     },
     {
-      "id": "steam-news-4624c95a6",
-      "title": "Turning point",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4602350/Turning_point/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4602350/8233906abb1643872e1dae39b2c63528e3d01d55/capsule_231x87.jpg?t=1789204088",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-e458edf2d",
       "title": "Thanks for the Soup",
       "kind": "coming_soon",
@@ -491,6 +468,18 @@
       "categories": [
         "Bağımsız",
         "Korku",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-4624c95a6",
+      "title": "Turning point",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4602350/Turning_point/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4602350/8233906abb1643872e1dae39b2c63528e3d01d55/capsule_231x87.jpg?t=1789204088",
+      "categories": [
+        "Aksiyon",
         "Macera"
       ]
     },
@@ -556,6 +545,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3129050/4259207f64df4efb686251dc117ae3af91a8ce26/capsule_231x87.jpg?t=1789745477",
       "categories": [
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-7610d13c5",
+      "title": "Fruitbearer",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4300180/Fruitbearer/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4300180/cc5158efd3b210b15f2cdca96def1d5ccd7bf67e/capsule_231x87.jpg?t=1789395763",
+      "categories": [
+        "Simülasyon"
       ]
     },
     {
