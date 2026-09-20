@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T17:41:10.046Z",
+  "generatedAt": "2026-09-20T19:44:38.900Z",
   "items": [
     {
       "id": "steam-news-63ba1a2e5",
@@ -327,7 +327,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/3334980/PixelPop_2087/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "20 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3334980/228f6b8c540317429eebaf92ecc7cd293301c082/capsule_231x87.jpg?t=1789557506",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3334980/228f6b8c540317429eebaf92ecc7cd293301c082/capsule_231x87.jpg?t=1789930979",
       "categories": [
         "Bağımsız"
       ]
@@ -528,15 +528,6 @@
       ]
     },
     {
-      "id": "steam-news-f7c183eaf",
-      "title": "CITADEL",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4433910/CITADEL/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4433910/421332f099294b0dbbfe9d5922c2820b358948ac/capsule_231x87.jpg?t=1788853300",
-      "categories": []
-    },
-    {
       "id": "steam-news-15e92b578",
       "title": "Echoes of Mora",
       "kind": "coming_soon",
@@ -546,6 +537,15 @@
       "categories": [
         "Macera"
       ]
+    },
+    {
+      "id": "steam-news-f7c183eaf",
+      "title": "CITADEL",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4433910/CITADEL/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4433910/421332f099294b0dbbfe9d5922c2820b358948ac/capsule_231x87.jpg?t=1788853300",
+      "categories": []
     },
     {
       "id": "steam-news-7610d13c5",
