@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T23:03:26.341Z",
+  "generatedAt": "2026-09-20T01:00:58.484Z",
   "items": [
     {
       "id": "steam-news-f601d693b",
@@ -405,18 +405,6 @@
       ]
     },
     {
-      "id": "steam-news-ec8c43fb2",
-      "title": "Brave New Wonders",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2403830/Brave_New_Wonders/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "20 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2403830/7982979edd919148df54bf569425a3eb37ba60ac/capsule_231x87.jpg?t=1789788742",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-38eabb4d8",
       "title": "Cyberpunk Survivor",
       "kind": "coming_soon",
@@ -427,6 +415,18 @@
         "Aksiyon",
         "Gündelik",
         "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-ec8c43fb2",
+      "title": "Brave New Wonders",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2403830/Brave_New_Wonders/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "20 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2403830/7982979edd919148df54bf569425a3eb37ba60ac/capsule_231x87.jpg?t=1789788742",
+      "categories": [
+        "Simülasyon",
+        "Strateji"
       ]
     },
     {
@@ -455,7 +455,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4513060/Yandere_Virus/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4513060/557d7c1d918a2ef462792d648bf4880ee95cfca4/capsule_231x87.jpg?t=1789797042",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4513060/557d7c1d918a2ef462792d648bf4880ee95cfca4/capsule_231x87.jpg?t=1789865421",
       "categories": [
         "Korku",
         "Anime",
