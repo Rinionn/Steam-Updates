@@ -1,6 +1,18 @@
 {
-  "generatedAt": "2026-09-20T21:53:55.675Z",
+  "generatedAt": "2026-09-20T23:46:32.377Z",
   "items": [
+    {
+      "id": "steam-news-9aa601f7f",
+      "title": "Tidy Tokens",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5132000/Tidy_Tokens/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5132000/5bf81a3b8119ed6fdc84aadea0ae772d2cd2fb34/capsule_231x87.jpg?t=1789941645",
+      "categories": [
+        "Çok Oyunculu",
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-cd8dfef61",
       "title": "Echoes of a Strange World",
@@ -272,18 +284,6 @@
       ]
     },
     {
-      "id": "steam-news-c24223f25",
-      "title": "Submechanic",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4741630/Submechanic/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4741630/2abdd1fe52afdf740cde3c0f7d710a817a7c6b3e/capsule_231x87.jpg?t=1789854682",
-      "categories": [
-        "Korku",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-7babbcea5",
       "title": "Custom Corner",
       "kind": "coming_soon",
@@ -386,7 +386,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4364730/IGTAP_an_Incremental_Game_Thats_Also_a_Platformer/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4364730/166db1b61869379302b84059808afda23aec3bd9/capsule_231x87.jpg?t=1789938497",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4364730/166db1b61869379302b84059808afda23aec3bd9/capsule_231x87.jpg?t=1789945308",
       "categories": []
     },
     {
@@ -445,6 +445,17 @@
       ]
     },
     {
+      "id": "steam-news-ae335fe33",
+      "title": "Normal Golf Game",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3510740/Normal_Golf_Game/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3510740/38b3add3aa9976b73001ef8371c12030d3b2e2e1/capsule_231x87.jpg?t=1789637009",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
       "id": "steam-news-b47a27729",
       "title": "Apparently an Apprentice Alchemist",
       "kind": "coming_soon",
@@ -465,17 +476,6 @@
       "categories": [
         "Korku",
         "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-ae335fe33",
-      "title": "Normal Golf Game",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3510740/Normal_Golf_Game/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3510740/38b3add3aa9976b73001ef8371c12030d3b2e2e1/capsule_231x87.jpg?t=1789637009",
-      "categories": [
-        "Simülasyon"
       ]
     },
     {
@@ -539,18 +539,6 @@
       ]
     },
     {
-      "id": "steam-news-d2de81f5f",
-      "title": "Tidy Tokens",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5132000/Tidy_Tokens/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5132000/5bf81a3b8119ed6fdc84aadea0ae772d2cd2fb34/capsule_231x87.jpg?t=1789482940",
-      "categories": [
-        "Çok Oyunculu",
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-1034c29af",
       "title": "Crime Podcast: 1976",
       "kind": "coming_soon",
@@ -560,6 +548,17 @@
       "categories": [
         "Korku",
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-641734512",
+      "title": "The Rabbit Haul",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2514330/The_Rabbit_Haul/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2514330/5dcc5ec688028b78d65c0275982da38d96d361fa/capsule_231x87.jpg?t=1789920008",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
