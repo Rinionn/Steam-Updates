@@ -1,6 +1,51 @@
 {
-  "generatedAt": "2026-09-20T23:46:32.377Z",
+  "generatedAt": "2026-09-21T01:45:02.765Z",
   "items": [
+    {
+      "id": "steam-news-2be20b434",
+      "title": "Lumiric Stage",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1721290/Lumiric_Stage/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1721290/35b528969a8a60b32b80808706829780a38991b4/capsule_231x87.jpg?t=1789953036",
+      "categories": [
+        "Tek Oyunculu",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-5b6c2b9e4",
+      "title": "What The Frog！Who Kicked The Can？",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5130710/What_The_FrogWho_Kicked_The_Can/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5130710/d9d47a5c39c751a88f2629e324a040b7e71950d1/capsule_231x87.jpg?t=1789952451",
+      "categories": [
+        "Çok Oyunculu",
+        "RPG",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-f60ed1603",
+      "title": "HAND-CODED BATTLE",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5114020/HANDCODED_BATTLE/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5114020/15c4e333f42d619ce80b7302a927bfca42840525/capsule_231x87.jpg?t=1789950980",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-d5160c9de",
+      "title": "Quack my Duck",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2151450/Quack_my_Duck/?snr=1_7_7_230_150_1",
+      "dateLabel": "20 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2151450/capsule_231x87.jpg?t=1789948161",
+      "categories": []
+    },
     {
       "id": "steam-news-9aa601f7f",
       "title": "Tidy Tokens",
@@ -235,55 +280,6 @@
       ]
     },
     {
-      "id": "steam-news-e54c2720d",
-      "title": "ChessTan",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5099860/ChessTan/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099860/28b59141fd406a16413ce64e957c6afefcc32c40/capsule_231x87.jpg?t=1789869185",
-      "categories": [
-        "Strateji",
-        "Çok Oyunculu",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-f601d693b",
-      "title": "BIG BANG TO US",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5097440/BIG_BANG_TO_US/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5097440/3a1aaf64d19041696bc434b726d7b50ab9561d36/capsule_231x87.jpg?t=1789858022",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-1521b6add",
-      "title": "忍牌忍战大师Ninja Cards and Ninja Battle Master",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5132180/Ninja_Cards_and_Ninja_Battle_Master/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5132180/4c9511d1fde4dbb778c7a3dc8a0de60b21830a67/capsule_231x87.jpg?t=1789876907",
-      "categories": [
-        "Gündelik",
-        "Strateji",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-430e5ae32",
-      "title": "Meridian Strike",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5139650/Meridian_Strike/?snr=1_7_7_230_150_1",
-      "dateLabel": "19 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5139650/363dd0435047e3fb085dfce7fafaca984d65e032/capsule_231x87.jpg?t=1789857417",
-      "categories": [
-        "Strateji",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-7babbcea5",
       "title": "Custom Corner",
       "kind": "coming_soon",
@@ -298,7 +294,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4513060/Yandere_Virus/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4513060/557d7c1d918a2ef462792d648bf4880ee95cfca4/capsule_231x87.jpg?t=1789909462",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4513060/557d7c1d918a2ef462792d648bf4880ee95cfca4/capsule_231x87.jpg?t=1789950334",
       "categories": [
         "Korku",
         "Anime",
@@ -390,17 +386,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-15e92b578",
-      "title": "Echoes of Mora",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3129050/Echoes_of_Mora/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3129050/4259207f64df4efb686251dc117ae3af91a8ce26/capsule_231x87.jpg?t=1789745477",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-5921d935b",
       "title": "Echoes of Mora VR",
       "kind": "coming_soon",
@@ -419,6 +404,17 @@
       "dateLabel": "21 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4433910/421332f099294b0dbbfe9d5922c2820b358948ac/capsule_231x87.jpg?t=1788853300",
       "categories": []
+    },
+    {
+      "id": "steam-news-15e92b578",
+      "title": "Echoes of Mora",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3129050/Echoes_of_Mora/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3129050/4259207f64df4efb686251dc117ae3af91a8ce26/capsule_231x87.jpg?t=1789745477",
+      "categories": [
+        "Macera"
+      ]
     },
     {
       "id": "steam-news-7610d13c5",
@@ -445,14 +441,15 @@
       ]
     },
     {
-      "id": "steam-news-ae335fe33",
-      "title": "Normal Golf Game",
+      "id": "steam-news-d61715091",
+      "title": "Hallness",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3510740/Normal_Golf_Game/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5033840/Hallness/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3510740/38b3add3aa9976b73001ef8371c12030d3b2e2e1/capsule_231x87.jpg?t=1789637009",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5033840/71baf95c1e1c8c414e18a8142023099ccf54a80d/capsule_231x87.jpg?t=1789935779",
       "categories": [
-        "Simülasyon"
+        "Korku",
+        "Çok Oyunculu"
       ]
     },
     {
@@ -467,15 +464,14 @@
       ]
     },
     {
-      "id": "steam-news-d61715091",
-      "title": "Hallness",
+      "id": "steam-news-ae335fe33",
+      "title": "Normal Golf Game",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5033840/Hallness/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/3510740/Normal_Golf_Game/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5033840/71baf95c1e1c8c414e18a8142023099ccf54a80d/capsule_231x87.jpg?t=1789935779",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3510740/38b3add3aa9976b73001ef8371c12030d3b2e2e1/capsule_231x87.jpg?t=1789953564",
       "categories": [
-        "Korku",
-        "Çok Oyunculu"
+        "Simülasyon"
       ]
     },
     {
@@ -539,6 +535,17 @@
       ]
     },
     {
+      "id": "steam-news-641734512",
+      "title": "The Rabbit Haul",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2514330/The_Rabbit_Haul/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "21 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2514330/5dcc5ec688028b78d65c0275982da38d96d361fa/capsule_231x87.jpg?t=1789920008",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
       "id": "steam-news-1034c29af",
       "title": "Crime Podcast: 1976",
       "kind": "coming_soon",
@@ -548,17 +555,6 @@
       "categories": [
         "Korku",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-641734512",
-      "title": "The Rabbit Haul",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/2514330/The_Rabbit_Haul/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "21 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2514330/5dcc5ec688028b78d65c0275982da38d96d361fa/capsule_231x87.jpg?t=1789920008",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
