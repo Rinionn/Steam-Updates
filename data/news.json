@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-09-26T21:01:28.346Z",
+  "generatedAt": "2026-09-26T23:30:50.722Z",
   "items": [
+    {
+      "id": "steam-news-55a9f69f5",
+      "title": "Souls Runner",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4888600/Souls_Runner/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4888600/7b3bce62b7413d9a8d7ba4e21bb1d182e258db1a/capsule_231x87.jpg?t=1790462486",
+      "categories": [
+        "Macera",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-71711dedb",
+      "title": "Happy Pet Island",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4273090/Happy_Pet_Island/?snr=1_7_7_230_150_1",
+      "dateLabel": "26 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4273090/c4bf64c4ba5e18a7527b9d4547d720dfcc58bed2/capsule_231x87.jpg?t=1790457776",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Çok Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-b845f1ae7",
       "title": "Horde Slayer",
@@ -102,8 +127,8 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5148990/449c538fa26f08ea1af9c0f7ad75e0bfbd9a2073/capsule_231x87.jpg?t=1790431659",
       "categories": [
         "RPG",
-        "Gündelik",
-        "Simülasyon"
+        "Simülasyon",
+        "Gündelik"
       ]
     },
     {
@@ -260,27 +285,16 @@
       ]
     },
     {
-      "id": "steam-news-ef65fac12",
-      "title": "Jackpot Dungeon",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4948400/Jackpot_Dungeon/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4948400/eb952005109f664ee5ba929c829378261c1fa8e7/capsule_231x87.jpg?t=1790396975",
+      "id": "steam-news-81a5dfa6e",
+      "title": "四番旅館 The 4th Ryokan",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5223400/_The_4th_Ryokan/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "27 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5223400/15c3765f0954d1d031d0c74592ef4282f089203b/capsule_231x87.jpg?t=1790344513",
       "categories": [
-        "Macera",
+        "Gündelik",
+        "Korku",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-47032ebef",
-      "title": "Sector 13: Haunted Woods",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4244040/Sector_13_Haunted_Woods/?snr=1_7_7_230_150_1",
-      "dateLabel": "25 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4244040/72262e7a954bb066c20469ef258ad4b8f95e545d/capsule_231x87.jpg?t=1790396109",
-      "categories": [
-        "Macera",
-        "Korku"
       ]
     },
     {
@@ -295,25 +309,23 @@
       ]
     },
     {
-      "id": "steam-news-81a5dfa6e",
-      "title": "四番旅館 The 4th Ryokan",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5223400/_The_4th_Ryokan/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "27 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5223400/15c3765f0954d1d031d0c74592ef4282f089203b/capsule_231x87.jpg?t=1790344513",
-      "categories": [
-        "Gündelik",
-        "Korku",
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-d3034d487",
       "title": "Bearly Awesome: Chapter 1",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4610630/Bearly_Awesome_Chapter_1/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "27 Sep, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4610630/d888f9a4cfd215c5262b93ee66a68731fd829bf5/capsule_231x87.jpg?t=1790233600",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-15fb3ba2b",
+      "title": "Pawmlet - Wheat Farm",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5250830/Pawmlet__Wheat_Farm/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "27 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5250830/919f1aa125fe042f1c56f37dc30874ef1609a301/capsule_231x87.jpg?t=1790272480",
       "categories": [
         "Gündelik"
       ]
@@ -328,17 +340,6 @@
       "categories": [
         "Macera",
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-15fb3ba2b",
-      "title": "Pawmlet - Wheat Farm",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5250830/Pawmlet__Wheat_Farm/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "27 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5250830/919f1aa125fe042f1c56f37dc30874ef1609a301/capsule_231x87.jpg?t=1790272480",
-      "categories": [
-        "Gündelik"
       ]
     },
     {
