@@ -1,6 +1,67 @@
 {
-  "generatedAt": "2026-09-30T23:40:04.209Z",
+  "generatedAt": "2026-10-01T02:26:38.929Z",
   "items": [
+    {
+      "id": "steam-news-4c8e4bf41",
+      "title": "Grapixo Arte em Guerra",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4183870/Grapixo_Arte_em_Guerra/?snr=1_7_7_230_150_1",
+      "dateLabel": "30 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4183870/23848051e8a7a1b805f014273ddc1544b1a00735/capsule_231x87.jpg?t=1790820152",
+      "categories": [
+        "Macera",
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-533bffb05",
+      "title": "CRABRUN",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4633560/CRABRUN/?snr=1_7_7_230_150_1",
+      "dateLabel": "30 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4633560/67783791c2b9dd2205b973ac0d7bb2c14df1da32/capsule_231x87.jpg?t=1790818953",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-bb4b32774",
+      "title": "CRYING BOOTH",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2351740/CRYING_BOOTH/?snr=1_7_7_230_150_1",
+      "dateLabel": "30 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2351740/807a66363e89e39cae7f70ada7efd32c90e119f1/capsule_231x87.jpg?t=1790818122",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-2807f6940",
+      "title": "DYNASTY WARRIORS 3: Complete Edition Remastered",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3841510/DYNASTY_WARRIORS_3_Complete_Edition_Remastered/?snr=1_7_7_230_150_1",
+      "dateLabel": "30 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3841510/138dca4c3b486c7a9449388bb007c9056737d6af/capsule_231x87.jpg?t=1790817204",
+      "categories": [
+        "RPG",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-6f66b4579",
+      "title": "The Calamity Trials",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3877630/The_Calamity_Trials/?snr=1_7_7_230_150_1",
+      "dateLabel": "30 Sep, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3877630/7db0d4a488e5ce83feef07d978706b51cf7ad67c/capsule_231x87.jpg?t=1790817095",
+      "categories": [
+        "Aksiyon",
+        "Simülasyon",
+        "Korku"
+      ]
+    },
     {
       "id": "steam-news-26e4a0468",
       "title": "Water Droplet Simulator",
@@ -52,7 +113,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4993850/Mahjong_For_All/?snr=1_7_7_230_150_1",
       "dateLabel": "30 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4993850/c59644c6557864bb44082dd9394b6b635686176f/capsule_231x87.jpg?t=1790807801",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4993850/c59644c6557864bb44082dd9394b6b635686176f/capsule_231x87.jpg?t=1790815440",
       "categories": [
         "Strateji"
       ]
@@ -221,62 +282,37 @@
       ]
     },
     {
-      "id": "steam-news-52d8b69b8",
-      "title": "Chaos of the Realms",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4442360/Chaos_of_the_Realms/?snr=1_7_7_230_150_1",
-      "dateLabel": "30 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4442360/cb21c3233f3f04df4fb66d7ae79e2e157a5cd4e9/capsule_231x87.jpg?t=1790793242",
+      "id": "steam-news-7642cb389",
+      "title": "Dreidel I Shall Spin",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4363700/Dreidel_I_Shall_Spin/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "1 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4363700/324acdf18541b94fa8df2467d91a540d26b936d7/capsule_231x87.jpg?t=1788971122",
       "categories": [
-        "Aksiyon",
-        "Macera",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-7a76959cd",
+      "title": "La Mano Pachona",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4936670/La_Mano_Pachona/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "1 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4936670/13ac0513ebd600dd05b533357aeb0f6253e6fc17/capsule_231x87.jpg?t=1787634772",
+      "categories": [
         "Gündelik"
       ]
     },
     {
-      "id": "steam-news-b42cffae9",
-      "title": "VHS Chaos",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5142170/VHS_Chaos/?snr=1_7_7_230_150_1",
-      "dateLabel": "30 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5142170/3ef0d65f95c8d99cff547d6139c41641a90d580f/capsule_231x87.jpg?t=1790796784",
+      "id": "steam-news-d8114ca6a",
+      "title": "My Murder",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4655360/My_Murder/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "1 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4655360/8d7c3b0cbce7905d7c13f18327e18ad6468ee044/capsule_231x87.jpg?t=1786857794",
       "categories": [
         "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-a5a515de3",
-      "title": "Pop 'Un Orc",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4731880/Pop_Un_Orc/?snr=1_7_7_230_150_1",
-      "dateLabel": "30 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4731880/83285a802136a06748041e6e08998f0ab85b428a/capsule_231x87.jpg?t=1790792490",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-43e3a9912",
-      "title": "Counter Clash",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2838160/Counter_Clash/?snr=1_7_7_230_150_1",
-      "dateLabel": "30 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2838160/f250bdab08b29e09403cc6b90ced54eb88d5ca78/capsule_231x87.jpg?t=1790791479",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-f200b5523",
-      "title": "The Crimson Scales",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5049800/The_Crimson_Scales/?snr=1_7_7_230_150_1",
-      "dateLabel": "30 Sep, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5049800/d09db85a997e088d1a73649b401d2a92acebd1ac/capsule_231x87.jpg?t=1790791403",
-      "categories": [
-        "Strateji",
-        "RPG"
+        "Anime"
       ]
     },
     {
@@ -292,28 +328,6 @@
       ]
     },
     {
-      "id": "steam-news-7a76959cd",
-      "title": "La Mano Pachona",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4936670/La_Mano_Pachona/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "1 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4936670/13ac0513ebd600dd05b533357aeb0f6253e6fc17/capsule_231x87.jpg?t=1787634772",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-7642cb389",
-      "title": "Dreidel I Shall Spin",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4363700/Dreidel_I_Shall_Spin/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "1 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4363700/324acdf18541b94fa8df2467d91a540d26b936d7/capsule_231x87.jpg?t=1788971122",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-bb856dabe",
       "title": "Drawaoke: Sing, Scribble, Showdown!",
       "kind": "coming_soon",
@@ -323,18 +337,6 @@
       "categories": [
         "Gündelik",
         "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-d8114ca6a",
-      "title": "My Murder",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4655360/My_Murder/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "1 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4655360/8d7c3b0cbce7905d7c13f18327e18ad6468ee044/capsule_231x87.jpg?t=1786857794",
-      "categories": [
-        "Gündelik",
-        "Anime"
       ]
     },
     {
@@ -385,6 +387,17 @@
       ]
     },
     {
+      "id": "steam-news-264af55c6",
+      "title": "Pantheon Tactics",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4929050/Pantheon_Tactics/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "1 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4929050/27220f613be2a1ad6afa7c768dd066c53be862d2/capsule_231x87.jpg?t=1790787886",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
       "id": "steam-news-2ef9cf209",
       "title": "Legend of the Crystal Skulls",
       "kind": "coming_soon",
@@ -394,17 +407,6 @@
       "categories": [
         "Aksiyon",
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-264af55c6",
-      "title": "Pantheon Tactics",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4929050/Pantheon_Tactics/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "1 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4929050/27220f613be2a1ad6afa7c768dd066c53be862d2/capsule_231x87.jpg?t=1790787886",
-      "categories": [
-        "Strateji"
       ]
     },
     {
@@ -494,17 +496,6 @@
       ]
     },
     {
-      "id": "steam-news-8b750e50a",
-      "title": "autocycle-light",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4955820/autocyclelight/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "1 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4955820/c02011f05e1cdfb34b20a8e2ac2dd6dce0e510cc/capsule_231x87.jpg?t=1790173250",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-82d7a4bfb",
       "title": "Train Station Tycoon",
       "kind": "coming_soon",
@@ -516,6 +507,17 @@
         "Gündelik",
         "Simülasyon",
         "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-8b750e50a",
+      "title": "autocycle-light",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4955820/autocyclelight/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "1 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4955820/c02011f05e1cdfb34b20a8e2ac2dd6dce0e510cc/capsule_231x87.jpg?t=1790173250",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
