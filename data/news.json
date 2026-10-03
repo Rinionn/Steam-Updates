@@ -1,6 +1,69 @@
 {
-  "generatedAt": "2026-10-02T22:35:52.743Z",
+  "generatedAt": "2026-10-03T01:27:08.661Z",
   "items": [
+    {
+      "id": "steam-news-0e693324d",
+      "title": "In These Hallowed Halls",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4875320/In_These_Hallowed_Halls/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4875320/fc4f23164405e6a61250a04926105359fe8415b5/capsule_231x87.jpg?t=1790990351",
+      "categories": [
+        "Tek Oyunculu",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-2cb412ae6",
+      "title": "Stick Cards RNG",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4611600/Stick_Cards_RNG/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4611600/0e885ce1923dad35d116a7e1132afa2bd246ae89/capsule_231x87.jpg?t=1790989270",
+      "categories": [
+        "Oynaması Ücretsiz",
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-c41189a00",
+      "title": "Spring Me Up",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4218230/Spring_Me_Up/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4218230/4524b948493b45b50a859ba4c2026ea3939f02c9/capsule_231x87.jpg?t=1790983621",
+      "categories": [
+        "Macera",
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-ae7277ab1",
+      "title": "FORK BOMB: A Programming Game",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5189090/FORK_BOMB_A_Programming_Game/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5189090/6e9ddcfe83c248605c33b561b7e8178c950bef2d/capsule_231x87.jpg?t=1790983170",
+      "categories": [
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-0cce103a1",
+      "title": "Clash of Crests",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4600990/Clash_of_Crests/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4600990/db56ffa5c2e5edf123f7026ef0d9940e9ee9d64c/capsule_231x87.jpg?t=1790980997",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "Strateji"
+      ]
+    },
     {
       "id": "steam-news-eb00141d6",
       "title": "Birb",
@@ -22,6 +85,17 @@
       "categories": [
         "Gündelik",
         "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-e12cdbff7",
+      "title": "Major Mutt",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4408990/Major_Mutt/?snr=1_7_7_230_150_1",
+      "dateLabel": "2 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4408990/32441ac180135459502d35654178dd727b507178/capsule_231x87.jpg?t=1790978754",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -92,7 +166,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/2755510/Cheddar_Beach_0__Party_on_Mango_St/?snr=1_7_7_230_150_1",
       "dateLabel": "2 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2755510/0d77aae126f9695accee39a8f4bba5861040fd8e/capsule_231x87.jpg?t=1790969427",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2755510/0d77aae126f9695accee39a8f4bba5861040fd8e/capsule_231x87.jpg?t=1790982340",
       "categories": [
         "Gündelik"
       ]
@@ -179,20 +253,6 @@
       ]
     },
     {
-      "id": "steam-news-0cce103a1",
-      "title": "Clash of Crests",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4600990/Clash_of_Crests/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4600990/db56ffa5c2e5edf123f7026ef0d9940e9ee9d64c/capsule_231x87.jpg?t=1790963780",
-      "categories": [
-        "Bağımsız",
-        "Macera",
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-a79f6966d",
       "title": "Dream Simulators",
       "kind": "new_release",
@@ -209,7 +269,7 @@
       "kind": "new_release",
       "url": "https://store.steampowered.com/app/4998990/Monster_Museum_Tidy_Up_the_collection/?snr=1_7_7_230_150_1",
       "dateLabel": "2 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998990/fd7628ce108e252adf3b5bc2763a970be0720411/capsule_231x87.jpg?t=1790963693",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4998990/fd7628ce108e252adf3b5bc2763a970be0720411/capsule_231x87.jpg?t=1790984613",
       "categories": [
         "Gündelik"
       ]
@@ -223,65 +283,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5246800/d7fa2dd2f6671d2fee4129177cb11e08d5b0f0e5/capsule_231x87.jpg?t=1790961106",
       "categories": [
         "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-1945e3bd6",
-      "title": "Sandcastle Battle",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5179130/Sandcastle_Battle/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5179130/2f7be8575e5e370a08ff6b9a989fd11cc750e5a0/capsule_231x87.jpg?t=1790960566",
-      "categories": [
-        "Gündelik",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-bc8ace319",
-      "title": "Clickore Station",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5209210/Clickore_Station/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5209210/93111061b65f4e745804f5f83b9230fb5387189b/capsule_231x87.jpg?t=1790962647",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-ea59dc946",
-      "title": "Game Keeper: Somebody Messed Up My Shop!",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5186690/Game_Keeper_Somebody_Messed_Up_My_Shop/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5186690/85654bc54c6b54027c293809ff31dd991783f113/capsule_231x87.jpg?t=1790960450",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-511aa9e64",
-      "title": "Obstacle Overdrive",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3412490/Obstacle_Overdrive/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3412490/d41bb23e52aa2cfad947311f60102853a7d6a799/capsule_231x87.jpg?t=1790960465",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-8bf54fff4",
-      "title": "GODSPEED",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5119800/GODSPEED/?snr=1_7_7_230_150_1",
-      "dateLabel": "2 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5119800/46a8824ca5404234a844b1a8453f6bf0a22efe65/capsule_231x87.jpg?t=1790959916",
-      "categories": [
-        "Aksiyon"
       ]
     },
     {
@@ -519,15 +520,6 @@
       ]
     },
     {
-      "id": "steam-news-6bfbff6a5",
-      "title": "Stickility",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3419140/Stickility/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "5 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3419140/63680c58528a999b03b44fcc59c9eb6e24b6588a/capsule_231x87.jpg?t=1790697987",
-      "categories": []
-    },
-    {
       "id": "steam-news-df0af0adc",
       "title": "AION 2",
       "kind": "coming_soon",
@@ -539,6 +531,15 @@
         "Macera",
         "RPG"
       ]
+    },
+    {
+      "id": "steam-news-6bfbff6a5",
+      "title": "Stickility",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3419140/Stickility/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "5 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3419140/63680c58528a999b03b44fcc59c9eb6e24b6588a/capsule_231x87.jpg?t=1790697987",
+      "categories": []
     },
     {
       "id": "steam-news-31bc9163d",
@@ -562,14 +563,6 @@
         "Gündelik",
         "Tek Oyunculu"
       ]
-    },
-    {
-      "id": "steam-news-30d194447",
-      "title": "Changes to Steam User Reviews API",
-      "kind": "platform",
-      "url": "https://steamcommunity.com/groups/steamworks/events//676258795703241580",
-      "publishedAt": "2026-10-02T21:19:00.000Z",
-      "summary": "A lil somethin somethin: You can find the details for this event on the announcement page [url=https://steamcommunity.com/ogg/0/announcements/detail/676258795703241581]here[/url]."
     },
     {
       "id": "steam-news-e5972d2ea",
