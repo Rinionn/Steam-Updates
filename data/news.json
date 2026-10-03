@@ -1,6 +1,54 @@
 {
-  "generatedAt": "2026-10-03T16:38:06.594Z",
+  "generatedAt": "2026-10-03T19:26:10.190Z",
   "items": [
+    {
+      "id": "steam-news-939dc25db",
+      "title": "Chroma Ward",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5244430/Chroma_Ward/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5244430/0ac2eba115144afc223adf506a53dee4e0b653da/capsule_231x87.jpg?t=1791054843",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-bcb0f660c",
+      "title": "Nobody Clocks Out",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5262000/Nobody_Clocks_Out/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5262000/246f70a88e34c56590af793daf661658240175cc/capsule_231x87.jpg?t=1791049571",
+      "categories": [
+        "Aksiyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-262c705ad",
+      "title": "Unknown Horizon",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4625850/Unknown_Horizon/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4625850/66cf1e208410d3e4ba199d64bdb2cfca38eb8c34/capsule_231x87.jpg?t=1791048261",
+      "categories": [
+        "Macera",
+        "RPG",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-ae6dd14b4",
+      "title": "Data Center Simulator",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4535710/Data_Center_Simulator/?snr=1_7_7_230_150_1",
+      "dateLabel": "3 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4535710/2a519251dec72b4af6a98353b9574de0f8008984/capsule_231x87.jpg?t=1791045670",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-0a18b985f",
       "title": "Timefract",
@@ -236,51 +284,15 @@
       ]
     },
     {
-      "id": "steam-news-163ba7362",
-      "title": "The 3AM Convenience Store",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5269520/The_3AM_Convenience_Store/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5269520/8514577c762f8a79ef1d9c4ac3c40dc5836afcdf/capsule_231x87.jpg?t=1791013125",
+      "id": "steam-news-b7449d865",
+      "title": "Catventure",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4459980/Catventure/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "4 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4459980/4f014569a6aef01ed0f9c2d4cd1f9569a16d1705/capsule_231x87.jpg?t=1789983280",
       "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-d39bf1d9c",
-      "title": "Lucid.sys",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4131310/Lucidsys/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4131310/c03d4d8fddc7f8372a333a4ae52f8ffc78127777/capsule_231x87.jpg?t=1791012013",
-      "categories": [
-        "RPG",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-c6791e842",
-      "title": "LUMESPROUT",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5242800/LUMESPROUT/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5242800/e089882d2d1d9e2807d72a67ae28f556f7227f0b/capsule_231x87.jpg?t=1791011533",
-      "categories": [
-        "Macera",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-475875de5",
-      "title": "Alchemy Master",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5201260/Alchemy_Master/?snr=1_7_7_230_150_1",
-      "dateLabel": "3 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5201260/49809f48b8a86e5d3bde4d99a9ac969d21dd5cb4/capsule_231x87.jpg?t=1791031749",
-      "categories": [
-        "Strateji",
         "Gündelik",
-        "Simülasyon"
+        "RPG"
       ]
     },
     {
@@ -305,18 +317,6 @@
       "categories": [
         "Gündelik",
         "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-b7449d865",
-      "title": "Catventure",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4459980/Catventure/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "4 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4459980/4f014569a6aef01ed0f9c2d4cd1f9569a16d1705/capsule_231x87.jpg?t=1789983280",
-      "categories": [
-        "Gündelik",
-        "RPG"
       ]
     },
     {
