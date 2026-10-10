@@ -1,6 +1,129 @@
 {
-  "generatedAt": "2026-10-09T22:56:35.752Z",
+  "generatedAt": "2026-10-10T02:15:04.423Z",
   "items": [
+    {
+      "id": "steam-news-e78ed0227",
+      "title": "Astral shifter",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5041240/Astral_shifter/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5041240/246e49b7e9e73a7b28e0abb541ab03561b4c467d/capsule_231x87.jpg?t=1791598408",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-c1368ba02",
+      "title": "농구제왕",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5099990/_/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5099990/8e10e98b1f675ecebb2f3bb4d5bfeea45f8d3b4b/capsule_231x87.jpg?t=1791597619",
+      "categories": [
+        "Spor",
+        "Oynaması Ücretsiz",
+        "Çok Oyunculu",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-db13f87ad",
+      "title": "KABOOM Farm",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4123450/KABOOM_Farm/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4123450/b0e1a290413071c3bd01260895d9778a1436bf0d/capsule_231x87.jpg?t=1791597526",
+      "categories": []
+    },
+    {
+      "id": "steam-news-61adfc5a7",
+      "title": "告死天使招魂令 Death Angel Requiem",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4789070/_Death_Angel_Requiem/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4789070/4232b727be690f9953a62cdec6bbb5cdfd331c9a/capsule_231x87.jpg?t=1791597444",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-819316c89",
+      "title": "Masters of Magic",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4345260/Masters_of_Magic/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4345260/41cb12d5ff56457a022b8351cf862196a99882b1/capsule_231x87.jpg?t=1791595799",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-d1cee8247",
+      "title": "Perimeter, Paint & Process",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4640300/Perimeter_Paint__Process/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4640300/db070613d0648a95703b0a370e0ec23fc1f1768a/capsule_231x87.jpg?t=1791596431",
+      "categories": [
+        "Spor",
+        "Strateji",
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-b75ab3047",
+      "title": "Bar Keeper",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5176690/Bar_Keeper/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5176690/e67a2e56addc2424911c97a3ed6f2243f566664c/capsule_231x87.jpg?t=1791592997",
+      "categories": [
+        "Simülasyon",
+        "Gündelik",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-fe62ebef8",
+      "title": "Light Work",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4632980/Light_Work/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4632980/549d19b3e6fb300d40cfab2d89269c6bd75ebec7/capsule_231x87.jpg?t=1791590287",
+      "categories": [
+        "Macera",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-d2121780f",
+      "title": "Sidewalk Simulator",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3324100/Sidewalk_Simulator/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3324100/ed506bcd97e4f04a73887967e85c9e2b609b5166/capsule_231x87.jpg?t=1791590228",
+      "categories": [
+        "Aksiyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-f5ba934eb",
+      "title": "Tank Odyssey",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3646570/Tank_Odyssey/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3646570/590a5678cf5964743b68981729944b9f64a5a54c/capsule_231x87.jpg?t=1791590194",
+      "categories": [
+        "Gündelik",
+        "Tek Oyunculu",
+        "Simülasyon"
+      ]
+    },
     {
       "id": "steam-news-44a66a1f9",
       "title": "Purrtaliation",
@@ -21,6 +144,19 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5226840/dfec8685ff51a342d94f754913a68f7d6b351372/capsule_231x87.jpg?t=1791583485",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-db193c9a8",
+      "title": "Lang Ops: Blank Canvas",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4666760/Lang_Ops_Blank_Canvas/?snr=1_7_7_230_150_1",
+      "dateLabel": "9 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4666760/80913cc5ff15c26d636d5059510164b406a79d08/capsule_231x87.jpg?t=1791583224",
+      "categories": [
+        "Gündelik",
+        "Macera",
+        "RPG"
       ]
     },
     {
@@ -154,139 +290,6 @@
       ]
     },
     {
-      "id": "steam-news-ad8523afb",
-      "title": "Academy Soccer Manager",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5284460/Academy_Soccer_Manager/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5284460/33029b9a9062ef7e7bdf28e28d2bbb9fa38cf86a/capsule_231x87.jpg?t=1791573396",
-      "categories": [
-        "Spor",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-9be083940",
-      "title": "Labyrinth of Reverie",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5072920/Labyrinth_of_Reverie/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5072920/1dfa4dbb4483eaadacb8f281c03eb36230991b03/capsule_231x87.jpg?t=1791575854",
-      "categories": [
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-9075483e1",
-      "title": "Starforge Reborn",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4240380/Starforge_Reborn/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4240380/745401ae8df93806dac2fe66d92207a16e2c63e1/capsule_231x87.jpg?t=1791573241",
-      "categories": [
-        "Aksiyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-e58416b65",
-      "title": "Glintwave",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5171200/Glintwave/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5171200/9c438379a5bfc769dce817ec99c90cbdbacd54ab/capsule_231x87.jpg?t=1791573660",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-e7f16533f",
-      "title": "Turbo Zone: Car Royale",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5002750/Turbo_Zone_Car_Royale/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5002750/7bce9c8ba2d4c1cd6abfc81b2575dae7726c9fdc/capsule_231x87.jpg?t=1791572420",
-      "categories": [
-        "Aksiyon",
-        "Yarış",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-922efe549",
-      "title": "Webs of Reverie",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4731030/Webs_of_Reverie/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4731030/d8944a757d88cabfb23eba18a58f8b8bfd0a569f/capsule_231x87.jpg?t=1791572303",
-      "categories": [
-        "Tek Oyunculu",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-7b760a3b5",
-      "title": "Cybernetic Strategy",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5226810/Cybernetic_Strategy/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5226810/e95e652170bed01f430fdc570f0912f89de729c4/capsule_231x87.jpg?t=1791571895",
-      "categories": [
-        "Bağımsız",
-        "Strateji",
-        "Oynaması Ücretsiz",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-37c3abc28",
-      "title": "100 Rogues",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3763720/100_Rogues/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3763720/8a087b93d1f14d83fd734b4a1c9f5a57e64301be/capsule_231x87.jpg?t=1791569146",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-7150cfc13",
-      "title": "PAPERHEAD",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2680280/PAPERHEAD/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2680280/4a08d4a6600124188c5f34e261cfb71905beaa0f/capsule_231x87.jpg?t=1791581527",
-      "categories": [
-        "Tek Oyunculu",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-c1266b56e",
-      "title": "Wood Watch",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5249390/Wood_Watch/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5249390/ad51945a6ef6fe5461a182cbe69f9f84218eed0a/capsule_231x87.jpg?t=1791568933",
-      "categories": [
-        "Korku",
-        "Aksiyon",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-a178105c4",
-      "title": "OBSESSED",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4761360/OBSESSED/?snr=1_7_7_230_150_1",
-      "dateLabel": "9 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4761360/2c1790b4c20f2d918ae3e804406c967020853c86/capsule_231x87.jpg?t=1791568830",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-488786365",
       "title": "Nova Warp",
       "kind": "coming_soon",
@@ -326,17 +329,6 @@
       ]
     },
     {
-      "id": "steam-news-d3617a0cc",
-      "title": "Phantom Fleet",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5332620/Phantom_Fleet/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5332620/00cd05d9fd32acb85aa1bcfa2754164a3bf3e01e/capsule_231x87.jpg?t=1791241193",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-540072891",
       "title": "Inspector Sommers in: Ouroborian Madness",
       "kind": "coming_soon",
@@ -345,6 +337,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4894260/5dce7164a712a900503a0510052d0d13776aca49/capsule_231x87.jpg?t=1790880990",
       "categories": [
         "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-d3617a0cc",
+      "title": "Phantom Fleet",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5332620/Phantom_Fleet/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5332620/00cd05d9fd32acb85aa1bcfa2754164a3bf3e01e/capsule_231x87.jpg?t=1791241193",
+      "categories": [
+        "Aksiyon"
       ]
     },
     {
@@ -409,17 +412,6 @@
       ]
     },
     {
-      "id": "steam-news-990a52ba0",
-      "title": "Warring States: Seven Hegemons",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5234230/Warring_States_Seven_Hegemons/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5234230/f6846876164702b9c5cb834c75a3d8854319d459/capsule_231x87.jpg?t=1790727831",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-e008dd3b9",
       "title": "Unwatching -The Seven Dolls-",
       "kind": "coming_soon",
@@ -428,6 +420,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5166790/bd463ebac1688dae9aef606165dde5e0fc4e4eee/capsule_231x87.jpg?t=1791102442",
       "categories": [
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-990a52ba0",
+      "title": "Warring States: Seven Hegemons",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5234230/Warring_States_Seven_Hegemons/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5234230/f6846876164702b9c5cb834c75a3d8854319d459/capsule_231x87.jpg?t=1790727831",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -554,18 +557,15 @@
       "categories": []
     },
     {
-      "id": "steam-news-b63325436",
-      "title": "Poco Loco",
+      "id": "steam-news-db1711171",
+      "title": "Adventures of Mack",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5262490/Poco_Loco/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/4801520/Adventures_of_Mack/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5262490/9954dd0261049789f6e2846e3b03da7dbd7336a3/capsule_231x87.jpg?t=1789754070",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4801520/42e972bcb4a55068b80221080ad3229bd9d14c41/capsule_231x87.jpg?t=1790569306",
       "categories": [
-        "Yarış",
-        "Oynaması Ücretsiz",
         "Gündelik",
-        "Simülasyon",
-        "Çok Oyunculu"
+        "Macera"
       ]
     },
     {
