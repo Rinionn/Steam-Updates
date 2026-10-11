@@ -1,6 +1,54 @@
 {
-  "generatedAt": "2026-10-10T22:11:41.768Z",
+  "generatedAt": "2026-10-11T01:00:32.139Z",
   "items": [
+    {
+      "id": "steam-news-befa3a949",
+      "title": "I Can't See You",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5267160/I_Cant_See_You/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5267160/8bc275f3bf49e59d959a9608c5aa02b8f7811d3d/capsule_231x87.jpg?t=1791673576",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-2eabbe3ba",
+      "title": "Distributed Shield",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5301280/Distributed_Shield/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5301280/087989e946730ccda39f12a0f1e6babd471dbd31/capsule_231x87.jpg?t=1791672940",
+      "categories": [
+        "Strateji",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-eaa6010d1",
+      "title": "Logic Puzzle Hall",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5235060/Logic_Puzzle_Hall/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5235060/3e5418cf158a4b1cf54cbc499c43c5c64523cff9/capsule_231x87.jpg?t=1791672661",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-0eebce1fc",
+      "title": "CyberCowboys",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5136630/CyberCowboys/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5136630/9c879aa94454d083bf6f2e8791f7faf8e7450855/capsule_231x87.jpg?t=1791672464",
+      "categories": [
+        "Gündelik",
+        "RPG",
+        "Simülasyon",
+        "Oynaması Ücretsiz"
+      ]
+    },
     {
       "id": "steam-news-0acc029bd",
       "title": "Rooftops Parkour Pro",
@@ -240,53 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-572c97646",
-      "title": "Lightholm",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3084460/Lightholm/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3084460/457949264f1c35b13e253d8e92cae9216cc033ea/capsule_231x87.jpg?t=1791623991",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-dde63a76a",
-      "title": "Legends of the Pitch",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5294190/Legends_of_the_Pitch/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5294190/4487d6087d4cf19735e5ff4f9477d43f797fd372/capsule_231x87.jpg?t=1791623717",
-      "categories": [
-        "Macera",
-        "Spor"
-      ]
-    },
-    {
-      "id": "steam-news-4839c6d6a",
-      "title": "Mushroom Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4928130/Mushroom_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4928130/11919b6c5aa34d81c424b7d08968686901cbcecf/capsule_231x87.jpg?t=1791623279",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-1615f7d3e",
-      "title": "Bullet Hero",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4546060/Bullet_Hero/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4546060/de3d6ab112ac1deba29f30d6a2df3d012068906e/capsule_231x87.jpg?t=1791630113",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-ffc87bdbe",
       "title": "Don't Give Up",
       "kind": "coming_soon",
@@ -357,17 +358,6 @@
       ]
     },
     {
-      "id": "steam-news-990a52ba0",
-      "title": "Warring States: Seven Hegemons",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5234230/Warring_States_Seven_Hegemons/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5234230/f6846876164702b9c5cb834c75a3d8854319d459/capsule_231x87.jpg?t=1790727831",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
       "id": "steam-news-e008dd3b9",
       "title": "Unwatching -The Seven Dolls-",
       "kind": "coming_soon",
@@ -376,6 +366,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5166790/bd463ebac1688dae9aef606165dde5e0fc4e4eee/capsule_231x87.jpg?t=1791102442",
       "categories": [
         "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-990a52ba0",
+      "title": "Warring States: Seven Hegemons",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5234230/Warring_States_Seven_Hegemons/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5234230/f6846876164702b9c5cb834c75a3d8854319d459/capsule_231x87.jpg?t=1790727831",
+      "categories": [
+        "Strateji"
       ]
     },
     {
@@ -447,15 +448,6 @@
       ]
     },
     {
-      "id": "steam-news-6f3acf7c6",
-      "title": "Meow Garden",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3530010/Meow_Garden/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3530010/80b1bea04448f82419399a93a1b08ca507db8c07/capsule_231x87.jpg?t=1790933140",
-      "categories": []
-    },
-    {
       "id": "steam-news-0750bae43",
       "title": "Sonus",
       "kind": "coming_soon",
@@ -469,6 +461,15 @@
       ]
     },
     {
+      "id": "steam-news-6f3acf7c6",
+      "title": "Meow Garden",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3530010/Meow_Garden/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3530010/80b1bea04448f82419399a93a1b08ca507db8c07/capsule_231x87.jpg?t=1790933140",
+      "categories": []
+    },
+    {
       "id": "steam-news-46a0b8d7c",
       "title": "Burn With Me",
       "kind": "coming_soon",
@@ -476,6 +477,33 @@
       "dateLabel": "12 Oct, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2954010/f7904a019b35ff7b85c3e1d3cd4071447dac0d2c/capsule_231x87.jpg?t=1791632931",
       "categories": []
+    },
+    {
+      "id": "steam-news-b63325436",
+      "title": "Poco Loco",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5262490/Poco_Loco/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5262490/9954dd0261049789f6e2846e3b03da7dbd7336a3/capsule_231x87.jpg?t=1789754070",
+      "categories": [
+        "Yarış",
+        "Oynaması Ücretsiz",
+        "Gündelik",
+        "Simülasyon",
+        "Çok Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-db1711171",
+      "title": "Adventures of Mack",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4801520/Adventures_of_Mack/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4801520/42e972bcb4a55068b80221080ad3229bd9d14c41/capsule_231x87.jpg?t=1790569306",
+      "categories": [
+        "Gündelik",
+        "Macera"
+      ]
     },
     {
       "id": "steam-news-ce24aac53",
@@ -492,18 +520,6 @@
       ]
     },
     {
-      "id": "steam-news-db1711171",
-      "title": "Adventures of Mack",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4801520/Adventures_of_Mack/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4801520/42e972bcb4a55068b80221080ad3229bd9d14c41/capsule_231x87.jpg?t=1790569306",
-      "categories": [
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
       "id": "steam-news-cc8bba584",
       "title": "Life, the Universe, and Restaurants",
       "kind": "coming_soon",
@@ -513,21 +529,6 @@
       "categories": [
         "Gündelik",
         "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-b63325436",
-      "title": "Poco Loco",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5262490/Poco_Loco/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5262490/9954dd0261049789f6e2846e3b03da7dbd7336a3/capsule_231x87.jpg?t=1789754070",
-      "categories": [
-        "Yarış",
-        "Oynaması Ücretsiz",
-        "Gündelik",
-        "Simülasyon",
-        "Çok Oyunculu"
       ]
     },
     {
@@ -555,14 +556,16 @@
       ]
     },
     {
-      "id": "steam-news-71ea513cd",
-      "title": "The Doll Shop",
+      "id": "steam-news-09c217963",
+      "title": "Security Duty",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3851680/The_Doll_Shop/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/5338230/Security_Duty/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "12 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3851680/fdb991601b0cefc2a1d8f7e968197c5df6286e1d/capsule_231x87.jpg?t=1791457826",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5338230/672ef816530e58f33d249e28a044bdff7dd5c2b2/capsule_231x87.jpg?t=1790921002",
       "categories": [
-        "Korku"
+        "Korku",
+        "Gündelik",
+        "Aksiyon"
       ]
     },
     {
