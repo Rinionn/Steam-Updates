@@ -1,6 +1,100 @@
 {
-  "generatedAt": "2026-10-11T01:00:32.139Z",
+  "generatedAt": "2026-10-11T07:01:57.080Z",
   "items": [
+    {
+      "id": "steam-news-a799db5fe",
+      "title": "Arcana Rift",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2022260/Arcana_Rift/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2022260/b12bda755843f481d6e1f84e2efa76c8f7c28d2a/capsule_231x87.jpg?t=1791701229",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-1ff0178b8",
+      "title": "Cosy Loops",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4547670/Cosy_Loops/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4547670/523d01e92e525100746455c618aee92a655252d5/capsule_231x87.jpg?t=1791699473",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-94969ac3b",
+      "title": "Arcanum Idle",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5129430/Arcanum_Idle/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5129430/f14bb6a46307b0a8b91130e7ec994d9596cff970/capsule_231x87.jpg?t=1791695935",
+      "categories": [
+        "Simülasyon",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-14d6b1f1a",
+      "title": "Backrooms: Infinite",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4570650/Backrooms_Infinite/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4570650/7ee629b6e25caa0eabd8d868edc7a34427410b03/capsule_231x87.jpg?t=1791691676",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-538562e85",
+      "title": "NekoTrak",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5249210/NekoTrak/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5249210/26e4825e3f8eff2463bd03bf827b1c1af0abe971/capsule_231x87.jpg?t=1791691089",
+      "categories": [
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-04fd5db87",
+      "title": "Ultimate Racing Simulator 1",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5046820/Ultimate_Racing_Simulator_1/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5046820/ca289c9838d6e16bf34f7b58e27e1e6d39116f2d/capsule_231x87.jpg?t=1791698290",
+      "categories": [
+        "Simülasyon",
+        "Strateji",
+        "Yarış",
+        "Spor"
+      ]
+    },
+    {
+      "id": "steam-news-03ff696df",
+      "title": "429 - Four Twenty Knight",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4665910/429__Four_Twenty_Knight/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4665910/c38c01589ac7626a60a7cffec4989b7bc67ac91d/capsule_231x87.jpg?t=1791681681",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-6023db8f8",
+      "title": "KYRO",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3063690/KYRO/?snr=1_7_7_230_150_1",
+      "dateLabel": "10 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3063690/0b6e592de1f3834ef8130eb1fea49529e19b36d2/capsule_231x87.jpg?t=1791681242",
+      "categories": []
+    },
     {
       "id": "steam-news-befa3a949",
       "title": "I Can't See You",
@@ -194,100 +288,6 @@
       ]
     },
     {
-      "id": "steam-news-59133c839",
-      "title": "Ant Clicker",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4354120/Ant_Clicker/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4354120/6d18c8a8e2bc45279c7d26b38212bf99d378e0d0/capsule_231x87.jpg?t=1791644573",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-5d5fd4160",
-      "title": "Shelf-Employed",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5038020/ShelfEmployed/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5038020/2ac1f61ac95bddaee086ae77db0b3d10e9d40d43/capsule_231x87.jpg?t=1791644493",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-480dcfb21",
-      "title": "No Cute Girl Can Stop My Sudoku",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5260830/No_Cute_Girl_Can_Stop_My_Sudoku/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5260830/20faa6bc73824016a51cb03c60e7f047d0ae330b/capsule_231x87.jpg?t=1791661825",
-      "categories": [
-        "Gündelik",
-        "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-eef44b7c1",
-      "title": "On Hold - Call Center Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4847040/On_Hold__Call_Center_Simulator/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4847040/25e59fd99b7dbaf0c4ff6b4243d9ea02b089cd7e/capsule_231x87.jpg?t=1791641632",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-6d1b9e40b",
-      "title": "Sort Labs",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5195910/Sort_Labs/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5195910/b8b30181752e887cbbce805e30bd9bf90bd73ba6/capsule_231x87.jpg?t=1791642463",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-ab0ca1da5",
-      "title": "Catch The Fish",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5211870/Catch_The_Fish/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5211870/260db0ebfe668a55480fca69b6d73221b59165cf/capsule_231x87.jpg?t=1791640072",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-4a2b8b661",
-      "title": "BOSS ARENA: The Goldilock One Trials",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/1965430/BOSS_ARENA_The_Goldilock_One_Trials/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1965430/8a622b5525bf430443366ec8d409dfb3b011fc27/capsule_231x87.jpg?t=1791638459",
-      "categories": [
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-a6b02236c",
-      "title": "Nova Warp",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4843280/Nova_Warp/?snr=1_7_7_230_150_1",
-      "dateLabel": "10 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4843280/e8d77f556ff6d1886dbe841208fea5cfec833e4d/capsule_231x87.jpg?t=1791626503",
-      "categories": [
-        "Oynaması Ücretsiz",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-ffc87bdbe",
       "title": "Don't Give Up",
       "kind": "coming_soon",
@@ -358,17 +358,6 @@
       ]
     },
     {
-      "id": "steam-news-e008dd3b9",
-      "title": "Unwatching -The Seven Dolls-",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5166790/Unwatching_The_Seven_Dolls/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5166790/bd463ebac1688dae9aef606165dde5e0fc4e4eee/capsule_231x87.jpg?t=1791102442",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
       "id": "steam-news-990a52ba0",
       "title": "Warring States: Seven Hegemons",
       "kind": "coming_soon",
@@ -377,6 +366,17 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5234230/f6846876164702b9c5cb834c75a3d8854319d459/capsule_231x87.jpg?t=1790727831",
       "categories": [
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-e008dd3b9",
+      "title": "Unwatching -The Seven Dolls-",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5166790/Unwatching_The_Seven_Dolls/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5166790/bd463ebac1688dae9aef606165dde5e0fc4e4eee/capsule_231x87.jpg?t=1791102442",
+      "categories": [
+        "Korku"
       ]
     },
     {
@@ -391,25 +391,25 @@
       ]
     },
     {
-      "id": "steam-news-7ced55773",
-      "title": "Bandit Simulator TD",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4267800/Bandit_Simulator_TD/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "11 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4267800/c7b1ea6202d25e4f9165abbae7c1cc7b843e1732/capsule_231x87.jpg?t=1791645179",
-      "categories": [
-        "Strateji",
-        "RPG"
-      ]
-    },
-    {
       "id": "steam-news-ec20610e3",
       "title": "Idle Vapor Legends",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/4985520/Idle_Vapor_Legends/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "11 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985520/b118d84f66ba16a72c8b3610dab3530773a8c79a/capsule_231x87.jpg?t=1790151932",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4985520/b118d84f66ba16a72c8b3610dab3530773a8c79a/capsule_231x87.jpg?t=1791689834",
       "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-7ced55773",
+      "title": "Bandit Simulator TD",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4267800/Bandit_Simulator_TD/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "11 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4267800/c7b1ea6202d25e4f9165abbae7c1cc7b843e1732/capsule_231x87.jpg?t=1791697146",
+      "categories": [
+        "Strateji",
         "RPG"
       ]
     },
@@ -479,21 +479,6 @@
       "categories": []
     },
     {
-      "id": "steam-news-b63325436",
-      "title": "Poco Loco",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5262490/Poco_Loco/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "12 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5262490/9954dd0261049789f6e2846e3b03da7dbd7336a3/capsule_231x87.jpg?t=1789754070",
-      "categories": [
-        "Yarış",
-        "Oynaması Ücretsiz",
-        "Gündelik",
-        "Simülasyon",
-        "Çok Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-db1711171",
       "title": "Adventures of Mack",
       "kind": "coming_soon",
@@ -529,6 +514,21 @@
       "categories": [
         "Gündelik",
         "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-b63325436",
+      "title": "Poco Loco",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5262490/Poco_Loco/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "12 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5262490/9954dd0261049789f6e2846e3b03da7dbd7336a3/capsule_231x87.jpg?t=1789754070",
+      "categories": [
+        "Yarış",
+        "Oynaması Ücretsiz",
+        "Gündelik",
+        "Simülasyon",
+        "Çok Oyunculu"
       ]
     },
     {
