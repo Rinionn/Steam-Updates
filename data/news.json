@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-17T18:03:04.027Z",
+  "generatedAt": "2026-10-17T20:29:49.506Z",
   "items": [
+    {
+      "id": "steam-news-9a06955c9",
+      "title": "First Principles: A Calculus Platformer",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4570070/First_Principles_A_Calculus_Platformer/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4570070/60fcd00c0567567b70cb4b76adc80c065ab99579/capsule_231x87.jpg?t=1792267393",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-ebc7d9e48",
+      "title": "Flockway",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5322010/Flockway/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5322010/0a0d94c372625abbe5c67a4113cdbc822be02d92/capsule_231x87.jpg?t=1792266784",
+      "categories": [
+        "Gündelik",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-54f740d55",
+      "title": "Retro Racers",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3441620/Retro_Racers/?snr=1_7_7_230_150_1",
+      "dateLabel": "17 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3441620/d14c92c5b48e6a661ce44e093ffa262cf78aba6f/capsule_231x87.jpg?t=1792261583",
+      "categories": [
+        "Yarış"
+      ]
+    },
     {
       "id": "steam-news-8c91083f8",
       "title": "Odyssey Wars",
@@ -258,42 +292,6 @@
       ]
     },
     {
-      "id": "steam-news-10584a7d3",
-      "title": "Bathyscaphe",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5308120/Bathyscaphe/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5308120/f0b592d54a3676163fd9d3f1a1d0d9e63ee9a82c/capsule_231x87.jpg?t=1792222686",
-      "categories": [
-        "Gündelik",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-307a4df3f",
-      "title": "Looks Like It Fits",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5341750/Looks_Like_It_Fits/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5341750/ee8f3b950e50498a60634d992d9ff648d2298f7b/capsule_231x87.jpg?t=1792222235",
-      "categories": [
-        "Gündelik",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-1a06cdf57",
-      "title": "Yatai 8",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5080810/Yatai_8/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5080810/ae7ec8ac898530d5d4d145d6f8ed805a5715a97b/capsule_231x87.jpg?t=1792220524",
-      "categories": [
-        "Tek Oyunculu",
-        "Simülasyon"
-      ]
-    },
-    {
       "id": "steam-news-7df78df28",
       "title": "GomokuSoccer",
       "kind": "coming_soon",
@@ -425,23 +423,23 @@
       ]
     },
     {
-      "id": "steam-news-bfee1d593",
-      "title": "Insufferedere: Kuudere",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5334500/Insufferedere_Kuudere/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5334500/bd872e42e1a1c0648781fe6c5de0e02f216468e4/capsule_231x87.jpg?t=1792195942",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-89f3e2bd6",
       "title": "Resonance",
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/5209950/Resonance/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Oct, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5209950/7f1ad8720185a170afede4ad95278cfae25db60e/capsule_231x87.jpg?t=1789709040",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-bfee1d593",
+      "title": "Insufferedere: Kuudere",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5334500/Insufferedere_Kuudere/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5334500/bd872e42e1a1c0648781fe6c5de0e02f216468e4/capsule_231x87.jpg?t=1792195942",
       "categories": [
         "Gündelik"
       ]
@@ -568,15 +566,15 @@
       ]
     },
     {
-      "id": "steam-news-0dcb972ab",
-      "title": "Howling Woods",
+      "id": "steam-news-24a5bf906",
+      "title": "Athanasia",
       "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5336590/Howling_Woods/?snr=1_7_7_comingsoon_150_1",
+      "url": "https://store.steampowered.com/app/1761910/Athanasia/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5336590/936fde179431b5c217ac51037cba74252ee7ce60/capsule_231x87.jpg?t=1791997593",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1761910/2387b09119d2952c63182774be2fe9b04d781aee/capsule_231x87.jpg?t=1791833834",
       "categories": [
-        "Gündelik",
-        "Simülasyon"
+        "Bağımsız",
+        "Aksiyon"
       ]
     },
     {
