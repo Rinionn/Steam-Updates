@@ -1,6 +1,37 @@
 {
-  "generatedAt": "2026-10-18T09:10:31.746Z",
+  "generatedAt": "2026-10-18T13:17:18.210Z",
   "items": [
+    {
+      "id": "steam-news-36fdc1c6a",
+      "title": "Scribble Tanks",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5315860/Scribble_Tanks/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5315860/88893263e504a20907591ef8476281472f3827c1/capsule_231x87.jpg?t=1792327573",
+      "categories": []
+    },
+    {
+      "id": "steam-news-872243a5f",
+      "title": "Iron Coffin Ice Queen: Her Gaze Awakens My Beast",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4377020/Iron_Coffin_Ice_Queen_Her_Gaze_Awakens_My_Beast/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4377020/b65cad36fbace531eac8d524ccffcf185106b44b/capsule_231x87.jpg?t=1792320948",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-11fecab4e",
+      "title": "SurgePoint",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3342130/SurgePoint/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3342130/dcc1a557a11f2cd1074fa677d3a01adf7a489463/capsule_231x87.jpg?t=1792317390",
+      "categories": [
+        "Tek Oyunculu"
+      ]
+    },
     {
       "id": "steam-news-66693f87d",
       "title": "GRIDMINE",
@@ -254,40 +285,6 @@
       ]
     },
     {
-      "id": "steam-news-6e0a2f194",
-      "title": "touhou AICHATRPG",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5251110/touhou_AICHATRPG/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5251110/f766b18e1bbc253721abc3c87928840d0d0bc7a6/capsule_231x87.jpg?t=1792259326",
-      "categories": [
-        "RPG",
-        "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-92622307c",
-      "title": "Cook with Card",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4597500/Cook_with_Card/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4597500/c0905a4eb22043bde7dcd38e6458a5dc7a6eab23/capsule_231x87.jpg?t=1792254568",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-d93e4b74d",
-      "title": "Cat Life",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2204760/Cat_Life/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2204760/9475dedb42cf3942217b065eea37bdc6637484cd/capsule_231x87.jpg?t=1792254244",
-      "categories": [
-        "Tek Oyunculu"
-      ]
-    },
-    {
       "id": "steam-news-7df78df28",
       "title": "GomokuSoccer",
       "kind": "coming_soon",
@@ -321,6 +318,18 @@
       "dateLabel": "18 Oct, 2026",
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5379560/64544a9cbef4571ac9cba35efc9acd3495a2bd3b/capsule_231x87.jpg?t=1792117863",
       "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-0682a90c0",
+      "title": "Duck Casino: Gambling Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/824530/Duck_Casino_Gambling_Simulator/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "18 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/824530/715b27a26b89afc3390d99b3e903f2d2346d242a/capsule_231x87.jpg?t=1792315852",
+      "categories": [
+        "Simülasyon",
         "Gündelik"
       ]
     },
@@ -389,7 +398,7 @@
       "kind": "coming_soon",
       "url": "https://store.steampowered.com/app/5293210/ROGRID/?snr=1_7_7_comingsoon_150_1",
       "dateLabel": "19 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5293210/acb19c1b4efbd8b6a8d4972b0604f6876f836e66/capsule_231x87.jpg?t=1792207800",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5293210/acb19c1b4efbd8b6a8d4972b0604f6876f836e66/capsule_231x87.jpg?t=1792315019",
       "categories": [
         "Gündelik",
         "Strateji"
@@ -559,18 +568,6 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5284680/3e145c89747e62f6652e755a40b344c53b11e8ff/capsule_231x87.jpg?t=1790390717",
       "categories": [
         "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-0dcb972ab",
-      "title": "Howling Woods",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5336590/Howling_Woods/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5336590/936fde179431b5c217ac51037cba74252ee7ce60/capsule_231x87.jpg?t=1791997593",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
       ]
     },
     {
