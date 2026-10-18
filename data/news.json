@@ -1,6 +1,40 @@
 {
-  "generatedAt": "2026-10-18T16:37:08.850Z",
+  "generatedAt": "2026-10-18T18:57:19.424Z",
   "items": [
+    {
+      "id": "steam-news-8facf244b",
+      "title": "Solar Escape",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4237420/Solar_Escape/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4237420/680e16cef07c87b8d15bed54b184e442c66c4814/capsule_231x87.jpg?t=1792347354",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-517a8120d",
+      "title": "Unlucky",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5280820/Unlucky/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5280820/e2511e4bf86d376d448539285dfb1ecbdca840ab/capsule_231x87.jpg?t=1792342517",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-0a616b7d2",
+      "title": "a Flower for you",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5360830/a_Flower_for_you/?snr=1_7_7_230_150_1",
+      "dateLabel": "18 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5360830/a2a94807e812e575dc3c07a4d3fbe61f48866610/capsule_231x87.jpg?t=1792342282",
+      "categories": [
+        "Gündelik"
+      ]
+    },
     {
       "id": "steam-news-a170707ee",
       "title": "AI Olympius",
@@ -241,54 +275,6 @@
       ]
     },
     {
-      "id": "steam-news-4cdf9d639",
-      "title": "Deuce Dash",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5318310/Deuce_Dash/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5318310/67a4a490d970ac6b7a0d15ed25fc48867a9e254e/capsule_231x87.jpg?t=1792278718",
-      "categories": [
-        "Gündelik",
-        "Spor"
-      ]
-    },
-    {
-      "id": "steam-news-b38a4eccd",
-      "title": "Vampire's Kiss: Time Paradox",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4207160/Vampires_Kiss_Time_Paradox/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4207160/18c80071a217dab2cdf98956df968c57001a7bd1/capsule_231x87.jpg?t=1792276490",
-      "categories": [
-        "Anime",
-        "RPG"
-      ]
-    },
-    {
-      "id": "steam-news-ef0ccc61f",
-      "title": "RetroHub",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5285370/RetroHub/?snr=1_7_7_230_150_1",
-      "dateLabel": "17 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5285370/97fe4e5e78178fd903ca9df907356a9eb0397cdb/capsule_231x87.jpg?t=1792269697",
-      "categories": [
-        "Gündelik",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-288af0b2b",
-      "title": "萤光之旅",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5391710/_/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "18 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5391710/988b5c2bf24374fb8e3001196e9b41c7e5185960/capsule_231x87.jpg?t=1791559184",
-      "categories": [
-        "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-a10872ff1",
       "title": "SLUP",
       "kind": "coming_soon",
@@ -394,6 +380,17 @@
       ]
     },
     {
+      "id": "steam-news-bfee1d593",
+      "title": "Insufferedere: Kuudere",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5334500/Insufferedere_Kuudere/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5334500/bd872e42e1a1c0648781fe6c5de0e02f216468e4/capsule_231x87.jpg?t=1792195942",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
       "id": "steam-news-89f3e2bd6",
       "title": "Resonance",
       "kind": "coming_soon",
@@ -418,17 +415,6 @@
       ]
     },
     {
-      "id": "steam-news-bfee1d593",
-      "title": "Insufferedere: Kuudere",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5334500/Insufferedere_Kuudere/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5334500/bd872e42e1a1c0648781fe6c5de0e02f216468e4/capsule_231x87.jpg?t=1792195942",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
       "id": "steam-news-2c711fb45",
       "title": "Style Over Substance",
       "kind": "coming_soon",
@@ -441,18 +427,6 @@
       ]
     },
     {
-      "id": "steam-news-94f70eed0",
-      "title": "Burg Tag",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4297360/Burg_Tag/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "19 Oct, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4297360/84fa8fc281096487f33b8fbf70587d79a86649cb/capsule_231x87.jpg?t=1792113149",
-      "categories": [
-        "Çok Oyunculu",
-        "Aksiyon"
-      ]
-    },
-    {
       "id": "steam-news-e509057bb",
       "title": "Trolley Problem Is Not Problem",
       "kind": "coming_soon",
@@ -461,6 +435,18 @@
       "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5321580/1d89a980887d1b98ef5bbeb6c87f08deedb8ef4d/capsule_231x87.jpg?t=1791506122",
       "categories": [
         "Strateji",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-94f70eed0",
+      "title": "Burg Tag",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4297360/Burg_Tag/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4297360/84fa8fc281096487f33b8fbf70587d79a86649cb/capsule_231x87.jpg?t=1792113149",
+      "categories": [
+        "Çok Oyunculu",
         "Aksiyon"
       ]
     },
@@ -558,6 +544,19 @@
       "categories": [
         "Bağımsız",
         "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-4d3686f3b",
+      "title": "Wild Draw",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5328190/Wild_Draw/?snr=1_7_7_comingsoon_150_1",
+      "dateLabel": "19 Oct, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5328190/8dbf16ba4bfe0b9bb29428d4be7f30962cf828a1/capsule_231x87.jpg?t=1790767577",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Çok Oyunculu"
       ]
     },
     {
