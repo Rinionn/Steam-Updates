@@ -1,71 +1,7 @@
 {
-  "generatedAt": "2026-10-27T11:03:18.378Z",
+  "generatedAt": "2026-10-27T16:28:22.290Z",
   "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
   "events": [
-    {
-      "id": "next-fest-october-2026-3062e7ac9",
-      "name": "Next Fest: October 2026",
-      "kind": "next_fest",
-      "startAt": "2026-10-19T17:00:00Z",
-      "endAt": "2026-10-26T17:00:00Z",
-      "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events?l=english",
-      "registrationUrl": "https://partner.steamgames.com/optin/sale/nextfest_october_2026",
-      "detailsUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
-      "matchTags": [],
-      "deadlines": [
-        {
-          "kind": "registration",
-          "label": "August 31 - Registration Deadline (11:59pm PDT)This is also when we recommend you have your marketing materials up-to-date to ensure you can be considered for potential inclusion in official Steam Next Fest marketing materials (main event trailer, genre trailers, etc).",
-          "dueAt": "2026-09-01T06:59:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
-          "id": "next-fest-october-2026-3062e7ac9-dea67ebfc"
-        },
-        {
-          "kind": "marketing",
-          "label": "September 8 - Steam pulls trailers for the official Next Fest trailer. (If you've been notified of official trailer inclusion consideration, please ensure the most up to date trailer is available on your base game store page.)",
-          "dueAt": "2026-09-08T17:00:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
-          "id": "next-fest-october-2026-3062e7ac9-97846b59c"
-        },
-        {
-          "kind": "review",
-          "label": "September 14 - If you'd like your demo to be live at the start of the Press Preview, this is the date by which you should have submitted your demo build and store page for review. Note that the store page review is needed even if the demo doesn't have a separate store page.",
-          "dueAt": "2026-09-15T06:59:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
-          "id": "next-fest-october-2026-3062e7ac9-28286be6b"
-        },
-        {
-          "kind": "review",
-          "label": "September 28 - All required items must be submitted for review by this date in order for your game to be prepared for Steam Next Fest (if you haven’t completed them already for the Press Preview)",
-          "dueAt": "2026-09-29T06:59:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
-          "id": "next-fest-october-2026-3062e7ac9-71b75f82e"
-        },
-        {
-          "kind": "marketing",
-          "label": "October 1 - This is the deadline to opt OUT of trailer permissions if you have previously opted in, to ensure your trailer will NOT be included in official marketing materials.",
-          "dueAt": "2026-10-02T06:59:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
-          "id": "next-fest-october-2026-3062e7ac9-44bd3cce6"
-        },
-        {
-          "kind": "review",
-          "label": "October 8 - Press preview starts at 10am PDT. All demos that have opted in to be available for press preview will be included.",
-          "dueAt": "2026-10-08T17:00:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
-          "id": "next-fest-october-2026-3062e7ac9-de43adb98"
-        },
-        {
-          "kind": "milestone",
-          "label": "October 19 - Steam Next Fest: October 2026 begins at 10am PDT; set your demo live (or opt out if your plans have changed) before 10am PDT.",
-          "dueAt": "2026-10-19T17:00:00Z",
-          "sourceUrl": "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october",
-          "id": "next-fest-october-2026-3062e7ac9-ab20d5c9d"
-        }
-      ],
-      "lastSeenAt": "2026-10-27T11:03:09.664Z",
-      "firstSeenAt": "2026-07-30T11:59:50.366Z"
-    },
     {
       "id": "steam-scream-v-4b0a8f227",
       "name": "Steam Scream V",
