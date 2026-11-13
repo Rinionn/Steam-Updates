@@ -1,532 +1,13 @@
 {
-  "generatedAt": "2026-11-13T16:44:34.537Z",
+  "generatedAt": "2026-11-13T22:13:40.785Z",
   "items": [
     {
-      "id": "steam-news-0062f4af7",
-      "title": "Wonderjack",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4922040/Wonderjack/?snr=1_7_7_230_150_1",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4922040/2ccead3b4e8209797fe95adf442d52a8d07ce8be/capsule_231x87.jpg?t=1794588072",
-      "categories": [
-        "Strateji",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-077e8c3e8",
-      "title": "DERELIKT",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3810510/DERELIKT/?snr=1_7_7_230_150_2",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3810510/b0c737a360fd5b97e5a65fe1f3559003c5611c90/capsule_231x87.jpg?t=1794587386",
-      "categories": [
-        "Macera",
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-eb5b3dfae",
-      "title": "Time For Changes",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5235050/Time_For_Changes/?snr=1_7_7_230_150_3",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5235050/cb4264cf60b9b1c2e920e5680e2fcef5fdb68389/capsule_231x87.jpg?t=1794586071",
-      "categories": [
-        "Macera",
-        "Gündelik",
-        "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-4e255bac6",
-      "title": "Celeforge",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4891760/Celeforge/?snr=1_7_7_230_150_4",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4891760/1ca3b66ae88d8448f36b02aee24f0c07625949c3/capsule_231x87.jpg?t=1794585977",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-4ce76f6e8",
-      "title": "Rascal",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4431250/Rascal/?snr=1_7_7_230_150_5",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4431250/480be380ce714c05e264b81c854987e267e77518/capsule_231x87.jpg?t=1794585838",
-      "categories": []
-    },
-    {
-      "id": "steam-news-1e3776812",
-      "title": "Rhythm of the Backwaters",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5434650/Rhythm_of_the_Backwaters/?snr=1_7_7_230_150_6",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5434650/1bb9fbdca8fcaca48868082e53fb7061e2aeb557/capsule_231x87.jpg?t=1794585785",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-2cf442f10",
-      "title": "Puzzle Simulator",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5221180/Puzzle_Simulator/?snr=1_7_7_230_150_7",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5221180/78d3b7090f1c6431979fca4b44aea2dc0c31a46b/capsule_231x87_alt_assets_0.jpg?t=1794586751",
-      "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-e486b4ebd",
-      "title": "Setter: Volleyball Manager 27",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4908560/Setter_Volleyball_Manager_27/?snr=1_7_7_230_150_8",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4908560/511bff74ac1c213af166940b2d76f7eee1510db5/capsule_231x87.jpg?t=1794585635",
-      "categories": [
-        "Spor",
-        "Simülasyon",
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-c1ab03de7",
-      "title": "The House Always Wins",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4601260/The_House_Always_Wins/?snr=1_7_7_230_150_9",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4601260/5d7b878565a751eedef0293cbbb122f7198cc3b3/capsule_231x87.jpg?t=1794585620",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-da9029b90",
-      "title": "ASSAULT SHELL 2",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2173850/ASSAULT_SHELL_2/?snr=1_7_7_230_150_10",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2173850/capsule_231x87.jpg?t=1794585618",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-5d7267847",
-      "title": "Business Tycoon",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5256610/Business_Tycoon/?snr=1_7_7_230_150_11",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5256610/c698ddca617a574b087ff3a225aa5157e4f4e907/capsule_231x87.jpg?t=1794586105",
-      "categories": [
-        "Simülasyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-b8609d04c",
-      "title": "Dusteroids",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4557250/Dusteroids/?snr=1_7_7_230_150_12",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4557250/77fac3e6da16e87edb3b6687fb940285f1f88538/capsule_231x87.jpg?t=1794585532",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-387acc9d8",
-      "title": "DEEPLANDERS",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3192550/DEEPLANDERS/?snr=1_7_7_230_150_13",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3192550/61dac7ff89f0ad52943bec844e2c8242c819a36f/capsule_231x87.jpg?t=1794587753",
-      "categories": [
-        "Bağımsız"
-      ]
-    },
-    {
-      "id": "steam-news-0dbbb5b34",
-      "title": "Nicotine & Knives",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5107310/Nicotine_Knives/?snr=1_7_7_230_150_14",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5107310/c912357b6536e38dcb0dd3b5b1a16298f39cc039/capsule_231x87.jpg?t=1794585091",
-      "categories": [
-        "Aksiyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-57befd156",
-      "title": "Zombies Aren't Real",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5185890/Zombies_Arent_Real/?snr=1_7_7_230_150_15",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5185890/4dfc1ad826933c4d3a1d344533b377b1b4a0397c/capsule_231x87.jpg?t=1794584628",
-      "categories": [
-        "Strateji",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-5d357fc22",
-      "title": "Green Again",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2718320/Green_Again/?snr=1_7_7_230_150_16",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2718320/b4d8c7fac39cce8ac341838e7329cda622cf9180/capsule_231x87.jpg?t=1794584422",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-5404c965b",
-      "title": "Trakonius",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/2418490/Trakonius/?snr=1_7_7_230_150_18",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2418490/f88437df27d7808dd1f9eb6f6d72c621224e7f93/capsule_231x87.jpg?t=1794587741",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-e84350e3b",
-      "title": "Northfall",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4953110/Northfall/?snr=1_7_7_230_150_19",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4953110/51ec14c02bc87c447fef3df0a39b2d88a5b6cb8f/capsule_231x87.jpg?t=1794583441",
-      "categories": []
-    },
-    {
-      "id": "steam-news-99ccbde47",
-      "title": "Cases of the Past: Episode 0 - The Mysterious Neighbor",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5025980/Cases_of_the_Past_Episode_0_The_Mysterious_Neighbor/?snr=1_7_7_230_150_20",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5025980/ff14a324c8e596a970251ce11af3b3c749d70b5d/capsule_231x87.jpg?t=1794583393",
-      "categories": [
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-f99f4510b",
-      "title": "Last Gambit",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4983490/Last_Gambit/?snr=1_7_7_230_150_21",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4983490/6e8bdf0826d33fd980b81fd1ef6c64815a51868b/capsule_231x87.jpg?t=1794583108",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-36c6b2241",
-      "title": "Ratanoid",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5369900/Ratanoid/?snr=1_7_7_230_150_22",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5369900/59ea0acf9a39d8430e67e42970e91d75036365b5/capsule_231x87.jpg?t=1794583103",
-      "categories": [
-        "Aksiyon",
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-49615ed15",
-      "title": "Lifespan.exe",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/5104100/Lifespanexe/?snr=1_7_7_230_150_23",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5104100/c77562939f446f7186d58a10fe1a0858809c1cde/capsule_231x87.jpg?t=1794584589",
-      "categories": [
-        "Simülasyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-d74b9da74",
-      "title": "Brick Mayhem",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/4759420/Brick_Mayhem/?snr=1_7_7_230_150_24",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4759420/c48006cb72870bc3e369daacd116e26a8d11fd3a/capsule_231x87.jpg?t=1794583099",
-      "categories": [
-        "Strateji",
-        "Simülasyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-f308358b2",
-      "title": "终焉与珑同行",
-      "kind": "new_release",
-      "url": "https://store.steampowered.com/app/3893430/终焉与珑同行/?snr=1_7_7_230_150_25",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3893430/44bd6624405c3d3633db52f61ea84d22557c23f9/capsule_231x87.jpg?t=1794583260",
-      "categories": [
-        "Gündelik",
-        "RPG",
-        "Anime"
-      ]
-    },
-    {
-      "id": "steam-news-0914d9dc0",
-      "title": "Sort and Stack!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5302700/Sort_and_Stack/?snr=1_7_7_comingsoon_150_1",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5302700/ed01b2b3cd61a915454a3ee040e46b413494e1d9/capsule_231x87.jpg?t=1794585066",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-f2326839b",
-      "title": "NODE ZERO",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4937900/NODE_ZERO/?snr=1_7_7_comingsoon_150_2",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4937900/2b755c5952977975b5f15cef64b1053bf82c590d/capsule_231x87.jpg?t=1793985118",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-c85823b2a",
-      "title": "Hacker Cats",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4643840/Hacker_Cats/?snr=1_7_7_comingsoon_150_3",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4643840/b31a3fde8e6a3e136b6b9b029001297163eb78bc/capsule_231x87.jpg?t=1792927613",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-526f5108c",
-      "title": "Powerfuel",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4224090/Powerfuel/?snr=1_7_7_comingsoon_150_4",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4224090/83b55dc53751af4b35b3cfdb1b324e25afd389c3/capsule_231x87.jpg?t=1793747196",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-c31f3c03b",
-      "title": "Wanderbound",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5078910/Wanderbound/?snr=1_7_7_comingsoon_150_5",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5078910/366c8b282549008e7fa889684638f895c6dd65e9/capsule_231x87.jpg?t=1789673352",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-24f71e6b7",
-      "title": "The Liminal Cleaner - The Pools",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4983680/The_Liminal_Cleaner_The_Pools/?snr=1_7_7_comingsoon_150_6",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4983680/e9c7e7c1095bab9c13035892c54fd9e83ebb33cf/capsule_231x87.jpg?t=1793284089",
-      "categories": [
-        "Simülasyon",
-        "Macera"
-      ]
-    },
-    {
-      "id": "steam-news-05a01c169",
-      "title": "Beyond The Mist: Beginnings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5041950/Beyond_The_Mist_Beginnings/?snr=1_7_7_comingsoon_150_7",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5041950/7d3385c5efc538ad4918cb7b0c61e9b31f3b52d3/capsule_231x87.jpg?t=1787680509",
-      "categories": []
-    },
-    {
-      "id": "steam-news-a5f1f8ebd",
-      "title": "Ball Pit Cleanup",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5273080/Ball_Pit_Cleanup/?snr=1_7_7_comingsoon_150_8",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5273080/ef3eb5747a1b66771d8f37f72239dc588adf877d/capsule_231x87.jpg?t=1793005279",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-42fb95674",
-      "title": "Lost Luggage",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5369070/Lost_Luggage/?snr=1_7_7_comingsoon_150_9",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5369070/7c8a55e9975b8273423c68ef05c935244f331adb/capsule_231x87.jpg?t=1793189893",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-d90358306",
-      "title": "Arteria",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5373210/Arteria/?snr=1_7_7_comingsoon_150_10",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5373210/023e8c461aca4b801798116d44832640fd9af60d/capsule_231x87.jpg?t=1794582475",
-      "categories": [
-        "Simülasyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-b493e7a9e",
-      "title": "3AM Drivethrough",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5469110/3AM_Drivethrough/?snr=1_7_7_comingsoon_150_11",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5469110/8662b650e35dbb994ccd009905bacf4f073e8991/capsule_231x87.jpg?t=1794584851",
-      "categories": [
-        "Simülasyon",
-        "Korku"
-      ]
-    },
-    {
-      "id": "steam-news-f075e9ce7",
-      "title": "Panic Pub",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4917940/Panic_Pub/?snr=1_7_7_comingsoon_150_12",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4917940/5438639ac5bbaba65e526f46f3e0b551022b26a1/capsule_231x87.jpg?t=1793452537",
-      "categories": []
-    },
-    {
-      "id": "steam-news-38a11e9ff",
-      "title": "Bannerlings",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4613340/Bannerlings/?snr=1_7_7_comingsoon_150_13",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4613340/c01882ed0d34f19e9d2baedabce44485865aecae/capsule_231x87.jpg?t=1794443074",
-      "categories": [
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-d3a25a2f0",
-      "title": "King in the Mountain",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4767130/King_in_the_Mountain/?snr=1_7_7_comingsoon_150_14",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4767130/76fb87697f99c43695e3077e39100fe12cf336c3/capsule_231x87.jpg?t=1794497855",
-      "categories": [
-        "Gündelik",
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-ca42ea9c5",
-      "title": "Rasen",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3967860/Rasen/?snr=1_7_7_comingsoon_150_15",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3967860/97fd7f5965733ccef3a02319a7b3bd893b132177/capsule_231x87.jpg?t=1794587795",
-      "categories": [
-        "Bağımsız",
-        "Çok Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-67f488640",
-      "title": "Football Referee Life Simulator 26",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/3917850/Football_Referee_Life_Simulator_26/?snr=1_7_7_comingsoon_150_16",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3917850/fc8d200f90bd9f89033407dac0dc14a8260c547a/capsule_231x87.jpg?t=1794512359",
-      "categories": [
-        "Bağımsız",
-        "Spor",
-        "Simülasyon",
-        "Tek Oyunculu"
-      ]
-    },
-    {
-      "id": "steam-news-6143a7189",
-      "title": "We March as One",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5189160/We_March_as_One/?snr=1_7_7_comingsoon_150_17",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5189160/8e04412b9aa23678b8c795c80cfb74291ee21401/capsule_231x87.jpg?t=1794585000",
-      "categories": [
-        "Simülasyon",
-        "Strateji"
-      ]
-    },
-    {
-      "id": "steam-news-18bbe9def",
-      "title": "Parcel Inspector Simulator",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5334110/Parcel_Inspector_Simulator/?snr=1_7_7_comingsoon_150_18",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5334110/0ea09ade955428524f77263929f9e8544c1feaa3/capsule_231x87.jpg?t=1794404236",
-      "categories": [
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-1647c1749",
-      "title": "YoYo Blade",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5159330/YoYo_Blade/?snr=1_7_7_comingsoon_150_19",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5159330/2a08bd521edad091a6c87f356702a51fb75271dc/capsule_231x87.jpg?t=1794417658",
-      "categories": [
-        "Aksiyon"
-      ]
-    },
-    {
-      "id": "steam-news-4d7eef99a",
-      "title": "Desktop Goblins",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5497660/Desktop_Goblins/?snr=1_7_7_comingsoon_150_20",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5497660/290adfda96efb7916a7de6e748ed12605eaadfbe/capsule_231x87.jpg?t=1794009633",
-      "categories": [
-        "Gündelik",
-        "Simülasyon"
-      ]
-    },
-    {
-      "id": "steam-news-3b74ecddc",
-      "title": "Wrong Tank!",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5305100/Wrong_Tank/?snr=1_7_7_comingsoon_150_21",
-      "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5305100/3818c78f6ae48e6214e09b5525fb778db6f41bdc/capsule_231x87.jpg?t=1794522101",
-      "categories": [
-        "Gündelik"
-      ]
-    },
-    {
-      "id": "steam-news-a05fcf27f",
+      "id": "steam-news-13c9b4173",
       "title": "War Of The Worlds Trilogy",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4295070/War_Of_The_Worlds_Trilogy/?snr=1_7_7_comingsoon_150_22",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4295070/War_Of_The_Worlds_Trilogy/?snr=1_7_7_230_150_1",
       "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4295070/c65c02a8f5fd62bf1d1c9e977fab94dfd33bb0f5/capsule_231x87.jpg?t=1794585816",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4295070/49691d49a58cdf02c56b5b30a7731e670c8b0b4a/capsule_231x87.jpg?t=1794607589",
       "categories": [
         "Bağımsız",
         "Aksiyon",
@@ -536,28 +17,557 @@
       ]
     },
     {
-      "id": "steam-news-b0ffe9d08",
-      "title": "The Last Station - Baku",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/4974960/The_Last_Station_Baku/?snr=1_7_7_comingsoon_150_23",
+      "id": "steam-news-a0b39f7fe",
+      "title": "Pocket Beasts",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5145490/Pocket_Beasts/?snr=1_7_7_230_150_2",
       "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4974960/885dd7c534267382af87ba30228455bb69a28295/capsule_231x87.jpg?t=1794584095",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5145490/11bfce74196693a3ee4735112537136e83df679a/capsule_231x87.jpg?t=1794607230",
+      "categories": [
+        "RPG",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-0475f4dc2",
+      "title": "The Hundred Days",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5134380/The_Hundred_Days/?snr=1_7_7_230_150_3",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5134380/67c55442bbeacf6b7b6c4bee26d2cfb4a2245fe7/capsule_231x87.jpg?t=1794607182",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-cd975c9b3",
+      "title": "Aspect Arena",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5189780/Aspect_Arena/?snr=1_7_7_230_150_4",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5189780/45d0c601c06b0027d1f20cdfa1187b42d3fce0e6/capsule_231x87.jpg?t=1794606500",
+      "categories": [
+        "Strateji",
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-39177d0c7",
+      "title": "Hellmouth",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5297870/Hellmouth/?snr=1_7_7_230_150_5",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5297870/2cc327afd2f457e4c76143ac73bf973d1e15924e/capsule_231x87.jpg?t=1794606367",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-08fbb1fa9",
+      "title": "Rhythm Realm",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2360870/Rhythm_Realm/?snr=1_7_7_230_150_6",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2360870/3c163ed969cfe6c5a4e5548854af5ea81f414205/capsule_231x87.jpg?t=1794606209",
+      "categories": [
+        "Macera",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-cce1d1bbe",
+      "title": "Gun Gone Wrong",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3502460/Gun_Gone_Wrong/?snr=1_7_7_230_150_7",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3502460/75c9b05e1c0013a48731ef0942b0152337af54c3/capsule_231x87.jpg?t=1794606190",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-b1c7eb8c5",
+      "title": "BOOM! Buster",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/2498890/BOOM_Buster/?snr=1_7_7_230_150_8",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2498890/f06f1c2e0749265f004adc1543c5eb6f9b9b3ab0/capsule_231x87.jpg?t=1794605835",
+      "categories": [
+        "Aksiyon",
+        "Gündelik",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-54dfa4bb0",
+      "title": "The Hollow Servant",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5357020/The_Hollow_Servant/?snr=1_7_7_230_150_9",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5357020/072dd4b7345a106e68a014bada91b381fa04732d/capsule_231x87.jpg?t=1794604976",
       "categories": [
         "Korku",
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-4d90eea33",
+      "title": "Sort Them Dice",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5375890/Sort_Them_Dice/?snr=1_7_7_230_150_10",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5375890/d664f872b0a014ef9023d3e5cfdf149e27418e8d/capsule_231x87.jpg?t=1794605357",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-17a692390",
+      "title": "Mellings",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/3763040/Mellings/?snr=1_7_7_230_150_11",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3763040/5a49ac6cc646f20b362724649d8064750c824c3f/capsule_231x87.jpg?t=1794604082",
+      "categories": []
+    },
+    {
+      "id": "steam-news-8380e415c",
+      "title": "Orendral: After the Sundering",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5503920/Orendral_After_the_Sundering/?snr=1_7_7_230_150_12",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5503920/f24eb4c881490e22d4d27adc80123a66cfa440d5/capsule_231x87.jpg?t=1794603946",
+      "categories": [
+        "Macera",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-b1adc45eb",
+      "title": "MARS3077",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5335590/MARS3077/?snr=1_7_7_230_150_13",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5335590/2e61005d508d48dadd5cee5fdc52d08f36ac2a73/capsule_231x87.jpg?t=1794603850",
+      "categories": [
+        "RPG",
         "Aksiyon"
       ]
     },
     {
-      "id": "steam-news-cad10c974",
-      "title": "666",
-      "kind": "coming_soon",
-      "url": "https://store.steampowered.com/app/5419220/666/?snr=1_7_7_comingsoon_150_24",
+      "id": "steam-news-9202fd96e",
+      "title": "Talaire",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4773410/Talaire/?snr=1_7_7_230_150_14",
       "dateLabel": "13 Nov, 2026",
-      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5419220/4d6c1ce10205a496996fc7352de91004350f6e4d/capsule_231x87.jpg?t=1792580402",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4773410/1228942bb8c4bdeec9247fb6f69c3a11d874c82f/capsule_231x87.jpg?t=1794603814",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-47d996098",
+      "title": "Pigeon Ball",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5132920/Pigeon_Ball/?snr=1_7_7_230_150_15",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5132920/0c7b25c994cdf0b8e5e093e413b4026c0cd27628/capsule_231x87.jpg?t=1794603411",
+      "categories": [
+        "Spor",
+        "Çok Oyunculu",
+        "Aksiyon",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-62ccfd40b",
+      "title": "LARVIS",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4768630/LARVIS/?snr=1_7_7_230_150_16",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4768630/d00476a6d1639fe6334117b561be850eac5ed471/capsule_231x87.jpg?t=1794603402",
+      "categories": [
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-ca63ee66b",
+      "title": "Clandestined: Fade to Gray",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5220770/Clandestined_Fade_to_Gray/?snr=1_7_7_230_150_17",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5220770/c960a9445db5b9cd5ca5a92fd43c438b4efb5569/capsule_231x87.jpg?t=1794603313",
+      "categories": []
+    },
+    {
+      "id": "steam-news-ccbdec50f",
+      "title": "Playground VR",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/1504100/Playground_VR/?snr=1_7_7_230_150_18",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1504100/2c6097daf8cafd5aa153dffc637025464c3f5e15/capsule_231x87.jpg?t=1794602041",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-573986010",
+      "title": "One More Rule",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5257620/One_More_Rule/?snr=1_7_7_230_150_19",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5257620/b62413ac6daf057b8bd914422ca450c070be3b26/capsule_231x87.jpg?t=1794604750",
+      "categories": [
+        "Strateji",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-c6bd83e60",
+      "title": "Job Application Simulator",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5517040/Job_Application_Simulator/?snr=1_7_7_230_150_20",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5517040/1570dda7bc263a2003eae910574b9bf11aac94b7/capsule_231x87.jpg?t=1794601549",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-4aced58b0",
+      "title": "I Walk Among Zombies Vol. 1",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5062720/I_Walk_Among_Zombies_Vol_1/?snr=1_7_7_230_150_21",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5062720/66ee647b1fa27d473a75b23cdfcd2a92a5189cc7/capsule_231x87.jpg?t=1794600964",
+      "categories": [
+        "Macera",
+        "Anime",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-55dbceeeb",
+      "title": "Roger Running Tree Wages War Against God",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/5519360/Roger_Running_Tree_Wages_War_Against_God/?snr=1_7_7_230_150_22",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5519360/f32539b69b93e24027382578f8f2833d944b505a/capsule_231x87.jpg?t=1794600771",
+      "categories": [
+        "Aksiyon",
+        "Macera",
+        "Gündelik",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-e9ade4e93",
+      "title": "Spinova",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4487360/Spinova/?snr=1_7_7_230_150_23",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4487360/fd354eba1fb39c3a8dbcca6999d7002677958ce7/capsule_231x87.jpg?t=1794600574",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-b28732382",
+      "title": "Deathly Delights",
+      "kind": "new_release",
+      "url": "https://store.steampowered.com/app/4578320/Deathly_Delights/?snr=1_7_7_230_150_24",
+      "dateLabel": "13 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4578320/8d9492a014da1d60afe4c311f3e0a4c1c36fa19b/capsule_231x87.jpg?t=1794600440",
+      "categories": [
+        "Macera",
+        "Gündelik",
+        "Korku"
+      ]
+    },
+    {
+      "id": "steam-news-882dbf0f8",
+      "title": "Elementys",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5300300/Elementys/?snr=1_7_7_comingsoon_150_9",
+      "dateLabel": "14 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5300300/664f90b68e6d04761c2ac428a1c204e1643a4668/capsule_231x87.jpg?t=1794603174",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-7498999ff",
+      "title": "Fruit Kombat",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5082170/Fruit_Kombat/?snr=1_7_7_comingsoon_150_10",
+      "dateLabel": "14 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5082170/e194e350a08d4f9d0b44fe6a2db674aed516ebfa/capsule_231x87.jpg?t=1793782794",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-9e7b91c70",
+      "title": "Tiny Chef",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4995460/Tiny_Chef/?snr=1_7_7_comingsoon_150_11",
+      "dateLabel": "14 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4995460/27aa69aa6ea8afbb903ca156357b96eb91c56dbc/capsule_231x87.jpg?t=1793581895",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-6c2108a87",
+      "title": "文明融合",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5547370/文明融合/?snr=1_7_7_comingsoon_150_12",
+      "dateLabel": "14 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5547370/2750bdfaa6497a95d95566fe1f56449f63710aff/capsule_231x87.jpg?t=1794359195",
       "categories": [
         "Gündelik",
         "Simülasyon"
       ]
+    },
+    {
+      "id": "steam-news-206bb097d",
+      "title": "How Many Tickets Does It Take To Win The Lottery?",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5450860/How_Many_Tickets_Does_It_Take_To_Win_The_Lottery/?snr=1_7_7_comingsoon_150_13",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5450860/3ff2ce25a2cc749dc8f002b0018b9a08a19bd6b4/capsule_231x87.jpg?t=1793648514",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-79ba31874",
+      "title": "Cafe Simulator",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/2384980/Cafe_Simulator/?snr=1_7_7_comingsoon_150_14",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2384980/f475772baf5f76bd9a4a87bc3b5fddf8a3d7a970/capsule_231x87.jpg?t=1794242865",
+      "categories": []
+    },
+    {
+      "id": "steam-news-602d8e43f",
+      "title": "That's My Life",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5285190/Thats_My_Life/?snr=1_7_7_comingsoon_150_15",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5285190/841d5195a002c94999c741411736f13687495722/capsule_231x87.jpg?t=1794356920",
+      "categories": [
+        "Simülasyon",
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-f1ab81178",
+      "title": "Water Maid",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/3175580/Water_Maid/?snr=1_7_7_comingsoon_150_16",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3175580/66384a5a1c15e20c55d9a882889653dda1c4e006/capsule_231x87.jpg?t=1794544663",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-3779fd2b6",
+      "title": "Snake Echos",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5043330/Snake_Echos/?snr=1_7_7_comingsoon_150_17",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5043330/9b3c1c920b95c8d72903665e8ac0e0d65765bb9e/capsule_231x87.jpg?t=1790232706",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-54927d478",
+      "title": "Grand Space Game",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5492180/Grand_Space_Game/?snr=1_7_7_comingsoon_150_18",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5492180/6bbb20a30ae0ffcd47ce4f7203dcca2c24875f50/capsule_231x87.jpg?t=1794500922",
+      "categories": [
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-ba992f6fd",
+      "title": "Blind Katana: The Ember Keeper",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5262190/Blind_Katana_The_Ember_Keeper/?snr=1_7_7_comingsoon_150_19",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5262190/1f6ff0f5ec4af30303b63d28c8c4364eccd760c9/capsule_231x87.jpg?t=1792426812",
+      "categories": [
+        "RPG"
+      ]
+    },
+    {
+      "id": "steam-news-3ba291c72",
+      "title": "Don’t Drop!!",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5494840/Dont_Drop/?snr=1_7_7_comingsoon_150_20",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5494840/7fc96abce4eb622d5dfe5e09b72e3b866bf63bd2/capsule_231x87.jpg?t=1794378136",
+      "categories": [
+        "Aksiyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-73c1a0f3a",
+      "title": "DATAWANDER",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4672370/DATAWANDER/?snr=1_7_7_comingsoon_150_21",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4672370/075c0dadc9cdbcf4ad943361ba53b36a76897dad/capsule_231x87.jpg?t=1793541796",
+      "categories": [
+        "Macera"
+      ]
+    },
+    {
+      "id": "steam-news-af8b893b2",
+      "title": "The Midnight Client",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5519610/The_Midnight_Client/?snr=1_7_7_comingsoon_150_22",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5519610/0c6c29264b9f253461548687e71182f82b1454b0/capsule_231x87.jpg?t=1793680815",
+      "categories": [
+        "Macera",
+        "Simülasyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-1cb862e38",
+      "title": "A Heart-Stirring Date by Victoria Harbour: New Year's Eve at the Turn of the Millennium",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5055310/A_HeartStirring_Date_by_Victoria_Harbour_New_Years_Eve_at_the_Turn_of_the_Millennium/?snr=1_7_7_comingsoon_150_23",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5055310/82b12f3e2cb7409b656372ed2844442fda22b0fe/capsule_231x87.jpg?t=1794225717",
+      "categories": [
+        "Macera",
+        "RPG",
+        "Simülasyon"
+      ]
+    },
+    {
+      "id": "steam-news-2995ba789",
+      "title": "Bold Hole",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5501280/Bold_Hole/?snr=1_7_7_comingsoon_150_24",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5501280/aebc28d91a20dccd72753be7c34650b2c519e8a7/capsule_231x87.jpg?t=1794223203",
+      "categories": [
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-7a37dea75",
+      "title": "FOG",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5484320/FOG/?snr=1_7_7_comingsoon_150_25",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5484320/d2e232bd3314e996d8d0de37fa06845822328cd9/capsule_231x87.jpg?t=1793771196",
+      "categories": [
+        "RPG",
+        "Gündelik"
+      ]
+    },
+    {
+      "id": "steam-news-e6bd1a532",
+      "title": "Majulah: Shape Your City – Prologue",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5027890/Majulah_Shape_Your_City_Prologue/?snr=1_7_7_comingsoon_150_26",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5027890/c5006fd8e7aded992ac0bddd172c3784c4b63a67/capsule_231x87.jpg?t=1794347942",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-fa217181c",
+      "title": "执笔人 The Inkwright",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5441840/执笔人_The_Inkwright/?snr=1_7_7_comingsoon_150_27",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5441840/aa9a4d2dace3a2c00712c4611f1fbc94a748ba9c/capsule_231x87.jpg?t=1792771935",
+      "categories": [
+        "Aksiyon",
+        "Anime"
+      ]
+    },
+    {
+      "id": "steam-news-611c05ba4",
+      "title": "Crossroad Chaos",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/4947690/Crossroad_Chaos/?snr=1_7_7_comingsoon_150_28",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4947690/0091395d02920d30acafd2e31746e4ec21cee84f/capsule_231x87.jpg?t=1789866448",
+      "categories": [
+        "Gündelik",
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-67f771da1",
+      "title": "Tomo-chan's Cleaning Panic",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5267520/Tomochans_Cleaning_Panic/?snr=1_7_7_comingsoon_150_29",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5267520/38480dbb64f496f3bbf5c370319d6cd3fecf1ff3/capsule_231x87.jpg?t=1791433654",
+      "categories": [
+        "Aksiyon",
+        "Tek Oyunculu"
+      ]
+    },
+    {
+      "id": "steam-news-f554b145e",
+      "title": "When Ren Ran",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5420510/When_Ren_Ran/?snr=1_7_7_comingsoon_150_30",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5420510/acc21d5794ef49b5e9709961ca55f5bd664e6634/capsule_231x87.jpg?t=1793869838",
+      "categories": []
+    },
+    {
+      "id": "steam-news-791921712",
+      "title": "Arcane Dash - A Pixel Adventure",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5173190/Arcane_Dash_A_Pixel_Adventure/?snr=1_7_7_comingsoon_150_31",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5173190/47ede4a9a5f154dc61d70148b5d6024854830b32/capsule_231x87.jpg?t=1793733827",
+      "categories": [
+        "Aksiyon"
+      ]
+    },
+    {
+      "id": "steam-news-b57eecafd",
+      "title": "Cruisopolis: Cruise Line Tycoon",
+      "kind": "coming_soon",
+      "url": "https://store.steampowered.com/app/5476120/Cruisopolis_Cruise_Line_Tycoon/?snr=1_7_7_comingsoon_150_32",
+      "dateLabel": "15 Nov, 2026",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5476120/7acd9cac95c3bf23a770c6a132fdb8ce8624a2fc/capsule_231x87.jpg?t=1793818585",
+      "categories": [
+        "Simülasyon",
+        "Strateji"
+      ]
+    },
+    {
+      "id": "steam-news-5031642e0",
+      "title": "Black Friday dates",
+      "kind": "platform",
+      "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/689774035226066948",
+      "publishedAt": "2026-11-13T21:20:48.000Z",
+      "summary": "Black Friday is coming, and though Steam is not hosting a themed fest of its own, we're planning to repeat what we did last year by adding some extra theming and artwork to spotlight this unofficially official kickoff to the holiday shopping season.If you're looking to match up y"
     },
     {
       "id": "steam-news-c5fdfc5f4",
@@ -630,14 +640,6 @@
       "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/676258795703240952",
       "publishedAt": "2026-09-29T16:51:59.000Z",
       "summary": "In early 2027 we are planning changes to how some promotions work on Steam as we look to move away from a manual calendar-based approach and into something more dynamic and personalized for each customer.Currently, the Discounts & Events section on Steam is made up of curated pla"
-    },
-    {
-      "id": "steam-news-04ef1fe90",
-      "title": "Improvements to the Financial Reporting Site",
-      "kind": "platform",
-      "url": "https://steamcommunity.com/groups/steamworks/announcements/detail/692019489711063046",
-      "publishedAt": "2026-09-02T05:46:14.000Z",
-      "summary": "Today, we’re rolling out some improvements to the financial reporting site so that it’s easier to visualize your game’s trends and performance.When you’re viewing your sales chart (based on whatever period you select), you can now easily toggle between units and revenue, as well "
     }
   ]
 }
